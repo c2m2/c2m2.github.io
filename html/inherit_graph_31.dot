@@ -1,0 +1,10 @@
+digraph "Graphical Class Hierarchy"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node170 [label="IEnumerable",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node170 -> Node0 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node0 [label="C2M2.UGX.VertexAttachement\lAccessor\< T \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d6/dc8/class_c2_m2_1_1_u_g_x_1_1_vertex_attachement_accessor.html",tooltip="VertexAttachmentAcccesor"];
+}

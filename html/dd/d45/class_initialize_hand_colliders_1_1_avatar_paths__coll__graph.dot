@@ -1,0 +1,22 @@
+digraph "InitializeHandColliders.AvatarPaths"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="InitializeHandColliders.\lAvatarPaths",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node2 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" rightHand\nleftHand" ,fontname="Helvetica"];
+  Node2 [label="InitializeHandColliders.Hand",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$dd/d56/class_initialize_hand_colliders_1_1_hand.html",tooltip=" "];
+  Node3 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" fingers" ,fontname="Helvetica"];
+  Node3 [label="InitializeHandColliders.\lFinger",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$dd/dbd/class_initialize_hand_colliders_1_1_finger.html",tooltip=" "];
+  Node4 -> Node3 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" joints" ,fontname="Helvetica"];
+  Node4 [label="InitializeHandColliders.\lJoint",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d1/d0a/class_initialize_hand_colliders_1_1_joint.html",tooltip=" "];
+  Node5 -> Node4 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" colliderInfo" ,fontname="Helvetica"];
+  Node5 [label="InitializeHandColliders.\lColliderInfo",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d3/d7f/class_initialize_hand_colliders_1_1_collider_info.html",tooltip=" "];
+  Node6 -> Node5 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" boxColliders" ,fontname="Helvetica"];
+  Node6 [label="InitializeHandColliders.\lBoxColliderInfo",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$de/d14/class_initialize_hand_colliders_1_1_box_collider_info.html",tooltip=" "];
+  Node7 -> Node5 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" sphereColliders" ,fontname="Helvetica"];
+  Node7 [label="InitializeHandColliders.\lSphereColliderInfo",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d5/d9e/class_initialize_hand_colliders_1_1_sphere_collider_info.html",tooltip=" "];
+  Node8 -> Node5 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" capsuleColliders" ,fontname="Helvetica"];
+  Node8 [label="InitializeHandColliders.\lCapsuleColliderInfo",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d5/dda/class_initialize_hand_colliders_1_1_capsule_collider_info.html",tooltip=" "];
+}

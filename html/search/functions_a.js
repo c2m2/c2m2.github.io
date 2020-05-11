@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['jacobianellipticfunctions_6233',['jacobianellipticfunctions',['../classalglib.html#a072c272d5cafb6db775135c83c474a28',1,'alglib.jacobianellipticfunctions(double u, double m, out double sn, out double cn, out double dn, out double ph)'],['../classalglib.html#af2a2f924b7ab281aec838332ecf46993',1,'alglib.jacobianellipticfunctions(double u, double m, out double sn, out double cn, out double dn, out double ph, alglib.xparams _params)'],['../classalglib_1_1jacobianelliptic.html#a586cedbab33d1c813e539325596fee15',1,'alglib.jacobianelliptic.jacobianellipticfunctions()']]],
-  ['jarqueberatest_6234',['jarqueberatest',['../classalglib.html#a4ee41cdb6884aeb428fa0c73ef919229',1,'alglib.jarqueberatest(double[] x, int n, out double p)'],['../classalglib.html#a4e3b73f57cd915723913e571b890f0cc',1,'alglib.jarqueberatest(double[] x, int n, out double p, alglib.xparams _params)'],['../classalglib_1_1jarquebera.html#ab75516f7e3f9d3ca19a42f64d3da4bb4',1,'alglib.jarquebera.jarqueberatest()']]]
+  ['nextframe_620',['NextFrame',['../d8/dcf/class_c2_m2_1_1_v_t_u_player.html#ab52cb0e84aed6cfdc9d377cfb3ffd729',1,'C2M2::VTUPlayer']]],
+  ['node_621',['Node',['../db/d8b/struct_node.html#a813881b1591c4c0fde3e9d18a6f33135',1,'Node']]],
+  ['normaldata_622',['NormalData',['../d4/dfd/struct_c2_m2_1_1_u_g_x_1_1_normal_data.html#ae53f3c424bad9ceea842b8c27e76433d',1,'C2M2::UGX::NormalData']]]
 ];

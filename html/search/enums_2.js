@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['direction_9739',['Direction',['../class_initialize_hand_colliders.html#a13e4aeb9fb6b63477083aabdd5555932',1,'InitializeHandColliders']]]
+  ['synapsetype_682',['SynapseType',['../d7/de7/namespace_c2_m2_1_1_u_g_x.html#a5aea4aee1ec645e857ca86429324fb18',1,'C2M2::UGX']]]
 ];

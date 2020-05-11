@@ -1,29 +1,5 @@
 var searchData=
 [
-  ['panelmanager_5134',['PanelManager',['../class_panel_manager.html',1,'']]],
-  ['parametric_5135',['parametric',['../classalglib_1_1parametric.html',1,'alglib']]],
-  ['particlefieldhandlecontroller_5136',['ParticleFieldHandleController',['../class_particle_field_handle_controller.html',1,'']]],
-  ['particlefieldscalebuttoncontroller_5137',['ParticleFieldScaleButtonController',['../class_particle_field_scale_button_controller.html',1,'']]],
-  ['particleisoquantcontrollerbutton_5138',['ParticleIsoQuantControllerButton',['../class_particle_iso_quant_controller_button.html',1,'']]],
-  ['particlesizecontrollerbutton_5139',['ParticleSizeControllerButton',['../class_particle_size_controller_button.html',1,'']]],
-  ['particlesystemasciidatareader_5140',['ParticleSystemAsciiDataReader',['../class_particle_system_ascii_data_reader.html',1,'']]],
-  ['particlesystemcontroller_5141',['ParticleSystemController',['../class_particle_system_controller.html',1,'']]],
-  ['particletextdatareader_5142',['ParticleTextDataReader',['../class_particle_text_data_reader.html',1,'']]],
-  ['pauseafterframecount_5143',['PauseAfterFrameCount',['../class_pause_after_frame_count.html',1,'']]],
-  ['pca_5144',['pca',['../classalglib_1_1pca.html',1,'alglib']]],
-  ['pointinfo_5145',['PointInfo',['../class_c2_m2_1_1_point_info.html',1,'C2M2']]],
-  ['pointselection_5146',['PointSelection',['../class_point_selection.html',1,'']]],
-  ['poissondistr_5147',['poissondistr',['../classalglib_1_1poissondistr.html',1,'alglib']]],
-  ['polint_5148',['polint',['../classalglib_1_1polint.html',1,'alglib']]],
-  ['polynomialfitreport_5149',['polynomialfitreport',['../classalglib_1_1polynomialfitreport.html',1,'alglib.polynomialfitreport'],['../classalglib_1_1lsfit_1_1polynomialfitreport.html',1,'alglib.lsfit.polynomialfitreport']]],
-  ['polynomialsolver_5150',['polynomialsolver',['../classalglib_1_1polynomialsolver.html',1,'alglib']]],
-  ['polynomialsolverreport_5151',['polynomialsolverreport',['../classalglib_1_1polynomialsolver_1_1polynomialsolverreport.html',1,'alglib.polynomialsolver.polynomialsolverreport'],['../classalglib_1_1polynomialsolverreport.html',1,'alglib.polynomialsolverreport']]],
-  ['precbuflbfgs_5152',['precbuflbfgs',['../classalglib_1_1optserv_1_1precbuflbfgs.html',1,'alglib::optserv']]],
-  ['precbuflowrank_5153',['precbuflowrank',['../classalglib_1_1optserv_1_1precbuflowrank.html',1,'alglib::optserv']]],
-  ['presseventsignaler_5154',['PressEventSignaler',['../class_c2_m2_1_1_press_event_signaler.html',1,'C2M2']]],
-  ['priorityqueue_5155',['PriorityQueue',['../class_priority_queue.html',1,'']]],
-  ['proximitysoundfader_5156',['ProximitySoundFader',['../class_proximity_sound_fader.html',1,'']]],
-  ['psif_5157',['psif',['../classalglib_1_1psif.html',1,'alglib']]],
-  ['pspline2interpolant_5158',['pspline2interpolant',['../classalglib_1_1pspline2interpolant.html',1,'alglib.pspline2interpolant'],['../classalglib_1_1parametric_1_1pspline2interpolant.html',1,'alglib.parametric.pspline2interpolant']]],
-  ['pspline3interpolant_5159',['pspline3interpolant',['../classalglib_1_1parametric_1_1pspline3interpolant.html',1,'alglib.parametric.pspline3interpolant'],['../classalglib_1_1pspline3interpolant.html',1,'alglib.pspline3interpolant']]]
+  ['quitonclick_461',['QuitOnClick',['../d6/d10/class_quit_on_click.html',1,'']]],
+  ['quitontriggerenter_462',['QuitOnTriggerEnter',['../d1/d98/class_quit_on_trigger_enter.html',1,'']]]
 ];

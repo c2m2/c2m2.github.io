@@ -1,0 +1,16 @@
+digraph "Graphical Class Hierarchy"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node0 [label="C2M2.SimulationScripts.Simulation\l\< Vector3[]\>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d5/dfa/class_c2_m2_1_1_simulation_scripts_1_1_simulation.html",tooltip=" "];
+  Node0 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 [label="C2M2.SimulationScripts.Vector3\lSimulation",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d6/d3a/class_c2_m2_1_1_simulation_scripts_1_1_vector3_simulation.html",tooltip=" "];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="C2M2.SimulationScripts.MDSimulation",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$de/d2d/class_c2_m2_1_1_simulation_scripts_1_1_m_d_simulation.html",tooltip=" "];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="C2M2.SimulationScripts.Example\lMDSimulation",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$dd/d6c/class_c2_m2_1_1_simulation_scripts_1_1_example_m_d_simulation.html",tooltip=" "];
+  Node2 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="C2M2.SimulationScripts.MDSolver",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$de/d98/class_c2_m2_1_1_simulation_scripts_1_1_m_d_solver.html",tooltip=" "];
+}

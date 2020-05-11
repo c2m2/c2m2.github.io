@@ -1,0 +1,19 @@
+digraph "C2M2.DiffusionManager"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="C2M2.DiffusionManager",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="MonoBehaviour",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node3 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" diffusionConstantInputField\nbetaInputField\nreactionConstantInputField" ,fontname="Helvetica"];
+  Node3 [label="C2M2.RaycastInputField",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$df/d1a/class_c2_m2_1_1_raycast_input_field.html",tooltip=" "];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 -> Node3 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" onEndEdit" ,fontname="Helvetica"];
+  Node4 [label="C2M2.RaycastInputField.On\lSubmitEvent",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d9/df8/class_c2_m2_1_1_raycast_input_field_1_1_on_submit_event.html",tooltip=" "];
+  Node5 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="UnityEvent\< string \>",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node6 -> Node3 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" onValueChanged" ,fontname="Helvetica"];
+  Node6 [label="C2M2.RaycastInputField.On\lChangeEvent",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$da/d12/class_c2_m2_1_1_raycast_input_field_1_1_on_change_event.html",tooltip=" "];
+  Node5 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

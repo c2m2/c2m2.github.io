@@ -1,0 +1,15 @@
+digraph "C2M2.UGX.IAttachmentData"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="C2M2.UGX.IAttachmentData",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Marker interface for attachment data"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="C2M2.UGX.DiameterData",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d2/dda/struct_c2_m2_1_1_u_g_x_1_1_diameter_data.html",tooltip="Data for diameter attachment"];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="C2M2.UGX.MappingData",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d7/d88/struct_c2_m2_1_1_u_g_x_1_1_mapping_data.html",tooltip="Data for mapping attachment"];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="C2M2.UGX.NormalData",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d4/dfd/struct_c2_m2_1_1_u_g_x_1_1_normal_data.html",tooltip="Data for normals of grid"];
+  Node1 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="C2M2.UGX.SynapseData",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d9/d89/struct_c2_m2_1_1_u_g_x_1_1_synapse_data.html",tooltip="Data for synapse attachment"];
+}
