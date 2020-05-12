@@ -1,8 +1,0 @@
-digraph "Graphical Class Hierarchy"
-{
- // LATEX_PDF_SIZE
-  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
-  node [fontname="Helvetica",fontsize="10",shape=record];
-  rankdir="LR";
-  Node0 [label="C2M2.InteractionScripts.\lNonConvexMeshCollider.Box",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$de/dc5/class_c2_m2_1_1_interaction_scripts_1_1_non_convex_mesh_collider_1_1_box.html",tooltip=" "];
-}

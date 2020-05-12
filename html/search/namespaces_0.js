@@ -1,16 +1,20 @@
 var searchData=
 [
-  ['alg_548',['ALG',['../d2/da2/namespace_c2_m2_1_1_a_l_g.html',1,'C2M2']]],
-  ['attributes_549',['Attributes',['../d7/ddd/namespace_c2_m2_1_1_attributes.html',1,'C2M2']]],
-  ['c2m2_550',['C2M2',['../d9/d14/namespace_c2_m2.html',1,'']]],
-  ['debuggers_551',['Debuggers',['../d3/df7/namespace_c2_m2_1_1_debuggers.html',1,'C2M2']]],
-  ['helpers_552',['Helpers',['../d8/d0b/namespace_c2_m2_1_1_helpers.html',1,'C2M2']]],
-  ['interactionscripts_553',['InteractionScripts',['../d9/de5/namespace_c2_m2_1_1_interaction_scripts.html',1,'C2M2']]],
-  ['managers_554',['Managers',['../de/d8a/namespace_c2_m2_1_1_managers.html',1,'C2M2']]],
-  ['readers_555',['Readers',['../d9/da6/namespace_c2_m2_1_1_readers.html',1,'C2M2']]],
-  ['simulationscripts_556',['SimulationScripts',['../d9/d49/namespace_c2_m2_1_1_simulation_scripts.html',1,'C2M2']]],
-  ['tests_557',['Tests',['../d5/d70/namespace_c2_m2_1_1_tests.html',1,'C2M2']]],
-  ['ugx_558',['UGX',['../d7/de7/namespace_c2_m2_1_1_u_g_x.html',1,'C2M2']]],
-  ['utilities_559',['Utilities',['../d6/d49/namespace_c2_m2_1_1_utilities.html',1,'C2M2']]],
-  ['vr_560',['VR',['../d6/dc0/namespace_c2_m2_1_1_utilities_1_1_v_r.html',1,'C2M2::Utilities']]]
+  ['alg_521',['ALG',['../namespace_c2_m2_1_1_a_l_g.html',1,'C2M2']]],
+  ['attributes_522',['Attributes',['../namespace_c2_m2_1_1_attributes.html',1,'C2M2']]],
+  ['c2m2_523',['C2M2',['../namespace_c2_m2.html',1,'']]],
+  ['debugutils_524',['DebugUtils',['../namespace_c2_m2_1_1_utils_1_1_debug_utils.html',1,'C2M2::Utils']]],
+  ['helpers_525',['Helpers',['../namespace_c2_m2_1_1_helpers.html',1,'C2M2']]],
+  ['interaction_526',['Interaction',['../namespace_c2_m2_1_1_interaction.html',1,'C2M2']]],
+  ['meshutils_527',['MeshUtils',['../namespace_c2_m2_1_1_utils_1_1_mesh_utils.html',1,'C2M2::Utils']]],
+  ['moleculardynamics_528',['MolecularDynamics',['../namespace_c2_m2_1_1_molecular_dynamics.html',1,'C2M2']]],
+  ['neuronaldynamics_529',['NeuronalDynamics',['../namespace_c2_m2_1_1_neuronal_dynamics.html',1,'C2M2']]],
+  ['simulation_530',['Simulation',['../namespace_c2_m2_1_1_molecular_dynamics_1_1_simulation.html',1,'C2M2.MolecularDynamics.Simulation'],['../namespace_c2_m2_1_1_neuronal_dynamics_1_1_simulation.html',1,'C2M2.NeuronalDynamics.Simulation'],['../namespace_c2_m2_1_1_simulation.html',1,'C2M2.Simulation']]],
+  ['tests_531',['Tests',['../namespace_c2_m2_1_1_molecular_dynamics_1_1_tests.html',1,'C2M2.MolecularDynamics.Tests'],['../namespace_c2_m2_1_1_tests.html',1,'C2M2.Tests']]],
+  ['ugx_532',['UGX',['../namespace_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x.html',1,'C2M2.NeuronalDynamics.UGX'],['../namespace_c2_m2_1_1_u_g_x.html',1,'C2M2.UGX']]],
+  ['ui_533',['UI',['../namespace_c2_m2_1_1_interaction_1_1_u_i.html',1,'C2M2::Interaction']]],
+  ['utils_534',['Utils',['../namespace_c2_m2_1_1_utils.html',1,'C2M2']]],
+  ['visualization_535',['Visualization',['../namespace_c2_m2_1_1_molecular_dynamics_1_1_visualization.html',1,'C2M2.MolecularDynamics.Visualization'],['../namespace_c2_m2_1_1_neuronal_dynamics_1_1_visualization.html',1,'C2M2.NeuronalDynamics.Visualization'],['../namespace_c2_m2_1_1_visualization.html',1,'C2M2.Visualization']]],
+  ['vr_536',['VR',['../namespace_c2_m2_1_1_interaction_1_1_v_r.html',1,'C2M2.Interaction.VR'],['../namespace_c2_m2_1_1_visualization_1_1_v_r.html',1,'C2M2.Visualization.VR']]],
+  ['vtk_537',['VTK',['../namespace_c2_m2_1_1_visualization_1_1_v_t_k.html',1,'C2M2::Visualization']]]
 ];
