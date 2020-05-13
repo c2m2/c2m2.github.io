@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['compoundcolliderresolution_628',['compoundColliderResolution',['../class_c2_m2_1_1_interaction_1_1_add_interaction_components.html#adbd01b1406ff9ae066fe0cec0d8a77d0',1,'C2M2::Interaction::AddInteractionComponents']]]
+  ['objfilepath_530',['objFilePath',['../class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_neuron1_d.html#a371453c544a4b22cdf0b4a35f16ddde0',1,'C2M2::NeuronalDynamics::Visualization::Neuron1D']]]
 ];

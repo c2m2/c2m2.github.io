@@ -35,7 +35,7 @@ var NAVTREE =
       [ "Class Index", "classes.html", null ],
       [ "Class Hierarchy", "hierarchy.html", "hierarchy" ],
       [ "Class Members", "functions.html", [
-        [ "All", "functions.html", "functions_dup" ],
+        [ "All", "functions.html", null ],
         [ "Functions", "functions_func.html", null ],
         [ "Variables", "functions_vars.html", null ],
         [ "Enumerations", "functions_enum.html", null ],
@@ -48,11 +48,10 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "annotated.html",
-"class_c2_m2_1_1_mesh_info_1_1_d_node.html#a383374037346e74cad648721c77ee756",
-"class_c2_m2_1_1_raycast_event_signaler.html#ad19e2609e776bdae9eb6ffa63057214b",
-"class_c2_m2_1_1_u_g_x_1_1_u_g_x_reader_test.html#a4551e37817bea896fbb09260dea13957a2387b2a858d826b487b2f84232b0b15c",
-"class_particle_system_ascii_data_reader.html#a29a163f5f27f321b53a603f347941ccc",
-"struct_c2_m2_1_1_u_g_x_1_1_attachment_info.html#a6148b1a13d28b0c94ddca12a5e0abcf9"
+"class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_cell_solver2_simple_f_e.html#ae9be30d2c252ff7e0997f6cc68911867",
+"class_c2_m2_1_1_o_i_t_1_1_interaction_1_1_particle_size_controller_button.html",
+"class_c2_m2_1_1_utils_1_1_debug_utils_1_1_f_p_s_counter.html#aaf1c34b2a6808f89fb01c55ec43fdafd",
+"struct_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_attachment_info.html#aa79ee22314e7e4f386593cca6fa96182"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

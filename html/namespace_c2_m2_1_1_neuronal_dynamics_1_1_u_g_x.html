@@ -86,23 +86,152 @@ $(document).ready(function(){initNavTree('namespace_c2_m2_1_1_neuronal_dynamics_
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
-<a href="#typedef-members">Typedefs</a>  </div>
+<a href="#typedef-members">Typedefs</a> &#124;
+<a href="#enum-members">Enumerations</a>  </div>
   <div class="headertitle">
 <div class="title">C2M2.NeuronalDynamics.UGX Namespace Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Utilities for processing .ugx files containing 1D, 3D, and mapping geometry info  
+<a href="namespace_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x.html#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><b>Algebra</b></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_alpha_post_synapse.html">AlphaPostSynapse</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A alpha post synapse  <a href="struct_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_alpha_post_synapse.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">interface &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_attachment.html">Attachment</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Marker interface for attachments  <a href="interface_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_attachment.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><b>AttachmentHandler</b></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The attachment handler allows managing attachments of grids <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_attachment_info.html">AttachmentInfo</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Encapsulate attachment information as immutable  <a href="struct_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_attachment_info.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_diameter_data.html">DiameterData</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Data for diameter attachment  <a href="struct_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_diameter_data.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_edge.html">Edge</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Immutable edge representation  <a href="struct_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_edge.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_e_x_p2_synapse.html">EXP2Synapse</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A bi-exponential synapse  <a href="struct_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_e_x_p2_synapse.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_grid.html">Grid</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Encapsulates Unity mesh and the edges of the <a class="el" href="namespace_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x.html" title="Utilities for processing .ugx files containing 1D, 3D, and mapping geometry info">UGX</a> file  <a href="class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_grid.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><b>GridExtensions</b></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_grid.html" title="Encapsulates Unity mesh and the edges of the UGX file">Grid</a> extension methods <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><b>GridUtils</b></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_grid.html" title="Encapsulates Unity mesh and the edges of the UGX file">Grid</a> utility methods <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_i_attachment.html">IAttachment</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Abstract base class for all attachments providing common functionality  <a href="class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_i_attachment.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">interface &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_i_attachment_data.html">IAttachmentData</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Marker interface for attachment data  <a href="interface_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_i_attachment_data.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">interface &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_i_synapse.html">ISynapse</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A synapse respresentation  <a href="interface_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_i_synapse.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_map_entry.html">MapEntry</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_mapping_data.html">MappingData</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Data for mapping attachment  <a href="struct_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_mapping_data.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_mapping_info.html">MappingInfo</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Encapsulates the grids and mapping data  <a href="struct_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_mapping_info.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><b>MapUtils</b></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Utility class for all mapping associated utility functions <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_cell.html">NeuronCell</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_normal_data.html">NormalData</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Data for normals of grid  <a href="struct_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_normal_data.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_sine_wave_colorizer.html">SineWaveColorizer</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A simple sine wave colorizer  <a href="class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_sine_wave_colorizer.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_subset.html">Subset</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A simple data class representing <a class="el" href="struct_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_subset.html" title="A simple data class representing Subset information">Subset</a> information  <a href="struct_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_subset.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_subset_collection.html">SubsetCollection</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wrapper class for subset information  <a href="class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_subset_collection.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_synapse_data.html">SynapseData</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Data for synapse attachment  <a href="struct_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_synapse_data.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><b>UGXReader</b></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Simple <a class="el" href="namespace_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x.html" title="Utilities for processing .ugx files containing 1D, 3D, and mapping geometry info">UGX</a> reader class <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_u_g_x_reader_test.html">UGXReaderTest</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_u_g_x_reader_test.html" title="UGXReaderTest">UGXReaderTest</a>  <a href="class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_u_g_x_reader_test.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_undef_synapse.html">UndefSynapse</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Undef Synapse  <a href="struct_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_undef_synapse.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_vertex.html">Vertex</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Immutable vertex representation  <a href="struct_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_vertex.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_vertex_attachement_accessor.html">VertexAttachementAccessor</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">VertexAttachmentAcccesor  <a href="class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_vertex_attachement_accessor.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:a4ab6e6f9d79af42b0401569f00509bfe"><td class="memItemLeft" align="right" valign="top"><a id="a4ab6e6f9d79af42b0401569f00509bfe"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>DiameterAttachment</b> = <a class="el" href="class_c2_m2_1_1_u_g_x_1_1_i_attachment.html">IAttachment</a>&lt; <a class="el" href="struct_c2_m2_1_1_u_g_x_1_1_diameter_data.html">DiameterData</a> &gt;</td></tr>
-<tr class="separator:a4ab6e6f9d79af42b0401569f00509bfe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a668fa70767b7cebac1473b512b6cf84b"><td class="memItemLeft" align="right" valign="top"><a id="a668fa70767b7cebac1473b512b6cf84b"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>DiameterAttachment</b> = <a class="el" href="class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_i_attachment.html">IAttachment</a>&lt; <a class="el" href="struct_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_diameter_data.html">DiameterData</a> &gt;</td></tr>
+<tr class="separator:a668fa70767b7cebac1473b512b6cf84b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a4847018043e3175f44cf587a2dd6ad"><td class="memItemLeft" align="right" valign="top"><a id="a1a4847018043e3175f44cf587a2dd6ad"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>MappingAttachment</b> = <a class="el" href="class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_i_attachment.html">IAttachment</a>&lt; <a class="el" href="struct_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_mapping_data.html">MappingData</a> &gt;</td></tr>
+<tr class="separator:a1a4847018043e3175f44cf587a2dd6ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2cd51055092fd968a0ec2c92ff66798c"><td class="memItemLeft" align="right" valign="top"><a id="a2cd51055092fd968a0ec2c92ff66798c"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>NormalAttachment</b> = <a class="el" href="class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_i_attachment.html">IAttachment</a>&lt; <a class="el" href="struct_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_normal_data.html">NormalData</a> &gt;</td></tr>
+<tr class="separator:a2cd51055092fd968a0ec2c92ff66798c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+Enumerations</h2></td></tr>
+<tr class="memitem:acba8adcd72d5b952ef8cf88c5f82fdc0"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x.html#acba8adcd72d5b952ef8cf88c5f82fdc0">SynapseType</a> : byte { <b>UNDEF</b>, 
+<b>ALPHA_POST</b>, 
+<b>EXP2</b>
+ }</td></tr>
+<tr class="memdesc:acba8adcd72d5b952ef8cf88c5f82fdc0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represent the type of synapse  <a href="namespace_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x.html#acba8adcd72d5b952ef8cf88c5f82fdc0">More...</a><br /></td></tr>
+<tr class="separator:acba8adcd72d5b952ef8cf88c5f82fdc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Utilities for processing .ugx files containing 1D, 3D, and mapping geometry info </p>
+</div><h2 class="groupheader">Enumeration Type Documentation</h2>
+<a id="acba8adcd72d5b952ef8cf88c5f82fdc0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acba8adcd72d5b952ef8cf88c5f82fdc0">&#9670;&nbsp;</a></span>SynapseType</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="namespace_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x.html#acba8adcd72d5b952ef8cf88c5f82fdc0">C2M2.NeuronalDynamics.UGX.SynapseType</a> : byte</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Represent the type of synapse </p>
+<p>SynapseType</p>
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

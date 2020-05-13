@@ -95,7 +95,7 @@ $(document).ready(function(){initNavTree('class_c2_m2_1_1_neuronal_dynamics_1_1_
 </div><!--header-->
 <div class="contents">
 
-<p>Read in a map associating 1D neuron vertices to 3D mesh vertices.  
+<p>Provides base functionality for Hodgkin-Huxley solvers.  
  <a href="class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_h_h_simulation.html#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for C2M2.NeuronalDynamics.Simulation.HHSimulation:</div>
@@ -161,9 +161,9 @@ float&#160;</td><td class="memItemRight" valign="bottom"><b>lineWidth1D</b> = 0.
 <tr class="memitem:a13111efc2c42ef523b42ea5056f8537c inherit pub_attribs_class_c2_m2_1_1_simulation_1_1_scalar_field_simulation"><td class="memItemLeft" align="right" valign="top"><a id="a13111efc2c42ef523b42ea5056f8537c"></a>
 Gradient&#160;</td><td class="memItemRight" valign="bottom"><b>gradient</b></td></tr>
 <tr class="separator:a13111efc2c42ef523b42ea5056f8537c inherit pub_attribs_class_c2_m2_1_1_simulation_1_1_scalar_field_simulation"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2a794a25c913bf1b7df92c947a0c9405 inherit pub_attribs_class_c2_m2_1_1_simulation_1_1_scalar_field_simulation"><td class="memItemLeft" align="right" valign="top"><a id="a2a794a25c913bf1b7df92c947a0c9405"></a>
-<a class="el" href="class_c2_m2_1_1_interaction_1_1_gradient32_l_u_t.html#a0d677f297ee587af52cc5ba3af55ac7c">Gradient32LUT.ExtremaMethod</a>&#160;</td><td class="memItemRight" valign="bottom"><b>extremaMethod</b> = Gradient32LUT.ExtremaMethod.RollingExtrema</td></tr>
-<tr class="separator:a2a794a25c913bf1b7df92c947a0c9405 inherit pub_attribs_class_c2_m2_1_1_simulation_1_1_scalar_field_simulation"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32ca652d6a80e088a6cfb0a61e7bb30d inherit pub_attribs_class_c2_m2_1_1_simulation_1_1_scalar_field_simulation"><td class="memItemLeft" align="right" valign="top"><a id="a32ca652d6a80e088a6cfb0a61e7bb30d"></a>
+<a class="el" href="class_c2_m2_1_1_visualization_1_1_l_u_t_gradient.html#a688932d2ef2f3d19dde01be156a525d6">LUTGradient.ExtremaMethod</a>&#160;</td><td class="memItemRight" valign="bottom"><b>extremaMethod</b> = LUTGradient.ExtremaMethod.RollingExtrema</td></tr>
+<tr class="separator:a32ca652d6a80e088a6cfb0a61e7bb30d inherit pub_attribs_class_c2_m2_1_1_simulation_1_1_scalar_field_simulation"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a447c6491436a3f268af36ae1cdcb8825 inherit pub_attribs_class_c2_m2_1_1_simulation_1_1_scalar_field_simulation"><td class="memItemLeft" align="right" valign="top"><a id="a447c6491436a3f268af36ae1cdcb8825"></a>
 float&#160;</td><td class="memItemRight" valign="bottom"><b>globalMax</b></td></tr>
 <tr class="separator:a447c6491436a3f268af36ae1cdcb8825 inherit pub_attribs_class_c2_m2_1_1_simulation_1_1_scalar_field_simulation"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -183,7 +183,7 @@ abstract void&#160;</td><td class="memItemRight" valign="bottom"><b>Set1DValues<
 <tr class="memitem:a46c472a42c89876775303f35add54f6e"><td class="memItemLeft" align="right" valign="top"><a id="a46c472a42c89876775303f35add54f6e"></a>
 abstract double[]&#160;</td><td class="memItemRight" valign="bottom"><b>Get1DValues</b> ()</td></tr>
 <tr class="separator:a46c472a42c89876775303f35add54f6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a88d2b5a823589d159635da63fc9a77cf"><td class="memItemLeft" align="right" valign="top">abstract void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_h_h_simulation.html#a88d2b5a823589d159635da63fc9a77cf">SetNeuronCell</a> (<a class="el" href="class_c2_m2_1_1_u_g_x_1_1_grid.html">Grid</a> grid)</td></tr>
+<tr class="memitem:a88d2b5a823589d159635da63fc9a77cf"><td class="memItemLeft" align="right" valign="top">abstract void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_h_h_simulation.html#a88d2b5a823589d159635da63fc9a77cf">SetNeuronCell</a> (<a class="el" href="class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_grid.html">Grid</a> grid)</td></tr>
 <tr class="memdesc:a88d2b5a823589d159635da63fc9a77cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">summary&gt; Lookup a 3D vert and get back two 1D indices and a lambda value for them  <a href="class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_h_h_simulation.html#a88d2b5a823589d159635da63fc9a77cf">More...</a><br /></td></tr>
 <tr class="separator:a88d2b5a823589d159635da63fc9a77cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7c3547c2799dbba2a0bdfb4040fa6576"><td class="memItemLeft" align="right" valign="top">override Mesh&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_h_h_simulation.html#a7c3547c2799dbba2a0bdfb4040fa6576">BuildMesh</a> ()</td></tr>
@@ -213,7 +213,7 @@ abstract void&#160;</td><td class="memItemRight" valign="bottom"><b>Solve</b> ()
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
 <tr class="memitem:ad1469f7b405ea48007f41d0048790826"><td class="memItemLeft" align="right" valign="top"><a id="ad1469f7b405ea48007f41d0048790826"></a>
-<a class="el" href="class_c2_m2_1_1_u_g_x_1_1_grid.html">Grid</a>&#160;</td><td class="memItemRight" valign="bottom"><b>grid1D</b></td></tr>
+<a class="el" href="class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_grid.html">Grid</a>&#160;</td><td class="memItemRight" valign="bottom"><b>grid1D</b></td></tr>
 <tr class="separator:ad1469f7b405ea48007f41d0048790826"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_class_c2_m2_1_1_simulation_1_1_simulation"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_c2_m2_1_1_simulation_1_1_simulation')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="class_c2_m2_1_1_simulation_1_1_simulation.html">C2M2.Simulation.Simulation&lt; double[]&gt;</a></td></tr>
 <tr class="memitem:aec928adabf7f50b7254a618bfe859cee inherit pro_attribs_class_c2_m2_1_1_simulation_1_1_simulation"><td class="memItemLeft" align="right" valign="top"><a id="aec928adabf7f50b7254a618bfe859cee"></a>
@@ -223,12 +223,13 @@ Mutex&#160;</td><td class="memItemRight" valign="bottom"><b>mutex</b></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header properties_class_c2_m2_1_1_simulation_1_1_scalar_field_simulation"><td colspan="2" onclick="javascript:toggleInherit('properties_class_c2_m2_1_1_simulation_1_1_scalar_field_simulation')"><img src="closed.png" alt="-"/>&#160;Properties inherited from <a class="el" href="class_c2_m2_1_1_simulation_1_1_scalar_field_simulation.html">C2M2.Simulation.ScalarFieldSimulation</a></td></tr>
-<tr class="memitem:a7cd797615ba697f5ad12988094d8b865 inherit properties_class_c2_m2_1_1_simulation_1_1_scalar_field_simulation"><td class="memItemLeft" align="right" valign="top"><a id="a7cd797615ba697f5ad12988094d8b865"></a>
-<a class="el" href="class_c2_m2_1_1_interaction_1_1_gradient32_l_u_t.html">Gradient32LUT</a>&#160;</td><td class="memItemRight" valign="bottom"><b>colorLUT</b> = null<code> [get]</code></td></tr>
-<tr class="separator:a7cd797615ba697f5ad12988094d8b865 inherit properties_class_c2_m2_1_1_simulation_1_1_scalar_field_simulation"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab105bae6258689fc8229f2aac45a2770 inherit properties_class_c2_m2_1_1_simulation_1_1_scalar_field_simulation"><td class="memItemLeft" align="right" valign="top"><a id="ab105bae6258689fc8229f2aac45a2770"></a>
+<a class="el" href="class_c2_m2_1_1_visualization_1_1_l_u_t_gradient.html">LUTGradient</a>&#160;</td><td class="memItemRight" valign="bottom"><b>colorLUT</b> = null<code> [get]</code></td></tr>
+<tr class="separator:ab105bae6258689fc8229f2aac45a2770 inherit properties_class_c2_m2_1_1_simulation_1_1_scalar_field_simulation"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Read in a map associating 1D neuron vertices to 3D mesh vertices. </p>
+<div class="textblock"><p>Provides base functionality for Hodgkin-Huxley solvers. </p>
+<p>This script automatically reads in ugx files, builds the 3D neuron mesh, and builds a map between 1D and 3D geometries. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a7c3547c2799dbba2a0bdfb4040fa6576"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7c3547c2799dbba2a0bdfb4040fa6576">&#9670;&nbsp;</a></span>BuildMesh()</h2>
@@ -302,7 +303,7 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="memname">abstract void C2M2.NeuronalDynamics.Simulation.HHSimulation.SetNeuronCell </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="class_c2_m2_1_1_u_g_x_1_1_grid.html">Grid</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_grid.html">Grid</a>&#160;</td>
           <td class="paramname"><em>grid</em></td><td>)</td>
           <td></td>
         </tr>
@@ -316,7 +317,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>summary&gt; Lookup a 3D vert and get back two 1D indices and a lambda value for them </p>
 
-<p>Implemented in <a class="el" href="class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1sparse__cholesky__test.html#a2605da8d2c475a30be577866b9b28a57">C2M2.NeuronalDynamics.Simulation.sparse_cholesky_test</a>, <a class="el" href="class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_cell_solver2_full_a_p___implicit.html#a788410910135bda76a313419b0eb7623">C2M2.NeuronalDynamics.Simulation.CellSolver2FullAP_Implicit</a>, <a class="el" href="class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_cell_solver2_full_a_p___dendrite_implicit.html#a29b0ea7de874486b1cb9b9ff9a837b61">C2M2.NeuronalDynamics.Simulation.CellSolver2FullAP_DendriteImplicit</a>, <a class="el" href="class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_cell_solver2_full_a_p___soma.html#a2b0d6f10ec5ea0c146d280cdef0cc419">C2M2.NeuronalDynamics.Simulation.CellSolver2FullAP_Soma</a>, <a class="el" href="class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_cell_solver2_full_a_p___soma_implicit.html#adef855ec966465da8f7e8d9f34830e19">C2M2.NeuronalDynamics.Simulation.CellSolver2FullAP_SomaImplicit</a>, <a class="el" href="class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_cell_solver2_diffusion_reaction.html#a731fa1514e971ee8c45b712e2625c478">C2M2.NeuronalDynamics.Simulation.CellSolver2DiffusionReaction</a>, <a class="el" href="class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_cell_solver2_full_a_p.html#a17e8529a271bd92facedee4ecf28648a">C2M2.NeuronalDynamics.Simulation.CellSolver2FullAP</a>, <a class="el" href="class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_cell_solver2_simple_diffusion.html#a00f14fcf2772efaced58377afbc8032a">C2M2.NeuronalDynamics.Simulation.CellSolver2SimpleDiffusion</a>, <a class="el" href="class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_cell_solver2_simple_f_e.html#a30b5a6a83b74ce101007388205516b6c">C2M2.NeuronalDynamics.Simulation.CellSolver2SimpleFE</a>, <a class="el" href="class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_cell_solver2vb.html#a18ede8711a6627201e5aacdb9ff1dd28">C2M2.NeuronalDynamics.Simulation.CellSolver2vb</a>, and <a class="el" href="class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_simple_solver__const_derivative.html#ad5232e69ed287a31bbf1082f75780551">C2M2.NeuronalDynamics.Simulation.SimpleSolver_constDerivative</a>.</p>
+<p>Implemented in <a class="el" href="class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1sparse__cholesky__test.html#a2605da8d2c475a30be577866b9b28a57">C2M2.NeuronalDynamics.Simulation.sparse_cholesky_test</a>, <a class="el" href="class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_m_o_l___matrix__v2.html#a549acf3e8accabc751302401c8a58a72">C2M2.NeuronalDynamics.Simulation.MOL_Matrix_v2</a>, <a class="el" href="class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_cell_solver2_full_a_p___implicit.html#a788410910135bda76a313419b0eb7623">C2M2.NeuronalDynamics.Simulation.CellSolver2FullAP_Implicit</a>, <a class="el" href="class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_cell_solver2_full_a_p___dendrite_implicit.html#a29b0ea7de874486b1cb9b9ff9a837b61">C2M2.NeuronalDynamics.Simulation.CellSolver2FullAP_DendriteImplicit</a>, <a class="el" href="class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_cell_solver2_diffusion_reaction.html#a731fa1514e971ee8c45b712e2625c478">C2M2.NeuronalDynamics.Simulation.CellSolver2DiffusionReaction</a>, <a class="el" href="class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_cell_solver2_full_a_p.html#a17e8529a271bd92facedee4ecf28648a">C2M2.NeuronalDynamics.Simulation.CellSolver2FullAP</a>, <a class="el" href="class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_cell_solver2_full_a_p___soma.html#a2b0d6f10ec5ea0c146d280cdef0cc419">C2M2.NeuronalDynamics.Simulation.CellSolver2FullAP_Soma</a>, <a class="el" href="class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_cell_solver2_full_a_p___soma_implicit.html#adef855ec966465da8f7e8d9f34830e19">C2M2.NeuronalDynamics.Simulation.CellSolver2FullAP_SomaImplicit</a>, <a class="el" href="class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_cell_solver2_simple_diffusion.html#a00f14fcf2772efaced58377afbc8032a">C2M2.NeuronalDynamics.Simulation.CellSolver2SimpleDiffusion</a>, <a class="el" href="class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_cell_solver2_simple_f_e.html#a30b5a6a83b74ce101007388205516b6c">C2M2.NeuronalDynamics.Simulation.CellSolver2SimpleFE</a>, <a class="el" href="class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_cell_solver2vb.html#a18ede8711a6627201e5aacdb9ff1dd28">C2M2.NeuronalDynamics.Simulation.CellSolver2vb</a>, <a class="el" href="class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_simple_solver__const_derivative.html#ad5232e69ed287a31bbf1082f75780551">C2M2.NeuronalDynamics.Simulation.SimpleSolver_constDerivative</a>, and <a class="el" href="class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_cell_solver2.html#a692a7d065aa3ab5699253630f753a9f6">C2M2.NeuronalDynamics.Simulation.CellSolver2</a>.</p>
 
 </div>
 </div>
@@ -341,7 +342,7 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>Assets/Scripts/C2M2/NeuronalDynamics/Simulation/HHSimulation.cs</li>
+<li>C:/Users/jacob/Desktop/C2M2/virtual-reality/Assets/Scripts/C2M2/NeuronalDynamics/Simulation/HHSimulation.cs</li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

@@ -1,23 +1,7 @@
 var searchData=
 [
-  ['capsulecolliderinfo_340',['CapsuleColliderInfo',['../class_c2_m2_1_1_interaction_1_1_initialize_hand_colliders_1_1_capsule_collider_info.html',1,'C2M2::Interaction::InitializeHandColliders']]],
-  ['cellsolver2_341',['CellSolver2',['../class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_cell_solver2.html',1,'C2M2::NeuronalDynamics::Simulation']]],
-  ['cellsolver2diffusionreaction_342',['CellSolver2DiffusionReaction',['../class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_cell_solver2_diffusion_reaction.html',1,'C2M2::NeuronalDynamics::Simulation']]],
-  ['cellsolver2fullap_343',['CellSolver2FullAP',['../class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_cell_solver2_full_a_p.html',1,'C2M2::NeuronalDynamics::Simulation']]],
-  ['cellsolver2fullap_5fdendriteimplicit_344',['CellSolver2FullAP_DendriteImplicit',['../class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_cell_solver2_full_a_p___dendrite_implicit.html',1,'C2M2::NeuronalDynamics::Simulation']]],
-  ['cellsolver2fullap_5fimplicit_345',['CellSolver2FullAP_Implicit',['../class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_cell_solver2_full_a_p___implicit.html',1,'C2M2::NeuronalDynamics::Simulation']]],
-  ['cellsolver2fullap_5fsoma_346',['CellSolver2FullAP_Soma',['../class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_cell_solver2_full_a_p___soma.html',1,'C2M2::NeuronalDynamics::Simulation']]],
-  ['cellsolver2fullap_5fsomaimplicit_347',['CellSolver2FullAP_SomaImplicit',['../class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_cell_solver2_full_a_p___soma_implicit.html',1,'C2M2::NeuronalDynamics::Simulation']]],
-  ['cellsolver2simplediffusion_348',['CellSolver2SimpleDiffusion',['../class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_cell_solver2_simple_diffusion.html',1,'C2M2::NeuronalDynamics::Simulation']]],
-  ['cellsolver2simplefe_349',['CellSolver2SimpleFE',['../class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_cell_solver2_simple_f_e.html',1,'C2M2::NeuronalDynamics::Simulation']]],
-  ['cellsolver2vb_350',['CellSolver2vb',['../class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_cell_solver2vb.html',1,'C2M2::NeuronalDynamics::Simulation']]],
-  ['changeshaderbehaviour_351',['ChangeShaderBehaviour',['../class_c2_m2_1_1_tests_1_1_change_shader_behaviour.html',1,'C2M2::Tests']]],
-  ['closeallpointinfopanels_352',['CloseAllPointInfoPanels',['../class_c2_m2_1_1_interaction_1_1_u_i_1_1_close_all_point_info_panels.html',1,'C2M2::Interaction::UI']]],
-  ['colliderinfo_353',['ColliderInfo',['../class_c2_m2_1_1_interaction_1_1_initialize_hand_colliders_1_1_collider_info.html',1,'C2M2::Interaction::InitializeHandColliders']]],
-  ['collidertoggleswitch_354',['ColliderToggleSwitch',['../class_collider_toggle_switch.html',1,'']]],
-  ['coloranimate_355',['ColorAnimate',['../class_color_animate.html',1,'']]],
-  ['combinedmeshsimulation_356',['CombinedMeshSimulation',['../class_c2_m2_1_1_simulation_1_1_combined_mesh_simulation.html',1,'C2M2::Simulation']]],
-  ['controloverlay_357',['ControlOverlay',['../class_c2_m2_1_1_interaction_1_1_u_i_1_1_control_overlay.html',1,'C2M2::Interaction::UI']]],
-  ['csvbuilder_358',['CSVBuilder',['../class_c2_m2_1_1_utils_1_1_c_s_v_builder.html',1,'C2M2::Utils']]],
-  ['customlabel_359',['CustomLabel',['../class_c2_m2_1_1_attributes_1_1_custom_label.html',1,'C2M2::Attributes']]]
+  ['datapoint_291',['DataPoint',['../class_c2_m2_1_1_o_i_t_1_1_data_point.html',1,'C2M2::OIT']]],
+  ['dataset_292',['DataSet',['../class_c2_m2_1_1_o_i_t_1_1_data_set.html',1,'C2M2::OIT']]],
+  ['diameterdata_293',['DiameterData',['../struct_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_diameter_data.html',1,'C2M2::NeuronalDynamics::UGX']]],
+  ['dijkstrasearch_294',['DijkstraSearch',['../class_c2_m2_1_1_interaction_1_1_adjacency_1_1_dijkstra_search.html',1,'C2M2::Interaction::Adjacency']]]
 ];

@@ -1,11 +1,23 @@
 var searchData=
 [
-  ['neuron1d_177',['Neuron1D',['../class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_neuron1_d.html',1,'C2M2::NeuronalDynamics::Visualization']]],
-  ['neuron1dvertmap_178',['Neuron1DVertMap',['../class_neuron1_d_vert_map.html',1,'']]],
-  ['neuroncell_179',['NeuronCell',['../class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_cell.html',1,'C2M2::NeuronalDynamics::UGX']]],
-  ['nextframe_180',['NextFrame',['../class_c2_m2_1_1_visualization_1_1_v_t_k_1_1_v_t_u_player.html#a3a7db529561a77addb04dc888f2faa5e',1,'C2M2::Visualization::VTK::VTUPlayer']]],
-  ['node_181',['Node',['../struct_node.html',1,'Node'],['../struct_node.html#a813881b1591c4c0fde3e9d18a6f33135',1,'Node.Node()']]],
-  ['nodedata_182',['NodeData',['../struct_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_cell_1_1_node_data.html',1,'C2M2::NeuronalDynamics::UGX::NeuronCell']]],
-  ['normaldata_183',['NormalData',['../struct_c2_m2_1_1_u_g_x_1_1_normal_data.html',1,'C2M2.UGX.NormalData'],['../struct_c2_m2_1_1_u_g_x_1_1_normal_data.html#ae53f3c424bad9ceea842b8c27e76433d',1,'C2M2.UGX.NormalData.NormalData()']]],
-  ['normaltest_184',['NormalTest',['../class_c2_m2_1_1_tests_1_1_normal_test.html',1,'C2M2::Tests']]]
+  ['parsefile_150',['ParseFile',['../class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_t_k_1_1_v_t_u_reader.html#ac83afd7d56d7cb419661c355da7dac5b',1,'C2M2::NeuronalDynamics::Visualization::VTK::VTUReader']]],
+  ['particlefieldhandlecontroller_151',['ParticleFieldHandleController',['../class_c2_m2_1_1_o_i_t_1_1_interaction_1_1_particle_field_handle_controller.html',1,'C2M2::OIT::Interaction']]],
+  ['particlefieldscalebuttoncontroller_152',['ParticleFieldScaleButtonController',['../class_c2_m2_1_1_o_i_t_1_1_interaction_1_1_particle_field_scale_button_controller.html',1,'C2M2::OIT::Interaction']]],
+  ['particleisoquantcontrollerbutton_153',['ParticleIsoQuantControllerButton',['../class_c2_m2_1_1_o_i_t_1_1_interaction_1_1_particle_iso_quant_controller_button.html',1,'C2M2::OIT::Interaction']]],
+  ['particlesizecontrollerbutton_154',['ParticleSizeControllerButton',['../class_c2_m2_1_1_o_i_t_1_1_interaction_1_1_particle_size_controller_button.html',1,'C2M2::OIT::Interaction']]],
+  ['particlesystemasciidatareader_155',['ParticleSystemAsciiDataReader',['../class_c2_m2_1_1_o_i_t_1_1_visualization_1_1_particle_system_ascii_data_reader.html',1,'C2M2::OIT::Visualization']]],
+  ['particlesystemcontroller_156',['ParticleSystemController',['../class_c2_m2_1_1_o_i_t_1_1_interaction_1_1_particle_system_controller.html',1,'C2M2::OIT::Interaction']]],
+  ['pause_157',['Pause',['../class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_t_k_1_1_v_t_u_player.html#a730320f52cfeb2a6762714c9bc88d69d',1,'C2M2::NeuronalDynamics::Visualization::VTK::VTUPlayer']]],
+  ['peek_158',['Peek',['../class_c2_m2_1_1_interaction_1_1_adjacency_1_1_priority_queue.html#abdb8b3c3132d518321bdeda8d726713d',1,'C2M2::Interaction::Adjacency::PriorityQueue']]],
+  ['play_159',['Play',['../class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_t_k_1_1_v_t_u_player.html#a834ac5b2dd24bb235fed365c98c9ce95',1,'C2M2::NeuronalDynamics::Visualization::VTK::VTUPlayer']]],
+  ['pointinfo_160',['PointInfo',['../class_c2_m2_1_1_interaction_1_1_u_i_1_1_point_info.html',1,'C2M2::Interaction::UI']]],
+  ['position_161',['position',['../class_c2_m2_1_1_utils_1_1_transform_resetter.html#a2807a03ce3daff2017808479b7913866',1,'C2M2::Utils::TransformResetter']]],
+  ['positionsboundsresize_162',['PositionsBoundsResize',['../class_c2_m2_1_1_o_i_t_1_1_data_set.html#a97224b5123ecc13b156afb8fb8932499',1,'C2M2::OIT::DataSet']]],
+  ['pressed_163',['Pressed',['../class_c2_m2_1_1_interaction_1_1_signaling_1_1_press_event_signaler.html#a220697dc696edf37292273adf6e3a4ec',1,'C2M2::Interaction::Signaling::PressEventSignaler']]],
+  ['presseventsignaler_164',['PressEventSignaler',['../class_c2_m2_1_1_interaction_1_1_signaling_1_1_press_event_signaler.html',1,'C2M2::Interaction::Signaling']]],
+  ['previousframe_165',['PreviousFrame',['../class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_t_k_1_1_v_t_u_player.html#a6021004921db7c4c0e39314c589dff4a',1,'C2M2::NeuronalDynamics::Visualization::VTK::VTUPlayer']]],
+  ['priorityqueue_166',['PriorityQueue',['../class_c2_m2_1_1_interaction_1_1_adjacency_1_1_priority_queue.html',1,'C2M2.Interaction.Adjacency.PriorityQueue'],['../class_c2_m2_1_1_interaction_1_1_adjacency_1_1_priority_queue.html#a912e9746442193747b94ecb5ec9c4bec',1,'C2M2.Interaction.Adjacency.PriorityQueue.PriorityQueue()']]],
+  ['proximitysoundfader_167',['ProximitySoundFader',['../class_c2_m2_1_1_interaction_1_1_u_i_1_1_proximity_sound_fader.html',1,'C2M2::Interaction::UI']]],
+  ['publicovrgrabbable_168',['PublicOVRGrabbable',['../class_c2_m2_1_1_interaction_1_1_v_r_1_1_public_o_v_r_grabbable.html',1,'C2M2::Interaction::VR']]],
+  ['publicovrgrabber_169',['PublicOVRGrabber',['../class_c2_m2_1_1_interaction_1_1_v_r_1_1_public_o_v_r_grabber.html',1,'C2M2::Interaction::VR']]]
 ];
