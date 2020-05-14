@@ -87,6 +87,8 @@ $(document).ready(function(){initNavTree('class_c2_m2_1_1_utils_1_1_debug_utils_
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_c2_m2_1_1_utils_1_1_debug_utils_1_1_lines_renderer-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">C2M2.Utils.DebugUtils.LinesRenderer Class Reference</div>  </div>
@@ -100,8 +102,8 @@ Inheritance diagram for C2M2.Utils.DebugUtils.LinesRenderer:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_c2_m2_1_1_utils_1_1_debug_utils_1_1_lines_renderer__inherit__graph.png" border="0" usemap="#_c2_m2_8_utils_8_debug_utils_8_lines_renderer_inherit__map" alt="Inheritance graph"/></div>
 <map name="_c2_m2_8_utils_8_debug_utils_8_lines_renderer_inherit__map" id="_c2_m2_8_utils_8_debug_utils_8_lines_renderer_inherit__map">
-<area shape="rect" title="Draw a series of disjointed lines given a list of edges using the native LineRenderer class" alt="" coords="5,131,193,237"/>
-<area shape="rect" title=" " alt="" coords="44,5,155,83"/>
+<area shape="rect" title="Draw a series of disjointed lines given a list of edges using the native LineRenderer class" alt="" coords="5,131,244,340"/>
+<area shape="rect" title=" " alt="" coords="61,5,188,83"/>
 </map>
 </div>
 <div class="dynheader">
@@ -109,8 +111,8 @@ Collaboration diagram for C2M2.Utils.DebugUtils.LinesRenderer:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_c2_m2_1_1_utils_1_1_debug_utils_1_1_lines_renderer__coll__graph.png" border="0" usemap="#_c2_m2_8_utils_8_debug_utils_8_lines_renderer_coll__map" alt="Collaboration graph"/></div>
 <map name="_c2_m2_8_utils_8_debug_utils_8_lines_renderer_coll__map" id="_c2_m2_8_utils_8_debug_utils_8_lines_renderer_coll__map">
-<area shape="rect" title="Draw a series of disjointed lines given a list of edges using the native LineRenderer class" alt="" coords="5,131,193,237"/>
-<area shape="rect" title=" " alt="" coords="44,5,155,83"/>
+<area shape="rect" title="Draw a series of disjointed lines given a list of edges using the native LineRenderer class" alt="" coords="5,131,244,340"/>
+<area shape="rect" title=" " alt="" coords="61,5,188,83"/>
 </map>
 </div>
 <table class="memberdecls">
@@ -126,10 +128,55 @@ Public Member Functions</h2></td></tr>
 Public Attributes</h2></td></tr>
 <tr class="memitem:a848be4b385247dce256b0f5a60a60cc7"><td class="memItemLeft" align="right" valign="top">Color&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c2_m2_1_1_utils_1_1_debug_utils_1_1_lines_renderer.html#a848be4b385247dce256b0f5a60a60cc7">color</a> = Color.green</td></tr>
 <tr class="separator:a848be4b385247dce256b0f5a60a60cc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a174937e11b315c0458df7b405872e1bb"><td class="memItemLeft" align="right" valign="top">GameObject&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c2_m2_1_1_utils_1_1_debug_utils_1_1_lines_renderer.html#a174937e11b315c0458df7b405872e1bb">InitializeRenderers</a> (List&lt; <a class="el" href="struct_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_vertex.html">Vertex</a> &gt; verts, Vector3[] vertPos, float lineWidth)</td></tr>
+<tr class="separator:a174937e11b315c0458df7b405872e1bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0255dd023b5b80688bd7f508e4b37aed"><td class="memItemLeft" align="right" valign="top">GameObject&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c2_m2_1_1_utils_1_1_debug_utils_1_1_lines_renderer.html#a0255dd023b5b80688bd7f508e4b37aed">InitializeRenderers</a> (List&lt; <a class="el" href="struct_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_edge.html">Edge</a> &gt; edges, Vector3[] vertices, float lineWidth)</td></tr>
+<tr class="separator:a0255dd023b5b80688bd7f508e4b37aed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac971d404e1b1520f49974e0c73ef5069"><td class="memItemLeft" align="right" valign="top">GameObject&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c2_m2_1_1_utils_1_1_debug_utils_1_1_lines_renderer.html#ac971d404e1b1520f49974e0c73ef5069">InstantiateChild</a> (Transform parent)</td></tr>
+<tr class="separator:ac971d404e1b1520f49974e0c73ef5069"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ce2cd768e45adf63da380c8d7698aba"><td class="memItemLeft" align="right" valign="top">IEnumerator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c2_m2_1_1_utils_1_1_debug_utils_1_1_lines_renderer.html#a8ce2cd768e45adf63da380c8d7698aba">CheckToggle</a> ()</td></tr>
+<tr class="separator:a8ce2cd768e45adf63da380c8d7698aba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a831ae6c760a78fdbd59bbbc4489e2da5"><td class="memItemLeft" align="right" valign="top">LineRenderer[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c2_m2_1_1_utils_1_1_debug_utils_1_1_lines_renderer.html#a831ae6c760a78fdbd59bbbc4489e2da5">lineRenderers</a></td></tr>
+<tr class="separator:a831ae6c760a78fdbd59bbbc4489e2da5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10f249e3085cba4ecdef094f8f023ce8"><td class="memItemLeft" align="right" valign="top">GameObject&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c2_m2_1_1_utils_1_1_debug_utils_1_1_lines_renderer.html#a10f249e3085cba4ecdef094f8f023ce8">renderersGo</a></td></tr>
+<tr class="separator:a10f249e3085cba4ecdef094f8f023ce8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ee463096887be6f58a48fe37162f938"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c2_m2_1_1_utils_1_1_debug_utils_1_1_lines_renderer.html#a4ee463096887be6f58a48fe37162f938">enabledPrev</a> = true</td></tr>
+<tr class="separator:a4ee463096887be6f58a48fe37162f938"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Draw a series of disjointed lines given a list of edges using the native LineRenderer class </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a8ce2cd768e45adf63da380c8d7698aba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8ce2cd768e45adf63da380c8d7698aba">&#9670;&nbsp;</a></span>CheckToggle()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">IEnumerator C2M2.Utils.DebugUtils.LinesRenderer.CheckToggle </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="ad0c6e5e91187b4ee69e0b4fc897133f9"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad0c6e5e91187b4ee69e0b4fc897133f9">&#9670;&nbsp;</a></span>Constr()</h2>
 
@@ -166,6 +213,116 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a0255dd023b5b80688bd7f508e4b37aed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0255dd023b5b80688bd7f508e4b37aed">&#9670;&nbsp;</a></span>InitializeRenderers() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">GameObject C2M2.Utils.DebugUtils.LinesRenderer.InitializeRenderers </td>
+          <td>(</td>
+          <td class="paramtype">List&lt; <a class="el" href="struct_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_edge.html">Edge</a> &gt;&#160;</td>
+          <td class="paramname"><em>edges</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Vector3[]&#160;</td>
+          <td class="paramname"><em>vertices</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>lineWidth</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a174937e11b315c0458df7b405872e1bb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a174937e11b315c0458df7b405872e1bb">&#9670;&nbsp;</a></span>InitializeRenderers() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">GameObject C2M2.Utils.DebugUtils.LinesRenderer.InitializeRenderers </td>
+          <td>(</td>
+          <td class="paramtype">List&lt; <a class="el" href="struct_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_vertex.html">Vertex</a> &gt;&#160;</td>
+          <td class="paramname"><em>verts</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Vector3[]&#160;</td>
+          <td class="paramname"><em>vertPos</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>lineWidth</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac971d404e1b1520f49974e0c73ef5069"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac971d404e1b1520f49974e0c73ef5069">&#9670;&nbsp;</a></span>InstantiateChild()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">GameObject C2M2.Utils.DebugUtils.LinesRenderer.InstantiateChild </td>
+          <td>(</td>
+          <td class="paramtype">Transform&#160;</td>
+          <td class="paramname"><em>parent</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a89f9a8b9a5784f81a2afd34189909953"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a89f9a8b9a5784f81a2afd34189909953">&#9670;&nbsp;</a></span>Toggle()</h2>
 
@@ -195,6 +352,72 @@ Public Attributes</h2></td></tr>
           <td class="memname">Color C2M2.Utils.DebugUtils.LinesRenderer.color = Color.green</td>
         </tr>
       </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4ee463096887be6f58a48fe37162f938"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ee463096887be6f58a48fe37162f938">&#9670;&nbsp;</a></span>enabledPrev</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool C2M2.Utils.DebugUtils.LinesRenderer.enabledPrev = true</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a831ae6c760a78fdbd59bbbc4489e2da5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a831ae6c760a78fdbd59bbbc4489e2da5">&#9670;&nbsp;</a></span>lineRenderers</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">LineRenderer [] C2M2.Utils.DebugUtils.LinesRenderer.lineRenderers</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a10f249e3085cba4ecdef094f8f023ce8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a10f249e3085cba4ecdef094f8f023ce8">&#9670;&nbsp;</a></span>renderersGo</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">GameObject C2M2.Utils.DebugUtils.LinesRenderer.renderersGo</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>

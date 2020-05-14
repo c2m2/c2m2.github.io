@@ -14,7 +14,7 @@ var annotated_dup =
     [ "VRGazeScrollDownButton", "class_v_r_gaze_scroll_down_button.html", "class_v_r_gaze_scroll_down_button" ],
     [ "VRGazeScrollUpButton", "class_v_r_gaze_scroll_up_button.html", "class_v_r_gaze_scroll_up_button" ],
     [ "VRObjectResetButton", "class_v_r_object_reset_button.html", "class_v_r_object_reset_button" ],
-    [ "VRScrollbar", "class_v_r_scrollbar.html", null ],
+    [ "VRScrollbar", "class_v_r_scrollbar.html", "class_v_r_scrollbar" ],
     [ "VRScrollbarButton", "class_v_r_scrollbar_button.html", "class_v_r_scrollbar_button" ],
     [ "XFramePause", "class_x_frame_pause.html", "class_x_frame_pause" ]
 ];

@@ -1,7 +1,7 @@
 <map id="C2M2.Interaction.Signaling.PressEventSignaler" name="C2M2.Interaction.Signaling.PressEventSignaler">
-<area shape="rect" id="node1" title="Send press, holdPress, and endPress events based on set values of Pressed and RaycastTriggerManager" alt="" coords="119,131,301,252"/>
-<area shape="rect" id="node3" href="$class_c2_m2_1_1_interaction_1_1_signaling_1_1_raycast_event_signaler.html" title=" " alt="" coords="113,300,307,568"/>
-<area shape="rect" id="node2" title=" " alt="" coords="155,5,265,83"/>
-<area shape="rect" id="node4" href="$class_c2_m2_1_1_interaction_1_1_signaling_1_1_mouse_event_signaler.html" title=" " alt="" coords="5,675,199,869"/>
-<area shape="rect" id="node5" href="$class_c2_m2_1_1_interaction_1_1_signaling_1_1_oculus_event_signaler.html" title="Activate raycast triggers using oculus controller buttons and fingertip distance" alt="" coords="223,616,416,928"/>
+<area shape="rect" id="node1" title="Send press, holdPress, and endPress events based on set values of Pressed and RaycastTriggerManager" alt="" coords="144,131,383,267"/>
+<area shape="rect" id="node3" href="$class_c2_m2_1_1_interaction_1_1_signaling_1_1_raycast_event_signaler.html" title=" " alt="" coords="140,315,387,671"/>
+<area shape="rect" id="node2" title=" " alt="" coords="200,5,327,83"/>
+<area shape="rect" id="node4" href="$class_c2_m2_1_1_interaction_1_1_signaling_1_1_mouse_event_signaler.html" title=" " alt="" coords="5,807,252,1001"/>
+<area shape="rect" id="node5" href="$class_c2_m2_1_1_interaction_1_1_signaling_1_1_oculus_event_signaler.html" title="Activate raycast triggers using oculus controller buttons and fingertip distance" alt="" coords="276,719,523,1089"/>
 </map>

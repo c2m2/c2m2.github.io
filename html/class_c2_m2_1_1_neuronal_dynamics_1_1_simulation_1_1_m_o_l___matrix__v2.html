@@ -87,6 +87,9 @@ $(document).ready(function(){initNavTree('class_c2_m2_1_1_neuronal_dynamics_1_1_
   <div class="summary">
 <a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="#pri-static-methods">Static Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
+<a href="#pri-static-attribs">Static Private Attributes</a> &#124;
 <a href="class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_m_o_l___matrix__v2-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">C2M2.NeuronalDynamics.Simulation.MOL_Matrix_v2 Class Reference</div>  </div>
@@ -100,10 +103,10 @@ Inheritance diagram for C2M2.NeuronalDynamics.Simulation.MOL_Matrix_v2:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_m_o_l___matrix__v2__inherit__graph.png" border="0" usemap="#_c2_m2_8_neuronal_dynamics_8_simulation_8_m_o_l___matrix__v2_inherit__map" alt="Inheritance graph"/></div>
 <map name="_c2_m2_8_neuronal_dynamics_8_simulation_8_m_o_l___matrix__v2_inherit__map" id="_c2_m2_8_neuronal_dynamics_8_simulation_8_m_o_l___matrix__v2_inherit__map">
-<area shape="rect" title="Solve Hodkin&#45;Huxley equations using Method of Lines on a 1D rod" alt="" coords="5,748,244,1031"/>
-<area shape="rect" href="class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_h_h_simulation.html" title="Provides base functionality for Hodgkin&#45;Huxley solvers." alt="" coords="63,505,187,700"/>
-<area shape="rect" href="class_c2_m2_1_1_simulation_1_1_scalar_field_simulation.html" title="Simulation of type double[] for visualizing scalar fields on meshes" alt="" coords="47,292,203,457"/>
-<area shape="rect" href="class_c2_m2_1_1_simulation_1_1_simulation.html" title=" " alt="" coords="47,5,203,244"/>
+<area shape="rect" title="Solve Hodkin&#45;Huxley equations using Method of Lines on a 1D rod" alt="" coords="5,939,292,1515"/>
+<area shape="rect" href="class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_h_h_simulation.html" title="Provides base functionality for Hodgkin&#45;Huxley solvers." alt="" coords="65,593,232,891"/>
+<area shape="rect" href="class_c2_m2_1_1_simulation_1_1_scalar_field_simulation.html" title="Simulation of type double[] for visualizing scalar fields on meshes" alt="" coords="45,336,252,545"/>
+<area shape="rect" href="class_c2_m2_1_1_simulation_1_1_simulation.html" title=" " alt="" coords="45,5,252,288"/>
 </map>
 </div>
 <div class="dynheader">
@@ -111,13 +114,14 @@ Collaboration diagram for C2M2.NeuronalDynamics.Simulation.MOL_Matrix_v2:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_m_o_l___matrix__v2__coll__graph.png" border="0" usemap="#_c2_m2_8_neuronal_dynamics_8_simulation_8_m_o_l___matrix__v2_coll__map" alt="Collaboration graph"/></div>
 <map name="_c2_m2_8_neuronal_dynamics_8_simulation_8_m_o_l___matrix__v2_coll__map" id="_c2_m2_8_neuronal_dynamics_8_simulation_8_m_o_l___matrix__v2_coll__map">
-<area shape="rect" title="Solve Hodkin&#45;Huxley equations using Method of Lines on a 1D rod" alt="" coords="83,876,321,1159"/>
-<area shape="rect" href="class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_h_h_simulation.html" title="Provides base functionality for Hodgkin&#45;Huxley solvers." alt="" coords="140,647,264,827"/>
-<area shape="rect" href="class_c2_m2_1_1_simulation_1_1_scalar_field_simulation.html" title="Simulation of type double[] for visualizing scalar fields on meshes" alt="" coords="27,433,183,584"/>
-<area shape="rect" href="class_c2_m2_1_1_simulation_1_1_simulation.html" title=" " alt="" coords="5,132,161,371"/>
-<area shape="rect" href="class_c2_m2_1_1_visualization_1_1_l_u_t_gradient.html" title="Create a fast and memory&#45;friendly color lookup table from a gradient" alt="" coords="186,169,397,334"/>
-<area shape="rect" title=" " alt="" coords="236,5,347,83"/>
-<area shape="rect" title=" " alt="" coords="207,470,263,547"/>
+<area shape="rect" title="Solve Hodkin&#45;Huxley equations using Method of Lines on a 1D rod" alt="" coords="141,1052,428,1628"/>
+<area shape="rect" href="class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_h_h_simulation.html" title="Provides base functionality for Hodgkin&#45;Huxley solvers." alt="" coords="205,808,364,1003"/>
+<area shape="rect" href="class_c2_m2_1_1_simulation_1_1_scalar_field_simulation.html" title="Simulation of type double[] for visualizing scalar fields on meshes" alt="" coords="27,477,233,672"/>
+<area shape="rect" href="class_c2_m2_1_1_simulation_1_1_simulation.html" title=" " alt="" coords="5,132,212,415"/>
+<area shape="rect" href="class_c2_m2_1_1_visualization_1_1_l_u_t_gradient.html" title="Create a fast and memory&#45;friendly color lookup table from a gradient" alt="" coords="236,161,499,385"/>
+<area shape="rect" title=" " alt="" coords="304,5,431,83"/>
+<area shape="rect" title=" " alt="" coords="257,536,312,613"/>
+<area shape="rect" title=" " alt="" coords="345,536,416,613"/>
 </map>
 </div>
 <table class="memberdecls">
@@ -141,7 +145,7 @@ Static Public Attributes</h2></td></tr>
 <tr class="separator:a307944a7e59c491406e10d65aebf6850"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad7121dd6ce90c62ff6bd4358c7bd41f9"><td class="memItemLeft" align="right" valign="top">const double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_m_o_l___matrix__v2.html#ad7121dd6ce90c62ff6bd4358c7bd41f9">ni</a> = 0.5</td></tr>
 <tr class="separator:ad7121dd6ce90c62ff6bd4358c7bd41f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2c1e16d98aa67b08536f528d875ebd20"><td class="memItemLeft" align="right" valign="top">const double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_m_o_l___matrix__v2.html#a2c1e16d98aa67b08536f528d875ebd20">b</a> = <a class="el" href="class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_m_o_l___matrix__v2.html#a7fc25d372f9ff53834ce061210ae87bb">MOL_Matrix_v2.a</a> / (2 * MOL_Matrix_v2.R)</td></tr>
+<tr class="memitem:a2c1e16d98aa67b08536f528d875ebd20"><td class="memItemLeft" align="right" valign="top">const double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_m_o_l___matrix__v2.html#a2c1e16d98aa67b08536f528d875ebd20">b</a> = <a class="el" href="class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_m_o_l___matrix__v2.html#a7fc25d372f9ff53834ce061210ae87bb">MOL_Matrix_v2.a</a> / (2 * <a class="el" href="class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_m_o_l___matrix__v2.html#a3a347b0a349d47ba1c26e5fb5703e20e">MOL_Matrix_v2.R</a>)</td></tr>
 <tr class="separator:a2c1e16d98aa67b08536f528d875ebd20"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a10a6a3d629378576e5e5acb440632d39"><td class="memItemLeft" align="right" valign="top">const double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_m_o_l___matrix__v2.html#a10a6a3d629378576e5e5acb440632d39">c</a> = 0.09</td></tr>
 <tr class="separator:a10a6a3d629378576e5e5acb440632d39"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -151,7 +155,7 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:aeca3608486a020b821a8a6147fcfa877"><td class="memItemLeft" align="right" valign="top">override double[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_m_o_l___matrix__v2.html#aeca3608486a020b821a8a6147fcfa877">Get1DValues</a> ()</td></tr>
 <tr class="memdesc:aeca3608486a020b821a8a6147fcfa877"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the current simulation values  <a href="class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_m_o_l___matrix__v2.html#aeca3608486a020b821a8a6147fcfa877">More...</a><br /></td></tr>
 <tr class="separator:aeca3608486a020b821a8a6147fcfa877"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab845df6127c647b379a4bf88028f4173"><td class="memItemLeft" align="right" valign="top">override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_m_o_l___matrix__v2.html#ab845df6127c647b379a4bf88028f4173">Set1DValues</a> (Tuple&lt; int, double &gt;[] newValues)</td></tr>
+<tr class="memitem:ab845df6127c647b379a4bf88028f4173"><td class="memItemLeft" align="right" valign="top">override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_m_o_l___matrix__v2.html#ab845df6127c647b379a4bf88028f4173">Set1DValues</a> (Tuple&lt; int, double &gt;[] <a class="el" href="class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_m_o_l___matrix__v2.html#ad543c9197c4fdaf044b5310241ba61a8">newValues</a>)</td></tr>
 <tr class="separator:ab845df6127c647b379a4bf88028f4173"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a549acf3e8accabc751302401c8a58a72"><td class="memItemLeft" align="right" valign="top">override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_m_o_l___matrix__v2.html#a549acf3e8accabc751302401c8a58a72">SetNeuronCell</a> (<a class="el" href="_cell_solver2_8cs.html#a2b783a2e292d742495c94154b0efe7ad">Grid</a> grid)</td></tr>
 <tr class="memdesc:a549acf3e8accabc751302401c8a58a72"><td class="mdescLeft">&#160;</td><td class="mdescRight">summary&gt; Lookup a 3D vert and get back two 1D indices and a lambda value for them  <a href="class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_m_o_l___matrix__v2.html#a549acf3e8accabc751302401c8a58a72">More...</a><br /></td></tr>
@@ -174,6 +178,63 @@ Protected Member Functions</h2></td></tr>
 <tr class="separator:a3b57b0f601ddd535bad35604494cbd23 inherit pro_methods_class_c2_m2_1_1_simulation_1_1_simulation"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae16be28180e6933a58c45eabe18fcc1d inherit pro_methods_class_c2_m2_1_1_simulation_1_1_simulation"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c2_m2_1_1_simulation_1_1_simulation.html#ae16be28180e6933a58c45eabe18fcc1d">OnUpdate</a> ()</td></tr>
 <tr class="separator:ae16be28180e6933a58c45eabe18fcc1d inherit pro_methods_class_c2_m2_1_1_simulation_1_1_simulation"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-methods"></a>
+Static Private Member Functions</h2></td></tr>
+<tr class="memitem:ae5d8df5b9372155bb0d3b56a9529bf3a"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="_cell_solver2_8cs.html#a6058ca601435497840c5c0e68973e442">Matrix</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_m_o_l___matrix__v2.html#ae5d8df5b9372155bb0d3b56a9529bf3a">PointwiseExpb</a> (<a class="el" href="_cell_solver2_8cs.html#a6058ca601435497840c5c0e68973e442">Matrix</a> V, double bb)</td></tr>
+<tr class="separator:ae5d8df5b9372155bb0d3b56a9529bf3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a12e96ad5c889884ae78eee0bfbb52e8f"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="_cell_solver2_8cs.html#a6058ca601435497840c5c0e68973e442">Matrix</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_m_o_l___matrix__v2.html#a12e96ad5c889884ae78eee0bfbb52e8f">BuildStencil</a> ()</td></tr>
+<tr class="memdesc:a12e96ad5c889884ae78eee0bfbb52e8f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Build the system matrix needed for the spatial solves along the rod  <a href="class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_m_o_l___matrix__v2.html#a12e96ad5c889884ae78eee0bfbb52e8f">More...</a><br /></td></tr>
+<tr class="separator:a12e96ad5c889884ae78eee0bfbb52e8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa4b5817c8c411253a59ef06cbdeaaf80"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="_cell_solver2_8cs.html#a6058ca601435497840c5c0e68973e442">Matrix</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_m_o_l___matrix__v2.html#aa4b5817c8c411253a59ef06cbdeaaf80">ReactF</a> (<a class="el" href="_cell_solver2_8cs.html#a6058ca601435497840c5c0e68973e442">Matrix</a> V, <a class="el" href="_cell_solver2_8cs.html#a6058ca601435497840c5c0e68973e442">Matrix</a> NN, <a class="el" href="_cell_solver2_8cs.html#a6058ca601435497840c5c0e68973e442">Matrix</a> MM, <a class="el" href="_cell_solver2_8cs.html#a6058ca601435497840c5c0e68973e442">Matrix</a> HH)</td></tr>
+<tr class="memdesc:aa4b5817c8c411253a59ef06cbdeaaf80"><td class="mdescLeft">&#160;</td><td class="mdescRight">computes the reaction term of the HH equation  <a href="class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_m_o_l___matrix__v2.html#aa4b5817c8c411253a59ef06cbdeaaf80">More...</a><br /></td></tr>
+<tr class="separator:aa4b5817c8c411253a59ef06cbdeaaf80"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e02ef941f6322f83b0e1e8664744095"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="_cell_solver2_8cs.html#a6058ca601435497840c5c0e68973e442">Matrix</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_m_o_l___matrix__v2.html#a9e02ef941f6322f83b0e1e8664744095">An</a> (<a class="el" href="_cell_solver2_8cs.html#a6058ca601435497840c5c0e68973e442">Matrix</a> V)</td></tr>
+<tr class="memdesc:a9e02ef941f6322f83b0e1e8664744095"><td class="mdescLeft">&#160;</td><td class="mdescRight">TODO: What does this do? What is V? What does it return?  <a href="class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_m_o_l___matrix__v2.html#a9e02ef941f6322f83b0e1e8664744095">More...</a><br /></td></tr>
+<tr class="separator:a9e02ef941f6322f83b0e1e8664744095"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3dee1297cc053b302f991cb8f39364cb"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="_cell_solver2_8cs.html#a6058ca601435497840c5c0e68973e442">Matrix</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_m_o_l___matrix__v2.html#a3dee1297cc053b302f991cb8f39364cb">Bn</a> (<a class="el" href="_cell_solver2_8cs.html#a6058ca601435497840c5c0e68973e442">Matrix</a> V)</td></tr>
+<tr class="memdesc:a3dee1297cc053b302f991cb8f39364cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">TODO: What does this do? What is V? What does it return?  <a href="class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_m_o_l___matrix__v2.html#a3dee1297cc053b302f991cb8f39364cb">More...</a><br /></td></tr>
+<tr class="separator:a3dee1297cc053b302f991cb8f39364cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a89d05ed5c887d0f7573fa5528720c0"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="_cell_solver2_8cs.html#a6058ca601435497840c5c0e68973e442">Matrix</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_m_o_l___matrix__v2.html#a8a89d05ed5c887d0f7573fa5528720c0">Am</a> (<a class="el" href="_cell_solver2_8cs.html#a6058ca601435497840c5c0e68973e442">Matrix</a> V)</td></tr>
+<tr class="memdesc:a8a89d05ed5c887d0f7573fa5528720c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">TODO: What does this do? What is V? What does it return?  <a href="class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_m_o_l___matrix__v2.html#a8a89d05ed5c887d0f7573fa5528720c0">More...</a><br /></td></tr>
+<tr class="separator:a8a89d05ed5c887d0f7573fa5528720c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa144c8b255883ea1b57bad3f342a3e62"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="_cell_solver2_8cs.html#a6058ca601435497840c5c0e68973e442">Matrix</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_m_o_l___matrix__v2.html#aa144c8b255883ea1b57bad3f342a3e62">Bm</a> (<a class="el" href="_cell_solver2_8cs.html#a6058ca601435497840c5c0e68973e442">Matrix</a> V)</td></tr>
+<tr class="memdesc:aa144c8b255883ea1b57bad3f342a3e62"><td class="mdescLeft">&#160;</td><td class="mdescRight">TODO: What does this do? What is V? What does it return?  <a href="class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_m_o_l___matrix__v2.html#aa144c8b255883ea1b57bad3f342a3e62">More...</a><br /></td></tr>
+<tr class="separator:aa144c8b255883ea1b57bad3f342a3e62"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d6346de421bf9c9103ee00c45d69bb1"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="_cell_solver2_8cs.html#a6058ca601435497840c5c0e68973e442">Matrix</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_m_o_l___matrix__v2.html#a6d6346de421bf9c9103ee00c45d69bb1">Ah</a> (<a class="el" href="_cell_solver2_8cs.html#a6058ca601435497840c5c0e68973e442">Matrix</a> V)</td></tr>
+<tr class="memdesc:a6d6346de421bf9c9103ee00c45d69bb1"><td class="mdescLeft">&#160;</td><td class="mdescRight">TODO: What does this do? What is V? What does it return?  <a href="class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_m_o_l___matrix__v2.html#a6d6346de421bf9c9103ee00c45d69bb1">More...</a><br /></td></tr>
+<tr class="separator:a6d6346de421bf9c9103ee00c45d69bb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a866fd58879a79fb71227a1ee3b3d31ca"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="_cell_solver2_8cs.html#a6058ca601435497840c5c0e68973e442">Matrix</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_m_o_l___matrix__v2.html#a866fd58879a79fb71227a1ee3b3d31ca">Bh</a> (<a class="el" href="_cell_solver2_8cs.html#a6058ca601435497840c5c0e68973e442">Matrix</a> V)</td></tr>
+<tr class="memdesc:a866fd58879a79fb71227a1ee3b3d31ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">TODO: What does this do? What is V? What does it return?  <a href="class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_m_o_l___matrix__v2.html#a866fd58879a79fb71227a1ee3b3d31ca">More...</a><br /></td></tr>
+<tr class="separator:a866fd58879a79fb71227a1ee3b3d31ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a3b4c875fd5c58121d12998ce8584e053"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_cell_solver2_8cs.html#a6058ca601435497840c5c0e68973e442">Matrix</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_m_o_l___matrix__v2.html#a3b4c875fd5c58121d12998ce8584e053">U</a></td></tr>
+<tr class="separator:a3b4c875fd5c58121d12998ce8584e053"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a67d4c790bf26972333b26faafd1d92fb"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_m_o_l___matrix__v2.html#a67d4c790bf26972333b26faafd1d92fb">i</a> = -1</td></tr>
+<tr class="separator:a67d4c790bf26972333b26faafd1d92fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad543c9197c4fdaf044b5310241ba61a8"><td class="memItemLeft" align="right" valign="top">double[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_m_o_l___matrix__v2.html#ad543c9197c4fdaf044b5310241ba61a8">newValues</a></td></tr>
+<tr class="separator:ad543c9197c4fdaf044b5310241ba61a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4bf7433fb3bb6e26e7f3dfea1a6dfe60"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_m_o_l___matrix__v2.html#a4bf7433fb3bb6e26e7f3dfea1a6dfe60">vstart</a> = 55</td></tr>
+<tr class="separator:a4bf7433fb3bb6e26e7f3dfea1a6dfe60"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-attribs"></a>
+Static Private Attributes</h2></td></tr>
+<tr class="memitem:a3a347b0a349d47ba1c26e5fb5703e20e"><td class="memItemLeft" align="right" valign="top">const double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_m_o_l___matrix__v2.html#a3a347b0a349d47ba1c26e5fb5703e20e">R</a> = 10.0</td></tr>
+<tr class="separator:a3a347b0a349d47ba1c26e5fb5703e20e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba99c3c47628cf1644b00f1436b1220b"><td class="memItemLeft" align="right" valign="top">const double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_m_o_l___matrix__v2.html#aba99c3c47628cf1644b00f1436b1220b">gna</a> = 120.0</td></tr>
+<tr class="separator:aba99c3c47628cf1644b00f1436b1220b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7c7ac86cd4f2702cbee7903fbad6f2e"><td class="memItemLeft" align="right" valign="top">const double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_m_o_l___matrix__v2.html#ab7c7ac86cd4f2702cbee7903fbad6f2e">gl</a> = 0.3</td></tr>
+<tr class="separator:ab7c7ac86cd4f2702cbee7903fbad6f2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad086cf720ed0857dfb8dd7460914c415"><td class="memItemLeft" align="right" valign="top">const double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_m_o_l___matrix__v2.html#ad086cf720ed0857dfb8dd7460914c415">ena</a> = 112.0</td></tr>
+<tr class="separator:ad086cf720ed0857dfb8dd7460914c415"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a91d059aee54df88c34540b7f6a7d971a"><td class="memItemLeft" align="right" valign="top">const double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_m_o_l___matrix__v2.html#a91d059aee54df88c34540b7f6a7d971a">el</a> = 0.6</td></tr>
+<tr class="separator:a91d059aee54df88c34540b7f6a7d971a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a176281eb1e8f1e8f590c608c1721b0d6"><td class="memItemLeft" align="right" valign="top">const double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_m_o_l___matrix__v2.html#a176281eb1e8f1e8f590c608c1721b0d6">mi</a> = 0.4</td></tr>
+<tr class="separator:a176281eb1e8f1e8f590c608c1721b0d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ab828a8f49cfe214b0526a09916a57e"><td class="memItemLeft" align="right" valign="top">const double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_m_o_l___matrix__v2.html#a6ab828a8f49cfe214b0526a09916a57e">hi</a> = 0.2</td></tr>
+<tr class="separator:a6ab828a8f49cfe214b0526a09916a57e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -221,7 +282,7 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:aec928adabf7f50b7254a618bfe859cee inherit pro_attribs_class_c2_m2_1_1_simulation_1_1_simulation"><td class="memItemLeft" align="right" valign="top">Mutex&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c2_m2_1_1_simulation_1_1_simulation.html#aec928adabf7f50b7254a618bfe859cee">mutex</a></td></tr>
 <tr class="separator:aec928adabf7f50b7254a618bfe859cee inherit pro_attribs_class_c2_m2_1_1_simulation_1_1_simulation"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header properties_class_c2_m2_1_1_simulation_1_1_scalar_field_simulation"><td colspan="2" onclick="javascript:toggleInherit('properties_class_c2_m2_1_1_simulation_1_1_scalar_field_simulation')"><img src="closed.png" alt="-"/>&#160;Properties inherited from <a class="el" href="class_c2_m2_1_1_simulation_1_1_scalar_field_simulation.html">C2M2.Simulation.ScalarFieldSimulation</a></td></tr>
-<tr class="memitem:ab105bae6258689fc8229f2aac45a2770 inherit properties_class_c2_m2_1_1_simulation_1_1_scalar_field_simulation"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_c2_m2_1_1_visualization_1_1_l_u_t_gradient.html">LUTGradient</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c2_m2_1_1_simulation_1_1_scalar_field_simulation.html#ab105bae6258689fc8229f2aac45a2770">colorLUT</a> = null<code> [get]</code></td></tr>
+<tr class="memitem:ab105bae6258689fc8229f2aac45a2770 inherit properties_class_c2_m2_1_1_simulation_1_1_scalar_field_simulation"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_c2_m2_1_1_visualization_1_1_l_u_t_gradient.html">LUTGradient</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c2_m2_1_1_simulation_1_1_scalar_field_simulation.html#ab105bae6258689fc8229f2aac45a2770">colorLUT</a> = null<code> [get, private set]</code></td></tr>
 <tr class="separator:ab105bae6258689fc8229f2aac45a2770 inherit properties_class_c2_m2_1_1_simulation_1_1_scalar_field_simulation"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -229,6 +290,243 @@ Additional Inherited Members</h2></td></tr>
 <p>Uses a system Stencil matrix where the spatial solve is done using a 1D 3 point center difference to approximate the second derivative d^2V/dx^2 And Forward Euler is used for the time stepping.</p>
 <p>The system matrix will solve the system of center difference equations in space and then step through time using FE </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a6d6346de421bf9c9103ee00c45d69bb1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6d6346de421bf9c9103ee00c45d69bb1">&#9670;&nbsp;</a></span>Ah()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="_cell_solver2_8cs.html#a6058ca601435497840c5c0e68973e442">Matrix</a> C2M2.NeuronalDynamics.Simulation.MOL_Matrix_v2.Ah </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_cell_solver2_8cs.html#a6058ca601435497840c5c0e68973e442">Matrix</a>&#160;</td>
+          <td class="paramname"><em>V</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>TODO: What does this do? What is V? What does it return? </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">V</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd></dd></dl>
+
+</div>
+</div>
+<a id="a8a89d05ed5c887d0f7573fa5528720c0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8a89d05ed5c887d0f7573fa5528720c0">&#9670;&nbsp;</a></span>Am()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="_cell_solver2_8cs.html#a6058ca601435497840c5c0e68973e442">Matrix</a> C2M2.NeuronalDynamics.Simulation.MOL_Matrix_v2.Am </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_cell_solver2_8cs.html#a6058ca601435497840c5c0e68973e442">Matrix</a>&#160;</td>
+          <td class="paramname"><em>V</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>TODO: What does this do? What is V? What does it return? </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">V</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd></dd></dl>
+
+</div>
+</div>
+<a id="a9e02ef941f6322f83b0e1e8664744095"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9e02ef941f6322f83b0e1e8664744095">&#9670;&nbsp;</a></span>An()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="_cell_solver2_8cs.html#a6058ca601435497840c5c0e68973e442">Matrix</a> C2M2.NeuronalDynamics.Simulation.MOL_Matrix_v2.An </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_cell_solver2_8cs.html#a6058ca601435497840c5c0e68973e442">Matrix</a>&#160;</td>
+          <td class="paramname"><em>V</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>TODO: What does this do? What is V? What does it return? </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">V</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd></dd></dl>
+
+</div>
+</div>
+<a id="a866fd58879a79fb71227a1ee3b3d31ca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a866fd58879a79fb71227a1ee3b3d31ca">&#9670;&nbsp;</a></span>Bh()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="_cell_solver2_8cs.html#a6058ca601435497840c5c0e68973e442">Matrix</a> C2M2.NeuronalDynamics.Simulation.MOL_Matrix_v2.Bh </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_cell_solver2_8cs.html#a6058ca601435497840c5c0e68973e442">Matrix</a>&#160;</td>
+          <td class="paramname"><em>V</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>TODO: What does this do? What is V? What does it return? </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">V</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd></dd></dl>
+
+</div>
+</div>
+<a id="aa144c8b255883ea1b57bad3f342a3e62"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa144c8b255883ea1b57bad3f342a3e62">&#9670;&nbsp;</a></span>Bm()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="_cell_solver2_8cs.html#a6058ca601435497840c5c0e68973e442">Matrix</a> C2M2.NeuronalDynamics.Simulation.MOL_Matrix_v2.Bm </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_cell_solver2_8cs.html#a6058ca601435497840c5c0e68973e442">Matrix</a>&#160;</td>
+          <td class="paramname"><em>V</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>TODO: What does this do? What is V? What does it return? </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">V</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd></dd></dl>
+
+</div>
+</div>
+<a id="a3dee1297cc053b302f991cb8f39364cb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3dee1297cc053b302f991cb8f39364cb">&#9670;&nbsp;</a></span>Bn()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="_cell_solver2_8cs.html#a6058ca601435497840c5c0e68973e442">Matrix</a> C2M2.NeuronalDynamics.Simulation.MOL_Matrix_v2.Bn </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_cell_solver2_8cs.html#a6058ca601435497840c5c0e68973e442">Matrix</a>&#160;</td>
+          <td class="paramname"><em>V</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>TODO: What does this do? What is V? What does it return? </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">V</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd></dd></dl>
+
+</div>
+</div>
+<a id="a12e96ad5c889884ae78eee0bfbb52e8f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a12e96ad5c889884ae78eee0bfbb52e8f">&#9670;&nbsp;</a></span>BuildStencil()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="_cell_solver2_8cs.html#a6058ca601435497840c5c0e68973e442">Matrix</a> C2M2.NeuronalDynamics.Simulation.MOL_Matrix_v2.BuildStencil </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Build the system matrix needed for the spatial solves along the rod </p>
+
+</div>
+</div>
 <a id="aeca3608486a020b821a8a6147fcfa877"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aeca3608486a020b821a8a6147fcfa877">&#9670;&nbsp;</a></span>Get1DValues()</h2>
 
@@ -256,6 +554,103 @@ Additional Inherited Members</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="namespace_c2_m2_1_1_neuronal_dynamics_1_1_simulation.html" title="Neuronal Dynamics simulation code">Simulation</a> scalars at current timestep. Returns null if simulation isn't started </dd></dl>
 
 <p>Implements <a class="el" href="class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_h_h_simulation.html#a46c472a42c89876775303f35add54f6e">C2M2.NeuronalDynamics.Simulation.HHSimulation</a>.</p>
+
+</div>
+</div>
+<a id="ae5d8df5b9372155bb0d3b56a9529bf3a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae5d8df5b9372155bb0d3b56a9529bf3a">&#9670;&nbsp;</a></span>PointwiseExpb()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="_cell_solver2_8cs.html#a6058ca601435497840c5c0e68973e442">Matrix</a> C2M2.NeuronalDynamics.Simulation.MOL_Matrix_v2.PointwiseExpb </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_cell_solver2_8cs.html#a6058ca601435497840c5c0e68973e442">Matrix</a>&#160;</td>
+          <td class="paramname"><em>V</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>bb</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa4b5817c8c411253a59ef06cbdeaaf80"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa4b5817c8c411253a59ef06cbdeaaf80">&#9670;&nbsp;</a></span>ReactF()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="_cell_solver2_8cs.html#a6058ca601435497840c5c0e68973e442">Matrix</a> C2M2.NeuronalDynamics.Simulation.MOL_Matrix_v2.ReactF </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_cell_solver2_8cs.html#a6058ca601435497840c5c0e68973e442">Matrix</a>&#160;</td>
+          <td class="paramname"><em>V</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_cell_solver2_8cs.html#a6058ca601435497840c5c0e68973e442">Matrix</a>&#160;</td>
+          <td class="paramname"><em>NN</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_cell_solver2_8cs.html#a6058ca601435497840c5c0e68973e442">Matrix</a>&#160;</td>
+          <td class="paramname"><em>MM</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_cell_solver2_8cs.html#a6058ca601435497840c5c0e68973e442">Matrix</a>&#160;</td>
+          <td class="paramname"><em>HH</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>computes the reaction term of the HH equation </p>
+<p>TODO: Fill in the parameters here, especially since they are not named clearly</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">V</td><td></td></tr>
+    <tr><td class="paramname">NN</td><td></td></tr>
+    <tr><td class="paramname">MM</td><td></td></tr>
+    <tr><td class="paramname">HH</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd></dd></dl>
 
 </div>
 </div>
@@ -378,7 +773,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const double C2M2.NeuronalDynamics.Simulation.MOL_Matrix_v2.b = <a class="el" href="class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_m_o_l___matrix__v2.html#a7fc25d372f9ff53834ce061210ae87bb">MOL_Matrix_v2.a</a> / (2 * MOL_Matrix_v2.R)</td>
+          <td class="memname">const double C2M2.NeuronalDynamics.Simulation.MOL_Matrix_v2.b = <a class="el" href="class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_m_o_l___matrix__v2.html#a7fc25d372f9ff53834ce061210ae87bb">MOL_Matrix_v2.a</a> / (2 * <a class="el" href="class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_m_o_l___matrix__v2.html#a3a347b0a349d47ba1c26e5fb5703e20e">MOL_Matrix_v2.R</a>)</td>
         </tr>
       </table>
   </td>
@@ -456,6 +851,50 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a id="a91d059aee54df88c34540b7f6a7d971a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a91d059aee54df88c34540b7f6a7d971a">&#9670;&nbsp;</a></span>el</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const double C2M2.NeuronalDynamics.Simulation.MOL_Matrix_v2.el = 0.6</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad086cf720ed0857dfb8dd7460914c415"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad086cf720ed0857dfb8dd7460914c415">&#9670;&nbsp;</a></span>ena</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const double C2M2.NeuronalDynamics.Simulation.MOL_Matrix_v2.ena = 112.0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a83916214fef531084bbb9bab2f6356bc"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a83916214fef531084bbb9bab2f6356bc">&#9670;&nbsp;</a></span>gk</h2>
 
@@ -472,6 +911,138 @@ Additional Inherited Members</h2></td></tr>
   </td>
   <td class="mlabels-right">
 <span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab7c7ac86cd4f2702cbee7903fbad6f2e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab7c7ac86cd4f2702cbee7903fbad6f2e">&#9670;&nbsp;</a></span>gl</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const double C2M2.NeuronalDynamics.Simulation.MOL_Matrix_v2.gl = 0.3</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aba99c3c47628cf1644b00f1436b1220b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aba99c3c47628cf1644b00f1436b1220b">&#9670;&nbsp;</a></span>gna</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const double C2M2.NeuronalDynamics.Simulation.MOL_Matrix_v2.gna = 120.0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6ab828a8f49cfe214b0526a09916a57e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6ab828a8f49cfe214b0526a09916a57e">&#9670;&nbsp;</a></span>hi</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const double C2M2.NeuronalDynamics.Simulation.MOL_Matrix_v2.hi = 0.2</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a67d4c790bf26972333b26faafd1d92fb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a67d4c790bf26972333b26faafd1d92fb">&#9670;&nbsp;</a></span>i</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int C2M2.NeuronalDynamics.Simulation.MOL_Matrix_v2.i = -1</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a176281eb1e8f1e8f590c608c1721b0d6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a176281eb1e8f1e8f590c608c1721b0d6">&#9670;&nbsp;</a></span>mi</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const double C2M2.NeuronalDynamics.Simulation.MOL_Matrix_v2.mi = 0.4</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad543c9197c4fdaf044b5310241ba61a8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad543c9197c4fdaf044b5310241ba61a8">&#9670;&nbsp;</a></span>newValues</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double [] C2M2.NeuronalDynamics.Simulation.MOL_Matrix_v2.newValues</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -544,6 +1115,28 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a id="a3a347b0a349d47ba1c26e5fb5703e20e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3a347b0a349d47ba1c26e5fb5703e20e">&#9670;&nbsp;</a></span>R</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const double C2M2.NeuronalDynamics.Simulation.MOL_Matrix_v2.R = 10.0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a484cf16da278fb89687f1dfa59fcea53"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a484cf16da278fb89687f1dfa59fcea53">&#9670;&nbsp;</a></span>T</h2>
 
@@ -560,6 +1153,50 @@ Additional Inherited Members</h2></td></tr>
   </td>
   <td class="mlabels-right">
 <span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3b4c875fd5c58121d12998ce8584e053"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3b4c875fd5c58121d12998ce8584e053">&#9670;&nbsp;</a></span>U</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_cell_solver2_8cs.html#a6058ca601435497840c5c0e68973e442">Matrix</a> C2M2.NeuronalDynamics.Simulation.MOL_Matrix_v2.U</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4bf7433fb3bb6e26e7f3dfea1a6dfe60"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4bf7433fb3bb6e26e7f3dfea1a6dfe60">&#9670;&nbsp;</a></span>vstart</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double C2M2.NeuronalDynamics.Simulation.MOL_Matrix_v2.vstart = 55</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">

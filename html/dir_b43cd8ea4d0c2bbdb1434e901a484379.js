@@ -4,7 +4,8 @@ var dir_b43cd8ea4d0c2bbdb1434e901a484379 =
       [ "AwakeTest", "class_c2_m2_1_1_tests_1_1_awake_test.html", null ]
     ] ],
     [ "SimpleBurst.cs", "_simple_burst_8cs.html", [
-      [ "SimpleBurst", "class_c2_m2_1_1_tests_1_1_simple_burst.html", null ]
+      [ "SimpleBurst", "class_c2_m2_1_1_tests_1_1_simple_burst.html", "class_c2_m2_1_1_tests_1_1_simple_burst" ],
+      [ "MyJob", "struct_c2_m2_1_1_tests_1_1_simple_burst_1_1_my_job.html", "struct_c2_m2_1_1_tests_1_1_simple_burst_1_1_my_job" ]
     ] ],
     [ "StartTest.cs", "_start_test_8cs.html", [
       [ "StartTest", "class_c2_m2_1_1_tests_1_1_start_test.html", null ]

@@ -1,5 +1,5 @@
 <map id="C2M2.NeuronalDynamics.UGX.SynapseData" name="C2M2.NeuronalDynamics.UGX.SynapseData">
-<area shape="rect" id="node1" title="Data for synapse attachment" alt="" coords="55,175,258,267"/>
-<area shape="rect" id="node2" href="$interface_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_i_attachment_data.html" title="Marker interface for attachment data" alt="" coords="5,20,124,97"/>
-<area shape="rect" id="node3" href="$interface_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_i_synapse.html" title="A synapse respresentation" alt="" coords="149,5,351,112"/>
+<area shape="rect" id="node1" title="Data for synapse attachment" alt="" coords="67,175,297,267"/>
+<area shape="rect" id="node2" href="$interface_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_i_attachment_data.html" title="Marker interface for attachment data" alt="" coords="5,20,148,97"/>
+<area shape="rect" id="node3" href="$interface_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_i_synapse.html" title="A synapse respresentation" alt="" coords="172,5,403,112"/>
 </map>

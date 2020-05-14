@@ -1,6 +1,8 @@
 var dir_aa2f1464dbd68fd16f087404fc0b1e76 =
 [
-    [ "PDBReader.cs", "_p_d_b_reader_8cs.html", null ],
+    [ "PDBReader.cs", "_p_d_b_reader_8cs.html", [
+      [ "PDBReader", "class_c2_m2_1_1_molecular_dynamics_1_1_visualization_1_1_p_d_b_reader.html", "class_c2_m2_1_1_molecular_dynamics_1_1_visualization_1_1_p_d_b_reader" ]
+    ] ],
     [ "Sphere.cs", "_sphere_8cs.html", [
       [ "Sphere", "struct_c2_m2_1_1_molecular_dynamics_1_1_visualization_1_1_sphere.html", "struct_c2_m2_1_1_molecular_dynamics_1_1_visualization_1_1_sphere" ]
     ] ],

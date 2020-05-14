@@ -88,6 +88,7 @@ $(document).ready(function(){initNavTree('class_c2_m2_1_1_utils_1_1_timer.html',
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#properties">Properties</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_c2_m2_1_1_utils_1_1_timer-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">C2M2.Utils.Timer Class Reference</div>  </div>
@@ -98,7 +99,7 @@ Collaboration diagram for C2M2.Utils.Timer:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_c2_m2_1_1_utils_1_1_timer__coll__graph.png" border="0" usemap="#_c2_m2_8_utils_8_timer_coll__map" alt="Collaboration graph"/></div>
 <map name="_c2_m2_8_utils_8_timer_coll__map" id="_c2_m2_8_utils_8_timer_coll__map">
-<area shape="rect" title=" " alt="" coords="5,5,128,185"/>
+<area shape="rect" title=" " alt="" coords="5,5,156,244"/>
 </map>
 </div>
 <table class="memberdecls">
@@ -130,8 +131,19 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
 Properties</h2></td></tr>
-<tr class="memitem:aa24390997914e425a7f4ce82c6e5da55"><td class="memItemLeft" align="right" valign="top">List&lt; <a class="el" href="struct_c2_m2_1_1_utils_1_1_timer_1_1_timer_node.html">TimerNode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c2_m2_1_1_utils_1_1_timer.html#aa24390997914e425a7f4ce82c6e5da55">timerNodes</a><code> [get]</code></td></tr>
+<tr class="memitem:aa24390997914e425a7f4ce82c6e5da55"><td class="memItemLeft" align="right" valign="top">List&lt; <a class="el" href="struct_c2_m2_1_1_utils_1_1_timer_1_1_timer_node.html">TimerNode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c2_m2_1_1_utils_1_1_timer.html#aa24390997914e425a7f4ce82c6e5da55">timerNodes</a><code> [get, private set]</code></td></tr>
 <tr class="separator:aa24390997914e425a7f4ce82c6e5da55"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:ac4628e93a11303dc852c24fc8d76218e"><td class="memItemLeft" align="right" valign="top">DateTime&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c2_m2_1_1_utils_1_1_timer.html#ac4628e93a11303dc852c24fc8d76218e">t0</a></td></tr>
+<tr class="separator:ac4628e93a11303dc852c24fc8d76218e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade7c605a7432f44e234cecaa3618aee1"><td class="memItemLeft" align="right" valign="top">DateTime&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c2_m2_1_1_utils_1_1_timer.html#ade7c605a7432f44e234cecaa3618aee1">t1</a></td></tr>
+<tr class="separator:ade7c605a7432f44e234cecaa3618aee1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab720bf0e63db93879ba9aa2d2d9d1289"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c2_m2_1_1_utils_1_1_timer.html#ab720bf0e63db93879ba9aa2d2d9d1289">started</a> = false</td></tr>
+<tr class="separator:ab720bf0e63db93879ba9aa2d2d9d1289"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2d6246cb46a37bef9465de24c67a57b"><td class="memItemLeft" align="right" valign="top">Stopwatch&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c2_m2_1_1_utils_1_1_timer.html#ad2d6246cb46a37bef9465de24c67a57b">stopwatch</a></td></tr>
+<tr class="separator:ad2d6246cb46a37bef9465de24c67a57b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a7166ba083d55a66c651463c866a641a6"></a>
@@ -289,6 +301,95 @@ Properties</h2></td></tr>
 
 </div>
 </div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="ab720bf0e63db93879ba9aa2d2d9d1289"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab720bf0e63db93879ba9aa2d2d9d1289">&#9670;&nbsp;</a></span>started</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool C2M2.Utils.Timer.started = false</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad2d6246cb46a37bef9465de24c67a57b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad2d6246cb46a37bef9465de24c67a57b">&#9670;&nbsp;</a></span>stopwatch</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Stopwatch C2M2.Utils.Timer.stopwatch</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac4628e93a11303dc852c24fc8d76218e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac4628e93a11303dc852c24fc8d76218e">&#9670;&nbsp;</a></span>t0</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">DateTime C2M2.Utils.Timer.t0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ade7c605a7432f44e234cecaa3618aee1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ade7c605a7432f44e234cecaa3618aee1">&#9670;&nbsp;</a></span>t1</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">DateTime C2M2.Utils.Timer.t1</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <h2 class="groupheader">Property Documentation</h2>
 <a id="aa24390997914e425a7f4ce82c6e5da55"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa24390997914e425a7f4ce82c6e5da55">&#9670;&nbsp;</a></span>timerNodes</h2>
@@ -305,7 +406,7 @@ Properties</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">get</span></span>  </td>
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">private set</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">

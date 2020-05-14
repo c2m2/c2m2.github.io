@@ -86,6 +86,8 @@ $(document).ready(function(){initNavTree('class_v_r_button.html',''); initResiza
 <div class="header">
   <div class="summary">
 <a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_v_r_button-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">VRButton Class Reference</div>  </div>
@@ -99,8 +101,8 @@ Inheritance diagram for VRButton:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_v_r_button__inherit__graph.png" border="0" usemap="#_v_r_button_inherit__map" alt="Inheritance graph"/></div>
 <map name="_v_r_button_inherit__map" id="_v_r_button_inherit__map">
-<area shape="rect" title="If an object enters this button&#39;s trigger collider, and if that object is marked as the index finger,..." alt="" coords="5,131,145,296"/>
-<area shape="rect" title=" " alt="" coords="20,5,131,83"/>
+<area shape="rect" title="If an object enters this button&#39;s trigger collider, and if that object is marked as the index finger,..." alt="" coords="5,131,180,355"/>
+<area shape="rect" title=" " alt="" coords="29,5,156,83"/>
 </map>
 </div>
 <div class="dynheader">
@@ -108,8 +110,8 @@ Collaboration diagram for VRButton:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_v_r_button__coll__graph.png" border="0" usemap="#_v_r_button_coll__map" alt="Collaboration graph"/></div>
 <map name="_v_r_button_coll__map" id="_v_r_button_coll__map">
-<area shape="rect" title="If an object enters this button&#39;s trigger collider, and if that object is marked as the index finger,..." alt="" coords="5,131,145,296"/>
-<area shape="rect" title=" " alt="" coords="20,5,131,83"/>
+<area shape="rect" title="If an object enters this button&#39;s trigger collider, and if that object is marked as the index finger,..." alt="" coords="5,131,180,355"/>
+<area shape="rect" title=" " alt="" coords="29,5,156,83"/>
 </map>
 </div>
 <table class="memberdecls">
@@ -129,10 +131,152 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a20c6084d3ab2ecde593785421ef741e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1bb1b3c742d929280c7c8a41e1ad8d0e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_v_r_button.html#a1bb1b3c742d929280c7c8a41e1ad8d0e">deactivateOnExit</a> = false</td></tr>
 <tr class="separator:a1bb1b3c742d929280c7c8a41e1ad8d0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a8a47dd1aad15a96acddad4135d770766"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_v_r_button.html#a8a47dd1aad15a96acddad4135d770766">Start</a> ()</td></tr>
+<tr class="separator:a8a47dd1aad15a96acddad4135d770766"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaab11317b3b5c4e32d0c9538a4a4bacd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_v_r_button.html#aaab11317b3b5c4e32d0c9538a4a4bacd">OnTriggerEnter</a> (Collider other)</td></tr>
+<tr class="separator:aaab11317b3b5c4e32d0c9538a4a4bacd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d8fe998c47cb3785fbe26a249d6a19b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_v_r_button.html#a2d8fe998c47cb3785fbe26a249d6a19b">OnTriggerStay</a> (Collider other)</td></tr>
+<tr class="separator:a2d8fe998c47cb3785fbe26a249d6a19b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad5a297400afd9b9f2db2743cdfa518d7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_v_r_button.html#ad5a297400afd9b9f2db2743cdfa518d7">OnTriggerExit</a> (Collider other)</td></tr>
+<tr class="separator:ad5a297400afd9b9f2db2743cdfa518d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a39e29b4aae70ef1dfbc3807c9ae8868d"><td class="memItemLeft" align="right" valign="top">Button&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_v_r_button.html#a39e29b4aae70ef1dfbc3807c9ae8868d">button</a></td></tr>
+<tr class="separator:a39e29b4aae70ef1dfbc3807c9ae8868d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>If an object enters this button's trigger collider, and if that object is marked as the index finger, then invoke the attached button's functionality </p>
-</div><h2 class="groupheader">Member Data Documentation</h2>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="aaab11317b3b5c4e32d0c9538a4a4bacd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaab11317b3b5c4e32d0c9538a4a4bacd">&#9670;&nbsp;</a></span>OnTriggerEnter()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void VRButton.OnTriggerEnter </td>
+          <td>(</td>
+          <td class="paramtype">Collider&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad5a297400afd9b9f2db2743cdfa518d7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad5a297400afd9b9f2db2743cdfa518d7">&#9670;&nbsp;</a></span>OnTriggerExit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void VRButton.OnTriggerExit </td>
+          <td>(</td>
+          <td class="paramtype">Collider&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2d8fe998c47cb3785fbe26a249d6a19b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2d8fe998c47cb3785fbe26a249d6a19b">&#9670;&nbsp;</a></span>OnTriggerStay()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void VRButton.OnTriggerStay </td>
+          <td>(</td>
+          <td class="paramtype">Collider&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8a47dd1aad15a96acddad4135d770766"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8a47dd1aad15a96acddad4135d770766">&#9670;&nbsp;</a></span>Start()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void VRButton.Start </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a39e29b4aae70ef1dfbc3807c9ae8868d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a39e29b4aae70ef1dfbc3807c9ae8868d">&#9670;&nbsp;</a></span>button</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Button VRButton.button</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a4a32c56f6cd8163fc9824c54aee6f35a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4a32c56f6cd8163fc9824c54aee6f35a">&#9670;&nbsp;</a></span>clickOnEnter</h2>
 

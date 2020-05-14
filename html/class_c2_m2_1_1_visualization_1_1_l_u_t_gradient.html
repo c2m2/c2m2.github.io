@@ -89,6 +89,8 @@ $(document).ready(function(){initNavTree('class_c2_m2_1_1_visualization_1_1_l_u_
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="#properties">Properties</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_c2_m2_1_1_visualization_1_1_l_u_t_gradient-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">C2M2.Visualization.LUTGradient Class Reference</div>  </div>
@@ -102,8 +104,8 @@ Inheritance diagram for C2M2.Visualization.LUTGradient:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_c2_m2_1_1_visualization_1_1_l_u_t_gradient__inherit__graph.png" border="0" usemap="#_c2_m2_8_visualization_8_l_u_t_gradient_inherit__map" alt="Inheritance graph"/></div>
 <map name="_c2_m2_8_visualization_8_l_u_t_gradient_inherit__map" id="_c2_m2_8_visualization_8_l_u_t_gradient_inherit__map">
-<area shape="rect" title="Create a fast and memory&#45;friendly color lookup table from a gradient" alt="" coords="5,131,216,296"/>
-<area shape="rect" title=" " alt="" coords="55,5,166,83"/>
+<area shape="rect" title="Create a fast and memory&#45;friendly color lookup table from a gradient" alt="" coords="5,131,268,355"/>
+<area shape="rect" title=" " alt="" coords="73,5,200,83"/>
 </map>
 </div>
 <div class="dynheader">
@@ -111,8 +113,8 @@ Collaboration diagram for C2M2.Visualization.LUTGradient:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_c2_m2_1_1_visualization_1_1_l_u_t_gradient__coll__graph.png" border="0" usemap="#_c2_m2_8_visualization_8_l_u_t_gradient_coll__map" alt="Collaboration graph"/></div>
 <map name="_c2_m2_8_visualization_8_l_u_t_gradient_coll__map" id="_c2_m2_8_visualization_8_l_u_t_gradient_coll__map">
-<area shape="rect" title="Create a fast and memory&#45;friendly color lookup table from a gradient" alt="" coords="5,131,216,296"/>
-<area shape="rect" title=" " alt="" coords="55,5,166,83"/>
+<area shape="rect" title="Create a fast and memory&#45;friendly color lookup table from a gradient" alt="" coords="5,131,268,355"/>
+<area shape="rect" title=" " alt="" coords="73,5,200,83"/>
 </map>
 </div>
 <table class="memberdecls">
@@ -149,8 +151,23 @@ Properties</h2></td></tr>
 <tr class="separator:a82209f5952b054c5693c000c52a20535"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2d41a16b06db0f379e3861a1c03cd81f"><td class="memItemLeft" align="right" valign="top">Gradient&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c2_m2_1_1_visualization_1_1_l_u_t_gradient.html#a2d41a16b06db0f379e3861a1c03cd81f">Gradient</a><code> [get, set]</code></td></tr>
 <tr class="separator:a2d41a16b06db0f379e3861a1c03cd81f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adf90904069fcc396dcaaabaf62c61a37"><td class="memItemLeft" align="right" valign="top">Color32[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c2_m2_1_1_visualization_1_1_l_u_t_gradient.html#adf90904069fcc396dcaaabaf62c61a37">gradientLUT</a> = null<code> [get]</code></td></tr>
+<tr class="memitem:adf90904069fcc396dcaaabaf62c61a37"><td class="memItemLeft" align="right" valign="top">Color32[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c2_m2_1_1_visualization_1_1_l_u_t_gradient.html#adf90904069fcc396dcaaabaf62c61a37">gradientLUT</a> = null<code> [get, private set]</code></td></tr>
 <tr class="separator:adf90904069fcc396dcaaabaf62c61a37"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a268d1cd53fb5c7e04dcb82bd85d25153"><td class="memItemLeft" align="right" valign="top">Color32[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c2_m2_1_1_visualization_1_1_l_u_t_gradient.html#a268d1cd53fb5c7e04dcb82bd85d25153">BuildLUT</a> (<a class="el" href="class_c2_m2_1_1_visualization_1_1_l_u_t_gradient.html#a2d41a16b06db0f379e3861a1c03cd81f">Gradient</a> <a class="el" href="class_c2_m2_1_1_visualization_1_1_l_u_t_gradient.html#a10f835e3b135aed5291ef96ca7e55fd0">gradient</a>, int <a class="el" href="class_c2_m2_1_1_visualization_1_1_l_u_t_gradient.html#af33d52cde65ec45ae58aa5a747ffdd66">lutRes</a>)</td></tr>
+<tr class="separator:a268d1cd53fb5c7e04dcb82bd85d25153"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29c3fc834c2775f18aba0b8d4100fddf"><td class="memItemLeft" align="right" valign="top">float[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c2_m2_1_1_visualization_1_1_l_u_t_gradient.html#a29c3fc834c2775f18aba0b8d4100fddf">RescaleArray</a> (float[] scalars, <a class="el" href="class_c2_m2_1_1_visualization_1_1_l_u_t_gradient.html#a688932d2ef2f3d19dde01be156a525d6">ExtremaMethod</a> <a class="el" href="class_c2_m2_1_1_visualization_1_1_l_u_t_gradient.html#a435f33f0555cc4067c96e188bbb2949e">extremaMethod</a>)</td></tr>
+<tr class="separator:a29c3fc834c2775f18aba0b8d4100fddf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:af33d52cde65ec45ae58aa5a747ffdd66"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c2_m2_1_1_visualization_1_1_l_u_t_gradient.html#af33d52cde65ec45ae58aa5a747ffdd66">lutRes</a> = 256</td></tr>
+<tr class="memdesc:af33d52cde65ec45ae58aa5a747ffdd66"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resolution of the lookup table. Increase for finer-grained color evaluations  <a href="class_c2_m2_1_1_visualization_1_1_l_u_t_gradient.html#af33d52cde65ec45ae58aa5a747ffdd66">More...</a><br /></td></tr>
+<tr class="separator:af33d52cde65ec45ae58aa5a747ffdd66"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10f835e3b135aed5291ef96ca7e55fd0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_c2_m2_1_1_visualization_1_1_l_u_t_gradient.html#a2d41a16b06db0f379e3861a1c03cd81f">Gradient</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c2_m2_1_1_visualization_1_1_l_u_t_gradient.html#a10f835e3b135aed5291ef96ca7e55fd0">gradient</a></td></tr>
+<tr class="separator:a10f835e3b135aed5291ef96ca7e55fd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Create a fast and memory-friendly color lookup table from a gradient </p>
@@ -186,6 +203,42 @@ Properties</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a268d1cd53fb5c7e04dcb82bd85d25153"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a268d1cd53fb5c7e04dcb82bd85d25153">&#9670;&nbsp;</a></span>BuildLUT()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Color32 [] C2M2.Visualization.LUTGradient.BuildLUT </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_c2_m2_1_1_visualization_1_1_l_u_t_gradient.html#a2d41a16b06db0f379e3861a1c03cd81f">Gradient</a>&#160;</td>
+          <td class="paramname"><em>gradient</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>lutRes</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a6a84570a767ee286eec27477218802c4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6a84570a767ee286eec27477218802c4">&#9670;&nbsp;</a></span>Evaluate() <span class="overload">[1/2]</span></h2>
 
@@ -223,6 +276,42 @@ Properties</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Given the extrema method, color an entire array of scalers using the LUT </p>
+
+</div>
+</div>
+<a id="a29c3fc834c2775f18aba0b8d4100fddf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a29c3fc834c2775f18aba0b8d4100fddf">&#9670;&nbsp;</a></span>RescaleArray()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float [] C2M2.Visualization.LUTGradient.RescaleArray </td>
+          <td>(</td>
+          <td class="paramtype">float[]&#160;</td>
+          <td class="paramname"><em>scalars</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_c2_m2_1_1_visualization_1_1_l_u_t_gradient.html#a688932d2ef2f3d19dde01be156a525d6">ExtremaMethod</a>&#160;</td>
+          <td class="paramname"><em>extremaMethod</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -269,6 +358,52 @@ Properties</h2></td></tr>
 
 </div>
 </div>
+<a id="a10f835e3b135aed5291ef96ca7e55fd0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a10f835e3b135aed5291ef96ca7e55fd0">&#9670;&nbsp;</a></span>gradient</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_c2_m2_1_1_visualization_1_1_l_u_t_gradient.html#a2d41a16b06db0f379e3861a1c03cd81f">Gradient</a> C2M2.Visualization.LUTGradient.gradient</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af33d52cde65ec45ae58aa5a747ffdd66"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af33d52cde65ec45ae58aa5a747ffdd66">&#9670;&nbsp;</a></span>lutRes</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int C2M2.Visualization.LUTGradient.lutRes = 256</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Resolution of the lookup table. Increase for finer-grained color evaluations </p>
+
+</div>
+</div>
 <h2 class="groupheader">Property Documentation</h2>
 <a id="a2d41a16b06db0f379e3861a1c03cd81f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2d41a16b06db0f379e3861a1c03cd81f">&#9670;&nbsp;</a></span>Gradient</h2>
@@ -307,7 +442,7 @@ Properties</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">get</span></span>  </td>
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">private set</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">

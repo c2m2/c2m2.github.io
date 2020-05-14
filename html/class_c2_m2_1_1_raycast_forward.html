@@ -87,6 +87,9 @@ $(document).ready(function(){initNavTree('class_c2_m2_1_1_raycast_forward.html',
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="#pri-types">Private Types</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_c2_m2_1_1_raycast_forward-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">C2M2.RaycastForward Class Reference</div>  </div>
@@ -97,8 +100,8 @@ Inheritance diagram for C2M2.RaycastForward:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_c2_m2_1_1_raycast_forward__inherit__graph.png" border="0" usemap="#_c2_m2_8_raycast_forward_inherit__map" alt="Inheritance graph"/></div>
 <map name="_c2_m2_8_raycast_forward_inherit__map" id="_c2_m2_8_raycast_forward_inherit__map">
-<area shape="rect" title=" " alt="" coords="5,131,185,355"/>
-<area shape="rect" title=" " alt="" coords="40,5,151,83"/>
+<area shape="rect" title=" " alt="" coords="5,131,228,619"/>
+<area shape="rect" title=" " alt="" coords="53,5,180,83"/>
 </map>
 </div>
 <div class="dynheader">
@@ -106,8 +109,13 @@ Collaboration diagram for C2M2.RaycastForward:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_c2_m2_1_1_raycast_forward__coll__graph.png" border="0" usemap="#_c2_m2_8_raycast_forward_coll__map" alt="Collaboration graph"/></div>
 <map name="_c2_m2_8_raycast_forward_coll__map" id="_c2_m2_8_raycast_forward_coll__map">
-<area shape="rect" title=" " alt="" coords="5,131,185,355"/>
-<area shape="rect" title=" " alt="" coords="40,5,151,83"/>
+<area shape="rect" title=" " alt="" coords="5,904,228,1377"/>
+<area shape="rect" title=" " alt="" coords="27,139,153,217"/>
+<area shape="rect" href="class_c2_m2_1_1_raycast_event_manager.html" title="Attach this script to parent gameObject, create one child with one raycast trigger per child...." alt="" coords="125,544,340,841"/>
+<area shape="rect" href="class_c2_m2_1_1_raycast_press_events.html" title="Store custom events that the corresponding RaycastTriggerManager will invoke" alt="" coords="153,316,360,452"/>
+<area shape="rect" href="class_c2_m2_1_1_raycast_press_events_1_1_raycast_hit_event.html" title=" " alt="" coords="177,132,392,224"/>
+<area shape="rect" title=" " alt="" coords="177,5,392,83"/>
+<area shape="rect" title=" " alt="" coords="384,345,455,423"/>
 </map>
 </div>
 <table class="memberdecls">
@@ -158,7 +166,88 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a9d1311b350e6c2e567249c65e20e6a46"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8c054437329f09293b64bb5d5824fdea"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c2_m2_1_1_raycast_forward.html#a8c054437329f09293b64bb5d5824fdea">mouseMode</a> = false</td></tr>
 <tr class="separator:a8c054437329f09293b64bb5d5824fdea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-types"></a>
+Private Types</h2></td></tr>
+<tr class="memitem:a604e56e27eea3b9e4048d4cd1d42d5c5"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c2_m2_1_1_raycast_forward.html#a604e56e27eea3b9e4048d4cd1d42d5c5">StateCode</a> : sbyte { <a class="el" href="class_c2_m2_1_1_raycast_forward.html#a604e56e27eea3b9e4048d4cd1d42d5c5a6c3e226b4d4795d518ab341b0824ec29">StateCode.NULL</a>, 
+<a class="el" href="class_c2_m2_1_1_raycast_forward.html#a604e56e27eea3b9e4048d4cd1d42d5c5a4e5e3542d523b7fb9c61887d5bb7d642">StateCode.HIT</a>, 
+<a class="el" href="class_c2_m2_1_1_raycast_forward.html#a604e56e27eea3b9e4048d4cd1d42d5c5a0c6d9dfb485b43c6fba87439f9f73ac4">StateCode.HOLD</a>, 
+<a class="el" href="class_c2_m2_1_1_raycast_forward.html#a604e56e27eea3b9e4048d4cd1d42d5c5ab1a326c06d88bf042f73d70f50197905">StateCode.END</a>
+ }</td></tr>
+<tr class="separator:a604e56e27eea3b9e4048d4cd1d42d5c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a21838bd66896b53956a3e0f48df16c73"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c2_m2_1_1_raycast_forward.html#a21838bd66896b53956a3e0f48df16c73">Start</a> ()</td></tr>
+<tr class="separator:a21838bd66896b53956a3e0f48df16c73"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2168a1a978d519774f45675ae5c7e9b4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c2_m2_1_1_raycast_forward.html#a2168a1a978d519774f45675ae5c7e9b4">FixedUpdate</a> ()</td></tr>
+<tr class="separator:a2168a1a978d519774f45675ae5c7e9b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a80a6a4a4d2e95ceb3c7f44459344eb6b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c2_m2_1_1_raycast_forward.html#a80a6a4a4d2e95ceb3c7f44459344eb6b">TryRaycastHit</a> ()</td></tr>
+<tr class="memdesc:a80a6a4a4d2e95ceb3c7f44459344eb6b"><td class="mdescLeft">&#160;</td><td class="mdescRight">If raycastButton is pressed, attempt to raycast to valid target and activate valid raycastTrigger events on the target  <a href="class_c2_m2_1_1_raycast_forward.html#a80a6a4a4d2e95ceb3c7f44459344eb6b">More...</a><br /></td></tr>
+<tr class="separator:a80a6a4a4d2e95ceb3c7f44459344eb6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a8e1ea07115a3873eebaf7915e4607b93"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_c2_m2_1_1_raycast_event_manager.html">RaycastEventManager</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c2_m2_1_1_raycast_forward.html#a8e1ea07115a3873eebaf7915e4607b93">activeTriggerManager</a></td></tr>
+<tr class="separator:a8e1ea07115a3873eebaf7915e4607b93"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a33604e6888d6651722e2c6df57adf4c4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c2_m2_1_1_raycast_forward.html#a33604e6888d6651722e2c6df57adf4c4">activeObjectID</a> = -1</td></tr>
+<tr class="separator:a33604e6888d6651722e2c6df57adf4c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d0f52a1a8f0ba53a771621296949001"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c2_m2_1_1_raycast_forward.html#a5d0f52a1a8f0ba53a771621296949001">valid</a> = false</td></tr>
+<tr class="separator:a5d0f52a1a8f0ba53a771621296949001"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a601d96417fe64cd14431372fbb2cd474"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c2_m2_1_1_raycast_forward.html#a601d96417fe64cd14431372fbb2cd474">clicked</a> = false</td></tr>
+<tr class="separator:a601d96417fe64cd14431372fbb2cd474"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a69076d84330773c914f855242f8be1b0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c2_m2_1_1_raycast_forward.html#a69076d84330773c914f855242f8be1b0">touched</a> = false</td></tr>
+<tr class="separator:a69076d84330773c914f855242f8be1b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23623f91c1daaf1a43bcd353cbfa0298"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c2_m2_1_1_raycast_forward.html#a23623f91c1daaf1a43bcd353cbfa0298">hitTriggered</a></td></tr>
+<tr class="separator:a23623f91c1daaf1a43bcd353cbfa0298"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a19b43260fe743a9021f044a4ec466cf7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c2_m2_1_1_raycast_forward.html#a19b43260fe743a9021f044a4ec466cf7">holdTriggered</a></td></tr>
+<tr class="separator:a19b43260fe743a9021f044a4ec466cf7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab4c20281f5de7d31e256017b150e92c7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c2_m2_1_1_raycast_forward.html#ab4c20281f5de7d31e256017b150e92c7">endTriggered</a></td></tr>
+<tr class="separator:ab4c20281f5de7d31e256017b150e92c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8ebf6b395c3d9f4afe9d564ae2f8bf2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c2_m2_1_1_raycast_forward.html#ac8ebf6b395c3d9f4afe9d564ae2f8bf2">validHitEvent</a></td></tr>
+<tr class="separator:ac8ebf6b395c3d9f4afe9d564ae2f8bf2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af3a6df42c8d974a5bc01b13ca7b33f71"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c2_m2_1_1_raycast_forward.html#af3a6df42c8d974a5bc01b13ca7b33f71">validHoldEvent</a></td></tr>
+<tr class="separator:af3a6df42c8d974a5bc01b13ca7b33f71"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad60aedfdd87d5c31e1fb707f169dd9fc"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c2_m2_1_1_raycast_forward.html#ad60aedfdd87d5c31e1fb707f169dd9fc">validEndEvent</a></td></tr>
+<tr class="separator:ad60aedfdd87d5c31e1fb707f169dd9fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d12ac9930d44c338a6df67991561da5"><td class="memItemLeft" align="right" valign="top">Vector3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c2_m2_1_1_raycast_forward.html#a3d12ac9930d44c338a6df67991561da5">relativeForward</a> = new Vector3(0, 0, 1)</td></tr>
+<tr class="separator:a3d12ac9930d44c338a6df67991561da5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f69193fa5400b45eab1d25b9eb30475"><td class="memItemLeft" align="right" valign="top">LineRenderer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c2_m2_1_1_raycast_forward.html#a4f69193fa5400b45eab1d25b9eb30475">lineRend</a></td></tr>
+<tr class="separator:a4f69193fa5400b45eab1d25b9eb30475"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90107e0983c5d56c10644e9f8ff795f4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c2_m2_1_1_raycast_forward.html#a90107e0983c5d56c10644e9f8ff795f4">invisible</a> = false</td></tr>
+<tr class="separator:a90107e0983c5d56c10644e9f8ff795f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af475e856d1dca096d3970e9c4e9f5e7a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_c2_m2_1_1_raycast_forward.html#a604e56e27eea3b9e4048d4cd1d42d5c5">StateCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c2_m2_1_1_raycast_forward.html#af475e856d1dca096d3970e9c4e9f5e7a">currentState</a> = <a class="el" href="class_c2_m2_1_1_raycast_forward.html#a604e56e27eea3b9e4048d4cd1d42d5c5a6c3e226b4d4795d518ab341b0824ec29">StateCode.NULL</a></td></tr>
+<tr class="separator:af475e856d1dca096d3970e9c4e9f5e7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Enumeration Documentation</h2>
+<a id="a604e56e27eea3b9e4048d4cd1d42d5c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a604e56e27eea3b9e4048d4cd1d42d5c5">&#9670;&nbsp;</a></span>StateCode</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="class_c2_m2_1_1_raycast_forward.html#a604e56e27eea3b9e4048d4cd1d42d5c5">C2M2.RaycastForward.StateCode</a> : sbyte</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a604e56e27eea3b9e4048d4cd1d42d5c5a6c3e226b4d4795d518ab341b0824ec29"></a>NULL&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a604e56e27eea3b9e4048d4cd1d42d5c5a4e5e3542d523b7fb9c61887d5bb7d642"></a>HIT&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a604e56e27eea3b9e4048d4cd1d42d5c5a0c6d9dfb485b43c6fba87439f9f73ac4"></a>HOLD&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a604e56e27eea3b9e4048d4cd1d42d5c5ab1a326c06d88bf042f73d70f50197905"></a>END&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="a0e067c4b01af426778496583fe3599a1"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0e067c4b01af426778496583fe3599a1">&#9670;&nbsp;</a></span>ChangeStaticHandColor()</h2>
@@ -178,7 +267,173 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a2168a1a978d519774f45675ae5c7e9b4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2168a1a978d519774f45675ae5c7e9b4">&#9670;&nbsp;</a></span>FixedUpdate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void C2M2.RaycastForward.FixedUpdate </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a21838bd66896b53956a3e0f48df16c73"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a21838bd66896b53956a3e0f48df16c73">&#9670;&nbsp;</a></span>Start()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void C2M2.RaycastForward.Start </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a80a6a4a4d2e95ceb3c7f44459344eb6b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a80a6a4a4d2e95ceb3c7f44459344eb6b">&#9670;&nbsp;</a></span>TryRaycastHit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void C2M2.RaycastForward.TryRaycastHit </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>If raycastButton is pressed, attempt to raycast to valid target and activate valid raycastTrigger events on the target </p>
+<p>Don't draw the line renderer</p>
+
+</div>
+</div>
 <h2 class="groupheader">Member Data Documentation</h2>
+<a id="a33604e6888d6651722e2c6df57adf4c4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a33604e6888d6651722e2c6df57adf4c4">&#9670;&nbsp;</a></span>activeObjectID</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int C2M2.RaycastForward.activeObjectID = -1</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8e1ea07115a3873eebaf7915e4607b93"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8e1ea07115a3873eebaf7915e4607b93">&#9670;&nbsp;</a></span>activeTriggerManager</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_c2_m2_1_1_raycast_event_manager.html">RaycastEventManager</a> C2M2.RaycastForward.activeTriggerManager</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a601d96417fe64cd14431372fbb2cd474"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a601d96417fe64cd14431372fbb2cd474">&#9670;&nbsp;</a></span>clicked</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool C2M2.RaycastForward.clicked = false</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af475e856d1dca096d3970e9c4e9f5e7a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af475e856d1dca096d3970e9c4e9f5e7a">&#9670;&nbsp;</a></span>currentState</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_c2_m2_1_1_raycast_forward.html#a604e56e27eea3b9e4048d4cd1d42d5c5">StateCode</a> C2M2.RaycastForward.currentState = <a class="el" href="class_c2_m2_1_1_raycast_forward.html#a604e56e27eea3b9e4048d4cd1d42d5c5a6c3e226b4d4795d518ab341b0824ec29">StateCode.NULL</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a609fda75240e9b2844a73f5962804f7b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a609fda75240e9b2844a73f5962804f7b">&#9670;&nbsp;</a></span>defaultHandObject</h2>
 
@@ -217,6 +472,28 @@ Public Attributes</h2></td></tr>
           <td class="memname">Color C2M2.RaycastForward.endCol = Color.yellow</td>
         </tr>
       </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab4c20281f5de7d31e256017b150e92c7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab4c20281f5de7d31e256017b150e92c7">&#9670;&nbsp;</a></span>endTriggered</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool C2M2.RaycastForward.endTriggered</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>
@@ -263,6 +540,28 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a23623f91c1daaf1a43bcd353cbfa0298"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a23623f91c1daaf1a43bcd353cbfa0298">&#9670;&nbsp;</a></span>hitTriggered</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool C2M2.RaycastForward.hitTriggered</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a216b4d9093039dc6ae22a4866a7c5f2a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a216b4d9093039dc6ae22a4866a7c5f2a">&#9670;&nbsp;</a></span>holdAmp</h2>
 
@@ -291,6 +590,28 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a19b43260fe743a9021f044a4ec466cf7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a19b43260fe743a9021f044a4ec466cf7">&#9670;&nbsp;</a></span>holdTriggered</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool C2M2.RaycastForward.holdTriggered</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="ab53eea0b569e511d40935921cf4c205b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab53eea0b569e511d40935921cf4c205b">&#9670;&nbsp;</a></span>hysteresisDist</h2>
 
@@ -305,6 +626,28 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a90107e0983c5d56c10644e9f8ff795f4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a90107e0983c5d56c10644e9f8ff795f4">&#9670;&nbsp;</a></span>invisible</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool C2M2.RaycastForward.invisible = false</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a6c8326d626dbdfb6b8883cdc62fffaa6"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6c8326d626dbdfb6b8883cdc62fffaa6">&#9670;&nbsp;</a></span>layerMask</h2>
 
@@ -315,6 +658,28 @@ Public Attributes</h2></td></tr>
           <td class="memname">LayerMask C2M2.RaycastForward.layerMask</td>
         </tr>
       </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4f69193fa5400b45eab1d25b9eb30475"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4f69193fa5400b45eab1d25b9eb30475">&#9670;&nbsp;</a></span>lineRend</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">LineRenderer C2M2.RaycastForward.lineRend</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>
@@ -403,6 +768,28 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a3d12ac9930d44c338a6df67991561da5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3d12ac9930d44c338a6df67991561da5">&#9670;&nbsp;</a></span>relativeForward</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Vector3 C2M2.RaycastForward.relativeForward = new Vector3(0, 0, 1)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="ac9b129925edaa851d836b0e3b623f72d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac9b129925edaa851d836b0e3b623f72d">&#9670;&nbsp;</a></span>rightHand</h2>
 
@@ -445,6 +832,28 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a69076d84330773c914f855242f8be1b0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a69076d84330773c914f855242f8be1b0">&#9670;&nbsp;</a></span>touched</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool C2M2.RaycastForward.touched = false</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a7bb26638fe2c6ae2d38c5cffd49b2f3d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7bb26638fe2c6ae2d38c5cffd49b2f3d">&#9670;&nbsp;</a></span>triggerButton</h2>
 
@@ -455,6 +864,94 @@ Public Attributes</h2></td></tr>
           <td class="memname">OVRInput.Button C2M2.RaycastForward.triggerButton = OVRInput.Button.PrimaryIndexTrigger</td>
         </tr>
       </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5d0f52a1a8f0ba53a771621296949001"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5d0f52a1a8f0ba53a771621296949001">&#9670;&nbsp;</a></span>valid</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool C2M2.RaycastForward.valid = false</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad60aedfdd87d5c31e1fb707f169dd9fc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad60aedfdd87d5c31e1fb707f169dd9fc">&#9670;&nbsp;</a></span>validEndEvent</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool C2M2.RaycastForward.validEndEvent</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac8ebf6b395c3d9f4afe9d564ae2f8bf2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac8ebf6b395c3d9f4afe9d564ae2f8bf2">&#9670;&nbsp;</a></span>validHitEvent</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool C2M2.RaycastForward.validHitEvent</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af3a6df42c8d974a5bc01b13ca7b33f71"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af3a6df42c8d974a5bc01b13ca7b33f71">&#9670;&nbsp;</a></span>validHoldEvent</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool C2M2.RaycastForward.validHoldEvent</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>

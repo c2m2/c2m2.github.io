@@ -86,6 +86,7 @@ $(document).ready(function(){initNavTree('class_c2_m2_1_1_neuronal_dynamics_1_1_
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-static-methods">Static Private Member Functions</a> &#124;
 <a href="class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_t_k_1_1_v_t_u_reader-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">C2M2.NeuronalDynamics.Visualization.VTK.VTUReader Class Reference</div>  </div>
@@ -99,7 +100,7 @@ Collaboration diagram for C2M2.NeuronalDynamics.Visualization.VTK.VTUReader:</di
 <div class="dyncontent">
 <div class="center"><img src="class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_t_k_1_1_v_t_u_reader__coll__graph.png" border="0" usemap="#_c2_m2_8_neuronal_dynamics_8_visualization_8_v_t_k_8_v_t_u_reader_coll__map" alt="Collaboration graph"/></div>
 <map name="_c2_m2_8_neuronal_dynamics_8_visualization_8_v_t_k_8_v_t_u_reader_coll__map" id="_c2_m2_8_neuronal_dynamics_8_visualization_8_v_t_k_8_v_t_u_reader_coll__map">
-<area shape="rect" title="Translates 1 or more VTK files into Unity meshes" alt="" coords="5,5,256,97"/>
+<area shape="rect" title="Translates 1 or more VTK files into Unity meshes" alt="" coords="5,5,316,259"/>
 </map>
 </div>
 <table class="memberdecls">
@@ -108,11 +109,80 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ac83afd7d56d7cb419661c355da7dac5b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_t_k_1_1_v_t_u_object.html">VTUObject</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_t_k_1_1_v_t_u_reader.html#ac83afd7d56d7cb419661c355da7dac5b">ParseFile</a> (string vtuFile)</td></tr>
 <tr class="memdesc:ac83afd7d56d7cb419661c355da7dac5b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parse a given VTU file and store it in a mesh  <a href="class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_t_k_1_1_v_t_u_reader.html#ac83afd7d56d7cb419661c355da7dac5b">More...</a><br /></td></tr>
 <tr class="separator:ac83afd7d56d7cb419661c355da7dac5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-methods"></a>
+Static Private Member Functions</h2></td></tr>
+<tr class="memitem:a3161c17921736a00a5b7d155d9b0dcdc"><td class="memItemLeft" align="right" valign="top">static int[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_t_k_1_1_v_t_u_reader.html#a3161c17921736a00a5b7d155d9b0dcdc">TranslateCellDataBinary</a> (XmlReader reader, int numberOfCells)</td></tr>
+<tr class="separator:a3161c17921736a00a5b7d155d9b0dcdc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06f745cf783801abd02ad2b61cc34b7b"><td class="memItemLeft" align="right" valign="top">static int[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_t_k_1_1_v_t_u_reader.html#a06f745cf783801abd02ad2b61cc34b7b">TranslateCellData</a> (string format, string cellRawString)</td></tr>
+<tr class="separator:a06f745cf783801abd02ad2b61cc34b7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada97fc6b451b1a74fe12d60a493822db"><td class="memItemLeft" align="right" valign="top">static byte[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_t_k_1_1_v_t_u_reader.html#ada97fc6b451b1a74fe12d60a493822db">TranslateTypeDataBinary</a> (XmlReader reader, int numberOfCells)</td></tr>
+<tr class="separator:ada97fc6b451b1a74fe12d60a493822db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ca82c9195d23f5ac7d27d6e04dc68e5"><td class="memItemLeft" align="right" valign="top">static byte[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_t_k_1_1_v_t_u_reader.html#a8ca82c9195d23f5ac7d27d6e04dc68e5">TranslateTypeData</a> (string format, string typeRawString)</td></tr>
+<tr class="separator:a8ca82c9195d23f5ac7d27d6e04dc68e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f6d1ab1d7f732106992b69f79d07701"><td class="memItemLeft" align="right" valign="top">static int[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_t_k_1_1_v_t_u_reader.html#a4f6d1ab1d7f732106992b69f79d07701">TranslateOffsetDataBinary</a> (XmlReader reader, int numberOfCells)</td></tr>
+<tr class="separator:a4f6d1ab1d7f732106992b69f79d07701"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9153e60a394f003689e642333f4bdcdd"><td class="memItemLeft" align="right" valign="top">static int[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_t_k_1_1_v_t_u_reader.html#a9153e60a394f003689e642333f4bdcdd">TranslateOffsetData</a> (string format, string offsetRawString)</td></tr>
+<tr class="separator:a9153e60a394f003689e642333f4bdcdd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1076d14bee05fc10a946b88b7ddf2248"><td class="memItemLeft" align="right" valign="top">static float[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_t_k_1_1_v_t_u_reader.html#a1076d14bee05fc10a946b88b7ddf2248">TranslateComponentDataBinary</a> (XmlReader reader, int numberOfPoints)</td></tr>
+<tr class="separator:a1076d14bee05fc10a946b88b7ddf2248"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8160b0c6797081ebef9847d8988a254"><td class="memItemLeft" align="right" valign="top">static float[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_t_k_1_1_v_t_u_reader.html#ac8160b0c6797081ebef9847d8988a254">TranslateComponentData</a> (string format, string componentRawString)</td></tr>
+<tr class="separator:ac8160b0c6797081ebef9847d8988a254"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1667bde81aec384abdb82ac9b7b08cdd"><td class="memItemLeft" align="right" valign="top">static Vector3[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_t_k_1_1_v_t_u_reader.html#a1667bde81aec384abdb82ac9b7b08cdd">TranslatePointsBinary</a> (XmlReader reader, int numberOfPoints)</td></tr>
+<tr class="separator:a1667bde81aec384abdb82ac9b7b08cdd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a871f87965212c57e26715fafb94f6cf1"><td class="memItemLeft" align="right" valign="top">static Vector3[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_t_k_1_1_v_t_u_reader.html#a871f87965212c57e26715fafb94f6cf1">TranslatePoints</a> (string format, string pointRawString, int numberOfPoints)</td></tr>
+<tr class="separator:a871f87965212c57e26715fafb94f6cf1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41f6bd6b0e2a9e40b655872c1593fee6"><td class="memItemLeft" align="right" valign="top">static List&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_t_k_1_1_v_t_u_reader.html#a41f6bd6b0e2a9e40b655872c1593fee6">BuildTriangles</a> (int[] offsetData, byte[] typeData, int[] cellData)</td></tr>
+<tr class="separator:a41f6bd6b0e2a9e40b655872c1593fee6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Translates 1 or more <a class="el" href="namespace_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_t_k.html">VTK</a> files into Unity meshes </p>
 <p>TODO: This needs to be able to take general 'types'. Each element should be able to be int32, int64, float32, float64, etc We should also have a setting called "geometry static", which when enabled should skip reading new points, cells, offsets, &amp; types, &amp; should ONLY read new pointData </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a41f6bd6b0e2a9e40b655872c1593fee6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a41f6bd6b0e2a9e40b655872c1593fee6">&#9670;&nbsp;</a></span>BuildTriangles()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static List&lt;int&gt; C2M2.NeuronalDynamics.Visualization.VTK.VTUReader.BuildTriangles </td>
+          <td>(</td>
+          <td class="paramtype">int[]&#160;</td>
+          <td class="paramname"><em>offsetData</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">byte[]&#160;</td>
+          <td class="paramname"><em>typeData</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int[]&#160;</td>
+          <td class="paramname"><em>cellData</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>TRIANGLE BUILDING</p>
+<p>this is very important: matches the <a class="el" href="namespace_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_t_k.html">VTK</a> coordinate system: see vtk file format TODO: This is only relevant for tetrahedrons, not triangles like our retina model</p>
+
+</div>
+</div>
 <a id="ac83afd7d56d7cb419661c355da7dac5b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac83afd7d56d7cb419661c355da7dac5b">&#9670;&nbsp;</a></span>ParseFile()</h2>
 
@@ -137,6 +207,375 @@ Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="a06f745cf783801abd02ad2b61cc34b7b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a06f745cf783801abd02ad2b61cc34b7b">&#9670;&nbsp;</a></span>TranslateCellData()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int [] C2M2.NeuronalDynamics.Visualization.VTK.VTUReader.TranslateCellData </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>format</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>cellRawString</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3161c17921736a00a5b7d155d9b0dcdc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3161c17921736a00a5b7d155d9b0dcdc">&#9670;&nbsp;</a></span>TranslateCellDataBinary()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int [] C2M2.NeuronalDynamics.Visualization.VTK.VTUReader.TranslateCellDataBinary </td>
+          <td>(</td>
+          <td class="paramtype">XmlReader&#160;</td>
+          <td class="paramname"><em>reader</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>numberOfCells</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac8160b0c6797081ebef9847d8988a254"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac8160b0c6797081ebef9847d8988a254">&#9670;&nbsp;</a></span>TranslateComponentData()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static float [] C2M2.NeuronalDynamics.Visualization.VTK.VTUReader.TranslateComponentData </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>format</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>componentRawString</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1076d14bee05fc10a946b88b7ddf2248"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1076d14bee05fc10a946b88b7ddf2248">&#9670;&nbsp;</a></span>TranslateComponentDataBinary()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static float [] C2M2.NeuronalDynamics.Visualization.VTK.VTUReader.TranslateComponentDataBinary </td>
+          <td>(</td>
+          <td class="paramtype">XmlReader&#160;</td>
+          <td class="paramname"><em>reader</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>numberOfPoints</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9153e60a394f003689e642333f4bdcdd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9153e60a394f003689e642333f4bdcdd">&#9670;&nbsp;</a></span>TranslateOffsetData()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int [] C2M2.NeuronalDynamics.Visualization.VTK.VTUReader.TranslateOffsetData </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>format</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>offsetRawString</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4f6d1ab1d7f732106992b69f79d07701"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4f6d1ab1d7f732106992b69f79d07701">&#9670;&nbsp;</a></span>TranslateOffsetDataBinary()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int [] C2M2.NeuronalDynamics.Visualization.VTK.VTUReader.TranslateOffsetDataBinary </td>
+          <td>(</td>
+          <td class="paramtype">XmlReader&#160;</td>
+          <td class="paramname"><em>reader</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>numberOfCells</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a871f87965212c57e26715fafb94f6cf1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a871f87965212c57e26715fafb94f6cf1">&#9670;&nbsp;</a></span>TranslatePoints()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static Vector3 [] C2M2.NeuronalDynamics.Visualization.VTK.VTUReader.TranslatePoints </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>format</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>pointRawString</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>numberOfPoints</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>This line is important: Unity uses a different coordinate system than <a class="el" href="namespace_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_t_k.html">VTK</a>: Right hand vs. left hand coordinate system!</p>
+<p>This line is important: Unity uses a different coordinate system than <a class="el" href="namespace_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_t_k.html">VTK</a>: Right hand vs. left hand coordinate system!</p>
+
+</div>
+</div>
+<a id="a1667bde81aec384abdb82ac9b7b08cdd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1667bde81aec384abdb82ac9b7b08cdd">&#9670;&nbsp;</a></span>TranslatePointsBinary()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static Vector3 [] C2M2.NeuronalDynamics.Visualization.VTK.VTUReader.TranslatePointsBinary </td>
+          <td>(</td>
+          <td class="paramtype">XmlReader&#160;</td>
+          <td class="paramname"><em>reader</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>numberOfPoints</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>This line is important: Unity uses a different coordinate system than <a class="el" href="namespace_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_t_k.html">VTK</a>: Right hand vs. left hand coordinate system!</p>
+
+</div>
+</div>
+<a id="a8ca82c9195d23f5ac7d27d6e04dc68e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8ca82c9195d23f5ac7d27d6e04dc68e5">&#9670;&nbsp;</a></span>TranslateTypeData()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static byte [] C2M2.NeuronalDynamics.Visualization.VTK.VTUReader.TranslateTypeData </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>format</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>typeRawString</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ada97fc6b451b1a74fe12d60a493822db"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ada97fc6b451b1a74fe12d60a493822db">&#9670;&nbsp;</a></span>TranslateTypeDataBinary()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static byte [] C2M2.NeuronalDynamics.Visualization.VTK.VTUReader.TranslateTypeDataBinary </td>
+          <td>(</td>
+          <td class="paramtype">XmlReader&#160;</td>
+          <td class="paramname"><em>reader</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>numberOfCells</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>

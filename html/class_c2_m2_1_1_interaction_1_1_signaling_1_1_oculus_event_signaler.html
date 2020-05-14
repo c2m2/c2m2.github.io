@@ -87,6 +87,8 @@ $(document).ready(function(){initNavTree('class_c2_m2_1_1_interaction_1_1_signal
   <div class="summary">
 <a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_c2_m2_1_1_interaction_1_1_signaling_1_1_oculus_event_signaler-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">C2M2.Interaction.Signaling.OculusEventSignaler Class Reference</div>  </div>
@@ -100,10 +102,10 @@ Inheritance diagram for C2M2.Interaction.Signaling.OculusEventSignaler:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_c2_m2_1_1_interaction_1_1_signaling_1_1_oculus_event_signaler__inherit__graph.png" border="0" usemap="#_c2_m2_8_interaction_8_signaling_8_oculus_event_signaler_inherit__map" alt="Inheritance graph"/></div>
 <map name="_c2_m2_8_interaction_8_signaling_8_oculus_event_signaler_inherit__map" id="_c2_m2_8_interaction_8_signaling_8_oculus_event_signaler_inherit__map">
-<area shape="rect" title="Activate raycast triggers using oculus controller buttons and fingertip distance" alt="" coords="5,587,199,899"/>
-<area shape="rect" href="class_c2_m2_1_1_interaction_1_1_signaling_1_1_raycast_event_signaler.html" title=" " alt="" coords="5,285,199,539"/>
-<area shape="rect" href="class_c2_m2_1_1_interaction_1_1_signaling_1_1_press_event_signaler.html" title="Send press, holdPress, and endPress events based on set values of Pressed and RaycastTriggerManager" alt="" coords="35,131,169,237"/>
-<area shape="rect" title=" " alt="" coords="47,5,157,83"/>
+<area shape="rect" title="Activate raycast triggers using oculus controller buttons and fingertip distance" alt="" coords="5,689,252,1060"/>
+<area shape="rect" href="class_c2_m2_1_1_interaction_1_1_signaling_1_1_raycast_event_signaler.html" title=" " alt="" coords="5,300,252,641"/>
+<area shape="rect" href="class_c2_m2_1_1_interaction_1_1_signaling_1_1_press_event_signaler.html" title="Send press, holdPress, and endPress events based on set values of Pressed and RaycastTriggerManager" alt="" coords="45,131,212,252"/>
+<area shape="rect" title=" " alt="" coords="65,5,192,83"/>
 </map>
 </div>
 <div class="dynheader">
@@ -111,11 +113,16 @@ Collaboration diagram for C2M2.Interaction.Signaling.OculusEventSignaler:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_c2_m2_1_1_interaction_1_1_signaling_1_1_oculus_event_signaler__coll__graph.png" border="0" usemap="#_c2_m2_8_interaction_8_signaling_8_oculus_event_signaler_coll__map" alt="Collaboration graph"/></div>
 <map name="_c2_m2_8_interaction_8_signaling_8_oculus_event_signaler_coll__map" id="_c2_m2_8_interaction_8_signaling_8_oculus_event_signaler_coll__map">
-<area shape="rect" title="Activate raycast triggers using oculus controller buttons and fingertip distance" alt="" coords="129,604,323,901"/>
-<area shape="rect" href="class_c2_m2_1_1_interaction_1_1_signaling_1_1_raycast_event_signaler.html" title=" " alt="" coords="5,288,199,541"/>
-<area shape="rect" href="class_c2_m2_1_1_interaction_1_1_signaling_1_1_press_event_signaler.html" title="Send press, holdPress, and endPress events based on set values of Pressed and RaycastTriggerManager" alt="" coords="35,132,169,239"/>
-<area shape="rect" title=" " alt="" coords="47,5,157,83"/>
-<area shape="rect" title=" " alt="" coords="223,376,315,453"/>
+<area shape="rect" title="Activate raycast triggers using oculus controller buttons and fingertip distance" alt="" coords="164,1371,411,1727"/>
+<area shape="rect" href="class_c2_m2_1_1_interaction_1_1_signaling_1_1_raycast_event_signaler.html" title=" " alt="" coords="12,981,259,1308"/>
+<area shape="rect" href="class_c2_m2_1_1_interaction_1_1_signaling_1_1_press_event_signaler.html" title="Send press, holdPress, and endPress events based on set values of Pressed and RaycastTriggerManager" alt="" coords="5,476,172,597"/>
+<area shape="rect" title=" " alt="" coords="103,139,229,217"/>
+<area shape="rect" href="class_c2_m2_1_1_raycast_event_manager.html" title="Attach this script to parent gameObject, create one child with one raycast trigger per child...." alt="" coords="201,621,416,919"/>
+<area shape="rect" href="class_c2_m2_1_1_raycast_press_events.html" title="Store custom events that the corresponding RaycastTriggerManager will invoke" alt="" coords="231,316,437,452"/>
+<area shape="rect" href="class_c2_m2_1_1_raycast_press_events_1_1_raycast_hit_event.html" title=" " alt="" coords="253,132,468,224"/>
+<area shape="rect" title=" " alt="" coords="253,5,468,83"/>
+<area shape="rect" title=" " alt="" coords="461,345,532,423"/>
+<area shape="rect" title=" " alt="" coords="283,1106,393,1183"/>
 </map>
 </div>
 <table class="memberdecls">
@@ -167,7 +174,7 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:a37784554f2b05e0d6a67d2e9228cbd5e"><td class="memItemLeft" align="right" valign="top">override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c2_m2_1_1_interaction_1_1_signaling_1_1_oculus_event_signaler.html#a37784554f2b05e0d6a67d2e9228cbd5e">OnEndPressSub</a> ()</td></tr>
 <tr class="memdesc:a37784554f2b05e0d6a67d2e9228cbd5e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Signal children that a press is ending  <a href="class_c2_m2_1_1_interaction_1_1_signaling_1_1_oculus_event_signaler.html#a37784554f2b05e0d6a67d2e9228cbd5e">More...</a><br /></td></tr>
 <tr class="separator:a37784554f2b05e0d6a67d2e9228cbd5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a156ac1dcec18dbe416610fccf2dee85e"><td class="memItemLeft" align="right" valign="top">override bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c2_m2_1_1_interaction_1_1_signaling_1_1_oculus_event_signaler.html#a156ac1dcec18dbe416610fccf2dee85e">RaycastingMethod</a> (out RaycastHit hit, float maxDistance, LayerMask layerMask)</td></tr>
+<tr class="memitem:a156ac1dcec18dbe416610fccf2dee85e"><td class="memItemLeft" align="right" valign="top">override bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c2_m2_1_1_interaction_1_1_signaling_1_1_oculus_event_signaler.html#a156ac1dcec18dbe416610fccf2dee85e">RaycastingMethod</a> (out RaycastHit hit, float maxDistance, LayerMask <a class="el" href="class_c2_m2_1_1_interaction_1_1_signaling_1_1_raycast_event_signaler.html#a726777cce7f331f18abe367fb9cae19b">layerMask</a>)</td></tr>
 <tr class="memdesc:a156ac1dcec18dbe416610fccf2dee85e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Raycast using fingertip position/direction, handle fingertip line renderer  <a href="class_c2_m2_1_1_interaction_1_1_signaling_1_1_oculus_event_signaler.html#a156ac1dcec18dbe416610fccf2dee85e">More...</a><br /></td></tr>
 <tr class="separator:a156ac1dcec18dbe416610fccf2dee85e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_class_c2_m2_1_1_interaction_1_1_signaling_1_1_raycast_event_signaler"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_c2_m2_1_1_interaction_1_1_signaling_1_1_raycast_event_signaler')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="class_c2_m2_1_1_interaction_1_1_signaling_1_1_raycast_event_signaler.html">C2M2.Interaction.Signaling.RaycastEventSignaler</a></td></tr>
@@ -179,6 +186,23 @@ Protected Member Functions</h2></td></tr>
 <tr class="separator:ae11be9bbc108498a8abbfa57498d8f75 inherit pro_methods_class_c2_m2_1_1_interaction_1_1_signaling_1_1_raycast_event_signaler"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a64e4e82c6b2da21e6d5d687a8fcae0b3 inherit pro_methods_class_c2_m2_1_1_interaction_1_1_signaling_1_1_raycast_event_signaler"><td class="memItemLeft" align="right" valign="top">sealed override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c2_m2_1_1_interaction_1_1_signaling_1_1_raycast_event_signaler.html#a64e4e82c6b2da21e6d5d687a8fcae0b3">OnEndPress</a> ()</td></tr>
 <tr class="separator:a64e4e82c6b2da21e6d5d687a8fcae0b3 inherit pro_methods_class_c2_m2_1_1_interaction_1_1_signaling_1_1_raycast_event_signaler"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:ad477458f15d470cbf2bf0377bb731996"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c2_m2_1_1_interaction_1_1_signaling_1_1_oculus_event_signaler.html#ad477458f15d470cbf2bf0377bb731996">StaticHandSetActive</a> (bool active)</td></tr>
+<tr class="memdesc:ad477458f15d470cbf2bf0377bb731996"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable/disable static raycasting hand model and default hand  <a href="class_c2_m2_1_1_interaction_1_1_signaling_1_1_oculus_event_signaler.html#ad477458f15d470cbf2bf0377bb731996">More...</a><br /></td></tr>
+<tr class="separator:ad477458f15d470cbf2bf0377bb731996"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaff3ce1ed086b8d5c7dd48a75a8120c0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c2_m2_1_1_interaction_1_1_signaling_1_1_oculus_event_signaler.html#aaff3ce1ed086b8d5c7dd48a75a8120c0">LineRendererSetActive</a> (bool active)</td></tr>
+<tr class="memdesc:aaff3ce1ed086b8d5c7dd48a75a8120c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable/Disable line renderer depending on if raycasting mode is enabled  <a href="class_c2_m2_1_1_interaction_1_1_signaling_1_1_oculus_event_signaler.html#aaff3ce1ed086b8d5c7dd48a75a8120c0">More...</a><br /></td></tr>
+<tr class="separator:aaff3ce1ed086b8d5c7dd48a75a8120c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9af5d9e1df38283f4162bdc158c31124"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c2_m2_1_1_interaction_1_1_signaling_1_1_oculus_event_signaler.html#a9af5d9e1df38283f4162bdc158c31124">CheckPressDistance</a> (RaycastHit hit)</td></tr>
+<tr class="memdesc:a9af5d9e1df38283f4162bdc158c31124"><td class="mdescLeft">&#160;</td><td class="mdescRight">Figure out if we should trigger a press based on distance  <a href="class_c2_m2_1_1_interaction_1_1_signaling_1_1_oculus_event_signaler.html#a9af5d9e1df38283f4162bdc158c31124">More...</a><br /></td></tr>
+<tr class="separator:a9af5d9e1df38283f4162bdc158c31124"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a65334de612c22dae2bd1c8e19d0c546b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c2_m2_1_1_interaction_1_1_signaling_1_1_oculus_event_signaler.html#a65334de612c22dae2bd1c8e19d0c546b">distancePressed</a> = false</td></tr>
+<tr class="separator:a65334de612c22dae2bd1c8e19d0c546b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -220,6 +244,35 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a id="a9af5d9e1df38283f4162bdc158c31124"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9af5d9e1df38283f4162bdc158c31124">&#9670;&nbsp;</a></span>CheckPressDistance()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool C2M2.Interaction.Signaling.OculusEventSignaler.CheckPressDistance </td>
+          <td>(</td>
+          <td class="paramtype">RaycastHit&#160;</td>
+          <td class="paramname"><em>hit</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Figure out if we should trigger a press based on distance </p>
+<dl class="section return"><dt>Returns</dt><dd>True if we have instigated a click event by coming within click distance, True if we are holding a press by remaining within hysteresis distance (3 * click distance) after clicking, False otherwise </dd></dl>
+
+</div>
+</div>
 <a id="ac70400fe6201d21bda655ad109af0795"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac70400fe6201d21bda655ad109af0795">&#9670;&nbsp;</a></span>ChildsPressCondition()</h2>
 
@@ -247,6 +300,40 @@ Additional Inherited Members</h2></td></tr>
 </p>
 
 <p>Implements <a class="el" href="class_c2_m2_1_1_interaction_1_1_signaling_1_1_raycast_event_signaler.html#acc162942cbabe415e185b51d3e94e4d4">C2M2.Interaction.Signaling.RaycastEventSignaler</a>.</p>
+
+</div>
+</div>
+<a id="aaff3ce1ed086b8d5c7dd48a75a8120c0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaff3ce1ed086b8d5c7dd48a75a8120c0">&#9670;&nbsp;</a></span>LineRendererSetActive()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void C2M2.Interaction.Signaling.OculusEventSignaler.LineRendererSetActive </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>active</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Enable/Disable line renderer depending on if raycasting mode is enabled </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">active</td><td>True to enable line renderer, false to disable </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -437,6 +524,40 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a id="ad477458f15d470cbf2bf0377bb731996"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad477458f15d470cbf2bf0377bb731996">&#9670;&nbsp;</a></span>StaticHandSetActive()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void C2M2.Interaction.Signaling.OculusEventSignaler.StaticHandSetActive </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>active</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Enable/disable static raycasting hand model and default hand </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">active</td><td>True to enable static hand, false to enable regular OVR hand</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <h2 class="groupheader">Member Data Documentation</h2>
 <a id="aa9b7eafd35bb79fb23a860af99022c20"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa9b7eafd35bb79fb23a860af99022c20">&#9670;&nbsp;</a></span>beginRaycastingButton</h2>
@@ -490,6 +611,28 @@ Additional Inherited Members</h2></td></tr>
           <td class="memname">UnityEngine.GameObject C2M2.Interaction.Signaling.OculusEventSignaler.defaultHand</td>
         </tr>
       </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a65334de612c22dae2bd1c8e19d0c546b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a65334de612c22dae2bd1c8e19d0c546b">&#9670;&nbsp;</a></span>distancePressed</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool C2M2.Interaction.Signaling.OculusEventSignaler.distancePressed = false</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>

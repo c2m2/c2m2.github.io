@@ -88,6 +88,9 @@ $(document).ready(function(){initNavTree('class_c2_m2_1_1_raycast_event_manager.
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
+<a href="#pri-static-attribs">Static Private Attributes</a> &#124;
 <a href="class_c2_m2_1_1_raycast_event_manager-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">C2M2.RaycastEventManager Class Reference</div>  </div>
@@ -101,8 +104,8 @@ Inheritance diagram for C2M2.RaycastEventManager:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_c2_m2_1_1_raycast_event_manager__inherit__graph.png" border="0" usemap="#_c2_m2_8_raycast_event_manager_inherit__map" alt="Inheritance graph"/></div>
 <map name="_c2_m2_8_raycast_event_manager_inherit__map" id="_c2_m2_8_raycast_event_manager_inherit__map">
-<area shape="rect" title="Attach this script to parent gameObject, create one child with one raycast trigger per child...." alt="" coords="5,131,196,428"/>
-<area shape="rect" title=" " alt="" coords="45,5,156,83"/>
+<area shape="rect" title="Attach this script to parent gameObject, create one child with one raycast trigger per child...." alt="" coords="5,131,220,472"/>
+<area shape="rect" title=" " alt="" coords="49,5,176,83"/>
 </map>
 </div>
 <div class="dynheader">
@@ -110,9 +113,12 @@ Collaboration diagram for C2M2.RaycastEventManager:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_c2_m2_1_1_raycast_event_manager__coll__graph.png" border="0" usemap="#_c2_m2_8_raycast_event_manager_coll__map" alt="Collaboration graph"/></div>
 <map name="_c2_m2_8_raycast_event_manager_coll__map" id="_c2_m2_8_raycast_event_manager_coll__map">
-<area shape="rect" title="Attach this script to parent gameObject, create one child with one raycast trigger per child...." alt="" coords="5,345,196,628"/>
-<area shape="rect" title=" " alt="" coords="64,5,175,83"/>
-<area shape="rect" href="class_c2_m2_1_1_raycast_press_events.html" title="Store custom events that the corresponding RaycastTriggerManager will invoke" alt="" coords="117,132,298,268"/>
+<area shape="rect" title="Attach this script to parent gameObject, create one child with one raycast trigger per child...." alt="" coords="103,544,317,841"/>
+<area shape="rect" title=" " alt="" coords="5,139,132,217"/>
+<area shape="rect" href="class_c2_m2_1_1_raycast_press_events.html" title="Store custom events that the corresponding RaycastTriggerManager will invoke" alt="" coords="107,316,313,452"/>
+<area shape="rect" href="class_c2_m2_1_1_raycast_press_events_1_1_raycast_hit_event.html" title=" " alt="" coords="156,132,371,224"/>
+<area shape="rect" title=" " alt="" coords="156,5,371,83"/>
+<area shape="rect" title=" " alt="" coords="337,345,408,423"/>
 </map>
 </div>
 <table class="memberdecls">
@@ -163,6 +169,21 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a5f936ef484680f7b87d6ea8eda279191"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a35422f433d18519823aa0fdc68dd48a8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_c2_m2_1_1_raycast_press_events.html">RaycastPressEvents</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c2_m2_1_1_raycast_event_manager.html#a35422f433d18519823aa0fdc68dd48a8">leftTrigger</a> = null</td></tr>
 <tr class="separator:a35422f433d18519823aa0fdc68dd48a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a575dd828f4ce30d11ee30b0783910d55"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c2_m2_1_1_raycast_event_manager.html#a575dd828f4ce30d11ee30b0783910d55">Awake</a> ()</td></tr>
+<tr class="separator:a575dd828f4ce30d11ee30b0783910d55"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a433dfb228d4ec9e22ab501cd2c786b4f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_c2_m2_1_1_raycast_press_events.html">RaycastPressEvents</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c2_m2_1_1_raycast_event_manager.html#a433dfb228d4ec9e22ab501cd2c786b4f">emptyTrigger</a> = null</td></tr>
+<tr class="separator:a433dfb228d4ec9e22ab501cd2c786b4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-attribs"></a>
+Static Private Attributes</h2></td></tr>
+<tr class="memitem:a4ead5f11b4099717a01094b4ceee3a1b"><td class="memItemLeft" align="right" valign="top">static RaycastHit&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c2_m2_1_1_raycast_event_manager.html#a4ead5f11b4099717a01094b4ceee3a1b">nullHit</a> = new RaycastHit()</td></tr>
+<tr class="separator:a4ead5f11b4099717a01094b4ceee3a1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Attach this script to parent gameObject, create one child with one raycast trigger per child. Switch between triggers by index or switch the active trigger to any custom RaycastTrigger instance. </p>
@@ -240,6 +261,31 @@ Public Attributes</h2></td></tr>
           <td></td>
         </tr>
       </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a575dd828f4ce30d11ee30b0783910d55"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a575dd828f4ce30d11ee30b0783910d55">&#9670;&nbsp;</a></span>Awake()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void C2M2.RaycastEventManager.Awake </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>
@@ -505,6 +551,28 @@ Public Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
+<a id="a433dfb228d4ec9e22ab501cd2c786b4f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a433dfb228d4ec9e22ab501cd2c786b4f">&#9670;&nbsp;</a></span>emptyTrigger</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_c2_m2_1_1_raycast_press_events.html">RaycastPressEvents</a> C2M2.RaycastEventManager.emptyTrigger = null</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a35422f433d18519823aa0fdc68dd48a8"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a35422f433d18519823aa0fdc68dd48a8">&#9670;&nbsp;</a></span>leftTrigger</h2>
 
@@ -515,6 +583,28 @@ Public Attributes</h2></td></tr>
           <td class="memname"><a class="el" href="class_c2_m2_1_1_raycast_press_events.html">RaycastPressEvents</a> C2M2.RaycastEventManager.leftTrigger = null</td>
         </tr>
       </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4ead5f11b4099717a01094b4ceee3a1b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ead5f11b4099717a01094b4ceee3a1b">&#9670;&nbsp;</a></span>nullHit</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">RaycastHit C2M2.RaycastEventManager.nullHit = new RaycastHit()</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>

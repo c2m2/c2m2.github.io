@@ -8,5 +8,11 @@ var class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_u_g_x_reader_test =
       [ "Cell0_2b", "class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_u_g_x_reader_test.html#af8704ba34e872247a623478633af9df5aee1338a4b482193ef377416de62f5719", null ],
       [ "Cell10_6kdv2", "class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_u_g_x_reader_test.html#af8704ba34e872247a623478633af9df5a2387b2a858d826b487b2f84232b0b15c", null ]
     ] ],
-    [ "cell", "class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_u_g_x_reader_test.html#a128a8b99c804cd06c75e7e5999b916e6", null ]
+    [ "BuildMap", "class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_u_g_x_reader_test.html#ab2aa3cef547beb63618e7a36f1a52449", null ],
+    [ "BuildMap", "class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_u_g_x_reader_test.html#a479f51306e9bd3e5d6e8e0d7019ac4ee", null ],
+    [ "DiameterExample", "class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_u_g_x_reader_test.html#ad71d28a9879f305e61ced4bbd70a9c55", null ],
+    [ "Start", "class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_u_g_x_reader_test.html#adfbf019c9084bcf654c38f372eb7f4aa", null ],
+    [ "cell", "class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_u_g_x_reader_test.html#a128a8b99c804cd06c75e7e5999b916e6", null ],
+    [ "go", "class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_u_g_x_reader_test.html#a4149b5cdd9037ea4909462b280543a4d", null ],
+    [ "grid", "class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_u_g_x_reader_test.html#ab51bb61d90fa1cbdd170826ea8d2e48a", null ]
 ];

@@ -88,6 +88,9 @@ $(document).ready(function(){initNavTree('class_c2_m2_1_1_utils_1_1_debug_utils_
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="#properties">Properties</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
+<a href="#pri-static-attribs">Static Private Attributes</a> &#124;
 <a href="class_c2_m2_1_1_utils_1_1_debug_utils_1_1_f_p_s_counter-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">C2M2.Utils.DebugUtils.FPSCounter Class Reference</div>  </div>
@@ -101,8 +104,8 @@ Inheritance diagram for C2M2.Utils.DebugUtils.FPSCounter:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_c2_m2_1_1_utils_1_1_debug_utils_1_1_f_p_s_counter__inherit__graph.png" border="0" usemap="#_c2_m2_8_utils_8_debug_utils_8_f_p_s_counter_inherit__map" alt="Inheritance graph"/></div>
 <map name="_c2_m2_8_utils_8_debug_utils_8_f_p_s_counter_inherit__map" id="_c2_m2_8_utils_8_debug_utils_8_f_p_s_counter_inherit__map">
-<area shape="rect" title=" " alt="" coords="5,131,233,296"/>
-<area shape="rect" title=" " alt="" coords="64,5,175,83"/>
+<area shape="rect" title=" " alt="" coords="5,131,284,428"/>
+<area shape="rect" title=" " alt="" coords="81,5,208,83"/>
 </map>
 </div>
 <div class="dynheader">
@@ -110,8 +113,9 @@ Collaboration diagram for C2M2.Utils.DebugUtils.FPSCounter:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_c2_m2_1_1_utils_1_1_debug_utils_1_1_f_p_s_counter__coll__graph.png" border="0" usemap="#_c2_m2_8_utils_8_debug_utils_8_f_p_s_counter_coll__map" alt="Collaboration graph"/></div>
 <map name="_c2_m2_8_utils_8_debug_utils_8_f_p_s_counter_coll__map" id="_c2_m2_8_utils_8_debug_utils_8_f_p_s_counter_coll__map">
-<area shape="rect" title=" " alt="" coords="5,131,233,296"/>
-<area shape="rect" title=" " alt="" coords="64,5,175,83"/>
+<area shape="rect" title=" " alt="" coords="5,160,284,428"/>
+<area shape="rect" title=" " alt="" coords="20,5,147,83"/>
+<area shape="rect" title=" " alt="" coords="171,5,241,83"/>
 </map>
 </div>
 <table class="memberdecls">
@@ -127,21 +131,98 @@ Public Attributes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
 Properties</h2></td></tr>
-<tr class="memitem:adaa0dfe960fe89b96f5a61e72ff38403"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c2_m2_1_1_utils_1_1_debug_utils_1_1_f_p_s_counter.html#adaa0dfe960fe89b96f5a61e72ff38403">AverageFPS</a><code> [get]</code></td></tr>
+<tr class="memitem:adaa0dfe960fe89b96f5a61e72ff38403"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c2_m2_1_1_utils_1_1_debug_utils_1_1_f_p_s_counter.html#adaa0dfe960fe89b96f5a61e72ff38403">AverageFPS</a><code> [get, private set]</code></td></tr>
 <tr class="separator:adaa0dfe960fe89b96f5a61e72ff38403"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaf1c34b2a6808f89fb01c55ec43fdafd"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c2_m2_1_1_utils_1_1_debug_utils_1_1_f_p_s_counter.html#aaf1c34b2a6808f89fb01c55ec43fdafd">HighestFPS</a><code> [get]</code></td></tr>
+<tr class="memitem:aaf1c34b2a6808f89fb01c55ec43fdafd"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c2_m2_1_1_utils_1_1_debug_utils_1_1_f_p_s_counter.html#aaf1c34b2a6808f89fb01c55ec43fdafd">HighestFPS</a><code> [get, private set]</code></td></tr>
 <tr class="separator:aaf1c34b2a6808f89fb01c55ec43fdafd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa80c3dcc9975aa22632c41f3bad7137e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c2_m2_1_1_utils_1_1_debug_utils_1_1_f_p_s_counter.html#aa80c3dcc9975aa22632c41f3bad7137e">LowestFPS</a><code> [get]</code></td></tr>
+<tr class="memitem:aa80c3dcc9975aa22632c41f3bad7137e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c2_m2_1_1_utils_1_1_debug_utils_1_1_f_p_s_counter.html#aa80c3dcc9975aa22632c41f3bad7137e">LowestFPS</a><code> [get, private set]</code></td></tr>
 <tr class="separator:aa80c3dcc9975aa22632c41f3bad7137e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8be188f0b06d1d8fc9764bd04ecdae61"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c2_m2_1_1_utils_1_1_debug_utils_1_1_f_p_s_counter.html#a8be188f0b06d1d8fc9764bd04ecdae61">averageFPSString</a><code> [get]</code></td></tr>
+<tr class="memitem:a8be188f0b06d1d8fc9764bd04ecdae61"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c2_m2_1_1_utils_1_1_debug_utils_1_1_f_p_s_counter.html#a8be188f0b06d1d8fc9764bd04ecdae61">averageFPSString</a><code> [get, private set]</code></td></tr>
 <tr class="separator:a8be188f0b06d1d8fc9764bd04ecdae61"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a76e82dddb7c4d9ed9cd3663564134f16"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c2_m2_1_1_utils_1_1_debug_utils_1_1_f_p_s_counter.html#a76e82dddb7c4d9ed9cd3663564134f16">highestFPSString</a><code> [get]</code></td></tr>
+<tr class="memitem:a76e82dddb7c4d9ed9cd3663564134f16"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c2_m2_1_1_utils_1_1_debug_utils_1_1_f_p_s_counter.html#a76e82dddb7c4d9ed9cd3663564134f16">highestFPSString</a><code> [get, private set]</code></td></tr>
 <tr class="separator:a76e82dddb7c4d9ed9cd3663564134f16"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afa975cf89f55d10f813af1e556494a0f"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c2_m2_1_1_utils_1_1_debug_utils_1_1_f_p_s_counter.html#afa975cf89f55d10f813af1e556494a0f">lowestFPSString</a><code> [get]</code></td></tr>
+<tr class="memitem:afa975cf89f55d10f813af1e556494a0f"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c2_m2_1_1_utils_1_1_debug_utils_1_1_f_p_s_counter.html#afa975cf89f55d10f813af1e556494a0f">lowestFPSString</a><code> [get, private set]</code></td></tr>
 <tr class="separator:afa975cf89f55d10f813af1e556494a0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a6de517a7ed343f4ca10f9b4f406b55e0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c2_m2_1_1_utils_1_1_debug_utils_1_1_f_p_s_counter.html#a6de517a7ed343f4ca10f9b4f406b55e0">Update</a> ()</td></tr>
+<tr class="separator:a6de517a7ed343f4ca10f9b4f406b55e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76ed34b78fedb2a161612d265f290ef3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c2_m2_1_1_utils_1_1_debug_utils_1_1_f_p_s_counter.html#a76ed34b78fedb2a161612d265f290ef3">InitializeBuffer</a> ()</td></tr>
+<tr class="separator:a76ed34b78fedb2a161612d265f290ef3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f654da488d857654ba8f217fb773653"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c2_m2_1_1_utils_1_1_debug_utils_1_1_f_p_s_counter.html#a7f654da488d857654ba8f217fb773653">UpdateBuffer</a> ()</td></tr>
+<tr class="separator:a7f654da488d857654ba8f217fb773653"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22762cb29efb70de4504bb11ce1da958"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c2_m2_1_1_utils_1_1_debug_utils_1_1_f_p_s_counter.html#a22762cb29efb70de4504bb11ce1da958">CalculateFPS</a> ()</td></tr>
+<tr class="separator:a22762cb29efb70de4504bb11ce1da958"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeee6d83cf49da4c867d3c17f27bf138b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c2_m2_1_1_utils_1_1_debug_utils_1_1_f_p_s_counter.html#aeee6d83cf49da4c867d3c17f27bf138b">UpdateTexts</a> ()</td></tr>
+<tr class="separator:aeee6d83cf49da4c867d3c17f27bf138b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:ab3f9d3de9707d708f2dbcfa78558dbbe"><td class="memItemLeft" align="right" valign="top">int[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c2_m2_1_1_utils_1_1_debug_utils_1_1_f_p_s_counter.html#ab3f9d3de9707d708f2dbcfa78558dbbe">fpsBuffer</a></td></tr>
+<tr class="separator:ab3f9d3de9707d708f2dbcfa78558dbbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c0d3e2532d4c487d25d89a9e596bc56"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c2_m2_1_1_utils_1_1_debug_utils_1_1_f_p_s_counter.html#a5c0d3e2532d4c487d25d89a9e596bc56">fpsBufferIndex</a></td></tr>
+<tr class="separator:a5c0d3e2532d4c487d25d89a9e596bc56"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-attribs"></a>
+Static Private Attributes</h2></td></tr>
+<tr class="memitem:a3bfccea9d450d70aee3a28737b612954"><td class="memItemLeft" align="right" valign="top">static string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c2_m2_1_1_utils_1_1_debug_utils_1_1_f_p_s_counter.html#a3bfccea9d450d70aee3a28737b612954">formatString</a> = &quot;High: {0}\nAvg: {1}\nLow: {2}&quot;</td></tr>
+<tr class="separator:a3bfccea9d450d70aee3a28737b612954"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8fe567b4cfd3af31491afbc231ad4a2"><td class="memItemLeft" align="right" valign="top">static string[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c2_m2_1_1_utils_1_1_debug_utils_1_1_f_p_s_counter.html#af8fe567b4cfd3af31491afbc231ad4a2">staticNumStrings</a></td></tr>
+<tr class="separator:af8fe567b4cfd3af31491afbc231ad4a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"></div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a22762cb29efb70de4504bb11ce1da958"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a22762cb29efb70de4504bb11ce1da958">&#9670;&nbsp;</a></span>CalculateFPS()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void C2M2.Utils.DebugUtils.FPSCounter.CalculateFPS </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a76ed34b78fedb2a161612d265f290ef3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a76ed34b78fedb2a161612d265f290ef3">&#9670;&nbsp;</a></span>InitializeBuffer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void C2M2.Utils.DebugUtils.FPSCounter.InitializeBuffer </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a7925bd3e9cf9954ff12e2ff9d765be1a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7925bd3e9cf9954ff12e2ff9d765be1a">&#9670;&nbsp;</a></span>ToString()</h2>
 
@@ -159,7 +240,148 @@ Properties</h2></td></tr>
 
 </div>
 </div>
+<a id="a6de517a7ed343f4ca10f9b4f406b55e0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6de517a7ed343f4ca10f9b4f406b55e0">&#9670;&nbsp;</a></span>Update()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void C2M2.Utils.DebugUtils.FPSCounter.Update </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7f654da488d857654ba8f217fb773653"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7f654da488d857654ba8f217fb773653">&#9670;&nbsp;</a></span>UpdateBuffer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void C2M2.Utils.DebugUtils.FPSCounter.UpdateBuffer </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aeee6d83cf49da4c867d3c17f27bf138b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeee6d83cf49da4c867d3c17f27bf138b">&#9670;&nbsp;</a></span>UpdateTexts()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void C2M2.Utils.DebugUtils.FPSCounter.UpdateTexts </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <h2 class="groupheader">Member Data Documentation</h2>
+<a id="a3bfccea9d450d70aee3a28737b612954"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3bfccea9d450d70aee3a28737b612954">&#9670;&nbsp;</a></span>formatString</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string C2M2.Utils.DebugUtils.FPSCounter.formatString = &quot;High: {0}\nAvg: {1}\nLow: {2}&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab3f9d3de9707d708f2dbcfa78558dbbe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab3f9d3de9707d708f2dbcfa78558dbbe">&#9670;&nbsp;</a></span>fpsBuffer</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int [] C2M2.Utils.DebugUtils.FPSCounter.fpsBuffer</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5c0d3e2532d4c487d25d89a9e596bc56"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5c0d3e2532d4c487d25d89a9e596bc56">&#9670;&nbsp;</a></span>fpsBufferIndex</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int C2M2.Utils.DebugUtils.FPSCounter.fpsBufferIndex</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="ac93cdcbb76d7e07c57e52abf7042bdde"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac93cdcbb76d7e07c57e52abf7042bdde">&#9670;&nbsp;</a></span>sampleSize</h2>
 
@@ -172,6 +394,41 @@ Properties</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+</div>
+</div>
+<a id="af8fe567b4cfd3af31491afbc231ad4a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af8fe567b4cfd3af31491afbc231ad4a2">&#9670;&nbsp;</a></span>staticNumStrings</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string [] C2M2.Utils.DebugUtils.FPSCounter.staticNumStrings</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">= {</div>
+<div class="line">            <span class="stringliteral">&quot;00&quot;</span>, <span class="stringliteral">&quot;01&quot;</span>, <span class="stringliteral">&quot;02&quot;</span>, <span class="stringliteral">&quot;03&quot;</span>, <span class="stringliteral">&quot;04&quot;</span>, <span class="stringliteral">&quot;05&quot;</span>, <span class="stringliteral">&quot;06&quot;</span>, <span class="stringliteral">&quot;07&quot;</span>, <span class="stringliteral">&quot;08&quot;</span>, <span class="stringliteral">&quot;09&quot;</span>,</div>
+<div class="line">            <span class="stringliteral">&quot;10&quot;</span>, <span class="stringliteral">&quot;11&quot;</span>, <span class="stringliteral">&quot;12&quot;</span>, <span class="stringliteral">&quot;13&quot;</span>, <span class="stringliteral">&quot;14&quot;</span>, <span class="stringliteral">&quot;15&quot;</span>, <span class="stringliteral">&quot;16&quot;</span>, <span class="stringliteral">&quot;17&quot;</span>, <span class="stringliteral">&quot;18&quot;</span>, <span class="stringliteral">&quot;19&quot;</span>,</div>
+<div class="line">            <span class="stringliteral">&quot;20&quot;</span>, <span class="stringliteral">&quot;21&quot;</span>, <span class="stringliteral">&quot;22&quot;</span>, <span class="stringliteral">&quot;23&quot;</span>, <span class="stringliteral">&quot;24&quot;</span>, <span class="stringliteral">&quot;25&quot;</span>, <span class="stringliteral">&quot;26&quot;</span>, <span class="stringliteral">&quot;27&quot;</span>, <span class="stringliteral">&quot;28&quot;</span>, <span class="stringliteral">&quot;29&quot;</span>,</div>
+<div class="line">            <span class="stringliteral">&quot;30&quot;</span>, <span class="stringliteral">&quot;31&quot;</span>, <span class="stringliteral">&quot;32&quot;</span>, <span class="stringliteral">&quot;33&quot;</span>, <span class="stringliteral">&quot;34&quot;</span>, <span class="stringliteral">&quot;35&quot;</span>, <span class="stringliteral">&quot;36&quot;</span>, <span class="stringliteral">&quot;37&quot;</span>, <span class="stringliteral">&quot;38&quot;</span>, <span class="stringliteral">&quot;39&quot;</span>,</div>
+<div class="line">            <span class="stringliteral">&quot;40&quot;</span>, <span class="stringliteral">&quot;41&quot;</span>, <span class="stringliteral">&quot;42&quot;</span>, <span class="stringliteral">&quot;43&quot;</span>, <span class="stringliteral">&quot;44&quot;</span>, <span class="stringliteral">&quot;45&quot;</span>, <span class="stringliteral">&quot;46&quot;</span>, <span class="stringliteral">&quot;47&quot;</span>, <span class="stringliteral">&quot;48&quot;</span>, <span class="stringliteral">&quot;49&quot;</span>,</div>
+<div class="line">            <span class="stringliteral">&quot;50&quot;</span>, <span class="stringliteral">&quot;51&quot;</span>, <span class="stringliteral">&quot;52&quot;</span>, <span class="stringliteral">&quot;53&quot;</span>, <span class="stringliteral">&quot;54&quot;</span>, <span class="stringliteral">&quot;55&quot;</span>, <span class="stringliteral">&quot;56&quot;</span>, <span class="stringliteral">&quot;57&quot;</span>, <span class="stringliteral">&quot;58&quot;</span>, <span class="stringliteral">&quot;59&quot;</span>,</div>
+<div class="line">            <span class="stringliteral">&quot;60&quot;</span>, <span class="stringliteral">&quot;61&quot;</span>, <span class="stringliteral">&quot;62&quot;</span>, <span class="stringliteral">&quot;63&quot;</span>, <span class="stringliteral">&quot;64&quot;</span>, <span class="stringliteral">&quot;65&quot;</span>, <span class="stringliteral">&quot;66&quot;</span>, <span class="stringliteral">&quot;67&quot;</span>, <span class="stringliteral">&quot;68&quot;</span>, <span class="stringliteral">&quot;69&quot;</span>,</div>
+<div class="line">            <span class="stringliteral">&quot;70&quot;</span>, <span class="stringliteral">&quot;71&quot;</span>, <span class="stringliteral">&quot;72&quot;</span>, <span class="stringliteral">&quot;73&quot;</span>, <span class="stringliteral">&quot;74&quot;</span>, <span class="stringliteral">&quot;75&quot;</span>, <span class="stringliteral">&quot;76&quot;</span>, <span class="stringliteral">&quot;77&quot;</span>, <span class="stringliteral">&quot;78&quot;</span>, <span class="stringliteral">&quot;79&quot;</span>,</div>
+<div class="line">            <span class="stringliteral">&quot;80&quot;</span>, <span class="stringliteral">&quot;81&quot;</span>, <span class="stringliteral">&quot;82&quot;</span>, <span class="stringliteral">&quot;83&quot;</span>, <span class="stringliteral">&quot;84&quot;</span>, <span class="stringliteral">&quot;85&quot;</span>, <span class="stringliteral">&quot;86&quot;</span>, <span class="stringliteral">&quot;87&quot;</span>, <span class="stringliteral">&quot;88&quot;</span>, <span class="stringliteral">&quot;89&quot;</span>,</div>
+<div class="line">            <span class="stringliteral">&quot;90&quot;</span>, <span class="stringliteral">&quot;91&quot;</span>, <span class="stringliteral">&quot;92&quot;</span>, <span class="stringliteral">&quot;93&quot;</span>, <span class="stringliteral">&quot;94&quot;</span>, <span class="stringliteral">&quot;95&quot;</span>, <span class="stringliteral">&quot;96&quot;</span>, <span class="stringliteral">&quot;97&quot;</span>, <span class="stringliteral">&quot;98&quot;</span>, <span class="stringliteral">&quot;99&quot;</span>,</div>
+<div class="line">            <span class="stringliteral">&quot;100+&quot;</span></div>
+<div class="line">        }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Property Documentation</h2>
@@ -190,7 +447,7 @@ Properties</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">get</span></span>  </td>
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">private set</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -212,7 +469,7 @@ Properties</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">get</span></span>  </td>
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">private set</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -234,7 +491,7 @@ Properties</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">get</span></span>  </td>
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">private set</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -256,7 +513,7 @@ Properties</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">get</span></span>  </td>
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">private set</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -278,7 +535,7 @@ Properties</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">get</span></span>  </td>
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">private set</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -300,7 +557,7 @@ Properties</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">get</span></span>  </td>
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">private set</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">

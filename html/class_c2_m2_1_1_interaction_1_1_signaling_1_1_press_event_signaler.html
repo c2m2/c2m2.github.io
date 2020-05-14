@@ -87,6 +87,7 @@ $(document).ready(function(){initNavTree('class_c2_m2_1_1_interaction_1_1_signal
   <div class="summary">
 <a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#properties">Properties</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_c2_m2_1_1_interaction_1_1_signaling_1_1_press_event_signaler-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">C2M2.Interaction.Signaling.PressEventSignaler Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
@@ -100,11 +101,11 @@ Inheritance diagram for C2M2.Interaction.Signaling.PressEventSignaler:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_c2_m2_1_1_interaction_1_1_signaling_1_1_press_event_signaler__inherit__graph.png" border="0" usemap="#_c2_m2_8_interaction_8_signaling_8_press_event_signaler_inherit__map" alt="Inheritance graph"/></div>
 <map name="_c2_m2_8_interaction_8_signaling_8_press_event_signaler_inherit__map" id="_c2_m2_8_interaction_8_signaling_8_press_event_signaler_inherit__map">
-<area shape="rect" title="Send press, holdPress, and endPress events based on set values of Pressed and RaycastTriggerManager" alt="" coords="119,131,301,252"/>
-<area shape="rect" href="class_c2_m2_1_1_interaction_1_1_signaling_1_1_raycast_event_signaler.html" title=" " alt="" coords="113,300,307,568"/>
-<area shape="rect" title=" " alt="" coords="155,5,265,83"/>
-<area shape="rect" href="class_c2_m2_1_1_interaction_1_1_signaling_1_1_mouse_event_signaler.html" title=" " alt="" coords="5,675,199,869"/>
-<area shape="rect" href="class_c2_m2_1_1_interaction_1_1_signaling_1_1_oculus_event_signaler.html" title="Activate raycast triggers using oculus controller buttons and fingertip distance" alt="" coords="223,616,416,928"/>
+<area shape="rect" title="Send press, holdPress, and endPress events based on set values of Pressed and RaycastTriggerManager" alt="" coords="144,131,383,267"/>
+<area shape="rect" href="class_c2_m2_1_1_interaction_1_1_signaling_1_1_raycast_event_signaler.html" title=" " alt="" coords="140,315,387,671"/>
+<area shape="rect" title=" " alt="" coords="200,5,327,83"/>
+<area shape="rect" href="class_c2_m2_1_1_interaction_1_1_signaling_1_1_mouse_event_signaler.html" title=" " alt="" coords="5,807,252,1001"/>
+<area shape="rect" href="class_c2_m2_1_1_interaction_1_1_signaling_1_1_oculus_event_signaler.html" title="Activate raycast triggers using oculus controller buttons and fingertip distance" alt="" coords="276,719,523,1089"/>
 </map>
 </div>
 <div class="dynheader">
@@ -112,8 +113,8 @@ Collaboration diagram for C2M2.Interaction.Signaling.PressEventSignaler:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_c2_m2_1_1_interaction_1_1_signaling_1_1_press_event_signaler__coll__graph.png" border="0" usemap="#_c2_m2_8_interaction_8_signaling_8_press_event_signaler_coll__map" alt="Collaboration graph"/></div>
 <map name="_c2_m2_8_interaction_8_signaling_8_press_event_signaler_coll__map" id="_c2_m2_8_interaction_8_signaling_8_press_event_signaler_coll__map">
-<area shape="rect" title="Send press, holdPress, and endPress events based on set values of Pressed and RaycastTriggerManager" alt="" coords="5,131,187,252"/>
-<area shape="rect" title=" " alt="" coords="41,5,151,83"/>
+<area shape="rect" title="Send press, holdPress, and endPress events based on set values of Pressed and RaycastTriggerManager" alt="" coords="5,131,244,267"/>
+<area shape="rect" title=" " alt="" coords="61,5,188,83"/>
 </map>
 </div>
 <table class="memberdecls">
@@ -131,6 +132,11 @@ Properties</h2></td></tr>
 <tr class="memitem:a220697dc696edf37292273adf6e3a4ec"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c2_m2_1_1_interaction_1_1_signaling_1_1_press_event_signaler.html#a220697dc696edf37292273adf6e3a4ec">Pressed</a><code> [get, set]</code></td></tr>
 <tr class="memdesc:a220697dc696edf37292273adf6e3a4ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Was the input source pressed in the previous frame?  <a href="class_c2_m2_1_1_interaction_1_1_signaling_1_1_press_event_signaler.html#a220697dc696edf37292273adf6e3a4ec">More...</a><br /></td></tr>
 <tr class="separator:a220697dc696edf37292273adf6e3a4ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a94176ce8109f135a5896b9f7e5bd54be"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c2_m2_1_1_interaction_1_1_signaling_1_1_press_event_signaler.html#a94176ce8109f135a5896b9f7e5bd54be">pressedPrevFrame</a> = false</td></tr>
+<tr class="separator:a94176ce8109f135a5896b9f7e5bd54be"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Send press, holdPress, and endPress events based on set values of Pressed and RaycastTriggerManager </p>
@@ -214,6 +220,29 @@ Properties</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Implemented in <a class="el" href="class_c2_m2_1_1_interaction_1_1_signaling_1_1_raycast_event_signaler.html#a0097a4551979a708d614935c52be2d08">C2M2.Interaction.Signaling.RaycastEventSignaler</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a94176ce8109f135a5896b9f7e5bd54be"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a94176ce8109f135a5896b9f7e5bd54be">&#9670;&nbsp;</a></span>pressedPrevFrame</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool C2M2.Interaction.Signaling.PressEventSignaler.pressedPrevFrame = false</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>

@@ -1,13 +1,16 @@
 var hierarchy =
 [
     [ "C2M2.NeuronalDynamics.Alg.Algorithms", "class_c2_m2_1_1_neuronal_dynamics_1_1_alg_1_1_algorithms.html", null ],
+    [ "C2M2.Utils.Array", "class_c2_m2_1_1_utils_1_1_array.html", null ],
     [ "C2M2.NeuronalDynamics.UGX.Attachment", "interface_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_attachment.html", [
       [ "C2M2.NeuronalDynamics.UGX.IAttachment< T >", "class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_i_attachment.html", null ]
     ] ],
+    [ "C2M2.NeuronalDynamics.UGX.AttachmentHandler", "class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_attachment_handler.html", null ],
     [ "C2M2.NeuronalDynamics.UGX.AttachmentInfo", "struct_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_attachment_info.html", null ],
     [ "C2M2.Utils.CSVBuilder", "class_c2_m2_1_1_utils_1_1_c_s_v_builder.html", null ],
     [ "C2M2.OIT.DataPoint", "class_c2_m2_1_1_o_i_t_1_1_data_point.html", null ],
     [ "C2M2.OIT.DataSet", "class_c2_m2_1_1_o_i_t_1_1_data_set.html", null ],
+    [ "C2M2.Utils.DebugUtils.GetAllDependencies.Dir", "class_c2_m2_1_1_utils_1_1_debug_utils_1_1_get_all_dependencies_1_1_dir.html", null ],
     [ "C2M2.Interaction.Adjacency.Edge", "struct_c2_m2_1_1_interaction_1_1_adjacency_1_1_edge.html", null ],
     [ "C2M2.NeuronalDynamics.UGX.Edge", "struct_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_edge.html", null ],
     [ "Exception", null, [
@@ -20,6 +23,8 @@ var hierarchy =
     ] ],
     [ "C2M2.NeuronalDynamics.Alg.Graph< T >", "class_c2_m2_1_1_neuronal_dynamics_1_1_alg_1_1_graph.html", null ],
     [ "C2M2.NeuronalDynamics.UGX.Grid", "class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_grid.html", null ],
+    [ "C2M2.NeuronalDynamics.UGX.GridExtensions", "class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_grid_extensions.html", null ],
+    [ "C2M2.NeuronalDynamics.UGX.GridUtils", "class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_grid_utils.html", null ],
     [ "C2M2.NeuronalDynamics.UGX.IAttachmentData", "interface_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_i_attachment_data.html", [
       [ "C2M2.NeuronalDynamics.UGX.DiameterData", "struct_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_diameter_data.html", null ],
       [ "C2M2.NeuronalDynamics.UGX.MappingData", "struct_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_mapping_data.html", null ],
@@ -35,13 +40,21 @@ var hierarchy =
     [ "IEnumerable", null, [
       [ "C2M2.NeuronalDynamics.UGX.VertexAttachementAccessor< T >", "class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_vertex_attachement_accessor.html", null ]
     ] ],
+    [ "IJob", null, [
+      [ "C2M2.Tests.SimpleBurst.MyJob", "struct_c2_m2_1_1_tests_1_1_simple_burst_1_1_my_job.html", null ]
+    ] ],
     [ "C2M2.NeuronalDynamics.UGX.ISynapse", "interface_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_i_synapse.html", [
       [ "C2M2.NeuronalDynamics.UGX.AlphaPostSynapse", "struct_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_alpha_post_synapse.html", null ],
       [ "C2M2.NeuronalDynamics.UGX.EXP2Synapse", "struct_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_e_x_p2_synapse.html", null ],
       [ "C2M2.NeuronalDynamics.UGX.UndefSynapse", "struct_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_undef_synapse.html", null ]
     ] ],
+    [ "C2M2.Utils.LineRendUtils", "class_c2_m2_1_1_utils_1_1_line_rend_utils.html", null ],
     [ "C2M2.NeuronalDynamics.UGX.MapEntry", "struct_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_map_entry.html", null ],
     [ "C2M2.NeuronalDynamics.UGX.MappingInfo", "struct_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_mapping_info.html", null ],
+    [ "C2M2.NeuronalDynamics.UGX.MapUtils", "class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_map_utils.html", null ],
+    [ "C2M2.Utils.Math", "class_c2_m2_1_1_utils_1_1_math.html", null ],
+    [ "C2M2.Utils.MeshUtils.MeshEditors", "class_c2_m2_1_1_utils_1_1_mesh_utils_1_1_mesh_editors.html", null ],
+    [ "C2M2.Utils.MeshUtils.MeshInfo", "class_c2_m2_1_1_utils_1_1_mesh_utils_1_1_mesh_info.html", null ],
     [ "MonoBehaviour", null, [
       [ "ActiveStateToggler", "class_active_state_toggler.html", null ],
       [ "C2M2.GameManager", "class_c2_m2_1_1_game_manager.html", null ],
@@ -139,9 +152,11 @@ var hierarchy =
       [ "VRScrollbarButton", "class_v_r_scrollbar_button.html", null ],
       [ "XFramePause", "class_x_frame_pause.html", null ]
     ] ],
+    [ "C2M2.NeuronalDynamics.Visualization.Neuron1DMapFileReader", "class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_neuron1_d_map_file_reader.html", null ],
     [ "C2M2.NeuronalDynamics.Visualization.Neuron1DVertMap", "class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_neuron1_d_vert_map.html", null ],
     [ "C2M2.NeuronalDynamics.UGX.NeuronCell", "class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_cell.html", null ],
     [ "C2M2.NeuronalDynamics.UGX.NeuronCell.NodeData", "struct_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_cell_1_1_node_data.html", null ],
+    [ "C2M2.NeuronalDynamics.Visualization.OBJFileReader", "class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_o_b_j_file_reader.html", null ],
     [ "OVRGrabbable", null, [
       [ "C2M2.Interaction.VR.PublicOVRGrabbable", "class_c2_m2_1_1_interaction_1_1_v_r_1_1_public_o_v_r_grabbable.html", null ]
     ] ],
@@ -151,10 +166,12 @@ var hierarchy =
     [ "OVRHeadsetEmulator", null, [
       [ "C2M2.Visualization.VR.MovingOVRHeadsetEmulator", "class_c2_m2_1_1_visualization_1_1_v_r_1_1_moving_o_v_r_headset_emulator.html", null ]
     ] ],
+    [ "C2M2.MolecularDynamics.Visualization.PDBReader", "class_c2_m2_1_1_molecular_dynamics_1_1_visualization_1_1_p_d_b_reader.html", null ],
     [ "C2M2.Interaction.Adjacency.PriorityQueue", "class_c2_m2_1_1_interaction_1_1_adjacency_1_1_priority_queue.html", null ],
     [ "PropertyAttribute", null, [
       [ "C2M2.Utils.Editor.CustomLabel", "class_c2_m2_1_1_utils_1_1_editor_1_1_custom_label.html", null ]
     ] ],
+    [ "C2M2.Utils.RigidbodyUtilities", "class_c2_m2_1_1_utils_1_1_rigidbody_utilities.html", null ],
     [ "C2M2.Simulation.Simulation< double[]>", "class_c2_m2_1_1_simulation_1_1_simulation.html", [
       [ "C2M2.Simulation.ScalarFieldSimulation", "class_c2_m2_1_1_simulation_1_1_scalar_field_simulation.html", [
         [ "C2M2.NeuronalDynamics.Simulation.HHSimulation", "class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_h_h_simulation.html", [
@@ -185,17 +202,22 @@ var hierarchy =
       ] ]
     ] ],
     [ "C2M2.MolecularDynamics.Visualization.Sphere", "struct_c2_m2_1_1_molecular_dynamics_1_1_visualization_1_1_sphere.html", null ],
+    [ "C2M2.Utils.StackTraceUtils", "class_c2_m2_1_1_utils_1_1_stack_trace_utils.html", null ],
+    [ "C2M2.Utils.StringUtils", "class_c2_m2_1_1_utils_1_1_string_utils.html", null ],
     [ "C2M2.NeuronalDynamics.UGX.Subset", "struct_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_subset.html", null ],
     [ "C2M2.NeuronalDynamics.UGX.SubsetCollection", "class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_subset_collection.html", null ],
     [ "C2M2.Utils.Timer", "class_c2_m2_1_1_utils_1_1_timer.html", null ],
     [ "C2M2.Utils.Timer.TimerNode", "struct_c2_m2_1_1_utils_1_1_timer_1_1_timer_node.html", null ],
+    [ "C2M2.Utils.TransformUpdate", "class_c2_m2_1_1_utils_1_1_transform_update.html", null ],
     [ "C2M2.Utils.Triangle", "struct_c2_m2_1_1_utils_1_1_triangle.html", null ],
+    [ "C2M2.NeuronalDynamics.UGX.UGXReader", "class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_u_g_x_reader.html", null ],
     [ "UnityEvent", null, [
       [ "C2M2.RaycastInputField.OnChangeEvent", "class_c2_m2_1_1_raycast_input_field_1_1_on_change_event.html", null ],
       [ "C2M2.RaycastInputField.OnSubmitEvent", "class_c2_m2_1_1_raycast_input_field_1_1_on_submit_event.html", null ],
       [ "C2M2.RaycastPressEvents.RaycastHitEvent", "class_c2_m2_1_1_raycast_press_events_1_1_raycast_hit_event.html", null ]
     ] ],
     [ "C2M2.NeuronalDynamics.UGX.Vertex", "struct_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_vertex.html", null ],
+    [ "C2M2.NeuronalDynamics.Visualization.VTK.VTUColor", "class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_t_k_1_1_v_t_u_color.html", null ],
     [ "C2M2.NeuronalDynamics.Visualization.VTK.VTUObject", "class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_t_k_1_1_v_t_u_object.html", null ],
     [ "C2M2.NeuronalDynamics.Visualization.VTK.VTUObjectBuilder", "class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_t_k_1_1_v_t_u_object_builder.html", null ],
     [ "C2M2.NeuronalDynamics.Visualization.VTK.VTUReader", "class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_t_k_1_1_v_t_u_reader.html", null ]

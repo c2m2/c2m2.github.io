@@ -1,9 +1,11 @@
 <map id="C2M2.NeuronalDynamics.Simulation.SimpleSolver_constDerivative" name="C2M2.NeuronalDynamics.Simulation.SimpleSolver_constDerivative">
-<area shape="rect" id="node1" title=" " alt="" coords="83,876,321,1144"/>
-<area shape="rect" id="node2" href="$class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_h_h_simulation.html" title="Provides base functionality for Hodgkin&#45;Huxley solvers." alt="" coords="140,647,264,827"/>
-<area shape="rect" id="node3" href="$class_c2_m2_1_1_simulation_1_1_scalar_field_simulation.html" title="Simulation of type double[] for visualizing scalar fields on meshes" alt="" coords="27,433,183,584"/>
-<area shape="rect" id="node4" href="$class_c2_m2_1_1_simulation_1_1_simulation.html" title=" " alt="" coords="5,132,161,371"/>
-<area shape="rect" id="node5" href="$class_c2_m2_1_1_visualization_1_1_l_u_t_gradient.html" title="Create a fast and memory&#45;friendly color lookup table from a gradient" alt="" coords="186,169,397,334"/>
-<area shape="rect" id="node6" title=" " alt="" coords="236,5,347,83"/>
-<area shape="rect" id="node7" title=" " alt="" coords="207,470,263,547"/>
+<area shape="rect" id="node1" title=" " alt="" coords="217,1139,504,1480"/>
+<area shape="rect" id="node2" href="$class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_h_h_simulation.html" title="Provides base functionality for Hodgkin&#45;Huxley solvers." alt="" coords="216,845,375,1039"/>
+<area shape="rect" id="node3" href="$class_c2_m2_1_1_simulation_1_1_scalar_field_simulation.html" title="Simulation of type double[] for visualizing scalar fields on meshes" alt="" coords="27,477,233,672"/>
+<area shape="rect" id="node4" href="$class_c2_m2_1_1_simulation_1_1_simulation.html" title=" " alt="" coords="5,132,212,415"/>
+<area shape="rect" id="node5" href="$class_c2_m2_1_1_visualization_1_1_l_u_t_gradient.html" title="Create a fast and memory&#45;friendly color lookup table from a gradient" alt="" coords="236,161,499,385"/>
+<area shape="rect" id="node6" title=" " alt="" coords="304,5,431,83"/>
+<area shape="rect" id="node7" title=" " alt="" coords="257,536,312,613"/>
+<area shape="rect" id="node8" title=" " alt="" coords="429,536,500,613"/>
+<area shape="rect" id="node9" href="$class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_cell.html" title=" " alt="" coords="421,808,652,1076"/>
 </map>

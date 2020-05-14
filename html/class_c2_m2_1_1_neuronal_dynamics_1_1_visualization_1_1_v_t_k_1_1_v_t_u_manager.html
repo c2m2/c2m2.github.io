@@ -88,6 +88,8 @@ $(document).ready(function(){initNavTree('class_c2_m2_1_1_neuronal_dynamics_1_1_
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="#properties">Properties</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_t_k_1_1_v_t_u_manager-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">C2M2.NeuronalDynamics.Visualization.VTK.VTUManager Class Reference</div>  </div>
@@ -98,8 +100,8 @@ Inheritance diagram for C2M2.NeuronalDynamics.Visualization.VTK.VTUManager:</div
 <div class="dyncontent">
 <div class="center"><img src="class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_t_k_1_1_v_t_u_manager__inherit__graph.png" border="0" usemap="#_c2_m2_8_neuronal_dynamics_8_visualization_8_v_t_k_8_v_t_u_manager_inherit__map" alt="Inheritance graph"/></div>
 <map name="_c2_m2_8_neuronal_dynamics_8_visualization_8_v_t_k_8_v_t_u_manager_inherit__map" id="_c2_m2_8_neuronal_dynamics_8_visualization_8_v_t_k_8_v_t_u_manager_inherit__map">
-<area shape="rect" title=" " alt="" coords="5,131,256,355"/>
-<area shape="rect" title=" " alt="" coords="75,5,186,83"/>
+<area shape="rect" title=" " alt="" coords="5,131,316,413"/>
+<area shape="rect" title=" " alt="" coords="97,5,224,83"/>
 </map>
 </div>
 <div class="dynheader">
@@ -107,16 +109,19 @@ Collaboration diagram for C2M2.NeuronalDynamics.Visualization.VTK.VTUManager:</d
 <div class="dyncontent">
 <div class="center"><img src="class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_t_k_1_1_v_t_u_manager__coll__graph.png" border="0" usemap="#_c2_m2_8_neuronal_dynamics_8_visualization_8_v_t_k_8_v_t_u_manager_coll__map" alt="Collaboration graph"/></div>
 <map name="_c2_m2_8_neuronal_dynamics_8_visualization_8_v_t_k_8_v_t_u_manager_coll__map" id="_c2_m2_8_neuronal_dynamics_8_visualization_8_v_t_k_8_v_t_u_manager_coll__map">
-<area shape="rect" title=" " alt="" coords="5,132,256,341"/>
-<area shape="rect" href="class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_t_k_1_1_v_t_u_player.html" title=" " alt="" coords="120,404,371,569"/>
-<area shape="rect" title=" " alt="" coords="238,5,349,83"/>
-<area shape="rect" href="class_c2_m2_1_1_raycast_press_events.html" title="Store custom events that the corresponding RaycastTriggerManager will invoke" alt="" coords="331,169,512,305"/>
+<area shape="rect" title=" " alt="" coords="345,331,656,584"/>
+<area shape="rect" href="class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_t_k_1_1_v_t_u_player.html" title=" " alt="" coords="179,647,489,929"/>
+<area shape="rect" title=" " alt="" coords="244,147,371,224"/>
+<area shape="rect" href="class_c2_m2_1_1_raycast_press_events.html" title="Store custom events that the corresponding RaycastTriggerManager will invoke" alt="" coords="63,389,269,525"/>
+<area shape="rect" href="class_c2_m2_1_1_raycast_press_events_1_1_raycast_hit_event.html" title=" " alt="" coords="5,139,220,231"/>
+<area shape="rect" title=" " alt="" coords="5,5,220,83"/>
+<area shape="rect" href="class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_t_k_1_1_v_t_u_object_builder.html" title="Overarching manager to control order of events for reading in VTK data, positioning it,..." alt="" coords="395,132,705,239"/>
 </map>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a4cb9dad81bbb4412a4e6f77c9c630cde"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_t_k_1_1_v_t_u_manager.html#a4cb9dad81bbb4412a4e6f77c9c630cde">Initialize</a> (ObjectManager objectManager)</td></tr>
+<tr class="memitem:a4cb9dad81bbb4412a4e6f77c9c630cde"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_t_k_1_1_v_t_u_manager.html#a4cb9dad81bbb4412a4e6f77c9c630cde">Initialize</a> (ObjectManager <a class="el" href="class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_t_k_1_1_v_t_u_manager.html#ae33f9626d537f733bb920514cc3dba03">objectManager</a>)</td></tr>
 <tr class="separator:a4cb9dad81bbb4412a4e6f77c9c630cde"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
@@ -140,12 +145,51 @@ Public Attributes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
 Properties</h2></td></tr>
-<tr class="memitem:ac7a3a1e8865686645db9073feda1e96a"><td class="memItemLeft" align="right" valign="top">List&lt; <a class="el" href="class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_t_k_1_1_v_t_u_object.html">VTUObject</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_t_k_1_1_v_t_u_manager.html#ac7a3a1e8865686645db9073feda1e96a">vtuList</a><code> [get]</code></td></tr>
+<tr class="memitem:ac7a3a1e8865686645db9073feda1e96a"><td class="memItemLeft" align="right" valign="top">List&lt; <a class="el" href="class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_t_k_1_1_v_t_u_object.html">VTUObject</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_t_k_1_1_v_t_u_manager.html#ac7a3a1e8865686645db9073feda1e96a">vtuList</a><code> [get, private set]</code></td></tr>
 <tr class="separator:ac7a3a1e8865686645db9073feda1e96a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ade3dba5d60d9289293a5357045724d3d"><td class="memItemLeft" align="right" valign="top">Gradient&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_t_k_1_1_v_t_u_manager.html#ade3dba5d60d9289293a5357045724d3d">gradient</a><code> [get, set]</code></td></tr>
 <tr class="separator:ade3dba5d60d9289293a5357045724d3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a542ded143c6acbc5ba1bdcfaa40a969b"><td class="memItemLeft" align="right" valign="top">List&lt; <a class="el" href="class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_t_k_1_1_v_t_u_object.html">VTUObject</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_t_k_1_1_v_t_u_manager.html#a542ded143c6acbc5ba1bdcfaa40a969b">BuildVTUList</a> ()</td></tr>
+<tr class="separator:a542ded143c6acbc5ba1bdcfaa40a969b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:ae33f9626d537f733bb920514cc3dba03"><td class="memItemLeft" align="right" valign="top">ObjectManager&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_t_k_1_1_v_t_u_manager.html#ae33f9626d537f733bb920514cc3dba03">objectManager</a></td></tr>
+<tr class="separator:ae33f9626d537f733bb920514cc3dba03"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45a9419011dbcb702a412f8432e8af63"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_t_k_1_1_v_t_u_object_builder.html">VTUObjectBuilder</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_t_k_1_1_v_t_u_manager.html#a45a9419011dbcb702a412f8432e8af63">vtuObjectBuilder</a> = new <a class="el" href="class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_t_k_1_1_v_t_u_object_builder.html">VTUObjectBuilder</a>()</td></tr>
+<tr class="separator:a45a9419011dbcb702a412f8432e8af63"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a67624267a9edaa67cfa3c52a05609f47"><td class="memItemLeft" align="right" valign="top">MeshFilter&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_t_k_1_1_v_t_u_manager.html#a67624267a9edaa67cfa3c52a05609f47">meshf</a></td></tr>
+<tr class="separator:a67624267a9edaa67cfa3c52a05609f47"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a542ded143c6acbc5ba1bdcfaa40a969b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a542ded143c6acbc5ba1bdcfaa40a969b">&#9670;&nbsp;</a></span>BuildVTUList()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt;<a class="el" href="class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_t_k_1_1_v_t_u_object.html">VTUObject</a>&gt; C2M2.NeuronalDynamics.Visualization.VTK.VTUManager.BuildVTUList </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a4cb9dad81bbb4412a4e6f77c9c630cde"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4cb9dad81bbb4412a4e6f77c9c630cde">&#9670;&nbsp;</a></span>Initialize()</h2>
 
@@ -263,6 +307,72 @@ Properties</h2></td></tr>
 
 </div>
 </div>
+<a id="a67624267a9edaa67cfa3c52a05609f47"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a67624267a9edaa67cfa3c52a05609f47">&#9670;&nbsp;</a></span>meshf</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">MeshFilter C2M2.NeuronalDynamics.Visualization.VTK.VTUManager.meshf</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae33f9626d537f733bb920514cc3dba03"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae33f9626d537f733bb920514cc3dba03">&#9670;&nbsp;</a></span>objectManager</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ObjectManager C2M2.NeuronalDynamics.Visualization.VTK.VTUManager.objectManager</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a45a9419011dbcb702a412f8432e8af63"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a45a9419011dbcb702a412f8432e8af63">&#9670;&nbsp;</a></span>vtuObjectBuilder</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_t_k_1_1_v_t_u_object_builder.html">VTUObjectBuilder</a> C2M2.NeuronalDynamics.Visualization.VTK.VTUManager.vtuObjectBuilder = new <a class="el" href="class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_t_k_1_1_v_t_u_object_builder.html">VTUObjectBuilder</a>()</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a1c7c6f5f502b34e510b3017de8ce7313"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1c7c6f5f502b34e510b3017de8ce7313">&#9670;&nbsp;</a></span>VTUPlayer</h2>
 
@@ -315,7 +425,7 @@ Properties</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">get</span></span>  </td>
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">private set</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">

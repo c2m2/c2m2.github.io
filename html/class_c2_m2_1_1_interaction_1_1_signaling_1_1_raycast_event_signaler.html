@@ -87,6 +87,9 @@ $(document).ready(function(){initNavTree('class_c2_m2_1_1_interaction_1_1_signal
   <div class="summary">
 <a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-static-methods">Static Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_c2_m2_1_1_interaction_1_1_signaling_1_1_raycast_event_signaler-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">C2M2.Interaction.Signaling.RaycastEventSignaler Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
@@ -97,11 +100,11 @@ Inheritance diagram for C2M2.Interaction.Signaling.RaycastEventSignaler:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_c2_m2_1_1_interaction_1_1_signaling_1_1_raycast_event_signaler__inherit__graph.png" border="0" usemap="#_c2_m2_8_interaction_8_signaling_8_raycast_event_signaler_inherit__map" alt="Inheritance graph"/></div>
 <map name="_c2_m2_8_interaction_8_signaling_8_raycast_event_signaler_inherit__map" id="_c2_m2_8_interaction_8_signaling_8_raycast_event_signaler_inherit__map">
-<area shape="rect" title=" " alt="" coords="113,285,307,553"/>
-<area shape="rect" href="class_c2_m2_1_1_interaction_1_1_signaling_1_1_mouse_event_signaler.html" title=" " alt="" coords="5,660,199,855"/>
-<area shape="rect" href="class_c2_m2_1_1_interaction_1_1_signaling_1_1_oculus_event_signaler.html" title="Activate raycast triggers using oculus controller buttons and fingertip distance" alt="" coords="223,601,416,913"/>
-<area shape="rect" href="class_c2_m2_1_1_interaction_1_1_signaling_1_1_press_event_signaler.html" title="Send press, holdPress, and endPress events based on set values of Pressed and RaycastTriggerManager" alt="" coords="143,131,277,237"/>
-<area shape="rect" title=" " alt="" coords="155,5,265,83"/>
+<area shape="rect" title=" " alt="" coords="140,300,387,656"/>
+<area shape="rect" href="class_c2_m2_1_1_interaction_1_1_signaling_1_1_mouse_event_signaler.html" title=" " alt="" coords="5,792,252,987"/>
+<area shape="rect" href="class_c2_m2_1_1_interaction_1_1_signaling_1_1_oculus_event_signaler.html" title="Activate raycast triggers using oculus controller buttons and fingertip distance" alt="" coords="276,704,523,1075"/>
+<area shape="rect" href="class_c2_m2_1_1_interaction_1_1_signaling_1_1_press_event_signaler.html" title="Send press, holdPress, and endPress events based on set values of Pressed and RaycastTriggerManager" alt="" coords="180,131,347,252"/>
+<area shape="rect" title=" " alt="" coords="200,5,327,83"/>
 </map>
 </div>
 <div class="dynheader">
@@ -109,9 +112,14 @@ Collaboration diagram for C2M2.Interaction.Signaling.RaycastEventSignaler:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_c2_m2_1_1_interaction_1_1_signaling_1_1_raycast_event_signaler__coll__graph.png" border="0" usemap="#_c2_m2_8_interaction_8_signaling_8_raycast_event_signaler_coll__map" alt="Collaboration graph"/></div>
 <map name="_c2_m2_8_interaction_8_signaling_8_raycast_event_signaler_coll__map" id="_c2_m2_8_interaction_8_signaling_8_raycast_event_signaler_coll__map">
-<area shape="rect" title=" " alt="" coords="5,285,199,553"/>
-<area shape="rect" href="class_c2_m2_1_1_interaction_1_1_signaling_1_1_press_event_signaler.html" title="Send press, holdPress, and endPress events based on set values of Pressed and RaycastTriggerManager" alt="" coords="35,131,169,237"/>
-<area shape="rect" title=" " alt="" coords="47,5,157,83"/>
+<area shape="rect" title=" " alt="" coords="40,981,287,1323"/>
+<area shape="rect" href="class_c2_m2_1_1_interaction_1_1_signaling_1_1_press_event_signaler.html" title="Send press, holdPress, and endPress events based on set values of Pressed and RaycastTriggerManager" alt="" coords="5,476,172,597"/>
+<area shape="rect" title=" " alt="" coords="103,139,229,217"/>
+<area shape="rect" href="class_c2_m2_1_1_raycast_event_manager.html" title="Attach this script to parent gameObject, create one child with one raycast trigger per child...." alt="" coords="164,621,379,919"/>
+<area shape="rect" href="class_c2_m2_1_1_raycast_press_events.html" title="Store custom events that the corresponding RaycastTriggerManager will invoke" alt="" coords="231,316,437,452"/>
+<area shape="rect" href="class_c2_m2_1_1_raycast_press_events_1_1_raycast_hit_event.html" title=" " alt="" coords="253,132,468,224"/>
+<area shape="rect" title=" " alt="" coords="253,5,468,83"/>
+<area shape="rect" title=" " alt="" coords="461,345,532,423"/>
 </map>
 </div>
 <table class="memberdecls">
@@ -145,7 +153,7 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:a04bac1c90a9c0329716754936e590393"><td class="memItemLeft" align="right" valign="top">abstract void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c2_m2_1_1_interaction_1_1_signaling_1_1_raycast_event_signaler.html#a04bac1c90a9c0329716754936e590393">OnEndPressSub</a> ()</td></tr>
 <tr class="memdesc:a04bac1c90a9c0329716754936e590393"><td class="mdescLeft">&#160;</td><td class="mdescRight">Signal children that a press is ending  <a href="class_c2_m2_1_1_interaction_1_1_signaling_1_1_raycast_event_signaler.html#a04bac1c90a9c0329716754936e590393">More...</a><br /></td></tr>
 <tr class="separator:a04bac1c90a9c0329716754936e590393"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4479c8219db2ccd6c734cd3016febe3e"><td class="memItemLeft" align="right" valign="top">abstract bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c2_m2_1_1_interaction_1_1_signaling_1_1_raycast_event_signaler.html#a4479c8219db2ccd6c734cd3016febe3e">RaycastingMethod</a> (out RaycastHit hit, float maxDistance, LayerMask layerMask)</td></tr>
+<tr class="memitem:a4479c8219db2ccd6c734cd3016febe3e"><td class="memItemLeft" align="right" valign="top">abstract bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c2_m2_1_1_interaction_1_1_signaling_1_1_raycast_event_signaler.html#a4479c8219db2ccd6c734cd3016febe3e">RaycastingMethod</a> (out RaycastHit hit, float maxDistance, LayerMask <a class="el" href="class_c2_m2_1_1_interaction_1_1_signaling_1_1_raycast_event_signaler.html#a726777cce7f331f18abe367fb9cae19b">layerMask</a>)</td></tr>
 <tr class="memdesc:a4479c8219db2ccd6c734cd3016febe3e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Let the input type choose their own raycasting method  <a href="class_c2_m2_1_1_interaction_1_1_signaling_1_1_raycast_event_signaler.html#a4479c8219db2ccd6c734cd3016febe3e">More...</a><br /></td></tr>
 <tr class="separator:a4479c8219db2ccd6c734cd3016febe3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9b13001acb8d7c8ae6f1e6db96204a1a"><td class="memItemLeft" align="right" valign="top">abstract bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c2_m2_1_1_interaction_1_1_signaling_1_1_raycast_event_signaler.html#a9b13001acb8d7c8ae6f1e6db96204a1a">BeginRaycastingCondition</a> ()</td></tr>
@@ -154,6 +162,28 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:acc162942cbabe415e185b51d3e94e4d4"><td class="memItemLeft" align="right" valign="top">abstract bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c2_m2_1_1_interaction_1_1_signaling_1_1_raycast_event_signaler.html#acc162942cbabe415e185b51d3e94e4d4">ChildsPressCondition</a> ()</td></tr>
 <tr class="memdesc:acc162942cbabe415e185b51d3e94e4d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Require a second condition before raycast events are triggered  <a href="class_c2_m2_1_1_interaction_1_1_signaling_1_1_raycast_event_signaler.html#acc162942cbabe415e185b51d3e94e4d4">More...</a><br /></td></tr>
 <tr class="separator:acc162942cbabe415e185b51d3e94e4d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:aab6e986ac9296e708538a5d14c22a6d6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c2_m2_1_1_interaction_1_1_signaling_1_1_raycast_event_signaler.html#aab6e986ac9296e708538a5d14c22a6d6">Start</a> ()</td></tr>
+<tr class="separator:aab6e986ac9296e708538a5d14c22a6d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a03cb917b89a89252335d8261d1088ea9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c2_m2_1_1_interaction_1_1_signaling_1_1_raycast_event_signaler.html#a03cb917b89a89252335d8261d1088ea9">FixedUpdate</a> ()</td></tr>
+<tr class="separator:a03cb917b89a89252335d8261d1088ea9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-methods"></a>
+Static Private Member Functions</h2></td></tr>
+<tr class="memitem:a1b638f23bfe1da01fba447110ac6e2ba"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_c2_m2_1_1_raycast_event_manager.html">RaycastEventManager</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c2_m2_1_1_interaction_1_1_signaling_1_1_raycast_event_signaler.html#a1b638f23bfe1da01fba447110ac6e2ba">FindRaycastTrigger</a> (RaycastHit hit)</td></tr>
+<tr class="memdesc:a1b638f23bfe1da01fba447110ac6e2ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Try to find the RaycastTriggerManager on the hit object  <a href="class_c2_m2_1_1_interaction_1_1_signaling_1_1_raycast_event_signaler.html#a1b638f23bfe1da01fba447110ac6e2ba">More...</a><br /></td></tr>
+<tr class="separator:a1b638f23bfe1da01fba447110ac6e2ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a726777cce7f331f18abe367fb9cae19b"><td class="memItemLeft" align="right" valign="top">LayerMask&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c2_m2_1_1_interaction_1_1_signaling_1_1_raycast_event_signaler.html#a726777cce7f331f18abe367fb9cae19b">layerMask</a></td></tr>
+<tr class="separator:a726777cce7f331f18abe367fb9cae19b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1793378f789ae41f3b042ed20328c236"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_c2_m2_1_1_raycast_event_manager.html">RaycastEventManager</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c2_m2_1_1_interaction_1_1_signaling_1_1_raycast_event_signaler.html#a1793378f789ae41f3b042ed20328c236">activeEvent</a> = null</td></tr>
+<tr class="separator:a1793378f789ae41f3b042ed20328c236"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac7123fdbf5baf47a0ca0750cddd83c9d"><td class="memItemLeft" align="right" valign="top">RaycastHit&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c2_m2_1_1_interaction_1_1_signaling_1_1_raycast_event_signaler.html#ac7123fdbf5baf47a0ca0750cddd83c9d">lastHit</a></td></tr>
+<tr class="separator:ac7123fdbf5baf47a0ca0750cddd83c9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -245,6 +275,59 @@ Additional Inherited Members</h2></td></tr>
 <p>In Oculus, this is the trigger button. The user must hold "One" to begin raycasting, and then the trigger once they want to see events triggered. This way, raycasts can be visualized in <a class="el" href="namespace_c2_m2_1_1_interaction_1_1_v_r.html" title="All scripts directly related to interaction in virtual reality">VR</a> before events are triggered with the raycast. With mouse raycasting, this simply returns "true", since we don't need to visualize raycasts before triggering events. We can just skip right to triggering events </p>
 
 <p>Implemented in <a class="el" href="class_c2_m2_1_1_interaction_1_1_signaling_1_1_oculus_event_signaler.html#ac70400fe6201d21bda655ad109af0795">C2M2.Interaction.Signaling.OculusEventSignaler</a>, and <a class="el" href="class_c2_m2_1_1_interaction_1_1_signaling_1_1_mouse_event_signaler.html#af27a1a1ed822632a226f4400fa426a20">C2M2.Interaction.Signaling.MouseEventSignaler</a>.</p>
+
+</div>
+</div>
+<a id="a1b638f23bfe1da01fba447110ac6e2ba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1b638f23bfe1da01fba447110ac6e2ba">&#9670;&nbsp;</a></span>FindRaycastTrigger()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="class_c2_m2_1_1_raycast_event_manager.html">RaycastEventManager</a> C2M2.Interaction.Signaling.RaycastEventSignaler.FindRaycastTrigger </td>
+          <td>(</td>
+          <td class="paramtype">RaycastHit&#160;</td>
+          <td class="paramname"><em>hit</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Try to find the RaycastTriggerManager on the hit object </p>
+
+</div>
+</div>
+<a id="a03cb917b89a89252335d8261d1088ea9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a03cb917b89a89252335d8261d1088ea9">&#9670;&nbsp;</a></span>FixedUpdate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void C2M2.Interaction.Signaling.RaycastEventSignaler.FixedUpdate </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -524,7 +607,98 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a id="aab6e986ac9296e708538a5d14c22a6d6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aab6e986ac9296e708538a5d14c22a6d6">&#9670;&nbsp;</a></span>Start()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void C2M2.Interaction.Signaling.RaycastEventSignaler.Start </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <h2 class="groupheader">Member Data Documentation</h2>
+<a id="a1793378f789ae41f3b042ed20328c236"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1793378f789ae41f3b042ed20328c236">&#9670;&nbsp;</a></span>activeEvent</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_c2_m2_1_1_raycast_event_manager.html">RaycastEventManager</a> C2M2.Interaction.Signaling.RaycastEventSignaler.activeEvent = null</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac7123fdbf5baf47a0ca0750cddd83c9d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac7123fdbf5baf47a0ca0750cddd83c9d">&#9670;&nbsp;</a></span>lastHit</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">RaycastHit C2M2.Interaction.Signaling.RaycastEventSignaler.lastHit</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a726777cce7f331f18abe367fb9cae19b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a726777cce7f331f18abe367fb9cae19b">&#9670;&nbsp;</a></span>layerMask</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">LayerMask C2M2.Interaction.Signaling.RaycastEventSignaler.layerMask</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="af315cdd744fb6934fde51a3c33236b21"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af315cdd744fb6934fde51a3c33236b21">&#9670;&nbsp;</a></span>maxRaycastDistance</h2>
 

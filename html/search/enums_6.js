@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['wavetype_1785',['WaveType',['../class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_sine_wave_colorizer.html#aeee6aec9b36af37e42ed9397756f1e34',1,'C2M2::NeuronalDynamics::UGX::SineWaveColorizer']]]
+  ['tcollider_2511',['TCollider',['../class_c2_m2_1_1_interaction_1_1_v_r_1_1_v_r_grabbable.html#a81091426c9478fe8fa12590c60a4fc67',1,'C2M2::Interaction::VR::VRGrabbable']]]
 ];

@@ -87,6 +87,8 @@ $(document).ready(function(){initNavTree('class_c2_m2_1_1_interaction_1_1_adjace
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#properties">Properties</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_c2_m2_1_1_interaction_1_1_adjacency_1_1_dijkstra_search-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">C2M2.Interaction.Adjacency.DijkstraSearch Class Reference</div>  </div>
@@ -97,8 +99,8 @@ Inheritance diagram for C2M2.Interaction.Adjacency.DijkstraSearch:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_c2_m2_1_1_interaction_1_1_adjacency_1_1_dijkstra_search__inherit__graph.png" border="0" usemap="#_c2_m2_8_interaction_8_adjacency_8_dijkstra_search_inherit__map" alt="Inheritance graph"/></div>
 <map name="_c2_m2_8_interaction_8_adjacency_8_dijkstra_search_inherit__map" id="_c2_m2_8_interaction_8_adjacency_8_dijkstra_search_inherit__map">
-<area shape="rect" title=" " alt="" coords="5,131,195,223"/>
-<area shape="rect" title=" " alt="" coords="45,5,155,83"/>
+<area shape="rect" title=" " alt="" coords="5,131,244,267"/>
+<area shape="rect" title=" " alt="" coords="61,5,188,83"/>
 </map>
 </div>
 <div class="dynheader">
@@ -106,8 +108,10 @@ Collaboration diagram for C2M2.Interaction.Adjacency.DijkstraSearch:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_c2_m2_1_1_interaction_1_1_adjacency_1_1_dijkstra_search__coll__graph.png" border="0" usemap="#_c2_m2_8_interaction_8_adjacency_8_dijkstra_search_coll__map" alt="Collaboration graph"/></div>
 <map name="_c2_m2_8_interaction_8_adjacency_8_dijkstra_search_coll__map" id="_c2_m2_8_interaction_8_adjacency_8_dijkstra_search_coll__map">
-<area shape="rect" title=" " alt="" coords="5,131,195,223"/>
-<area shape="rect" title=" " alt="" coords="45,5,155,83"/>
+<area shape="rect" title=" " alt="" coords="5,705,244,812"/>
+<area shape="rect" title=" " alt="" coords="168,5,295,83"/>
+<area shape="rect" href="class_c2_m2_1_1_interaction_1_1_adjacency_1_1_unique_vertices.html" title="Get the unique vertices of a mesh and add invisible vertices for adjacency list" alt="" coords="92,132,371,371"/>
+<area shape="rect" href="class_c2_m2_1_1_interaction_1_1_adjacency_1_1_adjacency_list.html" title=" " alt="" coords="279,433,517,643"/>
 </map>
 </div>
 <table class="memberdecls">
@@ -119,10 +123,49 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
 Properties</h2></td></tr>
-<tr class="memitem:a69cc760ca348b2b1bb53f633d13f0606"><td class="memItemLeft" align="right" valign="top">float[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c2_m2_1_1_interaction_1_1_adjacency_1_1_dijkstra_search.html#a69cc760ca348b2b1bb53f633d13f0606">minDistances</a> = null<code> [get]</code></td></tr>
+<tr class="memitem:a69cc760ca348b2b1bb53f633d13f0606"><td class="memItemLeft" align="right" valign="top">float[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c2_m2_1_1_interaction_1_1_adjacency_1_1_dijkstra_search.html#a69cc760ca348b2b1bb53f633d13f0606">minDistances</a> = null<code> [get, private set]</code></td></tr>
 <tr class="separator:a69cc760ca348b2b1bb53f633d13f0606"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a08b83da8f6d22114a8b1c57b7478732c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c2_m2_1_1_interaction_1_1_adjacency_1_1_dijkstra_search.html#a08b83da8f6d22114a8b1c57b7478732c">Awake</a> ()</td></tr>
+<tr class="separator:a08b83da8f6d22114a8b1c57b7478732c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a6de927fcc6413db59a1d73bd01a20eb2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_c2_m2_1_1_interaction_1_1_adjacency_1_1_unique_vertices.html">UniqueVertices</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c2_m2_1_1_interaction_1_1_adjacency_1_1_dijkstra_search.html#a6de927fcc6413db59a1d73bd01a20eb2">uniqueVertices</a> = null</td></tr>
+<tr class="memdesc:a6de927fcc6413db59a1d73bd01a20eb2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stores a list of all mesh and invisible vertices that need to be traversed  <a href="class_c2_m2_1_1_interaction_1_1_adjacency_1_1_dijkstra_search.html#a6de927fcc6413db59a1d73bd01a20eb2">More...</a><br /></td></tr>
+<tr class="separator:a6de927fcc6413db59a1d73bd01a20eb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7957c21b45b40d03b1ba1073b3616178"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_c2_m2_1_1_interaction_1_1_adjacency_1_1_adjacency_list.html">AdjacencyList</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c2_m2_1_1_interaction_1_1_adjacency_1_1_dijkstra_search.html#a7957c21b45b40d03b1ba1073b3616178">adjacencyList</a> = null</td></tr>
+<tr class="memdesc:a7957c21b45b40d03b1ba1073b3616178"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stores the distances between adjacent real and invisible vertices  <a href="class_c2_m2_1_1_interaction_1_1_adjacency_1_1_dijkstra_search.html#a7957c21b45b40d03b1ba1073b3616178">More...</a><br /></td></tr>
+<tr class="separator:a7957c21b45b40d03b1ba1073b3616178"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a08b83da8f6d22114a8b1c57b7478732c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a08b83da8f6d22114a8b1c57b7478732c">&#9670;&nbsp;</a></span>Awake()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void C2M2.Interaction.Adjacency.DijkstraSearch.Awake </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="ab78dcb5b258ba2f5f74d7490ef8a2253"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab78dcb5b258ba2f5f74d7490ef8a2253">&#9670;&nbsp;</a></span>Search()</h2>
 
@@ -153,6 +196,55 @@ Properties</h2></td></tr>
 
 </div>
 </div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a7957c21b45b40d03b1ba1073b3616178"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7957c21b45b40d03b1ba1073b3616178">&#9670;&nbsp;</a></span>adjacencyList</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_c2_m2_1_1_interaction_1_1_adjacency_1_1_adjacency_list.html">AdjacencyList</a> C2M2.Interaction.Adjacency.DijkstraSearch.adjacencyList = null</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Stores the distances between adjacent real and invisible vertices </p>
+
+</div>
+</div>
+<a id="a6de927fcc6413db59a1d73bd01a20eb2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6de927fcc6413db59a1d73bd01a20eb2">&#9670;&nbsp;</a></span>uniqueVertices</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_c2_m2_1_1_interaction_1_1_adjacency_1_1_unique_vertices.html">UniqueVertices</a> C2M2.Interaction.Adjacency.DijkstraSearch.uniqueVertices = null</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Stores a list of all mesh and invisible vertices that need to be traversed </p>
+
+</div>
+</div>
 <h2 class="groupheader">Property Documentation</h2>
 <a id="a69cc760ca348b2b1bb53f633d13f0606"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a69cc760ca348b2b1bb53f633d13f0606">&#9670;&nbsp;</a></span>minDistances</h2>
@@ -169,7 +261,7 @@ Properties</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">get</span></span>  </td>
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">private set</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">

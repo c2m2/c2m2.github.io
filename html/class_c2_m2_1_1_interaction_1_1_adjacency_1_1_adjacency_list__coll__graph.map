@@ -1,4 +1,5 @@
 <map id="C2M2.Interaction.Adjacency.AdjacencyList" name="C2M2.Interaction.Adjacency.AdjacencyList">
-<area shape="rect" id="node1" title=" " alt="" coords="5,131,195,252"/>
-<area shape="rect" id="node2" title=" " alt="" coords="45,5,155,83"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,433,244,643"/>
+<area shape="rect" id="node2" title=" " alt="" coords="92,5,219,83"/>
+<area shape="rect" id="node3" href="$class_c2_m2_1_1_interaction_1_1_adjacency_1_1_unique_vertices.html" title="Get the unique vertices of a mesh and add invisible vertices for adjacency list" alt="" coords="141,132,420,371"/>
 </map>

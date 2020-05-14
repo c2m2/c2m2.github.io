@@ -1,6 +1,8 @@
 <map id="C2M2.OIT.Interaction.ParticleSizeControllerButton" name="C2M2.OIT.Interaction.ParticleSizeControllerButton">
-<area shape="rect" id="node1" title=" " alt="" coords="57,375,249,540"/>
-<area shape="rect" id="node2" title=" " alt="" coords="5,5,116,83"/>
-<area shape="rect" id="node4" href="$class_c2_m2_1_1_o_i_t_1_1_interaction_1_1_particle_system_controller.html" title=" " alt="" coords="57,132,249,312"/>
-<area shape="rect" id="node3" title=" " alt="" coords="273,183,320,261"/>
+<area shape="rect" id="node1" title=" " alt="" coords="35,969,289,1179"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,5,132,83"/>
+<area shape="rect" id="node4" href="$class_c2_m2_1_1_o_i_t_1_1_interaction_1_1_particle_system_controller.html" title=" " alt="" coords="35,521,289,907"/>
+<area shape="rect" id="node5" href="$class_c2_m2_1_1_o_i_t_1_1_visualization_1_1_particle_system_ascii_data_reader.html" title=" " alt="" coords="56,147,327,444"/>
+<area shape="rect" id="node6" href="$class_c2_m2_1_1_o_i_t_1_1_interaction_1_1_particle_field_handle_controller.html" title=" " alt="" coords="351,132,605,459"/>
+<area shape="rect" id="node3" title=" " alt="" coords="313,675,368,753"/>
 </map>

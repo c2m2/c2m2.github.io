@@ -1,4 +1,4 @@
 <map id="C2M2.Utils.DebugUtils.LinesRenderer" name="C2M2.Utils.DebugUtils.LinesRenderer">
-<area shape="rect" id="node1" title="Draw a series of disjointed lines given a list of edges using the native LineRenderer class" alt="" coords="5,131,193,237"/>
-<area shape="rect" id="node2" title=" " alt="" coords="44,5,155,83"/>
+<area shape="rect" id="node1" title="Draw a series of disjointed lines given a list of edges using the native LineRenderer class" alt="" coords="5,131,244,340"/>
+<area shape="rect" id="node2" title=" " alt="" coords="61,5,188,83"/>
 </map>

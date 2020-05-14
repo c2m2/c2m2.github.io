@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['buttontype_1775',['ButtonType',['../class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_t_k_1_1_v_t_u_player_button.html#a3eeef879630c1690a492c265e470358e',1,'C2M2::NeuronalDynamics::Visualization::VTK::VTUPlayerButton']]]
+  ['axis_2500',['Axis',['../class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_sine_wave_colorizer.html#a98fae9c9ca9f5c340a9ab3a455dd0cf6',1,'C2M2::NeuronalDynamics::UGX::SineWaveColorizer']]]
 ];

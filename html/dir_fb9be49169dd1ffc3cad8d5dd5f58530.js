@@ -1,6 +1,8 @@
 var dir_fb9be49169dd1ffc3cad8d5dd5f58530 =
 [
-    [ "VTUColor.cs", "_v_t_u_color_8cs.html", null ],
+    [ "VTUColor.cs", "_v_t_u_color_8cs.html", [
+      [ "VTUColor", "class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_t_k_1_1_v_t_u_color.html", "class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_t_k_1_1_v_t_u_color" ]
+    ] ],
     [ "VTUManager.cs", "_v_t_u_manager_8cs.html", [
       [ "VTUManager", "class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_t_k_1_1_v_t_u_manager.html", "class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_t_k_1_1_v_t_u_manager" ]
     ] ],

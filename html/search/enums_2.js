@@ -1,5 +1,7 @@
 var searchData=
 [
-  ['eventtype_1780',['EventType',['../class_c2_m2_1_1_raycast_event_manager.html#ad597cabb374c7374c7f88d067ba7acae',1,'C2M2::RaycastEventManager']]],
-  ['extremamethod_1781',['ExtremaMethod',['../class_c2_m2_1_1_visualization_1_1_l_u_t_gradient.html#a688932d2ef2f3d19dde01be156a525d6',1,'C2M2::Visualization::LUTGradient']]]
+  ['cell_2502',['Cell',['../class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_u_g_x_reader_test.html#af8704ba34e872247a623478633af9df5',1,'C2M2::NeuronalDynamics::UGX::UGXReaderTest']]],
+  ['colortype_2503',['ColorType',['../class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_sine_wave_colorizer.html#ac957a4cb37f9a5f82abe940f81bb1839',1,'C2M2::NeuronalDynamics::UGX::SineWaveColorizer']]],
+  ['contenttype_2504',['ContentType',['../class_c2_m2_1_1_raycast_input_field.html#a97285c911dbe0ffc7889e7104e3310a6',1,'C2M2::RaycastInputField']]],
+  ['cylindertype_2505',['CylinderType',['../class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_sine_wave_colorizer.html#a51ae09731c1f951955e5b6e7fc70a950',1,'C2M2::NeuronalDynamics::UGX::SineWaveColorizer']]]
 ];

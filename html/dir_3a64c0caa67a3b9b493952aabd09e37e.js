@@ -12,8 +12,12 @@ var dir_3a64c0caa67a3b9b493952aabd09e37e =
       [ "Vertex", "struct_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_vertex.html", "struct_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_vertex" ],
       [ "Edge", "struct_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_edge.html", "struct_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_edge" ]
     ] ],
-    [ "GridExtensions.cs", "_grid_extensions_8cs.html", null ],
-    [ "GridUtils.cs", "_grid_utils_8cs.html", null ],
+    [ "GridExtensions.cs", "_grid_extensions_8cs.html", [
+      [ "GridExtensions", "class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_grid_extensions.html", "class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_grid_extensions" ]
+    ] ],
+    [ "GridUtils.cs", "_grid_utils_8cs.html", [
+      [ "GridUtils", "class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_grid_utils.html", "class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_grid_utils" ]
+    ] ],
     [ "MapUtils.cs", "_map_utils_8cs.html", "_map_utils_8cs" ],
     [ "SineWaveColorizer.cs", "_sine_wave_colorizer_8cs.html", [
       [ "SineWaveColorizer", "class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_sine_wave_colorizer.html", "class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_sine_wave_colorizer" ]

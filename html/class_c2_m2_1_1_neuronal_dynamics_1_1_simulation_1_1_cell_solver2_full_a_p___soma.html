@@ -88,6 +88,9 @@ $(document).ready(function(){initNavTree('class_c2_m2_1_1_neuronal_dynamics_1_1_
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="#pri-static-methods">Static Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
+<a href="#pri-static-attribs">Static Private Attributes</a> &#124;
 <a href="class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_cell_solver2_full_a_p___soma-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">C2M2.NeuronalDynamics.Simulation.CellSolver2FullAP_Soma Class Reference</div>  </div>
@@ -98,10 +101,10 @@ Inheritance diagram for C2M2.NeuronalDynamics.Simulation.CellSolver2FullAP_Soma:
 <div class="dyncontent">
 <div class="center"><img src="class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_cell_solver2_full_a_p___soma__inherit__graph.png" border="0" usemap="#_c2_m2_8_neuronal_dynamics_8_simulation_8_cell_solver2_full_a_p___soma_inherit__map" alt="Inheritance graph"/></div>
 <map name="_c2_m2_8_neuronal_dynamics_8_simulation_8_cell_solver2_full_a_p___soma_inherit__map" id="_c2_m2_8_neuronal_dynamics_8_simulation_8_cell_solver2_full_a_p___soma_inherit__map">
-<area shape="rect" title=" " alt="" coords="5,748,244,1075"/>
-<area shape="rect" href="class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_h_h_simulation.html" title="Provides base functionality for Hodgkin&#45;Huxley solvers." alt="" coords="63,505,187,700"/>
-<area shape="rect" href="class_c2_m2_1_1_simulation_1_1_scalar_field_simulation.html" title="Simulation of type double[] for visualizing scalar fields on meshes" alt="" coords="47,292,203,457"/>
-<area shape="rect" href="class_c2_m2_1_1_simulation_1_1_simulation.html" title=" " alt="" coords="47,5,203,244"/>
+<area shape="rect" title=" " alt="" coords="5,939,292,1529"/>
+<area shape="rect" href="class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_h_h_simulation.html" title="Provides base functionality for Hodgkin&#45;Huxley solvers." alt="" coords="65,593,232,891"/>
+<area shape="rect" href="class_c2_m2_1_1_simulation_1_1_scalar_field_simulation.html" title="Simulation of type double[] for visualizing scalar fields on meshes" alt="" coords="45,336,252,545"/>
+<area shape="rect" href="class_c2_m2_1_1_simulation_1_1_simulation.html" title=" " alt="" coords="45,5,252,288"/>
 </map>
 </div>
 <div class="dynheader">
@@ -109,13 +112,15 @@ Collaboration diagram for C2M2.NeuronalDynamics.Simulation.CellSolver2FullAP_Som
 <div class="dyncontent">
 <div class="center"><img src="class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_cell_solver2_full_a_p___soma__coll__graph.png" border="0" usemap="#_c2_m2_8_neuronal_dynamics_8_simulation_8_cell_solver2_full_a_p___soma_coll__map" alt="Collaboration graph"/></div>
 <map name="_c2_m2_8_neuronal_dynamics_8_simulation_8_cell_solver2_full_a_p___soma_coll__map" id="_c2_m2_8_neuronal_dynamics_8_simulation_8_cell_solver2_full_a_p___soma_coll__map">
-<area shape="rect" title=" " alt="" coords="83,876,321,1203"/>
-<area shape="rect" href="class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_h_h_simulation.html" title="Provides base functionality for Hodgkin&#45;Huxley solvers." alt="" coords="140,647,264,827"/>
-<area shape="rect" href="class_c2_m2_1_1_simulation_1_1_scalar_field_simulation.html" title="Simulation of type double[] for visualizing scalar fields on meshes" alt="" coords="27,433,183,584"/>
-<area shape="rect" href="class_c2_m2_1_1_simulation_1_1_simulation.html" title=" " alt="" coords="5,132,161,371"/>
-<area shape="rect" href="class_c2_m2_1_1_visualization_1_1_l_u_t_gradient.html" title="Create a fast and memory&#45;friendly color lookup table from a gradient" alt="" coords="186,169,397,334"/>
-<area shape="rect" title=" " alt="" coords="236,5,347,83"/>
-<area shape="rect" title=" " alt="" coords="207,470,263,547"/>
+<area shape="rect" title=" " alt="" coords="217,1139,504,1715"/>
+<area shape="rect" href="class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_h_h_simulation.html" title="Provides base functionality for Hodgkin&#45;Huxley solvers." alt="" coords="216,845,375,1039"/>
+<area shape="rect" href="class_c2_m2_1_1_simulation_1_1_scalar_field_simulation.html" title="Simulation of type double[] for visualizing scalar fields on meshes" alt="" coords="27,477,233,672"/>
+<area shape="rect" href="class_c2_m2_1_1_simulation_1_1_simulation.html" title=" " alt="" coords="5,132,212,415"/>
+<area shape="rect" href="class_c2_m2_1_1_visualization_1_1_l_u_t_gradient.html" title="Create a fast and memory&#45;friendly color lookup table from a gradient" alt="" coords="236,161,499,385"/>
+<area shape="rect" title=" " alt="" coords="304,5,431,83"/>
+<area shape="rect" title=" " alt="" coords="257,536,312,613"/>
+<area shape="rect" title=" " alt="" coords="429,536,500,613"/>
+<area shape="rect" href="class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_cell.html" title=" " alt="" coords="421,808,652,1076"/>
 </map>
 </div>
 <table class="memberdecls">
@@ -181,6 +186,51 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:ae16be28180e6933a58c45eabe18fcc1d inherit pro_methods_class_c2_m2_1_1_simulation_1_1_simulation"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c2_m2_1_1_simulation_1_1_simulation.html#ae16be28180e6933a58c45eabe18fcc1d">OnUpdate</a> ()</td></tr>
 <tr class="separator:ae16be28180e6933a58c45eabe18fcc1d inherit pro_methods_class_c2_m2_1_1_simulation_1_1_simulation"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-methods"></a>
+Static Private Member Functions</h2></td></tr>
+<tr class="memitem:ad428775e82f1ed98c62853f3d6117430"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="_cell_solver2_8cs.html#a90e5369014f032bde39e79eacb048ede">Vector</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_cell_solver2_full_a_p___soma.html#ad428775e82f1ed98c62853f3d6117430">reactF</a> (<a class="el" href="_cell_solver2_8cs.html#a90e5369014f032bde39e79eacb048ede">Vector</a> V, <a class="el" href="_cell_solver2_8cs.html#a90e5369014f032bde39e79eacb048ede">Vector</a> NN, <a class="el" href="_cell_solver2_8cs.html#a90e5369014f032bde39e79eacb048ede">Vector</a> MM, <a class="el" href="_cell_solver2_8cs.html#a90e5369014f032bde39e79eacb048ede">Vector</a> HH, List&lt; int &gt; bcIndices)</td></tr>
+<tr class="separator:ad428775e82f1ed98c62853f3d6117430"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad0e013fb700b5a3f4190b787fce61b09"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="_cell_solver2_8cs.html#a90e5369014f032bde39e79eacb048ede">Vector</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_cell_solver2_full_a_p___soma.html#ad0e013fb700b5a3f4190b787fce61b09">fN</a> (<a class="el" href="_cell_solver2_8cs.html#a90e5369014f032bde39e79eacb048ede">Vector</a> V, <a class="el" href="_cell_solver2_8cs.html#a90e5369014f032bde39e79eacb048ede">Vector</a> <a class="el" href="class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_cell_solver2_full_a_p___soma.html#a8c5db0d9111a84db594304cdfaa1f649">N</a>)</td></tr>
+<tr class="separator:ad0e013fb700b5a3f4190b787fce61b09"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2724bf3119b6c49462ae4bd2e541fb5"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="_cell_solver2_8cs.html#a90e5369014f032bde39e79eacb048ede">Vector</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_cell_solver2_full_a_p___soma.html#aa2724bf3119b6c49462ae4bd2e541fb5">fM</a> (<a class="el" href="_cell_solver2_8cs.html#a90e5369014f032bde39e79eacb048ede">Vector</a> V, <a class="el" href="_cell_solver2_8cs.html#a90e5369014f032bde39e79eacb048ede">Vector</a> <a class="el" href="class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_cell_solver2_full_a_p___soma.html#ac8dbb0e0ebc3fd3b62ba04e2a27c5e0d">M</a>)</td></tr>
+<tr class="separator:aa2724bf3119b6c49462ae4bd2e541fb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3fa69c44cbcde57b86a5981128d7f7d6"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="_cell_solver2_8cs.html#a90e5369014f032bde39e79eacb048ede">Vector</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_cell_solver2_full_a_p___soma.html#a3fa69c44cbcde57b86a5981128d7f7d6">fH</a> (<a class="el" href="_cell_solver2_8cs.html#a90e5369014f032bde39e79eacb048ede">Vector</a> V, <a class="el" href="_cell_solver2_8cs.html#a90e5369014f032bde39e79eacb048ede">Vector</a> <a class="el" href="class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_cell_solver2_full_a_p___soma.html#a4d6fd5b1e3ee2091f681a422777da882">H</a>)</td></tr>
+<tr class="separator:a3fa69c44cbcde57b86a5981128d7f7d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aded67c670f9ba58cf60d53c4b86b34c0"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="_cell_solver2_8cs.html#a90e5369014f032bde39e79eacb048ede">Vector</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_cell_solver2_full_a_p___soma.html#aded67c670f9ba58cf60d53c4b86b34c0">an</a> (<a class="el" href="_cell_solver2_8cs.html#a90e5369014f032bde39e79eacb048ede">Vector</a> V)</td></tr>
+<tr class="separator:aded67c670f9ba58cf60d53c4b86b34c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f242664edf988668b09d42c079d565c"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="_cell_solver2_8cs.html#a90e5369014f032bde39e79eacb048ede">Vector</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_cell_solver2_full_a_p___soma.html#a2f242664edf988668b09d42c079d565c">bn</a> (<a class="el" href="_cell_solver2_8cs.html#a90e5369014f032bde39e79eacb048ede">Vector</a> V)</td></tr>
+<tr class="separator:a2f242664edf988668b09d42c079d565c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a37a06053ac84d69023bb52a0319624e3"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="_cell_solver2_8cs.html#a90e5369014f032bde39e79eacb048ede">Vector</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_cell_solver2_full_a_p___soma.html#a37a06053ac84d69023bb52a0319624e3">am</a> (<a class="el" href="_cell_solver2_8cs.html#a90e5369014f032bde39e79eacb048ede">Vector</a> V)</td></tr>
+<tr class="separator:a37a06053ac84d69023bb52a0319624e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8b9c33fc853c8169d62423fd1cef23d"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="_cell_solver2_8cs.html#a90e5369014f032bde39e79eacb048ede">Vector</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_cell_solver2_full_a_p___soma.html#ac8b9c33fc853c8169d62423fd1cef23d">bm</a> (<a class="el" href="_cell_solver2_8cs.html#a90e5369014f032bde39e79eacb048ede">Vector</a> V)</td></tr>
+<tr class="separator:ac8b9c33fc853c8169d62423fd1cef23d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f2d031b363849a9d3e8454168695773"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="_cell_solver2_8cs.html#a90e5369014f032bde39e79eacb048ede">Vector</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_cell_solver2_full_a_p___soma.html#a3f2d031b363849a9d3e8454168695773">ah</a> (<a class="el" href="_cell_solver2_8cs.html#a90e5369014f032bde39e79eacb048ede">Vector</a> V)</td></tr>
+<tr class="separator:a3f2d031b363849a9d3e8454168695773"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3cddb2b7e4990c22d12aa1e7df360604"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="_cell_solver2_8cs.html#a90e5369014f032bde39e79eacb048ede">Vector</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_cell_solver2_full_a_p___soma.html#a3cddb2b7e4990c22d12aa1e7df360604">bh</a> (<a class="el" href="_cell_solver2_8cs.html#a90e5369014f032bde39e79eacb048ede">Vector</a> V)</td></tr>
+<tr class="separator:a3cddb2b7e4990c22d12aa1e7df360604"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:ad8a9088a68e8ad05b8f8c04fe4694bf7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_cell_solver2_8cs.html#a90e5369014f032bde39e79eacb048ede">Vector</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_cell_solver2_full_a_p___soma.html#ad8a9088a68e8ad05b8f8c04fe4694bf7">U</a></td></tr>
+<tr class="separator:ad8a9088a68e8ad05b8f8c04fe4694bf7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8dbb0e0ebc3fd3b62ba04e2a27c5e0d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_cell_solver2_8cs.html#a90e5369014f032bde39e79eacb048ede">Vector</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_cell_solver2_full_a_p___soma.html#ac8dbb0e0ebc3fd3b62ba04e2a27c5e0d">M</a></td></tr>
+<tr class="separator:ac8dbb0e0ebc3fd3b62ba04e2a27c5e0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c5db0d9111a84db594304cdfaa1f649"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_cell_solver2_8cs.html#a90e5369014f032bde39e79eacb048ede">Vector</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_cell_solver2_full_a_p___soma.html#a8c5db0d9111a84db594304cdfaa1f649">N</a></td></tr>
+<tr class="separator:a8c5db0d9111a84db594304cdfaa1f649"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d6fd5b1e3ee2091f681a422777da882"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_cell_solver2_8cs.html#a90e5369014f032bde39e79eacb048ede">Vector</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_cell_solver2_full_a_p___soma.html#a4d6fd5b1e3ee2091f681a422777da882">H</a></td></tr>
+<tr class="separator:a4d6fd5b1e3ee2091f681a422777da882"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf2362b4a3b0470c7ede71716c6f6c02"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_cell_solver2_full_a_p___soma.html#abf2362b4a3b0470c7ede71716c6f6c02">i</a> = -1</td></tr>
+<tr class="separator:abf2362b4a3b0470c7ede71716c6f6c02"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a082981567ceba2794e55a3284fe37fe8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_cell.html">NeuronCell</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_cell_solver2_full_a_p___soma.html#a082981567ceba2794e55a3284fe37fe8">myCell</a></td></tr>
+<tr class="separator:a082981567ceba2794e55a3284fe37fe8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-attribs"></a>
+Static Private Attributes</h2></td></tr>
+<tr class="memitem:a7fb86035ee60f8c152db11d38238cec4"><td class="memItemLeft" align="right" valign="top">const double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_cell_solver2_full_a_p___soma.html#a7fb86035ee60f8c152db11d38238cec4">mi</a> = 0.4</td></tr>
+<tr class="separator:a7fb86035ee60f8c152db11d38238cec4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb383abba2ce0da235b4118a99751dd3"><td class="memItemLeft" align="right" valign="top">const double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_cell_solver2_full_a_p___soma.html#afb383abba2ce0da235b4118a99751dd3">hi</a> = 0.2</td></tr>
+<tr class="separator:afb383abba2ce0da235b4118a99751dd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pub_methods_class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_h_h_simulation"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_h_h_simulation')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_h_h_simulation.html">C2M2.NeuronalDynamics.Simulation.HHSimulation</a></td></tr>
@@ -227,10 +277,166 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:aec928adabf7f50b7254a618bfe859cee inherit pro_attribs_class_c2_m2_1_1_simulation_1_1_simulation"><td class="memItemLeft" align="right" valign="top">Mutex&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c2_m2_1_1_simulation_1_1_simulation.html#aec928adabf7f50b7254a618bfe859cee">mutex</a></td></tr>
 <tr class="separator:aec928adabf7f50b7254a618bfe859cee inherit pro_attribs_class_c2_m2_1_1_simulation_1_1_simulation"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header properties_class_c2_m2_1_1_simulation_1_1_scalar_field_simulation"><td colspan="2" onclick="javascript:toggleInherit('properties_class_c2_m2_1_1_simulation_1_1_scalar_field_simulation')"><img src="closed.png" alt="-"/>&#160;Properties inherited from <a class="el" href="class_c2_m2_1_1_simulation_1_1_scalar_field_simulation.html">C2M2.Simulation.ScalarFieldSimulation</a></td></tr>
-<tr class="memitem:ab105bae6258689fc8229f2aac45a2770 inherit properties_class_c2_m2_1_1_simulation_1_1_scalar_field_simulation"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_c2_m2_1_1_visualization_1_1_l_u_t_gradient.html">LUTGradient</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c2_m2_1_1_simulation_1_1_scalar_field_simulation.html#ab105bae6258689fc8229f2aac45a2770">colorLUT</a> = null<code> [get]</code></td></tr>
+<tr class="memitem:ab105bae6258689fc8229f2aac45a2770 inherit properties_class_c2_m2_1_1_simulation_1_1_scalar_field_simulation"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_c2_m2_1_1_visualization_1_1_l_u_t_gradient.html">LUTGradient</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c2_m2_1_1_simulation_1_1_scalar_field_simulation.html#ab105bae6258689fc8229f2aac45a2770">colorLUT</a> = null<code> [get, private set]</code></td></tr>
 <tr class="separator:ab105bae6258689fc8229f2aac45a2770 inherit properties_class_c2_m2_1_1_simulation_1_1_scalar_field_simulation"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a3f2d031b363849a9d3e8454168695773"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3f2d031b363849a9d3e8454168695773">&#9670;&nbsp;</a></span>ah()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="_cell_solver2_8cs.html#a90e5369014f032bde39e79eacb048ede">Vector</a> C2M2.NeuronalDynamics.Simulation.CellSolver2FullAP_Soma.ah </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_cell_solver2_8cs.html#a90e5369014f032bde39e79eacb048ede">Vector</a>&#160;</td>
+          <td class="paramname"><em>V</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a37a06053ac84d69023bb52a0319624e3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a37a06053ac84d69023bb52a0319624e3">&#9670;&nbsp;</a></span>am()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="_cell_solver2_8cs.html#a90e5369014f032bde39e79eacb048ede">Vector</a> C2M2.NeuronalDynamics.Simulation.CellSolver2FullAP_Soma.am </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_cell_solver2_8cs.html#a90e5369014f032bde39e79eacb048ede">Vector</a>&#160;</td>
+          <td class="paramname"><em>V</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aded67c670f9ba58cf60d53c4b86b34c0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aded67c670f9ba58cf60d53c4b86b34c0">&#9670;&nbsp;</a></span>an()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="_cell_solver2_8cs.html#a90e5369014f032bde39e79eacb048ede">Vector</a> C2M2.NeuronalDynamics.Simulation.CellSolver2FullAP_Soma.an </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_cell_solver2_8cs.html#a90e5369014f032bde39e79eacb048ede">Vector</a>&#160;</td>
+          <td class="paramname"><em>V</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3cddb2b7e4990c22d12aa1e7df360604"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3cddb2b7e4990c22d12aa1e7df360604">&#9670;&nbsp;</a></span>bh()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="_cell_solver2_8cs.html#a90e5369014f032bde39e79eacb048ede">Vector</a> C2M2.NeuronalDynamics.Simulation.CellSolver2FullAP_Soma.bh </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_cell_solver2_8cs.html#a90e5369014f032bde39e79eacb048ede">Vector</a>&#160;</td>
+          <td class="paramname"><em>V</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac8b9c33fc853c8169d62423fd1cef23d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac8b9c33fc853c8169d62423fd1cef23d">&#9670;&nbsp;</a></span>bm()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="_cell_solver2_8cs.html#a90e5369014f032bde39e79eacb048ede">Vector</a> C2M2.NeuronalDynamics.Simulation.CellSolver2FullAP_Soma.bm </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_cell_solver2_8cs.html#a90e5369014f032bde39e79eacb048ede">Vector</a>&#160;</td>
+          <td class="paramname"><em>V</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2f242664edf988668b09d42c079d565c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2f242664edf988668b09d42c079d565c">&#9670;&nbsp;</a></span>bn()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="_cell_solver2_8cs.html#a90e5369014f032bde39e79eacb048ede">Vector</a> C2M2.NeuronalDynamics.Simulation.CellSolver2FullAP_Soma.bn </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_cell_solver2_8cs.html#a90e5369014f032bde39e79eacb048ede">Vector</a>&#160;</td>
+          <td class="paramname"><em>V</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a960c4fcbd6b3f985f584a7594a456dcc"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a960c4fcbd6b3f985f584a7594a456dcc">&#9670;&nbsp;</a></span>boundaryConditions()</h2>
 
@@ -261,6 +467,114 @@ Additional Inherited Members</h2></td></tr>
   </td>
   <td class="mlabels-right">
 <span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3fa69c44cbcde57b86a5981128d7f7d6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3fa69c44cbcde57b86a5981128d7f7d6">&#9670;&nbsp;</a></span>fH()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="_cell_solver2_8cs.html#a90e5369014f032bde39e79eacb048ede">Vector</a> C2M2.NeuronalDynamics.Simulation.CellSolver2FullAP_Soma.fH </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_cell_solver2_8cs.html#a90e5369014f032bde39e79eacb048ede">Vector</a>&#160;</td>
+          <td class="paramname"><em>V</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_cell_solver2_8cs.html#a90e5369014f032bde39e79eacb048ede">Vector</a>&#160;</td>
+          <td class="paramname"><em>H</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa2724bf3119b6c49462ae4bd2e541fb5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa2724bf3119b6c49462ae4bd2e541fb5">&#9670;&nbsp;</a></span>fM()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="_cell_solver2_8cs.html#a90e5369014f032bde39e79eacb048ede">Vector</a> C2M2.NeuronalDynamics.Simulation.CellSolver2FullAP_Soma.fM </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_cell_solver2_8cs.html#a90e5369014f032bde39e79eacb048ede">Vector</a>&#160;</td>
+          <td class="paramname"><em>V</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_cell_solver2_8cs.html#a90e5369014f032bde39e79eacb048ede">Vector</a>&#160;</td>
+          <td class="paramname"><em>M</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad0e013fb700b5a3f4190b787fce61b09"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad0e013fb700b5a3f4190b787fce61b09">&#9670;&nbsp;</a></span>fN()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="_cell_solver2_8cs.html#a90e5369014f032bde39e79eacb048ede">Vector</a> C2M2.NeuronalDynamics.Simulation.CellSolver2FullAP_Soma.fN </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_cell_solver2_8cs.html#a90e5369014f032bde39e79eacb048ede">Vector</a>&#160;</td>
+          <td class="paramname"><em>V</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_cell_solver2_8cs.html#a90e5369014f032bde39e79eacb048ede">Vector</a>&#160;</td>
+          <td class="paramname"><em>N</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -324,6 +638,60 @@ Additional Inherited Members</h2></td></tr>
   </td>
   <td class="mlabels-right">
 <span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad428775e82f1ed98c62853f3d6117430"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad428775e82f1ed98c62853f3d6117430">&#9670;&nbsp;</a></span>reactF()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="_cell_solver2_8cs.html#a90e5369014f032bde39e79eacb048ede">Vector</a> C2M2.NeuronalDynamics.Simulation.CellSolver2FullAP_Soma.reactF </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_cell_solver2_8cs.html#a90e5369014f032bde39e79eacb048ede">Vector</a>&#160;</td>
+          <td class="paramname"><em>V</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_cell_solver2_8cs.html#a90e5369014f032bde39e79eacb048ede">Vector</a>&#160;</td>
+          <td class="paramname"><em>NN</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_cell_solver2_8cs.html#a90e5369014f032bde39e79eacb048ede">Vector</a>&#160;</td>
+          <td class="paramname"><em>MM</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_cell_solver2_8cs.html#a90e5369014f032bde39e79eacb048ede">Vector</a>&#160;</td>
+          <td class="paramname"><em>HH</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">List&lt; int &gt;&#160;</td>
+          <td class="paramname"><em>bcIndices</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -592,6 +960,160 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a id="a4d6fd5b1e3ee2091f681a422777da882"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4d6fd5b1e3ee2091f681a422777da882">&#9670;&nbsp;</a></span>H</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_cell_solver2_8cs.html#a90e5369014f032bde39e79eacb048ede">Vector</a> C2M2.NeuronalDynamics.Simulation.CellSolver2FullAP_Soma.H</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afb383abba2ce0da235b4118a99751dd3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afb383abba2ce0da235b4118a99751dd3">&#9670;&nbsp;</a></span>hi</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const double C2M2.NeuronalDynamics.Simulation.CellSolver2FullAP_Soma.hi = 0.2</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abf2362b4a3b0470c7ede71716c6f6c02"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abf2362b4a3b0470c7ede71716c6f6c02">&#9670;&nbsp;</a></span>i</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int C2M2.NeuronalDynamics.Simulation.CellSolver2FullAP_Soma.i = -1</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac8dbb0e0ebc3fd3b62ba04e2a27c5e0d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac8dbb0e0ebc3fd3b62ba04e2a27c5e0d">&#9670;&nbsp;</a></span>M</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_cell_solver2_8cs.html#a90e5369014f032bde39e79eacb048ede">Vector</a> C2M2.NeuronalDynamics.Simulation.CellSolver2FullAP_Soma.M</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7fb86035ee60f8c152db11d38238cec4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7fb86035ee60f8c152db11d38238cec4">&#9670;&nbsp;</a></span>mi</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const double C2M2.NeuronalDynamics.Simulation.CellSolver2FullAP_Soma.mi = 0.4</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a082981567ceba2794e55a3284fe37fe8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a082981567ceba2794e55a3284fe37fe8">&#9670;&nbsp;</a></span>myCell</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_cell.html">NeuronCell</a> C2M2.NeuronalDynamics.Simulation.CellSolver2FullAP_Soma.myCell</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8c5db0d9111a84db594304cdfaa1f649"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8c5db0d9111a84db594304cdfaa1f649">&#9670;&nbsp;</a></span>N</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_cell_solver2_8cs.html#a90e5369014f032bde39e79eacb048ede">Vector</a> C2M2.NeuronalDynamics.Simulation.CellSolver2FullAP_Soma.N</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="ab02729f9c4f73460accef1ea1587208e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab02729f9c4f73460accef1ea1587208e">&#9670;&nbsp;</a></span>ni</h2>
 
@@ -652,6 +1174,28 @@ Additional Inherited Members</h2></td></tr>
   </td>
   <td class="mlabels-right">
 <span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad8a9088a68e8ad05b8f8c04fe4694bf7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad8a9088a68e8ad05b8f8c04fe4694bf7">&#9670;&nbsp;</a></span>U</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_cell_solver2_8cs.html#a90e5369014f032bde39e79eacb048ede">Vector</a> C2M2.NeuronalDynamics.Simulation.CellSolver2FullAP_Soma.U</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">

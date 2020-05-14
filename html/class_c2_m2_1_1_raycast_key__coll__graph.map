@@ -1,4 +1,6 @@
 <map id="C2M2.RaycastKey" name="C2M2.RaycastKey">
-<area shape="rect" id="node1" title=" " alt="" coords="5,131,136,281"/>
-<area shape="rect" id="node2" title=" " alt="" coords="15,5,126,83"/>
+<area shape="rect" id="node1" title=" " alt="" coords="35,681,177,891"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,5,132,83"/>
+<area shape="rect" id="node3" href="$class_c2_m2_1_1_raycast_keyboard.html" title=" " alt="" coords="99,292,297,619"/>
+<area shape="rect" id="node4" title=" " alt="" coords="163,5,233,83"/>
 </map>

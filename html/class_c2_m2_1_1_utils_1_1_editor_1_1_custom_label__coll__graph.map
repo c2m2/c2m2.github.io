@@ -1,4 +1,4 @@
 <map id="C2M2.Utils.Editor.CustomLabel" name="C2M2.Utils.Editor.CustomLabel">
-<area shape="rect" id="node1" title="Custom property attribute to override UnityEditor labels of variables" alt="" coords="5,131,179,223"/>
-<area shape="rect" id="node2" title=" " alt="" coords="32,5,152,83"/>
+<area shape="rect" id="node1" title="Custom property attribute to override UnityEditor labels of variables" alt="" coords="5,131,220,223"/>
+<area shape="rect" id="node2" title=" " alt="" coords="33,5,192,83"/>
 </map>

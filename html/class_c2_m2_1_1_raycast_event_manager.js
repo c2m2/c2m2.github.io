@@ -7,6 +7,7 @@ var class_c2_m2_1_1_raycast_event_manager =
     ] ],
     [ "AllEvents", "class_c2_m2_1_1_raycast_event_manager.html#ab0c1e7fcb5f7d8e2330de5210e119046", null ],
     [ "AllEventsNull", "class_c2_m2_1_1_raycast_event_manager.html#ad4a27e159035aa8f66c902ae9e8f8fc1", null ],
+    [ "Awake", "class_c2_m2_1_1_raycast_event_manager.html#a575dd828f4ce30d11ee30b0783910d55", null ],
     [ "EndEvent", "class_c2_m2_1_1_raycast_event_manager.html#a0ed298c8ed9be6d876134247bba2caa3", null ],
     [ "EndEventNull", "class_c2_m2_1_1_raycast_event_manager.html#aacfdbd341b1f389f05380723a57982d6", null ],
     [ "HoldEvent", "class_c2_m2_1_1_raycast_event_manager.html#a65e0b68762f15a97ef5780c20869254a", null ],
@@ -20,6 +21,8 @@ var class_c2_m2_1_1_raycast_event_manager =
     [ "TriggerEmptyBoth", "class_c2_m2_1_1_raycast_event_manager.html#ae6a36efecbaec5d90fad3f09eb09f6f6", null ],
     [ "TriggerEmptyLeft", "class_c2_m2_1_1_raycast_event_manager.html#a8a542be93907fee431ee92406adb0c4a", null ],
     [ "TriggerEmptyRight", "class_c2_m2_1_1_raycast_event_manager.html#afb6efde09bd25ffe5bf587069c452265", null ],
+    [ "emptyTrigger", "class_c2_m2_1_1_raycast_event_manager.html#a433dfb228d4ec9e22ab501cd2c786b4f", null ],
     [ "leftTrigger", "class_c2_m2_1_1_raycast_event_manager.html#a35422f433d18519823aa0fdc68dd48a8", null ],
+    [ "nullHit", "class_c2_m2_1_1_raycast_event_manager.html#a4ead5f11b4099717a01094b4ceee3a1b", null ],
     [ "rightTrigger", "class_c2_m2_1_1_raycast_event_manager.html#a5f936ef484680f7b87d6ea8eda279191", null ]
 ];

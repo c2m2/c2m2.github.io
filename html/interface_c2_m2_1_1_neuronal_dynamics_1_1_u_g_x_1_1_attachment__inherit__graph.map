@@ -1,4 +1,4 @@
 <map id="C2M2.NeuronalDynamics.UGX.Attachment" name="C2M2.NeuronalDynamics.UGX.Attachment">
-<area shape="rect" id="node1" title="Marker interface for attachments" alt="" coords="5,5,208,97"/>
-<area shape="rect" id="node2" href="$class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_i_attachment.html" title="Abstract base class for all attachments providing common functionality" alt="" coords="5,145,208,237"/>
+<area shape="rect" id="node1" title="Marker interface for attachments" alt="" coords="5,5,236,97"/>
+<area shape="rect" id="node2" href="$class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_i_attachment.html" title="Abstract base class for all attachments providing common functionality" alt="" coords="5,145,236,237"/>
 </map>

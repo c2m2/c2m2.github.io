@@ -7,5 +7,6 @@ var class_c2_m2_1_1_interaction_1_1_adjacency_1_1_priority_queue =
     [ "IsConsistent", "class_c2_m2_1_1_interaction_1_1_adjacency_1_1_priority_queue.html#a99a9a570bc7b06d0febb054aa02ee045", null ],
     [ "Peek", "class_c2_m2_1_1_interaction_1_1_adjacency_1_1_priority_queue.html#abdb8b3c3132d518321bdeda8d726713d", null ],
     [ "Remove", "class_c2_m2_1_1_interaction_1_1_adjacency_1_1_priority_queue.html#a141196e4ccf6305c7dd9ab3400132e95", null ],
-    [ "ToString", "class_c2_m2_1_1_interaction_1_1_adjacency_1_1_priority_queue.html#a12434f94759a8d7bf787de1bb00f43da", null ]
+    [ "ToString", "class_c2_m2_1_1_interaction_1_1_adjacency_1_1_priority_queue.html#a12434f94759a8d7bf787de1bb00f43da", null ],
+    [ "data", "class_c2_m2_1_1_interaction_1_1_adjacency_1_1_priority_queue.html#ab3431da0b993c854e17957fd4b9c181e", null ]
 ];

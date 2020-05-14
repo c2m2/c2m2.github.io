@@ -1,7 +1,3 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$class_c2_m2_1_1_simulation_1_1_simulation.html" title=" " alt="" coords="5,39,192,80"/>
-<area shape="rect" id="node2" href="$class_c2_m2_1_1_simulation_1_1_position_field_simulation.html" title="Simulation of type Vector3[] for simulating positional fields" alt="" coords="240,39,412,80"/>
-<area shape="rect" id="node3" href="$class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_m_d_simulation.html" title=" " alt="" coords="460,39,703,80"/>
-<area shape="rect" id="node4" href="$class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_example_m_d_simulation.html" title=" " alt="" coords="751,5,993,47"/>
-<area shape="rect" id="node5" href="$class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_m_d_solver.html" title=" " alt="" coords="751,71,993,112"/>
+<area shape="rect" id="node1" href="$class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_o_b_j_file_reader.html" title="WARNING: Unity uses left&#45;handed coordinate system not right&#45;handed" alt="" coords="5,5,316,47"/>
 </map>

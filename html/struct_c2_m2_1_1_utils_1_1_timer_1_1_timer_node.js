@@ -7,5 +7,6 @@ var struct_c2_m2_1_1_utils_1_1_timer_1_1_timer_node =
     [ "Minutes", "struct_c2_m2_1_1_utils_1_1_timer_1_1_timer_node.html#a144e6e95c19f0960d4031354fa3ec83d", null ],
     [ "name", "struct_c2_m2_1_1_utils_1_1_timer_1_1_timer_node.html#a5d91bb50a976c615a20306bd29d3d1ed", null ],
     [ "Seconds", "struct_c2_m2_1_1_utils_1_1_timer_1_1_timer_node.html#aef8f81362e868291758c7ea713e82474", null ],
+    [ "stopwatch", "struct_c2_m2_1_1_utils_1_1_timer_1_1_timer_node.html#ac097b1e495d4252e558ebec5c8f17875", null ],
     [ "Ticks", "struct_c2_m2_1_1_utils_1_1_timer_1_1_timer_node.html#a1624c9d62357c68700c5280a731494ac", null ]
 ];

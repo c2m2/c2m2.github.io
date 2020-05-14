@@ -1,6 +1,6 @@
 <map id="C2M2.Interaction.RaycastSimHeater" name="C2M2.Interaction.RaycastSimHeater">
-<area shape="rect" id="node1" title=" " alt="" coords="109,131,281,267"/>
-<area shape="rect" id="node3" href="$class_c2_m2_1_1_interaction_1_1_raycast_sim_heater_continuous.html" title=" " alt="" coords="5,315,184,451"/>
-<area shape="rect" id="node4" href="$class_c2_m2_1_1_interaction_1_1_raycast_sim_heater_discrete.html" title=" " alt="" coords="209,322,381,443"/>
-<area shape="rect" id="node2" title=" " alt="" coords="139,5,250,83"/>
+<area shape="rect" id="node1" title=" " alt="" coords="136,131,351,281"/>
+<area shape="rect" id="node3" href="$class_c2_m2_1_1_interaction_1_1_raycast_sim_heater_continuous.html" title=" " alt="" coords="5,329,236,495"/>
+<area shape="rect" id="node4" href="$class_c2_m2_1_1_interaction_1_1_raycast_sim_heater_discrete.html" title=" " alt="" coords="260,351,475,473"/>
+<area shape="rect" id="node2" title=" " alt="" coords="180,5,307,83"/>
 </map>

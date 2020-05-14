@@ -89,6 +89,8 @@ $(document).ready(function(){initNavTree('class_c2_m2_1_1_game_manager.html','')
 <a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="#properties">Properties</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_c2_m2_1_1_game_manager-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">C2M2.GameManager Class Reference</div>  </div>
@@ -99,8 +101,8 @@ Inheritance diagram for C2M2.GameManager:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_c2_m2_1_1_game_manager__inherit__graph.png" border="0" usemap="#_c2_m2_8_game_manager_inherit__map" alt="Inheritance graph"/></div>
 <map name="_c2_m2_8_game_manager_inherit__map" id="_c2_m2_8_game_manager_inherit__map">
-<area shape="rect" title=" " alt="" coords="5,131,211,501"/>
-<area shape="rect" title=" " alt="" coords="53,5,163,83"/>
+<area shape="rect" title=" " alt="" coords="5,131,260,560"/>
+<area shape="rect" title=" " alt="" coords="69,5,196,83"/>
 </map>
 </div>
 <div class="dynheader">
@@ -108,11 +110,15 @@ Collaboration diagram for C2M2.GameManager:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_c2_m2_1_1_game_manager__coll__graph.png" border="0" usemap="#_c2_m2_8_game_manager_coll__map" alt="Collaboration graph"/></div>
 <map name="_c2_m2_8_game_manager_coll__map" id="_c2_m2_8_game_manager_coll__map">
-<area shape="rect" title=" " alt="" coords="115,433,321,745"/>
-<area shape="rect" title=" " alt="" coords="5,5,116,83"/>
-<area shape="rect" href="class_c2_m2_1_1_raycast_forward.html" title=" " alt="" coords="59,132,239,356"/>
-<area shape="rect" title=" " alt="" coords="263,205,311,283"/>
-<area shape="rect" title=" " alt="" coords="361,205,416,283"/>
+<area shape="rect" title=" " alt="" coords="224,1455,479,1825"/>
+<area shape="rect" title=" " alt="" coords="5,139,132,217"/>
+<area shape="rect" href="class_c2_m2_1_1_raycast_forward.html" title=" " alt="" coords="103,904,325,1377"/>
+<area shape="rect" href="class_c2_m2_1_1_raycast_event_manager.html" title="Attach this script to parent gameObject, create one child with one raycast trigger per child...." alt="" coords="107,544,321,841"/>
+<area shape="rect" href="class_c2_m2_1_1_raycast_press_events.html" title="Store custom events that the corresponding RaycastTriggerManager will invoke" alt="" coords="157,316,364,452"/>
+<area shape="rect" href="class_c2_m2_1_1_raycast_press_events_1_1_raycast_hit_event.html" title=" " alt="" coords="156,132,371,224"/>
+<area shape="rect" title=" " alt="" coords="156,5,371,83"/>
+<area shape="rect" title=" " alt="" coords="388,345,459,423"/>
+<area shape="rect" title=" " alt="" coords="461,1102,524,1179"/>
 </map>
 </div>
 <table class="memberdecls">
@@ -172,8 +178,47 @@ Properties</h2></td></tr>
 <tr class="separator:adf31873fa5ca3dcee00d04f189cbd73e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeeb2f1256d0d9377be2c71b296c157f9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_c2_m2_1_1_raycast_keyboard.html">RaycastKeyboard</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c2_m2_1_1_game_manager.html#aeeb2f1256d0d9377be2c71b296c157f9">raycastKeyboard</a><code> [get, set]</code></td></tr>
 <tr class="separator:aeeb2f1256d0d9377be2c71b296c157f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a1f931a826f1b6b649da64e6316bf3fed"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c2_m2_1_1_game_manager.html#a1f931a826f1b6b649da64e6316bf3fed">Awake</a> ()</td></tr>
+<tr class="separator:a1f931a826f1b6b649da64e6316bf3fed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad012b88cff23278a315d8e4bab785ab1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c2_m2_1_1_game_manager.html#ad012b88cff23278a315d8e4bab785ab1">Update</a> ()</td></tr>
+<tr class="separator:ad012b88cff23278a315d8e4bab785ab1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:aa058e5c7aa89a098267a5b237c9b44aa"><td class="memItemLeft" align="right" valign="top">List&lt; string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c2_m2_1_1_game_manager.html#aa058e5c7aa89a098267a5b237c9b44aa">logQ</a> = new List&lt;string&gt;()</td></tr>
+<tr class="separator:aa058e5c7aa89a098267a5b237c9b44aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab316da7f311a51aca774ed5d47becdd2"><td class="memItemLeft" align="right" valign="top">readonly int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c2_m2_1_1_game_manager.html#ab316da7f311a51aca774ed5d47becdd2">logQCap</a> = 100</td></tr>
+<tr class="separator:ab316da7f311a51aca774ed5d47becdd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a1f931a826f1b6b649da64e6316bf3fed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1f931a826f1b6b649da64e6316bf3fed">&#9670;&nbsp;</a></span>Awake()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void C2M2.GameManager.Awake </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a496260483117ee816937bbafb9a0e16f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a496260483117ee816937bbafb9a0e16f">&#9670;&nbsp;</a></span>DebugLogSafe()</h2>
 
@@ -245,6 +290,31 @@ Properties</h2></td></tr>
           <td></td>
         </tr>
       </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad012b88cff23278a315d8e4bab785ab1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad012b88cff23278a315d8e4bab785ab1">&#9670;&nbsp;</a></span>Update()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void C2M2.GameManager.Update </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>
@@ -324,6 +394,50 @@ Properties</h2></td></tr>
           <td class="memname"><a class="el" href="class_c2_m2_1_1_raycast_forward.html">RaycastForward</a> C2M2.GameManager.leftRaycaster</td>
         </tr>
       </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa058e5c7aa89a098267a5b237c9b44aa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa058e5c7aa89a098267a5b237c9b44aa">&#9670;&nbsp;</a></span>logQ</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt;string&gt; C2M2.GameManager.logQ = new List&lt;string&gt;()</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab316da7f311a51aca774ed5d47becdd2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab316da7f311a51aca774ed5d47becdd2">&#9670;&nbsp;</a></span>logQCap</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">readonly int C2M2.GameManager.logQCap = 100</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>

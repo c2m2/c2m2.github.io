@@ -25,7 +25,7 @@ var dir_6ae65e2f801eb87d2e078d3609b5ae88 =
       [ "VRButton", "class_v_r_button.html", "class_v_r_button" ]
     ] ],
     [ "VRScrollbar.cs", "_v_r_scrollbar_8cs.html", [
-      [ "VRScrollbar", "class_v_r_scrollbar.html", null ]
+      [ "VRScrollbar", "class_v_r_scrollbar.html", "class_v_r_scrollbar" ]
     ] ],
     [ "VRScrollbarButton.cs", "_v_r_scrollbar_button_8cs.html", [
       [ "VRScrollbarButton", "class_v_r_scrollbar_button.html", "class_v_r_scrollbar_button" ]

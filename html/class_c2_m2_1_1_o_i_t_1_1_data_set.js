@@ -10,5 +10,6 @@ var class_c2_m2_1_1_o_i_t_1_1_data_set =
     [ "PositionsPercentageResize", "class_c2_m2_1_1_o_i_t_1_1_data_set.html#a4450db3927f9c68d5e0d55c7e32e703d", null ],
     [ "ReduceLists", "class_c2_m2_1_1_o_i_t_1_1_data_set.html#a77cca79b978b143674006c929b60ab3a", null ],
     [ "RestoreOriginalValues", "class_c2_m2_1_1_o_i_t_1_1_data_set.html#a4af56bac5b4b78956dde7b0c421b98a7", null ],
-    [ "dataList", "class_c2_m2_1_1_o_i_t_1_1_data_set.html#ab772aa0d376a0c13befa9fe0d147da3e", null ]
+    [ "dataList", "class_c2_m2_1_1_o_i_t_1_1_data_set.html#ab772aa0d376a0c13befa9fe0d147da3e", null ],
+    [ "dataListBackup", "class_c2_m2_1_1_o_i_t_1_1_data_set.html#aa6c4a5c9509ae56f279b594c15e7c24d", null ]
 ];

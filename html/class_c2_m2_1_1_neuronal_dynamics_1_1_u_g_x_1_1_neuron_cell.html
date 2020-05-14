@@ -88,6 +88,8 @@ $(document).ready(function(){initNavTree('class_c2_m2_1_1_neuronal_dynamics_1_1_
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-static-attribs">Static Private Attributes</a> &#124;
 <a href="class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_cell-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">C2M2.NeuronalDynamics.UGX.NeuronCell Class Reference</div>  </div>
@@ -98,7 +100,8 @@ Collaboration diagram for C2M2.NeuronalDynamics.UGX.NeuronCell:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_cell__coll__graph.png" border="0" usemap="#_c2_m2_8_neuronal_dynamics_8_u_g_x_8_neuron_cell_coll__map" alt="Collaboration graph"/></div>
 <map name="_c2_m2_8_neuronal_dynamics_8_u_g_x_8_neuron_cell_coll__map" id="_c2_m2_8_neuronal_dynamics_8_u_g_x_8_neuron_cell_coll__map">
-<area shape="rect" title=" " alt="" coords="5,5,208,244"/>
+<area shape="rect" title=" " alt="" coords="5,175,236,443"/>
+<area shape="rect" title=" " alt="" coords="85,5,156,83"/>
 </map>
 </div>
 <table class="memberdecls">
@@ -136,6 +139,22 @@ Public Attributes</h2></td></tr>
 <tr class="separator:affcc860de06dd55bff1a11ece180fb99"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a315568990294f5f826e2fd995d161e5f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_cell.html#a315568990294f5f826e2fd995d161e5f">edgeCount</a> = new int()</td></tr>
 <tr class="separator:a315568990294f5f826e2fd995d161e5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a04f278c4c76e8be6318cbdeae34ced67"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_cell.html#a04f278c4c76e8be6318cbdeae34ced67">NodeNeighborsToString</a> (int nodeId)</td></tr>
+<tr class="separator:a04f278c4c76e8be6318cbdeae34ced67"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acfdad2cee43e7582e98154b1803dab3c"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_cell.html#acfdad2cee43e7582e98154b1803dab3c">GetEdgeLength</a> (int startId, int endId)</td></tr>
+<tr class="separator:acfdad2cee43e7582e98154b1803dab3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-attribs"></a>
+Static Private Attributes</h2></td></tr>
+<tr class="memitem:a53c292436d1bfc7190e17c3a05bb2617"><td class="memItemLeft" align="right" valign="top">static string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_cell.html#a53c292436d1bfc7190e17c3a05bb2617">nodeFormatString</a></td></tr>
+<tr class="separator:a53c292436d1bfc7190e17c3a05bb2617"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c7cf01c0b0b7c978ce762fa2d71b9df"><td class="memItemLeft" align="right" valign="top">static string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_cell.html#a2c7cf01c0b0b7c978ce762fa2d71b9df">edgeFormatString</a></td></tr>
+<tr class="separator:a2c7cf01c0b0b7c978ce762fa2d71b9df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a595ba856b3e2b8faa83dc277ab7a48"><td class="memItemLeft" align="right" valign="top">static string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_cell.html#a1a595ba856b3e2b8faa83dc277ab7a48">cellFormatString</a></td></tr>
+<tr class="separator:a1a595ba856b3e2b8faa83dc277ab7a48"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a35092c83775762fe63372876cd6a093f"></a>
@@ -171,6 +190,68 @@ Public Attributes</h2></td></tr>
           <td></td>
         </tr>
       </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="acfdad2cee43e7582e98154b1803dab3c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acfdad2cee43e7582e98154b1803dab3c">&#9670;&nbsp;</a></span>GetEdgeLength()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double C2M2.NeuronalDynamics.UGX.NeuronCell.GetEdgeLength </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>startId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>endId</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a04f278c4c76e8be6318cbdeae34ced67"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a04f278c4c76e8be6318cbdeae34ced67">&#9670;&nbsp;</a></span>NodeNeighborsToString()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string C2M2.NeuronalDynamics.UGX.NeuronCell.NodeNeighborsToString </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>nodeId</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>
@@ -243,6 +324,34 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a1a595ba856b3e2b8faa83dc277ab7a48"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1a595ba856b3e2b8faa83dc277ab7a48">&#9670;&nbsp;</a></span>cellFormatString</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string C2M2.NeuronalDynamics.UGX.NeuronCell.cellFormatString</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">= </div>
+<div class="line">            <span class="stringliteral">&quot;Vert count = {0}\n&quot;</span> +</div>
+<div class="line">            <span class="stringliteral">&quot;Edge count = {1}\n&quot;</span> +</div>
+<div class="line">            <span class="stringliteral">&quot;Max edge length = {2}\n&quot;</span> +</div>
+<div class="line">            <span class="stringliteral">&quot;Avg edge length = {3}\n&quot;</span> +</div>
+<div class="line">            <span class="stringliteral">&quot;Min edge length = {4}&quot;</span></div>
+</div><!-- fragment -->
+</div>
+</div>
 <a id="a315568990294f5f826e2fd995d161e5f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a315568990294f5f826e2fd995d161e5f">&#9670;&nbsp;</a></span>edgeCount</h2>
 
@@ -255,6 +364,32 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+</div>
+</div>
+<a id="a2c7cf01c0b0b7c978ce762fa2d71b9df"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2c7cf01c0b0b7c978ce762fa2d71b9df">&#9670;&nbsp;</a></span>edgeFormatString</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string C2M2.NeuronalDynamics.UGX.NeuronCell.edgeFormatString</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">=</div>
+<div class="line">            <span class="stringliteral">&quot;Start ID = {0}\n&quot;</span> +</div>
+<div class="line">            <span class="stringliteral">&quot;End ID = {1}\n&quot;</span> +</div>
+<div class="line">            <span class="stringliteral">&quot;Length = {2}&quot;</span></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ab0b9d87ce4d2b73650e7c6c9520ff01d"></a>
@@ -297,6 +432,32 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+</div>
+</div>
+<a id="a53c292436d1bfc7190e17c3a05bb2617"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a53c292436d1bfc7190e17c3a05bb2617">&#9670;&nbsp;</a></span>nodeFormatString</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string C2M2.NeuronalDynamics.UGX.NeuronCell.nodeFormatString</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">=</div>
+<div class="line">            <span class="stringliteral">&quot;ID = {0}\n&quot;</span> +</div>
+<div class="line">            <span class="stringliteral">&quot;Coordinates =  ({1}, {2}, {3})\n&quot;</span> +</div>
+<div class="line">            <span class="stringliteral">&quot;{4}&quot;</span></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a67566dcc691909971a82a357574257a2"></a>

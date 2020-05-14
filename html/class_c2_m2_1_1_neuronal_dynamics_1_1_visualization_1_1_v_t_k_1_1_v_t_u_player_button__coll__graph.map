@@ -1,7 +1,10 @@
 <map id="C2M2.NeuronalDynamics.Visualization.VTK.VTUPlayerButton" name="C2M2.NeuronalDynamics.Visualization.VTK.VTUPlayerButton">
-<area shape="rect" id="node1" title=" " alt="" coords="5,426,256,547"/>
-<area shape="rect" id="node2" title=" " alt="" coords="366,5,477,83"/>
-<area shape="rect" id="node3" href="$class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_t_k_1_1_v_t_u_manager.html" title=" " alt="" coords="163,132,413,341"/>
-<area shape="rect" id="node4" href="$class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_t_k_1_1_v_t_u_player.html" title=" " alt="" coords="311,404,561,569"/>
-<area shape="rect" id="node5" href="$class_c2_m2_1_1_raycast_press_events.html" title="Store custom events that the corresponding RaycastTriggerManager will invoke" alt="" coords="504,169,685,305"/>
+<area shape="rect" id="node1" title=" " alt="" coords="157,1176,468,1341"/>
+<area shape="rect" id="node2" title=" " alt="" coords="379,139,505,217"/>
+<area shape="rect" id="node3" href="$class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_t_k_1_1_v_t_u_player.html" title=" " alt="" coords="268,515,579,797"/>
+<area shape="rect" id="node4" href="$class_c2_m2_1_1_raycast_press_events.html" title="Store custom events that the corresponding RaycastTriggerManager will invoke" alt="" coords="268,316,475,452"/>
+<area shape="rect" id="node7" href="$class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_t_k_1_1_v_t_u_manager.html" title=" " alt="" coords="427,860,737,1113"/>
+<area shape="rect" id="node5" href="$class_c2_m2_1_1_raycast_press_events_1_1_raycast_hit_event.html" title=" " alt="" coords="5,132,220,224"/>
+<area shape="rect" id="node6" title=" " alt="" coords="5,5,220,83"/>
+<area shape="rect" id="node8" href="$class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_t_k_1_1_v_t_u_object_builder.html" title="Overarching manager to control order of events for reading in VTK data, positioning it,..." alt="" coords="655,603,965,709"/>
 </map>

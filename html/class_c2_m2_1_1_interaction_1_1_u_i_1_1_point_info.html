@@ -87,6 +87,8 @@ $(document).ready(function(){initNavTree('class_c2_m2_1_1_interaction_1_1_u_i_1_
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_c2_m2_1_1_interaction_1_1_u_i_1_1_point_info-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">C2M2.Interaction.UI.PointInfo Class Reference</div>  </div>
@@ -100,8 +102,8 @@ Inheritance diagram for C2M2.Interaction.UI.PointInfo:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_c2_m2_1_1_interaction_1_1_u_i_1_1_point_info__inherit__graph.png" border="0" usemap="#_c2_m2_8_interaction_8_u_i_8_point_info_inherit__map" alt="Inheritance graph"/></div>
 <map name="_c2_m2_8_interaction_8_u_i_8_point_info_inherit__map" id="_c2_m2_8_interaction_8_u_i_8_point_info_inherit__map">
-<area shape="rect" title="Store useful information about individual simulation vertices, and spawn info panels to display that ..." alt="" coords="5,131,196,325"/>
-<area shape="rect" title=" " alt="" coords="45,5,156,83"/>
+<area shape="rect" title="Store useful information about individual simulation vertices, and spawn info panels to display that ..." alt="" coords="5,131,260,531"/>
+<area shape="rect" title=" " alt="" coords="69,5,196,83"/>
 </map>
 </div>
 <div class="dynheader">
@@ -109,8 +111,8 @@ Collaboration diagram for C2M2.Interaction.UI.PointInfo:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_c2_m2_1_1_interaction_1_1_u_i_1_1_point_info__coll__graph.png" border="0" usemap="#_c2_m2_8_interaction_8_u_i_8_point_info_coll__map" alt="Collaboration graph"/></div>
 <map name="_c2_m2_8_interaction_8_u_i_8_point_info_coll__map" id="_c2_m2_8_interaction_8_u_i_8_point_info_coll__map">
-<area shape="rect" title="Store useful information about individual simulation vertices, and spawn info panels to display that ..." alt="" coords="5,131,196,325"/>
-<area shape="rect" title=" " alt="" coords="45,5,156,83"/>
+<area shape="rect" title="Store useful information about individual simulation vertices, and spawn info panels to display that ..." alt="" coords="5,131,260,531"/>
+<area shape="rect" title=" " alt="" coords="69,5,196,83"/>
 </map>
 </div>
 <table class="memberdecls">
@@ -118,7 +120,7 @@ Collaboration diagram for C2M2.Interaction.UI.PointInfo:</div>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:aa054e1711bb31511ebed421086a484d8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c2_m2_1_1_interaction_1_1_u_i_1_1_point_info.html#aa054e1711bb31511ebed421086a484d8">Close</a> ()</td></tr>
 <tr class="separator:aa054e1711bb31511ebed421086a484d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3299d74b589998086acdf4e228722e40"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c2_m2_1_1_interaction_1_1_u_i_1_1_point_info.html#a3299d74b589998086acdf4e228722e40">InitializeInfoPanel</a> (ObjectManager objectManager, RaycastHit hit)</td></tr>
+<tr class="memitem:a3299d74b589998086acdf4e228722e40"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c2_m2_1_1_interaction_1_1_u_i_1_1_point_info.html#a3299d74b589998086acdf4e228722e40">InitializeInfoPanel</a> (ObjectManager <a class="el" href="class_c2_m2_1_1_interaction_1_1_u_i_1_1_point_info.html#ae07b3d7be56047fe0e2beffd92a42858">objectManager</a>, RaycastHit hit)</td></tr>
 <tr class="separator:a3299d74b589998086acdf4e228722e40"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adf4f71dc44bda37a6bd6c62db87afb67"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c2_m2_1_1_interaction_1_1_u_i_1_1_point_info.html#adf4f71dc44bda37a6bd6c62db87afb67">ReadValue</a> (string s)</td></tr>
 <tr class="separator:adf4f71dc44bda37a6bd6c62db87afb67"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -139,10 +141,67 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a8b46b184d8b4f3e0c48d4ba1af926cad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a66e9b4ee91d63b6920c96bcbc4aa0d79"><td class="memItemLeft" align="right" valign="top">Transform&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c2_m2_1_1_interaction_1_1_u_i_1_1_point_info.html#a66e9b4ee91d63b6920c96bcbc4aa0d79">pointFollower</a></td></tr>
 <tr class="separator:a66e9b4ee91d63b6920c96bcbc4aa0d79"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:ab7cd65dcfc3a49d1156444eac0f154bb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c2_m2_1_1_interaction_1_1_u_i_1_1_point_info.html#ab7cd65dcfc3a49d1156444eac0f154bb">Awake</a> ()</td></tr>
+<tr class="separator:ab7cd65dcfc3a49d1156444eac0f154bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0bfc6af5bc704ac5294c346edc01b3a7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c2_m2_1_1_interaction_1_1_u_i_1_1_point_info.html#a0bfc6af5bc704ac5294c346edc01b3a7">Update</a> ()</td></tr>
+<tr class="separator:a0bfc6af5bc704ac5294c346edc01b3a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a0cffcd6fbeee8854e3dc0a3915b3c6"><td class="memItemLeft" align="right" valign="top">IEnumerator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c2_m2_1_1_interaction_1_1_u_i_1_1_point_info.html#a7a0cffcd6fbeee8854e3dc0a3915b3c6">CurValReadingDefaultColorTimed</a> (float delayTime, Color defaultCol)</td></tr>
+<tr class="separator:a7a0cffcd6fbeee8854e3dc0a3915b3c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38658610bdd68f43fd053bf6ddff3a49"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c2_m2_1_1_interaction_1_1_u_i_1_1_point_info.html#a38658610bdd68f43fd053bf6ddff3a49">LateUpdate</a> ()</td></tr>
+<tr class="separator:a38658610bdd68f43fd053bf6ddff3a49"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9397e15150f27f52d2b323fd7ed2323e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c2_m2_1_1_interaction_1_1_u_i_1_1_point_info.html#a9397e15150f27f52d2b323fd7ed2323e">InitializePanelLocation</a> ()</td></tr>
+<tr class="separator:a9397e15150f27f52d2b323fd7ed2323e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a259bcedb1baccb3bc619c452c3fc8e51"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c2_m2_1_1_interaction_1_1_u_i_1_1_point_info.html#a259bcedb1baccb3bc619c452c3fc8e51">UpdateInfo</a> ()</td></tr>
+<tr class="separator:a259bcedb1baccb3bc619c452c3fc8e51"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:ae07b3d7be56047fe0e2beffd92a42858"><td class="memItemLeft" align="right" valign="top">ObjectManager&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c2_m2_1_1_interaction_1_1_u_i_1_1_point_info.html#ae07b3d7be56047fe0e2beffd92a42858">objectManager</a></td></tr>
+<tr class="separator:ae07b3d7be56047fe0e2beffd92a42858"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac53acd1749dc2bc42dc81ac5a4272c46"><td class="memItemLeft" align="right" valign="top">LineRenderer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c2_m2_1_1_interaction_1_1_u_i_1_1_point_info.html#ac53acd1749dc2bc42dc81ac5a4272c46">lineRend</a></td></tr>
+<tr class="separator:ac53acd1749dc2bc42dc81ac5a4272c46"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d78202286fdc20718e20b8f248dc3d4"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c2_m2_1_1_interaction_1_1_u_i_1_1_point_info.html#a6d78202286fdc20718e20b8f248dc3d4">curVal</a></td></tr>
+<tr class="separator:a6d78202286fdc20718e20b8f248dc3d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa9855429d61ca9c3f250fa65ff1405f9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c2_m2_1_1_interaction_1_1_u_i_1_1_point_info.html#aa9855429d61ca9c3f250fa65ff1405f9">vertToWatch</a></td></tr>
+<tr class="separator:aa9855429d61ca9c3f250fa65ff1405f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a1d600b36963bc9caecfe60bbc232b5"><td class="memItemLeft" align="right" valign="top">Color&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c2_m2_1_1_interaction_1_1_u_i_1_1_point_info.html#a7a1d600b36963bc9caecfe60bbc232b5">curCol</a></td></tr>
+<tr class="separator:a7a1d600b36963bc9caecfe60bbc232b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34523f47c7f9cc1c6ed62635100c331c"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c2_m2_1_1_interaction_1_1_u_i_1_1_point_info.html#a34523f47c7f9cc1c6ed62635100c331c">addVal</a> = 0</td></tr>
+<tr class="separator:a34523f47c7f9cc1c6ed62635100c331c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad9610916911ecc1b685b50d9a2cb401d"><td class="memItemLeft" align="right" valign="top">Transform&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c2_m2_1_1_interaction_1_1_u_i_1_1_point_info.html#ad9610916911ecc1b685b50d9a2cb401d">menuSnapPosition</a></td></tr>
+<tr class="separator:ad9610916911ecc1b685b50d9a2cb401d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Store useful information about individual simulation vertices, and spawn info panels to display that info </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="ab7cd65dcfc3a49d1156444eac0f154bb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab7cd65dcfc3a49d1156444eac0f154bb">&#9670;&nbsp;</a></span>Awake()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void C2M2.Interaction.UI.PointInfo.Awake </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="aa054e1711bb31511ebed421086a484d8"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa054e1711bb31511ebed421086a484d8">&#9670;&nbsp;</a></span>Close()</h2>
 
@@ -156,6 +215,42 @@ Public Attributes</h2></td></tr>
           <td></td>
         </tr>
       </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7a0cffcd6fbeee8854e3dc0a3915b3c6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7a0cffcd6fbeee8854e3dc0a3915b3c6">&#9670;&nbsp;</a></span>CurValReadingDefaultColorTimed()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">IEnumerator C2M2.Interaction.UI.PointInfo.CurValReadingDefaultColorTimed </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>delayTime</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Color&#160;</td>
+          <td class="paramname"><em>defaultCol</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>
@@ -188,6 +283,56 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a9397e15150f27f52d2b323fd7ed2323e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9397e15150f27f52d2b323fd7ed2323e">&#9670;&nbsp;</a></span>InitializePanelLocation()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void C2M2.Interaction.UI.PointInfo.InitializePanelLocation </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a38658610bdd68f43fd053bf6ddff3a49"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a38658610bdd68f43fd053bf6ddff3a49">&#9670;&nbsp;</a></span>LateUpdate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void C2M2.Interaction.UI.PointInfo.LateUpdate </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="adf4f71dc44bda37a6bd6c62db87afb67"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#adf4f71dc44bda37a6bd6c62db87afb67">&#9670;&nbsp;</a></span>ReadValue()</h2>
 
@@ -206,7 +351,101 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a0bfc6af5bc704ac5294c346edc01b3a7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0bfc6af5bc704ac5294c346edc01b3a7">&#9670;&nbsp;</a></span>Update()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void C2M2.Interaction.UI.PointInfo.Update </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a259bcedb1baccb3bc619c452c3fc8e51"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a259bcedb1baccb3bc619c452c3fc8e51">&#9670;&nbsp;</a></span>UpdateInfo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void C2M2.Interaction.UI.PointInfo.UpdateInfo </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <h2 class="groupheader">Member Data Documentation</h2>
+<a id="a34523f47c7f9cc1c6ed62635100c331c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a34523f47c7f9cc1c6ed62635100c331c">&#9670;&nbsp;</a></span>addVal</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double C2M2.Interaction.UI.PointInfo.addVal = 0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7a1d600b36963bc9caecfe60bbc232b5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7a1d600b36963bc9caecfe60bbc232b5">&#9670;&nbsp;</a></span>curCol</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Color C2M2.Interaction.UI.PointInfo.curCol</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a87bf4929d6e9da5ebad1a09ce3f3bec9"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a87bf4929d6e9da5ebad1a09ce3f3bec9">&#9670;&nbsp;</a></span>curColReading</h2>
 
@@ -217,6 +456,28 @@ Public Attributes</h2></td></tr>
           <td class="memname">Image C2M2.Interaction.UI.PointInfo.curColReading</td>
         </tr>
       </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6d78202286fdc20718e20b8f248dc3d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6d78202286fdc20718e20b8f248dc3d4">&#9670;&nbsp;</a></span>curVal</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double C2M2.Interaction.UI.PointInfo.curVal</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>
@@ -249,6 +510,28 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="ac53acd1749dc2bc42dc81ac5a4272c46"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac53acd1749dc2bc42dc81ac5a4272c46">&#9670;&nbsp;</a></span>lineRend</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">LineRenderer C2M2.Interaction.UI.PointInfo.lineRend</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a8b46b184d8b4f3e0c48d4ba1af926cad"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8b46b184d8b4f3e0c48d4ba1af926cad">&#9670;&nbsp;</a></span>lineRendInfoPanelAnchor</h2>
 
@@ -259,6 +542,50 @@ Public Attributes</h2></td></tr>
           <td class="memname">Transform C2M2.Interaction.UI.PointInfo.lineRendInfoPanelAnchor</td>
         </tr>
       </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad9610916911ecc1b685b50d9a2cb401d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad9610916911ecc1b685b50d9a2cb401d">&#9670;&nbsp;</a></span>menuSnapPosition</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Transform C2M2.Interaction.UI.PointInfo.menuSnapPosition</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae07b3d7be56047fe0e2beffd92a42858"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae07b3d7be56047fe0e2beffd92a42858">&#9670;&nbsp;</a></span>objectManager</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ObjectManager C2M2.Interaction.UI.PointInfo.objectManager</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>
@@ -301,6 +628,28 @@ Public Attributes</h2></td></tr>
           <td class="memname">TextMeshProUGUI C2M2.Interaction.UI.PointInfo.vertPos</td>
         </tr>
       </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa9855429d61ca9c3f250fa65ff1405f9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa9855429d61ca9c3f250fa65ff1405f9">&#9670;&nbsp;</a></span>vertToWatch</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int C2M2.Interaction.UI.PointInfo.vertToWatch</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>

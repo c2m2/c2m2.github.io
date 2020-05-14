@@ -1,13 +1,18 @@
 var class_c2_m2_1_1_game_manager =
 [
+    [ "Awake", "class_c2_m2_1_1_game_manager.html#a1f931a826f1b6b649da64e6316bf3fed", null ],
     [ "DebugLogSafe", "class_c2_m2_1_1_game_manager.html#a496260483117ee816937bbafb9a0e16f", null ],
     [ "DebugLogSafe< T >", "class_c2_m2_1_1_game_manager.html#a5600633720efdedc023ad709482913e5", null ],
     [ "RaycasterLeftChangeColor", "class_c2_m2_1_1_game_manager.html#a13752f04f2294f1eb4aacca0e388f567", null ],
     [ "RaycasterRightChangeColor", "class_c2_m2_1_1_game_manager.html#ae2ab78a3db6cf6400238ebe5802e00d8", null ],
+    [ "Update", "class_c2_m2_1_1_game_manager.html#ad012b88cff23278a315d8e4bab785ab1", null ],
     [ "assetsPath", "class_c2_m2_1_1_game_manager.html#a7d6dec6a31b657c72d91fb20c8a1d0c0", null ],
     [ "defaultMaterial", "class_c2_m2_1_1_game_manager.html#afb49b3a2dd5acdd71aa3985f9503ecf4", null ],
     [ "fpsCounter", "class_c2_m2_1_1_game_manager.html#ab636c533f1e31c53fa19ca2f4dd6293b", null ],
+    [ "instance", "class_c2_m2_1_1_game_manager.html#a814ebfe4486bb66e0a4ea0d890ad0fa2", null ],
     [ "leftRaycaster", "class_c2_m2_1_1_game_manager.html#a3ee7a45a4964d965a12f29c1fab2dadc", null ],
+    [ "logQ", "class_c2_m2_1_1_game_manager.html#aa058e5c7aa89a098267a5b237c9b44aa", null ],
+    [ "logQCap", "class_c2_m2_1_1_game_manager.html#ab316da7f311a51aca774ed5d47becdd2", null ],
     [ "mainThreadId", "class_c2_m2_1_1_game_manager.html#ac0ca2044e3b82f26e79bdc580a69d1be", null ],
     [ "menu", "class_c2_m2_1_1_game_manager.html#aa3c365e53cf3c2a17c819c14523160a1", null ],
     [ "menuSnapPosition", "class_c2_m2_1_1_game_manager.html#a065877cbd5aae4acbfe029fded319906", null ],
