@@ -1,0 +1,7 @@
+<map id="C2M2.NeuronalDynamics.UGX.IAttachmentData" name="C2M2.NeuronalDynamics.UGX.IAttachmentData">
+<area shape="rect" id="node1" title="Marker interface for attachment data" alt="" coords="345,5,548,97"/>
+<area shape="rect" id="node2" href="$struct_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_diameter_data.html" title="Data for diameter attachment" alt="" coords="5,160,208,252"/>
+<area shape="rect" id="node3" href="$struct_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_mapping_data.html" title="Data for mapping attachment" alt="" coords="232,145,435,267"/>
+<area shape="rect" id="node4" href="$struct_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_normal_data.html" title="Data for normals of grid" alt="" coords="459,160,661,252"/>
+<area shape="rect" id="node5" href="$struct_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_synapse_data.html" title="Data for synapse attachment" alt="" coords="685,160,888,252"/>
+</map>

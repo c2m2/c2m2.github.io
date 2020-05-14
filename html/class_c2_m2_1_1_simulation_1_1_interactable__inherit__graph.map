@@ -1,0 +1,5 @@
+<map id="C2M2.Simulation.Interactable" name="C2M2.Simulation.Interactable">
+<area shape="rect" id="node1" title="Manages interaction input to simulations" alt="" coords="5,131,197,237"/>
+<area shape="rect" id="node3" href="$class_c2_m2_1_1_simulation_1_1_simulation.html" title="Provides an interface for simulations using a general data type T" alt="" coords="8,285,195,539"/>
+<area shape="rect" id="node2" title=" " alt="" coords="46,5,157,83"/>
+</map>

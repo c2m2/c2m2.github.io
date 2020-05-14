@@ -1,0 +1,4 @@
+<map id="RaycastMeshCollider" name="RaycastMeshCollider">
+<area shape="rect" id="node1" title="Instantiate the Raycastee prefab and create a mesh collider on it" alt="" coords="5,131,151,208"/>
+<area shape="rect" id="node2" title=" " alt="" coords="23,5,133,83"/>
+</map>

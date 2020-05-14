@@ -1,0 +1,5 @@
+<map id="C2M2.Interaction.Signaling.RaycastEventSignaler" name="C2M2.Interaction.Signaling.RaycastEventSignaler">
+<area shape="rect" id="node1" title=" " alt="" coords="5,285,199,553"/>
+<area shape="rect" id="node2" href="$class_c2_m2_1_1_interaction_1_1_signaling_1_1_press_event_signaler.html" title="Send press, holdPress, and endPress events based on set values of Pressed and RaycastTriggerManager" alt="" coords="35,131,169,237"/>
+<area shape="rect" id="node3" title=" " alt="" coords="47,5,157,83"/>
+</map>

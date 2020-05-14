@@ -1,26 +1,8 @@
 var searchData=
 [
-  ['raycasteventmanager_172',['RaycastEventManager',['../class_c2_m2_1_1_raycast_event_manager.html',1,'C2M2']]],
-  ['raycasteventsignaler_173',['RaycastEventSignaler',['../class_c2_m2_1_1_interaction_1_1_signaling_1_1_raycast_event_signaler.html',1,'C2M2::Interaction::Signaling']]],
-  ['raycastforward_174',['RaycastForward',['../class_c2_m2_1_1_raycast_forward.html',1,'C2M2']]],
-  ['raycasthitevent_175',['RaycastHitEvent',['../class_c2_m2_1_1_raycast_press_events_1_1_raycast_hit_event.html',1,'C2M2::RaycastPressEvents']]],
-  ['raycastingmethod_176',['RaycastingMethod',['../class_c2_m2_1_1_interaction_1_1_signaling_1_1_mouse_event_signaler.html#a74e4e9204f0c9efbcde31c62a8ef4162',1,'C2M2.Interaction.Signaling.MouseEventSignaler.RaycastingMethod()'],['../class_c2_m2_1_1_interaction_1_1_signaling_1_1_oculus_event_signaler.html#a156ac1dcec18dbe416610fccf2dee85e',1,'C2M2.Interaction.Signaling.OculusEventSignaler.RaycastingMethod()'],['../class_c2_m2_1_1_interaction_1_1_signaling_1_1_raycast_event_signaler.html#a4479c8219db2ccd6c734cd3016febe3e',1,'C2M2.Interaction.Signaling.RaycastEventSignaler.RaycastingMethod()']]],
-  ['raycastinputfield_177',['RaycastInputField',['../class_c2_m2_1_1_raycast_input_field.html',1,'C2M2']]],
-  ['raycastkey_178',['RaycastKey',['../class_c2_m2_1_1_raycast_key.html',1,'C2M2']]],
-  ['raycastkeyboard_179',['RaycastKeyboard',['../class_c2_m2_1_1_raycast_keyboard.html',1,'C2M2']]],
-  ['raycastmeshcollider_180',['RaycastMeshCollider',['../class_raycast_mesh_collider.html',1,'']]],
-  ['raycastpressevents_181',['RaycastPressEvents',['../class_c2_m2_1_1_raycast_press_events.html',1,'C2M2']]],
-  ['raycastshiftkey_182',['RaycastShiftKey',['../class_raycast_shift_key.html',1,'']]],
-  ['raycastsimheater_183',['RaycastSimHeater',['../class_c2_m2_1_1_interaction_1_1_raycast_sim_heater.html',1,'C2M2::Interaction']]],
-  ['raycastsimheatercontinuous_184',['RaycastSimHeaterContinuous',['../class_c2_m2_1_1_interaction_1_1_raycast_sim_heater_continuous.html',1,'C2M2::Interaction']]],
-  ['raycastsimheaterdiscrete_185',['RaycastSimHeaterDiscrete',['../class_c2_m2_1_1_interaction_1_1_raycast_sim_heater_discrete.html',1,'C2M2::Interaction']]],
-  ['raycasttriangleselector_186',['RaycastTriangleSelector',['../class_raycast_triangle_selector.html',1,'']]],
-  ['remove_187',['Remove',['../class_c2_m2_1_1_interaction_1_1_adjacency_1_1_priority_queue.html#a141196e4ccf6305c7dd9ab3400132e95',1,'C2M2::Interaction::Adjacency::PriorityQueue']]],
-  ['resetpositionmono_188',['ResetPositionMono',['../class_c2_m2_1_1_utils_1_1_reset_position_mono.html',1,'C2M2::Utils']]],
-  ['resolvemovement_189',['ResolveMovement',['../class_c2_m2_1_1_visualization_1_1_v_r_1_1_moving_o_v_r_headset_emulator.html#aeef8055a2dcaf752b5e1bdeccc1fa9f9',1,'C2M2::Visualization::VR::MovingOVRHeadsetEmulator']]],
-  ['rewind_190',['Rewind',['../class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_t_k_1_1_v_t_u_player.html#a59c022adb988e9370d24d20ae4eda8ad',1,'C2M2::NeuronalDynamics::Visualization::VTK::VTUPlayer']]],
-  ['rotate_191',['Rotate',['../class_c2_m2_1_1_utils_1_1_animation_1_1_rotate.html',1,'C2M2::Utils::Animation']]],
-  ['rotateabout_192',['RotateAbout',['../class_c2_m2_1_1_utils_1_1_animation_1_1_rotate_about.html',1,'C2M2::Utils::Animation']]],
-  ['rotateanimate_193',['RotateAnimate',['../class_c2_m2_1_1_utils_1_1_animation_1_1_rotate_animate.html',1,'C2M2::Utils::Animation']]],
-  ['rotation_194',['rotation',['../class_c2_m2_1_1_utils_1_1_transform_resetter.html#a14800a787cebcecb2fd0c1fafa983f39',1,'C2M2::Utils::TransformResetter']]]
+  ['quit_589',['Quit',['../class_quit_on_click.html#a2ae4a389fc44a04218d7a1353bcc870a',1,'QuitOnClick']]],
+  ['quitonclick_590',['QuitOnClick',['../class_quit_on_click.html',1,'']]],
+  ['quitonclick_2ecs_591',['QuitOnClick.cs',['../_quit_on_click_8cs.html',1,'']]],
+  ['quitontriggerenter_592',['QuitOnTriggerEnter',['../class_quit_on_trigger_enter.html',1,'']]],
+  ['quitontriggerenter_2ecs_593',['QuitOnTriggerEnter.cs',['../_quit_on_trigger_enter_8cs.html',1,'']]]
 ];

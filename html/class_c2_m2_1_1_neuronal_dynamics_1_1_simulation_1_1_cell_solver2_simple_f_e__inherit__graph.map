@@ -1,0 +1,6 @@
+<map id="C2M2.NeuronalDynamics.Simulation.CellSolver2SimpleFE" name="C2M2.NeuronalDynamics.Simulation.CellSolver2SimpleFE">
+<area shape="rect" id="node1" title=" " alt="" coords="5,748,244,1060"/>
+<area shape="rect" id="node2" href="$class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_h_h_simulation.html" title="Provides base functionality for Hodgkin&#45;Huxley solvers." alt="" coords="63,505,187,700"/>
+<area shape="rect" id="node3" href="$class_c2_m2_1_1_simulation_1_1_scalar_field_simulation.html" title="Simulation of type double[] for visualizing scalar fields on meshes" alt="" coords="47,292,203,457"/>
+<area shape="rect" id="node4" href="$class_c2_m2_1_1_simulation_1_1_simulation.html" title=" " alt="" coords="47,5,203,244"/>
+</map>

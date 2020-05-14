@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['uniquemeshvertlength_546',['uniqueMeshVertLength',['../class_c2_m2_1_1_interaction_1_1_adjacency_1_1_unique_vertices.html#abe90acaea25db9a52b8032135575ba6c',1,'C2M2::Interaction::Adjacency::UniqueVertices']]],
-  ['uniquevertreverselookup_547',['uniqueVertReverseLookup',['../class_c2_m2_1_1_interaction_1_1_adjacency_1_1_unique_vertices.html#ae031a7d0213865412f1755af1d516823',1,'C2M2::Interaction::Adjacency::UniqueVertices']]],
-  ['uniqueverts_548',['uniqueVerts',['../class_c2_m2_1_1_interaction_1_1_adjacency_1_1_unique_vertices.html#a8cabff094c5a53255fdfb0ad2d63436d',1,'C2M2::Interaction::Adjacency::UniqueVertices']]]
+  ['height_1846',['height',['../class_c2_m2_1_1_interaction_1_1_adjacency_1_1_gaussian_distance_calculator.html#a2f193a83d4230cc573dd140a81820b24',1,'C2M2::Interaction::Adjacency::GaussianDistanceCalculator']]],
+  ['highestfps_1847',['HighestFPS',['../class_c2_m2_1_1_utils_1_1_debug_utils_1_1_f_p_s_counter.html#aaf1c34b2a6808f89fb01c55ec43fdafd',1,'C2M2::Utils::DebugUtils::FPSCounter']]],
+  ['highestfpsstring_1848',['highestFPSString',['../class_c2_m2_1_1_utils_1_1_debug_utils_1_1_f_p_s_counter.html#a76e82dddb7c4d9ed9cd3663564134f16',1,'C2M2::Utils::DebugUtils::FPSCounter']]]
 ];

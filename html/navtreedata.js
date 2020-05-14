@@ -27,6 +27,7 @@ var NAVTREE =
       [ "Packages", "namespaces.html", "namespaces_dup" ],
       [ "Package Functions", "namespacemembers.html", [
         [ "All", "namespacemembers.html", null ],
+        [ "Typedefs", "namespacemembers_type.html", null ],
         [ "Enumerations", "namespacemembers_enum.html", null ]
       ] ]
     ] ],
@@ -35,11 +36,19 @@ var NAVTREE =
       [ "Class Index", "classes.html", null ],
       [ "Class Hierarchy", "hierarchy.html", "hierarchy" ],
       [ "Class Members", "functions.html", [
-        [ "All", "functions.html", null ],
-        [ "Functions", "functions_func.html", null ],
-        [ "Variables", "functions_vars.html", null ],
+        [ "All", "functions.html", "functions_dup" ],
+        [ "Functions", "functions_func.html", "functions_func" ],
+        [ "Variables", "functions_vars.html", "functions_vars" ],
         [ "Enumerations", "functions_enum.html", null ],
         [ "Properties", "functions_prop.html", null ]
+      ] ]
+    ] ],
+    [ "Files", "files.html", [
+      [ "File List", "files.html", "files_dup" ],
+      [ "File Members", "globals.html", [
+        [ "All", "globals.html", null ],
+        [ "Typedefs", "globals_type.html", null ],
+        [ "Macros", "globals_defs.html", null ]
       ] ]
     ] ]
   ] ]
@@ -47,11 +56,12 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"annotated.html",
-"class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_cell_solver2_simple_f_e.html#ae9be30d2c252ff7e0997f6cc68911867",
-"class_c2_m2_1_1_o_i_t_1_1_interaction_1_1_particle_size_controller_button.html",
-"class_c2_m2_1_1_utils_1_1_debug_utils_1_1_f_p_s_counter.html#aaf1c34b2a6808f89fb01c55ec43fdafd",
-"struct_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_attachment_info.html#aa79ee22314e7e4f386593cca6fa96182"
+"_active_state_toggler_8cs.html",
+"class_c2_m2_1_1_game_manager.html#a780a840ff84a80e7abee6245d9380ae5",
+"class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_h_h_simulation.html#aa037fd2e109243e2e1c9b269724e570e",
+"class_c2_m2_1_1_o_i_t_1_1_interaction_1_1_particle_system_controller.html#a2b147f6529b1e832bfc53f4eaade67d9",
+"class_c2_m2_1_1_utils_1_1_debug_utils_1_1_screen_recorder.html#a409565d4dddf7eff547de2c029958b62",
+"functions_y.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

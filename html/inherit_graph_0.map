@@ -1,0 +1,92 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" title=" " alt="" coords="5,2307,116,2333"/>
+<area shape="rect" id="node2" href="$class_active_state_toggler.html" title=" " alt="" coords="227,5,357,32"/>
+<area shape="rect" id="node3" href="$class_c2_m2_1_1_game_manager.html" title=" " alt="" coords="219,56,365,83"/>
+<area shape="rect" id="node4" href="$class_c2_m2_1_1_interaction_1_1_adjacency_1_1_adjacency_list.html" title=" " alt="" coords="197,107,387,149"/>
+<area shape="rect" id="node5" href="$class_c2_m2_1_1_interaction_1_1_adjacency_1_1_dijkstra_search.html" title=" " alt="" coords="197,173,387,214"/>
+<area shape="rect" id="node6" href="$class_c2_m2_1_1_interaction_1_1_adjacency_1_1_gaussian_distance_calculator.html" title="Find Gaussian curve values in 3D space at a given distance from origin" alt="" coords="197,238,387,279"/>
+<area shape="rect" id="node7" href="$class_c2_m2_1_1_interaction_1_1_adjacency_1_1_unique_vertices.html" title="Get the unique vertices of a mesh and add invisible vertices for adjacency list" alt="" coords="197,303,387,345"/>
+<area shape="rect" id="node8" href="$class_c2_m2_1_1_interaction_1_1_raycast_sim_heater.html" title=" " alt="" coords="206,369,378,410"/>
+<area shape="rect" id="node11" href="$class_c2_m2_1_1_interaction_1_1_signaling_1_1_press_event_signaler.html" title="Send press, holdPress, and endPress events based on set values of Pressed and RaycastTriggerManager" alt="" coords="201,434,383,475"/>
+<area shape="rect" id="node15" href="$class_c2_m2_1_1_interaction_1_1_u_i_1_1_close_all_point_info_panels.html" title=" " alt="" coords="205,499,379,541"/>
+<area shape="rect" id="node16" href="$class_c2_m2_1_1_interaction_1_1_u_i_1_1_control_overlay.html" title=" " alt="" coords="201,565,383,606"/>
+<area shape="rect" id="node17" href="$class_c2_m2_1_1_interaction_1_1_u_i_1_1_f_p_s_label.html" title=" " alt="" coords="193,631,391,657"/>
+<area shape="rect" id="node18" href="$class_c2_m2_1_1_interaction_1_1_u_i_1_1_multiframe_fade___lowpass_cutoff.html" title=" " alt="" coords="192,682,392,723"/>
+<area shape="rect" id="node19" href="$class_c2_m2_1_1_interaction_1_1_u_i_1_1_point_info.html" title="Store useful information about individual simulation vertices, and spawn info panels to display that ..." alt="" coords="197,748,387,775"/>
+<area shape="rect" id="node20" href="$class_c2_m2_1_1_interaction_1_1_u_i_1_1_proximity_sound_fader.html" title=" " alt="" coords="195,799,389,841"/>
+<area shape="rect" id="node21" href="$class_c2_m2_1_1_interaction_1_1_v_r_1_1_v_r_grabbable.html" title="Add Rigidbody, Collider, and OVRGrabbable to object" alt="" coords="181,865,403,892"/>
+<area shape="rect" id="node22" href="$class_c2_m2_1_1_interaction_1_1_v_r_1_1_v_r_raycastable.html" title=" " alt="" coords="174,916,410,943"/>
+<area shape="rect" id="node23" href="$class_c2_m2_1_1_molecular_dynamics_1_1_visualization_1_1_sphere_instantiator.html" title=" " alt="" coords="164,967,420,1009"/>
+<area shape="rect" id="node24" href="$class_c2_m2_1_1_neuronal_dynamics_1_1_alg_1_1_graph_behaviour.html" title="Simple test behaviour to reorder and write out sparsity pattern of a reordered mesh" alt="" coords="194,1033,390,1074"/>
+<area shape="rect" id="node25" href="$class_c2_m2_1_1_neuronal_dynamics_1_1_tests_1_1_change_shader_behaviour.html" title=" " alt="" coords="187,1098,397,1139"/>
+<area shape="rect" id="node26" href="$class_c2_m2_1_1_neuronal_dynamics_1_1_tests_1_1_mesh_tests.html" title="Behaviour can be attached to test mesh consistency" alt="" coords="187,1163,397,1205"/>
+<area shape="rect" id="node27" href="$class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_sine_wave_colorizer.html" title="A simple sine wave colorizer" alt="" coords="191,1229,393,1270"/>
+<area shape="rect" id="node28" href="$class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_u_g_x_reader_test.html" title="UGXReaderTest" alt="" coords="191,1294,393,1335"/>
+<area shape="rect" id="node29" href="$class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_neuron1_d.html" title="Read in a map associating 1D neuron vertices to 3D mesh vertices." alt="" coords="167,1359,417,1401"/>
+<area shape="rect" id="node30" href="$class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_t_k_1_1_v_t_u_manager.html" title=" " alt="" coords="167,1425,417,1466"/>
+<area shape="rect" id="node31" href="$class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_t_k_1_1_v_t_u_player.html" title=" " alt="" coords="167,1490,417,1531"/>
+<area shape="rect" id="node32" href="$class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_t_k_1_1_v_t_u_player_button.html" title=" " alt="" coords="167,1555,417,1597"/>
+<area shape="rect" id="node33" href="$class_c2_m2_1_1_o_i_t_1_1_interaction_1_1_particle_field_handle_controller.html" title=" " alt="" coords="196,1621,388,1662"/>
+<area shape="rect" id="node34" href="$class_c2_m2_1_1_o_i_t_1_1_interaction_1_1_particle_field_scale_button_controller.html" title=" " alt="" coords="196,1686,388,1727"/>
+<area shape="rect" id="node35" href="$class_c2_m2_1_1_o_i_t_1_1_interaction_1_1_particle_iso_quant_controller_button.html" title=" " alt="" coords="196,1751,388,1793"/>
+<area shape="rect" id="node36" href="$class_c2_m2_1_1_o_i_t_1_1_interaction_1_1_particle_size_controller_button.html" title=" " alt="" coords="196,1817,388,1858"/>
+<area shape="rect" id="node37" href="$class_c2_m2_1_1_o_i_t_1_1_interaction_1_1_particle_system_controller.html" title=" " alt="" coords="196,1882,388,1923"/>
+<area shape="rect" id="node38" href="$class_c2_m2_1_1_o_i_t_1_1_visualization_1_1_generate_spheres.html" title=" " alt="" coords="185,1947,399,1989"/>
+<area shape="rect" id="node39" href="$class_c2_m2_1_1_o_i_t_1_1_visualization_1_1_particle_system_ascii_data_reader.html" title=" " alt="" coords="189,2013,395,2054"/>
+<area shape="rect" id="node40" href="$class_c2_m2_1_1_raycast_event_manager.html" title="Attach this script to parent gameObject, create one child with one raycast trigger per child...." alt="" coords="197,2079,387,2105"/>
+<area shape="rect" id="node41" href="$class_c2_m2_1_1_raycast_forward.html" title=" " alt="" coords="215,2129,369,2156"/>
+<area shape="rect" id="node42" href="$class_c2_m2_1_1_raycast_input_field.html" title=" " alt="" coords="210,2180,374,2207"/>
+<area shape="rect" id="node43" href="$class_c2_m2_1_1_raycast_key.html" title=" " alt="" coords="227,2231,357,2257"/>
+<area shape="rect" id="node44" href="$class_c2_m2_1_1_raycast_keyboard.html" title=" " alt="" coords="211,2281,373,2308"/>
+<area shape="rect" id="node45" href="$class_c2_m2_1_1_raycast_press_events.html" title="Store custom events that the corresponding RaycastTriggerManager will invoke" alt="" coords="201,2332,383,2359"/>
+<area shape="rect" id="node46" href="$class_c2_m2_1_1_simulation_1_1_interactable.html" title="Manages interaction input to simulations" alt="" coords="196,2383,388,2409"/>
+<area shape="rect" id="node48" href="$class_c2_m2_1_1_tests_1_1_simple_burst.html" title="Simple example of how to use BURST in Unity/C#" alt="" coords="209,2433,375,2460"/>
+<area shape="rect" id="node49" href="$class_c2_m2_1_1_tests_1_1_test.html" title=" " alt="" coords="231,2484,353,2511"/>
+<area shape="rect" id="node57" href="$class_c2_m2_1_1_tests_1_1_test_manager.html" title=" " alt="" coords="207,2535,377,2561"/>
+<area shape="rect" id="node58" href="$class_c2_m2_1_1_utils_1_1_animation_1_1_color_animate.html" title=" " alt="" coords="201,2586,383,2627"/>
+<area shape="rect" id="node59" href="$class_c2_m2_1_1_utils_1_1_animation_1_1_rotate.html" title=" " alt="" coords="197,2652,387,2679"/>
+<area shape="rect" id="node60" href="$class_c2_m2_1_1_utils_1_1_animation_1_1_rotate_about.html" title=" " alt="" coords="197,2703,387,2745"/>
+<area shape="rect" id="node61" href="$class_c2_m2_1_1_utils_1_1_animation_1_1_rotate_animate.html" title=" " alt="" coords="197,2769,387,2810"/>
+<area shape="rect" id="node62" href="$class_c2_m2_1_1_utils_1_1_animation_1_1_u_v_animation.html" title=" " alt="" coords="178,2835,406,2861"/>
+<area shape="rect" id="node63" href="$class_c2_m2_1_1_utils_1_1_debug_utils_1_1_editor_button_pause.html" title=" " alt="" coords="197,2886,387,2927"/>
+<area shape="rect" id="node64" href="$class_c2_m2_1_1_utils_1_1_debug_utils_1_1_f_p_s_counter.html" title=" " alt="" coords="178,2952,406,2979"/>
+<area shape="rect" id="node65" href="$class_c2_m2_1_1_utils_1_1_debug_utils_1_1_get_all_dependencies.html" title=" " alt="" coords="203,3003,381,3045"/>
+<area shape="rect" id="node66" href="$class_c2_m2_1_1_utils_1_1_debug_utils_1_1_lines_renderer.html" title="Draw a series of disjointed lines given a list of edges using the native LineRenderer class" alt="" coords="198,3069,386,3110"/>
+<area shape="rect" id="node67" href="$class_c2_m2_1_1_utils_1_1_debug_utils_1_1_mirror_text.html" title=" " alt="" coords="185,3135,399,3161"/>
+<area shape="rect" id="node68" href="$class_c2_m2_1_1_utils_1_1_debug_utils_1_1_screen_recorder.html" title=" " alt="" coords="193,3186,391,3227"/>
+<area shape="rect" id="node69" href="$class_c2_m2_1_1_utils_1_1_mesh_utils_1_1_mesh_col_controller.html" title="Set MeshColController instance.mesh to automatically fetch and update MeshCollider meshCol...." alt="" coords="200,3251,384,3293"/>
+<area shape="rect" id="node70" href="$class_c2_m2_1_1_utils_1_1_mesh_utils_1_1_mono_mesh_rescaler.html" title="Monobehaviour to allow rescaling meshes from the editor using static Utilities.MeshUtilities" alt="" coords="200,3317,384,3358"/>
+<area shape="rect" id="node71" href="$class_c2_m2_1_1_utils_1_1_mesh_utils_1_1_mono_mesh_reverser.html" title="Monobehaviour for reversing the winding of Mesh triangles from the editor" alt="" coords="200,3382,384,3423"/>
+<area shape="rect" id="node72" href="$class_c2_m2_1_1_utils_1_1_reset_position_mono.html" title=" " alt="" coords="191,3448,393,3475"/>
+<area shape="rect" id="node73" href="$class_c2_m2_1_1_utils_1_1_scene_restarter.html" title="Restart the scene upon a button click." alt="" coords="202,3499,382,3525"/>
+<area shape="rect" id="node74" href="$class_c2_m2_1_1_utils_1_1_transform_resetter.html" title="This resets the position, rotation of the object it&#39;s attached to at &quot;startFrame&quot;." alt="" coords="194,3549,390,3576"/>
+<area shape="rect" id="node75" href="$class_c2_m2_1_1_visualization_1_1_l_u_t_gradient.html" title="Create a fast and memory&#45;friendly color lookup table from a gradient" alt="" coords="187,3600,397,3627"/>
+<area shape="rect" id="node76" href="$class_c2_m2_1_1_visualization_1_1_v_r_1_1_v_r_device_manager.html" title="Make sure that a VR device is loaded before using OVRPlayerController. If none is loaded,..." alt="" coords="184,3651,400,3693"/>
+<area shape="rect" id="node77" href="$class_collider_toggle_switch.html" title=" " alt="" coords="221,3717,363,3744"/>
+<area shape="rect" id="node78" href="$class_quit_on_click.html" title=" " alt="" coords="246,3768,338,3795"/>
+<area shape="rect" id="node79" href="$class_quit_on_trigger_enter.html" title=" " alt="" coords="225,3819,359,3845"/>
+<area shape="rect" id="node80" href="$class_raycast_mesh_collider.html" title="Instantiate the Raycastee prefab and create a mesh collider on it" alt="" coords="219,3869,365,3896"/>
+<area shape="rect" id="node81" href="$class_raycast_shift_key.html" title=" " alt="" coords="233,3920,351,3947"/>
+<area shape="rect" id="node82" href="$class_raycast_triangle_selector.html" title="Color a mesh&#39;s triangles as you raycast to it" alt="" coords="211,3971,373,3997"/>
+<area shape="rect" id="node83" href="$class_snap_menu.html" title=" " alt="" coords="250,4021,334,4048"/>
+<area shape="rect" id="node84" href="$class_v_r_button.html" title="If an object enters this button&#39;s trigger collider, and if that object is marked as the index finger,..." alt="" coords="253,4072,331,4099"/>
+<area shape="rect" id="node85" href="$class_v_r_gaze_scroll_down_button.html" title=" " alt="" coords="205,4123,379,4149"/>
+<area shape="rect" id="node86" href="$class_v_r_gaze_scroll_up_button.html" title=" " alt="" coords="213,4173,371,4200"/>
+<area shape="rect" id="node87" href="$class_v_r_object_reset_button.html" title=" " alt="" coords="217,4224,367,4251"/>
+<area shape="rect" id="node88" href="$class_v_r_scrollbar.html" title=" " alt="" coords="247,4275,337,4301"/>
+<area shape="rect" id="node89" href="$class_v_r_scrollbar_button.html" title=" " alt="" coords="227,4325,357,4352"/>
+<area shape="rect" id="node90" href="$class_x_frame_pause.html" title=" " alt="" coords="241,4376,343,4403"/>
+<area shape="rect" id="node9" href="$class_c2_m2_1_1_interaction_1_1_raycast_sim_heater_continuous.html" title=" " alt="" coords="475,303,647,345"/>
+<area shape="rect" id="node10" href="$class_c2_m2_1_1_interaction_1_1_raycast_sim_heater_discrete.html" title=" " alt="" coords="475,369,647,410"/>
+<area shape="rect" id="node12" href="$class_c2_m2_1_1_interaction_1_1_signaling_1_1_raycast_event_signaler.html" title=" " alt="" coords="471,434,652,475"/>
+<area shape="rect" id="node13" href="$class_c2_m2_1_1_interaction_1_1_signaling_1_1_mouse_event_signaler.html" title=" " alt="" coords="719,402,901,443"/>
+<area shape="rect" id="node14" href="$class_c2_m2_1_1_interaction_1_1_signaling_1_1_oculus_event_signaler.html" title="Activate raycast triggers using oculus controller buttons and fingertip distance" alt="" coords="719,467,901,509"/>
+<area shape="rect" id="node47" href="$class_c2_m2_1_1_simulation_1_1_simulation.html" title="Provides an interface for simulations using a general data type T" alt="" coords="468,2371,655,2413"/>
+<area shape="rect" id="node50" href="$class_c2_m2_1_1_tests_1_1_awake_test.html" title=" " alt="" coords="481,2437,641,2464"/>
+<area shape="rect" id="node55" href="$class_c2_m2_1_1_tests_1_1_start_test.html" title=" " alt="" coords="487,2488,636,2515"/>
+<area shape="rect" id="node56" href="$class_c2_m2_1_1_tests_1_1_update_test.html" title=" " alt="" coords="480,2539,643,2565"/>
+<area shape="rect" id="node51" href="$class_c2_m2_1_1_molecular_dynamics_1_1_tests_1_1_test_childed_sphere_instantiator.html" title=" " alt="" coords="703,2333,917,2374"/>
+<area shape="rect" id="node52" href="$class_c2_m2_1_1_molecular_dynamics_1_1_tests_1_1_test_sphere_instantiator.html" title=" " alt="" coords="703,2398,917,2439"/>
+<area shape="rect" id="node53" href="$class_c2_m2_1_1_neuronal_dynamics_1_1_tests_1_1_normal_test.html" title=" " alt="" coords="705,2463,915,2505"/>
+<area shape="rect" id="node54" href="$class_c2_m2_1_1_tests_1_1_test_timer.html" title=" " alt="" coords="733,2529,887,2556"/>
+</map>
