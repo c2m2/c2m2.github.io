@@ -1,24 +1,12 @@
 var searchData=
 [
-  ['mapentry_1337',['MapEntry',['../struct_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_map_entry.html',1,'C2M2::NeuronalDynamics::UGX']]],
-  ['mappingdata_1338',['MappingData',['../struct_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_mapping_data.html',1,'C2M2::NeuronalDynamics::UGX']]],
-  ['mappinginfo_1339',['MappingInfo',['../struct_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_mapping_info.html',1,'C2M2::NeuronalDynamics::UGX']]],
-  ['maputils_1340',['MapUtils',['../class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_map_utils.html',1,'C2M2::NeuronalDynamics::UGX']]],
-  ['math_1341',['Math',['../class_c2_m2_1_1_utils_1_1_math.html',1,'C2M2::Utils']]],
-  ['mdsimulation_1342',['MDSimulation',['../class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_m_d_simulation.html',1,'C2M2::MolecularDynamics::Simulation']]],
-  ['mdsolver_1343',['MDSolver',['../class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_m_d_solver.html',1,'C2M2::MolecularDynamics::Simulation']]],
-  ['meshcolcontroller_1344',['MeshColController',['../class_c2_m2_1_1_utils_1_1_mesh_utils_1_1_mesh_col_controller.html',1,'C2M2::Utils::MeshUtils']]],
-  ['mesheditors_1345',['MeshEditors',['../class_c2_m2_1_1_utils_1_1_mesh_utils_1_1_mesh_editors.html',1,'C2M2::Utils::MeshUtils']]],
-  ['meshfilternotfoundexception_1346',['MeshFilterNotFoundException',['../class_mesh_filter_not_found_exception.html',1,'']]],
-  ['meshinfo_1347',['MeshInfo',['../class_c2_m2_1_1_utils_1_1_mesh_utils_1_1_mesh_info.html',1,'C2M2::Utils::MeshUtils']]],
-  ['meshsimulation_1348',['MeshSimulation',['../class_c2_m2_1_1_simulation_1_1_samples_1_1_mesh_simulation.html',1,'C2M2::Simulation::Samples']]],
-  ['meshtests_1349',['MeshTests',['../class_c2_m2_1_1_neuronal_dynamics_1_1_tests_1_1_mesh_tests.html',1,'C2M2::NeuronalDynamics::Tests']]],
-  ['mirrortext_1350',['MirrorText',['../class_c2_m2_1_1_utils_1_1_debug_utils_1_1_mirror_text.html',1,'C2M2::Utils::DebugUtils']]],
-  ['mol_5fmatrix_5fv2_1351',['MOL_Matrix_v2',['../class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_m_o_l___matrix__v2.html',1,'C2M2::NeuronalDynamics::Simulation']]],
-  ['monomeshrescaler_1352',['MonoMeshRescaler',['../class_c2_m2_1_1_utils_1_1_mesh_utils_1_1_mono_mesh_rescaler.html',1,'C2M2::Utils::MeshUtils']]],
-  ['monomeshreverser_1353',['MonoMeshReverser',['../class_c2_m2_1_1_utils_1_1_mesh_utils_1_1_mono_mesh_reverser.html',1,'C2M2::Utils::MeshUtils']]],
-  ['mouseeventsignaler_1354',['MouseEventSignaler',['../class_c2_m2_1_1_interaction_1_1_signaling_1_1_mouse_event_signaler.html',1,'C2M2::Interaction::Signaling']]],
-  ['movingovrheadsetemulator_1355',['MovingOVRHeadsetEmulator',['../class_c2_m2_1_1_visualization_1_1_v_r_1_1_moving_o_v_r_headset_emulator.html',1,'C2M2::Visualization::VR']]],
-  ['multiframefade_5flowpasscutoff_1356',['MultiframeFade_LowpassCutoff',['../class_c2_m2_1_1_interaction_1_1_u_i_1_1_multiframe_fade___lowpass_cutoff.html',1,'C2M2::Interaction::UI']]],
-  ['myjob_1357',['MyJob',['../struct_c2_m2_1_1_tests_1_1_simple_burst_1_1_my_job.html',1,'C2M2::Tests::SimpleBurst']]]
+  ['neuron1d_1366',['Neuron1D',['../dc/dc4/class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_neuron1_d.html',1,'C2M2::NeuronalDynamics::Visualization']]],
+  ['neuron1dmapfilereader_1367',['Neuron1DMapFileReader',['../dc/d04/class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_neuron1_d_map_file_reader.html',1,'C2M2::NeuronalDynamics::Visualization']]],
+  ['neuron1dvertmap_1368',['Neuron1DVertMap',['../db/db3/class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_neuron1_d_vert_map.html',1,'C2M2::NeuronalDynamics::Visualization']]],
+  ['neuroncell_1369',['NeuronCell',['../da/df6/class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_cell.html',1,'C2M2::NeuronalDynamics::UGX']]],
+  ['neuronsimulation_1370',['NeuronSimulation',['../d1/de3/class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_neuron_simulation.html',1,'C2M2::NeuronalDynamics::Simulation']]],
+  ['node_1371',['Node',['../d9/dc0/struct_c2_m2_1_1_interaction_1_1_adjacency_1_1_node.html',1,'C2M2::Interaction::Adjacency']]],
+  ['nodedata_1372',['NodeData',['../d3/d7c/struct_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_cell_1_1_node_data.html',1,'C2M2::NeuronalDynamics::UGX::NeuronCell']]],
+  ['normaldata_1373',['NormalData',['../df/d3d/struct_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_normal_data.html',1,'C2M2::NeuronalDynamics::UGX']]],
+  ['normaltest_1374',['NormalTest',['../d8/d78/class_c2_m2_1_1_neuronal_dynamics_1_1_tests_1_1_normal_test.html',1,'C2M2::NeuronalDynamics::Tests']]]
 ];

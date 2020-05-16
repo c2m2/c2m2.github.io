@@ -1,0 +1,4 @@
+<map id="C2M2.Interaction.VR.PublicOVRGrabbable" name="C2M2.Interaction.VR.PublicOVRGrabbable">
+<area shape="rect" id="node1" title="Offers a public interface for other scripts to change OVRGrabber&#39;s grab points, such as when using co..." alt="" coords="5,131,236,223"/>
+<area shape="rect" id="node2" title=" " alt="" coords="61,5,180,83"/>
+</map>

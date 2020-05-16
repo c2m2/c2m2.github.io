@@ -1,0 +1,9 @@
+<map id="C2M2.NeuronalDynamics.Simulation.NeuronSimulation" name="C2M2.NeuronalDynamics.Simulation.NeuronSimulation">
+<area shape="rect" id="node1" title="Provides base functionality for Neuron simulations" alt="" coords="141,823,428,1032"/>
+<area shape="rect" id="node2" href="$class_c2_m2_1_1_simulation_1_1_surface_simulation.html" title="Simulation of type double[] for visualizing scalar fields on mesh surfaces" alt="" coords="27,477,233,672"/>
+<area shape="rect" id="node3" href="$class_c2_m2_1_1_simulation_1_1_simulation.html" title=" " alt="" coords="5,132,212,415"/>
+<area shape="rect" id="node4" href="$class_c2_m2_1_1_visualization_1_1_l_u_t_gradient.html" title="Create a fast and memory&#45;friendly color lookup table from a gradient" alt="" coords="236,161,499,385"/>
+<area shape="rect" id="node5" title=" " alt="" coords="304,5,431,83"/>
+<area shape="rect" id="node6" title=" " alt="" coords="257,536,312,613"/>
+<area shape="rect" id="node7" title=" " alt="" coords="345,536,416,613"/>
+</map>

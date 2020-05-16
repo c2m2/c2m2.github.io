@@ -1,0 +1,4 @@
+<map id="C2M2.Utils.DebugUtils.Actions.TransformResetter" name="C2M2.Utils.DebugUtils.Actions.TransformResetter">
+<area shape="rect" id="node1" title="This resets the position, rotation of the object it&#39;s attached to at &quot;startFrame&quot;." alt="" coords="5,131,268,311"/>
+<area shape="rect" id="node2" title=" " alt="" coords="73,5,200,83"/>
+</map>

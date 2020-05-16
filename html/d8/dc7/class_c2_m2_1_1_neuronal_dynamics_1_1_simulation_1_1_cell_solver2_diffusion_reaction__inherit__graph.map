@@ -1,0 +1,6 @@
+<map id="C2M2.NeuronalDynamics.Simulation.CellSolver2DiffusionReaction" name="C2M2.NeuronalDynamics.Simulation.CellSolver2DiffusionReaction">
+<area shape="rect" id="node1" title=" " alt="" coords="5,953,292,1573"/>
+<area shape="rect" id="node2" href="$d1/de3/class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_neuron_simulation.html" title="Provides base functionality for Neuron simulations" alt="" coords="65,593,232,905"/>
+<area shape="rect" id="node3" href="$d4/de1/class_c2_m2_1_1_simulation_1_1_surface_simulation.html" title="Simulation of type double[] for visualizing scalar fields on mesh surfaces" alt="" coords="45,336,252,545"/>
+<area shape="rect" id="node4" href="$db/d39/class_c2_m2_1_1_simulation_1_1_simulation.html" title=" " alt="" coords="45,5,252,288"/>
+</map>

@@ -1,0 +1,6 @@
+<map id="C2M2.NeuronalDynamics.UGX.ISynapse" name="C2M2.NeuronalDynamics.UGX.ISynapse">
+<area shape="rect" id="node1" title="A synapse respresentation" alt="" coords="260,5,491,112"/>
+<area shape="rect" id="node2" href="$d7/dbe/struct_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_alpha_post_synapse.html" title="A alpha post synapse" alt="" coords="5,167,236,333"/>
+<area shape="rect" id="node3" href="$dd/d8d/struct_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_e_x_p2_synapse.html" title="A bi&#45;exponential synapse" alt="" coords="260,160,491,340"/>
+<area shape="rect" id="node4" href="$d3/d7b/struct_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_undef_synapse.html" title="Undef Synapse" alt="" coords="515,197,745,303"/>
+</map>

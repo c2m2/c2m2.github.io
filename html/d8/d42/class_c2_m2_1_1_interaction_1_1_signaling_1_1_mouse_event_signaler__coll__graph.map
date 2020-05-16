@@ -1,0 +1,11 @@
+<map id="C2M2.Interaction.Signaling.MouseEventSignaler" name="C2M2.Interaction.Signaling.MouseEventSignaler">
+<area shape="rect" id="node1" title=" " alt="" coords="40,1357,287,1552"/>
+<area shape="rect" id="node2" href="$d6/d2d/class_c2_m2_1_1_interaction_1_1_signaling_1_1_raycast_event_signaler.html" title=" " alt="" coords="40,981,287,1308"/>
+<area shape="rect" id="node3" href="$d6/d4b/class_c2_m2_1_1_interaction_1_1_signaling_1_1_press_event_signaler.html" title="Send press, holdPress, and endPress events based on set values of Pressed and RaycastTriggerManager" alt="" coords="5,476,172,597"/>
+<area shape="rect" id="node4" title=" " alt="" coords="103,139,229,217"/>
+<area shape="rect" id="node5" href="$d7/dcb/class_c2_m2_1_1_raycast_event_manager.html" title="Attach this script to parent gameObject, create one child with one raycast trigger per child...." alt="" coords="164,621,379,919"/>
+<area shape="rect" id="node6" href="$dd/dab/class_c2_m2_1_1_raycast_press_events.html" title="Store custom events that the corresponding RaycastTriggerManager will invoke" alt="" coords="231,316,437,452"/>
+<area shape="rect" id="node7" href="$db/d79/class_c2_m2_1_1_raycast_press_events_1_1_raycast_hit_event.html" title=" " alt="" coords="253,132,468,224"/>
+<area shape="rect" id="node8" title=" " alt="" coords="253,5,468,83"/>
+<area shape="rect" id="node9" title=" " alt="" coords="461,345,532,423"/>
+</map>

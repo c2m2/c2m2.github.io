@@ -14,6 +14,7 @@ var class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_h_h_simulation =
     [ "lineWidth1D", "class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_h_h_simulation.html#a137c9b786644edec6e507789c4e7f344", null ],
     [ "map", "class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_h_h_simulation.html#aa8d5bd7cbe28994a3ea82ccef2261078", null ],
     [ "spec1D", "class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_h_h_simulation.html#a9a87ee5f7d1a897b1d339e91bdc91448", null ],
+    [ "specBlownup", "class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_h_h_simulation.html#ae1176b69755942daa305c1dd4827f969", null ],
     [ "specTris", "class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_h_h_simulation.html#a14e6c193247ec8e0d1dc70f14b559ccf", null ],
     [ "ugxExt", "class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_h_h_simulation.html#abb2dedc7ba873b8c366196d131f03a17", null ],
     [ "visualize1D", "class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_h_h_simulation.html#aa2dd9bcc786cacce52c2b7b7ab7948d7", null ]

@@ -10,8 +10,10 @@ var namespace_c2_m2_1_1_neuronal_dynamics_1_1_simulation =
     [ "CellSolver2SimpleDiffusion", "class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_cell_solver2_simple_diffusion.html", "class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_cell_solver2_simple_diffusion" ],
     [ "CellSolver2SimpleFE", "class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_cell_solver2_simple_f_e.html", "class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_cell_solver2_simple_f_e" ],
     [ "CellSolver2vb", "class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_cell_solver2vb.html", "class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_cell_solver2vb" ],
-    [ "HHSimulation", "class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_h_h_simulation.html", "class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_h_h_simulation" ],
     [ "MOL_Matrix_v2", "class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_m_o_l___matrix__v2.html", "class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_m_o_l___matrix__v2" ],
+    [ "NeuronSimulation", "class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_neuron_simulation.html", "class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_neuron_simulation" ],
     [ "SimpleSolver_constDerivative", "class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_simple_solver__const_derivative.html", "class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_simple_solver__const_derivative" ],
-    [ "sparse_cholesky_test", "class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1sparse__cholesky__test.html", "class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1sparse__cholesky__test" ]
+    [ "sparse_cholesky_test", "class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1sparse__cholesky__test.html", "class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1sparse__cholesky__test" ],
+    [ "sparse_cholesky_time_test", "class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1sparse__cholesky__time__test.html", "class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1sparse__cholesky__time__test" ],
+    [ "sparseNoArray_cholesky_time_test", "class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1sparse_no_array__cholesky__time__test.html", "class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1sparse_no_array__cholesky__time__test" ]
 ];
