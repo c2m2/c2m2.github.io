@@ -1,8 +1,10 @@
 var searchData=
 [
-  ['m_5fgrabpoints_2613',['M_GrabPoints',['../d8/d30/class_c2_m2_1_1_interaction_1_1_v_r_1_1_public_o_v_r_grabbable.html#a0805c76b98c8cd4642d83b67deb4fe63',1,'C2M2::Interaction::VR::PublicOVRGrabbable']]],
-  ['m_5fgrabvolumes_2614',['M_GrabVolumes',['../dd/d45/class_c2_m2_1_1_interaction_1_1_v_r_1_1_public_o_v_r_grabber.html#a44c295e92421b5a85469155eb0dbc144',1,'C2M2::Interaction::VR::PublicOVRGrabber']]],
-  ['mesh_2615',['Mesh',['../d8/d5b/class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_grid.html#aeb5d8597ebe203671fa49aaa162948c2',1,'C2M2.NeuronalDynamics.UGX.Grid.Mesh()'],['../dc/d72/class_c2_m2_1_1_utils_1_1_mesh_utils_1_1_mesh_col_controller.html#aa26f2a232a9615ad5ca640298348b0a4',1,'C2M2.Utils.MeshUtils.MeshColController.mesh()']]],
-  ['mindistances_2616',['minDistances',['../df/d79/class_c2_m2_1_1_interaction_1_1_adjacency_1_1_dijkstra_search.html#a69cc760ca348b2b1bb53f633d13f0606',1,'C2M2::Interaction::Adjacency::DijkstraSearch']]],
-  ['modelgeometry_2617',['ModelGeometry',['../dd/d2a/struct_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_mapping_info.html#ae965be4038517d0f2c1c6d44f1e5e69d',1,'C2M2::NeuronalDynamics::UGX::MappingInfo']]]
+  ['lambda_2527',['Lambda',['../d2/dae/struct_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_mapping_data.html#a86f90425bfc1be28649c31880573a7c2',1,'C2M2::NeuronalDynamics::UGX::MappingData']]],
+  ['length_2528',['length',['../d7/dff/struct_c2_m2_1_1_interaction_1_1_adjacency_1_1_edge.html#add091a9a7b6806d6cbd4186aed231ef5',1,'C2M2::Interaction::Adjacency::Edge']]],
+  ['localmax_2529',['localMax',['../d0/d14/class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_t_k_1_1_v_t_u_object.html#a616d12d73e4888fc84a5957003f33127',1,'C2M2::NeuronalDynamics::Visualization::VTK::VTUObject']]],
+  ['localmin_2530',['localMin',['../d0/d14/class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_t_k_1_1_v_t_u_object.html#ac63c1dac09f7a5d66c70b87cdb8c7c5e',1,'C2M2::NeuronalDynamics::Visualization::VTK::VTUObject']]],
+  ['lowestfps_2531',['LowestFPS',['../d9/db5/class_c2_m2_1_1_utils_1_1_debug_utils_1_1_f_p_s_counter.html#aa80c3dcc9975aa22632c41f3bad7137e',1,'C2M2::Utils::DebugUtils::FPSCounter']]],
+  ['lowestfpsstring_2532',['lowestFPSString',['../d9/db5/class_c2_m2_1_1_utils_1_1_debug_utils_1_1_f_p_s_counter.html#afa975cf89f55d10f813af1e556494a0f',1,'C2M2::Utils::DebugUtils::FPSCounter']]],
+  ['lutres_2533',['LutRes',['../da/d4f/class_c2_m2_1_1_visualization_1_1_l_u_t_gradient.html#a82209f5952b054c5693c000c52a20535',1,'C2M2::Visualization::LUTGradient']]]
 ];

@@ -1,0 +1,4 @@
+<map id="C2M2.Interaction.RaycastEventManager" name="C2M2.Interaction.RaycastEventManager">
+<area shape="rect" id="node1" title="Attach this script to parent gameObject, create one child with one raycast trigger per child...." alt="" coords="5,131,220,487"/>
+<area shape="rect" id="node2" title=" " alt="" coords="49,5,176,83"/>
+</map>

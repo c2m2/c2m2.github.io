@@ -1,10 +1,8 @@
 var searchData=
 [
-  ['name_2618',['Name',['../d5/d9d/struct_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_subset.html#a631c34b397ecdac278080006ec196f08',1,'C2M2.NeuronalDynamics.UGX.Subset.Name()'],['../d6/d2b/class_c2_m2_1_1_utils_1_1_debug_utils_1_1_get_all_dependencies_1_1_dir.html#a9dca6aa2f62f6922aa0c53bf5cb81aa2',1,'C2M2.Utils.DebugUtils.GetAllDependencies.Dir.Name()']]],
-  ['neighborids_2619',['neighborIDs',['../d3/d7c/struct_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_cell_1_1_node_data.html#a3f91d7801ee4ba10ceeb15eac61f9a59',1,'C2M2::NeuronalDynamics::UGX::NeuronCell::NodeData']]],
-  ['neighbors_2620',['Neighbors',['../d5/d47/struct_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_vertex.html#ad265eddab89a17ad8bac6e94390005ef',1,'C2M2::NeuronalDynamics::UGX::Vertex']]],
-  ['noderadius_2621',['nodeRadius',['../d3/d7c/struct_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_cell_1_1_node_data.html#a0063ccfea4d23ce7597bd9b93b9f5880',1,'C2M2::NeuronalDynamics::UGX::NeuronCell::NodeData']]],
-  ['nodetype_2622',['nodeType',['../d3/d7c/struct_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_cell_1_1_node_data.html#a8c50d7ddb1cc32ab0354dab5523135ed',1,'C2M2::NeuronalDynamics::UGX::NeuronCell::NodeData']]],
-  ['nonvrcamera_2623',['nonVRCamera',['../d1/d4e/class_c2_m2_1_1_game_manager.html#adf31873fa5ca3dcee00d04f189cbd73e',1,'C2M2::GameManager']]],
-  ['normal_2624',['Normal',['../df/d3d/struct_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_normal_data.html#afbf6b27f4f9729b2d537ccbc0b75af66',1,'C2M2::NeuronalDynamics::UGX::NormalData']]]
+  ['m_5fgrabpoints_2534',['M_GrabPoints',['../d8/d30/class_c2_m2_1_1_interaction_1_1_v_r_1_1_public_o_v_r_grabbable.html#a0805c76b98c8cd4642d83b67deb4fe63',1,'C2M2::Interaction::VR::PublicOVRGrabbable']]],
+  ['m_5fgrabvolumes_2535',['M_GrabVolumes',['../dd/d45/class_c2_m2_1_1_interaction_1_1_v_r_1_1_public_o_v_r_grabber.html#a44c295e92421b5a85469155eb0dbc144',1,'C2M2::Interaction::VR::PublicOVRGrabber']]],
+  ['mesh_2536',['mesh',['../dc/d72/class_c2_m2_1_1_utils_1_1_mesh_utils_1_1_mesh_col_controller.html#aa26f2a232a9615ad5ca640298348b0a4',1,'C2M2.Utils.MeshUtils.MeshColController.mesh()'],['../d8/d5b/class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_grid.html#aeb5d8597ebe203671fa49aaa162948c2',1,'C2M2.NeuronalDynamics.UGX.Grid.Mesh()']]],
+  ['mindistances_2537',['minDistances',['../df/d79/class_c2_m2_1_1_interaction_1_1_adjacency_1_1_dijkstra_search.html#a69cc760ca348b2b1bb53f633d13f0606',1,'C2M2::Interaction::Adjacency::DijkstraSearch']]],
+  ['modelgeometry_2538',['ModelGeometry',['../dd/d2a/struct_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_mapping_info.html#ae965be4038517d0f2c1c6d44f1e5e69d',1,'C2M2::NeuronalDynamics::UGX::MappingInfo']]]
 ];

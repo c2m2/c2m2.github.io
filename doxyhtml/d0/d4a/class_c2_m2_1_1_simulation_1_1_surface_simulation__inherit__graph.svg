@@ -78,10 +78,10 @@ var sectionId = 'dynsection-0';
 </g>
 <!-- Node3 -->
 <g id="node3" class="node"><title>Node3</title>
-<g id="a_node3"><a xlink:href="../../d1/de3/class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_neuron_simulation.html" target="_top" xlink:title="Provides base functionality for Neuron simulations">
+<g id="a_node3"><a xlink:href="../../d4/d5a/class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_neuron_simulation1_d.html" target="_top" xlink:title="Provide an interface for 1D neuron&#45;surface simulations to be visualized and interacted with">
 <polygon fill="white" stroke="black" points="1637,-545.5 1637,-789.5 1852,-789.5 1852,-545.5 1637,-545.5"/>
 <text text-anchor="start" x="1645" y="-777.5" font-family="Courier New" font-size="10.00">C2M2.NeuronalDynamics.Simulation.</text>
-<text text-anchor="middle" x="1744.5" y="-766.5" font-family="Courier New" font-size="10.00">NeuronSimulation</text>
+<text text-anchor="middle" x="1744.5" y="-766.5" font-family="Courier New" font-size="10.00">NeuronSimulation1D</text>
 <polyline fill="none" stroke="black" points="1637,-759.5 1852,-759.5 "/>
 <text text-anchor="start" x="1645" y="-747.5" font-family="Courier New" font-size="10.00">+ visualize1D</text>
 <text text-anchor="start" x="1645" y="-736.5" font-family="Courier New" font-size="10.00">+ color1D</text>
@@ -165,16 +165,16 @@ var sectionId = 'dynsection-0';
 <text text-anchor="start" x="1881" y="-1177.5" font-family="Courier New" font-size="10.00">&#45; solveThread</text>
 <polyline fill="none" stroke="black" points="1873,-1170.5 2028,-1170.5 "/>
 <text text-anchor="start" x="1881" y="-1158.5" font-family="Courier New" font-size="10.00">+ GetValues()</text>
-<text text-anchor="start" x="1881" y="-1147.5" font-family="Courier New" font-size="10.00">+ Awake()</text>
-<text text-anchor="start" x="1881" y="-1136.5" font-family="Courier New" font-size="10.00">+ Start()</text>
-<text text-anchor="start" x="1881" y="-1125.5" font-family="Courier New" font-size="10.00">+ Update()</text>
-<text text-anchor="start" x="1881" y="-1114.5" font-family="Courier New" font-size="10.00">+ StartSimulation()</text>
-<text text-anchor="start" x="1881" y="-1103.5" font-family="Courier New" font-size="10.00">+ StopSimulation()</text>
+<text text-anchor="start" x="1881" y="-1147.5" font-family="Courier New" font-size="10.00">+ StartSimulation()</text>
+<text text-anchor="start" x="1881" y="-1136.5" font-family="Courier New" font-size="10.00">+ StopSimulation()</text>
+<text text-anchor="start" x="1881" y="-1125.5" font-family="Courier New" font-size="10.00">+ Awake()</text>
+<text text-anchor="start" x="1881" y="-1114.5" font-family="Courier New" font-size="10.00">+ Start()</text>
+<text text-anchor="start" x="1881" y="-1103.5" font-family="Courier New" font-size="10.00">+ Update()</text>
 <text text-anchor="start" x="1881" y="-1092.5" font-family="Courier New" font-size="10.00"># UpdateVisualization()</text>
-<text text-anchor="start" x="1881" y="-1081.5" font-family="Courier New" font-size="10.00"># OnAwake()</text>
-<text text-anchor="start" x="1881" y="-1070.5" font-family="Courier New" font-size="10.00"># OnStart()</text>
-<text text-anchor="start" x="1881" y="-1059.5" font-family="Courier New" font-size="10.00"># OnUpdate()</text>
-<text text-anchor="start" x="1881" y="-1048.5" font-family="Courier New" font-size="10.00"># Solve()</text>
+<text text-anchor="start" x="1881" y="-1081.5" font-family="Courier New" font-size="10.00"># Solve()</text>
+<text text-anchor="start" x="1881" y="-1070.5" font-family="Courier New" font-size="10.00"># OnAwake()</text>
+<text text-anchor="start" x="1881" y="-1059.5" font-family="Courier New" font-size="10.00"># OnStart()</text>
+<text text-anchor="start" x="1881" y="-1048.5" font-family="Courier New" font-size="10.00"># OnUpdate()</text>
 <text text-anchor="start" x="1881" y="-1037.5" font-family="Courier New" font-size="10.00">&#45; OnApplicationPause()</text>
 <text text-anchor="start" x="1881" y="-1026.5" font-family="Courier New" font-size="10.00">&#45; OnApplicationQuit()</text>
 </a>

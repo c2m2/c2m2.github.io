@@ -1,10 +1,10 @@
 var searchData=
 [
-  ['this_5bint_20key_5d_2640',['this[int key]',['../d7/d8c/class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_vertex_attachement_accessor.html#a636a53c57375259e386f68732f3747b5',1,'C2M2::NeuronalDynamics::UGX::VertexAttachementAccessor']]],
-  ['this_5bstring_20name_5d_2641',['this[string name]',['../d6/d8f/class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_subset_collection.html#aa36bbe4680ba1fa49d24a82bd00caeff',1,'C2M2::NeuronalDynamics::UGX::SubsetCollection']]],
-  ['timernodes_2642',['timerNodes',['../d3/dca/class_c2_m2_1_1_utils_1_1_timer.html#aa24390997914e425a7f4ce82c6e5da55',1,'C2M2::Utils::Timer']]],
-  ['to_2643',['To',['../dd/ddd/struct_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_edge.html#a95700908d4ea8aa1a5d91e445544fdc2',1,'C2M2::NeuronalDynamics::UGX::Edge']]],
-  ['totalpassed_2644',['totalPassed',['../d5/d12/class_c2_m2_1_1_tests_1_1_test_manager.html#a90e6bf6a4c33d73830fc2cb4597cb519',1,'C2M2::Tests::TestManager']]],
-  ['totaltestcount_2645',['totalTestCount',['../d5/d12/class_c2_m2_1_1_tests_1_1_test_manager.html#adb8db6f0310cff60a4b35d31100cb5ff',1,'C2M2::Tests::TestManager']]],
-  ['types_2646',['Types',['../d5/d27/struct_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_attachment_info.html#af0c674b12b6600896fb17140787cb39d',1,'C2M2::NeuronalDynamics::UGX::AttachmentInfo']]]
+  ['simheater_2555',['SimHeater',['../dc/daa/class_c2_m2_1_1_simulation_1_1_interactable.html#a59ae0b481b30e44bf9de24d8693af5ac',1,'C2M2::Simulation::Interactable']]],
+  ['start_2556',['Start',['../d2/dae/struct_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_mapping_data.html#a2b782918b5e4e0eaace28dc799eda8c3',1,'C2M2::NeuronalDynamics::UGX::MappingData']]],
+  ['startpassed_2557',['startPassed',['../d5/d12/class_c2_m2_1_1_tests_1_1_test_manager.html#ab825a82c5b56a9a3f54dbafaa8cb7dbb',1,'C2M2::Tests::TestManager']]],
+  ['stddev_2558',['StdDev',['../da/dfa/class_c2_m2_1_1_interaction_1_1_adjacency_1_1_gaussian_distance_calculator.html#a7d32d4e136d5c26262d2e158b387dea0',1,'C2M2::Interaction::Adjacency::GaussianDistanceCalculator']]],
+  ['subdivisions_2559',['subdivisions',['../d2/d9a/class_c2_m2_1_1_interaction_1_1_adjacency_1_1_unique_vertices.html#a0f7f60b7b0393898d883605f45b2168a',1,'C2M2::Interaction::Adjacency::UniqueVertices']]],
+  ['subsets_2560',['Subsets',['../d8/d5b/class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_grid.html#aae4716c47d09767188e76f50597cbddb',1,'C2M2::NeuronalDynamics::UGX::Grid']]],
+  ['surfacegeometry_2561',['SurfaceGeometry',['../dd/d2a/struct_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_mapping_info.html#aef756264b3b219f33283fedbf41a01dc',1,'C2M2::NeuronalDynamics::UGX::MappingInfo']]]
 ];

@@ -1,0 +1,4 @@
+<map id="C2M2.Interaction.RaycastMeshCollider" name="C2M2.Interaction.RaycastMeshCollider">
+<area shape="rect" id="node1" title="Instantiate the Raycastee prefab and create a mesh collider on it" alt="" coords="5,131,220,223"/>
+<area shape="rect" id="node2" title=" " alt="" coords="49,5,176,83"/>
+</map>

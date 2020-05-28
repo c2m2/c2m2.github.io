@@ -11,13 +11,13 @@
 <polygon fill="white" stroke="none" points="-4,4 -4,-437 189,-437 189,4 -4,4"/>
 <!-- Node1 -->
 <g id="node1" class="node"><title>Node1</title>
-<g id="a_node1"><a xlink:title="Manages interaction input to simulations">
+<g id="a_node1"><a xlink:title="Interface for interaction scripts">
 <polygon fill="#bfbfbf" stroke="black" points="0,-259.5 0,-338.5 185,-338.5 185,-259.5 0,-259.5"/>
 <text text-anchor="middle" x="92.5" y="-326.5" font-family="Courier New" font-size="10.00">C2M2.Simulation.Interactable</text>
 <polyline fill="none" stroke="black" points="0,-319.5 185,-319.5 "/>
 <text text-anchor="start" x="8" y="-307.5" font-family="Courier New" font-size="10.00">+ interactionType</text>
 <text text-anchor="start" x="8" y="-296.5" font-family="Courier New" font-size="10.00">+ SimHeater</text>
-<text text-anchor="start" x="8" y="-285.5" font-family="Courier New" font-size="10.00"># simHeater</text>
+<text text-anchor="start" x="8" y="-285.5" font-family="Courier New" font-size="10.00">&#45; simHeater</text>
 <polyline fill="none" stroke="black" points="0,-278.5 185,-278.5 "/>
 <text text-anchor="start" x="8" y="-266.5" font-family="Courier New" font-size="10.00">+ SetValues()</text>
 </a>
@@ -25,7 +25,7 @@
 </g>
 <!-- Node3 -->
 <g id="node3" class="node"><title>Node3</title>
-<g id="a_node3"><a xlink:href="../../db/d39/class_c2_m2_1_1_simulation_1_1_simulation.html" target="_top" xlink:title="Provides an interface for simulations using a general data type T">
+<g id="a_node3"><a xlink:href="../../db/d39/class_c2_m2_1_1_simulation_1_1_simulation.html" target="_top" xlink:title="Provides an base interface for simulations using a general data type T">
 <polygon fill="white" stroke="black" points="6,-0.5 6,-222.5 179,-222.5 179,-0.5 6,-0.5"/>
 <text text-anchor="start" x="14" y="-210.5" font-family="Courier New" font-size="10.00">C2M2.Simulation.Simulation</text>
 <text text-anchor="middle" x="92.5" y="-199.5" font-family="Courier New" font-size="10.00">&lt; ValueType &gt;</text>
@@ -35,16 +35,16 @@
 <text text-anchor="start" x="14" y="-158.5" font-family="Courier New" font-size="10.00">&#45; solveThread</text>
 <polyline fill="none" stroke="black" points="6,-151.5 179,-151.5 "/>
 <text text-anchor="start" x="14" y="-139.5" font-family="Courier New" font-size="10.00">+ GetValues()</text>
-<text text-anchor="start" x="14" y="-128.5" font-family="Courier New" font-size="10.00">+ Awake()</text>
-<text text-anchor="start" x="14" y="-117.5" font-family="Courier New" font-size="10.00">+ Start()</text>
-<text text-anchor="start" x="14" y="-106.5" font-family="Courier New" font-size="10.00">+ Update()</text>
-<text text-anchor="start" x="14" y="-95.5" font-family="Courier New" font-size="10.00">+ StartSimulation()</text>
-<text text-anchor="start" x="14" y="-84.5" font-family="Courier New" font-size="10.00">+ StopSimulation()</text>
+<text text-anchor="start" x="14" y="-128.5" font-family="Courier New" font-size="10.00">+ StartSimulation()</text>
+<text text-anchor="start" x="14" y="-117.5" font-family="Courier New" font-size="10.00">+ StopSimulation()</text>
+<text text-anchor="start" x="14" y="-106.5" font-family="Courier New" font-size="10.00">+ Awake()</text>
+<text text-anchor="start" x="14" y="-95.5" font-family="Courier New" font-size="10.00">+ Start()</text>
+<text text-anchor="start" x="14" y="-84.5" font-family="Courier New" font-size="10.00">+ Update()</text>
 <text text-anchor="start" x="14" y="-73.5" font-family="Courier New" font-size="10.00"># UpdateVisualization()</text>
-<text text-anchor="start" x="14" y="-62.5" font-family="Courier New" font-size="10.00"># OnAwake()</text>
-<text text-anchor="start" x="14" y="-51.5" font-family="Courier New" font-size="10.00"># OnStart()</text>
-<text text-anchor="start" x="14" y="-40.5" font-family="Courier New" font-size="10.00"># OnUpdate()</text>
-<text text-anchor="start" x="14" y="-29.5" font-family="Courier New" font-size="10.00"># Solve()</text>
+<text text-anchor="start" x="14" y="-62.5" font-family="Courier New" font-size="10.00"># Solve()</text>
+<text text-anchor="start" x="14" y="-51.5" font-family="Courier New" font-size="10.00"># OnAwake()</text>
+<text text-anchor="start" x="14" y="-40.5" font-family="Courier New" font-size="10.00"># OnStart()</text>
+<text text-anchor="start" x="14" y="-29.5" font-family="Courier New" font-size="10.00"># OnUpdate()</text>
 <text text-anchor="start" x="14" y="-18.5" font-family="Courier New" font-size="10.00">&#45; OnApplicationPause()</text>
 <text text-anchor="start" x="14" y="-7.5" font-family="Courier New" font-size="10.00">&#45; OnApplicationQuit()</text>
 </a>

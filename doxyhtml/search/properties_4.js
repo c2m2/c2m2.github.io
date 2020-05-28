@@ -1,5 +1,7 @@
 var searchData=
 [
-  ['files_2594',['Files',['../d6/d2b/class_c2_m2_1_1_utils_1_1_debug_utils_1_1_get_all_dependencies_1_1_dir.html#a7b52117ea4767bbddd046b0d2a073df2',1,'C2M2::Utils::DebugUtils::GetAllDependencies::Dir']]],
-  ['from_2595',['From',['../dd/ddd/struct_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_edge.html#a8d62eed420e678aef2322dc6fee25291',1,'C2M2::NeuronalDynamics::UGX::Edge']]]
+  ['edgecount_2511',['edgeCount',['../d1/d3e/class_c2_m2_1_1_interaction_1_1_adjacency_1_1_adjacency_list.html#ab5a5a74776b01752249780f07bbc2622',1,'C2M2::Interaction::Adjacency::AdjacencyList']]],
+  ['edgelist_2512',['edgeList',['../d1/d3e/class_c2_m2_1_1_interaction_1_1_adjacency_1_1_adjacency_list.html#ae6b750eb2d4011eb633b729925a2e5dc',1,'C2M2::Interaction::Adjacency::AdjacencyList']]],
+  ['edges_2513',['Edges',['../d8/d5b/class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_grid.html#a1fcdb09f87ba2e75c8e01f65b177f98a',1,'C2M2::NeuronalDynamics::UGX::Grid']]],
+  ['end_2514',['End',['../d2/dae/struct_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_mapping_data.html#a47742057aaf88ffe8165beb1a8e1673b',1,'C2M2::NeuronalDynamics::UGX::MappingData']]]
 ];

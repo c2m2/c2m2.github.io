@@ -11,7 +11,7 @@
 <polygon fill="white" stroke="none" points="-4,4 -4,-361 461,-361 461,4 -4,4"/>
 <!-- Node1 -->
 <g id="node1" class="node"><title>Node1</title>
-<g id="a_node1"><a xlink:title="Manages interaction input to simulations">
+<g id="a_node1"><a xlink:title="Interface for interaction scripts">
 <polygon fill="#bfbfbf" stroke="black" points="0,-171.5 0,-239.5 185,-239.5 185,-171.5 0,-171.5"/>
 <text text-anchor="middle" x="92.5" y="-227.5" font-family="Courier New" font-size="10.00">C2M2.Simulation.Interactable</text>
 <polyline fill="none" stroke="black" points="0,-220.5 185,-220.5 "/>
@@ -92,7 +92,7 @@
 <g id="edge2" class="edge"><title>Node3&#45;&gt;Node1</title>
 <path fill="none" stroke="#404040" d="M142.495,-101.846C139.044,-107.917 135.64,-114.069 132.5,-120 125.686,-132.87 118.736,-147.097 112.581,-160.15"/>
 <polygon fill="none" stroke="#404040" points="112.473,-160.38 113.562,-167.509 107.4,-171.255 106.312,-164.127 112.473,-160.38"/>
-<text text-anchor="middle" x="166" y="-123" font-family="Courier New" font-size="10.00"> #simHeater</text>
+<text text-anchor="middle" x="166" y="-123" font-family="Courier New" font-size="10.00"> &#45;simHeater</text>
 </g>
 <!-- Node4&#45;&gt;Node3 -->
 <g id="edge4" class="edge"><title>Node4&#45;&gt;Node3</title>

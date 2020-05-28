@@ -1,7 +1,6 @@
 var searchData=
 [
-  ['edgecount_2590',['edgeCount',['../d1/d3e/class_c2_m2_1_1_interaction_1_1_adjacency_1_1_adjacency_list.html#ab5a5a74776b01752249780f07bbc2622',1,'C2M2::Interaction::Adjacency::AdjacencyList']]],
-  ['edgelist_2591',['edgeList',['../d1/d3e/class_c2_m2_1_1_interaction_1_1_adjacency_1_1_adjacency_list.html#ae6b750eb2d4011eb633b729925a2e5dc',1,'C2M2::Interaction::Adjacency::AdjacencyList']]],
-  ['edges_2592',['Edges',['../d8/d5b/class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_grid.html#a1fcdb09f87ba2e75c8e01f65b177f98a',1,'C2M2::NeuronalDynamics::UGX::Grid']]],
-  ['end_2593',['End',['../d2/dae/struct_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_mapping_data.html#a47742057aaf88ffe8165beb1a8e1673b',1,'C2M2::NeuronalDynamics::UGX::MappingData']]]
+  ['data_2508',['Data',['../d5/d27/struct_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_attachment_info.html#aa79ee22314e7e4f386593cca6fa96182',1,'C2M2.NeuronalDynamics.UGX.AttachmentInfo.Data()'],['../dd/d2a/struct_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_mapping_info.html#a49599f0fd04810c8e563a32f2568a02e',1,'C2M2.NeuronalDynamics.UGX.MappingInfo.Data()'],['../df/d7a/class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_i_attachment.html#ac3c8cd8d696f591fba66bad4e6601afd',1,'C2M2.NeuronalDynamics.UGX.IAttachment.Data()']]],
+  ['diameter_2509',['Diameter',['../de/da8/struct_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_diameter_data.html#a02b94d2d819c414a976bbe3c1fd1fbaf',1,'C2M2::NeuronalDynamics::UGX::DiameterData']]],
+  ['dirs_2510',['Dirs',['../d6/d2b/class_c2_m2_1_1_utils_1_1_debug_utils_1_1_get_all_dependencies_1_1_dir.html#a226b95867de636b41459341005517d4d',1,'C2M2::Utils::DebugUtils::GetAllDependencies::Dir']]]
 ];

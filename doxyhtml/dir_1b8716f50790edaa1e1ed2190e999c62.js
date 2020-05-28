@@ -7,7 +7,6 @@ var dir_1b8716f50790edaa1e1ed2190e999c62 =
     [ "MeshUtils", "dir_bf2dd65b439cb34de4e33b7d83939dff.html", "dir_bf2dd65b439cb34de4e33b7d83939dff" ],
     [ "Static", "dir_541c468c5132ecaa6aa831b5f2544f83.html", "dir_541c468c5132ecaa6aa831b5f2544f83" ],
     [ "Tests", "dir_6cee0b83e8b0a1fafbdf7e8d77f5287f.html", "dir_6cee0b83e8b0a1fafbdf7e8d77f5287f" ],
-    [ "UI", "dir_6ae65e2f801eb87d2e078d3609b5ae88.html", "dir_6ae65e2f801eb87d2e078d3609b5ae88" ],
     [ "CSVBuilder.cs", "d1/d90/_c_s_v_builder_8cs.html", [
       [ "CSVBuilder", "d7/d26/class_c2_m2_1_1_utils_1_1_c_s_v_builder.html", "d7/d26/class_c2_m2_1_1_utils_1_1_c_s_v_builder" ]
     ] ],

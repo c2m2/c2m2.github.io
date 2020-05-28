@@ -4,6 +4,7 @@ var namespace_c2_m2_1_1_utils =
     [ "Animation", "d2/d38/namespace_c2_m2_1_1_utils_1_1_animation.html", "d2/d38/namespace_c2_m2_1_1_utils_1_1_animation" ],
     [ "DebugUtils", "d5/d03/namespace_c2_m2_1_1_utils_1_1_debug_utils.html", "d5/d03/namespace_c2_m2_1_1_utils_1_1_debug_utils" ],
     [ "Editor", "d4/ddf/namespace_c2_m2_1_1_utils_1_1_editor.html", "d4/ddf/namespace_c2_m2_1_1_utils_1_1_editor" ],
+    [ "Exceptions", "d4/d54/namespace_c2_m2_1_1_utils_1_1_exceptions.html", "d4/d54/namespace_c2_m2_1_1_utils_1_1_exceptions" ],
     [ "MeshUtils", "d5/da4/namespace_c2_m2_1_1_utils_1_1_mesh_utils.html", "d5/da4/namespace_c2_m2_1_1_utils_1_1_mesh_utils" ],
     [ "Array", "d3/dd1/class_c2_m2_1_1_utils_1_1_array.html", "d3/dd1/class_c2_m2_1_1_utils_1_1_array" ],
     [ "CSVBuilder", "d7/d26/class_c2_m2_1_1_utils_1_1_c_s_v_builder.html", "d7/d26/class_c2_m2_1_1_utils_1_1_c_s_v_builder" ],

@@ -107,16 +107,16 @@ var sectionId = 'dynsection-1';
 <text text-anchor="start" x="8" y="-490.5" font-family="Courier New" font-size="10.00">&#45; solveThread</text>
 <polyline fill="none" stroke="black" points="0,-483.5 155,-483.5 "/>
 <text text-anchor="start" x="8" y="-471.5" font-family="Courier New" font-size="10.00">+ GetValues()</text>
-<text text-anchor="start" x="8" y="-460.5" font-family="Courier New" font-size="10.00">+ Awake()</text>
-<text text-anchor="start" x="8" y="-449.5" font-family="Courier New" font-size="10.00">+ Start()</text>
-<text text-anchor="start" x="8" y="-438.5" font-family="Courier New" font-size="10.00">+ Update()</text>
-<text text-anchor="start" x="8" y="-427.5" font-family="Courier New" font-size="10.00">+ StartSimulation()</text>
-<text text-anchor="start" x="8" y="-416.5" font-family="Courier New" font-size="10.00">+ StopSimulation()</text>
+<text text-anchor="start" x="8" y="-460.5" font-family="Courier New" font-size="10.00">+ StartSimulation()</text>
+<text text-anchor="start" x="8" y="-449.5" font-family="Courier New" font-size="10.00">+ StopSimulation()</text>
+<text text-anchor="start" x="8" y="-438.5" font-family="Courier New" font-size="10.00">+ Awake()</text>
+<text text-anchor="start" x="8" y="-427.5" font-family="Courier New" font-size="10.00">+ Start()</text>
+<text text-anchor="start" x="8" y="-416.5" font-family="Courier New" font-size="10.00">+ Update()</text>
 <text text-anchor="start" x="8" y="-405.5" font-family="Courier New" font-size="10.00"># UpdateVisualization()</text>
-<text text-anchor="start" x="8" y="-394.5" font-family="Courier New" font-size="10.00"># OnAwake()</text>
-<text text-anchor="start" x="8" y="-383.5" font-family="Courier New" font-size="10.00"># OnStart()</text>
-<text text-anchor="start" x="8" y="-372.5" font-family="Courier New" font-size="10.00"># OnUpdate()</text>
-<text text-anchor="start" x="8" y="-361.5" font-family="Courier New" font-size="10.00"># Solve()</text>
+<text text-anchor="start" x="8" y="-394.5" font-family="Courier New" font-size="10.00"># Solve()</text>
+<text text-anchor="start" x="8" y="-383.5" font-family="Courier New" font-size="10.00"># OnAwake()</text>
+<text text-anchor="start" x="8" y="-372.5" font-family="Courier New" font-size="10.00"># OnStart()</text>
+<text text-anchor="start" x="8" y="-361.5" font-family="Courier New" font-size="10.00"># OnUpdate()</text>
 <text text-anchor="start" x="8" y="-350.5" font-family="Courier New" font-size="10.00">&#45; OnApplicationPause()</text>
 <text text-anchor="start" x="8" y="-339.5" font-family="Courier New" font-size="10.00">&#45; OnApplicationQuit()</text>
 </a>

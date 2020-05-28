@@ -1,6 +1,9 @@
 var searchData=
 [
-  ['data_2587',['Data',['../d5/d27/struct_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_attachment_info.html#aa79ee22314e7e4f386593cca6fa96182',1,'C2M2.NeuronalDynamics.UGX.AttachmentInfo.Data()'],['../dd/d2a/struct_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_mapping_info.html#a49599f0fd04810c8e563a32f2568a02e',1,'C2M2.NeuronalDynamics.UGX.MappingInfo.Data()'],['../df/d7a/class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_i_attachment.html#ac3c8cd8d696f591fba66bad4e6601afd',1,'C2M2.NeuronalDynamics.UGX.IAttachment.Data()']]],
-  ['diameter_2588',['Diameter',['../de/da8/struct_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_diameter_data.html#a02b94d2d819c414a976bbe3c1fd1fbaf',1,'C2M2::NeuronalDynamics::UGX::DiameterData']]],
-  ['dirs_2589',['Dirs',['../d6/d2b/class_c2_m2_1_1_utils_1_1_debug_utils_1_1_get_all_dependencies_1_1_dir.html#a226b95867de636b41459341005517d4d',1,'C2M2::Utils::DebugUtils::GetAllDependencies::Dir']]]
+  ['collidermesh_2502',['ColliderMesh',['../d5/d84/class_c2_m2_1_1_interaction_1_1_v_r_1_1_v_r_raycastable.html#a2334f14cd4b14661265282773ed9e625',1,'C2M2::Interaction::VR::VRRaycastable']]],
+  ['collidertype_2503',['ColliderType',['../d9/d19/class_c2_m2_1_1_interaction_1_1_v_r_1_1_v_r_grabbable.html#a7530a286ddac6e0cee6b2c698afc6be4',1,'C2M2::Interaction::VR::VRGrabbable']]],
+  ['colorlut_2504',['colorLUT',['../d4/de1/class_c2_m2_1_1_simulation_1_1_surface_simulation.html#af2414ce02f901fb1d90deef2ef5df8e8',1,'C2M2::Simulation::SurfaceSimulation']]],
+  ['componentdata_2505',['componentData',['../d0/d14/class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_t_k_1_1_v_t_u_object.html#a1eb77877a1099fca0476e5740ab65ee6',1,'C2M2::NeuronalDynamics::Visualization::VTK::VTUObject']]],
+  ['count1d_2506',['count1D',['../db/db3/class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_neuron1_d_vert_map.html#ad419ffdf3e77679a1a442ddb4142afb3',1,'C2M2::NeuronalDynamics::Visualization::Neuron1DVertMap']]],
+  ['count3d_2507',['count3D',['../db/db3/class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_neuron1_d_vert_map.html#a9bc61c62798bf51e992ecc2883c2f55c',1,'C2M2::NeuronalDynamics::Visualization::Neuron1DVertMap']]]
 ];

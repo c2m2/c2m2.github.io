@@ -1,6 +1,6 @@
 <map id="C2M2.Simulation.SurfaceSimulation" name="C2M2.Simulation.SurfaceSimulation">
 <area shape="rect" id="node1" title="Simulation of type double[] for visualizing scalar fields on mesh surfaces" alt="" coords="2463,336,2749,545"/>
-<area shape="rect" id="node3" href="$d1/de3/class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_neuron_simulation.html" title="Provides base functionality for Neuron simulations" alt="" coords="2188,593,2475,920"/>
+<area shape="rect" id="node3" href="$d4/d5a/class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_neuron_simulation1_d.html" title="Provide an interface for 1D neuron&#45;surface simulations to be visualized and interacted with" alt="" coords="2188,593,2475,920"/>
 <area shape="rect" id="node19" href="$dd/d72/class_c2_m2_1_1_simulation_1_1_samples_1_1_combined_mesh_simulation.html" title="Run a blank ScalarFieldSimulation using every MeshRenderer childed under this script" alt="" coords="2499,674,2713,839"/>
 <area shape="rect" id="node20" href="$dc/d80/class_c2_m2_1_1_simulation_1_1_samples_1_1_mesh_simulation.html" title="Store a scalar for each vertex on an existing MeshFilter.mesh" alt="" coords="2737,689,2952,825"/>
 <area shape="rect" id="node2" href="$db/d39/class_c2_m2_1_1_simulation_1_1_simulation.html" title=" " alt="" coords="2503,5,2709,288"/>

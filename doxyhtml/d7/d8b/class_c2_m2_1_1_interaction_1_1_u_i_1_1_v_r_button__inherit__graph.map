@@ -1,0 +1,4 @@
+<map id="C2M2.Interaction.UI.VRButton" name="C2M2.Interaction.UI.VRButton">
+<area shape="rect" id="node1" title="If an object enters this button&#39;s trigger collider, and if that object is marked as the index finger,..." alt="" coords="5,131,252,355"/>
+<area shape="rect" id="node2" title=" " alt="" coords="65,5,192,83"/>
+</map>

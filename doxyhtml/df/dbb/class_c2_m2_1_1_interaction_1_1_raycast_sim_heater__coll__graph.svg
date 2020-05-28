@@ -73,7 +73,7 @@ var sectionId = 'dynsection-1';
 </g>
 <!-- Node4 -->
 <g id="node4" class="node"><title>Node4</title>
-<g id="a_node4"><a xlink:href="../../dc/daa/class_c2_m2_1_1_simulation_1_1_interactable.html" target="_top" xlink:title="Manages interaction input to simulations">
+<g id="a_node4"><a xlink:href="../../dc/daa/class_c2_m2_1_1_simulation_1_1_interactable.html" target="_top" xlink:title="Interface for interaction scripts">
 <polygon fill="white" stroke="black" points="89.6111,-0.5 89.6111,-68.5 274.611,-68.5 274.611,-0.5 89.6111,-0.5"/>
 <text text-anchor="middle" x="182.111" y="-56.5" font-family="Courier New" font-size="10.00">C2M2.Simulation.Interactable</text>
 <polyline fill="none" stroke="black" points="89.6111,-49.5 274.611,-49.5 "/>
@@ -88,7 +88,7 @@ var sectionId = 'dynsection-1';
 <g id="edge6" class="edge"><title>Node1&#45;&gt;Node4</title>
 <path fill="none" stroke="#404040" d="M85.7083,-116.428C83.4671,-106.312 83.7984,-96.015 89.1111,-87 91.1727,-83.5019 93.5667,-80.2247 96.2208,-77.1563"/>
 <polygon fill="none" stroke="#404040" points="96.3671,-77.0114 97.8138,-69.9469 104.891,-68.5651 103.445,-75.6297 96.3671,-77.0114"/>
-<text text-anchor="middle" x="122.611" y="-90" font-family="Courier New" font-size="10.00"> #simHeater</text>
+<text text-anchor="middle" x="122.611" y="-90" font-family="Courier New" font-size="10.00"> &#45;simHeater</text>
 </g>
 <!-- Node2 -->
 <g id="node2" class="node"><title>Node2</title>

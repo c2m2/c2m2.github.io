@@ -85,7 +85,7 @@
 </g>
 <!-- Node5 -->
 <g id="node5" class="node"><title>Node5</title>
-<g id="a_node5"><a xlink:href="../../dc/daa/class_c2_m2_1_1_simulation_1_1_interactable.html" target="_top" xlink:title="Manages interaction input to simulations">
+<g id="a_node5"><a xlink:href="../../dc/daa/class_c2_m2_1_1_simulation_1_1_interactable.html" target="_top" xlink:title="Interface for interaction scripts">
 <polygon fill="white" stroke="black" points="109,-266.5 109,-334.5 294,-334.5 294,-266.5 109,-266.5"/>
 <text text-anchor="middle" x="201.5" y="-322.5" font-family="Courier New" font-size="10.00">C2M2.Simulation.Interactable</text>
 <polyline fill="none" stroke="black" points="109,-315.5 294,-315.5 "/>
@@ -150,7 +150,7 @@
 <g id="edge7" class="edge"><title>Node6&#45;&gt;Node5</title>
 <path fill="none" stroke="#404040" d="M200.95,-382.321C197.926,-376.373 195.332,-370.203 193.5,-364 191.863,-358.456 191.242,-352.538 191.289,-346.636"/>
 <polygon fill="none" stroke="#404040" points="191.289,-346.635 187.76,-340.346 192.208,-334.67 195.737,-340.959 191.289,-346.635"/>
-<text text-anchor="middle" x="227" y="-356" font-family="Courier New" font-size="10.00"> #simHeater</text>
+<text text-anchor="middle" x="227" y="-356" font-family="Courier New" font-size="10.00"> &#45;simHeater</text>
 </g>
 </g>
 </svg>

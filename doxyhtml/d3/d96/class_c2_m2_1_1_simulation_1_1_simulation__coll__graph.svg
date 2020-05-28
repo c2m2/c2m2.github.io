@@ -57,7 +57,7 @@ var sectionId = 'dynsection-1';
 <polygon fill="white" stroke="none" points="-4,4 -4,-737 383,-737 383,4 -4,4"/>
 <!-- Node1 -->
 <g id="node1" class="node"><title>Node1</title>
-<g id="a_node1"><a xlink:title="Provides an interface for simulations using a general data type T">
+<g id="a_node1"><a xlink:title="Provides an base interface for simulations using a general data type T">
 <polygon fill="#bfbfbf" stroke="black" points="0,-0.5 0,-222.5 173,-222.5 173,-0.5 0,-0.5"/>
 <text text-anchor="start" x="8" y="-210.5" font-family="Courier New" font-size="10.00">C2M2.Simulation.Simulation</text>
 <text text-anchor="middle" x="86.5" y="-199.5" font-family="Courier New" font-size="10.00">&lt; ValueType &gt;</text>
@@ -67,16 +67,16 @@ var sectionId = 'dynsection-1';
 <text text-anchor="start" x="8" y="-158.5" font-family="Courier New" font-size="10.00">&#45; solveThread</text>
 <polyline fill="none" stroke="black" points="0,-151.5 173,-151.5 "/>
 <text text-anchor="start" x="8" y="-139.5" font-family="Courier New" font-size="10.00">+ GetValues()</text>
-<text text-anchor="start" x="8" y="-128.5" font-family="Courier New" font-size="10.00">+ Awake()</text>
-<text text-anchor="start" x="8" y="-117.5" font-family="Courier New" font-size="10.00">+ Start()</text>
-<text text-anchor="start" x="8" y="-106.5" font-family="Courier New" font-size="10.00">+ Update()</text>
-<text text-anchor="start" x="8" y="-95.5" font-family="Courier New" font-size="10.00">+ StartSimulation()</text>
-<text text-anchor="start" x="8" y="-84.5" font-family="Courier New" font-size="10.00">+ StopSimulation()</text>
+<text text-anchor="start" x="8" y="-128.5" font-family="Courier New" font-size="10.00">+ StartSimulation()</text>
+<text text-anchor="start" x="8" y="-117.5" font-family="Courier New" font-size="10.00">+ StopSimulation()</text>
+<text text-anchor="start" x="8" y="-106.5" font-family="Courier New" font-size="10.00">+ Awake()</text>
+<text text-anchor="start" x="8" y="-95.5" font-family="Courier New" font-size="10.00">+ Start()</text>
+<text text-anchor="start" x="8" y="-84.5" font-family="Courier New" font-size="10.00">+ Update()</text>
 <text text-anchor="start" x="8" y="-73.5" font-family="Courier New" font-size="10.00"># UpdateVisualization()</text>
-<text text-anchor="start" x="8" y="-62.5" font-family="Courier New" font-size="10.00"># OnAwake()</text>
-<text text-anchor="start" x="8" y="-51.5" font-family="Courier New" font-size="10.00"># OnStart()</text>
-<text text-anchor="start" x="8" y="-40.5" font-family="Courier New" font-size="10.00"># OnUpdate()</text>
-<text text-anchor="start" x="8" y="-29.5" font-family="Courier New" font-size="10.00"># Solve()</text>
+<text text-anchor="start" x="8" y="-62.5" font-family="Courier New" font-size="10.00"># Solve()</text>
+<text text-anchor="start" x="8" y="-51.5" font-family="Courier New" font-size="10.00"># OnAwake()</text>
+<text text-anchor="start" x="8" y="-40.5" font-family="Courier New" font-size="10.00"># OnStart()</text>
+<text text-anchor="start" x="8" y="-29.5" font-family="Courier New" font-size="10.00"># OnUpdate()</text>
 <text text-anchor="start" x="8" y="-18.5" font-family="Courier New" font-size="10.00">&#45; OnApplicationPause()</text>
 <text text-anchor="start" x="8" y="-7.5" font-family="Courier New" font-size="10.00">&#45; OnApplicationQuit()</text>
 </a>
@@ -84,7 +84,7 @@ var sectionId = 'dynsection-1';
 </g>
 <!-- Node2 -->
 <g id="node2" class="node"><title>Node2</title>
-<g id="a_node2"><a xlink:href="../../dc/daa/class_c2_m2_1_1_simulation_1_1_interactable.html" target="_top" xlink:title="Manages interaction input to simulations">
+<g id="a_node2"><a xlink:href="../../dc/daa/class_c2_m2_1_1_simulation_1_1_interactable.html" target="_top" xlink:title="Interface for interaction scripts">
 <polygon fill="white" stroke="black" points="27,-260.5 27,-328.5 146,-328.5 146,-260.5 27,-260.5"/>
 <text text-anchor="middle" x="86.5" y="-316.5" font-family="Courier New" font-size="10.00">Interactable</text>
 <polyline fill="none" stroke="black" points="27,-309.5 146,-309.5 "/>
@@ -162,7 +162,7 @@ var sectionId = 'dynsection-1';
 </g>
 <!-- Node6 -->
 <g id="node6" class="node"><title>Node6</title>
-<g id="a_node6"><a xlink:href="../../dc/daa/class_c2_m2_1_1_simulation_1_1_interactable.html" target="_top" xlink:title="Manages interaction input to simulations">
+<g id="a_node6"><a xlink:href="../../dc/daa/class_c2_m2_1_1_simulation_1_1_interactable.html" target="_top" xlink:title="Interface for interaction scripts">
 <polygon fill="white" stroke="black" points="194,-260.5 194,-328.5 379,-328.5 379,-260.5 194,-260.5"/>
 <text text-anchor="middle" x="286.5" y="-316.5" font-family="Courier New" font-size="10.00">C2M2.Simulation.Interactable</text>
 <polyline fill="none" stroke="black" points="194,-309.5 379,-309.5 "/>
@@ -182,13 +182,13 @@ var sectionId = 'dynsection-1';
 <g id="edge3" class="edge"><title>Node4&#45;&gt;Node2</title>
 <path fill="none" stroke="#404040" d="M134.636,-376.148C128.867,-370.323 123.368,-364.228 118.5,-358 114.075,-352.34 109.992,-345.973 106.327,-339.525"/>
 <polygon fill="none" stroke="#404040" points="106.207,-339.3 99.8568,-335.883 100.568,-328.707 106.918,-332.124 106.207,-339.3"/>
-<text text-anchor="middle" x="152" y="-350" font-family="Courier New" font-size="10.00"> #simHeater</text>
+<text text-anchor="middle" x="152" y="-350" font-family="Courier New" font-size="10.00"> &#45;simHeater</text>
 </g>
 <!-- Node4&#45;&gt;Node6 -->
 <g id="edge9" class="edge"><title>Node4&#45;&gt;Node6</title>
 <path fill="none" stroke="#404040" d="M186.288,-376.255C186.418,-366.043 188.343,-355.75 193.5,-347 195.562,-343.502 197.956,-340.225 200.61,-337.156"/>
 <polygon fill="none" stroke="#404040" points="200.756,-337.011 202.203,-329.947 209.28,-328.565 207.833,-335.63 200.756,-337.011"/>
-<text text-anchor="middle" x="227" y="-350" font-family="Courier New" font-size="10.00"> #simHeater</text>
+<text text-anchor="middle" x="227" y="-350" font-family="Courier New" font-size="10.00"> &#45;simHeater</text>
 </g>
 <!-- Node5&#45;&gt;Node4 -->
 <g id="edge5" class="edge"><title>Node5&#45;&gt;Node4</title>

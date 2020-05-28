@@ -1,10 +1,10 @@
 <map id="C2M2.NeuronalDynamics.Visualization.VTK.VTUPlayerButton" name="C2M2.NeuronalDynamics.Visualization.VTK.VTUPlayerButton">
-<area shape="rect" id="node1" title=" " alt="" coords="157,1176,468,1341"/>
-<area shape="rect" id="node2" title=" " alt="" coords="379,139,505,217"/>
-<area shape="rect" id="node3" href="$dc/d1d/class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_t_k_1_1_v_t_u_player.html" title=" " alt="" coords="268,515,579,797"/>
-<area shape="rect" id="node4" href="$dd/dab/class_c2_m2_1_1_raycast_press_events.html" title="Store custom events that the corresponding RaycastTriggerManager will invoke" alt="" coords="268,316,475,452"/>
-<area shape="rect" id="node7" href="$d8/d74/class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_t_k_1_1_v_t_u_manager.html" title=" " alt="" coords="427,860,737,1113"/>
-<area shape="rect" id="node5" href="$db/d79/class_c2_m2_1_1_raycast_press_events_1_1_raycast_hit_event.html" title=" " alt="" coords="5,132,220,224"/>
-<area shape="rect" id="node6" title=" " alt="" coords="5,5,220,83"/>
-<area shape="rect" id="node8" href="$da/da3/class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_t_k_1_1_v_t_u_object_builder.html" title="Overarching manager to control order of events for reading in VTK data, positioning it,..." alt="" coords="655,603,965,709"/>
+<area shape="rect" id="node1" title=" " alt="" coords="169,1191,480,1356"/>
+<area shape="rect" id="node2" title=" " alt="" coords="397,139,524,217"/>
+<area shape="rect" id="node3" href="$dc/d1d/class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_t_k_1_1_v_t_u_player.html" title=" " alt="" coords="280,529,591,812"/>
+<area shape="rect" id="node4" href="$d8/d74/class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_t_k_1_1_v_t_u_manager.html" title=" " alt="" coords="439,875,749,1128"/>
+<area shape="rect" id="node6" href="$d8/d68/class_c2_m2_1_1_interaction_1_1_raycast_press_events.html" title="Store custom events that the corresponding RaycastTriggerManager will invoke" alt="" coords="280,316,495,467"/>
+<area shape="rect" id="node5" href="$da/da3/class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_t_k_1_1_v_t_u_object_builder.html" title="Overarching manager to control order of events for reading in VTK data, positioning it,..." alt="" coords="667,617,977,724"/>
+<area shape="rect" id="node7" href="$d2/d43/class_c2_m2_1_1_interaction_1_1_raycast_press_events_1_1_raycast_hit_event.html" title=" " alt="" coords="5,132,244,224"/>
+<area shape="rect" id="node8" title=" " alt="" coords="17,5,232,83"/>
 </map>

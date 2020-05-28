@@ -43,9 +43,9 @@
 </g>
 <!-- Node2 -->
 <g id="node2" class="node"><title>Node2</title>
-<g id="a_node2"><a xlink:href="../../d1/de3/class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_neuron_simulation.html" target="_top" xlink:title="Provides base functionality for Neuron simulations">
+<g id="a_node2"><a xlink:href="../../d4/d5a/class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_neuron_simulation1_d.html" target="_top" xlink:title="Provide an interface for 1D neuron&#45;surface simulations to be visualized and interacted with">
 <polygon fill="white" stroke="black" points="45,-314.5 45,-547.5 170,-547.5 170,-314.5 45,-314.5"/>
-<text text-anchor="middle" x="107.5" y="-535.5" font-family="Courier New" font-size="10.00">NeuronSimulation</text>
+<text text-anchor="middle" x="107.5" y="-535.5" font-family="Courier New" font-size="10.00">NeuronSimulation1D</text>
 <polyline fill="none" stroke="black" points="45,-528.5 170,-528.5 "/>
 <text text-anchor="start" x="53" y="-516.5" font-family="Courier New" font-size="10.00">+ visualize1D</text>
 <text text-anchor="start" x="53" y="-505.5" font-family="Courier New" font-size="10.00">+ color1D</text>
@@ -111,16 +111,16 @@
 <text text-anchor="start" x="38" y="-935.5" font-family="Courier New" font-size="10.00">&#45; solveThread</text>
 <polyline fill="none" stroke="black" points="30,-928.5 185,-928.5 "/>
 <text text-anchor="start" x="38" y="-916.5" font-family="Courier New" font-size="10.00">+ GetValues()</text>
-<text text-anchor="start" x="38" y="-905.5" font-family="Courier New" font-size="10.00">+ Awake()</text>
-<text text-anchor="start" x="38" y="-894.5" font-family="Courier New" font-size="10.00">+ Start()</text>
-<text text-anchor="start" x="38" y="-883.5" font-family="Courier New" font-size="10.00">+ Update()</text>
-<text text-anchor="start" x="38" y="-872.5" font-family="Courier New" font-size="10.00">+ StartSimulation()</text>
-<text text-anchor="start" x="38" y="-861.5" font-family="Courier New" font-size="10.00">+ StopSimulation()</text>
+<text text-anchor="start" x="38" y="-905.5" font-family="Courier New" font-size="10.00">+ StartSimulation()</text>
+<text text-anchor="start" x="38" y="-894.5" font-family="Courier New" font-size="10.00">+ StopSimulation()</text>
+<text text-anchor="start" x="38" y="-883.5" font-family="Courier New" font-size="10.00">+ Awake()</text>
+<text text-anchor="start" x="38" y="-872.5" font-family="Courier New" font-size="10.00">+ Start()</text>
+<text text-anchor="start" x="38" y="-861.5" font-family="Courier New" font-size="10.00">+ Update()</text>
 <text text-anchor="start" x="38" y="-850.5" font-family="Courier New" font-size="10.00"># UpdateVisualization()</text>
-<text text-anchor="start" x="38" y="-839.5" font-family="Courier New" font-size="10.00"># OnAwake()</text>
-<text text-anchor="start" x="38" y="-828.5" font-family="Courier New" font-size="10.00"># OnStart()</text>
-<text text-anchor="start" x="38" y="-817.5" font-family="Courier New" font-size="10.00"># OnUpdate()</text>
-<text text-anchor="start" x="38" y="-806.5" font-family="Courier New" font-size="10.00"># Solve()</text>
+<text text-anchor="start" x="38" y="-839.5" font-family="Courier New" font-size="10.00"># Solve()</text>
+<text text-anchor="start" x="38" y="-828.5" font-family="Courier New" font-size="10.00"># OnAwake()</text>
+<text text-anchor="start" x="38" y="-817.5" font-family="Courier New" font-size="10.00"># OnStart()</text>
+<text text-anchor="start" x="38" y="-806.5" font-family="Courier New" font-size="10.00"># OnUpdate()</text>
 <text text-anchor="start" x="38" y="-795.5" font-family="Courier New" font-size="10.00">&#45; OnApplicationPause()</text>
 <text text-anchor="start" x="38" y="-784.5" font-family="Courier New" font-size="10.00">&#45; OnApplicationQuit()</text>
 </a>

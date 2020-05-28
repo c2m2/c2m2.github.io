@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['xcoords_2659',['xcoords',['../d3/d7c/struct_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_cell_1_1_node_data.html#ad5c74d37e8202fdcd05cebaa9d6a5fd8',1,'C2M2::NeuronalDynamics::UGX::NeuronCell::NodeData']]]
+  ['weight_2580',['weight',['../d9/dc0/struct_c2_m2_1_1_interaction_1_1_adjacency_1_1_node.html#ae3d681ae4086b827079b143a4c55f36c',1,'C2M2::Interaction::Adjacency::Node']]]
 ];

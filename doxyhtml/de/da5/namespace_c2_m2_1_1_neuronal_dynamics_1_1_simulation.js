@@ -11,7 +11,7 @@ var namespace_c2_m2_1_1_neuronal_dynamics_1_1_simulation =
     [ "CellSolver2SimpleFE", "d1/d13/class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_cell_solver2_simple_f_e.html", "d1/d13/class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_cell_solver2_simple_f_e" ],
     [ "CellSolver2vb", "dd/da3/class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_cell_solver2vb.html", "dd/da3/class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_cell_solver2vb" ],
     [ "MOL_Matrix_v2", "d1/dd8/class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_m_o_l___matrix__v2.html", "d1/dd8/class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_m_o_l___matrix__v2" ],
-    [ "NeuronSimulation", "d1/de3/class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_neuron_simulation.html", "d1/de3/class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_neuron_simulation" ],
+    [ "NeuronSimulation1D", "d4/d5a/class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_neuron_simulation1_d.html", "d4/d5a/class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_neuron_simulation1_d" ],
     [ "SimpleSolver_constDerivative", "d2/d45/class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_simple_solver__const_derivative.html", "d2/d45/class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_simple_solver__const_derivative" ],
     [ "sparse_cholesky_test", "d2/d23/class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1sparse__cholesky__test.html", "d2/d23/class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1sparse__cholesky__test" ],
     [ "sparse_cholesky_time_test", "d2/d7d/class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1sparse__cholesky__time__test.html", "d2/d7d/class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1sparse__cholesky__time__test" ],
