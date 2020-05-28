@@ -51,7 +51,7 @@ PROJECT_BRIEF          = "Visualize and interact with computational simulations 
 # pixels and the maximum width should not exceed 200 pixels. Doxygen will copy
 # the logo to the output directory.
 
-PROJECT_LOGO           = C:/Users/jacob/Desktop/C2M2/Media/Images/c2m2+Temple@0.5x.png
+PROJECT_LOGO           = C:/Users/jacob/Desktop/C2M2/c2m2.github.io/media/c2m2+Temple@75px.png
 
 # The OUTPUT_DIRECTORY tag is used to specify the (relative or absolute) path
 # into which the generated documentation will be written. If a relative path is
