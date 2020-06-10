@@ -71,7 +71,7 @@ var sectionId = 'dynsection-0';
 </g>
 <!-- Node3 -->
 <g id="node3" class="node"><title>Node3</title>
-<g id="a_node3"><a xlink:href="../../d1/d56/class_c2_m2_1_1_tests_1_1_awake_test.html" target="_top" xlink:title=" ">
+<g id="a_node3"><a xlink:href="../../d1/d56/class_c2_m2_1_1_tests_1_1_awake_test.html" target="_top" xlink:title="TestManager will run tests that derive from AwakeTest during Awake">
 <polygon fill="white" stroke="black" points="339,-193.5 339,-250.5 476,-250.5 476,-193.5 339,-193.5"/>
 <text text-anchor="middle" x="407.5" y="-238.5" font-family="Courier New" font-size="10.00">C2M2.Tests.AwakeTest</text>
 <polyline fill="none" stroke="black" points="339,-231.5 476,-231.5 "/>
@@ -88,7 +88,7 @@ var sectionId = 'dynsection-0';
 </g>
 <!-- Node8 -->
 <g id="node8" class="node"><title>Node8</title>
-<g id="a_node8"><a xlink:href="../../dc/d78/class_c2_m2_1_1_tests_1_1_start_test.html" target="_top" xlink:title=" ">
+<g id="a_node8"><a xlink:href="../../dc/d78/class_c2_m2_1_1_tests_1_1_start_test.html" target="_top" xlink:title="TestManager will run tests that derive from StartTest during Start">
 <polygon fill="white" stroke="black" points="494,-193.5 494,-250.5 631,-250.5 631,-193.5 494,-193.5"/>
 <text text-anchor="middle" x="562.5" y="-238.5" font-family="Courier New" font-size="10.00">C2M2.Tests.StartTest</text>
 <polyline fill="none" stroke="black" points="494,-231.5 631,-231.5 "/>
@@ -105,7 +105,7 @@ var sectionId = 'dynsection-0';
 </g>
 <!-- Node9 -->
 <g id="node9" class="node"><title>Node9</title>
-<g id="a_node9"><a xlink:href="../../d2/df1/class_c2_m2_1_1_tests_1_1_update_test.html" target="_top" xlink:title=" ">
+<g id="a_node9"><a xlink:href="../../d2/df1/class_c2_m2_1_1_tests_1_1_update_test.html" target="_top" xlink:title="TestManager will run tests that derive from UpdateTest during Update">
 <polygon fill="white" stroke="black" points="649,-193.5 649,-250.5 792,-250.5 792,-193.5 649,-193.5"/>
 <text text-anchor="middle" x="720.5" y="-238.5" font-family="Courier New" font-size="10.00">C2M2.Tests.UpdateTest</text>
 <polyline fill="none" stroke="black" points="649,-231.5 792,-231.5 "/>

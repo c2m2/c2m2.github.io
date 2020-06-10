@@ -1,8 +1,11 @@
 var class_c2_m2_1_1_utils_1_1_math =
 [
+    [ "Abs", "d2/d55/class_c2_m2_1_1_utils_1_1_math.html#a1951fd699cc856261768b3c555b40b67", null ],
+    [ "Abs", "d2/d55/class_c2_m2_1_1_utils_1_1_math.html#acec0bf54734a41c107a68b11c387f624", null ],
+    [ "Abs", "d2/d55/class_c2_m2_1_1_utils_1_1_math.html#a1ec145d4db6783d474fa7e36d35615bf", null ],
     [ "Avg", "d2/d55/class_c2_m2_1_1_utils_1_1_math.html#a4d820105211da5684b637f9e790abdcc", null ],
     [ "Avg", "d2/d55/class_c2_m2_1_1_utils_1_1_math.html#ac097832a9d453bffb85ab2d1640aca05", null ],
-    [ "Avg", "d2/d55/class_c2_m2_1_1_utils_1_1_math.html#a8bd2acf2c6946dda2fa59e962ea590ca", null ],
+    [ "Avg", "d2/d55/class_c2_m2_1_1_utils_1_1_math.html#aa2814160abce104e573aae60cd463da2", null ],
     [ "Clamp", "d2/d55/class_c2_m2_1_1_utils_1_1_math.html#a986508b4e3eb836a1de98bc6d4466e22", null ],
     [ "Clamp", "d2/d55/class_c2_m2_1_1_utils_1_1_math.html#aa21781bec23e0afe1e3034c7fd66ba26", null ],
     [ "Clamp", "d2/d55/class_c2_m2_1_1_utils_1_1_math.html#a805a23bfab56ce715d7a92f700225077", null ],
@@ -24,6 +27,9 @@ var class_c2_m2_1_1_utils_1_1_math =
     [ "Min", "d2/d55/class_c2_m2_1_1_utils_1_1_math.html#ab45819e41af03ec477d60b1671577a17", null ],
     [ "Min", "d2/d55/class_c2_m2_1_1_utils_1_1_math.html#a6e2918c8484dc6187d54ae983bd2a050", null ],
     [ "Min", "d2/d55/class_c2_m2_1_1_utils_1_1_math.html#a55d18386fd48f161de60dd104640e479", null ],
+    [ "StdDev", "d2/d55/class_c2_m2_1_1_utils_1_1_math.html#ac628fbe7bf4d0b6ff6f9bd21e687644b", null ],
+    [ "StdDev", "d2/d55/class_c2_m2_1_1_utils_1_1_math.html#a269ee28ecfdc76d814b37f93c3739925", null ],
+    [ "StdDev", "d2/d55/class_c2_m2_1_1_utils_1_1_math.html#a53c0d5beddb9d6e495d793005261bd80", null ],
     [ "Sum", "d2/d55/class_c2_m2_1_1_utils_1_1_math.html#af7a2f19cd8afb2977a7ebccd421ff019", null ],
     [ "Sum", "d2/d55/class_c2_m2_1_1_utils_1_1_math.html#ad571ace4616feb244830f7d06e176951", null ],
     [ "Sum", "d2/d55/class_c2_m2_1_1_utils_1_1_math.html#a86b575f92660f71630abd3ca93dabcb5", null ]

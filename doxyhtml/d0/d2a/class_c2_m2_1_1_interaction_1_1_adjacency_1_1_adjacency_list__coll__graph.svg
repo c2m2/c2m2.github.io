@@ -57,7 +57,7 @@ var sectionId = 'dynsection-1';
 <polygon fill="white" stroke="none" points="-4,4 -4,-482 315,-482 315,4 -4,4"/>
 <!-- Node1 -->
 <g id="node1" class="node"><title>Node1</title>
-<g id="a_node1"><a xlink:title=" ">
+<g id="a_node1"><a xlink:title="Given a mesh, creates and stores an edge list and adjacency list of the mesh vertices">
 <polygon fill="#bfbfbf" stroke="black" points="0,-0.5 0,-156.5 179,-156.5 179,-0.5 0,-0.5"/>
 <text text-anchor="start" x="8" y="-144.5" font-family="Courier New" font-size="10.00">C2M2.Interaction.Adjacency.</text>
 <text text-anchor="middle" x="89.5" y="-133.5" font-family="Courier New" font-size="10.00">AdjacencyList</text>

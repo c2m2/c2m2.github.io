@@ -1,7 +1,8 @@
 var searchData=
 [
-  ['edge_1277',['Edge',['../d7/dff/struct_c2_m2_1_1_interaction_1_1_adjacency_1_1_edge.html',1,'C2M2.Interaction.Adjacency.Edge'],['../dd/ddd/struct_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_edge.html',1,'C2M2.NeuronalDynamics.UGX.Edge']]],
-  ['editorbuttonpause_1278',['EditorButtonPause',['../d4/de0/class_c2_m2_1_1_utils_1_1_debug_utils_1_1_actions_1_1_editor_button_pause.html',1,'C2M2::Utils::DebugUtils::Actions']]],
-  ['examplemdsimulation_1279',['ExampleMDSimulation',['../d5/de2/class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_example_m_d_simulation.html',1,'C2M2::MolecularDynamics::Simulation']]],
-  ['exp2synapse_1280',['EXP2Synapse',['../dd/d8d/struct_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_e_x_p2_synapse.html',1,'C2M2::NeuronalDynamics::UGX']]]
+  ['datapoint_1273',['DataPoint',['../d6/d32/class_c2_m2_1_1_o_i_t_1_1_data_point.html',1,'C2M2::OIT']]],
+  ['dataset_1274',['DataSet',['../d7/d07/class_c2_m2_1_1_o_i_t_1_1_data_set.html',1,'C2M2::OIT']]],
+  ['diameterdata_1275',['DiameterData',['../de/da8/struct_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_diameter_data.html',1,'C2M2::NeuronalDynamics::UGX']]],
+  ['dijkstrasearch_1276',['DijkstraSearch',['../df/d79/class_c2_m2_1_1_interaction_1_1_adjacency_1_1_dijkstra_search.html',1,'C2M2::Interaction::Adjacency']]],
+  ['dir_1277',['Dir',['../d6/d2b/class_c2_m2_1_1_utils_1_1_debug_utils_1_1_get_all_dependencies_1_1_dir.html',1,'C2M2::Utils::DebugUtils::GetAllDependencies']]]
 ];

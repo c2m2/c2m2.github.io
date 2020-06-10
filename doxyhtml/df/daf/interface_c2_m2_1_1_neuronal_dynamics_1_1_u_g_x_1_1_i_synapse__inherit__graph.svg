@@ -118,7 +118,7 @@ var sectionId = 'dynsection-0';
 </g>
 <!-- Node4 -->
 <g id="node4" class="node"><title>Node4</title>
-<g id="a_node4"><a xlink:href="../../d3/d7b/struct_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_undef_synapse.html" target="_top" xlink:title="Undef Synapse">
+<g id="a_node4"><a xlink:href="../../d3/d7b/struct_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_undef_synapse.html" target="_top" xlink:title="Undefined Synapse">
 <polygon fill="white" stroke="black" points="382,-28 382,-107 555,-107 555,-28 382,-28"/>
 <text text-anchor="start" x="390" y="-95" font-family="Courier New" font-size="10.00">C2M2.NeuronalDynamics.UGX.</text>
 <text text-anchor="middle" x="468.5" y="-84" font-family="Courier New" font-size="10.00">UndefSynapse</text>

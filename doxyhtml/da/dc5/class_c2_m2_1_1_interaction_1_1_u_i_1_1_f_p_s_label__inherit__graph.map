@@ -1,4 +1,4 @@
 <map id="C2M2.Interaction.UI.FPSLabel" name="C2M2.Interaction.UI.FPSLabel">
-<area shape="rect" id="node1" title=" " alt="" coords="5,131,252,281"/>
+<area shape="rect" id="node1" title="Stores and updates text labels for FPS readings" alt="" coords="5,131,252,267"/>
 <area shape="rect" id="node2" title=" " alt="" coords="65,5,192,83"/>
 </map>

@@ -1,3 +1,3 @@
 <map id="C2M2.Interaction.Adjacency.Edge" name="C2M2.Interaction.Adjacency.Edge">
-<area shape="rect" id="node1" title=" " alt="" coords="5,5,276,156"/>
+<area shape="rect" id="node1" title="stores two vertex indices and an edge length. Used by AdjacencyLisst" alt="" coords="5,5,276,156"/>
 </map>

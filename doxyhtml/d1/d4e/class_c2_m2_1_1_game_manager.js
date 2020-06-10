@@ -14,6 +14,7 @@ var class_c2_m2_1_1_game_manager =
     [ "instance", "d1/d4e/class_c2_m2_1_1_game_manager.html#a814ebfe4486bb66e0a4ea0d890ad0fa2", null ],
     [ "isRunning", "d1/d4e/class_c2_m2_1_1_game_manager.html#ad1247f85f8378f6d4f76f773fda9ec12", null ],
     [ "leftRaycaster", "d1/d4e/class_c2_m2_1_1_game_manager.html#a3ee7a45a4964d965a12f29c1fab2dadc", null ],
+    [ "lineRendMaterial", "d1/d4e/class_c2_m2_1_1_game_manager.html#af518d5511a07b74bea16a6b26259d4c3", null ],
     [ "logQ", "d1/d4e/class_c2_m2_1_1_game_manager.html#aa058e5c7aa89a098267a5b237c9b44aa", null ],
     [ "logQCap", "d1/d4e/class_c2_m2_1_1_game_manager.html#ab316da7f311a51aca774ed5d47becdd2", null ],
     [ "mainThreadId", "d1/d4e/class_c2_m2_1_1_game_manager.html#ac0ca2044e3b82f26e79bdc580a69d1be", null ],

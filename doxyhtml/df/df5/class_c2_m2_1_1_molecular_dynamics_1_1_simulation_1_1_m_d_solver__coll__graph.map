@@ -1,6 +1,8 @@
 <map id="C2M2.MolecularDynamics.Simulation.MDSolver" name="C2M2.MolecularDynamics.Simulation.MDSolver">
-<area shape="rect" id="node1" title=" " alt="" coords="5,748,300,869"/>
-<area shape="rect" id="node2" href="$d0/d99/class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_m_d_simulation.html" title=" " alt="" coords="65,491,240,700"/>
-<area shape="rect" id="node3" href="$d3/d66/class_c2_m2_1_1_simulation_1_1_position_field_simulation.html" title="Simulation of type Vector3[] for simulating positional fields" alt="" coords="49,336,256,443"/>
-<area shape="rect" id="node4" href="$db/d39/class_c2_m2_1_1_simulation_1_1_simulation.html" title=" " alt="" coords="49,5,256,288"/>
+<area shape="rect" id="node1" title=" " alt="" coords="268,969,563,1091"/>
+<area shape="rect" id="node2" href="$d0/d99/class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_m_d_simulation.html" title=" " alt="" coords="316,579,515,920"/>
+<area shape="rect" id="node3" href="$d3/d66/class_c2_m2_1_1_simulation_1_1_position_field_simulation.html" title="Simulation of type Vector3[] for simulating positional fields" alt="" coords="107,387,313,509"/>
+<area shape="rect" id="node4" href="$db/d39/class_c2_m2_1_1_simulation_1_1_simulation.html" title=" " alt="" coords="5,5,212,317"/>
+<area shape="rect" id="node5" href="$d3/dca/class_c2_m2_1_1_utils_1_1_timer.html" title=" " alt="" coords="236,42,387,281"/>
+<area shape="rect" id="node6" href="$d0/dbc/struct_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_bond_renderer.html" title="Stores and updates information needed to render bonds" alt="" coords="337,380,632,516"/>
 </map>

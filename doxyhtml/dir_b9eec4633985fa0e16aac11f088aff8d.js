@@ -6,7 +6,7 @@ var dir_b9eec4633985fa0e16aac11f088aff8d =
     [ "DijkstraSearch.cs", "d6/dd7/_dijkstra_search_8cs.html", [
       [ "DijkstraSearch", "df/d79/class_c2_m2_1_1_interaction_1_1_adjacency_1_1_dijkstra_search.html", "df/d79/class_c2_m2_1_1_interaction_1_1_adjacency_1_1_dijkstra_search" ]
     ] ],
-    [ "EdgeList.cs", "d2/d52/_edge_list_8cs.html", [
+    [ "Edge.cs", "d2/dec/_edge_8cs.html", [
       [ "Edge", "d7/dff/struct_c2_m2_1_1_interaction_1_1_adjacency_1_1_edge.html", "d7/dff/struct_c2_m2_1_1_interaction_1_1_adjacency_1_1_edge" ]
     ] ],
     [ "GaussianDistanceCalculator.cs", "da/db3/_gaussian_distance_calculator_8cs.html", [

@@ -1,7 +1,5 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$da/d2a/interface_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_i_attachment_data.html" title="Marker interface for attachment data" alt="" coords="5,104,236,145"/>
-<area shape="rect" id="node2" href="$de/da8/struct_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_diameter_data.html" title="Data for diameter attachment" alt="" coords="284,5,515,47"/>
-<area shape="rect" id="node3" href="$d2/dae/struct_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_mapping_data.html" title="Data for mapping attachment" alt="" coords="284,71,515,112"/>
-<area shape="rect" id="node4" href="$df/d3d/struct_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_normal_data.html" title="Data for normals of grid" alt="" coords="284,136,515,177"/>
-<area shape="rect" id="node5" href="$dc/dea/struct_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_synapse_data.html" title="Data for synapse attachment" alt="" coords="284,201,515,243"/>
+<area shape="rect" id="node1" href="$de/df4/interface_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_attachment.html" title="Marker interface for attachments" alt="" coords="5,5,236,47"/>
+<area shape="rect" id="node2" href="$df/d7a/class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_i_attachment.html" title="Abstract base class for all attachments providing common functionality" alt="" coords="284,35,515,76"/>
+<area shape="rect" id="node3" title=" " alt="" coords="69,71,172,98"/>
 </map>

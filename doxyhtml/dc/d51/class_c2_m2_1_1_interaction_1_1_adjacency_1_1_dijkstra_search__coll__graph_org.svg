@@ -11,7 +11,7 @@
 <polygon fill="white" stroke="none" points="-4,4 -4,-609 388,-609 388,4 -4,4"/>
 <!-- Node1 -->
 <g id="node1" class="node"><title>Node1</title>
-<g id="a_node1"><a xlink:title=" ">
+<g id="a_node1"><a xlink:title="Runs a dijkstra search over a surface of mesh vertices, given an initial hit point and a distance thr...">
 <polygon fill="#bfbfbf" stroke="black" points="0,-0.5 0,-79.5 179,-79.5 179,-0.5 0,-0.5"/>
 <text text-anchor="start" x="8" y="-67.5" font-family="Courier New" font-size="10.00">C2M2.Interaction.Adjacency.</text>
 <text text-anchor="middle" x="89.5" y="-56.5" font-family="Courier New" font-size="10.00">DijkstraSearch</text>
@@ -70,7 +70,7 @@
 </g>
 <!-- Node4 -->
 <g id="node4" class="node"><title>Node4</title>
-<g id="a_node4"><a xlink:href="../../d1/d3e/class_c2_m2_1_1_interaction_1_1_adjacency_1_1_adjacency_list.html" target="_top" xlink:title=" ">
+<g id="a_node4"><a xlink:href="../../d1/d3e/class_c2_m2_1_1_interaction_1_1_adjacency_1_1_adjacency_list.html" target="_top" xlink:title="Given a mesh, creates and stores an edge list and adjacency list of the mesh vertices">
 <polygon fill="white" stroke="black" points="205,-127.5 205,-283.5 384,-283.5 384,-127.5 205,-127.5"/>
 <text text-anchor="start" x="213" y="-271.5" font-family="Courier New" font-size="10.00">C2M2.Interaction.Adjacency.</text>
 <text text-anchor="middle" x="294.5" y="-260.5" font-family="Courier New" font-size="10.00">AdjacencyList</text>

@@ -1,6 +1,6 @@
 <map id="C2M2.Tests.TestTimer" name="C2M2.Tests.TestTimer">
 <area shape="rect" id="node1" title=" " alt="" coords="5,411,188,517"/>
-<area shape="rect" id="node2" href="$d1/d56/class_c2_m2_1_1_tests_1_1_awake_test.html" title=" " alt="" coords="49,285,144,363"/>
+<area shape="rect" id="node2" href="$d1/d56/class_c2_m2_1_1_tests_1_1_awake_test.html" title="TestManager will run tests that derive from AwakeTest during Awake" alt="" coords="49,285,144,363"/>
 <area shape="rect" id="node3" href="$d1/d7b/class_c2_m2_1_1_tests_1_1_test.html" title=" " alt="" coords="37,131,156,237"/>
 <area shape="rect" id="node4" title=" " alt="" coords="33,5,160,83"/>
 </map>

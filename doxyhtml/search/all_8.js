@@ -40,13 +40,12 @@ var searchData=
   ['ismodelgeometryvisible_486',['isModelGeometryVisible',['../d0/d64/class_c2_m2_1_1_neuronal_dynamics_1_1_tests_1_1_mesh_tests.html#a4f8e17d6138aa1adf3aafd60b2576bff',1,'C2M2::NeuronalDynamics::Tests::MeshTests']]],
   ['ismovingslow_487',['IsMovingSlow',['../db/ddb/class_c2_m2_1_1_visualization_1_1_v_r_1_1_moving_o_v_r_headset_emulator.html#ab764e44bea9f2d32f6f95d4c88a86fa6',1,'C2M2::Visualization::VR::MovingOVRHeadsetEmulator']]],
   ['isolatequantity_488',['IsolateQuantity',['../d7/d07/class_c2_m2_1_1_o_i_t_1_1_data_set.html#a726cd05bff38fcb0cff5a0dfd5d7572d',1,'C2M2::OIT::DataSet']]],
-  ['isoquant_489',['Isoquant',['../de/dbc/class_c2_m2_1_1_o_i_t_1_1_visualization_1_1_particle_system_ascii_data_reader.html#a9c162116501367dd71b9d63719d822a1',1,'C2M2::OIT::Visualization::ParticleSystemAsciiDataReader']]],
-  ['isoquanthigh_490',['isoquantHigh',['../d7/dcd/class_c2_m2_1_1_o_i_t_1_1_interaction_1_1_particle_system_controller.html#a1fa7141e12c830716f809cf98972ddfa',1,'C2M2::OIT::Interaction::ParticleSystemController']]],
-  ['isoquanthighholder_491',['isoquantHighHolder',['../d7/dcd/class_c2_m2_1_1_o_i_t_1_1_interaction_1_1_particle_system_controller.html#a8fd3c32c9d46f55c2b57ebb28b2ae3a1',1,'C2M2::OIT::Interaction::ParticleSystemController']]],
-  ['isoquantlow_492',['isoquantLow',['../d7/dcd/class_c2_m2_1_1_o_i_t_1_1_interaction_1_1_particle_system_controller.html#a9b64379afc39cc2c739bb9830f2bc398',1,'C2M2::OIT::Interaction::ParticleSystemController']]],
-  ['isoquantlowholder_493',['isoquantLowHolder',['../d7/dcd/class_c2_m2_1_1_o_i_t_1_1_interaction_1_1_particle_system_controller.html#ab7a7594c8bae6b2a141dfc95e2fc640b',1,'C2M2::OIT::Interaction::ParticleSystemController']]],
-  ['ispressed_494',['IsPressed',['../d4/d52/class_c2_m2_1_1_utils_1_1_debug_utils_1_1_screen_recorder.html#a409565d4dddf7eff547de2c029958b62',1,'C2M2::Utils::DebugUtils::ScreenRecorder']]],
-  ['isrunning_495',['isRunning',['../d1/d4e/class_c2_m2_1_1_game_manager.html#ad1247f85f8378f6d4f76f773fda9ec12',1,'C2M2::GameManager']]],
-  ['iswindingconsistent_496',['isWindingConsistent',['../d0/d64/class_c2_m2_1_1_neuronal_dynamics_1_1_tests_1_1_mesh_tests.html#ac90104dc1bf7297911462784e56e60b8',1,'C2M2::NeuronalDynamics::Tests::MeshTests']]],
-  ['isynapse_497',['ISynapse',['../d7/df5/interface_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_i_synapse.html',1,'C2M2::NeuronalDynamics::UGX']]]
+  ['isoquanthigh_489',['isoquantHigh',['../d7/dcd/class_c2_m2_1_1_o_i_t_1_1_interaction_1_1_particle_system_controller.html#a1fa7141e12c830716f809cf98972ddfa',1,'C2M2::OIT::Interaction::ParticleSystemController']]],
+  ['isoquanthighholder_490',['isoquantHighHolder',['../d7/dcd/class_c2_m2_1_1_o_i_t_1_1_interaction_1_1_particle_system_controller.html#a8fd3c32c9d46f55c2b57ebb28b2ae3a1',1,'C2M2::OIT::Interaction::ParticleSystemController']]],
+  ['isoquantlow_491',['isoquantLow',['../d7/dcd/class_c2_m2_1_1_o_i_t_1_1_interaction_1_1_particle_system_controller.html#a9b64379afc39cc2c739bb9830f2bc398',1,'C2M2::OIT::Interaction::ParticleSystemController']]],
+  ['isoquantlowholder_492',['isoquantLowHolder',['../d7/dcd/class_c2_m2_1_1_o_i_t_1_1_interaction_1_1_particle_system_controller.html#ab7a7594c8bae6b2a141dfc95e2fc640b',1,'C2M2::OIT::Interaction::ParticleSystemController']]],
+  ['ispressed_493',['IsPressed',['../d4/d52/class_c2_m2_1_1_utils_1_1_debug_utils_1_1_screen_recorder.html#a409565d4dddf7eff547de2c029958b62',1,'C2M2::Utils::DebugUtils::ScreenRecorder']]],
+  ['isrunning_494',['isRunning',['../d1/d4e/class_c2_m2_1_1_game_manager.html#ad1247f85f8378f6d4f76f773fda9ec12',1,'C2M2::GameManager']]],
+  ['iswindingconsistent_495',['isWindingConsistent',['../d0/d64/class_c2_m2_1_1_neuronal_dynamics_1_1_tests_1_1_mesh_tests.html#ac90104dc1bf7297911462784e56e60b8',1,'C2M2::NeuronalDynamics::Tests::MeshTests']]],
+  ['isynapse_496',['ISynapse',['../d7/df5/interface_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_i_synapse.html',1,'C2M2::NeuronalDynamics::UGX']]]
 ];

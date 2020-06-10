@@ -1,11 +1,11 @@
 <map id="C2M2.NeuronalDynamics.Simulation.CellSolver2vb" name="C2M2.NeuronalDynamics.Simulation.CellSolver2vb">
-<area shape="rect" id="node1" title=" " alt="" coords="211,1124,497,1480"/>
-<area shape="rect" id="node2" href="$d4/d5a/class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_neuron_simulation1_d.html" title="Provide an interface for 1D neuron&#45;surface simulations to be visualized and interacted with" alt="" coords="137,764,304,1061"/>
-<area shape="rect" id="node3" href="$d4/de1/class_c2_m2_1_1_simulation_1_1_surface_simulation.html" title="Simulation of type double[] for visualizing scalar fields on mesh surfaces" alt="" coords="27,477,233,672"/>
-<area shape="rect" id="node4" href="$db/d39/class_c2_m2_1_1_simulation_1_1_simulation.html" title=" " alt="" coords="5,132,212,415"/>
-<area shape="rect" id="node5" href="$da/d4f/class_c2_m2_1_1_visualization_1_1_l_u_t_gradient.html" title="Create a fast and memory&#45;friendly color lookup table from a gradient" alt="" coords="236,161,499,385"/>
+<area shape="rect" id="node1" title=" " alt="" coords="212,1139,499,1495"/>
+<area shape="rect" id="node2" href="$d4/d5a/class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_neuron_simulation1_d.html" title="Provide an interface for 1D neuron&#45;surface simulations to be visualized and interacted with" alt="" coords="113,779,312,1076"/>
+<area shape="rect" id="node3" href="$d4/de1/class_c2_m2_1_1_simulation_1_1_surface_simulation.html" title="Simulation of type double[] for visualizing scalar fields on mesh surfaces" alt="" coords="27,507,233,687"/>
+<area shape="rect" id="node4" href="$db/d39/class_c2_m2_1_1_simulation_1_1_simulation.html" title=" " alt="" coords="5,132,212,444"/>
+<area shape="rect" id="node5" href="$da/d4f/class_c2_m2_1_1_visualization_1_1_l_u_t_gradient.html" title="Create a fast and memory&#45;friendly color lookup table from a gradient" alt="" coords="236,176,499,400"/>
 <area shape="rect" id="node6" title=" " alt="" coords="304,5,431,83"/>
-<area shape="rect" id="node7" title=" " alt="" coords="257,536,312,613"/>
-<area shape="rect" id="node8" href="$da/df6/class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_cell.html" title=" " alt="" coords="328,779,559,1047"/>
-<area shape="rect" id="node9" title=" " alt="" coords="408,536,479,613"/>
+<area shape="rect" id="node7" title=" " alt="" coords="257,558,312,635"/>
+<area shape="rect" id="node8" href="$da/df6/class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_cell.html" title=" " alt="" coords="336,793,567,1061"/>
+<area shape="rect" id="node9" title=" " alt="" coords="416,558,487,635"/>
 </map>

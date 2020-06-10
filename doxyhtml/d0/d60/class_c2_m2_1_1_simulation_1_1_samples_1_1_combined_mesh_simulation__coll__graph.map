@@ -1,7 +1,7 @@
 <map id="C2M2.Simulation.Samples.CombinedMeshSimulation" name="C2M2.Simulation.Samples.CombinedMeshSimulation">
-<area shape="rect" id="node1" title="Run a blank ScalarFieldSimulation using every MeshRenderer childed under this script" alt="" coords="76,721,291,887"/>
-<area shape="rect" id="node2" href="$d4/de1/class_c2_m2_1_1_simulation_1_1_surface_simulation.html" title="Simulation of type double[] for visualizing scalar fields on mesh surfaces" alt="" coords="80,477,287,672"/>
-<area shape="rect" id="node3" href="$db/d39/class_c2_m2_1_1_simulation_1_1_simulation.html" title=" " alt="" coords="5,132,212,415"/>
-<area shape="rect" id="node4" href="$da/d4f/class_c2_m2_1_1_visualization_1_1_l_u_t_gradient.html" title="Create a fast and memory&#45;friendly color lookup table from a gradient" alt="" coords="236,161,499,385"/>
+<area shape="rect" id="node1" title="Run a blank ScalarFieldSimulation using every MeshRenderer childed under this script" alt="" coords="76,736,291,901"/>
+<area shape="rect" id="node2" href="$d4/de1/class_c2_m2_1_1_simulation_1_1_surface_simulation.html" title="Simulation of type double[] for visualizing scalar fields on mesh surfaces" alt="" coords="80,507,287,687"/>
+<area shape="rect" id="node3" href="$db/d39/class_c2_m2_1_1_simulation_1_1_simulation.html" title=" " alt="" coords="5,132,212,444"/>
+<area shape="rect" id="node4" href="$da/d4f/class_c2_m2_1_1_visualization_1_1_l_u_t_gradient.html" title="Create a fast and memory&#45;friendly color lookup table from a gradient" alt="" coords="236,176,499,400"/>
 <area shape="rect" id="node5" title=" " alt="" coords="304,5,431,83"/>
 </map>

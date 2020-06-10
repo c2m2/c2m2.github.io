@@ -9,7 +9,8 @@ var dir_2f0968a8a429d36d87b6fbe756c2c6bf =
       [ "ControlOverlay", "df/d86/class_c2_m2_1_1_interaction_1_1_u_i_1_1_control_overlay.html", "df/d86/class_c2_m2_1_1_interaction_1_1_u_i_1_1_control_overlay" ]
     ] ],
     [ "FPSLabel.cs", "d6/d25/_f_p_s_label_8cs.html", [
-      [ "FPSLabel", "d6/d2f/class_c2_m2_1_1_interaction_1_1_u_i_1_1_f_p_s_label.html", "d6/d2f/class_c2_m2_1_1_interaction_1_1_u_i_1_1_f_p_s_label" ]
+      [ "FPSLabel", "d6/d2f/class_c2_m2_1_1_interaction_1_1_u_i_1_1_f_p_s_label.html", "d6/d2f/class_c2_m2_1_1_interaction_1_1_u_i_1_1_f_p_s_label" ],
+      [ "LabelNotFoundException", "d8/de3/class_c2_m2_1_1_interaction_1_1_u_i_1_1_f_p_s_label_1_1_label_not_found_exception.html", "d8/de3/class_c2_m2_1_1_interaction_1_1_u_i_1_1_f_p_s_label_1_1_label_not_found_exception" ]
     ] ],
     [ "MultiframeFade_LowpassCutoff.cs", "d8/d67/_multiframe_fade___lowpass_cutoff_8cs.html", [
       [ "MultiframeFade_LowpassCutoff", "d2/dd9/class_c2_m2_1_1_interaction_1_1_u_i_1_1_multiframe_fade___lowpass_cutoff.html", "d2/dd9/class_c2_m2_1_1_interaction_1_1_u_i_1_1_multiframe_fade___lowpass_cutoff" ]

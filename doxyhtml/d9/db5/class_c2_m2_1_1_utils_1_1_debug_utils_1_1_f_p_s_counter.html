@@ -24,7 +24,7 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td id="projectlogo"><img alt="Logo" src="../../c2m2+Temple@0.5x.png"/></td>
+  <td id="projectlogo"><img alt="Logo" src="../../c2m2+Temple@75px.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">virtual-reality
    &#160;<span id="projectnumber">2020.5</span>
@@ -97,21 +97,23 @@ $(document).ready(function(){initNavTree('d9/db5/class_c2_m2_1_1_utils_1_1_debug
 </div><!--header-->
 <div class="contents">
 
-<p> 
+<p>Records and stores frame rendering time data over multiple seconds  
  <a href="../../d9/db5/class_c2_m2_1_1_utils_1_1_debug_utils_1_1_f_p_s_counter.html#details">More...</a></p>
 <div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="../../closed.png" alt="+"/> Inheritance diagram for C2M2.Utils.DebugUtils.FPSCounter:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d6/d5b/class_c2_m2_1_1_utils_1_1_debug_utils_1_1_f_p_s_counter__inherit__graph.svg" width="290" height="434"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d6/d5b/class_c2_m2_1_1_utils_1_1_debug_utils_1_1_f_p_s_counter__inherit__graph.svg" width="290" height="434"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="../../closed.png" alt="+"/> Collaboration diagram for C2M2.Utils.DebugUtils.FPSCounter:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d5/ddf/class_c2_m2_1_1_utils_1_1_debug_utils_1_1_f_p_s_counter__coll__graph.svg" width="332" height="434"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d5/ddf/class_c2_m2_1_1_utils_1_1_debug_utils_1_1_f_p_s_counter__coll__graph.svg" width="332" height="434"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -123,21 +125,27 @@ Public Member Functions</h2></td></tr>
 Public Attributes</h2></td></tr>
 <tr class="memitem:ac93cdcbb76d7e07c57e52abf7042bdde"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/db5/class_c2_m2_1_1_utils_1_1_debug_utils_1_1_f_p_s_counter.html#ac93cdcbb76d7e07c57e52abf7042bdde">sampleSize</a> = 60</td></tr>
 <tr class="separator:ac93cdcbb76d7e07c57e52abf7042bdde"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4e755585b4b4af78f1ed4aed913ea0e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/db5/class_c2_m2_1_1_utils_1_1_debug_utils_1_1_f_p_s_counter.html#ac4e755585b4b4af78f1ed4aed913ea0e">avg</a></td></tr>
+<tr class="memdesc:ac4e755585b4b4af78f1ed4aed913ea0e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Average FPS over the sample size  <a href="../../d9/db5/class_c2_m2_1_1_utils_1_1_debug_utils_1_1_f_p_s_counter.html#ac4e755585b4b4af78f1ed4aed913ea0e">More...</a><br /></td></tr>
+<tr class="separator:ac4e755585b4b4af78f1ed4aed913ea0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a721eed5bcde96fc632a36c2fbd6b66aa"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/db5/class_c2_m2_1_1_utils_1_1_debug_utils_1_1_f_p_s_counter.html#a721eed5bcde96fc632a36c2fbd6b66aa">high</a></td></tr>
+<tr class="memdesc:a721eed5bcde96fc632a36c2fbd6b66aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Highest FPS over the sample size  <a href="../../d9/db5/class_c2_m2_1_1_utils_1_1_debug_utils_1_1_f_p_s_counter.html#a721eed5bcde96fc632a36c2fbd6b66aa">More...</a><br /></td></tr>
+<tr class="separator:a721eed5bcde96fc632a36c2fbd6b66aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada9ed22d6131ca6d83f876d3ad117d67"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/db5/class_c2_m2_1_1_utils_1_1_debug_utils_1_1_f_p_s_counter.html#ada9ed22d6131ca6d83f876d3ad117d67">low</a></td></tr>
+<tr class="memdesc:ada9ed22d6131ca6d83f876d3ad117d67"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lowest FPS over the sample size  <a href="../../d9/db5/class_c2_m2_1_1_utils_1_1_debug_utils_1_1_f_p_s_counter.html#ada9ed22d6131ca6d83f876d3ad117d67">More...</a><br /></td></tr>
+<tr class="separator:ada9ed22d6131ca6d83f876d3ad117d67"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
 Properties</h2></td></tr>
-<tr class="memitem:adaa0dfe960fe89b96f5a61e72ff38403"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/db5/class_c2_m2_1_1_utils_1_1_debug_utils_1_1_f_p_s_counter.html#adaa0dfe960fe89b96f5a61e72ff38403">AverageFPS</a><code> [get, private set]</code></td></tr>
-<tr class="separator:adaa0dfe960fe89b96f5a61e72ff38403"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaf1c34b2a6808f89fb01c55ec43fdafd"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/db5/class_c2_m2_1_1_utils_1_1_debug_utils_1_1_f_p_s_counter.html#aaf1c34b2a6808f89fb01c55ec43fdafd">HighestFPS</a><code> [get, private set]</code></td></tr>
-<tr class="separator:aaf1c34b2a6808f89fb01c55ec43fdafd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa80c3dcc9975aa22632c41f3bad7137e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/db5/class_c2_m2_1_1_utils_1_1_debug_utils_1_1_f_p_s_counter.html#aa80c3dcc9975aa22632c41f3bad7137e">LowestFPS</a><code> [get, private set]</code></td></tr>
-<tr class="separator:aa80c3dcc9975aa22632c41f3bad7137e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8be188f0b06d1d8fc9764bd04ecdae61"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/db5/class_c2_m2_1_1_utils_1_1_debug_utils_1_1_f_p_s_counter.html#a8be188f0b06d1d8fc9764bd04ecdae61">averageFPSString</a><code> [get, private set]</code></td></tr>
-<tr class="separator:a8be188f0b06d1d8fc9764bd04ecdae61"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a76e82dddb7c4d9ed9cd3663564134f16"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/db5/class_c2_m2_1_1_utils_1_1_debug_utils_1_1_f_p_s_counter.html#a76e82dddb7c4d9ed9cd3663564134f16">highestFPSString</a><code> [get, private set]</code></td></tr>
-<tr class="separator:a76e82dddb7c4d9ed9cd3663564134f16"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afa975cf89f55d10f813af1e556494a0f"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/db5/class_c2_m2_1_1_utils_1_1_debug_utils_1_1_f_p_s_counter.html#afa975cf89f55d10f813af1e556494a0f">lowestFPSString</a><code> [get, private set]</code></td></tr>
-<tr class="separator:afa975cf89f55d10f813af1e556494a0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e7973ef9d839689089773be952b0780"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/db5/class_c2_m2_1_1_utils_1_1_debug_utils_1_1_f_p_s_counter.html#a1e7973ef9d839689089773be952b0780">highStr</a><code> [get]</code></td></tr>
+<tr class="memdesc:a1e7973ef9d839689089773be952b0780"><td class="mdescLeft">&#160;</td><td class="mdescRight">Highest FPS over sample size quickly queried from static string array  <a href="../../d9/db5/class_c2_m2_1_1_utils_1_1_debug_utils_1_1_f_p_s_counter.html#a1e7973ef9d839689089773be952b0780">More...</a><br /></td></tr>
+<tr class="separator:a1e7973ef9d839689089773be952b0780"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f28a1e7a0cbaf516928e369974f62e0"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/db5/class_c2_m2_1_1_utils_1_1_debug_utils_1_1_f_p_s_counter.html#a8f28a1e7a0cbaf516928e369974f62e0">avgStr</a><code> [get]</code></td></tr>
+<tr class="memdesc:a8f28a1e7a0cbaf516928e369974f62e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Average FPS over sample size quickly queried from static string array  <a href="../../d9/db5/class_c2_m2_1_1_utils_1_1_debug_utils_1_1_f_p_s_counter.html#a8f28a1e7a0cbaf516928e369974f62e0">More...</a><br /></td></tr>
+<tr class="separator:a8f28a1e7a0cbaf516928e369974f62e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a30a273570cc0f7790e15a862f6ff6fd4"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/db5/class_c2_m2_1_1_utils_1_1_debug_utils_1_1_f_p_s_counter.html#a30a273570cc0f7790e15a862f6ff6fd4">lowStr</a><code> [get]</code></td></tr>
+<tr class="memdesc:a30a273570cc0f7790e15a862f6ff6fd4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lowest FPS over sample size quickly queried from static string array  <a href="../../d9/db5/class_c2_m2_1_1_utils_1_1_debug_utils_1_1_f_p_s_counter.html#a30a273570cc0f7790e15a862f6ff6fd4">More...</a><br /></td></tr>
+<tr class="separator:a30a273570cc0f7790e15a862f6ff6fd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
@@ -167,7 +175,8 @@ Static Private Attributes</h2></td></tr>
 <tr class="separator:af8fe567b4cfd3af31491afbc231ad4a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"></div><h2 class="groupheader">Member Function Documentation</h2>
+<div class="textblock"><p>Records and stores frame rendering time data over multiple seconds </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a22762cb29efb70de4504bb11ce1da958"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a22762cb29efb70de4504bb11ce1da958">&#9670;&nbsp;</a></span>CalculateFPS()</h2>
 
@@ -311,6 +320,22 @@ Static Private Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
+<a id="ac4e755585b4b4af78f1ed4aed913ea0e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac4e755585b4b4af78f1ed4aed913ea0e">&#9670;&nbsp;</a></span>avg</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int C2M2.Utils.DebugUtils.FPSCounter.avg</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Average FPS over the sample size </p>
+
+</div>
+</div>
 <a id="a3bfccea9d450d70aee3a28737b612954"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3bfccea9d450d70aee3a28737b612954">&#9670;&nbsp;</a></span>formatString</h2>
 
@@ -377,6 +402,38 @@ Static Private Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a721eed5bcde96fc632a36c2fbd6b66aa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a721eed5bcde96fc632a36c2fbd6b66aa">&#9670;&nbsp;</a></span>high</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int C2M2.Utils.DebugUtils.FPSCounter.high</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Highest FPS over the sample size </p>
+
+</div>
+</div>
+<a id="ada9ed22d6131ca6d83f876d3ad117d67"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ada9ed22d6131ca6d83f876d3ad117d67">&#9670;&nbsp;</a></span>low</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int C2M2.Utils.DebugUtils.FPSCounter.low</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Lowest FPS over the sample size </p>
+
+</div>
+</div>
 <a id="ac93cdcbb76d7e07c57e52abf7042bdde"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac93cdcbb76d7e07c57e52abf7042bdde">&#9670;&nbsp;</a></span>sampleSize</h2>
 
@@ -427,8 +484,8 @@ Static Private Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Property Documentation</h2>
-<a id="adaa0dfe960fe89b96f5a61e72ff38403"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adaa0dfe960fe89b96f5a61e72ff38403">&#9670;&nbsp;</a></span>AverageFPS</h2>
+<a id="a8f28a1e7a0cbaf516928e369974f62e0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8f28a1e7a0cbaf516928e369974f62e0">&#9670;&nbsp;</a></span>avgStr</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -437,20 +494,22 @@ Static Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">int C2M2.Utils.DebugUtils.FPSCounter.AverageFPS</td>
+          <td class="memname">string C2M2.Utils.DebugUtils.FPSCounter.avgStr</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">private set</span></span>  </td>
+<span class="mlabels"><span class="mlabel">get</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
+<p>Average FPS over sample size quickly queried from static string array </p>
+
 </div>
 </div>
-<a id="a8be188f0b06d1d8fc9764bd04ecdae61"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8be188f0b06d1d8fc9764bd04ecdae61">&#9670;&nbsp;</a></span>averageFPSString</h2>
+<a id="a1e7973ef9d839689089773be952b0780"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1e7973ef9d839689089773be952b0780">&#9670;&nbsp;</a></span>highStr</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -459,20 +518,22 @@ Static Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">string C2M2.Utils.DebugUtils.FPSCounter.averageFPSString</td>
+          <td class="memname">string C2M2.Utils.DebugUtils.FPSCounter.highStr</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">private set</span></span>  </td>
+<span class="mlabels"><span class="mlabel">get</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
+<p>Highest FPS over sample size quickly queried from static string array </p>
+
 </div>
 </div>
-<a id="aaf1c34b2a6808f89fb01c55ec43fdafd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaf1c34b2a6808f89fb01c55ec43fdafd">&#9670;&nbsp;</a></span>HighestFPS</h2>
+<a id="a30a273570cc0f7790e15a862f6ff6fd4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a30a273570cc0f7790e15a862f6ff6fd4">&#9670;&nbsp;</a></span>lowStr</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -481,81 +542,17 @@ Static Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">int C2M2.Utils.DebugUtils.FPSCounter.HighestFPS</td>
+          <td class="memname">string C2M2.Utils.DebugUtils.FPSCounter.lowStr</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">private set</span></span>  </td>
+<span class="mlabels"><span class="mlabel">get</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-</div>
-</div>
-<a id="a76e82dddb7c4d9ed9cd3663564134f16"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a76e82dddb7c4d9ed9cd3663564134f16">&#9670;&nbsp;</a></span>highestFPSString</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">string C2M2.Utils.DebugUtils.FPSCounter.highestFPSString</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">private set</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="aa80c3dcc9975aa22632c41f3bad7137e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa80c3dcc9975aa22632c41f3bad7137e">&#9670;&nbsp;</a></span>LowestFPS</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">int C2M2.Utils.DebugUtils.FPSCounter.LowestFPS</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">private set</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="afa975cf89f55d10f813af1e556494a0f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afa975cf89f55d10f813af1e556494a0f">&#9670;&nbsp;</a></span>lowestFPSString</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">string C2M2.Utils.DebugUtils.FPSCounter.lowestFPSString</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">private set</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
+<p>Lowest FPS over sample size quickly queried from static string array </p>
 
 </div>
 </div>

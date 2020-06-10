@@ -1,5 +1,5 @@
 <map id="C2M2.GameManager" name="C2M2.GameManager">
-<area shape="rect" id="node1" title=" " alt="" coords="232,1499,487,1913"/>
+<area shape="rect" id="node1" title="Stores many global variables, handles pregame initializations" alt="" coords="232,1499,487,1928"/>
 <area shape="rect" id="node2" title=" " alt="" coords="5,139,132,217"/>
 <area shape="rect" id="node5" href="$dd/dfe/class_c2_m2_1_1_interaction_1_1_raycast_forward.html" title=" " alt="" coords="103,933,325,1421"/>
 <area shape="rect" id="node6" href="$d5/df9/class_c2_m2_1_1_interaction_1_1_raycast_event_manager.html" title="Attach this script to parent gameObject, create one child with one raycast trigger per child...." alt="" coords="107,559,321,871"/>

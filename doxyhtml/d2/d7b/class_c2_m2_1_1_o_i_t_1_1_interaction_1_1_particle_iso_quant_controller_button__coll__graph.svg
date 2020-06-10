@@ -138,34 +138,33 @@ var sectionId = 'dynsection-1';
 </g>
 <!-- Node5 -->
 <g id="node5" class="node"><title>Node5</title>
-<g id="a_node5"><a xlink:href="../../de/dbc/class_c2_m2_1_1_o_i_t_1_1_visualization_1_1_particle_system_ascii_data_reader.html" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="black" points="38,-606.5 38,-828.5 241,-828.5 241,-606.5 38,-606.5"/>
-<text text-anchor="start" x="46" y="-816.5" font-family="Courier New" font-size="10.00">C2M2.OIT.Visualization.Particle</text>
-<text text-anchor="middle" x="139.5" y="-805.5" font-family="Courier New" font-size="10.00">SystemAsciiDataReader</text>
-<polyline fill="none" stroke="black" points="38,-798.5 241,-798.5 "/>
-<text text-anchor="start" x="46" y="-786.5" font-family="Courier New" font-size="10.00">+ assets</text>
-<text text-anchor="start" x="46" y="-775.5" font-family="Courier New" font-size="10.00">+ RoomObject</text>
-<text text-anchor="start" x="46" y="-764.5" font-family="Courier New" font-size="10.00">+ reduceBy</text>
-<text text-anchor="start" x="46" y="-753.5" font-family="Courier New" font-size="10.00">+ dataSetList</text>
-<text text-anchor="start" x="46" y="-742.5" font-family="Courier New" font-size="10.00">+ colorFloatMax</text>
-<text text-anchor="start" x="46" y="-731.5" font-family="Courier New" font-size="10.00">+ colorFloatMin</text>
-<text text-anchor="start" x="46" y="-720.5" font-family="Courier New" font-size="10.00">&#45; assetString</text>
-<text text-anchor="start" x="46" y="-709.5" font-family="Courier New" font-size="10.00">&#45; currentLine</text>
-<text text-anchor="start" x="46" y="-698.5" font-family="Courier New" font-size="10.00">&#45; sR</text>
-<text text-anchor="start" x="46" y="-687.5" font-family="Courier New" font-size="10.00">&#45; currentLineSplit</text>
-<text text-anchor="start" x="46" y="-676.5" font-family="Courier New" font-size="10.00">&#45; backupdataSetList</text>
-<polyline fill="none" stroke="black" points="38,-669.5 241,-669.5 "/>
-<text text-anchor="start" x="46" y="-657.5" font-family="Courier New" font-size="10.00">+ InitializeParticleData()</text>
-<text text-anchor="start" x="46" y="-646.5" font-family="Courier New" font-size="10.00">+ Isoquant()</text>
-<text text-anchor="start" x="46" y="-635.5" font-family="Courier New" font-size="10.00">&#45; InitializeInformationLists()</text>
-<text text-anchor="start" x="46" y="-624.5" font-family="Courier New" font-size="10.00">&#45; CreateStringReader()</text>
-<text text-anchor="start" x="46" y="-613.5" font-family="Courier New" font-size="10.00">&#45; CloseStringReader()</text>
+<g id="a_node5"><a xlink:href="../../de/dbc/class_c2_m2_1_1_o_i_t_1_1_visualization_1_1_particle_system_ascii_data_reader.html" target="_top" xlink:title="Read and store ascii data representing particle data">
+<polygon fill="white" stroke="black" points="38,-612 38,-823 241,-823 241,-612 38,-612"/>
+<text text-anchor="start" x="46" y="-811" font-family="Courier New" font-size="10.00">C2M2.OIT.Visualization.Particle</text>
+<text text-anchor="middle" x="139.5" y="-800" font-family="Courier New" font-size="10.00">SystemAsciiDataReader</text>
+<polyline fill="none" stroke="black" points="38,-793 241,-793 "/>
+<text text-anchor="start" x="46" y="-781" font-family="Courier New" font-size="10.00">+ assets</text>
+<text text-anchor="start" x="46" y="-770" font-family="Courier New" font-size="10.00">+ RoomObject</text>
+<text text-anchor="start" x="46" y="-759" font-family="Courier New" font-size="10.00">+ reduceBy</text>
+<text text-anchor="start" x="46" y="-748" font-family="Courier New" font-size="10.00">+ dataSetList</text>
+<text text-anchor="start" x="46" y="-737" font-family="Courier New" font-size="10.00">+ colorFloatMax</text>
+<text text-anchor="start" x="46" y="-726" font-family="Courier New" font-size="10.00">+ colorFloatMin</text>
+<text text-anchor="start" x="46" y="-715" font-family="Courier New" font-size="10.00">&#45; assetString</text>
+<text text-anchor="start" x="46" y="-704" font-family="Courier New" font-size="10.00">&#45; currentLine</text>
+<text text-anchor="start" x="46" y="-693" font-family="Courier New" font-size="10.00">&#45; sR</text>
+<text text-anchor="start" x="46" y="-682" font-family="Courier New" font-size="10.00">&#45; currentLineSplit</text>
+<text text-anchor="start" x="46" y="-671" font-family="Courier New" font-size="10.00">&#45; backupdataSetList</text>
+<polyline fill="none" stroke="black" points="38,-664 241,-664 "/>
+<text text-anchor="start" x="46" y="-652" font-family="Courier New" font-size="10.00">+ InitializeParticleData()</text>
+<text text-anchor="start" x="46" y="-641" font-family="Courier New" font-size="10.00">&#45; InitializeInformationLists()</text>
+<text text-anchor="start" x="46" y="-630" font-family="Courier New" font-size="10.00">&#45; CreateStringReader()</text>
+<text text-anchor="start" x="46" y="-619" font-family="Courier New" font-size="10.00">&#45; CloseStringReader()</text>
 </a>
 </g>
 </g>
 <!-- Node2&#45;&gt;Node5 -->
 <g id="edge6" class="edge"><title>Node2&#45;&gt;Node5</title>
-<path fill="none" stroke="midnightblue" d="M65.5139,-868.483C71.322,-856.709 78.0904,-842.988 85.1294,-828.719"/>
+<path fill="none" stroke="midnightblue" d="M65.5905,-868.327C72.102,-855.127 79.8131,-839.496 87.7563,-823.393"/>
 <polygon fill="none" stroke="midnightblue" points="62.3601,-866.965 61.0749,-877.481 68.6378,-870.062 62.3601,-866.965"/>
 </g>
 <!-- Node6 -->
@@ -228,8 +227,8 @@ var sectionId = 'dynsection-1';
 </g>
 <!-- Node5&#45;&gt;Node4 -->
 <g id="edge5" class="edge"><title>Node5&#45;&gt;Node4</title>
-<path fill="none" stroke="#404040" d="M131.713,-606.061C130.649,-590.975 129.541,-575.265 128.434,-559.568"/>
-<polygon fill="none" stroke="#404040" points="128.433,-559.547 124.021,-553.844 127.589,-547.577 132.001,-553.281 128.433,-559.547"/>
+<path fill="none" stroke="#404040" d="M132.113,-611.741C130.932,-594.984 129.687,-577.339 128.444,-559.708"/>
+<polygon fill="none" stroke="#404040" points="128.429,-559.486 124.016,-553.782 127.584,-547.516 131.997,-553.219 128.429,-559.486"/>
 <text text-anchor="middle" x="184" y="-569" font-family="Courier New" font-size="10.00"> &#45;particleTextData</text>
 </g>
 <!-- Node6&#45;&gt;Node4 -->

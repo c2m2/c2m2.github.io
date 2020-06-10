@@ -24,7 +24,7 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td id="projectlogo"><img alt="Logo" src="../../c2m2+Temple@0.5x.png"/></td>
+  <td id="projectlogo"><img alt="Logo" src="../../c2m2+Temple@75px.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">virtual-reality
    &#160;<span id="projectnumber">2020.5</span>
@@ -96,19 +96,24 @@ $(document).ready(function(){initNavTree('d1/d4e/class_c2_m2_1_1_game_manager.ht
 <div class="title">C2M2.GameManager Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Stores many global variables, handles pregame initializations  
+ <a href="../../d1/d4e/class_c2_m2_1_1_game_manager.html#details">More...</a></p>
 <div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="../../closed.png" alt="+"/> Inheritance diagram for C2M2.GameManager:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../db/dc5/class_c2_m2_1_1_game_manager__inherit__graph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../db/dc5/class_c2_m2_1_1_game_manager__inherit__graph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
 </div>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="../../closed.png" alt="+"/> Collaboration diagram for C2M2.GameManager:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../d4/d55/class_c2_m2_1_1_game_manager__coll__graph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../d4/d55/class_c2_m2_1_1_game_manager__coll__graph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -135,6 +140,8 @@ Public Attributes</h2></td></tr>
 <tr class="separator:afb49b3a2dd5acdd71aa3985f9503ecf4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a25a492d0d0ec9aad29ff235e9f273eed"><td class="memItemLeft" align="right" valign="top">Material&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d4e/class_c2_m2_1_1_game_manager.html#a25a492d0d0ec9aad29ff235e9f273eed">vertexColorationMaterial</a></td></tr>
 <tr class="separator:a25a492d0d0ec9aad29ff235e9f273eed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af518d5511a07b74bea16a6b26259d4c3"><td class="memItemLeft" align="right" valign="top">Material&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d4e/class_c2_m2_1_1_game_manager.html#af518d5511a07b74bea16a6b26259d4c3">lineRendMaterial</a></td></tr>
+<tr class="separator:af518d5511a07b74bea16a6b26259d4c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5e097f6ffd33c2ed3b22dd5910b5d60c"><td class="memItemLeft" align="right" valign="top">Vector3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d4e/class_c2_m2_1_1_game_manager.html#a5e097f6ffd33c2ed3b22dd5910b5d60c">objectScaleDefault</a> = new Vector3(1f, 1f, 1f)</td></tr>
 <tr class="separator:a5e097f6ffd33c2ed3b22dd5910b5d60c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac8d95c0fff151d5aed7d35c5951e6052"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dd/dfe/class_c2_m2_1_1_interaction_1_1_raycast_forward.html">RaycastForward</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d4e/class_c2_m2_1_1_game_manager.html#ac8d95c0fff151d5aed7d35c5951e6052">rightRaycaster</a></td></tr>
@@ -165,7 +172,7 @@ Properties</h2></td></tr>
 <tr class="separator:a3c8f24e954f87eea378fb9eb4ddd0a5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adf31873fa5ca3dcee00d04f189cbd73e"><td class="memItemLeft" align="right" valign="top">GameObject&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d4e/class_c2_m2_1_1_game_manager.html#adf31873fa5ca3dcee00d04f189cbd73e">nonVRCamera</a> = null<code> [get, set]</code></td></tr>
 <tr class="separator:adf31873fa5ca3dcee00d04f189cbd73e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeeb2f1256d0d9377be2c71b296c157f9"><td class="memItemLeft" align="right" valign="top">RaycastKeyboard&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d4e/class_c2_m2_1_1_game_manager.html#aeeb2f1256d0d9377be2c71b296c157f9">raycastKeyboard</a><code> [get, set]</code></td></tr>
+<tr class="memitem:aeeb2f1256d0d9377be2c71b296c157f9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d4/d6f/class_c2_m2_1_1_interaction_1_1_u_i_1_1_raycast_keyboard.html">RaycastKeyboard</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d4e/class_c2_m2_1_1_game_manager.html#aeeb2f1256d0d9377be2c71b296c157f9">raycastKeyboard</a><code> [get, set]</code></td></tr>
 <tr class="separator:aeeb2f1256d0d9377be2c71b296c157f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
@@ -188,7 +195,9 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:ab316da7f311a51aca774ed5d47becdd2"><td class="memItemLeft" align="right" valign="top">readonly int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d4e/class_c2_m2_1_1_game_manager.html#ab316da7f311a51aca774ed5d47becdd2">logQCap</a> = 100</td></tr>
 <tr class="separator:ab316da7f311a51aca774ed5d47becdd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Function Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Stores many global variables, handles pregame initializations </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a1f931a826f1b6b649da64e6316bf3fed"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1f931a826f1b6b649da64e6316bf3fed">&#9670;&nbsp;</a></span>Awake()</h2>
 
@@ -466,6 +475,20 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="af518d5511a07b74bea16a6b26259d4c3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af518d5511a07b74bea16a6b26259d4c3">&#9670;&nbsp;</a></span>lineRendMaterial</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Material C2M2.GameManager.lineRendMaterial</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="aa058e5c7aa89a098267a5b237c9b44aa"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa058e5c7aa89a098267a5b237c9b44aa">&#9670;&nbsp;</a></span>logQ</h2>
 
@@ -705,7 +728,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">RaycastKeyboard C2M2.GameManager.raycastKeyboard</td>
+          <td class="memname"><a class="el" href="../../d4/d6f/class_c2_m2_1_1_interaction_1_1_u_i_1_1_raycast_keyboard.html">RaycastKeyboard</a> C2M2.GameManager.raycastKeyboard</td>
         </tr>
       </table>
   </td>

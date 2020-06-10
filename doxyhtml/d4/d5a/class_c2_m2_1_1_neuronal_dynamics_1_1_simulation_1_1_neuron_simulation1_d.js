@@ -1,6 +1,6 @@
 var class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_neuron_simulation1_d =
 [
-    [ "BuildMesh", "d4/d5a/class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_neuron_simulation1_d.html#ab73498647c3d6f584d74d02b497754f7", null ],
+    [ "BuildVisualization", "d4/d5a/class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_neuron_simulation1_d.html#a136028c065549e19104076860a0baade", null ],
     [ "Get1DValues", "d4/d5a/class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_neuron_simulation1_d.html#aeb409dbc3a4eb0b8ee36f131b2a943d5", null ],
     [ "GetValues", "d4/d5a/class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_neuron_simulation1_d.html#aaf7c40fc78181c57a2229cf183a5f34d", null ],
     [ "Set1DValues", "d4/d5a/class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_neuron_simulation1_d.html#a9f975c480654ffdd624e66e344d3c3f7", null ],

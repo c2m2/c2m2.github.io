@@ -25,7 +25,7 @@
 </g>
 <!-- Node2 -->
 <g id="node2" class="node"><title>Node2</title>
-<g id="a_node2"><a xlink:href="../../d1/d56/class_c2_m2_1_1_tests_1_1_awake_test.html" target="_top" xlink:title=" ">
+<g id="a_node2"><a xlink:href="../../d1/d56/class_c2_m2_1_1_tests_1_1_awake_test.html" target="_top" xlink:title="TestManager will run tests that derive from AwakeTest during Awake">
 <polygon fill="white" stroke="black" points="33,-116.5 33,-173.5 104,-173.5 104,-116.5 33,-116.5"/>
 <text text-anchor="middle" x="68.5" y="-161.5" font-family="Courier New" font-size="10.00">AwakeTest</text>
 <polyline fill="none" stroke="black" points="33,-154.5 104,-154.5 "/>

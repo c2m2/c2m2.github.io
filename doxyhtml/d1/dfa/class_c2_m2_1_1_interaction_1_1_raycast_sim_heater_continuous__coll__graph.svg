@@ -226,7 +226,7 @@ var sectionId = 'dynsection-1';
 </g>
 <!-- Node10 -->
 <g id="node10" class="node"><title>Node10</title>
-<g id="a_node10"><a xlink:href="../../df/d79/class_c2_m2_1_1_interaction_1_1_adjacency_1_1_dijkstra_search.html" target="_top" xlink:title=" ">
+<g id="a_node10"><a xlink:href="../../df/d79/class_c2_m2_1_1_interaction_1_1_adjacency_1_1_dijkstra_search.html" target="_top" xlink:title="Runs a dijkstra search over a surface of mesh vertices, given an initial hit point and a distance thr...">
 <polygon fill="white" stroke="black" points="493,-277.5 493,-356.5 672,-356.5 672,-277.5 493,-277.5"/>
 <text text-anchor="start" x="501" y="-344.5" font-family="Courier New" font-size="10.00">C2M2.Interaction.Adjacency.</text>
 <text text-anchor="middle" x="582.5" y="-333.5" font-family="Courier New" font-size="10.00">DijkstraSearch</text>
@@ -245,7 +245,7 @@ var sectionId = 'dynsection-1';
 </g>
 <!-- Node11 -->
 <g id="node11" class="node"><title>Node11</title>
-<g id="a_node11"><a xlink:href="../../d1/d3e/class_c2_m2_1_1_interaction_1_1_adjacency_1_1_adjacency_list.html" target="_top" xlink:title=" ">
+<g id="a_node11"><a xlink:href="../../d1/d3e/class_c2_m2_1_1_interaction_1_1_adjacency_1_1_adjacency_list.html" target="_top" xlink:title="Given a mesh, creates and stores an edge list and adjacency list of the mesh vertices">
 <polygon fill="white" stroke="black" points="368,-404.5 368,-560.5 547,-560.5 547,-404.5 368,-404.5"/>
 <text text-anchor="start" x="376" y="-548.5" font-family="Courier New" font-size="10.00">C2M2.Interaction.Adjacency.</text>
 <text text-anchor="middle" x="457.5" y="-537.5" font-family="Courier New" font-size="10.00">AdjacencyList</text>

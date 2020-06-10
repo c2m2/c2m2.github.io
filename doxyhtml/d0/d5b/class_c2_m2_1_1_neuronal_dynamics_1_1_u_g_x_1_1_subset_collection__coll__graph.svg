@@ -16,8 +16,8 @@
 <text text-anchor="start" x="8" y="-67.5" font-family="Courier New" font-size="10.00">C2M2.NeuronalDynamics.UGX.</text>
 <text text-anchor="middle" x="86.5" y="-56.5" font-family="Courier New" font-size="10.00">SubsetCollection</text>
 <polyline fill="none" stroke="black" points="0,-49.5 173,-49.5 "/>
-<text text-anchor="start" x="8" y="-37.5" font-family="Courier New" font-size="10.00">+ this[string name]</text>
-<text text-anchor="start" x="8" y="-26.5" font-family="Courier New" font-size="10.00">&#45; subsets</text>
+<text text-anchor="start" x="8" y="-37.5" font-family="Courier New" font-size="10.00">+ subsets</text>
+<text text-anchor="start" x="8" y="-26.5" font-family="Courier New" font-size="10.00">+ this[string name]</text>
 <polyline fill="none" stroke="black" points="0,-19.5 173,-19.5 "/>
 <text text-anchor="start" x="8" y="-7.5" font-family="Courier New" font-size="10.00">+ ToString()</text>
 </a>

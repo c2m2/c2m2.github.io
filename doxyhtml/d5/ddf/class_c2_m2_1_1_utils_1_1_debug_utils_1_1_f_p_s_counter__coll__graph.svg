@@ -11,17 +11,17 @@
 <polygon fill="white" stroke="none" points="-4,4 -4,-321 244.5,-321 244.5,4 -4,4"/>
 <!-- Node1 -->
 <g id="node1" class="node"><title>Node1</title>
-<g id="a_node1"><a xlink:title=" ">
+<g id="a_node1"><a xlink:title="Records and stores frame rendering time data over multiple seconds">
 <polygon fill="#bfbfbf" stroke="black" points="0,-0.5 0,-200.5 209,-200.5 209,-0.5 0,-0.5"/>
 <text text-anchor="middle" x="104.5" y="-188.5" font-family="Courier New" font-size="10.00">C2M2.Utils.DebugUtils.FPSCounter</text>
 <polyline fill="none" stroke="black" points="0,-181.5 209,-181.5 "/>
 <text text-anchor="start" x="8" y="-169.5" font-family="Courier New" font-size="10.00">+ sampleSize</text>
-<text text-anchor="start" x="8" y="-158.5" font-family="Courier New" font-size="10.00">+ AverageFPS</text>
-<text text-anchor="start" x="8" y="-147.5" font-family="Courier New" font-size="10.00">+ HighestFPS</text>
-<text text-anchor="start" x="8" y="-136.5" font-family="Courier New" font-size="10.00">+ LowestFPS</text>
-<text text-anchor="start" x="8" y="-125.5" font-family="Courier New" font-size="10.00">+ averageFPSString</text>
-<text text-anchor="start" x="8" y="-114.5" font-family="Courier New" font-size="10.00">+ highestFPSString</text>
-<text text-anchor="start" x="8" y="-103.5" font-family="Courier New" font-size="10.00">+ lowestFPSString</text>
+<text text-anchor="start" x="8" y="-158.5" font-family="Courier New" font-size="10.00">+ avg</text>
+<text text-anchor="start" x="8" y="-147.5" font-family="Courier New" font-size="10.00">+ high</text>
+<text text-anchor="start" x="8" y="-136.5" font-family="Courier New" font-size="10.00">+ low</text>
+<text text-anchor="start" x="8" y="-125.5" font-family="Courier New" font-size="10.00">+ highStr</text>
+<text text-anchor="start" x="8" y="-114.5" font-family="Courier New" font-size="10.00">+ avgStr</text>
+<text text-anchor="start" x="8" y="-103.5" font-family="Courier New" font-size="10.00">+ lowStr</text>
 <text text-anchor="start" x="8" y="-92.5" font-family="Courier New" font-size="10.00">&#45; fpsBuffer</text>
 <text text-anchor="start" x="8" y="-81.5" font-family="Courier New" font-size="10.00">&#45; fpsBufferIndex</text>
 <polyline fill="none" stroke="black" points="0,-74.5 209,-74.5 "/>
