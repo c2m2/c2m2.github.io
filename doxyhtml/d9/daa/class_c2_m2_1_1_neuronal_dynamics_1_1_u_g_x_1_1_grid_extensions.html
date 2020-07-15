@@ -99,8 +99,7 @@ $(document).ready(function(){initNavTree('d9/daa/class_c2_m2_1_1_neuronal_dynami
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d7/d95/class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_grid_extensions__coll__graph.svg" width="242" height="147"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d7/d95/class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_grid_extensions__coll__graph.svg" width="242" height="147"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
@@ -113,6 +112,7 @@ Static Public Member Functions</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">grid</td><td>Name of grid</td></tr>
     <tr><td class="paramname">vertex</td><td><a class="el" href="../../d5/d47/struct_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_vertex.html" title="Immutable vertex representation">Vertex</a></td></tr>
+    <tr><td class="paramname">subsetName</td><td><a class="el" href="../../d5/d9d/struct_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_subset.html" title="A simple data class representing Subset information">Subset</a> name </td></tr>
   </table>
   </dd>
 </dl>
@@ -123,6 +123,7 @@ Static Public Member Functions</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">grid</td><td>Name of grid</td></tr>
     <tr><td class="paramname">id</td><td><a class="el" href="../../d5/d47/struct_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_vertex.html" title="Immutable vertex representation">Vertex</a> id</td></tr>
+    <tr><td class="paramname">subsetName</td><td><a class="el" href="../../d5/d9d/struct_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_subset.html" title="A simple data class representing Subset information">Subset</a> name </td></tr>
   </table>
   </dd>
 </dl>
@@ -172,7 +173,8 @@ Static Public Member Functions</h2></td></tr>
 <p>Returns the indices of a subset specified by name </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">name</td><td>Name of subset</td></tr>
+    <tr><td class="paramname">name</td><td>Name of subset </td></tr>
+    <tr><td class="paramname">grid</td><td>A grid instance </td></tr>
   </table>
   </dd>
 </dl>
@@ -223,11 +225,12 @@ Static Public Member Functions</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">grid</td><td>Name of grid</td></tr>
     <tr><td class="paramname">id</td><td><a class="el" href="../../d5/d47/struct_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_vertex.html" title="Immutable vertex representation">Vertex</a> id</td></tr>
+    <tr><td class="paramname">subsetName</td><td><a class="el" href="../../d5/d9d/struct_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_subset.html" title="A simple data class representing Subset information">Subset</a> name </td></tr>
   </table>
   </dd>
 </dl>
 </p>
-<p>Returns false if subset not present in any available subset in this grid </p>
+<p>Returns false if subset not present in any available subset in this grid &lt;return&gt; bool &lt;/return&gt; </p>
 
 </div>
 </div>
@@ -268,6 +271,7 @@ Static Public Member Functions</h2></td></tr>
 <p>Returns the name of a subset </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
+    <tr><td class="paramname">grid</td><td>Name of grid</td></tr>
     <tr><td class="paramname">subset</td><td>A subset</td></tr>
   </table>
   </dd>
@@ -319,6 +323,7 @@ Static Public Member Functions</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">grid</td><td>Name of grid</td></tr>
     <tr><td class="paramname">vertex</td><td><a class="el" href="../../d5/d47/struct_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_vertex.html" title="Immutable vertex representation">Vertex</a></td></tr>
+    <tr><td class="paramname">subsetName</td><td><a class="el" href="../../d5/d9d/struct_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_subset.html" title="A simple data class representing Subset information">Subset</a> name </td></tr>
   </table>
   </dd>
 </dl>

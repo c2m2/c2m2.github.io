@@ -70,7 +70,7 @@ var sectionId = 'dynsection-0';
 </g>
 <!-- Node2 -->
 <g id="node2" class="node"><title>Node2</title>
-<g id="a_node2"><a xlink:href="../../de/da8/struct_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_diameter_data.html" target="_top" xlink:title="Data for diameter attachment">
+<g id="a_node2"><a xlink:href="../../de/da8/struct_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_diameter_data.html" target="_top" xlink:title="Data for diameter attachment Used to store diameters during reading in a grid">
 <polygon fill="white" stroke="black" points="0,-11.5 0,-79.5 173,-79.5 173,-11.5 0,-11.5"/>
 <text text-anchor="start" x="8" y="-67.5" font-family="Courier New" font-size="10.00">C2M2.NeuronalDynamics.UGX.</text>
 <text text-anchor="middle" x="86.5" y="-56.5" font-family="Courier New" font-size="10.00">DiameterData</text>
@@ -88,7 +88,7 @@ var sectionId = 'dynsection-0';
 </g>
 <!-- Node3 -->
 <g id="node3" class="node"><title>Node3</title>
-<g id="a_node3"><a xlink:href="../../d2/dae/struct_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_mapping_data.html" target="_top" xlink:title="Data for mapping attachment">
+<g id="a_node3"><a xlink:href="../../d2/dae/struct_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_mapping_data.html" target="_top" xlink:title="Data for mapping attachment Used to read in mapping data which maps between 1d and 2d vertices">
 <polygon fill="white" stroke="black" points="191,-0.5 191,-90.5 364,-90.5 364,-0.5 191,-0.5"/>
 <text text-anchor="start" x="199" y="-78.5" font-family="Courier New" font-size="10.00">C2M2.NeuronalDynamics.UGX.</text>
 <text text-anchor="middle" x="277.5" y="-67.5" font-family="Courier New" font-size="10.00">MappingData</text>
@@ -108,7 +108,7 @@ var sectionId = 'dynsection-0';
 </g>
 <!-- Node4 -->
 <g id="node4" class="node"><title>Node4</title>
-<g id="a_node4"><a xlink:href="../../df/d3d/struct_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_normal_data.html" target="_top" xlink:title="Data for normals of grid">
+<g id="a_node4"><a xlink:href="../../df/d3d/struct_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_normal_data.html" target="_top" xlink:title="Data for normals of grid Used to store normals during reading in a grid">
 <polygon fill="white" stroke="black" points="382,-11.5 382,-79.5 555,-79.5 555,-11.5 382,-11.5"/>
 <text text-anchor="start" x="390" y="-67.5" font-family="Courier New" font-size="10.00">C2M2.NeuronalDynamics.UGX.</text>
 <text text-anchor="middle" x="468.5" y="-56.5" font-family="Courier New" font-size="10.00">NormalData</text>
@@ -126,7 +126,7 @@ var sectionId = 'dynsection-0';
 </g>
 <!-- Node5 -->
 <g id="node5" class="node"><title>Node5</title>
-<g id="a_node5"><a xlink:href="../../dc/dea/struct_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_synapse_data.html" target="_top" xlink:title="Data for synapse attachment">
+<g id="a_node5"><a xlink:href="../../dc/dea/struct_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_synapse_data.html" target="_top" xlink:title="Data for synapse attachment Used to store synapse data during reading in a grid">
 <polygon fill="white" stroke="black" points="573,-11.5 573,-79.5 746,-79.5 746,-11.5 573,-11.5"/>
 <text text-anchor="start" x="581" y="-67.5" font-family="Courier New" font-size="10.00">C2M2.NeuronalDynamics.UGX.</text>
 <text text-anchor="middle" x="659.5" y="-56.5" font-family="Courier New" font-size="10.00">SynapseData</text>

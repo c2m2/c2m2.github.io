@@ -11,7 +11,7 @@
 <polygon fill="white" stroke="none" points="-4,4 -4,-167 177,-167 177,4 -4,4"/>
 <!-- Node1 -->
 <g id="node1" class="node"><title>Node1</title>
-<g id="a_node1"><a xlink:title="Data for synapse attachment">
+<g id="a_node1"><a xlink:title="Data for synapse attachment Used to store synapse data during reading in a grid">
 <polygon fill="#bfbfbf" stroke="black" points="0,-0.5 0,-68.5 173,-68.5 173,-0.5 0,-0.5"/>
 <text text-anchor="start" x="8" y="-56.5" font-family="Courier New" font-size="10.00">C2M2.NeuronalDynamics.UGX.</text>
 <text text-anchor="middle" x="86.5" y="-45.5" font-family="Courier New" font-size="10.00">SynapseData</text>

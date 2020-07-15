@@ -163,6 +163,7 @@ Static Private Attributes</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="../../d8/d27/class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_u_g_x_reader_test.html" title="UGXReaderTest">UGXReaderTest</a> </p>
+<p><a class="el" href="../../dd/d6e/namespace_c2_m2_1_1_neuronal_dynamics_1_1_tests.html">Tests</a> the <a class="el" href="../../de/ddc/class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_u_g_x_reader.html" title="Simple UGX reader class">UGXReader</a> on a simple static CNG cell from NeuroMorpho database </p>
 </div><h2 class="groupheader">Member Enumeration Documentation</h2>
 <a id="af8704ba34e872247a623478633af9df5"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af8704ba34e872247a623478633af9df5">&#9670;&nbsp;</a></span>Cell</h2>
@@ -267,7 +268,8 @@ Static Private Attributes</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">geom1d</td><td>Filename of 1d (model) geometry </td></tr>
-    <tr><td class="paramname">geom3d</td><td>Filename of 2d (surface) geometry </td></tr>
+    <tr><td class="paramname">geom3d</td><td>Filename of 2d (surface) geometry with mapping data </td></tr>
+    <tr><td class="paramname">geom3dvis</td><td>Filename of 2d (surface) geometry for visualization </td></tr>
   </table>
   </dd>
 </dl>
@@ -276,7 +278,7 @@ Static Private Attributes</h2></td></tr>
 <p>Surface geom (With triangles)</p>
 <p>For mapping</p>
 <p>Each 2d (surface) vertex id is associated with two 1d (model) vertex indices and a Lambda parameter</p>
-<p>Depending on precision points are not the same (Vector3). Can associated index with vPoints in SWC grid import / grid generation. Will this be more robust/easier?? TODO: Geometries still look awkward from NeuriteProjector grid generation somehow</p>
+<p>Depending on precision points are not the same (Vector3) when read from the .ugx and from the Unity mesh (double vs. float)</p>
 
 </div>
 </div>
@@ -307,7 +309,7 @@ Static Private Attributes</h2></td></tr>
 <p>Example for reading diameters from <a class="el" href="../../d7/df6/namespace_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x.html" title="Utilities for processing .ugx files containing 1D, 3D, and mapping geometry info">UGX</a> files </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">filename</td><td></td></tr>
+    <tr><td class="paramname">filename</td><td>Name of file to read in as an example to verify diameters are read</td></tr>
   </table>
   </dd>
 </dl>
@@ -340,7 +342,7 @@ Static Private Attributes</h2></td></tr>
 <p>Start </p>
 <p>Which common attachments are available?</p>
 <p>Create an Empty grid</p>
-<p>Which attachments should be populated during grid read-in process. The data is stored in the DiameterAttachment internally, and the type is <a class="el" href="../../de/da8/struct_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_diameter_data.html" title="Data for diameter attachment">DiameterData</a></p>
+<p>Which attachments should be populated during grid read-in process. The data is stored in the DiameterAttachment internally, and the type is <a class="el" href="../../de/da8/struct_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_diameter_data.html" title="Data for diameter attachment Used to store diameters during reading in a grid">DiameterData</a></p>
 <p>Read the file with attachments specified by a list above</p>
 <p>Additional attachments can be attached to the grid which will be populated with the default value for each vertex VertexAttachmentAccesors need to be created, see below, to access the attached data objects</p>
 <p>Debug for mesh</p>

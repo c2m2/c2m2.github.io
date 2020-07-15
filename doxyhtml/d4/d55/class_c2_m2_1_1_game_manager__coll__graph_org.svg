@@ -15,18 +15,18 @@
 <polygon fill="#bfbfbf" stroke="black" points="170,-0.5 170,-321.5 361,-321.5 361,-0.5 170,-0.5"/>
 <text text-anchor="middle" x="265.5" y="-309.5" font-family="Courier New" font-size="10.00">C2M2.GameManager</text>
 <polyline fill="none" stroke="black" points="170,-302.5 361,-302.5 "/>
-<text text-anchor="start" x="178" y="-290.5" font-family="Courier New" font-size="10.00">+ mainThreadId</text>
-<text text-anchor="start" x="178" y="-279.5" font-family="Courier New" font-size="10.00">+ assetsPath</text>
-<text text-anchor="start" x="178" y="-268.5" font-family="Courier New" font-size="10.00">+ useVirtualReality</text>
-<text text-anchor="start" x="178" y="-257.5" font-family="Courier New" font-size="10.00">+ defaultMaterial</text>
-<text text-anchor="start" x="178" y="-246.5" font-family="Courier New" font-size="10.00">+ vertexColorationMaterial</text>
-<text text-anchor="start" x="178" y="-235.5" font-family="Courier New" font-size="10.00">+ lineRendMaterial</text>
-<text text-anchor="start" x="178" y="-224.5" font-family="Courier New" font-size="10.00">+ objectScaleDefault</text>
-<text text-anchor="start" x="178" y="-213.5" font-family="Courier New" font-size="10.00">+ ovrRightHandAnchor</text>
-<text text-anchor="start" x="178" y="-202.5" font-family="Courier New" font-size="10.00">+ ovrLeftHandAnchor</text>
-<text text-anchor="start" x="178" y="-191.5" font-family="Courier New" font-size="10.00">+ menu</text>
-<text text-anchor="start" x="178" y="-180.5" font-family="Courier New" font-size="10.00">+ raycastKeyboardPrefab</text>
-<text text-anchor="start" x="178" y="-169.5" font-family="Courier New" font-size="10.00">+ menuSnapPosition</text>
+<text text-anchor="start" x="178" y="-290.5" font-family="Courier New" font-size="10.00">+ defaultMaterial</text>
+<text text-anchor="start" x="178" y="-279.5" font-family="Courier New" font-size="10.00">+ vertexColorationMaterial</text>
+<text text-anchor="start" x="178" y="-268.5" font-family="Courier New" font-size="10.00">+ lineRendMaterial</text>
+<text text-anchor="start" x="178" y="-257.5" font-family="Courier New" font-size="10.00">+ whiteboard</text>
+<text text-anchor="start" x="178" y="-246.5" font-family="Courier New" font-size="10.00">+ objectScaleDefault</text>
+<text text-anchor="start" x="178" y="-235.5" font-family="Courier New" font-size="10.00">+ ovrRightHandAnchor</text>
+<text text-anchor="start" x="178" y="-224.5" font-family="Courier New" font-size="10.00">+ ovrLeftHandAnchor</text>
+<text text-anchor="start" x="178" y="-213.5" font-family="Courier New" font-size="10.00">+ menu</text>
+<text text-anchor="start" x="178" y="-202.5" font-family="Courier New" font-size="10.00">+ raycastKeyboardPrefab</text>
+<text text-anchor="start" x="178" y="-191.5" font-family="Courier New" font-size="10.00">+ menuSnapPosition</text>
+<text text-anchor="start" x="178" y="-180.5" font-family="Courier New" font-size="10.00">+ mainThreadId</text>
+<text text-anchor="start" x="178" y="-169.5" font-family="Courier New" font-size="10.00">+ assetsPath</text>
 <text text-anchor="start" x="178" y="-158.5" font-family="Courier New" font-size="10.00">+ ovrPlayerController</text>
 <text text-anchor="start" x="178" y="-147.5" font-family="Courier New" font-size="10.00">+ nonVRCamera</text>
 <text text-anchor="start" x="178" y="-136.5" font-family="Courier New" font-size="10.00">+ raycastKeyboard</text>

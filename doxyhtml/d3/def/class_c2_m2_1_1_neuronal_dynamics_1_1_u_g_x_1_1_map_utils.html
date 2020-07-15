@@ -105,12 +105,13 @@ $(document).ready(function(){initNavTree('d3/def/class_c2_m2_1_1_neuronal_dynami
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a3d1b475c2629c2299cd0ec4655a8a1c4"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../dd/d2a/struct_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_mapping_info.html">MappingInfo</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/def/class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_map_utils.html#a3d1b475c2629c2299cd0ec4655a8a1c4">BuildMap</a> (in string geom1d, in string geom2d, in bool validate=false, in string geomTris=null)</td></tr>
-<tr class="memdesc:a3d1b475c2629c2299cd0ec4655a8a1c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Build the meshes of the model geometry and surface geometry as well as the 2d-&gt;1d mapping TODO: New optimized meshes produced with ug4 will be triangulated and contain the mapping data. Thus the additional geom3dtris geometry will be discarded in the future.  <a href="../../d3/def/class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_map_utils.html#a3d1b475c2629c2299cd0ec4655a8a1c4">More...</a><br /></td></tr>
+<tr class="memdesc:a3d1b475c2629c2299cd0ec4655a8a1c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Build the meshes of the model geometry and surface geometry as well as the 2d-&gt;1d mapping  <a href="../../d3/def/class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_map_utils.html#a3d1b475c2629c2299cd0ec4655a8a1c4">More...</a><br /></td></tr>
 <tr class="separator:a3d1b475c2629c2299cd0ec4655a8a1c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa72869cb07f9a248aad46909c700b82a"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../dd/d2a/struct_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_mapping_info.html">MappingInfo</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/def/class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_map_utils.html#aa72869cb07f9a248aad46909c700b82a">BuildMap</a> (in string geom1d, in string geom2d, in bool validate=false)</td></tr>
 <tr class="memdesc:aa72869cb07f9a248aad46909c700b82a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delegate to BuildMap without a special visualization surface geometry  <a href="../../d3/def/class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_map_utils.html#aa72869cb07f9a248aad46909c700b82a">More...</a><br /></td></tr>
 <tr class="separator:aa72869cb07f9a248aad46909c700b82a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a85284f1c5a478d0388a377da14768590"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../dd/d2a/struct_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_mapping_info.html">MappingInfo</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/def/class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_map_utils.html#a85284f1c5a478d0388a377da14768590">BuildMap</a> ()</td></tr>
+<tr class="memdesc:a85284f1c5a478d0388a377da14768590"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delegate to build a default map for testing purposes  <a href="../../d3/def/class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_map_utils.html#a85284f1c5a478d0388a377da14768590">More...</a><br /></td></tr>
 <tr class="separator:a85284f1c5a478d0388a377da14768590"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -139,6 +140,8 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Delegate to build a default map for testing purposes </p>
 
 </div>
 </div>
@@ -191,7 +194,7 @@ Static Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd></dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="../../dd/d2a/struct_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_mapping_info.html" title="Encapsulates the grids and mapping data">MappingInfo</a> </dd></dl>
 
 </div>
 </div>
@@ -241,8 +244,8 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Build the meshes of the model geometry and surface geometry as well as the 2d-&gt;1d mapping TODO: New optimized meshes produced with ug4 will be triangulated and contain the mapping data. Thus the additional geom3dtris geometry will be discarded in the future. </p>
-<p>BuildMap</p>
+<p>Build the meshes of the model geometry and surface geometry as well as the 2d-&gt;1d mapping </p>
+<p>BuildMap Thus the additional geom3dtris geometry will be discarded in the future.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">geom1d</td><td>Filename of 1d (model) geometry </td></tr>
@@ -253,7 +256,7 @@ Static Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The mapping information </dd></dl>
-<p><a class="el" href="../../dd/d2a/struct_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_mapping_info.html">MappingInfo struct for details </a>A </p>
+<p><a class="el" href="../../dd/d2a/struct_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_mapping_info.html">MappingInfo struct for details </a> Note: Mapping data could be encapsulated also in the triangulated mesh, thus eliminating the third mesh parameter </p>
 
 </div>
 </div>

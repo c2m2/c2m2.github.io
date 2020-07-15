@@ -1,5 +1,4 @@
 <map id="C2M2.Simulation.PositionFieldSimulation" name="C2M2.Simulation.PositionFieldSimulation">
-<area shape="rect" id="node1" title="Simulation of type Vector3[] for simulating positional fields" alt="" coords="103,380,317,516"/>
-<area shape="rect" id="node2" href="$db/d39/class_c2_m2_1_1_simulation_1_1_simulation.html" title=" " alt="" coords="5,5,212,317"/>
-<area shape="rect" id="node3" href="$d3/dca/class_c2_m2_1_1_utils_1_1_timer.html" title=" " alt="" coords="236,42,387,281"/>
+<area shape="rect" id="node1" title="Simulation of type Vector3[] for simulating positional fields" alt="" coords="41,424,256,545"/>
+<area shape="rect" id="node2" href="$db/d39/class_c2_m2_1_1_simulation_1_1_simulation.html" title=" " alt="" coords="5,5,292,376"/>
 </map>

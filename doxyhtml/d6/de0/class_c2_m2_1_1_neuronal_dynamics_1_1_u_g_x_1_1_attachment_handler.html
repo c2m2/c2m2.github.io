@@ -107,7 +107,7 @@ $(document).ready(function(){initNavTree('d6/de0/class_c2_m2_1_1_neuronal_dynami
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a05ae3be2f42ec70b907af566f22322c1"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/de0/class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_attachment_handler.html#a05ae3be2f42ec70b907af566f22322c1">Distribute</a> (in <a class="el" href="../../d8/d5b/class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_grid.html">Grid</a> grid)</td></tr>
-<tr class="memdesc:a05ae3be2f42ec70b907af566f22322c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Distribute the attachments  <a href="../../d6/de0/class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_attachment_handler.html#a05ae3be2f42ec70b907af566f22322c1">More...</a><br /></td></tr>
+<tr class="memdesc:a05ae3be2f42ec70b907af566f22322c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Distribute mesh and attachments for grid in parallel  <a href="../../d6/de0/class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_attachment_handler.html#a05ae3be2f42ec70b907af566f22322c1">More...</a><br /></td></tr>
 <tr class="separator:a05ae3be2f42ec70b907af566f22322c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a260acf781e9b84cbed74e967f96a7040"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/de0/class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_attachment_handler.html#a260acf781e9b84cbed74e967f96a7040">Attach&lt; T &gt;</a> (this <a class="el" href="../../d8/d5b/class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_grid.html">Grid</a> grid, <a class="el" href="../../df/d7a/class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_i_attachment.html">IAttachment</a>&lt; T &gt; iattachment, in Boolean clone=true)</td></tr>
 <tr class="memdesc:a260acf781e9b84cbed74e967f96a7040"><td class="mdescLeft">&#160;</td><td class="mdescRight">Attaches an attachment to the grid if attachment has been registered and wasn't attached already to another grid  <a href="../../d6/de0/class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_attachment_handler.html#a260acf781e9b84cbed74e967f96a7040">More...</a><br /></td></tr>
@@ -138,7 +138,8 @@ Static Private Member Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The attachment handler allows managing attachments of grids </p>
-<p>TODO: Make handler a singleton <a class="el" href="../../d6/de0/class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_attachment_handler.html" title="The attachment handler allows managing attachments of grids">AttachmentHandler</a></p>
+<p><a class="el" href="../../d6/de0/class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_attachment_handler.html" title="The attachment handler allows managing attachments of grids">AttachmentHandler</a></p>
+<p>Note: <a class="el" href="../../d6/de0/class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_attachment_handler.html" title="The attachment handler allows managing attachments of grids">AttachmentHandler</a> could be a singleton </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a5ab4b2df997939004b9b251d9ff7c868"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5ab4b2df997939004b9b251d9ff7c868">&#9670;&nbsp;</a></span>AttachmentHandler()</h2>
@@ -347,14 +348,13 @@ Static Private Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Distribute the attachments </p>
+<p>Distribute mesh and attachments for grid in parallel </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">grid</td><td>a grid </td></tr>
   </table>
   </dd>
 </dl>
-<p>TODO: Distribute mesh and attachments for grid in parallel</p>
 
 </div>
 </div>

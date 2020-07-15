@@ -18,8 +18,8 @@
 <text text-anchor="middle" x="68.5" y="-136.5" font-family="Courier New" font-size="10.00"> </text>
 <polyline fill="none" stroke="black" points="0,-129.5 137,-129.5 "/>
 <text text-anchor="start" x="8" y="-117.5" font-family="Courier New" font-size="10.00">+ MergeArrays&lt; T &gt;()</text>
-<text text-anchor="start" x="8" y="-106.5" font-family="Courier New" font-size="10.00">+ FillArray&lt; T &gt;()</text>
-<text text-anchor="start" x="8" y="-95.5" font-family="Courier New" font-size="10.00">+ FillArray&lt; T &gt;()</text>
+<text text-anchor="start" x="8" y="-106.5" font-family="Courier New" font-size="10.00">+ Fill&lt; T &gt;()</text>
+<text text-anchor="start" x="8" y="-95.5" font-family="Courier New" font-size="10.00">+ Fill&lt; T &gt;()</text>
 <text text-anchor="start" x="8" y="-84.5" font-family="Courier New" font-size="10.00">+ FillArrayRandom()</text>
 <text text-anchor="start" x="8" y="-73.5" font-family="Courier New" font-size="10.00">+ FillArrayRandom()</text>
 <text text-anchor="start" x="8" y="-62.5" font-family="Courier New" font-size="10.00">+ FillArrayRandom()</text>

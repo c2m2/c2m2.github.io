@@ -11,7 +11,7 @@
 <polygon fill="white" stroke="none" points="-4,4 -4,-266 177,-266 177,4 -4,4"/>
 <!-- Node1 -->
 <g id="node1" class="node"><title>Node1</title>
-<g id="a_node1"><a xlink:title="A simple sine wave colorizer">
+<g id="a_node1"><a xlink:title="A simple sine wave colorizer The component colorizes a linear geometry or a cylinder surface by a sin...">
 <polygon fill="#bfbfbf" stroke="black" points="0,-0.5 0,-167.5 173,-167.5 173,-0.5 0,-0.5"/>
 <text text-anchor="start" x="8" y="-155.5" font-family="Courier New" font-size="10.00">C2M2.NeuronalDynamics.UGX.</text>
 <text text-anchor="middle" x="86.5" y="-144.5" font-family="Courier New" font-size="10.00">SineWaveColorizer</text>

@@ -1,4 +1,4 @@
 <map id="C2M2.NeuronalDynamics.Tests.ChangeShaderBehaviour" name="C2M2.NeuronalDynamics.Tests.ChangeShaderBehaviour">
-<area shape="rect" id="node1" title=" " alt="" coords="5,131,252,223"/>
+<area shape="rect" id="node1" title="Changes the shader for the selected gameobject, here: a 3d Mesh. If no shader is found,..." alt="" coords="5,131,252,223"/>
 <area shape="rect" id="node2" title=" " alt="" coords="65,5,192,83"/>
 </map>

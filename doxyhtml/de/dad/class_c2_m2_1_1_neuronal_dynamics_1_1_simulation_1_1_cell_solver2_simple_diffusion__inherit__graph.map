@@ -1,6 +1,6 @@
 <map id="C2M2.NeuronalDynamics.Simulation.CellSolver2SimpleDiffusion" name="C2M2.NeuronalDynamics.Simulation.CellSolver2SimpleDiffusion">
-<area shape="rect" id="node1" title=" " alt="" coords="5,968,292,1397"/>
-<area shape="rect" id="node2" href="$d4/d5a/class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_neuron_simulation1_d.html" title="Provide an interface for 1D neuron&#45;surface simulations to be visualized and interacted with" alt="" coords="49,608,248,920"/>
-<area shape="rect" id="node3" href="$d4/de1/class_c2_m2_1_1_simulation_1_1_surface_simulation.html" title="Simulation of type double[] for visualizing scalar fields on mesh surfaces" alt="" coords="45,365,252,560"/>
-<area shape="rect" id="node4" href="$db/d39/class_c2_m2_1_1_simulation_1_1_simulation.html" title=" " alt="" coords="45,5,252,317"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,1217,292,1647"/>
+<area shape="rect" id="node2" href="$d4/d5a/class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_neuron_simulation1_d.html" title="Provide an interface for 1D neuron&#45;surface simulations to be visualized and interacted with" alt="" coords="49,681,248,1169"/>
+<area shape="rect" id="node3" href="$d6/d2d/class_c2_m2_1_1_simulation_1_1_mesh_simulation.html" title="Simulation of type double[] for visualizing scalar fields on mesh surfaces" alt="" coords="45,424,252,633"/>
+<area shape="rect" id="node4" href="$db/d39/class_c2_m2_1_1_simulation_1_1_simulation.html" title=" " alt="" coords="25,5,272,376"/>
 </map>

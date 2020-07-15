@@ -1,8 +1,10 @@
 <map id="C2M2.NeuronalDynamics.Simulation.NeuronSimulation1D" name="C2M2.NeuronalDynamics.Simulation.NeuronSimulation1D">
-<area shape="rect" id="node1" title="Provide an interface for 1D neuron&#45;surface simulations to be visualized and interacted with" alt="" coords="103,749,389,1061"/>
-<area shape="rect" id="node2" href="$d4/de1/class_c2_m2_1_1_simulation_1_1_surface_simulation.html" title="Simulation of type double[] for visualizing scalar fields on mesh surfaces" alt="" coords="27,507,233,687"/>
-<area shape="rect" id="node3" href="$db/d39/class_c2_m2_1_1_simulation_1_1_simulation.html" title=" " alt="" coords="5,132,212,444"/>
-<area shape="rect" id="node4" href="$da/d4f/class_c2_m2_1_1_visualization_1_1_l_u_t_gradient.html" title="Create a fast and memory&#45;friendly color lookup table from a gradient" alt="" coords="236,176,499,400"/>
-<area shape="rect" id="node5" title=" " alt="" coords="304,5,431,83"/>
-<area shape="rect" id="node6" title=" " alt="" coords="257,558,312,635"/>
+<area shape="rect" id="node1" title="Provide an interface for 1D neuron&#45;surface simulations to be visualized and interacted with" alt="" coords="492,929,779,1388"/>
+<area shape="rect" id="node2" href="$d6/d2d/class_c2_m2_1_1_simulation_1_1_mesh_simulation.html" title="Simulation of type double[] for visualizing scalar fields on mesh surfaces" alt="" coords="233,672,440,867"/>
+<area shape="rect" id="node3" href="$db/d39/class_c2_m2_1_1_simulation_1_1_simulation.html" title=" " alt="" coords="5,132,252,503"/>
+<area shape="rect" id="node4" href="$da/d4f/class_c2_m2_1_1_visualization_1_1_l_u_t_gradient.html" title="Create a fast and memory&#45;friendly color lookup table from a gradient" alt="" coords="276,205,539,429"/>
+<area shape="rect" id="node5" title=" " alt="" coords="463,5,589,83"/>
+<area shape="rect" id="node8" href="$dc/d72/class_c2_m2_1_1_utils_1_1_mesh_utils_1_1_mesh_col_controller.html" title="Set this.mesh to quickly look up and update a MeshCollider&#39;s mesh" alt="" coords="465,527,688,648"/>
+<area shape="rect" id="node6" title=" " alt="" coords="711,731,765,808"/>
+<area shape="rect" id="node7" href="$dd/d2a/struct_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_mapping_info.html" title="Encapsulates the grids and mapping data" alt="" coords="789,709,1020,830"/>
 </map>

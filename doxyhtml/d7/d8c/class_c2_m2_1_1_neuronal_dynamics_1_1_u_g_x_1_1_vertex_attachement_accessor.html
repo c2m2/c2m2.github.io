@@ -149,7 +149,7 @@ Private Attributes</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>VertexAttachmentAcccesor </p>
-<p>Note/TODO: Could enhance this as a generic attachment accessor also for Edges Basically use this as AttachmentAccessor&lt;T, E&gt; with T being the attachment data and E the element type</p>
+<p>Note: Could enhance this as a generic attachment accessor also for other geometric elements like edges, and so forth with ease. Basically use this as AttachmentAccessor&lt;T, E&gt; with T being the attachment data and E the element type</p>
 <div class="typeconstraint">
 <dl><dt><b>Type Constraints</b></dt><dd>
 <table border="0" cellspacing="2" cellpadding="0">
@@ -179,7 +179,7 @@ Private Attributes</h2></td></tr>
 <p>VertexAttachmentAcccesor</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">name</td><td></td></tr>
+    <tr><td class="paramname">grid</td><td>A grid which should be accessed with a VertexAttachmentAccessor </td></tr>
   </table>
   </dd>
 </dl>
@@ -222,9 +222,9 @@ Private Attributes</h2></td></tr>
 <p>VertexAttachmentAcccesor</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">grid</td><td></td></tr>
-    <tr><td class="paramname">size</td><td></td></tr>
-    <tr><td class="paramname">def</td><td></td></tr>
+    <tr><td class="paramname">grid</td><td><a class="el" href="../../d8/d5b/class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_grid.html" title="Encapsulates Unity mesh and the edges of the UGX file">Grid</a> instance </td></tr>
+    <tr><td class="paramname">size</td><td>Number of elements </td></tr>
+    <tr><td class="paramname">def</td><td>default value for unassigned attachment data at vertex index </td></tr>
   </table>
   </dd>
 </dl>
@@ -310,11 +310,11 @@ Private Attributes</h2></td></tr>
 <p>GetValue</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">index</td><td></td></tr>
+    <tr><td class="paramname">index</td><td>Index of vertex</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd></dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>int </dd></dl>
 
 </div>
 </div>

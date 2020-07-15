@@ -8,6 +8,7 @@ var hierarchy =
     [ "C2M2.NeuronalDynamics.UGX.AttachmentHandler", "d6/de0/class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_attachment_handler.html", null ],
     [ "C2M2.NeuronalDynamics.UGX.AttachmentInfo", "d5/d27/struct_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_attachment_info.html", null ],
     [ "C2M2.MolecularDynamics.Simulation.BondRenderer", "d0/dbc/struct_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_bond_renderer.html", null ],
+    [ "C2M2.NeuronalDynamics.Simulation.CellPathPacket", "dd/d29/struct_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_cell_path_packet.html", null ],
     [ "C2M2.Utils.CSVBuilder", "d7/d26/class_c2_m2_1_1_utils_1_1_c_s_v_builder.html", null ],
     [ "C2M2.OIT.DataPoint", "d6/d32/class_c2_m2_1_1_o_i_t_1_1_data_point.html", null ],
     [ "C2M2.OIT.DataSet", "d7/d07/class_c2_m2_1_1_o_i_t_1_1_data_set.html", null ],
@@ -65,12 +66,12 @@ var hierarchy =
       [ "C2M2.Interaction.Adjacency.UniqueVertices", "d2/d9a/class_c2_m2_1_1_interaction_1_1_adjacency_1_1_unique_vertices.html", null ],
       [ "C2M2.Interaction.RaycastEventManager", "d5/df9/class_c2_m2_1_1_interaction_1_1_raycast_event_manager.html", null ],
       [ "C2M2.Interaction.RaycastForward", "dd/dfe/class_c2_m2_1_1_interaction_1_1_raycast_forward.html", null ],
-      [ "C2M2.Interaction.RaycastMeshCollider", "d4/dd1/class_c2_m2_1_1_interaction_1_1_raycast_mesh_collider.html", null ],
-      [ "C2M2.Interaction.RaycastPressEvents", "d8/d68/class_c2_m2_1_1_interaction_1_1_raycast_press_events.html", null ],
-      [ "C2M2.Interaction.RaycastSimHeater", "d4/dfc/class_c2_m2_1_1_interaction_1_1_raycast_sim_heater.html", [
+      [ "C2M2.Interaction.RaycastHeater", "dc/d54/class_c2_m2_1_1_interaction_1_1_raycast_heater.html", [
         [ "C2M2.Interaction.RaycastSimHeaterContinuous", "da/d95/class_c2_m2_1_1_interaction_1_1_raycast_sim_heater_continuous.html", null ],
         [ "C2M2.Interaction.RaycastSimHeaterDiscrete", "d3/d4c/class_c2_m2_1_1_interaction_1_1_raycast_sim_heater_discrete.html", null ]
       ] ],
+      [ "C2M2.Interaction.RaycastMeshCollider", "d4/dd1/class_c2_m2_1_1_interaction_1_1_raycast_mesh_collider.html", null ],
+      [ "C2M2.Interaction.RaycastPressEvents", "d8/d68/class_c2_m2_1_1_interaction_1_1_raycast_press_events.html", null ],
       [ "C2M2.Interaction.Signaling.PressEventSignaler", "d6/d4b/class_c2_m2_1_1_interaction_1_1_signaling_1_1_press_event_signaler.html", [
         [ "C2M2.Interaction.Signaling.RaycastEventSignaler", "d6/d2d/class_c2_m2_1_1_interaction_1_1_signaling_1_1_raycast_event_signaler.html", [
           [ "C2M2.Interaction.Signaling.MouseEventSignaler", "d3/da8/class_c2_m2_1_1_interaction_1_1_signaling_1_1_mouse_event_signaler.html", null ],
@@ -89,7 +90,7 @@ var hierarchy =
       [ "C2M2.Interaction.UI.RaycastShiftKey", "d2/d46/class_c2_m2_1_1_interaction_1_1_u_i_1_1_raycast_shift_key.html", null ],
       [ "C2M2.Interaction.UI.VRButton", "dc/de3/class_c2_m2_1_1_interaction_1_1_u_i_1_1_v_r_button.html", null ],
       [ "C2M2.Interaction.VR.VRGrabbable", "d9/d19/class_c2_m2_1_1_interaction_1_1_v_r_1_1_v_r_grabbable.html", null ],
-      [ "C2M2.Interaction.VR.VRRaycastable", "d5/d84/class_c2_m2_1_1_interaction_1_1_v_r_1_1_v_r_raycastable.html", null ],
+      [ "C2M2.Interaction.VR.VRRaycastable< ColliderSourceT >", "d5/d84/class_c2_m2_1_1_interaction_1_1_v_r_1_1_v_r_raycastable.html", null ],
       [ "C2M2.MolecularDynamics.Visualization.SphereInstantiator", "dd/dc5/class_c2_m2_1_1_molecular_dynamics_1_1_visualization_1_1_sphere_instantiator.html", null ],
       [ "C2M2.NeuronalDynamics.Alg.GraphBehaviour", "db/d9c/class_c2_m2_1_1_neuronal_dynamics_1_1_alg_1_1_graph_behaviour.html", null ],
       [ "C2M2.NeuronalDynamics.Tests.ChangeShaderBehaviour", "d3/d23/class_c2_m2_1_1_neuronal_dynamics_1_1_tests_1_1_change_shader_behaviour.html", null ],
@@ -107,7 +108,7 @@ var hierarchy =
       [ "C2M2.OIT.Interaction.ParticleSystemController", "d7/dcd/class_c2_m2_1_1_o_i_t_1_1_interaction_1_1_particle_system_controller.html", null ],
       [ "C2M2.OIT.Visualization.ParticleSystemAsciiDataReader", "de/dbc/class_c2_m2_1_1_o_i_t_1_1_visualization_1_1_particle_system_ascii_data_reader.html", null ],
       [ "C2M2.Simulation.Interactable", "dc/daa/class_c2_m2_1_1_simulation_1_1_interactable.html", [
-        [ "C2M2.Simulation.Simulation< ValueType, VizType >", "db/d39/class_c2_m2_1_1_simulation_1_1_simulation.html", null ]
+        [ "C2M2.Simulation.Simulation< ValueType, VizType, RaycastType, GrabType >", "db/d39/class_c2_m2_1_1_simulation_1_1_simulation.html", null ]
       ] ],
       [ "C2M2.Tests.SimpleBurst", "d5/d17/class_c2_m2_1_1_tests_1_1_simple_burst.html", null ],
       [ "C2M2.Tests.Test", "d1/d7b/class_c2_m2_1_1_tests_1_1_test.html", [
@@ -134,7 +135,6 @@ var hierarchy =
       [ "C2M2.Utils.DebugUtils.GetAllDependencies", "d9/d4a/class_c2_m2_1_1_utils_1_1_debug_utils_1_1_get_all_dependencies.html", null ],
       [ "C2M2.Utils.DebugUtils.LinesRenderer", "dc/def/class_c2_m2_1_1_utils_1_1_debug_utils_1_1_lines_renderer.html", null ],
       [ "C2M2.Utils.DebugUtils.MirrorText", "d2/df3/class_c2_m2_1_1_utils_1_1_debug_utils_1_1_mirror_text.html", null ],
-      [ "C2M2.Utils.DebugUtils.ScreenRecorder", "d4/d52/class_c2_m2_1_1_utils_1_1_debug_utils_1_1_screen_recorder.html", null ],
       [ "C2M2.Utils.MeshUtils.MeshColController", "dc/d72/class_c2_m2_1_1_utils_1_1_mesh_utils_1_1_mesh_col_controller.html", null ],
       [ "C2M2.Utils.MeshUtils.MonoMeshRescaler", "d9/d2b/class_c2_m2_1_1_utils_1_1_mesh_utils_1_1_mono_mesh_rescaler.html", null ],
       [ "C2M2.Utils.MeshUtils.MonoMeshReverser", "d9/d91/class_c2_m2_1_1_utils_1_1_mesh_utils_1_1_mono_mesh_reverser.html", null ],
@@ -165,8 +165,8 @@ var hierarchy =
     [ "C2M2.MolecularDynamics.Visualization.PSFFile", "da/dd3/class_c2_m2_1_1_molecular_dynamics_1_1_visualization_1_1_p_s_f_file.html", null ],
     [ "C2M2.MolecularDynamics.Visualization.PSFReader", "da/dcf/class_c2_m2_1_1_molecular_dynamics_1_1_visualization_1_1_p_s_f_reader.html", null ],
     [ "C2M2.Utils.RigidbodyUtilities", "d5/d4d/class_c2_m2_1_1_utils_1_1_rigidbody_utilities.html", null ],
-    [ "C2M2.Simulation.Simulation< double[], Mesh >", "db/d39/class_c2_m2_1_1_simulation_1_1_simulation.html", [
-      [ "C2M2.Simulation.SurfaceSimulation", "d4/de1/class_c2_m2_1_1_simulation_1_1_surface_simulation.html", [
+    [ "C2M2.Simulation.Simulation< double[], Mesh, VRRaycastableMesh, VRGrabbableMesh >", "db/d39/class_c2_m2_1_1_simulation_1_1_simulation.html", [
+      [ "C2M2.Simulation.MeshSimulation", "d6/d2d/class_c2_m2_1_1_simulation_1_1_mesh_simulation.html", [
         [ "C2M2.NeuronalDynamics.Simulation.NeuronSimulation1D", "d4/d5a/class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_neuron_simulation1_d.html", [
           [ "C2M2.NeuronalDynamics.Simulation.CellSolver2", "df/d54/class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_cell_solver2.html", null ],
           [ "C2M2.NeuronalDynamics.Simulation.CellSolver2DiffusionReaction", "de/d8a/class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_cell_solver2_diffusion_reaction.html", null ],
@@ -182,13 +182,16 @@ var hierarchy =
           [ "C2M2.NeuronalDynamics.Simulation.SimpleSolver_constDerivative", "d2/d45/class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_simple_solver__const_derivative.html", null ],
           [ "C2M2.NeuronalDynamics.Simulation.sparse_cholesky_test", "d2/d23/class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1sparse__cholesky__test.html", null ],
           [ "C2M2.NeuronalDynamics.Simulation.sparse_cholesky_time_test", "d2/d7d/class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1sparse__cholesky__time__test.html", null ],
-          [ "C2M2.NeuronalDynamics.Simulation.sparseNoArray_cholesky_time_test", "d3/de0/class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1sparse_no_array__cholesky__time__test.html", null ]
+          [ "C2M2.NeuronalDynamics.Simulation.sparseNoArray_cholesky_time", "d9/da5/class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1sparse_no_array__cholesky__time.html", null ],
+          [ "C2M2.NeuronalDynamics.Simulation.sparseNoArray_cholesky_time_test", "d3/de0/class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1sparse_no_array__cholesky__time__test.html", null ],
+          [ "C2M2.NeuronalDynamics.Simulation.SparseSolverTestv1", "d2/df3/class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_sparse_solver_testv1.html", null ],
+          [ "C2M2.NeuronalDynamics.Simulation.SparseSolverTestv1_noIO", "d9/d6b/class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_sparse_solver_testv1__no_i_o.html", null ]
         ] ],
         [ "C2M2.Simulation.Samples.CombinedMeshSimulation", "dd/d72/class_c2_m2_1_1_simulation_1_1_samples_1_1_combined_mesh_simulation.html", null ],
         [ "C2M2.Simulation.Samples.MeshSimulation", "dc/d80/class_c2_m2_1_1_simulation_1_1_samples_1_1_mesh_simulation.html", null ]
       ] ]
     ] ],
-    [ "C2M2.Simulation.Simulation< Vector3[], Transform[]>", "db/d39/class_c2_m2_1_1_simulation_1_1_simulation.html", [
+    [ "C2M2.Simulation.Simulation< Vector3[], Transform[], VRRaycastableColliders, VRGrabbableColliders >", "db/d39/class_c2_m2_1_1_simulation_1_1_simulation.html", [
       [ "C2M2.Simulation.PositionFieldSimulation", "d3/d66/class_c2_m2_1_1_simulation_1_1_position_field_simulation.html", [
         [ "C2M2.MolecularDynamics.Simulation.MDSimulation", "d0/d99/class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_m_d_simulation.html", [
           [ "C2M2.MolecularDynamics.Simulation.ExampleMDSimulation", "d5/de2/class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_example_m_d_simulation.html", null ],
@@ -211,7 +214,14 @@ var hierarchy =
       [ "C2M2.Interaction.UI.RaycastInputField.OnChangeEvent", "da/d7b/class_c2_m2_1_1_interaction_1_1_u_i_1_1_raycast_input_field_1_1_on_change_event.html", null ],
       [ "C2M2.Interaction.UI.RaycastInputField.OnSubmitEvent", "d4/de5/class_c2_m2_1_1_interaction_1_1_u_i_1_1_raycast_input_field_1_1_on_submit_event.html", null ]
     ] ],
+    [ "C2M2.MolecularDynamics.Simulation.MDSimulation.Vector3Int", "de/daf/class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_m_d_simulation_1_1_vector3_int.html", null ],
     [ "C2M2.NeuronalDynamics.UGX.Vertex", "d5/d47/struct_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_vertex.html", null ],
+    [ "C2M2.Interaction.VR.VRRaycastable< Collider[]>", "d5/d84/class_c2_m2_1_1_interaction_1_1_v_r_1_1_v_r_raycastable.html", [
+      [ "C2M2.Interaction.VR.VRRaycastableColliders", "d2/dd7/class_c2_m2_1_1_interaction_1_1_v_r_1_1_v_r_raycastable_colliders.html", null ]
+    ] ],
+    [ "C2M2.Interaction.VR.VRRaycastable< Mesh >", "d5/d84/class_c2_m2_1_1_interaction_1_1_v_r_1_1_v_r_raycastable.html", [
+      [ "C2M2.Interaction.VR.VRRaycastableMesh", "da/df7/class_c2_m2_1_1_interaction_1_1_v_r_1_1_v_r_raycastable_mesh.html", null ]
+    ] ],
     [ "C2M2.NeuronalDynamics.Visualization.VTK.VTUColor", "d5/da0/class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_t_k_1_1_v_t_u_color.html", null ],
     [ "C2M2.NeuronalDynamics.Visualization.VTK.VTUObject", "d0/d14/class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_t_k_1_1_v_t_u_object.html", null ],
     [ "C2M2.NeuronalDynamics.Visualization.VTK.VTUObjectBuilder", "da/da3/class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_t_k_1_1_v_t_u_object_builder.html", null ],

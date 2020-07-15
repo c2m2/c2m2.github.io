@@ -12,8 +12,5 @@ var dir_43e5331431e0ba4585dfe851dca53336 =
       [ "MirrorText", "d2/df3/class_c2_m2_1_1_utils_1_1_debug_utils_1_1_mirror_text.html", "d2/df3/class_c2_m2_1_1_utils_1_1_debug_utils_1_1_mirror_text" ]
     ] ],
     [ "PrintMaterialAssetPaths.cs", "d7/da5/_print_material_asset_paths_8cs.html", null ],
-    [ "ScreenRecorder.cs", "db/d30/_screen_recorder_8cs.html", [
-      [ "ScreenRecorder", "d4/d52/class_c2_m2_1_1_utils_1_1_debug_utils_1_1_screen_recorder.html", "d4/d52/class_c2_m2_1_1_utils_1_1_debug_utils_1_1_screen_recorder" ]
-    ] ],
     [ "SkinnedMeshRenderSnapshot.cs", "da/d3c/_skinned_mesh_render_snapshot_8cs.html", null ]
 ];

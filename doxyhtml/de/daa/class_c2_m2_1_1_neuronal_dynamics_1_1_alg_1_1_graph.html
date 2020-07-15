@@ -93,14 +93,15 @@ $(document).ready(function(){initNavTree('de/daa/class_c2_m2_1_1_neuronal_dynami
 </div><!--header-->
 <div class="contents">
 
-<p>Very simple class graph  
+<p>Very simple class representing a graph consisting of vertices and edges of a given type T  
  <a href="../../de/daa/class_c2_m2_1_1_neuronal_dynamics_1_1_alg_1_1_graph.html#details">More...</a></p>
 <div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="../../closed.png" alt="+"/> Collaboration diagram for C2M2.NeuronalDynamics.Alg.Graph&lt; T &gt;:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d9/d8f/class_c2_m2_1_1_neuronal_dynamics_1_1_alg_1_1_graph__coll__graph.svg" width="242" height="147"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d9/d8f/class_c2_m2_1_1_neuronal_dynamics_1_1_alg_1_1_graph__coll__graph.svg" width="242" height="147"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -108,19 +109,24 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a6fed680a2bec20d453ab1c44e3accecc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/daa/class_c2_m2_1_1_neuronal_dynamics_1_1_alg_1_1_graph.html#a6fed680a2bec20d453ab1c44e3accecc">Graph</a> ()</td></tr>
 <tr class="separator:a6fed680a2bec20d453ab1c44e3accecc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2ffea58ca0e995d09d9ff06d7a856ff8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/daa/class_c2_m2_1_1_neuronal_dynamics_1_1_alg_1_1_graph.html#a2ffea58ca0e995d09d9ff06d7a856ff8">Graph</a> (IEnumerable&lt; T &gt; vertices, IEnumerable&lt; Tuple&lt; T, T &gt;&gt; edges)</td></tr>
+<tr class="memdesc:a2ffea58ca0e995d09d9ff06d7a856ff8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a graph out of a list of vertices and edges  <a href="../../de/daa/class_c2_m2_1_1_neuronal_dynamics_1_1_alg_1_1_graph.html#a2ffea58ca0e995d09d9ff06d7a856ff8">More...</a><br /></td></tr>
 <tr class="separator:a2ffea58ca0e995d09d9ff06d7a856ff8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad84f5f420c542e0cd921dc527876a471"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/daa/class_c2_m2_1_1_neuronal_dynamics_1_1_alg_1_1_graph.html#ad84f5f420c542e0cd921dc527876a471">AddVertex</a> (T vertex)</td></tr>
+<tr class="memdesc:ad84f5f420c542e0cd921dc527876a471"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a vertex to the graph  <a href="../../de/daa/class_c2_m2_1_1_neuronal_dynamics_1_1_alg_1_1_graph.html#ad84f5f420c542e0cd921dc527876a471">More...</a><br /></td></tr>
 <tr class="separator:ad84f5f420c542e0cd921dc527876a471"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a270af3ee08b904db23e941be703f3b7f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/daa/class_c2_m2_1_1_neuronal_dynamics_1_1_alg_1_1_graph.html#a270af3ee08b904db23e941be703f3b7f">AddEdge</a> (Tuple&lt; T, T &gt; edge)</td></tr>
+<tr class="memdesc:a270af3ee08b904db23e941be703f3b7f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add an edge to the graph  <a href="../../de/daa/class_c2_m2_1_1_neuronal_dynamics_1_1_alg_1_1_graph.html#a270af3ee08b904db23e941be703f3b7f">More...</a><br /></td></tr>
 <tr class="separator:a270af3ee08b904db23e941be703f3b7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
 Properties</h2></td></tr>
 <tr class="memitem:a77d9b5868b875043dde9bb83c170ac9f"><td class="memItemLeft" align="right" valign="top">Dictionary&lt; T, HashSet&lt; T &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/daa/class_c2_m2_1_1_neuronal_dynamics_1_1_alg_1_1_graph.html#a77d9b5868b875043dde9bb83c170ac9f">AdjacencyList</a> = new Dictionary&lt;T, HashSet&lt;T&gt;&gt;()<code> [get]</code></td></tr>
+<tr class="memdesc:a77d9b5868b875043dde9bb83c170ac9f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Store adjacency list.  <a href="../../de/daa/class_c2_m2_1_1_neuronal_dynamics_1_1_alg_1_1_graph.html#a77d9b5868b875043dde9bb83c170ac9f">More...</a><br /></td></tr>
 <tr class="separator:a77d9b5868b875043dde9bb83c170ac9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Very simple class graph </p>
+<div class="textblock"><p>Very simple class representing a graph consisting of vertices and edges of a given type T </p>
+<p>&lt;typeparam="T"&gt; vertex type </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a6fed680a2bec20d453ab1c44e3accecc"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6fed680a2bec20d453ab1c44e3accecc">&#9670;&nbsp;</a></span>Graph() <span class="overload">[1/2]</span></h2>
@@ -165,6 +171,8 @@ Properties</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Construct a graph out of a list of vertices and edges </p>
+
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -184,6 +192,14 @@ Properties</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Add an edge to the graph </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">edge</td><td>edge </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="ad84f5f420c542e0cd921dc527876a471"></a>
@@ -201,6 +217,14 @@ Properties</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Add a vertex to the graph </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">vertex</td><td>A vertex </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -224,6 +248,8 @@ Properties</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Store adjacency list. </p>
 
 </div>
 </div>

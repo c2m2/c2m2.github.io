@@ -85,15 +85,21 @@ $(document).ready(function(){initNavTree('d0/d99/class_c2_m2_1_1_molecular_dynam
 
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
+<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="../../de/d0f/class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_m_d_simulation-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">C2M2.MolecularDynamics.Simulation.MDSimulation Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Reads data files and creates and updates visualizations for molecular dynamics systemss  
+ <a href="../../d0/d99/class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_m_d_simulation.html#details">More...</a></p>
 <div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="../../closed.png" alt="+"/> Inheritance diagram for C2M2.MolecularDynamics.Simulation.MDSimulation:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -111,12 +117,25 @@ $(document).ready(function(){initNavTree('d0/d99/class_c2_m2_1_1_molecular_dynam
 </div>
 </div>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/daf/class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_m_d_simulation_1_1_vector3_int.html">Vector3Int</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:a2b0fa12658a342140dd3369aa289c90d"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d99/class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_m_d_simulation.html#a2b0fa12658a342140dd3369aa289c90d">MethodType</a> { <a class="el" href="../../d0/d99/class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_m_d_simulation.html#a2b0fa12658a342140dd3369aa289c90da37033c09307b7f90d4a46d1d1352298f">MethodType.gjI</a>, 
+<a class="el" href="../../d0/d99/class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_m_d_simulation.html#a2b0fa12658a342140dd3369aa289c90da83ec1b0ebb12d4f5fe2881c4507ec670">MethodType.gjII</a>, 
+<a class="el" href="../../d0/d99/class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_m_d_simulation.html#a2b0fa12658a342140dd3369aa289c90da84d8ce95c58a694d941b59967199e478">MethodType.gjIII</a>
+ }</td></tr>
+<tr class="separator:a2b0fa12658a342140dd3369aa289c90d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a5c6056c4f9a3cbf6f5cd095e06a03555"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d99/class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_m_d_simulation.html#a5c6056c4f9a3cbf6f5cd095e06a03555">pdbFilePath</a> = &quot;PE/pe_cg.pdb&quot;</td></tr>
-<tr class="separator:a5c6056c4f9a3cbf6f5cd095e06a03555"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af8bce81f302631e4b1e588b78dc7b208"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d99/class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_m_d_simulation.html#af8bce81f302631e4b1e588b78dc7b208">psfFilePath</a> = &quot;PE/octatetracontane_128.cg.psf&quot;</td></tr>
-<tr class="separator:af8bce81f302631e4b1e588b78dc7b208"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af3da2d4b2d42b1d90eb43836465b2826"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d99/class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_m_d_simulation.html#af3da2d4b2d42b1d90eb43836465b2826">pdbPath</a> = &quot;PE/pe_cg.pdb&quot;</td></tr>
+<tr class="separator:af3da2d4b2d42b1d90eb43836465b2826"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa7e42584fbc82dbfde216a4dd760791e"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d99/class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_m_d_simulation.html#aa7e42584fbc82dbfde216a4dd760791e">psfPath</a> = &quot;PE/octatetracontane_128.cg.psf&quot;</td></tr>
+<tr class="separator:aa7e42584fbc82dbfde216a4dd760791e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8317f724cd84871ad62ca86617e5f505"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d99/class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_m_d_simulation.html#a8317f724cd84871ad62ca86617e5f505">radius</a> = 1f</td></tr>
 <tr class="separator:a8317f724cd84871ad62ca86617e5f505"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad038baa745e44fb94bf3d28020a64fa7"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d99/class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_m_d_simulation.html#ad038baa745e44fb94bf3d28020a64fa7">shaderName</a> = &quot;Standard&quot;</td></tr>
@@ -125,47 +144,77 @@ Public Attributes</h2></td></tr>
 <tr class="separator:ac64a219528efb38adf7c00ccb2f43b98"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a82b15add37e1b40ca279ab282a61501f"><td class="memItemLeft" align="right" valign="top">Material&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d99/class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_m_d_simulation.html#a82b15add37e1b40ca279ab282a61501f">bondMaterial</a></td></tr>
 <tr class="separator:a82b15add37e1b40ca279ab282a61501f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_attribs_class_c2_m2_1_1_simulation_1_1_simulation"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_class_c2_m2_1_1_simulation_1_1_simulation')"><img src="../../closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="../../db/d39/class_c2_m2_1_1_simulation_1_1_simulation.html">C2M2.Simulation.Simulation&lt; Vector3[], Transform[]&gt;</a></td></tr>
-<tr class="memitem:ac45ffe5db79d143897e9ed232d7430e5 inherit pub_attribs_class_c2_m2_1_1_simulation_1_1_simulation"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d39/class_c2_m2_1_1_simulation_1_1_simulation.html#ac45ffe5db79d143897e9ed232d7430e5">startOnAwake</a></td></tr>
-<tr class="memdesc:ac45ffe5db79d143897e9ed232d7430e5 inherit pub_attribs_class_c2_m2_1_1_simulation_1_1_simulation"><td class="mdescLeft">&#160;</td><td class="mdescRight">Should the simulation start itself in Awake?  <a href="../../db/d39/class_c2_m2_1_1_simulation_1_1_simulation.html#ac45ffe5db79d143897e9ed232d7430e5">More...</a><br /></td></tr>
-<tr class="separator:ac45ffe5db79d143897e9ed232d7430e5 inherit pub_attribs_class_c2_m2_1_1_simulation_1_1_simulation"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa0dda49bad2c62b1cf4d7cd6f8c10ece"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d99/class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_m_d_simulation.html#aa0dda49bad2c62b1cf4d7cd6f8c10ece">maxBondLength</a> = 10f</td></tr>
+<tr class="separator:aa0dda49bad2c62b1cf4d7cd6f8c10ece"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa68bf514048491ff4048f08aa2cab46"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/d99/class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_m_d_simulation.html#a2b0fa12658a342140dd3369aa289c90d">MethodType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d99/class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_m_d_simulation.html#aaa68bf514048491ff4048f08aa2cab46">methodType</a> = <a class="el" href="../../d0/d99/class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_m_d_simulation.html#a2b0fa12658a342140dd3369aa289c90da37033c09307b7f90d4a46d1d1352298f">MethodType.gjI</a></td></tr>
+<tr class="separator:aaa68bf514048491ff4048f08aa2cab46"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aafe4c0cbde4f979483d2fea1fddf1b21"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d99/class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_m_d_simulation.html#aafe4c0cbde4f979483d2fea1fddf1b21">timestepCount</a> = 50000</td></tr>
+<tr class="separator:aafe4c0cbde4f979483d2fea1fddf1b21"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9fb7b8e8ed00633201afbcf8e69b06e7"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d99/class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_m_d_simulation.html#a9fb7b8e8ed00633201afbcf8e69b06e7">timestepSize</a> = .1f</td></tr>
+<tr class="separator:a9fb7b8e8ed00633201afbcf8e69b06e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afba57f6e6a6cce29c0b69b8287a423da"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d99/class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_m_d_simulation.html#afba57f6e6a6cce29c0b69b8287a423da">gamma</a> = 0.1f</td></tr>
+<tr class="separator:afba57f6e6a6cce29c0b69b8287a423da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1dfff6ceef0b568a62778b3b9e32ec3"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d99/class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_m_d_simulation.html#ad1dfff6ceef0b568a62778b3b9e32ec3">boxLengthX</a> = 58.065f</td></tr>
+<tr class="separator:ad1dfff6ceef0b568a62778b3b9e32ec3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0270adb1cb6d41ab76304bc87ab537a2"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d99/class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_m_d_simulation.html#a0270adb1cb6d41ab76304bc87ab537a2">boxLengthY</a> = 58.065f</td></tr>
+<tr class="separator:a0270adb1cb6d41ab76304bc87ab537a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9288677ed992b5763dbb822ee58ebe28"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d99/class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_m_d_simulation.html#a9288677ed992b5763dbb822ee58ebe28">boxLengthZ</a> = 58.065f</td></tr>
+<tr class="separator:a9288677ed992b5763dbb822ee58ebe28"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_attribs_class_c2_m2_1_1_simulation_1_1_simulation"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_class_c2_m2_1_1_simulation_1_1_simulation')"><img src="../../closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="../../db/d39/class_c2_m2_1_1_simulation_1_1_simulation.html">C2M2.Simulation.Simulation&lt; Vector3[], Transform[], VRRaycastableColliders, VRGrabbableColliders &gt;</a></td></tr>
+<tr class="memitem:aabc0e3d2f9d31128726477beeed9fcd9 inherit pub_attribs_class_c2_m2_1_1_simulation_1_1_simulation"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d39/class_c2_m2_1_1_simulation_1_1_simulation.html#aabc0e3d2f9d31128726477beeed9fcd9">dryRun</a></td></tr>
+<tr class="memdesc:aabc0e3d2f9d31128726477beeed9fcd9 inherit pub_attribs_class_c2_m2_1_1_simulation_1_1_simulation"><td class="mdescLeft">&#160;</td><td class="mdescRight">Run simulation without visualization or interaction  <a href="../../db/d39/class_c2_m2_1_1_simulation_1_1_simulation.html#aabc0e3d2f9d31128726477beeed9fcd9">More...</a><br /></td></tr>
+<tr class="separator:aabc0e3d2f9d31128726477beeed9fcd9 inherit pub_attribs_class_c2_m2_1_1_simulation_1_1_simulation"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae54998c5c72a8bf3a8c649edbd39246a inherit pub_attribs_class_c2_m2_1_1_simulation_1_1_simulation"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d39/class_c2_m2_1_1_simulation_1_1_simulation.html#ae54998c5c72a8bf3a8c649edbd39246a">startOnAwake</a></td></tr>
+<tr class="memdesc:ae54998c5c72a8bf3a8c649edbd39246a inherit pub_attribs_class_c2_m2_1_1_simulation_1_1_simulation"><td class="mdescLeft">&#160;</td><td class="mdescRight">Should the simulation start itself in Awake?  <a href="../../db/d39/class_c2_m2_1_1_simulation_1_1_simulation.html#ae54998c5c72a8bf3a8c649edbd39246a">More...</a><br /></td></tr>
+<tr class="separator:ae54998c5c72a8bf3a8c649edbd39246a inherit pub_attribs_class_c2_m2_1_1_simulation_1_1_simulation"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
+<tr class="memitem:a34d6cb0a657d26f32af36de6dcd03228"><td class="memItemLeft" align="right" valign="top">override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d99/class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_m_d_simulation.html#a34d6cb0a657d26f32af36de6dcd03228">ReadData</a> ()</td></tr>
+<tr class="memdesc:a34d6cb0a657d26f32af36de6dcd03228"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read/initialize data here. ReadData is called before BuildVisualization  <a href="../../d0/d99/class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_m_d_simulation.html#a34d6cb0a657d26f32af36de6dcd03228">More...</a><br /></td></tr>
+<tr class="separator:a34d6cb0a657d26f32af36de6dcd03228"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a28c31d560ef224835d0c6b77924efa76"><td class="memItemLeft" align="right" valign="top">override Transform[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d99/class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_m_d_simulation.html#a28c31d560ef224835d0c6b77924efa76">BuildVisualization</a> ()</td></tr>
-<tr class="memdesc:a28c31d560ef224835d0c6b77924efa76"><td class="mdescLeft">&#160;</td><td class="mdescRight">In the future, <a class="el" href="../../d0/d99/class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_m_d_simulation.html">MDSimulation</a> should this method with the PDBReader, so you won't need to worry about coding it every time. We don't have a PDB file, so we create so make-believe positions  <a href="../../d0/d99/class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_m_d_simulation.html#a28c31d560ef224835d0c6b77924efa76">More...</a><br /></td></tr>
+<tr class="memdesc:a28c31d560ef224835d0c6b77924efa76"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads and stores PDB and PSF data, uses the data to build the system visualization  <a href="../../d0/d99/class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_m_d_simulation.html#a28c31d560ef224835d0c6b77924efa76">More...</a><br /></td></tr>
 <tr class="separator:a28c31d560ef224835d0c6b77924efa76"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a04d2e4333f58062d90b2949fb4bef95e"><td class="memItemLeft" align="right" valign="top">override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d99/class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_m_d_simulation.html#a04d2e4333f58062d90b2949fb4bef95e">UpdateVisChild</a> (in Vector3[] simulationValues)</td></tr>
-<tr class="memdesc:a04d2e4333f58062d90b2949fb4bef95e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called after position field transforms are updated, used here to update bond visualization  <a href="../../d0/d99/class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_m_d_simulation.html#a04d2e4333f58062d90b2949fb4bef95e">More...</a><br /></td></tr>
+<tr class="memdesc:a04d2e4333f58062d90b2949fb4bef95e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used here to update bond visualization.  <a href="../../d0/d99/class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_m_d_simulation.html#a04d2e4333f58062d90b2949fb4bef95e">More...</a><br /></td></tr>
 <tr class="separator:a04d2e4333f58062d90b2949fb4bef95e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_class_c2_m2_1_1_simulation_1_1_position_field_simulation"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_c2_m2_1_1_simulation_1_1_position_field_simulation')"><img src="../../closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="../../d3/d66/class_c2_m2_1_1_simulation_1_1_position_field_simulation.html">C2M2.Simulation.PositionFieldSimulation</a></td></tr>
-<tr class="memitem:a7e55a948f8f52748850e02b94028deb1 inherit pro_methods_class_c2_m2_1_1_simulation_1_1_position_field_simulation"><td class="memItemLeft" align="right" valign="top">override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d66/class_c2_m2_1_1_simulation_1_1_position_field_simulation.html#a7e55a948f8f52748850e02b94028deb1">OnAwake</a> ()</td></tr>
-<tr class="separator:a7e55a948f8f52748850e02b94028deb1 inherit pro_methods_class_c2_m2_1_1_simulation_1_1_position_field_simulation"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c065c6a5730216332a2752733fbf66b inherit pro_methods_class_c2_m2_1_1_simulation_1_1_position_field_simulation"><td class="memItemLeft" align="right" valign="top">override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d66/class_c2_m2_1_1_simulation_1_1_position_field_simulation.html#a8c065c6a5730216332a2752733fbf66b">OnAwake</a> (Transform[] <a class="el" href="../../db/d39/class_c2_m2_1_1_simulation_1_1_simulation.html#ad9f96fe079b8d93a9b0a726692d68555">viz</a>)</td></tr>
+<tr class="separator:a8c065c6a5730216332a2752733fbf66b inherit pro_methods_class_c2_m2_1_1_simulation_1_1_position_field_simulation"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa4c7634c7454cf7af30907ab48769473 inherit pro_methods_class_c2_m2_1_1_simulation_1_1_position_field_simulation"><td class="memItemLeft" align="right" valign="top">override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d66/class_c2_m2_1_1_simulation_1_1_position_field_simulation.html#aa4c7634c7454cf7af30907ab48769473">UpdateVisualization</a> (in Vector3[] simulationValues)</td></tr>
 <tr class="separator:aa4c7634c7454cf7af30907ab48769473 inherit pro_methods_class_c2_m2_1_1_simulation_1_1_position_field_simulation"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pro_methods_class_c2_m2_1_1_simulation_1_1_simulation"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_c2_m2_1_1_simulation_1_1_simulation')"><img src="../../closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="../../db/d39/class_c2_m2_1_1_simulation_1_1_simulation.html">C2M2.Simulation.Simulation&lt; Vector3[], Transform[]&gt;</a></td></tr>
-<tr class="memitem:a25a616ef5f1afdace735b648529a50e5 inherit pro_methods_class_c2_m2_1_1_simulation_1_1_simulation"><td class="memItemLeft" align="right" valign="top">abstract void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d39/class_c2_m2_1_1_simulation_1_1_simulation.html#a25a616ef5f1afdace735b648529a50e5">UpdateVisualization</a> (in ValueType newValues)</td></tr>
-<tr class="memdesc:a25a616ef5f1afdace735b648529a50e5 inherit pro_methods_class_c2_m2_1_1_simulation_1_1_simulation"><td class="mdescLeft">&#160;</td><td class="mdescRight">Simulations must know how to update the visualization and what type is needed for that.  <a href="../../db/d39/class_c2_m2_1_1_simulation_1_1_simulation.html#a25a616ef5f1afdace735b648529a50e5">More...</a><br /></td></tr>
-<tr class="separator:a25a616ef5f1afdace735b648529a50e5 inherit pro_methods_class_c2_m2_1_1_simulation_1_1_simulation"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af9f600541f710d78d61686fa3fdb29c5 inherit pro_methods_class_c2_m2_1_1_simulation_1_1_simulation"><td class="memItemLeft" align="right" valign="top">abstract void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d39/class_c2_m2_1_1_simulation_1_1_simulation.html#af9f600541f710d78d61686fa3fdb29c5">Solve</a> ()</td></tr>
-<tr class="memdesc:af9f600541f710d78d61686fa3fdb29c5 inherit pro_methods_class_c2_m2_1_1_simulation_1_1_simulation"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method containing simulation code  <a href="../../db/d39/class_c2_m2_1_1_simulation_1_1_simulation.html#af9f600541f710d78d61686fa3fdb29c5">More...</a><br /></td></tr>
-<tr class="separator:af9f600541f710d78d61686fa3fdb29c5 inherit pro_methods_class_c2_m2_1_1_simulation_1_1_simulation"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a40eaa464eb843079900e471464109154 inherit pro_methods_class_c2_m2_1_1_simulation_1_1_simulation"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d39/class_c2_m2_1_1_simulation_1_1_simulation.html#a40eaa464eb843079900e471464109154">OnStart</a> ()</td></tr>
-<tr class="separator:a40eaa464eb843079900e471464109154 inherit pro_methods_class_c2_m2_1_1_simulation_1_1_simulation"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aee8a74568edab7da8ae5b5228b35a1ae inherit pro_methods_class_c2_m2_1_1_simulation_1_1_simulation"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d39/class_c2_m2_1_1_simulation_1_1_simulation.html#aee8a74568edab7da8ae5b5228b35a1ae">OnUpdate</a> ()</td></tr>
-<tr class="separator:aee8a74568edab7da8ae5b5228b35a1ae inherit pro_methods_class_c2_m2_1_1_simulation_1_1_simulation"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_methods_class_c2_m2_1_1_simulation_1_1_simulation"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_c2_m2_1_1_simulation_1_1_simulation')"><img src="../../closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="../../db/d39/class_c2_m2_1_1_simulation_1_1_simulation.html">C2M2.Simulation.Simulation&lt; Vector3[], Transform[], VRRaycastableColliders, VRGrabbableColliders &gt;</a></td></tr>
+<tr class="memitem:a7eea4205a98f2e145e55317d3b9951da inherit pro_methods_class_c2_m2_1_1_simulation_1_1_simulation"><td class="memItemLeft" align="right" valign="top">abstract void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d39/class_c2_m2_1_1_simulation_1_1_simulation.html#a7eea4205a98f2e145e55317d3b9951da">UpdateVisualization</a> (in ValueType newValues)</td></tr>
+<tr class="memdesc:a7eea4205a98f2e145e55317d3b9951da inherit pro_methods_class_c2_m2_1_1_simulation_1_1_simulation"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update the visualization. This will be called once per <a class="el" href="../../db/d39/class_c2_m2_1_1_simulation_1_1_simulation.html#a4ef6c0492314a02fdfb613b19dd822e1">Update()</a> call  <a href="../../db/d39/class_c2_m2_1_1_simulation_1_1_simulation.html#a7eea4205a98f2e145e55317d3b9951da">More...</a><br /></td></tr>
+<tr class="separator:a7eea4205a98f2e145e55317d3b9951da inherit pro_methods_class_c2_m2_1_1_simulation_1_1_simulation"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc5e6e0adf67ae72e144c1424fd93625 inherit pro_methods_class_c2_m2_1_1_simulation_1_1_simulation"><td class="memItemLeft" align="right" valign="top">abstract void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d39/class_c2_m2_1_1_simulation_1_1_simulation.html#adc5e6e0adf67ae72e144c1424fd93625">Solve</a> ()</td></tr>
+<tr class="memdesc:adc5e6e0adf67ae72e144c1424fd93625 inherit pro_methods_class_c2_m2_1_1_simulation_1_1_simulation"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method containing simulation code  <a href="../../db/d39/class_c2_m2_1_1_simulation_1_1_simulation.html#adc5e6e0adf67ae72e144c1424fd93625">More...</a><br /></td></tr>
+<tr class="separator:adc5e6e0adf67ae72e144c1424fd93625 inherit pro_methods_class_c2_m2_1_1_simulation_1_1_simulation"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad5cca94f2a6488d0760f3b4b21aad850 inherit pro_methods_class_c2_m2_1_1_simulation_1_1_simulation"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d39/class_c2_m2_1_1_simulation_1_1_simulation.html#ad5cca94f2a6488d0760f3b4b21aad850">OnAwake</a> (VizType <a class="el" href="../../db/d39/class_c2_m2_1_1_simulation_1_1_simulation.html#ad9f96fe079b8d93a9b0a726692d68555">viz</a>)</td></tr>
+<tr class="separator:ad5cca94f2a6488d0760f3b4b21aad850 inherit pro_methods_class_c2_m2_1_1_simulation_1_1_simulation"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a33ebbb8b7e6c1fc57d9d0bc292605ed5 inherit pro_methods_class_c2_m2_1_1_simulation_1_1_simulation"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d39/class_c2_m2_1_1_simulation_1_1_simulation.html#a33ebbb8b7e6c1fc57d9d0bc292605ed5">OnStart</a> ()</td></tr>
+<tr class="separator:a33ebbb8b7e6c1fc57d9d0bc292605ed5 inherit pro_methods_class_c2_m2_1_1_simulation_1_1_simulation"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ebfff8ac128e60b44140e9faca71032 inherit pro_methods_class_c2_m2_1_1_simulation_1_1_simulation"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d39/class_c2_m2_1_1_simulation_1_1_simulation.html#a3ebfff8ac128e60b44140e9faca71032">OnUpdate</a> ()</td></tr>
+<tr class="separator:a3ebfff8ac128e60b44140e9faca71032 inherit pro_methods_class_c2_m2_1_1_simulation_1_1_simulation"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
-<tr class="memitem:ae2f5fcef5e1b6466ab772988cba3e0f0"><td class="memItemLeft" align="right" valign="top">Dictionary&lt; Transform, int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d99/class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_m_d_simulation.html#ae2f5fcef5e1b6466ab772988cba3e0f0">molLookup</a></td></tr>
-<tr class="separator:ae2f5fcef5e1b6466ab772988cba3e0f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a66cd432af7b7adc688e615e0c4e3b5cd"><td class="memItemLeft" align="right" valign="top">Vector3[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d99/class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_m_d_simulation.html#a66cd432af7b7adc688e615e0c4e3b5cd">x</a> = null</td></tr>
-<tr class="separator:a66cd432af7b7adc688e615e0c4e3b5cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a36eed5e300443f298a8bb2c1daf737f2"><td class="memItemLeft" align="right" valign="top">Vector3[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d99/class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_m_d_simulation.html#a36eed5e300443f298a8bb2c1daf737f2">v</a> = null</td></tr>
-<tr class="separator:a36eed5e300443f298a8bb2c1daf737f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a756174d1d8b549b7edee32d9ce0174be"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d99/class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_m_d_simulation.html#a756174d1d8b549b7edee32d9ce0174be">c</a> = -1</td></tr>
+<tr class="separator:a756174d1d8b549b7edee32d9ce0174be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a262d0ecd7c1c170590c01fb05b93cfee"><td class="memItemLeft" align="right" valign="top">Dictionary&lt; Transform, int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d99/class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_m_d_simulation.html#a262d0ecd7c1c170590c01fb05b93cfee">particleLookup</a></td></tr>
+<tr class="separator:a262d0ecd7c1c170590c01fb05b93cfee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac50ccd13a85f9db1440d0f3d24a48889"><td class="memItemLeft" align="right" valign="top">Vector3[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d99/class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_m_d_simulation.html#ac50ccd13a85f9db1440d0f3d24a48889">coord</a> = null</td></tr>
+<tr class="separator:ac50ccd13a85f9db1440d0f3d24a48889"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7204e0e0b69e39b1b2d7e4d207a64bf3"><td class="memItemLeft" align="right" valign="top">Vector3[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d99/class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_m_d_simulation.html#a7204e0e0b69e39b1b2d7e4d207a64bf3">vel</a> = null</td></tr>
+<tr class="memdesc:a7204e0e0b69e39b1b2d7e4d207a64bf3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Velocity of each particle  <a href="../../d0/d99/class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_m_d_simulation.html#a7204e0e0b69e39b1b2d7e4d207a64bf3">More...</a><br /></td></tr>
+<tr class="separator:a7204e0e0b69e39b1b2d7e4d207a64bf3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae6be1b21f6bec9f71c28ee572f1153e0"><td class="memItemLeft" align="right" valign="top">Vector3[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d99/class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_m_d_simulation.html#ae6be1b21f6bec9f71c28ee572f1153e0">r</a> = null</td></tr>
 <tr class="separator:ae6be1b21f6bec9f71c28ee572f1153e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0cc56c45ffc37a35ddb7d2b87de55b3a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../de/daf/class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_m_d_simulation_1_1_vector3_int.html">Vector3Int</a>[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d99/class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_m_d_simulation.html#a0cc56c45ffc37a35ddb7d2b87de55b3a">pbcFlag</a> = null</td></tr>
+<tr class="separator:a0cc56c45ffc37a35ddb7d2b87de55b3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad61008b14c8a5a8fbf864a799cabeab7"><td class="memItemLeft" align="right" valign="top">int[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d99/class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_m_d_simulation.html#ad61008b14c8a5a8fbf864a799cabeab7">bonds</a> = null</td></tr>
+<tr class="memdesc:ad61008b14c8a5a8fbf864a799cabeab7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Each two indices represents one bond.  <a href="../../d0/d99/class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_m_d_simulation.html#ad61008b14c8a5a8fbf864a799cabeab7">More...</a><br /></td></tr>
 <tr class="separator:ad61008b14c8a5a8fbf864a799cabeab7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a50cc4a8ddf3cda6cef7059bf6c20904a"><td class="memItemLeft" align="right" valign="top">int[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d99/class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_m_d_simulation.html#a50cc4a8ddf3cda6cef7059bf6c20904a">angles</a> = null</td></tr>
 <tr class="separator:a50cc4a8ddf3cda6cef7059bf6c20904a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -175,44 +224,81 @@ Protected Attributes</h2></td></tr>
 <tr class="separator:ad301f32244d589b3d5e390bb882959ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad4ac6f6da6d0dc4e0dcf6505484dfe8b"><td class="memItemLeft" align="right" valign="top">int[][]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d99/class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_m_d_simulation.html#ad4ac6f6da6d0dc4e0dcf6505484dfe8b">bond_topo</a> = null</td></tr>
 <tr class="separator:ad4ac6f6da6d0dc4e0dcf6505484dfe8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pro_attribs_class_c2_m2_1_1_simulation_1_1_position_field_simulation"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_c2_m2_1_1_simulation_1_1_position_field_simulation')"><img src="../../closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="../../d3/d66/class_c2_m2_1_1_simulation_1_1_position_field_simulation.html">C2M2.Simulation.PositionFieldSimulation</a></td></tr>
-<tr class="memitem:ad29f2109dae1d098c453004914bc3c16 inherit pro_attribs_class_c2_m2_1_1_simulation_1_1_position_field_simulation"><td class="memItemLeft" align="right" valign="top">Transform[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d66/class_c2_m2_1_1_simulation_1_1_position_field_simulation.html#ad29f2109dae1d098c453004914bc3c16">transforms</a></td></tr>
-<tr class="separator:ad29f2109dae1d098c453004914bc3c16 inherit pro_attribs_class_c2_m2_1_1_simulation_1_1_position_field_simulation"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pro_attribs_class_c2_m2_1_1_simulation_1_1_simulation"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_c2_m2_1_1_simulation_1_1_simulation')"><img src="../../closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="../../db/d39/class_c2_m2_1_1_simulation_1_1_simulation.html">C2M2.Simulation.Simulation&lt; Vector3[], Transform[]&gt;</a></td></tr>
-<tr class="memitem:afc52b8c9fdfbee85647b5c9eca17a1bb inherit pro_attribs_class_c2_m2_1_1_simulation_1_1_simulation"><td class="memItemLeft" align="right" valign="top">Mutex&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d39/class_c2_m2_1_1_simulation_1_1_simulation.html#afc52b8c9fdfbee85647b5c9eca17a1bb">mutex</a></td></tr>
-<tr class="memdesc:afc52b8c9fdfbee85647b5c9eca17a1bb inherit pro_attribs_class_c2_m2_1_1_simulation_1_1_simulation"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provide mutual exclusion to derived classes  <a href="../../db/d39/class_c2_m2_1_1_simulation_1_1_simulation.html#afc52b8c9fdfbee85647b5c9eca17a1bb">More...</a><br /></td></tr>
-<tr class="separator:afc52b8c9fdfbee85647b5c9eca17a1bb inherit pro_attribs_class_c2_m2_1_1_simulation_1_1_simulation"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_attribs_class_c2_m2_1_1_simulation_1_1_simulation"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_c2_m2_1_1_simulation_1_1_simulation')"><img src="../../closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="../../db/d39/class_c2_m2_1_1_simulation_1_1_simulation.html">C2M2.Simulation.Simulation&lt; Vector3[], Transform[], VRRaycastableColliders, VRGrabbableColliders &gt;</a></td></tr>
+<tr class="memitem:a9c15f59bf37e065adc284aaff8318539 inherit pro_attribs_class_c2_m2_1_1_simulation_1_1_simulation"><td class="memItemLeft" align="right" valign="top">Mutex&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d39/class_c2_m2_1_1_simulation_1_1_simulation.html#a9c15f59bf37e065adc284aaff8318539">mutex</a></td></tr>
+<tr class="memdesc:a9c15f59bf37e065adc284aaff8318539 inherit pro_attribs_class_c2_m2_1_1_simulation_1_1_simulation"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provide mutual exclusion to derived classes  <a href="../../db/d39/class_c2_m2_1_1_simulation_1_1_simulation.html#a9c15f59bf37e065adc284aaff8318539">More...</a><br /></td></tr>
+<tr class="separator:a9c15f59bf37e065adc284aaff8318539 inherit pro_attribs_class_c2_m2_1_1_simulation_1_1_simulation"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a41cdf43e03e719337c7782f2487ee3ff"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d99/class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_m_d_simulation.html#a41cdf43e03e719337c7782f2487ee3ff">gjI</a> (float <a class="el" href="../../d0/d99/class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_m_d_simulation.html#afba57f6e6a6cce29c0b69b8287a423da">gamma</a>, float dt)</td></tr>
+<tr class="separator:a41cdf43e03e719337c7782f2487ee3ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aecaec2c1ec8b65999b3dc3afd737a07f"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d99/class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_m_d_simulation.html#aecaec2c1ec8b65999b3dc3afd737a07f">gjII</a> (float <a class="el" href="../../d0/d99/class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_m_d_simulation.html#afba57f6e6a6cce29c0b69b8287a423da">gamma</a>, float dt)</td></tr>
+<tr class="separator:aecaec2c1ec8b65999b3dc3afd737a07f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d034ea62f2ccaf0c2e2a6eede9d6294"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d99/class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_m_d_simulation.html#a0d034ea62f2ccaf0c2e2a6eede9d6294">gjIII</a> (float <a class="el" href="../../d0/d99/class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_m_d_simulation.html#afba57f6e6a6cce29c0b69b8287a423da">gamma</a>, float dt)</td></tr>
+<tr class="separator:a0d034ea62f2ccaf0c2e2a6eede9d6294"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:a0911949ab6ce3a2447d83a50a0c14618"><td class="memItemLeft" align="right" valign="top">readonly string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d99/class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_m_d_simulation.html#a0911949ab6ce3a2447d83a50a0c14618">relPath</a> = Application.streamingAssetsPath + @&quot;/MolecularDynamics/&quot;</td></tr>
-<tr class="separator:a0911949ab6ce3a2447d83a50a0c14618"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad494b63dcc06da521a526dfa34a84ccb"><td class="memItemLeft" align="right" valign="top">readonly string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d99/class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_m_d_simulation.html#ad494b63dcc06da521a526dfa34a84ccb">path</a> = Application.streamingAssetsPath + @&quot;/MolecularDynamics/&quot;</td></tr>
+<tr class="separator:ad494b63dcc06da521a526dfa34a84ccb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7a2d6b246e60198c9b573727edfc6043"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/dbc/struct_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_bond_renderer.html">BondRenderer</a>[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d99/class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_m_d_simulation.html#a7a2d6b246e60198c9b573727edfc6043">bondRenderers</a></td></tr>
 <tr class="separator:a7a2d6b246e60198c9b573727edfc6043"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abd53ce3b1ffb028064f4b6a19c0f23ba"><td class="memItemLeft" align="right" valign="top">Shader&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d99/class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_m_d_simulation.html#abd53ce3b1ffb028064f4b6a19c0f23ba">shader</a></td></tr>
 <tr class="separator:abd53ce3b1ffb028064f4b6a19c0f23ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9595c6955b19618bc08c451972deccd4"><td class="memItemLeft" align="right" valign="top">float[][]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d99/class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_m_d_simulation.html#a9595c6955b19618bc08c451972deccd4">neighborList</a></td></tr>
-<tr class="separator:a9595c6955b19618bc08c451972deccd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
-<tr class="inherit_header pub_methods_class_c2_m2_1_1_simulation_1_1_simulation"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_c2_m2_1_1_simulation_1_1_simulation')"><img src="../../closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="../../db/d39/class_c2_m2_1_1_simulation_1_1_simulation.html">C2M2.Simulation.Simulation&lt; Vector3[], Transform[]&gt;</a></td></tr>
-<tr class="memitem:a1765c07e31951255c1813f97c81534f2 inherit pub_methods_class_c2_m2_1_1_simulation_1_1_simulation"><td class="memItemLeft" align="right" valign="top">abstract ValueType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d39/class_c2_m2_1_1_simulation_1_1_simulation.html#a1765c07e31951255c1813f97c81534f2">GetValues</a> ()</td></tr>
-<tr class="memdesc:a1765c07e31951255c1813f97c81534f2 inherit pub_methods_class_c2_m2_1_1_simulation_1_1_simulation"><td class="mdescLeft">&#160;</td><td class="mdescRight">Require derived classes to make simulation values available  <a href="../../db/d39/class_c2_m2_1_1_simulation_1_1_simulation.html#a1765c07e31951255c1813f97c81534f2">More...</a><br /></td></tr>
-<tr class="separator:a1765c07e31951255c1813f97c81534f2 inherit pub_methods_class_c2_m2_1_1_simulation_1_1_simulation"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a23f798f4d20a7c1bcd4b67f857006060 inherit pub_methods_class_c2_m2_1_1_simulation_1_1_simulation"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d39/class_c2_m2_1_1_simulation_1_1_simulation.html#a23f798f4d20a7c1bcd4b67f857006060">StartSimulation</a> ()</td></tr>
-<tr class="memdesc:a23f798f4d20a7c1bcd4b67f857006060 inherit pub_methods_class_c2_m2_1_1_simulation_1_1_simulation"><td class="mdescLeft">&#160;</td><td class="mdescRight">Launch Solve thread  <a href="../../db/d39/class_c2_m2_1_1_simulation_1_1_simulation.html#a23f798f4d20a7c1bcd4b67f857006060">More...</a><br /></td></tr>
-<tr class="separator:a23f798f4d20a7c1bcd4b67f857006060 inherit pub_methods_class_c2_m2_1_1_simulation_1_1_simulation"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acc1c10c42199427d21b0751827428315 inherit pub_methods_class_c2_m2_1_1_simulation_1_1_simulation"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d39/class_c2_m2_1_1_simulation_1_1_simulation.html#acc1c10c42199427d21b0751827428315">StopSimulation</a> ()</td></tr>
-<tr class="memdesc:acc1c10c42199427d21b0751827428315 inherit pub_methods_class_c2_m2_1_1_simulation_1_1_simulation"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stop current Solve thread  <a href="../../db/d39/class_c2_m2_1_1_simulation_1_1_simulation.html#acc1c10c42199427d21b0751827428315">More...</a><br /></td></tr>
-<tr class="separator:acc1c10c42199427d21b0751827428315 inherit pub_methods_class_c2_m2_1_1_simulation_1_1_simulation"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af935d39671e70da38da5e39c8d935e11 inherit pub_methods_class_c2_m2_1_1_simulation_1_1_simulation"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d39/class_c2_m2_1_1_simulation_1_1_simulation.html#af935d39671e70da38da5e39c8d935e11">Awake</a> ()</td></tr>
-<tr class="separator:af935d39671e70da38da5e39c8d935e11 inherit pub_methods_class_c2_m2_1_1_simulation_1_1_simulation"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ada5284c07eed28af78a16819f2988254 inherit pub_methods_class_c2_m2_1_1_simulation_1_1_simulation"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d39/class_c2_m2_1_1_simulation_1_1_simulation.html#ada5284c07eed28af78a16819f2988254">Start</a> ()</td></tr>
-<tr class="separator:ada5284c07eed28af78a16819f2988254 inherit pub_methods_class_c2_m2_1_1_simulation_1_1_simulation"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae6ea0973da175d6a6500c37913b292dc inherit pub_methods_class_c2_m2_1_1_simulation_1_1_simulation"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d39/class_c2_m2_1_1_simulation_1_1_simulation.html#ae6ea0973da175d6a6500c37913b292dc">Update</a> ()</td></tr>
-<tr class="separator:ae6ea0973da175d6a6500c37913b292dc inherit pub_methods_class_c2_m2_1_1_simulation_1_1_simulation"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_class_c2_m2_1_1_simulation_1_1_simulation"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_c2_m2_1_1_simulation_1_1_simulation')"><img src="../../closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="../../db/d39/class_c2_m2_1_1_simulation_1_1_simulation.html">C2M2.Simulation.Simulation&lt; Vector3[], Transform[], VRRaycastableColliders, VRGrabbableColliders &gt;</a></td></tr>
+<tr class="memitem:aa34520fa8bc4bedc95c65dfe1984a719 inherit pub_methods_class_c2_m2_1_1_simulation_1_1_simulation"><td class="memItemLeft" align="right" valign="top">abstract ValueType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d39/class_c2_m2_1_1_simulation_1_1_simulation.html#aa34520fa8bc4bedc95c65dfe1984a719">GetValues</a> ()</td></tr>
+<tr class="memdesc:aa34520fa8bc4bedc95c65dfe1984a719 inherit pub_methods_class_c2_m2_1_1_simulation_1_1_simulation"><td class="mdescLeft">&#160;</td><td class="mdescRight">Require derived classes to make simulation values available  <a href="../../db/d39/class_c2_m2_1_1_simulation_1_1_simulation.html#aa34520fa8bc4bedc95c65dfe1984a719">More...</a><br /></td></tr>
+<tr class="separator:aa34520fa8bc4bedc95c65dfe1984a719 inherit pub_methods_class_c2_m2_1_1_simulation_1_1_simulation"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a01838bb0de4821217362271193c7c59a inherit pub_methods_class_c2_m2_1_1_simulation_1_1_simulation"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d39/class_c2_m2_1_1_simulation_1_1_simulation.html#a01838bb0de4821217362271193c7c59a">StartSimulation</a> ()</td></tr>
+<tr class="memdesc:a01838bb0de4821217362271193c7c59a inherit pub_methods_class_c2_m2_1_1_simulation_1_1_simulation"><td class="mdescLeft">&#160;</td><td class="mdescRight">Launch Solve thread  <a href="../../db/d39/class_c2_m2_1_1_simulation_1_1_simulation.html#a01838bb0de4821217362271193c7c59a">More...</a><br /></td></tr>
+<tr class="separator:a01838bb0de4821217362271193c7c59a inherit pub_methods_class_c2_m2_1_1_simulation_1_1_simulation"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0987e2cc68208bca93217b7d9e142ef inherit pub_methods_class_c2_m2_1_1_simulation_1_1_simulation"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d39/class_c2_m2_1_1_simulation_1_1_simulation.html#ab0987e2cc68208bca93217b7d9e142ef">StopSimulation</a> ()</td></tr>
+<tr class="memdesc:ab0987e2cc68208bca93217b7d9e142ef inherit pub_methods_class_c2_m2_1_1_simulation_1_1_simulation"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stop current Solve thread  <a href="../../db/d39/class_c2_m2_1_1_simulation_1_1_simulation.html#ab0987e2cc68208bca93217b7d9e142ef">More...</a><br /></td></tr>
+<tr class="separator:ab0987e2cc68208bca93217b7d9e142ef inherit pub_methods_class_c2_m2_1_1_simulation_1_1_simulation"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e53486b1f412de5fa6bb26987a5b0ff inherit pub_methods_class_c2_m2_1_1_simulation_1_1_simulation"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d39/class_c2_m2_1_1_simulation_1_1_simulation.html#a0e53486b1f412de5fa6bb26987a5b0ff">Awake</a> ()</td></tr>
+<tr class="separator:a0e53486b1f412de5fa6bb26987a5b0ff inherit pub_methods_class_c2_m2_1_1_simulation_1_1_simulation"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a721271dc623caa4ded17d616556cc7f4 inherit pub_methods_class_c2_m2_1_1_simulation_1_1_simulation"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d39/class_c2_m2_1_1_simulation_1_1_simulation.html#a721271dc623caa4ded17d616556cc7f4">Start</a> ()</td></tr>
+<tr class="separator:a721271dc623caa4ded17d616556cc7f4 inherit pub_methods_class_c2_m2_1_1_simulation_1_1_simulation"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ef6c0492314a02fdfb613b19dd822e1 inherit pub_methods_class_c2_m2_1_1_simulation_1_1_simulation"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d39/class_c2_m2_1_1_simulation_1_1_simulation.html#a4ef6c0492314a02fdfb613b19dd822e1">Update</a> ()</td></tr>
+<tr class="separator:a4ef6c0492314a02fdfb613b19dd822e1 inherit pub_methods_class_c2_m2_1_1_simulation_1_1_simulation"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header properties_class_c2_m2_1_1_simulation_1_1_simulation"><td colspan="2" onclick="javascript:toggleInherit('properties_class_c2_m2_1_1_simulation_1_1_simulation')"><img src="../../closed.png" alt="-"/>&#160;Properties inherited from <a class="el" href="../../db/d39/class_c2_m2_1_1_simulation_1_1_simulation.html">C2M2.Simulation.Simulation&lt; Vector3[], Transform[], VRRaycastableColliders, VRGrabbableColliders &gt;</a></td></tr>
+<tr class="memitem:ad9f96fe079b8d93a9b0a726692d68555 inherit properties_class_c2_m2_1_1_simulation_1_1_simulation"><td class="memItemLeft" align="right" valign="top">VizType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d39/class_c2_m2_1_1_simulation_1_1_simulation.html#ad9f96fe079b8d93a9b0a726692d68555">viz</a><code> [get, protected set]</code></td></tr>
+<tr class="separator:ad9f96fe079b8d93a9b0a726692d68555 inherit properties_class_c2_m2_1_1_simulation_1_1_simulation"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Reads data files and creates and updates visualizations for molecular dynamics systemss </p>
+</div><h2 class="groupheader">Member Enumeration Documentation</h2>
+<a id="a2b0fa12658a342140dd3369aa289c90d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2b0fa12658a342140dd3369aa289c90d">&#9670;&nbsp;</a></span>MethodType</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="../../d0/d99/class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_m_d_simulation.html#a2b0fa12658a342140dd3369aa289c90d">C2M2.MolecularDynamics.Simulation.MDSimulation.MethodType</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a2b0fa12658a342140dd3369aa289c90da37033c09307b7f90d4a46d1d1352298f"></a>gjI&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a2b0fa12658a342140dd3369aa289c90da83ec1b0ebb12d4f5fe2881c4507ec670"></a>gjII&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a2b0fa12658a342140dd3369aa289c90da84d8ce95c58a694d941b59967199e478"></a>gjIII&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="a28c31d560ef224835d0c6b77924efa76"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a28c31d560ef224835d0c6b77924efa76">&#9670;&nbsp;</a></span>BuildVisualization()</h2>
@@ -237,9 +323,146 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>In the future, <a class="el" href="../../d0/d99/class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_m_d_simulation.html">MDSimulation</a> should this method with the PDBReader, so you won't need to worry about coding it every time. We don't have a PDB file, so we create so make-believe positions </p>
+<p>Reads and stores PDB and PSF data, uses the data to build the system visualization </p>
 
-<p>Implements <a class="el" href="../../db/d39/class_c2_m2_1_1_simulation_1_1_simulation.html#ac88142e69f0572a1ae41d81b87e87bbe">C2M2.Simulation.Simulation&lt; Vector3[], Transform[]&gt;</a>.</p>
+<p>Implements <a class="el" href="../../db/d39/class_c2_m2_1_1_simulation_1_1_simulation.html#ad862aff8a93dc71945db0450fddd6cbf">C2M2.Simulation.Simulation&lt; Vector3[], Transform[], VRRaycastableColliders, VRGrabbableColliders &gt;</a>.</p>
+
+</div>
+</div>
+<a id="a41cdf43e03e719337c7782f2487ee3ff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a41cdf43e03e719337c7782f2487ee3ff">&#9670;&nbsp;</a></span>gjI()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float C2M2.MolecularDynamics.Simulation.MDSimulation.gjI </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>gamma</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>dt</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aecaec2c1ec8b65999b3dc3afd737a07f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aecaec2c1ec8b65999b3dc3afd737a07f">&#9670;&nbsp;</a></span>gjII()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float C2M2.MolecularDynamics.Simulation.MDSimulation.gjII </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>gamma</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>dt</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0d034ea62f2ccaf0c2e2a6eede9d6294"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0d034ea62f2ccaf0c2e2a6eede9d6294">&#9670;&nbsp;</a></span>gjIII()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float C2M2.MolecularDynamics.Simulation.MDSimulation.gjIII </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>gamma</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>dt</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a34d6cb0a657d26f32af36de6dcd03228"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a34d6cb0a657d26f32af36de6dcd03228">&#9670;&nbsp;</a></span>ReadData()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">override void C2M2.MolecularDynamics.Simulation.MDSimulation.ReadData </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Read/initialize data here. ReadData is called before BuildVisualization </p>
+
+<p>Implements <a class="el" href="../../db/d39/class_c2_m2_1_1_simulation_1_1_simulation.html#a9c3b4075e4edbc549a56284022cc4a4e">C2M2.Simulation.Simulation&lt; Vector3[], Transform[], VRRaycastableColliders, VRGrabbableColliders &gt;</a>.</p>
 
 </div>
 </div>
@@ -267,7 +490,8 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Called after position field transforms are updated, used here to update bond visualization </p>
+<p>Used here to update bond visualization. </p>
+<p>Called after position field transforms are updated. </p>
 
 <p>Reimplemented from <a class="el" href="../../d3/d66/class_c2_m2_1_1_simulation_1_1_position_field_simulation.html#abe6ed5cdf1967ee5eedcdc63703369d6">C2M2.Simulation.PositionFieldSimulation</a>.</p>
 
@@ -388,6 +612,109 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Each two indices represents one bond. </p>
+<p>If bonds[0] = 10 and bonds[1] = 15, then the particles at x[10] &amp; x[15] represent a bonded pair. </p>
+
+</div>
+</div>
+<a id="ad1dfff6ceef0b568a62778b3b9e32ec3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad1dfff6ceef0b568a62778b3b9e32ec3">&#9670;&nbsp;</a></span>boxLengthX</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float C2M2.MolecularDynamics.Simulation.MDSimulation.boxLengthX = 58.065f</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0270adb1cb6d41ab76304bc87ab537a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0270adb1cb6d41ab76304bc87ab537a2">&#9670;&nbsp;</a></span>boxLengthY</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float C2M2.MolecularDynamics.Simulation.MDSimulation.boxLengthY = 58.065f</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9288677ed992b5763dbb822ee58ebe28"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9288677ed992b5763dbb822ee58ebe28">&#9670;&nbsp;</a></span>boxLengthZ</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float C2M2.MolecularDynamics.Simulation.MDSimulation.boxLengthZ = 58.065f</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a756174d1d8b549b7edee32d9ce0174be"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a756174d1d8b549b7edee32d9ce0174be">&#9670;&nbsp;</a></span>c</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float C2M2.MolecularDynamics.Simulation.MDSimulation.c = -1</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac50ccd13a85f9db1440d0f3d24a48889"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac50ccd13a85f9db1440d0f3d24a48889">&#9670;&nbsp;</a></span>coord</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Vector3 [] C2M2.MolecularDynamics.Simulation.MDSimulation.coord = null</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afba57f6e6a6cce29c0b69b8287a423da"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afba57f6e6a6cce29c0b69b8287a423da">&#9670;&nbsp;</a></span>gamma</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float C2M2.MolecularDynamics.Simulation.MDSimulation.gamma = 0.1f</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
 </div>
 </div>
 <a id="a5801aa0919cb402c6c2b5cfdbbc58036"></a>
@@ -412,8 +739,36 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="ae2f5fcef5e1b6466ab772988cba3e0f0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae2f5fcef5e1b6466ab772988cba3e0f0">&#9670;&nbsp;</a></span>molLookup</h2>
+<a id="aa0dda49bad2c62b1cf4d7cd6f8c10ece"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa0dda49bad2c62b1cf4d7cd6f8c10ece">&#9670;&nbsp;</a></span>maxBondLength</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float C2M2.MolecularDynamics.Simulation.MDSimulation.maxBondLength = 10f</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aaa68bf514048491ff4048f08aa2cab46"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaa68bf514048491ff4048f08aa2cab46">&#9670;&nbsp;</a></span>methodType</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d0/d99/class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_m_d_simulation.html#a2b0fa12658a342140dd3369aa289c90d">MethodType</a> C2M2.MolecularDynamics.Simulation.MDSimulation.methodType = <a class="el" href="../../d0/d99/class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_m_d_simulation.html#a2b0fa12658a342140dd3369aa289c90da37033c09307b7f90d4a46d1d1352298f">MethodType.gjI</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a262d0ecd7c1c170590c01fb05b93cfee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a262d0ecd7c1c170590c01fb05b93cfee">&#9670;&nbsp;</a></span>particleLookup</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -422,7 +777,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">Dictionary&lt;Transform, int&gt; C2M2.MolecularDynamics.Simulation.MDSimulation.molLookup</td>
+          <td class="memname">Dictionary&lt;Transform, int&gt; C2M2.MolecularDynamics.Simulation.MDSimulation.particleLookup</td>
         </tr>
       </table>
   </td>
@@ -434,8 +789,8 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="a9595c6955b19618bc08c451972deccd4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9595c6955b19618bc08c451972deccd4">&#9670;&nbsp;</a></span>neighborList</h2>
+<a id="ad494b63dcc06da521a526dfa34a84ccb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad494b63dcc06da521a526dfa34a84ccb">&#9670;&nbsp;</a></span>path</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -444,7 +799,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">float [][] C2M2.MolecularDynamics.Simulation.MDSimulation.neighborList</td>
+          <td class="memname">readonly string C2M2.MolecularDynamics.Simulation.MDSimulation.path = Application.streamingAssetsPath + @&quot;/MolecularDynamics/&quot;</td>
         </tr>
       </table>
   </td>
@@ -456,28 +811,50 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="a5c6056c4f9a3cbf6f5cd095e06a03555"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5c6056c4f9a3cbf6f5cd095e06a03555">&#9670;&nbsp;</a></span>pdbFilePath</h2>
+<a id="a0cc56c45ffc37a35ddb7d2b87de55b3a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0cc56c45ffc37a35ddb7d2b87de55b3a">&#9670;&nbsp;</a></span>pbcFlag</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../de/daf/class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_m_d_simulation_1_1_vector3_int.html">Vector3Int</a> [] C2M2.MolecularDynamics.Simulation.MDSimulation.pbcFlag = null</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af3da2d4b2d42b1d90eb43836465b2826"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af3da2d4b2d42b1d90eb43836465b2826">&#9670;&nbsp;</a></span>pdbPath</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">string C2M2.MolecularDynamics.Simulation.MDSimulation.pdbFilePath = &quot;PE/pe_cg.pdb&quot;</td>
+          <td class="memname">string C2M2.MolecularDynamics.Simulation.MDSimulation.pdbPath = &quot;PE/pe_cg.pdb&quot;</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="af8bce81f302631e4b1e588b78dc7b208"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af8bce81f302631e4b1e588b78dc7b208">&#9670;&nbsp;</a></span>psfFilePath</h2>
+<a id="aa7e42584fbc82dbfde216a4dd760791e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa7e42584fbc82dbfde216a4dd760791e">&#9670;&nbsp;</a></span>psfPath</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">string C2M2.MolecularDynamics.Simulation.MDSimulation.psfFilePath = &quot;PE/octatetracontane_128.cg.psf&quot;</td>
+          <td class="memname">string C2M2.MolecularDynamics.Simulation.MDSimulation.psfPath = &quot;PE/octatetracontane_128.cg.psf&quot;</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -520,28 +897,6 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="a0911949ab6ce3a2447d83a50a0c14618"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0911949ab6ce3a2447d83a50a0c14618">&#9670;&nbsp;</a></span>relPath</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">readonly string C2M2.MolecularDynamics.Simulation.MDSimulation.relPath = Application.streamingAssetsPath + @&quot;/MolecularDynamics/&quot;</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="abd53ce3b1ffb028064f4b6a19c0f23ba"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#abd53ce3b1ffb028064f4b6a19c0f23ba">&#9670;&nbsp;</a></span>shader</h2>
 
@@ -578,6 +933,34 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a id="aafe4c0cbde4f979483d2fea1fddf1b21"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aafe4c0cbde4f979483d2fea1fddf1b21">&#9670;&nbsp;</a></span>timestepCount</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int C2M2.MolecularDynamics.Simulation.MDSimulation.timestepCount = 50000</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9fb7b8e8ed00633201afbcf8e69b06e7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9fb7b8e8ed00633201afbcf8e69b06e7">&#9670;&nbsp;</a></span>timestepSize</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float C2M2.MolecularDynamics.Simulation.MDSimulation.timestepSize = .1f</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="ad301f32244d589b3d5e390bb882959ee"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad301f32244d589b3d5e390bb882959ee">&#9670;&nbsp;</a></span>types</h2>
 
@@ -600,8 +983,8 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="a36eed5e300443f298a8bb2c1daf737f2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a36eed5e300443f298a8bb2c1daf737f2">&#9670;&nbsp;</a></span>v</h2>
+<a id="a7204e0e0b69e39b1b2d7e4d207a64bf3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7204e0e0b69e39b1b2d7e4d207a64bf3">&#9670;&nbsp;</a></span>vel</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -610,7 +993,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">Vector3 [] C2M2.MolecularDynamics.Simulation.MDSimulation.v = null</td>
+          <td class="memname">Vector3 [] C2M2.MolecularDynamics.Simulation.MDSimulation.vel = null</td>
         </tr>
       </table>
   </td>
@@ -620,27 +1003,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-</div>
-</div>
-<a id="a66cd432af7b7adc688e615e0c4e3b5cd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a66cd432af7b7adc688e615e0c4e3b5cd">&#9670;&nbsp;</a></span>x</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">Vector3 [] C2M2.MolecularDynamics.Simulation.MDSimulation.x = null</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
+<p>Velocity of each particle </p>
 
 </div>
 </div>

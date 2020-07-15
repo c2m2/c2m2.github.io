@@ -1,8 +1,7 @@
-<map id="C2M2.Simulation.Simulation&lt; ValueType, VizType &gt;" name="C2M2.Simulation.Simulation&lt; ValueType, VizType &gt;">
-<area shape="rect" id="node1" title="Provides an base interface for simulations using a general data type T" alt="" coords="5,685,236,997"/>
-<area shape="rect" id="node2" href="$dc/daa/class_c2_m2_1_1_simulation_1_1_interactable.html" title="Interface for interaction scripts" alt="" coords="41,544,200,636"/>
-<area shape="rect" id="node3" title=" " alt="" coords="136,5,263,83"/>
-<area shape="rect" id="node4" href="$d4/dfc/class_c2_m2_1_1_interaction_1_1_raycast_sim_heater.html" title=" " alt="" coords="160,345,375,481"/>
-<area shape="rect" id="node5" href="$d5/d84/class_c2_m2_1_1_interaction_1_1_v_r_1_1_v_r_raycastable.html" title=" " alt="" coords="184,132,471,283"/>
-<area shape="rect" id="node6" href="$dc/daa/class_c2_m2_1_1_simulation_1_1_interactable.html" title="Interface for interaction scripts" alt="" coords="264,544,511,636"/>
+<map id="C2M2.Simulation.Simulation&lt; ValueType, VizType, RaycastType, GrabType &gt;" name="C2M2.Simulation.Simulation&lt; ValueType, VizType, RaycastType, GrabType &gt;">
+<area shape="rect" id="node1" title="Provides an base interface for simulations using a general data type T" alt="" coords="5,472,300,843"/>
+<area shape="rect" id="node2" href="$dc/daa/class_c2_m2_1_1_simulation_1_1_interactable.html" title="Interface for interaction scripts" alt="" coords="73,331,232,423"/>
+<area shape="rect" id="node3" title=" " alt="" coords="231,5,357,83"/>
+<area shape="rect" id="node4" href="$dc/d54/class_c2_m2_1_1_interaction_1_1_raycast_heater.html" title=" " alt="" coords="187,132,401,268"/>
+<area shape="rect" id="node5" href="$dc/daa/class_c2_m2_1_1_simulation_1_1_interactable.html" title="Interface for interaction scripts" alt="" coords="261,331,508,423"/>
 </map>
