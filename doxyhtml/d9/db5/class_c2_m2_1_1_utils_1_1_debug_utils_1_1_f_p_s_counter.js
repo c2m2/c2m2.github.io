@@ -5,7 +5,6 @@ var class_c2_m2_1_1_utils_1_1_debug_utils_1_1_f_p_s_counter =
     [ "ToString", "d9/db5/class_c2_m2_1_1_utils_1_1_debug_utils_1_1_f_p_s_counter.html#a7925bd3e9cf9954ff12e2ff9d765be1a", null ],
     [ "Update", "d9/db5/class_c2_m2_1_1_utils_1_1_debug_utils_1_1_f_p_s_counter.html#a6de517a7ed343f4ca10f9b4f406b55e0", null ],
     [ "UpdateBuffer", "d9/db5/class_c2_m2_1_1_utils_1_1_debug_utils_1_1_f_p_s_counter.html#a7f654da488d857654ba8f217fb773653", null ],
-    [ "UpdateTexts", "d9/db5/class_c2_m2_1_1_utils_1_1_debug_utils_1_1_f_p_s_counter.html#aeee6d83cf49da4c867d3c17f27bf138b", null ],
     [ "avg", "d9/db5/class_c2_m2_1_1_utils_1_1_debug_utils_1_1_f_p_s_counter.html#ac4e755585b4b4af78f1ed4aed913ea0e", null ],
     [ "formatString", "d9/db5/class_c2_m2_1_1_utils_1_1_debug_utils_1_1_f_p_s_counter.html#a3bfccea9d450d70aee3a28737b612954", null ],
     [ "fpsBuffer", "d9/db5/class_c2_m2_1_1_utils_1_1_debug_utils_1_1_f_p_s_counter.html#ab3f9d3de9707d708f2dbcfa78558dbbe", null ],

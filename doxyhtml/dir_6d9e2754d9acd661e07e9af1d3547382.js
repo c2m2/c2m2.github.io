@@ -6,5 +6,7 @@ var dir_6d9e2754d9acd661e07e9af1d3547382 =
     [ "VTK", "dir_fb9be49169dd1ffc3cad8d5dd5f58530.html", "dir_fb9be49169dd1ffc3cad8d5dd5f58530" ],
     [ "OBJFileReader.cs", "db/de4/_o_b_j_file_reader_8cs.html", [
       [ "OBJFileReader", "d9/d03/class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_o_b_j_file_reader.html", "d9/d03/class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_o_b_j_file_reader" ]
-    ] ]
+    ] ],
+    [ "VrnReader.cs", "d3/d8b/_vrn_reader_8cs.html", "d3/d8b/_vrn_reader_8cs" ],
+    [ "VrnReaderBehaviour.cs", "d8/d24/_vrn_reader_behaviour_8cs.html", "d8/d24/_vrn_reader_behaviour_8cs" ]
 ];

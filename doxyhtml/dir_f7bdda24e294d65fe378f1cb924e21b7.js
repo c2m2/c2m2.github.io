@@ -21,5 +21,8 @@ var dir_f7bdda24e294d65fe378f1cb924e21b7 =
     ] ],
     [ "RaycastSimHeaterDiscrete.cs", "d5/df1/_raycast_sim_heater_discrete_8cs.html", [
       [ "RaycastSimHeaterDiscrete", "d3/d4c/class_c2_m2_1_1_interaction_1_1_raycast_sim_heater_discrete.html", "d3/d4c/class_c2_m2_1_1_interaction_1_1_raycast_sim_heater_discrete" ]
+    ] ],
+    [ "ScaleLimiter.cs", "d0/db7/_scale_limiter_8cs.html", [
+      [ "ScaleLimiter", "d7/d94/class_c2_m2_1_1_interaction_1_1_scale_limiter.html", "d7/d94/class_c2_m2_1_1_interaction_1_1_scale_limiter" ]
     ] ]
 ];

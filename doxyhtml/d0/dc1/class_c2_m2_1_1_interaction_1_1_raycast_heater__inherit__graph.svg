@@ -51,21 +51,22 @@
 <!-- Node4 -->
 <g id="node4" class="node"><title>Node4</title>
 <g id="a_node4"><a xlink:href="../../d3/d4c/class_c2_m2_1_1_interaction_1_1_raycast_sim_heater_discrete.html" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="black" points="191,-17 191,-107 352,-107 352,-17 191,-17"/>
-<text text-anchor="start" x="199" y="-95" font-family="Courier New" font-size="10.00">C2M2.Interaction.Raycast</text>
-<text text-anchor="middle" x="271.5" y="-84" font-family="Courier New" font-size="10.00">SimHeaterDiscrete</text>
-<polyline fill="none" stroke="black" points="191,-77 352,-77 "/>
-<text text-anchor="start" x="199" y="-65" font-family="Courier New" font-size="10.00">&#45; mf</text>
-<polyline fill="none" stroke="black" points="191,-58 352,-58 "/>
-<text text-anchor="start" x="199" y="-46" font-family="Courier New" font-size="10.00">+ HitToTriangles()</text>
-<text text-anchor="start" x="199" y="-35" font-family="Courier New" font-size="10.00"># OnAwake()</text>
-<text text-anchor="start" x="199" y="-24" font-family="Courier New" font-size="10.00"># HitMethod()</text>
+<polygon fill="white" stroke="black" points="191,-11.5 191,-112.5 352,-112.5 352,-11.5 191,-11.5"/>
+<text text-anchor="start" x="199" y="-100.5" font-family="Courier New" font-size="10.00">C2M2.Interaction.Raycast</text>
+<text text-anchor="middle" x="271.5" y="-89.5" font-family="Courier New" font-size="10.00">SimHeaterDiscrete</text>
+<polyline fill="none" stroke="black" points="191,-82.5 352,-82.5 "/>
+<text text-anchor="start" x="199" y="-70.5" font-family="Courier New" font-size="10.00">+ value</text>
+<text text-anchor="start" x="199" y="-59.5" font-family="Courier New" font-size="10.00">&#45; mf</text>
+<polyline fill="none" stroke="black" points="191,-52.5 352,-52.5 "/>
+<text text-anchor="start" x="199" y="-40.5" font-family="Courier New" font-size="10.00">+ HitToTriangles()</text>
+<text text-anchor="start" x="199" y="-29.5" font-family="Courier New" font-size="10.00"># OnAwake()</text>
+<text text-anchor="start" x="199" y="-18.5" font-family="Courier New" font-size="10.00"># HitMethod()</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node4 -->
 <g id="edge3" class="edge"><title>Node1&#45;&gt;Node4</title>
-<path fill="none" stroke="midnightblue" d="M215.415,-151.65C224.763,-136.874 234.651,-121.245 243.479,-107.292"/>
+<path fill="none" stroke="midnightblue" d="M215.53,-151.469C223.649,-138.635 232.171,-125.166 240.047,-112.716"/>
 <polygon fill="none" stroke="midnightblue" points="212.374,-149.91 209.986,-160.233 218.29,-153.653 212.374,-149.91"/>
 </g>
 <!-- Node2 -->

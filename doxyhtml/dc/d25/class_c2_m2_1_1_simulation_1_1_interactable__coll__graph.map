@@ -1,5 +1,5 @@
 <map id="C2M2.Simulation.Interactable" name="C2M2.Simulation.Interactable">
-<area shape="rect" id="node1" title="Interface for interaction scripts" alt="" coords="5,132,252,224"/>
-<area shape="rect" id="node3" href="$dc/d54/class_c2_m2_1_1_interaction_1_1_raycast_heater.html" title=" " alt="" coords="97,287,312,423"/>
+<area shape="rect" id="node1" title="Interface for interaction scripts" alt="" coords="5,132,252,239"/>
+<area shape="rect" id="node3" href="$dc/d54/class_c2_m2_1_1_interaction_1_1_raycast_heater.html" title=" " alt="" coords="97,301,312,437"/>
 <area shape="rect" id="node2" title=" " alt="" coords="177,5,304,83"/>
 </map>

@@ -12,6 +12,7 @@ var class_c2_m2_1_1_utils_1_1_array =
     [ "Reverse", "d3/dd1/class_c2_m2_1_1_utils_1_1_array.html#ad419233f183c21ac5f7af793f9ef5e5b", null ],
     [ "Reverse", "d3/dd1/class_c2_m2_1_1_utils_1_1_array.html#a722636b582c3b76f74d82f822c10bf92", null ],
     [ "Reverse", "d3/dd1/class_c2_m2_1_1_utils_1_1_array.html#a5dc9d4d14ad01f3ea6159a9edfed25e8", null ],
+    [ "Subset< T >", "d3/dd1/class_c2_m2_1_1_utils_1_1_array.html#a1df15dc025f68ca70595e3a4ed92ccbf", null ],
     [ "Times", "d3/dd1/class_c2_m2_1_1_utils_1_1_array.html#a0966e4026e4cf66c5e5ff83828a38cd4", null ],
     [ "Times", "d3/dd1/class_c2_m2_1_1_utils_1_1_array.html#ab43194001d6c0a5ffd3d0629c587a896", null ],
     [ "ToArray", "d3/dd1/class_c2_m2_1_1_utils_1_1_array.html#ab75830ac760b84d384861310f0d03743", null ],

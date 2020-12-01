@@ -10,6 +10,12 @@ var dir_7162a32793e64edbc439a4c6f15849ff =
     [ "VRGrabbable.cs", "db/d00/_v_r_grabbable_8cs.html", [
       [ "VRGrabbable", "d9/d19/class_c2_m2_1_1_interaction_1_1_v_r_1_1_v_r_grabbable.html", "d9/d19/class_c2_m2_1_1_interaction_1_1_v_r_1_1_v_r_grabbable" ]
     ] ],
+    [ "VRGrabbableColliders.cs", "df/dac/_v_r_grabbable_colliders_8cs.html", [
+      [ "VRGrabbableColliders", "d1/daa/class_c2_m2_1_1_interaction_1_1_v_r_1_1_v_r_grabbable_colliders.html", "d1/daa/class_c2_m2_1_1_interaction_1_1_v_r_1_1_v_r_grabbable_colliders" ]
+    ] ],
+    [ "VRGrabbableMesh.cs", "df/d4c/_v_r_grabbable_mesh_8cs.html", [
+      [ "VRGrabbableMesh", "da/d04/class_c2_m2_1_1_interaction_1_1_v_r_1_1_v_r_grabbable_mesh.html", "da/d04/class_c2_m2_1_1_interaction_1_1_v_r_1_1_v_r_grabbable_mesh" ]
+    ] ],
     [ "VRRaycastable.cs", "d5/dd6/_v_r_raycastable_8cs.html", [
       [ "VRRaycastable", "d5/d84/class_c2_m2_1_1_interaction_1_1_v_r_1_1_v_r_raycastable.html", "d5/d84/class_c2_m2_1_1_interaction_1_1_v_r_1_1_v_r_raycastable" ]
     ] ],

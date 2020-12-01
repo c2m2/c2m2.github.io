@@ -63,8 +63,8 @@ var sectionId = 'dynsection-1';
 <text text-anchor="middle" x="120.5" y="-232.5" font-family="Courier New" font-size="10.00">RaycastEventSignaler</text>
 <polyline fill="none" stroke="black" points="28,-225.5 213,-225.5 "/>
 <text text-anchor="start" x="36" y="-213.5" font-family="Courier New" font-size="10.00">+ rightHand</text>
-<text text-anchor="start" x="36" y="-202.5" font-family="Courier New" font-size="10.00">+ maxRaycastDistance</text>
-<text text-anchor="start" x="36" y="-191.5" font-family="Courier New" font-size="10.00">&#45; layerMask</text>
+<text text-anchor="start" x="36" y="-202.5" font-family="Courier New" font-size="10.00">+ layerMask</text>
+<text text-anchor="start" x="36" y="-191.5" font-family="Courier New" font-size="10.00">+ maxRaycastDistance</text>
 <text text-anchor="start" x="36" y="-180.5" font-family="Courier New" font-size="10.00">&#45; lastHit</text>
 <polyline fill="none" stroke="black" points="28,-173.5 213,-173.5 "/>
 <text text-anchor="start" x="36" y="-161.5" font-family="Courier New" font-size="10.00"># OnAwake()</text>

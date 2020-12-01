@@ -10,15 +10,22 @@ var class_c2_m2_1_1_interaction_1_1_signaling_1_1_oculus_event_signaler =
     [ "OnPressSub", "d4/d2f/class_c2_m2_1_1_interaction_1_1_signaling_1_1_oculus_event_signaler.html#a05018a4cff128f771b8cb2bec6441ad3", null ],
     [ "OnStart", "d4/d2f/class_c2_m2_1_1_interaction_1_1_signaling_1_1_oculus_event_signaler.html#a11d09791f0b23ab35ae3af471945b214", null ],
     [ "RaycastingMethod", "d4/d2f/class_c2_m2_1_1_interaction_1_1_signaling_1_1_oculus_event_signaler.html#a156ac1dcec18dbe416610fccf2dee85e", null ],
+    [ "SearchForHand", "d4/d2f/class_c2_m2_1_1_interaction_1_1_signaling_1_1_oculus_event_signaler.html#a0c71ce2b2c6891f88a737b07eaec23bd", null ],
     [ "StaticHandSetActive", "d4/d2f/class_c2_m2_1_1_interaction_1_1_signaling_1_1_oculus_event_signaler.html#ad477458f15d470cbf2bf0377bb731996", null ],
     [ "beginRaycastingButton", "d4/d2f/class_c2_m2_1_1_interaction_1_1_signaling_1_1_oculus_event_signaler.html#aa9b7eafd35bb79fb23a860af99022c20", null ],
     [ "clickDistance", "d4/d2f/class_c2_m2_1_1_interaction_1_1_signaling_1_1_oculus_event_signaler.html#aab6416616e3e0a5e01ed2c9bc9c880dd", null ],
     [ "controller", "d4/d2f/class_c2_m2_1_1_interaction_1_1_signaling_1_1_oculus_event_signaler.html#a76122478e31153a20507017d4be08573", null ],
     [ "defaultHand", "d4/d2f/class_c2_m2_1_1_interaction_1_1_signaling_1_1_oculus_event_signaler.html#a0981f494976476b0b2f10dc0a5db9a4b", null ],
     [ "distancePressed", "d4/d2f/class_c2_m2_1_1_interaction_1_1_signaling_1_1_oculus_event_signaler.html#a65334de612c22dae2bd1c8e19d0c546b", null ],
+    [ "grabber", "d4/d2f/class_c2_m2_1_1_interaction_1_1_signaling_1_1_oculus_event_signaler.html#a492f1a6260348a15b48561064fa80e29", null ],
+    [ "isLeftHand", "d4/d2f/class_c2_m2_1_1_interaction_1_1_signaling_1_1_oculus_event_signaler.html#a38321d870d7db234a21f4eaec58f5cf3", null ],
     [ "lineRend", "d4/d2f/class_c2_m2_1_1_interaction_1_1_signaling_1_1_oculus_event_signaler.html#aa8e421a80b204d3b1121534572cc9cee", null ],
+    [ "localAvatar", "d4/d2f/class_c2_m2_1_1_interaction_1_1_signaling_1_1_oculus_event_signaler.html#ae8663032c704930be678ba9c5d18aa22", null ],
     [ "pressedColor", "d4/d2f/class_c2_m2_1_1_interaction_1_1_signaling_1_1_oculus_event_signaler.html#aa6780425caf189e57a9ab1f828ea5edc", null ],
     [ "staticHand", "d4/d2f/class_c2_m2_1_1_interaction_1_1_signaling_1_1_oculus_event_signaler.html#a4488468bd600c0cc2821cdd49cadff72", null ],
+    [ "toggled", "d4/d2f/class_c2_m2_1_1_interaction_1_1_signaling_1_1_oculus_event_signaler.html#ac353809f3e1daea53f31e19c5c36200a", null ],
+    [ "toggleMode", "d4/d2f/class_c2_m2_1_1_interaction_1_1_signaling_1_1_oculus_event_signaler.html#a3fed153ded3eac49fe962e77c1e5075d", null ],
     [ "triggerEventsButton", "d4/d2f/class_c2_m2_1_1_interaction_1_1_signaling_1_1_oculus_event_signaler.html#a9f8c0781372a76a22daa186e03f1e327", null ],
-    [ "unpressedColor", "d4/d2f/class_c2_m2_1_1_interaction_1_1_signaling_1_1_oculus_event_signaler.html#a77fa864ddd7be848429b26463b0ae0c8", null ]
+    [ "unpressedColor", "d4/d2f/class_c2_m2_1_1_interaction_1_1_signaling_1_1_oculus_event_signaler.html#a77fa864ddd7be848429b26463b0ae0c8", null ],
+    [ "Toggled", "d4/d2f/class_c2_m2_1_1_interaction_1_1_signaling_1_1_oculus_event_signaler.html#adb0495fe8a027b0d50b99d1323c1f9c5", null ]
 ];

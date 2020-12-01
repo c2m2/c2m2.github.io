@@ -1,11 +1,19 @@
 var searchData=
 [
-  ['m_5fgrabpoints_2652',['M_GrabPoints',['../d8/d30/class_c2_m2_1_1_interaction_1_1_v_r_1_1_public_o_v_r_grabbable.html#a0805c76b98c8cd4642d83b67deb4fe63',1,'C2M2::Interaction::VR::PublicOVRGrabbable']]],
-  ['m_5fgrabvolumes_2653',['M_GrabVolumes',['../dd/d45/class_c2_m2_1_1_interaction_1_1_v_r_1_1_public_o_v_r_grabber.html#a44c295e92421b5a85469155eb0dbc144',1,'C2M2::Interaction::VR::PublicOVRGrabber']]],
-  ['mainthreadid_2654',['mainThreadId',['../d1/d4e/class_c2_m2_1_1_game_manager.html#ac0ca2044e3b82f26e79bdc580a69d1be',1,'C2M2::GameManager']]],
-  ['mass_2655',['mass',['../da/dd3/class_c2_m2_1_1_molecular_dynamics_1_1_visualization_1_1_p_s_f_file.html#a1fcd15247cbc1899cc71908e1d440dc0',1,'C2M2::MolecularDynamics::Visualization::PSFFile']]],
-  ['maxlength_2656',['maxLength',['../d0/dbc/struct_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_bond_renderer.html#a8c1b1a2341f90e3130182b03a477db59',1,'C2M2::MolecularDynamics::Simulation::BondRenderer']]],
-  ['mesh_2657',['Mesh',['../d8/d5b/class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_grid.html#aeb5d8597ebe203671fa49aaa162948c2',1,'C2M2.NeuronalDynamics.UGX.Grid.Mesh()'],['../dc/d72/class_c2_m2_1_1_utils_1_1_mesh_utils_1_1_mesh_col_controller.html#abd34ee7bbb3c8f8c7b3c54dfa9e1f815',1,'C2M2.Utils.MeshUtils.MeshColController.Mesh()']]],
-  ['mindistances_2658',['minDistances',['../df/d79/class_c2_m2_1_1_interaction_1_1_adjacency_1_1_dijkstra_search.html#a69cc760ca348b2b1bb53f633d13f0606',1,'C2M2::Interaction::Adjacency::DijkstraSearch']]],
-  ['modelgeometry_2659',['ModelGeometry',['../dd/d2a/struct_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_mapping_info.html#ae965be4038517d0f2c1c6d44f1e5e69d',1,'C2M2::NeuronalDynamics::UGX::MappingInfo']]]
+  ['m_5fgrabpoints_2851',['M_GrabPoints',['../d8/d30/class_c2_m2_1_1_interaction_1_1_v_r_1_1_public_o_v_r_grabbable.html#a0805c76b98c8cd4642d83b67deb4fe63',1,'C2M2::Interaction::VR::PublicOVRGrabbable']]],
+  ['m_5fgrabvolumes_2852',['M_GrabVolumes',['../dd/d45/class_c2_m2_1_1_interaction_1_1_v_r_1_1_public_o_v_r_grabber.html#a44c295e92421b5a85469155eb0dbc144',1,'C2M2::Interaction::VR::PublicOVRGrabber']]],
+  ['mainthreadid_2853',['mainThreadId',['../d1/d4e/class_c2_m2_1_1_game_manager.html#ac0ca2044e3b82f26e79bdc580a69d1be',1,'C2M2::GameManager']]],
+  ['map_2854',['Map',['../d7/d92/class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation.html#a2f3951bc018ca2d99940d08163d4ea11',1,'C2M2::NeuronalDynamics::Simulation::NDSimulation']]],
+  ['mapping_2855',['Mapping',['../d7/d92/class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation.html#a97ef96ba6952755b63e8706c029dff56',1,'C2M2::NeuronalDynamics::Simulation::NDSimulation']]],
+  ['mass_2856',['mass',['../da/dd3/class_c2_m2_1_1_molecular_dynamics_1_1_visualization_1_1_p_s_f_file.html#a1fcd15247cbc1899cc71908e1d440dc0',1,'C2M2::MolecularDynamics::Visualization::PSFFile']]],
+  ['maxlength_2857',['maxLength',['../d0/dbc/struct_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_bond_renderer.html#a8c1b1a2341f90e3130182b03a477db59',1,'C2M2::MolecularDynamics::Simulation::BondRenderer']]],
+  ['maxx_2858',['MaxX',['../d7/d94/class_c2_m2_1_1_interaction_1_1_scale_limiter.html#aa6c561884e6d06a26bc358fd0d577d7d',1,'C2M2::Interaction::ScaleLimiter']]],
+  ['maxy_2859',['MaxY',['../d7/d94/class_c2_m2_1_1_interaction_1_1_scale_limiter.html#a31396a3a2fba2c637f3be39a4b0cd40c',1,'C2M2::Interaction::ScaleLimiter']]],
+  ['maxz_2860',['MaxZ',['../d7/d94/class_c2_m2_1_1_interaction_1_1_scale_limiter.html#a8efc37f3fe7e237d9df4b93fc722a37b',1,'C2M2::Interaction::ScaleLimiter']]],
+  ['mesh_2861',['Mesh',['../d8/d5b/class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_grid.html#aeb5d8597ebe203671fa49aaa162948c2',1,'C2M2::NeuronalDynamics::UGX::Grid']]],
+  ['mindistances_2862',['minDistances',['../df/d79/class_c2_m2_1_1_interaction_1_1_adjacency_1_1_dijkstra_search.html#a69cc760ca348b2b1bb53f633d13f0606',1,'C2M2::Interaction::Adjacency::DijkstraSearch']]],
+  ['minx_2863',['MinX',['../d7/d94/class_c2_m2_1_1_interaction_1_1_scale_limiter.html#ad4a4e62ca9a6277a3987f6251769b9fd',1,'C2M2::Interaction::ScaleLimiter']]],
+  ['miny_2864',['MinY',['../d7/d94/class_c2_m2_1_1_interaction_1_1_scale_limiter.html#acad50f45b135a3166dc52569594710ae',1,'C2M2::Interaction::ScaleLimiter']]],
+  ['minz_2865',['MinZ',['../d7/d94/class_c2_m2_1_1_interaction_1_1_scale_limiter.html#aba8370322407dce0fef267d69afb976b',1,'C2M2::Interaction::ScaleLimiter']]],
+  ['modelgeometry_2866',['ModelGeometry',['../dd/d2a/struct_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_mapping_info.html#ae965be4038517d0f2c1c6d44f1e5e69d',1,'C2M2::NeuronalDynamics::UGX::MappingInfo']]]
 ];

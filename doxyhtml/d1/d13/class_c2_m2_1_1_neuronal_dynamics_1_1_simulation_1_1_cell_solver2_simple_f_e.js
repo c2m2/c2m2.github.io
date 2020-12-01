@@ -1,9 +1,10 @@
 var class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_cell_solver2_simple_f_e =
 [
     [ "Get1DValues", "d1/d13/class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_cell_solver2_simple_f_e.html#a037ba9c71a3527d492499425da202201", null ],
+    [ "GetSimulationTime", "d1/d13/class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_cell_solver2_simple_f_e.html#a0de4c898394df6fe8ac81a3122b9b5be", null ],
     [ "initialConditions", "d1/d13/class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_cell_solver2_simple_f_e.html#ab805cec2cf6ec0b354ffc82b0c068060", null ],
+    [ "InitializeNeuronCell", "d1/d13/class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_cell_solver2_simple_f_e.html#aba1be6344623507f8b67cba536c69f8e", null ],
     [ "Set1DValues", "d1/d13/class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_cell_solver2_simple_f_e.html#ae9be30d2c252ff7e0997f6cc68911867", null ],
-    [ "SetNeuronCell", "d1/d13/class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_cell_solver2_simple_f_e.html#a30b5a6a83b74ce101007388205516b6c", null ],
     [ "Solve", "d1/d13/class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_cell_solver2_simple_f_e.html#a91d0e23a7358acb14b24257884903dcf", null ],
     [ "cap", "d1/d13/class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_cell_solver2_simple_f_e.html#ac87f7cf2fa73de95a33d2d744418fd47", null ],
     [ "ek", "d1/d13/class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_cell_solver2_simple_f_e.html#a2e6a05b24cd03304ce8011549420be7f", null ],
@@ -15,8 +16,8 @@ var class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_cell_solver2_simple_f_e
     [ "gna", "d1/d13/class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_cell_solver2_simple_f_e.html#a4f4605d9b494e43958a4be74e18e8bdf", null ],
     [ "hi", "d1/d13/class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_cell_solver2_simple_f_e.html#ad1d9bd69ea565d261349030b2af6556c", null ],
     [ "i", "d1/d13/class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_cell_solver2_simple_f_e.html#a81a85573447249a2fd2bd5102661b76e", null ],
+    [ "k", "d1/d13/class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_cell_solver2_simple_f_e.html#acf234c22dcc74a36acdc9ec66ec9bb83", null ],
     [ "mi", "d1/d13/class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_cell_solver2_simple_f_e.html#ad9213e6585acda12482a3ddcca23fb46", null ],
-    [ "myCell", "d1/d13/class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_cell_solver2_simple_f_e.html#a913f6677d0ff723fc826f1da28f3bd3d", null ],
     [ "ni", "d1/d13/class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_cell_solver2_simple_f_e.html#a22da45bc2eb679c6c0d2e8de55488720", null ],
     [ "nT", "d1/d13/class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_cell_solver2_simple_f_e.html#a2b2b84fba6057a1f95fbdf3e295a2d65", null ],
     [ "res", "d1/d13/class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_cell_solver2_simple_f_e.html#a47537eb4d8c1a8b96d48a078716ed1fe", null ],

@@ -111,19 +111,20 @@ var sectionId = 'dynsection-1';
 <!-- Node4 -->
 <g id="node4" class="node"><title>Node4</title>
 <g id="a_node4"><a xlink:href="../../dc/daa/class_c2_m2_1_1_simulation_1_1_interactable.html" target="_top" xlink:title="Interface for interaction scripts">
-<polygon fill="white" stroke="black" points="103,-535.5 103,-603.5 288,-603.5 288,-535.5 103,-535.5"/>
-<text text-anchor="middle" x="195.5" y="-591.5" font-family="Courier New" font-size="10.00">C2M2.Simulation.Interactable</text>
-<polyline fill="none" stroke="black" points="103,-584.5 288,-584.5 "/>
-<text text-anchor="start" x="111" y="-572.5" font-family="Courier New" font-size="10.00">+ Heater</text>
-<text text-anchor="start" x="111" y="-561.5" font-family="Courier New" font-size="10.00"># interactionType</text>
-<polyline fill="none" stroke="black" points="103,-554.5 288,-554.5 "/>
-<text text-anchor="start" x="111" y="-542.5" font-family="Courier New" font-size="10.00">+ SetValues()</text>
+<polygon fill="white" stroke="black" points="103,-530 103,-609 288,-609 288,-530 103,-530"/>
+<text text-anchor="middle" x="195.5" y="-597" font-family="Courier New" font-size="10.00">C2M2.Simulation.Interactable</text>
+<polyline fill="none" stroke="black" points="103,-590 288,-590 "/>
+<text text-anchor="start" x="111" y="-578" font-family="Courier New" font-size="10.00">+ Heater</text>
+<text text-anchor="start" x="111" y="-567" font-family="Courier New" font-size="10.00"># interactionType</text>
+<polyline fill="none" stroke="black" points="103,-560 288,-560 "/>
+<text text-anchor="start" x="111" y="-548" font-family="Courier New" font-size="10.00">+ SetValues()</text>
+<text text-anchor="start" x="111" y="-537" font-family="Courier New" font-size="10.00">+ GetSimulationTime()</text>
 </a>
 </g>
 </g>
 <!-- Node3&#45;&gt;Node4 -->
 <g id="edge4" class="edge"><title>Node3&#45;&gt;Node4</title>
-<path fill="none" stroke="midnightblue" d="M412.219,-722.357C383.976,-715.086 350.135,-704.004 322.5,-688 284.029,-665.721 247.593,-629.93 223.697,-603.697"/>
+<path fill="none" stroke="midnightblue" d="M412.219,-722.357C383.976,-715.086 350.135,-704.004 322.5,-688 286.629,-667.227 252.526,-634.705 228.71,-609.138"/>
 <polygon fill="none" stroke="midnightblue" points="411.407,-725.761 421.956,-724.771 413.092,-718.967 411.407,-725.761"/>
 </g>
 <!-- Node5 -->
@@ -249,20 +250,20 @@ var sectionId = 'dynsection-1';
 </g>
 <!-- Node4&#45;&gt;Node2 -->
 <g id="edge3" class="edge"><title>Node4&#45;&gt;Node2</title>
-<path fill="none" stroke="#404040" d="M209.563,-535.219C223.601,-501.993 245.427,-450.34 262.083,-410.92"/>
-<polygon fill="none" stroke="#404040" points="262.181,-410.688 260.832,-403.604 266.852,-399.634 268.201,-406.718 262.181,-410.688"/>
+<path fill="none" stroke="#404040" d="M211.798,-529.927C225.846,-496.682 246.297,-448.28 262.095,-410.893"/>
+<polygon fill="none" stroke="#404040" points="262.165,-410.726 260.816,-403.642 266.836,-399.672 268.185,-406.756 262.165,-410.726"/>
 <text text-anchor="middle" x="280" y="-454" font-family="Courier New" font-size="10.00"> #simulation</text>
 </g>
 <!-- Node4&#45;&gt;Node5 -->
 <g id="edge7" class="edge"><title>Node4&#45;&gt;Node5</title>
-<path fill="none" stroke="#404040" d="M141.748,-535.425C117.275,-517.131 90.8393,-492.008 77.5,-462 71.4247,-448.333 69.4866,-432.675 69.6782,-417.646"/>
+<path fill="none" stroke="#404040" d="M134.612,-529.932C112.288,-512.229 89.5502,-489.108 77.5,-462 71.4247,-448.333 69.4866,-432.675 69.6782,-417.646"/>
 <polygon fill="none" stroke="#404040" points="69.6996,-417.213 66.0027,-411.022 70.296,-405.228 73.9928,-411.42 69.6996,-417.213"/>
 <text text-anchor="middle" x="114" y="-454" font-family="Courier New" font-size="10.00"> #simulation</text>
 </g>
 <!-- Node5&#45;&gt;Node4 -->
 <g id="edge5" class="edge"><title>Node5&#45;&gt;Node4</title>
-<path fill="none" stroke="#404040" d="M124.055,-405.435C134.976,-419.541 145.992,-435.332 154.5,-451 166.91,-473.854 176.714,-501.193 183.619,-523.747"/>
-<polygon fill="none" stroke="#404040" points="183.659,-523.882 189.196,-528.502 187.06,-535.39 181.523,-530.769 183.659,-523.882"/>
+<path fill="none" stroke="#404040" d="M124.055,-405.435C134.976,-419.541 145.992,-435.332 154.5,-451 165.94,-472.066 175.165,-496.944 181.946,-518.371"/>
+<polygon fill="none" stroke="#404040" points="181.954,-518.398 187.533,-522.968 185.461,-529.875 179.882,-525.305 181.954,-518.398"/>
 <text text-anchor="middle" x="184" y="-454" font-family="Courier New" font-size="10.00"> &#45;heater</text>
 </g>
 <!-- Node6&#45;&gt;Node1 -->

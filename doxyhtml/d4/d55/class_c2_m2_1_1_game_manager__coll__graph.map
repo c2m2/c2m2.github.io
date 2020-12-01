@@ -1,11 +1,19 @@
 <map id="C2M2.GameManager" name="C2M2.GameManager">
-<area shape="rect" id="node1" title="Stores many global variables, handles pregame initializations" alt="" coords="232,1499,487,1928"/>
-<area shape="rect" id="node2" title=" " alt="" coords="5,139,132,217"/>
-<area shape="rect" id="node5" href="$dd/dfe/class_c2_m2_1_1_interaction_1_1_raycast_forward.html" title=" " alt="" coords="103,933,325,1421"/>
-<area shape="rect" id="node6" href="$d5/df9/class_c2_m2_1_1_interaction_1_1_raycast_event_manager.html" title="Attach this script to parent gameObject, create one child with one raycast trigger per child...." alt="" coords="107,559,321,871"/>
-<area shape="rect" id="node7" href="$d8/d68/class_c2_m2_1_1_interaction_1_1_raycast_press_events.html" title="Store custom events that the corresponding RaycastTriggerManager will invoke" alt="" coords="157,316,372,467"/>
-<area shape="rect" id="node3" title=" " alt="" coords="469,1139,532,1216"/>
-<area shape="rect" id="node4" title=" " alt="" coords="396,353,467,430"/>
-<area shape="rect" id="node8" href="$d2/d43/class_c2_m2_1_1_interaction_1_1_raycast_press_events_1_1_raycast_hit_event.html" title=" " alt="" coords="156,132,395,224"/>
-<area shape="rect" id="node9" title=" " alt="" coords="168,5,383,83"/>
+<area shape="rect" id="node1" title="Stores many global variables, handles pregame initializations" alt="" coords="819,2120,1097,2637"/>
+<area shape="rect" id="node2" title=" " alt="" coords="520,139,647,217"/>
+<area shape="rect" id="node3" href="$d6/d37/class_c2_m2_1_1_interaction_1_1_v_r_1_1_v_r_device_manager.html" title="Make sure that a VR device is loaded before using OVRPlayerController. If none is loaded,..." alt="" coords="192,1877,439,2057"/>
+<area shape="rect" id="node6" href="$d6/d4b/class_c2_m2_1_1_interaction_1_1_signaling_1_1_press_event_signaler.html" title="Send press, holdPress, and endPress events based on set values of Pressed and RaycastTriggerManager" alt="" coords="351,491,517,612"/>
+<area shape="rect" id="node7" href="$d5/df9/class_c2_m2_1_1_interaction_1_1_raycast_event_manager.html" title="Attach this script to parent gameObject, create one child with one raycast trigger per child...." alt="" coords="599,636,813,948"/>
+<area shape="rect" id="node9" href="$d8/d68/class_c2_m2_1_1_interaction_1_1_raycast_press_events.html" title="Store custom events that the corresponding RaycastTriggerManager will invoke" alt="" coords="577,316,792,467"/>
+<area shape="rect" id="node17" href="$dd/dfe/class_c2_m2_1_1_interaction_1_1_raycast_forward.html" title=" " alt="" coords="889,1011,1112,1499"/>
+<area shape="rect" id="node4" href="$d3/da8/class_c2_m2_1_1_interaction_1_1_signaling_1_1_mouse_event_signaler.html" title=" " alt="" coords="312,1569,559,1793"/>
+<area shape="rect" id="node5" href="$d6/d2d/class_c2_m2_1_1_interaction_1_1_signaling_1_1_raycast_event_signaler.html" title=" " alt="" coords="312,1091,559,1418"/>
+<area shape="rect" id="node8" title=" " alt="" coords="816,353,887,430"/>
+<area shape="rect" id="node10" href="$d2/d43/class_c2_m2_1_1_interaction_1_1_raycast_press_events_1_1_raycast_hit_event.html" title=" " alt="" coords="965,132,1204,224"/>
+<area shape="rect" id="node11" title=" " alt="" coords="977,5,1192,83"/>
+<area shape="rect" id="node12" href="$dd/d45/class_c2_m2_1_1_interaction_1_1_v_r_1_1_public_o_v_r_grabber.html" title="Offers a public interface for other scripts to change OVRGrabber&#39;s grab volume." alt="" coords="583,1209,813,1301"/>
+<area shape="rect" id="node13" title=" " alt="" coords="472,753,575,831"/>
+<area shape="rect" id="node14" href="$d5/d45/class_c2_m2_1_1_interaction_1_1_v_r_1_1_moving_o_v_r_headset_emulator.html" title="Add movement functionality to Oculus HMD headset emulator, add some additional small functionality li..." alt="" coords="5,1561,236,1800"/>
+<area shape="rect" id="node15" title=" " alt="" coords="37,1216,204,1293"/>
+<area shape="rect" id="node16" title=" " alt="" coords="996,1929,1059,2006"/>
 </map>

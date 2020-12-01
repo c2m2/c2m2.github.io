@@ -9,6 +9,7 @@ var dir_4304930a5f96144cef53a1277b675781 =
     ] ],
     [ "CommonAttachments.cs", "dd/d5c/_common_attachments_8cs.html", [
       [ "DiameterData", "de/da8/struct_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_diameter_data.html", "de/da8/struct_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_diameter_data" ],
+      [ "IndexData", "dd/d35/struct_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_index_data.html", "dd/d35/struct_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_index_data" ],
       [ "NormalData", "df/d3d/struct_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_normal_data.html", "df/d3d/struct_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_normal_data" ],
       [ "MappingData", "d2/dae/struct_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_mapping_data.html", "d2/dae/struct_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_mapping_data" ],
       [ "SynapseData", "dc/dea/struct_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_synapse_data.html", "dc/dea/struct_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_synapse_data" ]

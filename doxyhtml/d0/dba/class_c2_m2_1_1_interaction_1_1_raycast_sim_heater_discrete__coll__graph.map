@@ -1,7 +1,7 @@
 <map id="C2M2.Interaction.RaycastSimHeaterDiscrete" name="C2M2.Interaction.RaycastSimHeaterDiscrete">
-<area shape="rect" id="node1" title=" " alt="" coords="5,472,220,593"/>
-<area shape="rect" id="node2" href="$dc/d54/class_c2_m2_1_1_interaction_1_1_raycast_heater.html" title=" " alt="" coords="49,294,176,415"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,487,220,623"/>
+<area shape="rect" id="node2" href="$dc/d54/class_c2_m2_1_1_interaction_1_1_raycast_heater.html" title=" " alt="" coords="49,309,176,430"/>
 <area shape="rect" id="node3" title=" " alt="" coords="200,5,327,83"/>
-<area shape="rect" id="node4" href="$dc/daa/class_c2_m2_1_1_simulation_1_1_interactable.html" title="Interface for interaction scripts" alt="" coords="140,132,387,224"/>
-<area shape="rect" id="node5" href="$dc/d54/class_c2_m2_1_1_interaction_1_1_raycast_heater.html" title=" " alt="" coords="284,287,499,423"/>
+<area shape="rect" id="node4" href="$dc/daa/class_c2_m2_1_1_simulation_1_1_interactable.html" title="Interface for interaction scripts" alt="" coords="140,132,387,239"/>
+<area shape="rect" id="node5" href="$dc/d54/class_c2_m2_1_1_interaction_1_1_raycast_heater.html" title=" " alt="" coords="284,301,499,437"/>
 </map>

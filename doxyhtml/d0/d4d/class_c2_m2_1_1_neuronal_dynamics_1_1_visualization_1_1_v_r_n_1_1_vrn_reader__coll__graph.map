@@ -1,0 +1,6 @@
+<map id="C2M2.NeuronalDynamics.Visualization.VRN.VrnReader" name="C2M2.NeuronalDynamics.Visualization.VRN.VrnReader">
+<area shape="rect" id="node1" title=" " alt="" coords="5,528,316,693"/>
+<area shape="rect" id="node2" href="$d9/d5c/class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_r_n_1_1_vrn_reader_1_1_geometry.html" title="Stores 1D and associated 2D geometries in the member geom1d" alt="" coords="5,373,316,465"/>
+<area shape="rect" id="node3" href="$dd/df0/struct_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_r_n_1_1_vrn_reader_1_1_geom1d.html" title="Stores the 1D geometries by name, refinement and a description Inflations are attached to the 1D geom..." alt="" coords="5,189,316,311"/>
+<area shape="rect" id="node4" href="$d8/daf/struct_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_r_n_1_1_vrn_reader_1_1_geom2d.html" title="Stores the 2d geometries by name, inflation (factor), and description" alt="" coords="5,5,316,127"/>
+</map>

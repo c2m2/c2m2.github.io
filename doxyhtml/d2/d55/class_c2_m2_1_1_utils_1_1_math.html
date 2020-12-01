@@ -117,6 +117,10 @@ Static Public Member Functions</h2></td></tr>
 <tr class="separator:a1a29a7ba13808701822ba83d4fe753c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7ab8e3e63ff217afa8140b39dd0dcfb5"><td class="memItemLeft" align="right" valign="top">static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d55/class_c2_m2_1_1_utils_1_1_math.html#a7ab8e3e63ff217afa8140b39dd0dcfb5">Max</a> (double a, double b)</td></tr>
 <tr class="separator:a7ab8e3e63ff217afa8140b39dd0dcfb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9607af0f19b66f6534994d9f506ed62c"><td class="memItemLeft" align="right" valign="top">static float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d55/class_c2_m2_1_1_utils_1_1_math.html#a9607af0f19b66f6534994d9f506ed62c">Max</a> (this Vector3 a)</td></tr>
+<tr class="separator:a9607af0f19b66f6534994d9f506ed62c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae713903adced9a257482a8b3d2759764"><td class="memItemLeft" align="right" valign="top">static float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d55/class_c2_m2_1_1_utils_1_1_math.html#ae713903adced9a257482a8b3d2759764">Min</a> (this Vector3 a)</td></tr>
+<tr class="separator:ae713903adced9a257482a8b3d2759764"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a805a23bfab56ce715d7a92f700225077"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d55/class_c2_m2_1_1_utils_1_1_math.html#a805a23bfab56ce715d7a92f700225077">Clamp</a> (int value, int min, int max)</td></tr>
 <tr class="memdesc:a805a23bfab56ce715d7a92f700225077"><td class="mdescLeft">&#160;</td><td class="mdescRight">If value &lt; min, returns min, If min &lt;= value &lt;= max, returns value, If value &gt; max, returns max  <a href="../../d2/d55/class_c2_m2_1_1_utils_1_1_math.html#a805a23bfab56ce715d7a92f700225077">More...</a><br /></td></tr>
 <tr class="separator:a805a23bfab56ce715d7a92f700225077"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -198,6 +202,8 @@ Static Public Member Functions</h2></td></tr>
 <tr class="separator:ab6f69979bee5006dbc7c6dbe2e51b59c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9e03ea1595caa0d63891ee8f82068dd6"><td class="memItemLeft" align="right" valign="top">static List&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d55/class_c2_m2_1_1_utils_1_1_math.html#a9e03ea1595caa0d63891ee8f82068dd6">Abs</a> (this List&lt; double &gt; list)</td></tr>
 <tr class="separator:a9e03ea1595caa0d63891ee8f82068dd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae939d565a3228e9705439b79cacc3d1c"><td class="memItemLeft" align="right" valign="top">static Vector3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d55/class_c2_m2_1_1_utils_1_1_math.html#ae939d565a3228e9705439b79cacc3d1c">Dot</a> (this Vector3 a, Vector3 b)</td></tr>
+<tr class="separator:ae939d565a3228e9705439b79cacc3d1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6d1af1b3355bab31c4162905ae94dcf1"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d55/class_c2_m2_1_1_utils_1_1_math.html#a6d1af1b3355bab31c4162905ae94dcf1">CompareToLinq</a> (int numTrials=1000, int arraySize=1000, bool testMin=true, bool testMax=true, bool testClamp=true, bool testArrMax=true, bool testArrMin=true, bool testArrAvg=true, bool testArrStdDev=true, bool testArrSum=true, bool testArrAbs=true, float maxTimeSeconds=30f)</td></tr>
 <tr class="memdesc:a6d1af1b3355bab31c4162905ae94dcf1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Run each function in this class and compare the performance to System.Linq's matching methods  <a href="../../d2/d55/class_c2_m2_1_1_utils_1_1_math.html#a6d1af1b3355bab31c4162905ae94dcf1">More...</a><br /></td></tr>
 <tr class="separator:a6d1af1b3355bab31c4162905ae94dcf1"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -748,8 +754,44 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="ae939d565a3228e9705439b79cacc3d1c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae939d565a3228e9705439b79cacc3d1c">&#9670;&nbsp;</a></span>Dot()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static Vector3 C2M2.Utils.Math.Dot </td>
+          <td>(</td>
+          <td class="paramtype">this Vector3&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Vector3&#160;</td>
+          <td class="paramname"><em>b</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a7ab8e3e63ff217afa8140b39dd0dcfb5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7ab8e3e63ff217afa8140b39dd0dcfb5">&#9670;&nbsp;</a></span>Max() <span class="overload">[1/9]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a7ab8e3e63ff217afa8140b39dd0dcfb5">&#9670;&nbsp;</a></span>Max() <span class="overload">[1/10]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -785,7 +827,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="a1a29a7ba13808701822ba83d4fe753c1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1a29a7ba13808701822ba83d4fe753c1">&#9670;&nbsp;</a></span>Max() <span class="overload">[2/9]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a1a29a7ba13808701822ba83d4fe753c1">&#9670;&nbsp;</a></span>Max() <span class="overload">[2/10]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -821,7 +863,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="a7f8022e53a901c98d52b687319a3477c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7f8022e53a901c98d52b687319a3477c">&#9670;&nbsp;</a></span>Max() <span class="overload">[3/9]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a7f8022e53a901c98d52b687319a3477c">&#9670;&nbsp;</a></span>Max() <span class="overload">[3/10]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -857,7 +899,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="a9ca5c46466b8f7f96309681a8ebb8290"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9ca5c46466b8f7f96309681a8ebb8290">&#9670;&nbsp;</a></span>Max() <span class="overload">[4/9]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a9ca5c46466b8f7f96309681a8ebb8290">&#9670;&nbsp;</a></span>Max() <span class="overload">[4/10]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -883,7 +925,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="abbf840c39002917f300b6b256d987325"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abbf840c39002917f300b6b256d987325">&#9670;&nbsp;</a></span>Max() <span class="overload">[5/9]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#abbf840c39002917f300b6b256d987325">&#9670;&nbsp;</a></span>Max() <span class="overload">[5/10]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -909,7 +951,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="a36ec8197dd811e50d6b82d33b0149674"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a36ec8197dd811e50d6b82d33b0149674">&#9670;&nbsp;</a></span>Max() <span class="overload">[6/9]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a36ec8197dd811e50d6b82d33b0149674">&#9670;&nbsp;</a></span>Max() <span class="overload">[6/10]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -935,7 +977,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="a81f200a3bb867ae863e9712cb893631a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a81f200a3bb867ae863e9712cb893631a">&#9670;&nbsp;</a></span>Max() <span class="overload">[7/9]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a81f200a3bb867ae863e9712cb893631a">&#9670;&nbsp;</a></span>Max() <span class="overload">[7/10]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -961,7 +1003,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="a32daa2efc57a5008ac39f1779af66f93"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a32daa2efc57a5008ac39f1779af66f93">&#9670;&nbsp;</a></span>Max() <span class="overload">[8/9]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a32daa2efc57a5008ac39f1779af66f93">&#9670;&nbsp;</a></span>Max() <span class="overload">[8/10]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -987,7 +1029,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="ae32b609584911aa45ce81dacc20d9e20"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae32b609584911aa45ce81dacc20d9e20">&#9670;&nbsp;</a></span>Max() <span class="overload">[9/9]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ae32b609584911aa45ce81dacc20d9e20">&#9670;&nbsp;</a></span>Max() <span class="overload">[9/10]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1012,8 +1054,34 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a9607af0f19b66f6534994d9f506ed62c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9607af0f19b66f6534994d9f506ed62c">&#9670;&nbsp;</a></span>Max() <span class="overload">[10/10]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static float C2M2.Utils.Math.Max </td>
+          <td>(</td>
+          <td class="paramtype">this Vector3&#160;</td>
+          <td class="paramname"><em>a</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a850e5efbdb93f10d86eade1631d6acf2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a850e5efbdb93f10d86eade1631d6acf2">&#9670;&nbsp;</a></span>Min() <span class="overload">[1/9]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a850e5efbdb93f10d86eade1631d6acf2">&#9670;&nbsp;</a></span>Min() <span class="overload">[1/10]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1049,7 +1117,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="aa0052acf133a5bb054d7797228467232"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa0052acf133a5bb054d7797228467232">&#9670;&nbsp;</a></span>Min() <span class="overload">[2/9]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aa0052acf133a5bb054d7797228467232">&#9670;&nbsp;</a></span>Min() <span class="overload">[2/10]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1085,7 +1153,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="a7ce4727b1e91cbd336bdb5107152a433"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7ce4727b1e91cbd336bdb5107152a433">&#9670;&nbsp;</a></span>Min() <span class="overload">[3/9]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a7ce4727b1e91cbd336bdb5107152a433">&#9670;&nbsp;</a></span>Min() <span class="overload">[3/10]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1121,7 +1189,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="a0fdde2e873c4ea9276a3f4b6fd20ee04"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0fdde2e873c4ea9276a3f4b6fd20ee04">&#9670;&nbsp;</a></span>Min() <span class="overload">[4/9]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a0fdde2e873c4ea9276a3f4b6fd20ee04">&#9670;&nbsp;</a></span>Min() <span class="overload">[4/10]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1147,7 +1215,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="a542641d650b08b9fd43699daedd9b635"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a542641d650b08b9fd43699daedd9b635">&#9670;&nbsp;</a></span>Min() <span class="overload">[5/9]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a542641d650b08b9fd43699daedd9b635">&#9670;&nbsp;</a></span>Min() <span class="overload">[5/10]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1173,7 +1241,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="ac813a84ac0e2c2c2009b84a9b293e1ac"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac813a84ac0e2c2c2009b84a9b293e1ac">&#9670;&nbsp;</a></span>Min() <span class="overload">[6/9]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ac813a84ac0e2c2c2009b84a9b293e1ac">&#9670;&nbsp;</a></span>Min() <span class="overload">[6/10]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1199,7 +1267,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="ab45819e41af03ec477d60b1671577a17"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab45819e41af03ec477d60b1671577a17">&#9670;&nbsp;</a></span>Min() <span class="overload">[7/9]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ab45819e41af03ec477d60b1671577a17">&#9670;&nbsp;</a></span>Min() <span class="overload">[7/10]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1225,7 +1293,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="a6e2918c8484dc6187d54ae983bd2a050"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6e2918c8484dc6187d54ae983bd2a050">&#9670;&nbsp;</a></span>Min() <span class="overload">[8/9]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a6e2918c8484dc6187d54ae983bd2a050">&#9670;&nbsp;</a></span>Min() <span class="overload">[8/10]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1251,7 +1319,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="a55d18386fd48f161de60dd104640e479"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a55d18386fd48f161de60dd104640e479">&#9670;&nbsp;</a></span>Min() <span class="overload">[9/9]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a55d18386fd48f161de60dd104640e479">&#9670;&nbsp;</a></span>Min() <span class="overload">[9/10]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1264,6 +1332,32 @@ Static Public Member Functions</h2></td></tr>
           <td>(</td>
           <td class="paramtype">this List&lt; int &gt;&#160;</td>
           <td class="paramname"><em>list</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae713903adced9a257482a8b3d2759764"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae713903adced9a257482a8b3d2759764">&#9670;&nbsp;</a></span>Min() <span class="overload">[10/10]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static float C2M2.Utils.Math.Min </td>
+          <td>(</td>
+          <td class="paramtype">this Vector3&#160;</td>
+          <td class="paramname"><em>a</em></td><td>)</td>
           <td></td>
         </tr>
       </table>

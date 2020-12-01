@@ -1,4 +1,4 @@
 <map id="C2M2.GameManager" name="C2M2.GameManager">
-<area shape="rect" id="node1" title="Stores many global variables, handles pregame initializations" alt="" coords="5,131,260,619"/>
-<area shape="rect" id="node2" title=" " alt="" coords="69,5,196,83"/>
+<area shape="rect" id="node1" title="Stores many global variables, handles pregame initializations" alt="" coords="5,131,284,663"/>
+<area shape="rect" id="node2" title=" " alt="" coords="81,5,208,83"/>
 </map>

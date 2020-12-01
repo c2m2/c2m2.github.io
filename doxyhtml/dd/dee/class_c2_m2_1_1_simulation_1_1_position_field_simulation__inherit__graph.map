@@ -1,7 +1,7 @@
 <map id="C2M2.Simulation.PositionFieldSimulation" name="C2M2.Simulation.PositionFieldSimulation">
-<area shape="rect" id="node1" title="Simulation of type Vector3[] for simulating positional fields" alt="" coords="204,424,419,545"/>
-<area shape="rect" id="node3" href="$d0/d99/class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_m_d_simulation.html" title="Reads data files and creates and updates visualizations for molecular dynamics systemss" alt="" coords="164,593,459,1155"/>
-<area shape="rect" id="node2" href="$db/d39/class_c2_m2_1_1_simulation_1_1_simulation.html" title=" " alt="" coords="168,5,455,376"/>
-<area shape="rect" id="node4" href="$d5/de2/class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_example_m_d_simulation.html" title=" " alt="" coords="5,1203,300,1441"/>
-<area shape="rect" id="node5" href="$d0/d05/class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_m_d_solver.html" title=" " alt="" coords="324,1203,619,1441"/>
+<area shape="rect" id="node1" title="Simulation of type Vector3[] for simulating positional fields" alt="" coords="204,468,419,589"/>
+<area shape="rect" id="node3" href="$d0/d99/class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_m_d_simulation.html" title="Reads data files and creates and updates visualizations for molecular dynamics systemss" alt="" coords="164,637,459,1199"/>
+<area shape="rect" id="node2" href="$db/d39/class_c2_m2_1_1_simulation_1_1_simulation.html" title=" " alt="" coords="168,5,455,420"/>
+<area shape="rect" id="node4" href="$d5/de2/class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_example_m_d_simulation.html" title=" " alt="" coords="5,1247,300,1515"/>
+<area shape="rect" id="node5" href="$d0/d05/class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_m_d_solver.html" title=" " alt="" coords="324,1261,619,1500"/>
 </map>

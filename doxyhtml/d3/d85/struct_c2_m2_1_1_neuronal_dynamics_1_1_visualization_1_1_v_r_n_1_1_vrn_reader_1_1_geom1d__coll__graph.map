@@ -1,0 +1,4 @@
+<map id="C2M2.NeuronalDynamics.Visualization.VRN.VrnReader.Geom1d" name="C2M2.NeuronalDynamics.Visualization.VRN.VrnReader.Geom1d">
+<area shape="rect" id="node1" title="Stores the 1D geometries by name, refinement and a description Inflations are attached to the 1D geom..." alt="" coords="5,189,316,311"/>
+<area shape="rect" id="node2" href="$d8/daf/struct_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_r_n_1_1_vrn_reader_1_1_geom2d.html" title="Stores the 2d geometries by name, inflation (factor), and description" alt="" coords="5,5,316,127"/>
+</map>

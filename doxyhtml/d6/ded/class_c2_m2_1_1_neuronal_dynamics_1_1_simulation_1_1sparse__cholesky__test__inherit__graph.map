@@ -1,6 +1,6 @@
 <map id="C2M2.NeuronalDynamics.Simulation.sparse_cholesky_test" name="C2M2.NeuronalDynamics.Simulation.sparse_cholesky_test">
-<area shape="rect" id="node1" title=" " alt="" coords="5,1217,340,1896"/>
-<area shape="rect" id="node2" href="$d4/d5a/class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_neuron_simulation1_d.html" title="Provide an interface for 1D neuron&#45;surface simulations to be visualized and interacted with" alt="" coords="73,681,272,1169"/>
-<area shape="rect" id="node3" href="$d6/d2d/class_c2_m2_1_1_simulation_1_1_mesh_simulation.html" title="Simulation of type double[] for visualizing scalar fields on mesh surfaces" alt="" coords="69,424,276,633"/>
-<area shape="rect" id="node4" href="$db/d39/class_c2_m2_1_1_simulation_1_1_simulation.html" title=" " alt="" coords="49,5,296,376"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,1555,340,2233"/>
+<area shape="rect" id="node2" href="$d7/d92/class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation.html" title="Provide an interface for 1D neuron&#45;surface simulations to be visualized and interacted with" alt="" coords="21,769,324,1507"/>
+<area shape="rect" id="node3" href="$d6/d2d/class_c2_m2_1_1_simulation_1_1_mesh_simulation.html" title="Simulation of type double[] for visualizing scalar fields on mesh surfaces" alt="" coords="69,468,276,721"/>
+<area shape="rect" id="node4" href="$db/d39/class_c2_m2_1_1_simulation_1_1_simulation.html" title=" " alt="" coords="49,5,296,420"/>
 </map>

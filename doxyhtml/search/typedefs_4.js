@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['reordering_2546',['Reordering',['../d3/dda/_algebra_8cs.html#aaf939dd7bba70a89000448287423d2f3',1,'Algebra.cs']]]
+  ['normalattachment_2744',['NormalAttachment',['../d7/df6/namespace_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x.html#a2cd51055092fd968a0ec2c92ff66798c',1,'C2M2::NeuronalDynamics::UGX']]]
 ];
