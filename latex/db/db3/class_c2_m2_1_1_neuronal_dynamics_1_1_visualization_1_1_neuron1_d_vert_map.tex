@@ -1,0 +1,119 @@
+\hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_neuron1_d_vert_map}{}\doxysection{C2\+M2.\+Neuronal\+Dynamics.\+Visualization.\+Neuron1\+DVert\+Map Class Reference}
+\label{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_neuron1_d_vert_map}\index{C2M2.NeuronalDynamics.Visualization.Neuron1DVertMap@{C2M2.NeuronalDynamics.Visualization.Neuron1DVertMap}}
+
+
+Holds two dictionaries\+: One to lookup a 1D vertex given a 3D vertes, one to lookup a list of 3D vertices given their associated 1D neuron  
+
+
+
+
+Collaboration diagram for C2\+M2.\+Neuronal\+Dynamics.\+Visualization.\+Neuron1\+DVert\+Map\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=313pt]{de/def/class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_neuron1_d_vert_map__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_neuron1_d_vert_map_a6903d089e1f16f60f62800cae8701813}{Neuron1\+DVert\+Map}} (Dictionary$<$ int, List$<$ int $>$$>$ \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_neuron1_d_vert_map_a616cd069821a9e5eea7611031b12051b}{one\+To\+Three}}, Dictionary$<$ int, int $>$ \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_neuron1_d_vert_map_ad126e58b5f5501b15ef470e3e0ed190e}{three\+To\+One}})
+\item 
+List$<$ int $>$ \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_neuron1_d_vert_map_a28a2d72a07778d5e8859f40be5e7b6ce}{Get3\+DVerts}} (int vert1D)
+\begin{DoxyCompactList}\small\item\em Given a 1D vertex index, return the associated 3D vertices \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_neuron1_d_vert_map_a3e45a7b27ee2adf4db40c51eee1d9fd6}{Get1\+DVert}} (int vert3D)
+\begin{DoxyCompactList}\small\item\em Given a 3D vertex index, return the associated 1D vertices \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_neuron1_d_vert_map_ad419ffdf3e77679a1a442ddb4142afb3}{count1D}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, private set\mbox{]}}
+\item 
+int \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_neuron1_d_vert_map_a9bc61c62798bf51e992ecc2883c2f55c}{count3D}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, private set\mbox{]}}
+\item 
+int\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_neuron1_d_vert_map_a1ebaa842ec38640f1e78446199137015}{verts1D}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, private set\mbox{]}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Dictionary$<$ int, List$<$ int $>$ $>$ \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_neuron1_d_vert_map_a616cd069821a9e5eea7611031b12051b}{one\+To\+Three}} = new Dictionary$<$int, List$<$int$>$$>$()
+\item 
+Dictionary$<$ int, int $>$ \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_neuron1_d_vert_map_ad126e58b5f5501b15ef470e3e0ed190e}{three\+To\+One}} = new Dictionary$<$int, int$>$()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Holds two dictionaries\+: One to lookup a 1D vertex given a 3D vertes, one to lookup a list of 3D vertices given their associated 1D neuron 
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_neuron1_d_vert_map_a6903d089e1f16f60f62800cae8701813}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_neuron1_d_vert_map_a6903d089e1f16f60f62800cae8701813}} 
+\index{C2M2.NeuronalDynamics.Visualization.Neuron1DVertMap@{C2M2.NeuronalDynamics.Visualization.Neuron1DVertMap}!Neuron1DVertMap@{Neuron1DVertMap}}
+\index{Neuron1DVertMap@{Neuron1DVertMap}!C2M2.NeuronalDynamics.Visualization.Neuron1DVertMap@{C2M2.NeuronalDynamics.Visualization.Neuron1DVertMap}}
+\doxysubsubsection{\texorpdfstring{Neuron1DVertMap()}{Neuron1DVertMap()}}
+{\footnotesize\ttfamily C2\+M2.\+Neuronal\+Dynamics.\+Visualization.\+Neuron1\+DVert\+Map.\+Neuron1\+DVert\+Map (\begin{DoxyParamCaption}\item[{Dictionary$<$ int, List$<$ int $>$$>$}]{one\+To\+Three,  }\item[{Dictionary$<$ int, int $>$}]{three\+To\+One }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_neuron1_d_vert_map_a3e45a7b27ee2adf4db40c51eee1d9fd6}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_neuron1_d_vert_map_a3e45a7b27ee2adf4db40c51eee1d9fd6}} 
+\index{C2M2.NeuronalDynamics.Visualization.Neuron1DVertMap@{C2M2.NeuronalDynamics.Visualization.Neuron1DVertMap}!Get1DVert@{Get1DVert}}
+\index{Get1DVert@{Get1DVert}!C2M2.NeuronalDynamics.Visualization.Neuron1DVertMap@{C2M2.NeuronalDynamics.Visualization.Neuron1DVertMap}}
+\doxysubsubsection{\texorpdfstring{Get1DVert()}{Get1DVert()}}
+{\footnotesize\ttfamily int C2\+M2.\+Neuronal\+Dynamics.\+Visualization.\+Neuron1\+DVert\+Map.\+Get1\+DVert (\begin{DoxyParamCaption}\item[{int}]{vert3D }\end{DoxyParamCaption})}
+
+
+
+Given a 3D vertex index, return the associated 1D vertices 
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_neuron1_d_vert_map_a28a2d72a07778d5e8859f40be5e7b6ce}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_neuron1_d_vert_map_a28a2d72a07778d5e8859f40be5e7b6ce}} 
+\index{C2M2.NeuronalDynamics.Visualization.Neuron1DVertMap@{C2M2.NeuronalDynamics.Visualization.Neuron1DVertMap}!Get3DVerts@{Get3DVerts}}
+\index{Get3DVerts@{Get3DVerts}!C2M2.NeuronalDynamics.Visualization.Neuron1DVertMap@{C2M2.NeuronalDynamics.Visualization.Neuron1DVertMap}}
+\doxysubsubsection{\texorpdfstring{Get3DVerts()}{Get3DVerts()}}
+{\footnotesize\ttfamily List$<$int$>$ C2\+M2.\+Neuronal\+Dynamics.\+Visualization.\+Neuron1\+DVert\+Map.\+Get3\+DVerts (\begin{DoxyParamCaption}\item[{int}]{vert1D }\end{DoxyParamCaption})}
+
+
+
+Given a 1D vertex index, return the associated 3D vertices 
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_neuron1_d_vert_map_a616cd069821a9e5eea7611031b12051b}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_neuron1_d_vert_map_a616cd069821a9e5eea7611031b12051b}} 
+\index{C2M2.NeuronalDynamics.Visualization.Neuron1DVertMap@{C2M2.NeuronalDynamics.Visualization.Neuron1DVertMap}!oneToThree@{oneToThree}}
+\index{oneToThree@{oneToThree}!C2M2.NeuronalDynamics.Visualization.Neuron1DVertMap@{C2M2.NeuronalDynamics.Visualization.Neuron1DVertMap}}
+\doxysubsubsection{\texorpdfstring{oneToThree}{oneToThree}}
+{\footnotesize\ttfamily Dictionary$<$int, List$<$int$>$ $>$ C2\+M2.\+Neuronal\+Dynamics.\+Visualization.\+Neuron1\+DVert\+Map.\+one\+To\+Three = new Dictionary$<$int, List$<$int$>$$>$()\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_neuron1_d_vert_map_ad126e58b5f5501b15ef470e3e0ed190e}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_neuron1_d_vert_map_ad126e58b5f5501b15ef470e3e0ed190e}} 
+\index{C2M2.NeuronalDynamics.Visualization.Neuron1DVertMap@{C2M2.NeuronalDynamics.Visualization.Neuron1DVertMap}!threeToOne@{threeToOne}}
+\index{threeToOne@{threeToOne}!C2M2.NeuronalDynamics.Visualization.Neuron1DVertMap@{C2M2.NeuronalDynamics.Visualization.Neuron1DVertMap}}
+\doxysubsubsection{\texorpdfstring{threeToOne}{threeToOne}}
+{\footnotesize\ttfamily Dictionary$<$int, int$>$ C2\+M2.\+Neuronal\+Dynamics.\+Visualization.\+Neuron1\+DVert\+Map.\+three\+To\+One = new Dictionary$<$int, int$>$()\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_neuron1_d_vert_map_ad419ffdf3e77679a1a442ddb4142afb3}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_neuron1_d_vert_map_ad419ffdf3e77679a1a442ddb4142afb3}} 
+\index{C2M2.NeuronalDynamics.Visualization.Neuron1DVertMap@{C2M2.NeuronalDynamics.Visualization.Neuron1DVertMap}!count1D@{count1D}}
+\index{count1D@{count1D}!C2M2.NeuronalDynamics.Visualization.Neuron1DVertMap@{C2M2.NeuronalDynamics.Visualization.Neuron1DVertMap}}
+\doxysubsubsection{\texorpdfstring{count1D}{count1D}}
+{\footnotesize\ttfamily int C2\+M2.\+Neuronal\+Dynamics.\+Visualization.\+Neuron1\+DVert\+Map.\+count1D\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [private set]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_neuron1_d_vert_map_a9bc61c62798bf51e992ecc2883c2f55c}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_neuron1_d_vert_map_a9bc61c62798bf51e992ecc2883c2f55c}} 
+\index{C2M2.NeuronalDynamics.Visualization.Neuron1DVertMap@{C2M2.NeuronalDynamics.Visualization.Neuron1DVertMap}!count3D@{count3D}}
+\index{count3D@{count3D}!C2M2.NeuronalDynamics.Visualization.Neuron1DVertMap@{C2M2.NeuronalDynamics.Visualization.Neuron1DVertMap}}
+\doxysubsubsection{\texorpdfstring{count3D}{count3D}}
+{\footnotesize\ttfamily int C2\+M2.\+Neuronal\+Dynamics.\+Visualization.\+Neuron1\+DVert\+Map.\+count3D\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [private set]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_neuron1_d_vert_map_a1ebaa842ec38640f1e78446199137015}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_neuron1_d_vert_map_a1ebaa842ec38640f1e78446199137015}} 
+\index{C2M2.NeuronalDynamics.Visualization.Neuron1DVertMap@{C2M2.NeuronalDynamics.Visualization.Neuron1DVertMap}!verts1D@{verts1D}}
+\index{verts1D@{verts1D}!C2M2.NeuronalDynamics.Visualization.Neuron1DVertMap@{C2M2.NeuronalDynamics.Visualization.Neuron1DVertMap}}
+\doxysubsubsection{\texorpdfstring{verts1D}{verts1D}}
+{\footnotesize\ttfamily int \mbox{[}$\,$\mbox{]} C2\+M2.\+Neuronal\+Dynamics.\+Visualization.\+Neuron1\+DVert\+Map.\+verts1D\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [private set]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/jaros/\+Desktop/tempvr/virtual-\/reality/\+Assets/\+Scripts/\+C2\+M2/\+Neuronal\+Dynamics/\+Visualization/1\+DNeuron\+Modelling/\mbox{\hyperlink{_neuron1_d_vert_map_8cs}{Neuron1\+DVert\+Map.\+cs}}\end{DoxyCompactItemize}

@@ -1,5 +1,5 @@
 <map id="C2M2.Simulation.Simulation&lt; ValueType, VizType, RaycastType, GrabType &gt;" name="C2M2.Simulation.Simulation&lt; ValueType, VizType, RaycastType, GrabType &gt;">
-<area shape="rect" id="node1" title="Provides an base interface for simulations using a general data type T" alt="" coords="5,300,300,715"/>
+<area shape="rect" id="node1" title="Provides an base interface for simulations using a general data type T" alt="" coords="5,300,300,700"/>
 <area shape="rect" id="node2" href="$dc/daa/class_c2_m2_1_1_simulation_1_1_interactable.html" title="Interface for interaction scripts" alt="" coords="57,131,248,252"/>
 <area shape="rect" id="node3" title=" " alt="" coords="89,5,216,83"/>
 </map>

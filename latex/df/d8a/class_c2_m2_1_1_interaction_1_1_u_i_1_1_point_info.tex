@@ -1,0 +1,237 @@
+\hypertarget{class_c2_m2_1_1_interaction_1_1_u_i_1_1_point_info}{}\doxysection{C2\+M2.\+Interaction.\+UI.\+Point\+Info Class Reference}
+\label{class_c2_m2_1_1_interaction_1_1_u_i_1_1_point_info}\index{C2M2.Interaction.UI.PointInfo@{C2M2.Interaction.UI.PointInfo}}
+
+
+Store useful information about individual simulation vertices, and spawn info panels to display that info  
+
+
+
+
+Inheritance diagram for C2\+M2.\+Interaction.\+UI.\+Point\+Info\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=271pt]{d7/ddf/class_c2_m2_1_1_interaction_1_1_u_i_1_1_point_info__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for C2\+M2.\+Interaction.\+UI.\+Point\+Info\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{d2/da0/class_c2_m2_1_1_interaction_1_1_u_i_1_1_point_info__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_u_i_1_1_point_info_aa054e1711bb31511ebed421086a484d8}{Close}} ()
+\item 
+void \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_u_i_1_1_point_info_a3299d74b589998086acdf4e228722e40}{Initialize\+Info\+Panel}} (\mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_object_manager}{Object\+Manager}} \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_u_i_1_1_point_info_ae07b3d7be56047fe0e2beffd92a42858}{object\+Manager}}, Raycast\+Hit hit)
+\item 
+void \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_u_i_1_1_point_info_adf4f71dc44bda37a6bd6c62db87afb67}{Read\+Value}} (string s)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Text\+Mesh\+Pro\+UGUI \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_u_i_1_1_point_info_aaea947c7a9c24b0bfe940247c2e2044d}{vert\+Num}}
+\item 
+Text\+Mesh\+Pro\+UGUI \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_u_i_1_1_point_info_a4853cd6d18204fdf23cb2b6994f6e5d7}{vert\+Pos}}
+\item 
+Text\+Mesh\+Pro\+UGUI \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_u_i_1_1_point_info_a0a3003f8f91141776430840c7b6f8789}{cur\+Val\+Reading}}
+\item 
+Image \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_u_i_1_1_point_info_a87bf4929d6e9da5ebad1a09ce3f3bec9}{cur\+Col\+Reading}}
+\item 
+Transform \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_u_i_1_1_point_info_aabd7320c38bf63981d927bcf4e69b2bc}{info\+Panel}}
+\item 
+Transform \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_u_i_1_1_point_info_a8b46b184d8b4f3e0c48d4ba1af926cad}{line\+Rend\+Info\+Panel\+Anchor}}
+\item 
+Transform \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_u_i_1_1_point_info_a66e9b4ee91d63b6920c96bcbc4aa0d79}{point\+Follower}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_u_i_1_1_point_info_ab7cd65dcfc3a49d1156444eac0f154bb}{Awake}} ()
+\item 
+void \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_u_i_1_1_point_info_a0bfc6af5bc704ac5294c346edc01b3a7}{Update}} ()
+\item 
+IEnumerator \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_u_i_1_1_point_info_a7a0cffcd6fbeee8854e3dc0a3915b3c6}{Cur\+Val\+Reading\+Default\+Color\+Timed}} (float delay\+Time, Color default\+Col)
+\item 
+void \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_u_i_1_1_point_info_a38658610bdd68f43fd053bf6ddff3a49}{Late\+Update}} ()
+\item 
+void \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_u_i_1_1_point_info_a9397e15150f27f52d2b323fd7ed2323e}{Initialize\+Panel\+Location}} ()
+\item 
+void \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_u_i_1_1_point_info_a259bcedb1baccb3bc619c452c3fc8e51}{Update\+Info}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_object_manager}{Object\+Manager}} \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_u_i_1_1_point_info_ae07b3d7be56047fe0e2beffd92a42858}{object\+Manager}}
+\item 
+Line\+Renderer \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_u_i_1_1_point_info_ac53acd1749dc2bc42dc81ac5a4272c46}{line\+Rend}}
+\item 
+double \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_u_i_1_1_point_info_a6d78202286fdc20718e20b8f248dc3d4}{cur\+Val}}
+\item 
+int \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_u_i_1_1_point_info_aa9855429d61ca9c3f250fa65ff1405f9}{vert\+To\+Watch}}
+\item 
+Color \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_u_i_1_1_point_info_a7a1d600b36963bc9caecfe60bbc232b5}{cur\+Col}}
+\item 
+double \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_u_i_1_1_point_info_a34523f47c7f9cc1c6ed62635100c331c}{add\+Val}} = 0
+\item 
+Transform \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_u_i_1_1_point_info_ad9610916911ecc1b685b50d9a2cb401d}{menu\+Snap\+Position}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Store useful information about individual simulation vertices, and spawn info panels to display that info 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_u_i_1_1_point_info_ab7cd65dcfc3a49d1156444eac0f154bb}\label{class_c2_m2_1_1_interaction_1_1_u_i_1_1_point_info_ab7cd65dcfc3a49d1156444eac0f154bb}} 
+\index{C2M2.Interaction.UI.PointInfo@{C2M2.Interaction.UI.PointInfo}!Awake@{Awake}}
+\index{Awake@{Awake}!C2M2.Interaction.UI.PointInfo@{C2M2.Interaction.UI.PointInfo}}
+\doxysubsubsection{\texorpdfstring{Awake()}{Awake()}}
+{\footnotesize\ttfamily void C2\+M2.\+Interaction.\+UI.\+Point\+Info.\+Awake (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_u_i_1_1_point_info_aa054e1711bb31511ebed421086a484d8}\label{class_c2_m2_1_1_interaction_1_1_u_i_1_1_point_info_aa054e1711bb31511ebed421086a484d8}} 
+\index{C2M2.Interaction.UI.PointInfo@{C2M2.Interaction.UI.PointInfo}!Close@{Close}}
+\index{Close@{Close}!C2M2.Interaction.UI.PointInfo@{C2M2.Interaction.UI.PointInfo}}
+\doxysubsubsection{\texorpdfstring{Close()}{Close()}}
+{\footnotesize\ttfamily void C2\+M2.\+Interaction.\+UI.\+Point\+Info.\+Close (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_u_i_1_1_point_info_a7a0cffcd6fbeee8854e3dc0a3915b3c6}\label{class_c2_m2_1_1_interaction_1_1_u_i_1_1_point_info_a7a0cffcd6fbeee8854e3dc0a3915b3c6}} 
+\index{C2M2.Interaction.UI.PointInfo@{C2M2.Interaction.UI.PointInfo}!CurValReadingDefaultColorTimed@{CurValReadingDefaultColorTimed}}
+\index{CurValReadingDefaultColorTimed@{CurValReadingDefaultColorTimed}!C2M2.Interaction.UI.PointInfo@{C2M2.Interaction.UI.PointInfo}}
+\doxysubsubsection{\texorpdfstring{CurValReadingDefaultColorTimed()}{CurValReadingDefaultColorTimed()}}
+{\footnotesize\ttfamily IEnumerator C2\+M2.\+Interaction.\+UI.\+Point\+Info.\+Cur\+Val\+Reading\+Default\+Color\+Timed (\begin{DoxyParamCaption}\item[{float}]{delay\+Time,  }\item[{Color}]{default\+Col }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_u_i_1_1_point_info_a3299d74b589998086acdf4e228722e40}\label{class_c2_m2_1_1_interaction_1_1_u_i_1_1_point_info_a3299d74b589998086acdf4e228722e40}} 
+\index{C2M2.Interaction.UI.PointInfo@{C2M2.Interaction.UI.PointInfo}!InitializeInfoPanel@{InitializeInfoPanel}}
+\index{InitializeInfoPanel@{InitializeInfoPanel}!C2M2.Interaction.UI.PointInfo@{C2M2.Interaction.UI.PointInfo}}
+\doxysubsubsection{\texorpdfstring{InitializeInfoPanel()}{InitializeInfoPanel()}}
+{\footnotesize\ttfamily void C2\+M2.\+Interaction.\+UI.\+Point\+Info.\+Initialize\+Info\+Panel (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_object_manager}{Object\+Manager}}}]{object\+Manager,  }\item[{Raycast\+Hit}]{hit }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_u_i_1_1_point_info_a9397e15150f27f52d2b323fd7ed2323e}\label{class_c2_m2_1_1_interaction_1_1_u_i_1_1_point_info_a9397e15150f27f52d2b323fd7ed2323e}} 
+\index{C2M2.Interaction.UI.PointInfo@{C2M2.Interaction.UI.PointInfo}!InitializePanelLocation@{InitializePanelLocation}}
+\index{InitializePanelLocation@{InitializePanelLocation}!C2M2.Interaction.UI.PointInfo@{C2M2.Interaction.UI.PointInfo}}
+\doxysubsubsection{\texorpdfstring{InitializePanelLocation()}{InitializePanelLocation()}}
+{\footnotesize\ttfamily void C2\+M2.\+Interaction.\+UI.\+Point\+Info.\+Initialize\+Panel\+Location (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_u_i_1_1_point_info_a38658610bdd68f43fd053bf6ddff3a49}\label{class_c2_m2_1_1_interaction_1_1_u_i_1_1_point_info_a38658610bdd68f43fd053bf6ddff3a49}} 
+\index{C2M2.Interaction.UI.PointInfo@{C2M2.Interaction.UI.PointInfo}!LateUpdate@{LateUpdate}}
+\index{LateUpdate@{LateUpdate}!C2M2.Interaction.UI.PointInfo@{C2M2.Interaction.UI.PointInfo}}
+\doxysubsubsection{\texorpdfstring{LateUpdate()}{LateUpdate()}}
+{\footnotesize\ttfamily void C2\+M2.\+Interaction.\+UI.\+Point\+Info.\+Late\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_u_i_1_1_point_info_adf4f71dc44bda37a6bd6c62db87afb67}\label{class_c2_m2_1_1_interaction_1_1_u_i_1_1_point_info_adf4f71dc44bda37a6bd6c62db87afb67}} 
+\index{C2M2.Interaction.UI.PointInfo@{C2M2.Interaction.UI.PointInfo}!ReadValue@{ReadValue}}
+\index{ReadValue@{ReadValue}!C2M2.Interaction.UI.PointInfo@{C2M2.Interaction.UI.PointInfo}}
+\doxysubsubsection{\texorpdfstring{ReadValue()}{ReadValue()}}
+{\footnotesize\ttfamily void C2\+M2.\+Interaction.\+UI.\+Point\+Info.\+Read\+Value (\begin{DoxyParamCaption}\item[{string}]{s }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_u_i_1_1_point_info_a0bfc6af5bc704ac5294c346edc01b3a7}\label{class_c2_m2_1_1_interaction_1_1_u_i_1_1_point_info_a0bfc6af5bc704ac5294c346edc01b3a7}} 
+\index{C2M2.Interaction.UI.PointInfo@{C2M2.Interaction.UI.PointInfo}!Update@{Update}}
+\index{Update@{Update}!C2M2.Interaction.UI.PointInfo@{C2M2.Interaction.UI.PointInfo}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void C2\+M2.\+Interaction.\+UI.\+Point\+Info.\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_u_i_1_1_point_info_a259bcedb1baccb3bc619c452c3fc8e51}\label{class_c2_m2_1_1_interaction_1_1_u_i_1_1_point_info_a259bcedb1baccb3bc619c452c3fc8e51}} 
+\index{C2M2.Interaction.UI.PointInfo@{C2M2.Interaction.UI.PointInfo}!UpdateInfo@{UpdateInfo}}
+\index{UpdateInfo@{UpdateInfo}!C2M2.Interaction.UI.PointInfo@{C2M2.Interaction.UI.PointInfo}}
+\doxysubsubsection{\texorpdfstring{UpdateInfo()}{UpdateInfo()}}
+{\footnotesize\ttfamily void C2\+M2.\+Interaction.\+UI.\+Point\+Info.\+Update\+Info (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_u_i_1_1_point_info_a34523f47c7f9cc1c6ed62635100c331c}\label{class_c2_m2_1_1_interaction_1_1_u_i_1_1_point_info_a34523f47c7f9cc1c6ed62635100c331c}} 
+\index{C2M2.Interaction.UI.PointInfo@{C2M2.Interaction.UI.PointInfo}!addVal@{addVal}}
+\index{addVal@{addVal}!C2M2.Interaction.UI.PointInfo@{C2M2.Interaction.UI.PointInfo}}
+\doxysubsubsection{\texorpdfstring{addVal}{addVal}}
+{\footnotesize\ttfamily double C2\+M2.\+Interaction.\+UI.\+Point\+Info.\+add\+Val = 0\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_u_i_1_1_point_info_a7a1d600b36963bc9caecfe60bbc232b5}\label{class_c2_m2_1_1_interaction_1_1_u_i_1_1_point_info_a7a1d600b36963bc9caecfe60bbc232b5}} 
+\index{C2M2.Interaction.UI.PointInfo@{C2M2.Interaction.UI.PointInfo}!curCol@{curCol}}
+\index{curCol@{curCol}!C2M2.Interaction.UI.PointInfo@{C2M2.Interaction.UI.PointInfo}}
+\doxysubsubsection{\texorpdfstring{curCol}{curCol}}
+{\footnotesize\ttfamily Color C2\+M2.\+Interaction.\+UI.\+Point\+Info.\+cur\+Col\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_u_i_1_1_point_info_a87bf4929d6e9da5ebad1a09ce3f3bec9}\label{class_c2_m2_1_1_interaction_1_1_u_i_1_1_point_info_a87bf4929d6e9da5ebad1a09ce3f3bec9}} 
+\index{C2M2.Interaction.UI.PointInfo@{C2M2.Interaction.UI.PointInfo}!curColReading@{curColReading}}
+\index{curColReading@{curColReading}!C2M2.Interaction.UI.PointInfo@{C2M2.Interaction.UI.PointInfo}}
+\doxysubsubsection{\texorpdfstring{curColReading}{curColReading}}
+{\footnotesize\ttfamily Image C2\+M2.\+Interaction.\+UI.\+Point\+Info.\+cur\+Col\+Reading}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_u_i_1_1_point_info_a6d78202286fdc20718e20b8f248dc3d4}\label{class_c2_m2_1_1_interaction_1_1_u_i_1_1_point_info_a6d78202286fdc20718e20b8f248dc3d4}} 
+\index{C2M2.Interaction.UI.PointInfo@{C2M2.Interaction.UI.PointInfo}!curVal@{curVal}}
+\index{curVal@{curVal}!C2M2.Interaction.UI.PointInfo@{C2M2.Interaction.UI.PointInfo}}
+\doxysubsubsection{\texorpdfstring{curVal}{curVal}}
+{\footnotesize\ttfamily double C2\+M2.\+Interaction.\+UI.\+Point\+Info.\+cur\+Val\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_u_i_1_1_point_info_a0a3003f8f91141776430840c7b6f8789}\label{class_c2_m2_1_1_interaction_1_1_u_i_1_1_point_info_a0a3003f8f91141776430840c7b6f8789}} 
+\index{C2M2.Interaction.UI.PointInfo@{C2M2.Interaction.UI.PointInfo}!curValReading@{curValReading}}
+\index{curValReading@{curValReading}!C2M2.Interaction.UI.PointInfo@{C2M2.Interaction.UI.PointInfo}}
+\doxysubsubsection{\texorpdfstring{curValReading}{curValReading}}
+{\footnotesize\ttfamily Text\+Mesh\+Pro\+UGUI C2\+M2.\+Interaction.\+UI.\+Point\+Info.\+cur\+Val\+Reading}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_u_i_1_1_point_info_aabd7320c38bf63981d927bcf4e69b2bc}\label{class_c2_m2_1_1_interaction_1_1_u_i_1_1_point_info_aabd7320c38bf63981d927bcf4e69b2bc}} 
+\index{C2M2.Interaction.UI.PointInfo@{C2M2.Interaction.UI.PointInfo}!infoPanel@{infoPanel}}
+\index{infoPanel@{infoPanel}!C2M2.Interaction.UI.PointInfo@{C2M2.Interaction.UI.PointInfo}}
+\doxysubsubsection{\texorpdfstring{infoPanel}{infoPanel}}
+{\footnotesize\ttfamily Transform C2\+M2.\+Interaction.\+UI.\+Point\+Info.\+info\+Panel}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_u_i_1_1_point_info_ac53acd1749dc2bc42dc81ac5a4272c46}\label{class_c2_m2_1_1_interaction_1_1_u_i_1_1_point_info_ac53acd1749dc2bc42dc81ac5a4272c46}} 
+\index{C2M2.Interaction.UI.PointInfo@{C2M2.Interaction.UI.PointInfo}!lineRend@{lineRend}}
+\index{lineRend@{lineRend}!C2M2.Interaction.UI.PointInfo@{C2M2.Interaction.UI.PointInfo}}
+\doxysubsubsection{\texorpdfstring{lineRend}{lineRend}}
+{\footnotesize\ttfamily Line\+Renderer C2\+M2.\+Interaction.\+UI.\+Point\+Info.\+line\+Rend\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_u_i_1_1_point_info_a8b46b184d8b4f3e0c48d4ba1af926cad}\label{class_c2_m2_1_1_interaction_1_1_u_i_1_1_point_info_a8b46b184d8b4f3e0c48d4ba1af926cad}} 
+\index{C2M2.Interaction.UI.PointInfo@{C2M2.Interaction.UI.PointInfo}!lineRendInfoPanelAnchor@{lineRendInfoPanelAnchor}}
+\index{lineRendInfoPanelAnchor@{lineRendInfoPanelAnchor}!C2M2.Interaction.UI.PointInfo@{C2M2.Interaction.UI.PointInfo}}
+\doxysubsubsection{\texorpdfstring{lineRendInfoPanelAnchor}{lineRendInfoPanelAnchor}}
+{\footnotesize\ttfamily Transform C2\+M2.\+Interaction.\+UI.\+Point\+Info.\+line\+Rend\+Info\+Panel\+Anchor}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_u_i_1_1_point_info_ad9610916911ecc1b685b50d9a2cb401d}\label{class_c2_m2_1_1_interaction_1_1_u_i_1_1_point_info_ad9610916911ecc1b685b50d9a2cb401d}} 
+\index{C2M2.Interaction.UI.PointInfo@{C2M2.Interaction.UI.PointInfo}!menuSnapPosition@{menuSnapPosition}}
+\index{menuSnapPosition@{menuSnapPosition}!C2M2.Interaction.UI.PointInfo@{C2M2.Interaction.UI.PointInfo}}
+\doxysubsubsection{\texorpdfstring{menuSnapPosition}{menuSnapPosition}}
+{\footnotesize\ttfamily Transform C2\+M2.\+Interaction.\+UI.\+Point\+Info.\+menu\+Snap\+Position\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_u_i_1_1_point_info_ae07b3d7be56047fe0e2beffd92a42858}\label{class_c2_m2_1_1_interaction_1_1_u_i_1_1_point_info_ae07b3d7be56047fe0e2beffd92a42858}} 
+\index{C2M2.Interaction.UI.PointInfo@{C2M2.Interaction.UI.PointInfo}!objectManager@{objectManager}}
+\index{objectManager@{objectManager}!C2M2.Interaction.UI.PointInfo@{C2M2.Interaction.UI.PointInfo}}
+\doxysubsubsection{\texorpdfstring{objectManager}{objectManager}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_object_manager}{Object\+Manager}} C2\+M2.\+Interaction.\+UI.\+Point\+Info.\+object\+Manager\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_u_i_1_1_point_info_a66e9b4ee91d63b6920c96bcbc4aa0d79}\label{class_c2_m2_1_1_interaction_1_1_u_i_1_1_point_info_a66e9b4ee91d63b6920c96bcbc4aa0d79}} 
+\index{C2M2.Interaction.UI.PointInfo@{C2M2.Interaction.UI.PointInfo}!pointFollower@{pointFollower}}
+\index{pointFollower@{pointFollower}!C2M2.Interaction.UI.PointInfo@{C2M2.Interaction.UI.PointInfo}}
+\doxysubsubsection{\texorpdfstring{pointFollower}{pointFollower}}
+{\footnotesize\ttfamily Transform C2\+M2.\+Interaction.\+UI.\+Point\+Info.\+point\+Follower}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_u_i_1_1_point_info_aaea947c7a9c24b0bfe940247c2e2044d}\label{class_c2_m2_1_1_interaction_1_1_u_i_1_1_point_info_aaea947c7a9c24b0bfe940247c2e2044d}} 
+\index{C2M2.Interaction.UI.PointInfo@{C2M2.Interaction.UI.PointInfo}!vertNum@{vertNum}}
+\index{vertNum@{vertNum}!C2M2.Interaction.UI.PointInfo@{C2M2.Interaction.UI.PointInfo}}
+\doxysubsubsection{\texorpdfstring{vertNum}{vertNum}}
+{\footnotesize\ttfamily Text\+Mesh\+Pro\+UGUI C2\+M2.\+Interaction.\+UI.\+Point\+Info.\+vert\+Num}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_u_i_1_1_point_info_a4853cd6d18204fdf23cb2b6994f6e5d7}\label{class_c2_m2_1_1_interaction_1_1_u_i_1_1_point_info_a4853cd6d18204fdf23cb2b6994f6e5d7}} 
+\index{C2M2.Interaction.UI.PointInfo@{C2M2.Interaction.UI.PointInfo}!vertPos@{vertPos}}
+\index{vertPos@{vertPos}!C2M2.Interaction.UI.PointInfo@{C2M2.Interaction.UI.PointInfo}}
+\doxysubsubsection{\texorpdfstring{vertPos}{vertPos}}
+{\footnotesize\ttfamily Text\+Mesh\+Pro\+UGUI C2\+M2.\+Interaction.\+UI.\+Point\+Info.\+vert\+Pos}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_u_i_1_1_point_info_aa9855429d61ca9c3f250fa65ff1405f9}\label{class_c2_m2_1_1_interaction_1_1_u_i_1_1_point_info_aa9855429d61ca9c3f250fa65ff1405f9}} 
+\index{C2M2.Interaction.UI.PointInfo@{C2M2.Interaction.UI.PointInfo}!vertToWatch@{vertToWatch}}
+\index{vertToWatch@{vertToWatch}!C2M2.Interaction.UI.PointInfo@{C2M2.Interaction.UI.PointInfo}}
+\doxysubsubsection{\texorpdfstring{vertToWatch}{vertToWatch}}
+{\footnotesize\ttfamily int C2\+M2.\+Interaction.\+UI.\+Point\+Info.\+vert\+To\+Watch\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/jaros/\+Desktop/tempvr/virtual-\/reality/\+Assets/\+Scripts/\+C2\+M2/\+Interaction/\+UI/\mbox{\hyperlink{_point_info_8cs}{Point\+Info.\+cs}}\end{DoxyCompactItemize}

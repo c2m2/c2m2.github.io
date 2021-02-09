@@ -1,0 +1,21 @@
+\hypertarget{namespace_c2_m2_1_1_neuronal_dynamics_1_1_simulation}{}\doxysection{C2\+M2.\+Neuronal\+Dynamics.\+Simulation Namespace Reference}
+\label{namespace_c2_m2_1_1_neuronal_dynamics_1_1_simulation}\index{C2M2.NeuronalDynamics.Simulation@{C2M2.NeuronalDynamics.Simulation}}
+
+
+Neuronal Dynamics simulation code  
+
+
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_sparse_solver_testv1}{Sparse\+Solver\+Testv1}}
+\begin{DoxyCompactList}\small\item\em This is the sparse solver class for solving the Hodgkin-\/\+Huxley equations for the propagation of action potentials. Below are the HH equations this is a system of partial differential equations (PDE), the first equation is for the membrane potential (voltage) it is time spatially dependent and the remaining equations are the ODE equations for the state variables n,m,h (these are unitless). The system is non-\/trivial in that the PDE equation on Voltage is coupled to the ODE equations using n,m,h and these ODE equations are also non-\/linear. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation}{NDSimulation}}
+\begin{DoxyCompactList}\small\item\em Provide an interface for 1D neuron-\/surface simulations to be visualized and interacted with \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{struct_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_vert3_d1_d_pair}{Vert3\+D1\+DPair}}
+\begin{DoxyCompactList}\small\item\em Stores two 1D indices and a lambda value for a 3D vertex \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Neuronal Dynamics simulation code 
+

@@ -1,0 +1,165 @@
+\hypertarget{class_ruler_measure}{}\doxysection{Ruler\+Measure Class Reference}
+\label{class_ruler_measure}\index{RulerMeasure@{RulerMeasure}}
+
+
+Inheritance diagram for Ruler\+Measure\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=229pt]{d6/dc2/class_ruler_measure__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Ruler\+Measure\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{d5/da7/class_ruler_measure__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_ruler_measure_1_1_marked_display}{Marked\+Display}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_mesh_simulation}{Mesh\+Simulation}} \mbox{\hyperlink{class_ruler_measure_a6bfdacd20b3f11a4186d824ac218ac9f}{sim}} = null
+\item 
+List$<$ Canvas $>$ \mbox{\hyperlink{class_ruler_measure_a27a6b744bf9b2c15da9c7028c54485fa}{measurement\+Displays}}
+\item 
+List$<$ int $>$ \mbox{\hyperlink{class_ruler_measure_a060ddc3a5cd1cf194880d893130095ac}{numbers}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_ruler_measure_a90ce438b27193f8e3aa4eae397fd1fd9}{Start}} ()
+\item 
+void \mbox{\hyperlink{class_ruler_measure_ac649d958e24366ff37feb4443d6d6047}{Update}} ()
+\item 
+int \mbox{\hyperlink{class_ruler_measure_a4dacc7d750c2e2fee481ae39bc7010ff}{Get\+Magnitude}} (float length)
+\item 
+string \mbox{\hyperlink{class_ruler_measure_a3462a8535c85ff88d5e12724cd2ae7ad}{Get\+Unit}} (int magnitude)
+\item 
+void \mbox{\hyperlink{class_ruler_measure_ac7d25b1b803e1c07dd818f7a51ce6bd7}{Create\+Markers}} ()
+\item 
+void \mbox{\hyperlink{class_ruler_measure_a8ad6071c4142c47c14cd5999002cf2a4}{Update\+Markers}} (float scaled\+First\+Marker\+Length)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+List$<$ \mbox{\hyperlink{class_ruler_measure_1_1_marked_display}{Marked\+Display}} $>$ \mbox{\hyperlink{class_ruler_measure_a39459f64d2ac0c746a5a339ce1a50693}{marked\+Displays}} = new List$<$\mbox{\hyperlink{class_ruler_measure_1_1_marked_display}{Marked\+Display}}$>$()
+\item 
+readonly int \mbox{\hyperlink{class_ruler_measure_ae9e27e139abde1a7ce6950adea693c50}{marker\+Count}} = 100
+\item 
+float \mbox{\hyperlink{class_ruler_measure_a792be493d5eee0f62aba6331dc30c82b}{initial\+Ruler\+Length}}
+\item 
+float \mbox{\hyperlink{class_ruler_measure_a6f5e308ad1b5cb74b81d09569598b40b}{scaled\+Ruler\+Length}}
+\item 
+string \mbox{\hyperlink{class_ruler_measure_aaf522ae17cd43331416126024e740196}{units}}
+\item 
+float \mbox{\hyperlink{class_ruler_measure_a87732ac900ad77d71100087898174770}{marker\+Spacing\+Percent}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_ruler_measure_ac7d25b1b803e1c07dd818f7a51ce6bd7}\label{class_ruler_measure_ac7d25b1b803e1c07dd818f7a51ce6bd7}} 
+\index{RulerMeasure@{RulerMeasure}!CreateMarkers@{CreateMarkers}}
+\index{CreateMarkers@{CreateMarkers}!RulerMeasure@{RulerMeasure}}
+\doxysubsubsection{\texorpdfstring{CreateMarkers()}{CreateMarkers()}}
+{\footnotesize\ttfamily void Ruler\+Measure.\+Create\+Markers (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_ruler_measure_a4dacc7d750c2e2fee481ae39bc7010ff}\label{class_ruler_measure_a4dacc7d750c2e2fee481ae39bc7010ff}} 
+\index{RulerMeasure@{RulerMeasure}!GetMagnitude@{GetMagnitude}}
+\index{GetMagnitude@{GetMagnitude}!RulerMeasure@{RulerMeasure}}
+\doxysubsubsection{\texorpdfstring{GetMagnitude()}{GetMagnitude()}}
+{\footnotesize\ttfamily int Ruler\+Measure.\+Get\+Magnitude (\begin{DoxyParamCaption}\item[{float}]{length }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_ruler_measure_a3462a8535c85ff88d5e12724cd2ae7ad}\label{class_ruler_measure_a3462a8535c85ff88d5e12724cd2ae7ad}} 
+\index{RulerMeasure@{RulerMeasure}!GetUnit@{GetUnit}}
+\index{GetUnit@{GetUnit}!RulerMeasure@{RulerMeasure}}
+\doxysubsubsection{\texorpdfstring{GetUnit()}{GetUnit()}}
+{\footnotesize\ttfamily string Ruler\+Measure.\+Get\+Unit (\begin{DoxyParamCaption}\item[{int}]{magnitude }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_ruler_measure_a90ce438b27193f8e3aa4eae397fd1fd9}\label{class_ruler_measure_a90ce438b27193f8e3aa4eae397fd1fd9}} 
+\index{RulerMeasure@{RulerMeasure}!Start@{Start}}
+\index{Start@{Start}!RulerMeasure@{RulerMeasure}}
+\doxysubsubsection{\texorpdfstring{Start()}{Start()}}
+{\footnotesize\ttfamily void Ruler\+Measure.\+Start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_ruler_measure_ac649d958e24366ff37feb4443d6d6047}\label{class_ruler_measure_ac649d958e24366ff37feb4443d6d6047}} 
+\index{RulerMeasure@{RulerMeasure}!Update@{Update}}
+\index{Update@{Update}!RulerMeasure@{RulerMeasure}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void Ruler\+Measure.\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_ruler_measure_a8ad6071c4142c47c14cd5999002cf2a4}\label{class_ruler_measure_a8ad6071c4142c47c14cd5999002cf2a4}} 
+\index{RulerMeasure@{RulerMeasure}!UpdateMarkers@{UpdateMarkers}}
+\index{UpdateMarkers@{UpdateMarkers}!RulerMeasure@{RulerMeasure}}
+\doxysubsubsection{\texorpdfstring{UpdateMarkers()}{UpdateMarkers()}}
+{\footnotesize\ttfamily void Ruler\+Measure.\+Update\+Markers (\begin{DoxyParamCaption}\item[{float}]{scaled\+First\+Marker\+Length }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_ruler_measure_a792be493d5eee0f62aba6331dc30c82b}\label{class_ruler_measure_a792be493d5eee0f62aba6331dc30c82b}} 
+\index{RulerMeasure@{RulerMeasure}!initialRulerLength@{initialRulerLength}}
+\index{initialRulerLength@{initialRulerLength}!RulerMeasure@{RulerMeasure}}
+\doxysubsubsection{\texorpdfstring{initialRulerLength}{initialRulerLength}}
+{\footnotesize\ttfamily float Ruler\+Measure.\+initial\+Ruler\+Length\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_ruler_measure_a39459f64d2ac0c746a5a339ce1a50693}\label{class_ruler_measure_a39459f64d2ac0c746a5a339ce1a50693}} 
+\index{RulerMeasure@{RulerMeasure}!markedDisplays@{markedDisplays}}
+\index{markedDisplays@{markedDisplays}!RulerMeasure@{RulerMeasure}}
+\doxysubsubsection{\texorpdfstring{markedDisplays}{markedDisplays}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{class_ruler_measure_1_1_marked_display}{Marked\+Display}}$>$ Ruler\+Measure.\+marked\+Displays = new List$<$\mbox{\hyperlink{class_ruler_measure_1_1_marked_display}{Marked\+Display}}$>$()\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_ruler_measure_ae9e27e139abde1a7ce6950adea693c50}\label{class_ruler_measure_ae9e27e139abde1a7ce6950adea693c50}} 
+\index{RulerMeasure@{RulerMeasure}!markerCount@{markerCount}}
+\index{markerCount@{markerCount}!RulerMeasure@{RulerMeasure}}
+\doxysubsubsection{\texorpdfstring{markerCount}{markerCount}}
+{\footnotesize\ttfamily readonly int Ruler\+Measure.\+marker\+Count = 100\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_ruler_measure_a87732ac900ad77d71100087898174770}\label{class_ruler_measure_a87732ac900ad77d71100087898174770}} 
+\index{RulerMeasure@{RulerMeasure}!markerSpacingPercent@{markerSpacingPercent}}
+\index{markerSpacingPercent@{markerSpacingPercent}!RulerMeasure@{RulerMeasure}}
+\doxysubsubsection{\texorpdfstring{markerSpacingPercent}{markerSpacingPercent}}
+{\footnotesize\ttfamily float Ruler\+Measure.\+marker\+Spacing\+Percent\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_ruler_measure_a27a6b744bf9b2c15da9c7028c54485fa}\label{class_ruler_measure_a27a6b744bf9b2c15da9c7028c54485fa}} 
+\index{RulerMeasure@{RulerMeasure}!measurementDisplays@{measurementDisplays}}
+\index{measurementDisplays@{measurementDisplays}!RulerMeasure@{RulerMeasure}}
+\doxysubsubsection{\texorpdfstring{measurementDisplays}{measurementDisplays}}
+{\footnotesize\ttfamily List$<$Canvas$>$ Ruler\+Measure.\+measurement\+Displays}
+
+\mbox{\Hypertarget{class_ruler_measure_a060ddc3a5cd1cf194880d893130095ac}\label{class_ruler_measure_a060ddc3a5cd1cf194880d893130095ac}} 
+\index{RulerMeasure@{RulerMeasure}!numbers@{numbers}}
+\index{numbers@{numbers}!RulerMeasure@{RulerMeasure}}
+\doxysubsubsection{\texorpdfstring{numbers}{numbers}}
+{\footnotesize\ttfamily List$<$int$>$ Ruler\+Measure.\+numbers}
+
+\mbox{\Hypertarget{class_ruler_measure_a6f5e308ad1b5cb74b81d09569598b40b}\label{class_ruler_measure_a6f5e308ad1b5cb74b81d09569598b40b}} 
+\index{RulerMeasure@{RulerMeasure}!scaledRulerLength@{scaledRulerLength}}
+\index{scaledRulerLength@{scaledRulerLength}!RulerMeasure@{RulerMeasure}}
+\doxysubsubsection{\texorpdfstring{scaledRulerLength}{scaledRulerLength}}
+{\footnotesize\ttfamily float Ruler\+Measure.\+scaled\+Ruler\+Length\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_ruler_measure_a6bfdacd20b3f11a4186d824ac218ac9f}\label{class_ruler_measure_a6bfdacd20b3f11a4186d824ac218ac9f}} 
+\index{RulerMeasure@{RulerMeasure}!sim@{sim}}
+\index{sim@{sim}!RulerMeasure@{RulerMeasure}}
+\doxysubsubsection{\texorpdfstring{sim}{sim}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_mesh_simulation}{Mesh\+Simulation}} Ruler\+Measure.\+sim = null}
+
+\mbox{\Hypertarget{class_ruler_measure_aaf522ae17cd43331416126024e740196}\label{class_ruler_measure_aaf522ae17cd43331416126024e740196}} 
+\index{RulerMeasure@{RulerMeasure}!units@{units}}
+\index{units@{units}!RulerMeasure@{RulerMeasure}}
+\doxysubsubsection{\texorpdfstring{units}{units}}
+{\footnotesize\ttfamily string Ruler\+Measure.\+units\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/jaros/\+Desktop/tempvr/virtual-\/reality/\+Assets/\+Scripts/\+C2\+M2/\mbox{\hyperlink{_ruler_measure_8cs}{Ruler\+Measure.\+cs}}\end{DoxyCompactItemize}

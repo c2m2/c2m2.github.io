@@ -1,0 +1,81 @@
+\hypertarget{struct_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_vert3_d1_d_pair}{}\doxysection{C2\+M2.\+Neuronal\+Dynamics.\+Simulation.\+Vert3\+D1\+DPair Struct Reference}
+\label{struct_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_vert3_d1_d_pair}\index{C2M2.NeuronalDynamics.Simulation.Vert3D1DPair@{C2M2.NeuronalDynamics.Simulation.Vert3D1DPair}}
+
+
+Stores two 1D indices and a lambda value for a 3D vertex  
+
+
+
+
+Collaboration diagram for C2\+M2.\+Neuronal\+Dynamics.\+Simulation.\+Vert3\+D1\+DPair\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=295pt]{da/df9/struct_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_vert3_d1_d_pair__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_vert3_d1_d_pair_ac2bbc0114aae1f6d41bdafd50bfadd26}{Vert3\+D1\+DPair}} (int \mbox{\hyperlink{struct_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_vert3_d1_d_pair_a45199c170e5a2fff4f85c7abb669c10f}{v1}}, int \mbox{\hyperlink{struct_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_vert3_d1_d_pair_a5c24c88610f256f6c85f9ea7278c0b88}{v2}}, double \mbox{\hyperlink{struct_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_vert3_d1_d_pair_adf91a983bdb974e84b7fa3ee954efc3a}{lambda}})
+\item 
+override string \mbox{\hyperlink{struct_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_vert3_d1_d_pair_a84a15b825687d8799e9f321cc55f26f6}{To\+String}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{struct_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_vert3_d1_d_pair_a45199c170e5a2fff4f85c7abb669c10f}{v1}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, private set\mbox{]}}
+\item 
+int \mbox{\hyperlink{struct_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_vert3_d1_d_pair_a5c24c88610f256f6c85f9ea7278c0b88}{v2}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, private set\mbox{]}}
+\item 
+double \mbox{\hyperlink{struct_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_vert3_d1_d_pair_adf91a983bdb974e84b7fa3ee954efc3a}{lambda}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, private set\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Stores two 1D indices and a lambda value for a 3D vertex 
+
+Lambda is a value between 0 and 1. A lambda value greater than 0.\+5 implies that the 3D vert lies closer to v2. A lambda value of 0 would imply that the 3D vert lies directly over v1, and a lambda of 1 implies that it lies completely over v2. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{struct_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_vert3_d1_d_pair_ac2bbc0114aae1f6d41bdafd50bfadd26}\label{struct_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_vert3_d1_d_pair_ac2bbc0114aae1f6d41bdafd50bfadd26}} 
+\index{C2M2.NeuronalDynamics.Simulation.Vert3D1DPair@{C2M2.NeuronalDynamics.Simulation.Vert3D1DPair}!Vert3D1DPair@{Vert3D1DPair}}
+\index{Vert3D1DPair@{Vert3D1DPair}!C2M2.NeuronalDynamics.Simulation.Vert3D1DPair@{C2M2.NeuronalDynamics.Simulation.Vert3D1DPair}}
+\doxysubsubsection{\texorpdfstring{Vert3D1DPair()}{Vert3D1DPair()}}
+{\footnotesize\ttfamily C2\+M2.\+Neuronal\+Dynamics.\+Simulation.\+Vert3\+D1\+DPair.\+Vert3\+D1\+DPair (\begin{DoxyParamCaption}\item[{int}]{v1,  }\item[{int}]{v2,  }\item[{double}]{lambda }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{struct_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_vert3_d1_d_pair_a84a15b825687d8799e9f321cc55f26f6}\label{struct_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_vert3_d1_d_pair_a84a15b825687d8799e9f321cc55f26f6}} 
+\index{C2M2.NeuronalDynamics.Simulation.Vert3D1DPair@{C2M2.NeuronalDynamics.Simulation.Vert3D1DPair}!ToString@{ToString}}
+\index{ToString@{ToString}!C2M2.NeuronalDynamics.Simulation.Vert3D1DPair@{C2M2.NeuronalDynamics.Simulation.Vert3D1DPair}}
+\doxysubsubsection{\texorpdfstring{ToString()}{ToString()}}
+{\footnotesize\ttfamily override string C2\+M2.\+Neuronal\+Dynamics.\+Simulation.\+Vert3\+D1\+DPair.\+To\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{struct_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_vert3_d1_d_pair_adf91a983bdb974e84b7fa3ee954efc3a}\label{struct_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_vert3_d1_d_pair_adf91a983bdb974e84b7fa3ee954efc3a}} 
+\index{C2M2.NeuronalDynamics.Simulation.Vert3D1DPair@{C2M2.NeuronalDynamics.Simulation.Vert3D1DPair}!lambda@{lambda}}
+\index{lambda@{lambda}!C2M2.NeuronalDynamics.Simulation.Vert3D1DPair@{C2M2.NeuronalDynamics.Simulation.Vert3D1DPair}}
+\doxysubsubsection{\texorpdfstring{lambda}{lambda}}
+{\footnotesize\ttfamily double C2\+M2.\+Neuronal\+Dynamics.\+Simulation.\+Vert3\+D1\+DPair.\+lambda\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [private set]}}
+
+\mbox{\Hypertarget{struct_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_vert3_d1_d_pair_a45199c170e5a2fff4f85c7abb669c10f}\label{struct_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_vert3_d1_d_pair_a45199c170e5a2fff4f85c7abb669c10f}} 
+\index{C2M2.NeuronalDynamics.Simulation.Vert3D1DPair@{C2M2.NeuronalDynamics.Simulation.Vert3D1DPair}!v1@{v1}}
+\index{v1@{v1}!C2M2.NeuronalDynamics.Simulation.Vert3D1DPair@{C2M2.NeuronalDynamics.Simulation.Vert3D1DPair}}
+\doxysubsubsection{\texorpdfstring{v1}{v1}}
+{\footnotesize\ttfamily int C2\+M2.\+Neuronal\+Dynamics.\+Simulation.\+Vert3\+D1\+DPair.\+v1\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [private set]}}
+
+\mbox{\Hypertarget{struct_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_vert3_d1_d_pair_a5c24c88610f256f6c85f9ea7278c0b88}\label{struct_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_vert3_d1_d_pair_a5c24c88610f256f6c85f9ea7278c0b88}} 
+\index{C2M2.NeuronalDynamics.Simulation.Vert3D1DPair@{C2M2.NeuronalDynamics.Simulation.Vert3D1DPair}!v2@{v2}}
+\index{v2@{v2}!C2M2.NeuronalDynamics.Simulation.Vert3D1DPair@{C2M2.NeuronalDynamics.Simulation.Vert3D1DPair}}
+\doxysubsubsection{\texorpdfstring{v2}{v2}}
+{\footnotesize\ttfamily int C2\+M2.\+Neuronal\+Dynamics.\+Simulation.\+Vert3\+D1\+DPair.\+v2\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [private set]}}
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/jaros/\+Desktop/tempvr/virtual-\/reality/\+Assets/\+Scripts/\+C2\+M2/\+Neuronal\+Dynamics/\+Simulation/\mbox{\hyperlink{_n_d_simulation_8cs}{NDSimulation.\+cs}}\end{DoxyCompactItemize}

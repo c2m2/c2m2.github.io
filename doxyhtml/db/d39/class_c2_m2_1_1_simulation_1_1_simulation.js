@@ -1,8 +1,8 @@
 var class_c2_m2_1_1_simulation_1_1_simulation =
 [
-    [ "Awake", "db/d39/class_c2_m2_1_1_simulation_1_1_simulation.html#a0e53486b1f412de5fa6bb26987a5b0ff", null ],
     [ "BuildVisualization", "db/d39/class_c2_m2_1_1_simulation_1_1_simulation.html#ad862aff8a93dc71945db0450fddd6cbf", null ],
     [ "GetValues", "db/d39/class_c2_m2_1_1_simulation_1_1_simulation.html#aa34520fa8bc4bedc95c65dfe1984a719", null ],
+    [ "Initialize", "db/d39/class_c2_m2_1_1_simulation_1_1_simulation.html#af61cd7e4cdee4fa0d4f1c8813114d5d5", null ],
     [ "OnApplicationPause", "db/d39/class_c2_m2_1_1_simulation_1_1_simulation.html#ab528fe66c69e5b73a83258417032b076", null ],
     [ "OnApplicationQuit", "db/d39/class_c2_m2_1_1_simulation_1_1_simulation.html#adc304bf38be502076bff80b66ec4c2c8", null ],
     [ "OnAwakePost", "db/d39/class_c2_m2_1_1_simulation_1_1_simulation.html#a2259cb8a850bbbeedbc77fde35b47707", null ],
@@ -13,7 +13,6 @@ var class_c2_m2_1_1_simulation_1_1_simulation =
     [ "OnUpdate", "db/d39/class_c2_m2_1_1_simulation_1_1_simulation.html#a3ebfff8ac128e60b44140e9faca71032", null ],
     [ "PreSolve", "db/d39/class_c2_m2_1_1_simulation_1_1_simulation.html#a136e0cdc6fdf83cb91747fe09dbd1b4d", null ],
     [ "Solve", "db/d39/class_c2_m2_1_1_simulation_1_1_simulation.html#adc5e6e0adf67ae72e144c1424fd93625", null ],
-    [ "Start", "db/d39/class_c2_m2_1_1_simulation_1_1_simulation.html#a721271dc623caa4ded17d616556cc7f4", null ],
     [ "StartSimulation", "db/d39/class_c2_m2_1_1_simulation_1_1_simulation.html#a01838bb0de4821217362271193c7c59a", null ],
     [ "StopSimulation", "db/d39/class_c2_m2_1_1_simulation_1_1_simulation.html#ab0987e2cc68208bca93217b7d9e142ef", null ],
     [ "Update", "db/d39/class_c2_m2_1_1_simulation_1_1_simulation.html#a4ef6c0492314a02fdfb613b19dd822e1", null ],

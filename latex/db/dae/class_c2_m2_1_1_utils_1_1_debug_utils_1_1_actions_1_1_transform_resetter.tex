@@ -1,0 +1,128 @@
+\hypertarget{class_c2_m2_1_1_utils_1_1_debug_utils_1_1_actions_1_1_transform_resetter}{}\doxysection{C2\+M2.\+Utils.\+Debug\+Utils.\+Actions.\+Transform\+Resetter Class Reference}
+\label{class_c2_m2_1_1_utils_1_1_debug_utils_1_1_actions_1_1_transform_resetter}\index{C2M2.Utils.DebugUtils.Actions.TransformResetter@{C2M2.Utils.DebugUtils.Actions.TransformResetter}}
+
+
+This resets the position, rotation of the object it\textquotesingle{}s attached to at \char`\"{}start\+Frame\char`\"{}.  
+
+
+
+
+Inheritance diagram for C2\+M2.\+Utils.\+Debug\+Utils.\+Actions.\+Transform\+Resetter\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=277pt]{dc/d9d/class_c2_m2_1_1_utils_1_1_debug_utils_1_1_actions_1_1_transform_resetter__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for C2\+M2.\+Utils.\+Debug\+Utils.\+Actions.\+Transform\+Resetter\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=277pt]{d8/dbb/class_c2_m2_1_1_utils_1_1_debug_utils_1_1_actions_1_1_transform_resetter__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Vector3 \mbox{\hyperlink{class_c2_m2_1_1_utils_1_1_debug_utils_1_1_actions_1_1_transform_resetter_a26b441bc5aa513e20ad8499ea7e8766a}{position}} = Vector3.\+zero
+\begin{DoxyCompactList}\small\item\em Position to reset this transform to. \end{DoxyCompactList}\item 
+Vector3 \mbox{\hyperlink{class_c2_m2_1_1_utils_1_1_debug_utils_1_1_actions_1_1_transform_resetter_acc53b154cd25edb56d70e9431acc65cc}{rotation}} = Vector3.\+zero
+\begin{DoxyCompactList}\small\item\em Rotation to reset this transform to. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_c2_m2_1_1_utils_1_1_debug_utils_1_1_actions_1_1_transform_resetter_aad4042bca75d46ef308978b2b6d1707e}{target\+Frame}} = 1
+\begin{DoxyCompactList}\small\item\em The frame at which this script resets position. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_c2_m2_1_1_utils_1_1_debug_utils_1_1_actions_1_1_transform_resetter_accd7a9fe8a564720bf4559376a564f3d}{Awake}} ()
+\item 
+void \mbox{\hyperlink{class_c2_m2_1_1_utils_1_1_debug_utils_1_1_actions_1_1_transform_resetter_a63be4983737f348b4bb8f405b6995e11}{Start}} ()
+\item 
+void \mbox{\hyperlink{class_c2_m2_1_1_utils_1_1_debug_utils_1_1_actions_1_1_transform_resetter_af3da96c9a1a1532f0b2203e8f5efaeaf}{Update}} ()
+\item 
+void \mbox{\hyperlink{class_c2_m2_1_1_utils_1_1_debug_utils_1_1_actions_1_1_transform_resetter_ac074cd10a3bac9fe95b59bba171b7a8f}{Reset\+Position}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_c2_m2_1_1_utils_1_1_debug_utils_1_1_actions_1_1_transform_resetter_a504b2bfb7c9375ea24fc8976ab708246}{max\+Frame}} = 1000
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This resets the position, rotation of the object it\textquotesingle{}s attached to at \char`\"{}start\+Frame\char`\"{}. 
+
+Hacky solution to scripts \char`\"{}nudging\char`\"{} object/child object positions 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_c2_m2_1_1_utils_1_1_debug_utils_1_1_actions_1_1_transform_resetter_accd7a9fe8a564720bf4559376a564f3d}\label{class_c2_m2_1_1_utils_1_1_debug_utils_1_1_actions_1_1_transform_resetter_accd7a9fe8a564720bf4559376a564f3d}} 
+\index{C2M2.Utils.DebugUtils.Actions.TransformResetter@{C2M2.Utils.DebugUtils.Actions.TransformResetter}!Awake@{Awake}}
+\index{Awake@{Awake}!C2M2.Utils.DebugUtils.Actions.TransformResetter@{C2M2.Utils.DebugUtils.Actions.TransformResetter}}
+\doxysubsubsection{\texorpdfstring{Awake()}{Awake()}}
+{\footnotesize\ttfamily void C2\+M2.\+Utils.\+Debug\+Utils.\+Actions.\+Transform\+Resetter.\+Awake (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_utils_1_1_debug_utils_1_1_actions_1_1_transform_resetter_ac074cd10a3bac9fe95b59bba171b7a8f}\label{class_c2_m2_1_1_utils_1_1_debug_utils_1_1_actions_1_1_transform_resetter_ac074cd10a3bac9fe95b59bba171b7a8f}} 
+\index{C2M2.Utils.DebugUtils.Actions.TransformResetter@{C2M2.Utils.DebugUtils.Actions.TransformResetter}!ResetPosition@{ResetPosition}}
+\index{ResetPosition@{ResetPosition}!C2M2.Utils.DebugUtils.Actions.TransformResetter@{C2M2.Utils.DebugUtils.Actions.TransformResetter}}
+\doxysubsubsection{\texorpdfstring{ResetPosition()}{ResetPosition()}}
+{\footnotesize\ttfamily void C2\+M2.\+Utils.\+Debug\+Utils.\+Actions.\+Transform\+Resetter.\+Reset\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_utils_1_1_debug_utils_1_1_actions_1_1_transform_resetter_a63be4983737f348b4bb8f405b6995e11}\label{class_c2_m2_1_1_utils_1_1_debug_utils_1_1_actions_1_1_transform_resetter_a63be4983737f348b4bb8f405b6995e11}} 
+\index{C2M2.Utils.DebugUtils.Actions.TransformResetter@{C2M2.Utils.DebugUtils.Actions.TransformResetter}!Start@{Start}}
+\index{Start@{Start}!C2M2.Utils.DebugUtils.Actions.TransformResetter@{C2M2.Utils.DebugUtils.Actions.TransformResetter}}
+\doxysubsubsection{\texorpdfstring{Start()}{Start()}}
+{\footnotesize\ttfamily void C2\+M2.\+Utils.\+Debug\+Utils.\+Actions.\+Transform\+Resetter.\+Start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_utils_1_1_debug_utils_1_1_actions_1_1_transform_resetter_af3da96c9a1a1532f0b2203e8f5efaeaf}\label{class_c2_m2_1_1_utils_1_1_debug_utils_1_1_actions_1_1_transform_resetter_af3da96c9a1a1532f0b2203e8f5efaeaf}} 
+\index{C2M2.Utils.DebugUtils.Actions.TransformResetter@{C2M2.Utils.DebugUtils.Actions.TransformResetter}!Update@{Update}}
+\index{Update@{Update}!C2M2.Utils.DebugUtils.Actions.TransformResetter@{C2M2.Utils.DebugUtils.Actions.TransformResetter}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void C2\+M2.\+Utils.\+Debug\+Utils.\+Actions.\+Transform\+Resetter.\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_c2_m2_1_1_utils_1_1_debug_utils_1_1_actions_1_1_transform_resetter_a504b2bfb7c9375ea24fc8976ab708246}\label{class_c2_m2_1_1_utils_1_1_debug_utils_1_1_actions_1_1_transform_resetter_a504b2bfb7c9375ea24fc8976ab708246}} 
+\index{C2M2.Utils.DebugUtils.Actions.TransformResetter@{C2M2.Utils.DebugUtils.Actions.TransformResetter}!maxFrame@{maxFrame}}
+\index{maxFrame@{maxFrame}!C2M2.Utils.DebugUtils.Actions.TransformResetter@{C2M2.Utils.DebugUtils.Actions.TransformResetter}}
+\doxysubsubsection{\texorpdfstring{maxFrame}{maxFrame}}
+{\footnotesize\ttfamily int C2\+M2.\+Utils.\+Debug\+Utils.\+Actions.\+Transform\+Resetter.\+max\+Frame = 1000\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_utils_1_1_debug_utils_1_1_actions_1_1_transform_resetter_a26b441bc5aa513e20ad8499ea7e8766a}\label{class_c2_m2_1_1_utils_1_1_debug_utils_1_1_actions_1_1_transform_resetter_a26b441bc5aa513e20ad8499ea7e8766a}} 
+\index{C2M2.Utils.DebugUtils.Actions.TransformResetter@{C2M2.Utils.DebugUtils.Actions.TransformResetter}!position@{position}}
+\index{position@{position}!C2M2.Utils.DebugUtils.Actions.TransformResetter@{C2M2.Utils.DebugUtils.Actions.TransformResetter}}
+\doxysubsubsection{\texorpdfstring{position}{position}}
+{\footnotesize\ttfamily Vector3 C2\+M2.\+Utils.\+Debug\+Utils.\+Actions.\+Transform\+Resetter.\+position = Vector3.\+zero}
+
+
+
+Position to reset this transform to. 
+
+\mbox{\Hypertarget{class_c2_m2_1_1_utils_1_1_debug_utils_1_1_actions_1_1_transform_resetter_acc53b154cd25edb56d70e9431acc65cc}\label{class_c2_m2_1_1_utils_1_1_debug_utils_1_1_actions_1_1_transform_resetter_acc53b154cd25edb56d70e9431acc65cc}} 
+\index{C2M2.Utils.DebugUtils.Actions.TransformResetter@{C2M2.Utils.DebugUtils.Actions.TransformResetter}!rotation@{rotation}}
+\index{rotation@{rotation}!C2M2.Utils.DebugUtils.Actions.TransformResetter@{C2M2.Utils.DebugUtils.Actions.TransformResetter}}
+\doxysubsubsection{\texorpdfstring{rotation}{rotation}}
+{\footnotesize\ttfamily Vector3 C2\+M2.\+Utils.\+Debug\+Utils.\+Actions.\+Transform\+Resetter.\+rotation = Vector3.\+zero}
+
+
+
+Rotation to reset this transform to. 
+
+\mbox{\Hypertarget{class_c2_m2_1_1_utils_1_1_debug_utils_1_1_actions_1_1_transform_resetter_aad4042bca75d46ef308978b2b6d1707e}\label{class_c2_m2_1_1_utils_1_1_debug_utils_1_1_actions_1_1_transform_resetter_aad4042bca75d46ef308978b2b6d1707e}} 
+\index{C2M2.Utils.DebugUtils.Actions.TransformResetter@{C2M2.Utils.DebugUtils.Actions.TransformResetter}!targetFrame@{targetFrame}}
+\index{targetFrame@{targetFrame}!C2M2.Utils.DebugUtils.Actions.TransformResetter@{C2M2.Utils.DebugUtils.Actions.TransformResetter}}
+\doxysubsubsection{\texorpdfstring{targetFrame}{targetFrame}}
+{\footnotesize\ttfamily int C2\+M2.\+Utils.\+Debug\+Utils.\+Actions.\+Transform\+Resetter.\+target\+Frame = 1}
+
+
+
+The frame at which this script resets position. 
+
+== 0 resets in Start, == -\/1 resets in Awake, \begin{quote}
+0 resets in Update \end{quote}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/jaros/\+Desktop/tempvr/virtual-\/reality/\+Assets/\+Scripts/\+C2\+M2/\+Utils/\+Actions/\mbox{\hyperlink{_transform_resetter_8cs}{Transform\+Resetter.\+cs}}\end{DoxyCompactItemize}

@@ -1,0 +1,89 @@
+\hypertarget{struct_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_mapping_info}{}\doxysection{C2\+M2.\+Neuronal\+Dynamics.\+UGX.\+Mapping\+Info Struct Reference}
+\label{struct_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_mapping_info}\index{C2M2.NeuronalDynamics.UGX.MappingInfo@{C2M2.NeuronalDynamics.UGX.MappingInfo}}
+
+
+Encapsulates the grids and mapping data  
+
+
+
+
+Collaboration diagram for C2\+M2.\+Neuronal\+Dynamics.\+UGX.\+Mapping\+Info\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=253pt]{da/dde/struct_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_mapping_info__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_mapping_info_a57a20fa6419a9fa24ffa88c1b50ab3c5}{Mapping\+Info}} (in \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_grid}{Grid}} grid1d, in \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_grid}{Grid}} grid2d, in Dictionary$<$ int, Tuple$<$ int, int, double $>$$>$ map2d1d)
+\begin{DoxyCompactList}\small\item\em Access the model geometry, surface geometry and mapping data \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_grid}{Grid}} \mbox{\hyperlink{struct_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_mapping_info_ae965be4038517d0f2c1c6d44f1e5e69d}{Model\+Geometry}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_grid}{Grid}} \mbox{\hyperlink{struct_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_mapping_info_aef756264b3b219f33283fedbf41a01dc}{Surface\+Geometry}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+Dictionary$<$ int, Tuple$<$ int, int, double $>$ $>$ \mbox{\hyperlink{struct_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_mapping_info_a49599f0fd04810c8e563a32f2568a02e}{Data}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Look up a 3D vertex, get back its two corresponding 1D vertices and a lambda value representing \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Encapsulates the grids and mapping data 
+
+\mbox{\hyperlink{struct_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_mapping_info}{Mapping\+Info}}
+
+Geometries will be stored in Model\+Geometry (1d geometry) and Surface\+Geometry (2d geometry) The dictionary maps any 2d surface vertex, using its index in the 2d mesh, to two 1d vertices with their associated indices in the 1d mesh and a lambda parameter. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{struct_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_mapping_info_a57a20fa6419a9fa24ffa88c1b50ab3c5}\label{struct_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_mapping_info_a57a20fa6419a9fa24ffa88c1b50ab3c5}} 
+\index{C2M2.NeuronalDynamics.UGX.MappingInfo@{C2M2.NeuronalDynamics.UGX.MappingInfo}!MappingInfo@{MappingInfo}}
+\index{MappingInfo@{MappingInfo}!C2M2.NeuronalDynamics.UGX.MappingInfo@{C2M2.NeuronalDynamics.UGX.MappingInfo}}
+\doxysubsubsection{\texorpdfstring{MappingInfo()}{MappingInfo()}}
+{\footnotesize\ttfamily C2\+M2.\+Neuronal\+Dynamics.\+UGX.\+Mapping\+Info.\+Mapping\+Info (\begin{DoxyParamCaption}\item[{in \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_grid}{Grid}}}]{grid1d,  }\item[{in \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_grid}{Grid}}}]{grid2d,  }\item[{in Dictionary$<$ int, Tuple$<$ int, int, double $>$$>$}]{map2d1d }\end{DoxyParamCaption})}
+
+
+
+Access the model geometry, surface geometry and mapping data 
+
+
+\begin{DoxyParams}{Parameters}
+{\em grid1d} & 1d model geometry \\
+\hline
+{\em grid2d} & Surface geoemtry \\
+\hline
+{\em map2d1d} & 2d to 1d mapping data \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{struct_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_mapping_info_a49599f0fd04810c8e563a32f2568a02e}\label{struct_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_mapping_info_a49599f0fd04810c8e563a32f2568a02e}} 
+\index{C2M2.NeuronalDynamics.UGX.MappingInfo@{C2M2.NeuronalDynamics.UGX.MappingInfo}!Data@{Data}}
+\index{Data@{Data}!C2M2.NeuronalDynamics.UGX.MappingInfo@{C2M2.NeuronalDynamics.UGX.MappingInfo}}
+\doxysubsubsection{\texorpdfstring{Data}{Data}}
+{\footnotesize\ttfamily Dictionary$<$int, Tuple$<$int, int, double$>$ $>$ C2\+M2.\+Neuronal\+Dynamics.\+UGX.\+Mapping\+Info.\+Data\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Look up a 3D vertex, get back its two corresponding 1D vertices and a lambda value representing 
+
+Lambda is a value between 0 and 1. If a 3D vertex is given a value of 100, and it\textquotesingle{}s lambda is 0.\+7, then the 1D vert stored at Data\mbox{[}vert3D\mbox{]}.Entry1 should get a value of 30, and Data\mbox{[}vert3D\mbox{]}.Entry2 should get a value of 70. \mbox{\Hypertarget{struct_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_mapping_info_ae965be4038517d0f2c1c6d44f1e5e69d}\label{struct_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_mapping_info_ae965be4038517d0f2c1c6d44f1e5e69d}} 
+\index{C2M2.NeuronalDynamics.UGX.MappingInfo@{C2M2.NeuronalDynamics.UGX.MappingInfo}!ModelGeometry@{ModelGeometry}}
+\index{ModelGeometry@{ModelGeometry}!C2M2.NeuronalDynamics.UGX.MappingInfo@{C2M2.NeuronalDynamics.UGX.MappingInfo}}
+\doxysubsubsection{\texorpdfstring{ModelGeometry}{ModelGeometry}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_grid}{Grid}} C2\+M2.\+Neuronal\+Dynamics.\+UGX.\+Mapping\+Info.\+Model\+Geometry\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{struct_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_mapping_info_aef756264b3b219f33283fedbf41a01dc}\label{struct_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_mapping_info_aef756264b3b219f33283fedbf41a01dc}} 
+\index{C2M2.NeuronalDynamics.UGX.MappingInfo@{C2M2.NeuronalDynamics.UGX.MappingInfo}!SurfaceGeometry@{SurfaceGeometry}}
+\index{SurfaceGeometry@{SurfaceGeometry}!C2M2.NeuronalDynamics.UGX.MappingInfo@{C2M2.NeuronalDynamics.UGX.MappingInfo}}
+\doxysubsubsection{\texorpdfstring{SurfaceGeometry}{SurfaceGeometry}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_grid}{Grid}} C2\+M2.\+Neuronal\+Dynamics.\+UGX.\+Mapping\+Info.\+Surface\+Geometry\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/jaros/\+Desktop/tempvr/virtual-\/reality/\+Assets/\+Scripts/\+C2\+M2/\+Neuronal\+Dynamics/\+Visualization/\+Mapping/\mbox{\hyperlink{_map_utils_8cs}{Map\+Utils.\+cs}}\end{DoxyCompactItemize}

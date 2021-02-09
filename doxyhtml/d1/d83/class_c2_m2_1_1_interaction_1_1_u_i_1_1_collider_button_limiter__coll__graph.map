@@ -1,6 +1,6 @@
 <map id="C2M2.Interaction.UI.ColliderButtonLimiter" name="C2M2.Interaction.UI.ColliderButtonLimiter">
 <area shape="rect" id="node1" title=" " alt="" coords="5,632,252,724"/>
-<area shape="rect" id="node2" title=" " alt="" coords="67,5,193,83"/>
-<area shape="rect" id="node3" href="$d1/d90/class_c2_m2_1_1_interaction_1_1_u_i_1_1_button_highlight_manager.html" title=" " alt="" coords="117,404,348,555"/>
-<area shape="rect" id="node4" href="$d6/d94/class_c2_m2_1_1_interaction_1_1_u_i_1_1_button_highlight.html" title=" " alt="" coords="168,132,399,341"/>
+<area shape="rect" id="node2" title=" " alt="" coords="95,5,221,83"/>
+<area shape="rect" id="node3" href="$d1/d90/class_c2_m2_1_1_interaction_1_1_u_i_1_1_button_highlight_manager.html" title=" " alt="" coords="145,404,376,555"/>
+<area shape="rect" id="node4" href="$d6/d94/class_c2_m2_1_1_interaction_1_1_u_i_1_1_button_highlight.html" title=" " alt="" coords="196,132,427,341"/>
 </map>

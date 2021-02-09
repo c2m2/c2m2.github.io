@@ -1,4 +1,4 @@
 var files_dup =
 [
-    [ "virtual-reality", "dir_ad9999eb81ccc64910e5f754a939ee39.html", "dir_ad9999eb81ccc64910e5f754a939ee39" ]
+    [ "tempvr", "dir_f3958b93e97967f96cb49a2c6f52c059.html", "dir_f3958b93e97967f96cb49a2c6f52c059" ]
 ];

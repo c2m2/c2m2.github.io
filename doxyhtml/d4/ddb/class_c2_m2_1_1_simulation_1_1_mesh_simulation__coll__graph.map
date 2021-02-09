@@ -1,6 +1,6 @@
 <map id="C2M2.Simulation.MeshSimulation" name="C2M2.Simulation.MeshSimulation">
-<area shape="rect" id="node1" title="Simulation of type double[] for visualizing scalar fields on mesh surfaces" alt="" coords="77,609,340,848"/>
-<area shape="rect" id="node2" href="$db/d39/class_c2_m2_1_1_simulation_1_1_simulation.html" title=" " alt="" coords="5,132,252,547"/>
-<area shape="rect" id="node3" href="$da/d4f/class_c2_m2_1_1_visualization_1_1_l_u_t_gradient.html" title="Create a fast and memory&#45;friendly color lookup table from a gradient" alt="" coords="276,183,539,495"/>
+<area shape="rect" id="node1" title="Simulation of type double[] for visualizing scalar fields on mesh surfaces" alt="" coords="77,595,340,863"/>
+<area shape="rect" id="node2" href="$db/d39/class_c2_m2_1_1_simulation_1_1_simulation.html" title=" " alt="" coords="5,132,252,532"/>
+<area shape="rect" id="node3" href="$da/d4f/class_c2_m2_1_1_visualization_1_1_l_u_t_gradient.html" title="Create a fast and memory&#45;friendly color lookup table from a gradient" alt="" coords="276,176,539,488"/>
 <area shape="rect" id="node4" title=" " alt="" coords="344,5,471,83"/>
 </map>

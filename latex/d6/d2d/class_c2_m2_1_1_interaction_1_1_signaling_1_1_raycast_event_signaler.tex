@@ -1,0 +1,353 @@
+\hypertarget{class_c2_m2_1_1_interaction_1_1_signaling_1_1_raycast_event_signaler}{}\doxysection{C2\+M2.\+Interaction.\+Signaling.\+Raycast\+Event\+Signaler Class Reference}
+\label{class_c2_m2_1_1_interaction_1_1_signaling_1_1_raycast_event_signaler}\index{C2M2.Interaction.Signaling.RaycastEventSignaler@{C2M2.Interaction.Signaling.RaycastEventSignaler}}
+
+
+Inheritance diagram for C2\+M2.\+Interaction.\+Signaling.\+Raycast\+Event\+Signaler\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{d3/dc1/class_c2_m2_1_1_interaction_1_1_signaling_1_1_raycast_event_signaler__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for C2\+M2.\+Interaction.\+Signaling.\+Raycast\+Event\+Signaler\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{d4/d66/class_c2_m2_1_1_interaction_1_1_signaling_1_1_raycast_event_signaler__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_signaling_1_1_raycast_event_signaler_aac549a94e04bce98c8d6de8032729b6c}{right\+Hand}} = true
+\item 
+Layer\+Mask \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_signaling_1_1_raycast_event_signaler_a726777cce7f331f18abe367fb9cae19b}{layer\+Mask}}
+\item 
+float \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_signaling_1_1_raycast_event_signaler_af315cdd744fb6934fde51a3c33236b21}{max\+Raycast\+Distance}} = 10f
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+abstract void \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_signaling_1_1_raycast_event_signaler_ac53b874c38a342dce0b7ed0b05b96480}{On\+Awake}} ()
+\item 
+void \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_signaling_1_1_raycast_event_signaler_a13bae60d5aede21654338c3560ff31b4}{Awake}} ()
+\item 
+abstract void \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_signaling_1_1_raycast_event_signaler_ae6b47323d8ad0b285f883ec637cd6929}{On\+Start}} ()
+\item 
+sealed override void \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_signaling_1_1_raycast_event_signaler_ad79a8be81cfe076d7be77700eab2fc07}{On\+Hover}} ()
+\item 
+sealed override void \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_signaling_1_1_raycast_event_signaler_ab998dcf955ec9954d51b78a0eb7660a1}{On\+Hover\+End}} ()
+\item 
+sealed override void \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_signaling_1_1_raycast_event_signaler_a0097a4551979a708d614935c52be2d08}{On\+Press}} ()
+\item 
+sealed override void \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_signaling_1_1_raycast_event_signaler_ae11be9bbc108498a8abbfa57498d8f75}{On\+Hold\+Press}} ()
+\item 
+sealed override void \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_signaling_1_1_raycast_event_signaler_a64e4e82c6b2da21e6d5d687a8fcae0b3}{On\+End\+Press}} ()
+\item 
+virtual void \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_signaling_1_1_raycast_event_signaler_ac4a00b56f5b3a2ca8c0da144988e11eb}{On\+Hover\+Sub}} ()
+\begin{DoxyCompactList}\small\item\em Signal children that a hover is happening \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_signaling_1_1_raycast_event_signaler_ac583a46955db229a8e3e44210afeb59c}{On\+Hover\+End\+Sub}} ()
+\begin{DoxyCompactList}\small\item\em Signal children that a hover is not happening \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_signaling_1_1_raycast_event_signaler_a1ffbea0baa5966f89b3e8a2a0ce91d09}{On\+Press\+Sub}} ()
+\begin{DoxyCompactList}\small\item\em Signal children that a press is beginning \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_signaling_1_1_raycast_event_signaler_a587e5d422095824f2ca4589f4140236b}{On\+Hold\+Press\+Sub}} ()
+\begin{DoxyCompactList}\small\item\em Signal children that a press is being held \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_signaling_1_1_raycast_event_signaler_ac91cd2200f7edb60d322a3049e4c3705}{On\+End\+Press\+Sub}} ()
+\begin{DoxyCompactList}\small\item\em Signal children that a press is ending \end{DoxyCompactList}\item 
+abstract bool \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_signaling_1_1_raycast_event_signaler_a4479c8219db2ccd6c734cd3016febe3e}{Raycasting\+Method}} (out Raycast\+Hit hit, float max\+Distance, Layer\+Mask \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_signaling_1_1_raycast_event_signaler_a726777cce7f331f18abe367fb9cae19b}{layer\+Mask}})
+\begin{DoxyCompactList}\small\item\em Let the input type choose their own raycasting method \end{DoxyCompactList}\item 
+abstract bool \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_signaling_1_1_raycast_event_signaler_a9b13001acb8d7c8ae6f1e6db96204a1a}{Begin\+Raycasting\+Condition}} ()
+\begin{DoxyCompactList}\small\item\em Rrequire some condition before raycast requests are made. \end{DoxyCompactList}\item 
+abstract bool \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_signaling_1_1_raycast_event_signaler_acc162942cbabe415e185b51d3e94e4d4}{Childs\+Press\+Condition}} ()
+\begin{DoxyCompactList}\small\item\em Require a second condition before raycast events are triggered \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_signaling_1_1_raycast_event_signaler_aab6e986ac9296e708538a5d14c22a6d6}{Start}} ()
+\item 
+void \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_signaling_1_1_raycast_event_signaler_a03cb917b89a89252335d8261d1088ea9}{Fixed\+Update}} ()
+\item 
+void \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_signaling_1_1_raycast_event_signaler_aad7e5783575e0feea5c01452c5295e19}{On\+Object\+Change}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_raycast_event_manager}{Raycast\+Event\+Manager}} \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_signaling_1_1_raycast_event_signaler_a1b638f23bfe1da01fba447110ac6e2ba}{Find\+Raycast\+Trigger}} (Raycast\+Hit hit)
+\begin{DoxyCompactList}\small\item\em Try to find the Raycast\+Trigger\+Manager on the hit object \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_raycast_event_manager}{Raycast\+Event\+Manager}} \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_signaling_1_1_raycast_event_signaler_a1793378f789ae41f3b042ed20328c236}{active\+Event}} = null
+\item 
+Raycast\+Hit \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_signaling_1_1_raycast_event_signaler_ac7123fdbf5baf47a0ca0750cddd83c9d}{last\+Hit}}
+\item 
+Game\+Object \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_signaling_1_1_raycast_event_signaler_adbdbfa8ee4164fa73acb8af7e5a36e67}{prev\+Obj}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_signaling_1_1_raycast_event_signaler_a13bae60d5aede21654338c3560ff31b4}\label{class_c2_m2_1_1_interaction_1_1_signaling_1_1_raycast_event_signaler_a13bae60d5aede21654338c3560ff31b4}} 
+\index{C2M2.Interaction.Signaling.RaycastEventSignaler@{C2M2.Interaction.Signaling.RaycastEventSignaler}!Awake@{Awake}}
+\index{Awake@{Awake}!C2M2.Interaction.Signaling.RaycastEventSignaler@{C2M2.Interaction.Signaling.RaycastEventSignaler}}
+\doxysubsubsection{\texorpdfstring{Awake()}{Awake()}}
+{\footnotesize\ttfamily void C2\+M2.\+Interaction.\+Signaling.\+Raycast\+Event\+Signaler.\+Awake (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_signaling_1_1_raycast_event_signaler_a9b13001acb8d7c8ae6f1e6db96204a1a}\label{class_c2_m2_1_1_interaction_1_1_signaling_1_1_raycast_event_signaler_a9b13001acb8d7c8ae6f1e6db96204a1a}} 
+\index{C2M2.Interaction.Signaling.RaycastEventSignaler@{C2M2.Interaction.Signaling.RaycastEventSignaler}!BeginRaycastingCondition@{BeginRaycastingCondition}}
+\index{BeginRaycastingCondition@{BeginRaycastingCondition}!C2M2.Interaction.Signaling.RaycastEventSignaler@{C2M2.Interaction.Signaling.RaycastEventSignaler}}
+\doxysubsubsection{\texorpdfstring{BeginRaycastingCondition()}{BeginRaycastingCondition()}}
+{\footnotesize\ttfamily abstract bool C2\+M2.\+Interaction.\+Signaling.\+Raycast\+Event\+Signaler.\+Begin\+Raycasting\+Condition (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}
+
+
+
+Rrequire some condition before raycast requests are made. 
+
+You can require a button be pressed before raycasting. In Oculus, this returns true if button \char`\"{}\+One\char`\"{} is pressed down. With mouse raycasting, this returns true if the mouse button is pressed down 
+
+Implemented in \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_signaling_1_1_oculus_event_signaler_ace80fadaca7361147e30d3d12522938e}{C2\+M2.\+Interaction.\+Signaling.\+Oculus\+Event\+Signaler}}, and \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_signaling_1_1_mouse_event_signaler_aaa5f0a07c808077e6a3081183eab6712}{C2\+M2.\+Interaction.\+Signaling.\+Mouse\+Event\+Signaler}}.
+
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_signaling_1_1_raycast_event_signaler_acc162942cbabe415e185b51d3e94e4d4}\label{class_c2_m2_1_1_interaction_1_1_signaling_1_1_raycast_event_signaler_acc162942cbabe415e185b51d3e94e4d4}} 
+\index{C2M2.Interaction.Signaling.RaycastEventSignaler@{C2M2.Interaction.Signaling.RaycastEventSignaler}!ChildsPressCondition@{ChildsPressCondition}}
+\index{ChildsPressCondition@{ChildsPressCondition}!C2M2.Interaction.Signaling.RaycastEventSignaler@{C2M2.Interaction.Signaling.RaycastEventSignaler}}
+\doxysubsubsection{\texorpdfstring{ChildsPressCondition()}{ChildsPressCondition()}}
+{\footnotesize\ttfamily abstract bool C2\+M2.\+Interaction.\+Signaling.\+Raycast\+Event\+Signaler.\+Childs\+Press\+Condition (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}
+
+
+
+Require a second condition before raycast events are triggered 
+
+In Oculus, this is the trigger button. The user must hold \char`\"{}\+One\char`\"{} to begin raycasting, and then the trigger once they want to see events triggered. This way, raycasts can be visualized in \mbox{\hyperlink{namespace_c2_m2_1_1_interaction_1_1_v_r}{VR}} before events are triggered with the raycast. With mouse raycasting, this simply returns \char`\"{}true\char`\"{}, since we don\textquotesingle{}t need to visualize raycasts before triggering events. We can just skip right to triggering events 
+
+Implemented in \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_signaling_1_1_oculus_event_signaler_ac70400fe6201d21bda655ad109af0795}{C2\+M2.\+Interaction.\+Signaling.\+Oculus\+Event\+Signaler}}, and \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_signaling_1_1_mouse_event_signaler_af27a1a1ed822632a226f4400fa426a20}{C2\+M2.\+Interaction.\+Signaling.\+Mouse\+Event\+Signaler}}.
+
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_signaling_1_1_raycast_event_signaler_a1b638f23bfe1da01fba447110ac6e2ba}\label{class_c2_m2_1_1_interaction_1_1_signaling_1_1_raycast_event_signaler_a1b638f23bfe1da01fba447110ac6e2ba}} 
+\index{C2M2.Interaction.Signaling.RaycastEventSignaler@{C2M2.Interaction.Signaling.RaycastEventSignaler}!FindRaycastTrigger@{FindRaycastTrigger}}
+\index{FindRaycastTrigger@{FindRaycastTrigger}!C2M2.Interaction.Signaling.RaycastEventSignaler@{C2M2.Interaction.Signaling.RaycastEventSignaler}}
+\doxysubsubsection{\texorpdfstring{FindRaycastTrigger()}{FindRaycastTrigger()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_raycast_event_manager}{Raycast\+Event\+Manager}} C2\+M2.\+Interaction.\+Signaling.\+Raycast\+Event\+Signaler.\+Find\+Raycast\+Trigger (\begin{DoxyParamCaption}\item[{Raycast\+Hit}]{hit }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Try to find the Raycast\+Trigger\+Manager on the hit object 
+
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_signaling_1_1_raycast_event_signaler_a03cb917b89a89252335d8261d1088ea9}\label{class_c2_m2_1_1_interaction_1_1_signaling_1_1_raycast_event_signaler_a03cb917b89a89252335d8261d1088ea9}} 
+\index{C2M2.Interaction.Signaling.RaycastEventSignaler@{C2M2.Interaction.Signaling.RaycastEventSignaler}!FixedUpdate@{FixedUpdate}}
+\index{FixedUpdate@{FixedUpdate}!C2M2.Interaction.Signaling.RaycastEventSignaler@{C2M2.Interaction.Signaling.RaycastEventSignaler}}
+\doxysubsubsection{\texorpdfstring{FixedUpdate()}{FixedUpdate()}}
+{\footnotesize\ttfamily void C2\+M2.\+Interaction.\+Signaling.\+Raycast\+Event\+Signaler.\+Fixed\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_signaling_1_1_raycast_event_signaler_ac53b874c38a342dce0b7ed0b05b96480}\label{class_c2_m2_1_1_interaction_1_1_signaling_1_1_raycast_event_signaler_ac53b874c38a342dce0b7ed0b05b96480}} 
+\index{C2M2.Interaction.Signaling.RaycastEventSignaler@{C2M2.Interaction.Signaling.RaycastEventSignaler}!OnAwake@{OnAwake}}
+\index{OnAwake@{OnAwake}!C2M2.Interaction.Signaling.RaycastEventSignaler@{C2M2.Interaction.Signaling.RaycastEventSignaler}}
+\doxysubsubsection{\texorpdfstring{OnAwake()}{OnAwake()}}
+{\footnotesize\ttfamily abstract void C2\+M2.\+Interaction.\+Signaling.\+Raycast\+Event\+Signaler.\+On\+Awake (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_signaling_1_1_oculus_event_signaler_a05bb72fe706813f2b37a1920b2b59146}{C2\+M2.\+Interaction.\+Signaling.\+Oculus\+Event\+Signaler}}, and \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_signaling_1_1_mouse_event_signaler_a4d2e7554f50f060d18a462070afdf262}{C2\+M2.\+Interaction.\+Signaling.\+Mouse\+Event\+Signaler}}.
+
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_signaling_1_1_raycast_event_signaler_a64e4e82c6b2da21e6d5d687a8fcae0b3}\label{class_c2_m2_1_1_interaction_1_1_signaling_1_1_raycast_event_signaler_a64e4e82c6b2da21e6d5d687a8fcae0b3}} 
+\index{C2M2.Interaction.Signaling.RaycastEventSignaler@{C2M2.Interaction.Signaling.RaycastEventSignaler}!OnEndPress@{OnEndPress}}
+\index{OnEndPress@{OnEndPress}!C2M2.Interaction.Signaling.RaycastEventSignaler@{C2M2.Interaction.Signaling.RaycastEventSignaler}}
+\doxysubsubsection{\texorpdfstring{OnEndPress()}{OnEndPress()}}
+{\footnotesize\ttfamily sealed override void C2\+M2.\+Interaction.\+Signaling.\+Raycast\+Event\+Signaler.\+On\+End\+Press (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_signaling_1_1_press_event_signaler_adc5f7d2ab90b6fa57ef55dfb70cb2eeb}{C2\+M2.\+Interaction.\+Signaling.\+Press\+Event\+Signaler}}.
+
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_signaling_1_1_raycast_event_signaler_ac91cd2200f7edb60d322a3049e4c3705}\label{class_c2_m2_1_1_interaction_1_1_signaling_1_1_raycast_event_signaler_ac91cd2200f7edb60d322a3049e4c3705}} 
+\index{C2M2.Interaction.Signaling.RaycastEventSignaler@{C2M2.Interaction.Signaling.RaycastEventSignaler}!OnEndPressSub@{OnEndPressSub}}
+\index{OnEndPressSub@{OnEndPressSub}!C2M2.Interaction.Signaling.RaycastEventSignaler@{C2M2.Interaction.Signaling.RaycastEventSignaler}}
+\doxysubsubsection{\texorpdfstring{OnEndPressSub()}{OnEndPressSub()}}
+{\footnotesize\ttfamily virtual void C2\+M2.\+Interaction.\+Signaling.\+Raycast\+Event\+Signaler.\+On\+End\+Press\+Sub (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Signal children that a press is ending 
+
+
+
+Reimplemented in \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_signaling_1_1_oculus_event_signaler_a37784554f2b05e0d6a67d2e9228cbd5e}{C2\+M2.\+Interaction.\+Signaling.\+Oculus\+Event\+Signaler}}.
+
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_signaling_1_1_raycast_event_signaler_ae11be9bbc108498a8abbfa57498d8f75}\label{class_c2_m2_1_1_interaction_1_1_signaling_1_1_raycast_event_signaler_ae11be9bbc108498a8abbfa57498d8f75}} 
+\index{C2M2.Interaction.Signaling.RaycastEventSignaler@{C2M2.Interaction.Signaling.RaycastEventSignaler}!OnHoldPress@{OnHoldPress}}
+\index{OnHoldPress@{OnHoldPress}!C2M2.Interaction.Signaling.RaycastEventSignaler@{C2M2.Interaction.Signaling.RaycastEventSignaler}}
+\doxysubsubsection{\texorpdfstring{OnHoldPress()}{OnHoldPress()}}
+{\footnotesize\ttfamily sealed override void C2\+M2.\+Interaction.\+Signaling.\+Raycast\+Event\+Signaler.\+On\+Hold\+Press (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_signaling_1_1_press_event_signaler_a2c576082230bf07286ca0fc3ec08dd60}{C2\+M2.\+Interaction.\+Signaling.\+Press\+Event\+Signaler}}.
+
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_signaling_1_1_raycast_event_signaler_a587e5d422095824f2ca4589f4140236b}\label{class_c2_m2_1_1_interaction_1_1_signaling_1_1_raycast_event_signaler_a587e5d422095824f2ca4589f4140236b}} 
+\index{C2M2.Interaction.Signaling.RaycastEventSignaler@{C2M2.Interaction.Signaling.RaycastEventSignaler}!OnHoldPressSub@{OnHoldPressSub}}
+\index{OnHoldPressSub@{OnHoldPressSub}!C2M2.Interaction.Signaling.RaycastEventSignaler@{C2M2.Interaction.Signaling.RaycastEventSignaler}}
+\doxysubsubsection{\texorpdfstring{OnHoldPressSub()}{OnHoldPressSub()}}
+{\footnotesize\ttfamily virtual void C2\+M2.\+Interaction.\+Signaling.\+Raycast\+Event\+Signaler.\+On\+Hold\+Press\+Sub (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Signal children that a press is being held 
+
+
+
+Reimplemented in \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_signaling_1_1_oculus_event_signaler_aa12d1db48f6dc26e33b3b036bab66a8f}{C2\+M2.\+Interaction.\+Signaling.\+Oculus\+Event\+Signaler}}.
+
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_signaling_1_1_raycast_event_signaler_ad79a8be81cfe076d7be77700eab2fc07}\label{class_c2_m2_1_1_interaction_1_1_signaling_1_1_raycast_event_signaler_ad79a8be81cfe076d7be77700eab2fc07}} 
+\index{C2M2.Interaction.Signaling.RaycastEventSignaler@{C2M2.Interaction.Signaling.RaycastEventSignaler}!OnHover@{OnHover}}
+\index{OnHover@{OnHover}!C2M2.Interaction.Signaling.RaycastEventSignaler@{C2M2.Interaction.Signaling.RaycastEventSignaler}}
+\doxysubsubsection{\texorpdfstring{OnHover()}{OnHover()}}
+{\footnotesize\ttfamily sealed override void C2\+M2.\+Interaction.\+Signaling.\+Raycast\+Event\+Signaler.\+On\+Hover (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_signaling_1_1_press_event_signaler_a70dc90a8086ffc96e484efff00ef1859}{C2\+M2.\+Interaction.\+Signaling.\+Press\+Event\+Signaler}}.
+
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_signaling_1_1_raycast_event_signaler_ab998dcf955ec9954d51b78a0eb7660a1}\label{class_c2_m2_1_1_interaction_1_1_signaling_1_1_raycast_event_signaler_ab998dcf955ec9954d51b78a0eb7660a1}} 
+\index{C2M2.Interaction.Signaling.RaycastEventSignaler@{C2M2.Interaction.Signaling.RaycastEventSignaler}!OnHoverEnd@{OnHoverEnd}}
+\index{OnHoverEnd@{OnHoverEnd}!C2M2.Interaction.Signaling.RaycastEventSignaler@{C2M2.Interaction.Signaling.RaycastEventSignaler}}
+\doxysubsubsection{\texorpdfstring{OnHoverEnd()}{OnHoverEnd()}}
+{\footnotesize\ttfamily sealed override void C2\+M2.\+Interaction.\+Signaling.\+Raycast\+Event\+Signaler.\+On\+Hover\+End (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_signaling_1_1_press_event_signaler_a49cf6935dac023ef086402c9550f83af}{C2\+M2.\+Interaction.\+Signaling.\+Press\+Event\+Signaler}}.
+
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_signaling_1_1_raycast_event_signaler_ac583a46955db229a8e3e44210afeb59c}\label{class_c2_m2_1_1_interaction_1_1_signaling_1_1_raycast_event_signaler_ac583a46955db229a8e3e44210afeb59c}} 
+\index{C2M2.Interaction.Signaling.RaycastEventSignaler@{C2M2.Interaction.Signaling.RaycastEventSignaler}!OnHoverEndSub@{OnHoverEndSub}}
+\index{OnHoverEndSub@{OnHoverEndSub}!C2M2.Interaction.Signaling.RaycastEventSignaler@{C2M2.Interaction.Signaling.RaycastEventSignaler}}
+\doxysubsubsection{\texorpdfstring{OnHoverEndSub()}{OnHoverEndSub()}}
+{\footnotesize\ttfamily virtual void C2\+M2.\+Interaction.\+Signaling.\+Raycast\+Event\+Signaler.\+On\+Hover\+End\+Sub (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Signal children that a hover is not happening 
+
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_signaling_1_1_raycast_event_signaler_ac4a00b56f5b3a2ca8c0da144988e11eb}\label{class_c2_m2_1_1_interaction_1_1_signaling_1_1_raycast_event_signaler_ac4a00b56f5b3a2ca8c0da144988e11eb}} 
+\index{C2M2.Interaction.Signaling.RaycastEventSignaler@{C2M2.Interaction.Signaling.RaycastEventSignaler}!OnHoverSub@{OnHoverSub}}
+\index{OnHoverSub@{OnHoverSub}!C2M2.Interaction.Signaling.RaycastEventSignaler@{C2M2.Interaction.Signaling.RaycastEventSignaler}}
+\doxysubsubsection{\texorpdfstring{OnHoverSub()}{OnHoverSub()}}
+{\footnotesize\ttfamily virtual void C2\+M2.\+Interaction.\+Signaling.\+Raycast\+Event\+Signaler.\+On\+Hover\+Sub (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Signal children that a hover is happening 
+
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_signaling_1_1_raycast_event_signaler_aad7e5783575e0feea5c01452c5295e19}\label{class_c2_m2_1_1_interaction_1_1_signaling_1_1_raycast_event_signaler_aad7e5783575e0feea5c01452c5295e19}} 
+\index{C2M2.Interaction.Signaling.RaycastEventSignaler@{C2M2.Interaction.Signaling.RaycastEventSignaler}!OnObjectChange@{OnObjectChange}}
+\index{OnObjectChange@{OnObjectChange}!C2M2.Interaction.Signaling.RaycastEventSignaler@{C2M2.Interaction.Signaling.RaycastEventSignaler}}
+\doxysubsubsection{\texorpdfstring{OnObjectChange()}{OnObjectChange()}}
+{\footnotesize\ttfamily void C2\+M2.\+Interaction.\+Signaling.\+Raycast\+Event\+Signaler.\+On\+Object\+Change (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_signaling_1_1_raycast_event_signaler_a0097a4551979a708d614935c52be2d08}\label{class_c2_m2_1_1_interaction_1_1_signaling_1_1_raycast_event_signaler_a0097a4551979a708d614935c52be2d08}} 
+\index{C2M2.Interaction.Signaling.RaycastEventSignaler@{C2M2.Interaction.Signaling.RaycastEventSignaler}!OnPress@{OnPress}}
+\index{OnPress@{OnPress}!C2M2.Interaction.Signaling.RaycastEventSignaler@{C2M2.Interaction.Signaling.RaycastEventSignaler}}
+\doxysubsubsection{\texorpdfstring{OnPress()}{OnPress()}}
+{\footnotesize\ttfamily sealed override void C2\+M2.\+Interaction.\+Signaling.\+Raycast\+Event\+Signaler.\+On\+Press (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_signaling_1_1_press_event_signaler_a521b648b3bdaf464fad1fccb24b792f3}{C2\+M2.\+Interaction.\+Signaling.\+Press\+Event\+Signaler}}.
+
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_signaling_1_1_raycast_event_signaler_a1ffbea0baa5966f89b3e8a2a0ce91d09}\label{class_c2_m2_1_1_interaction_1_1_signaling_1_1_raycast_event_signaler_a1ffbea0baa5966f89b3e8a2a0ce91d09}} 
+\index{C2M2.Interaction.Signaling.RaycastEventSignaler@{C2M2.Interaction.Signaling.RaycastEventSignaler}!OnPressSub@{OnPressSub}}
+\index{OnPressSub@{OnPressSub}!C2M2.Interaction.Signaling.RaycastEventSignaler@{C2M2.Interaction.Signaling.RaycastEventSignaler}}
+\doxysubsubsection{\texorpdfstring{OnPressSub()}{OnPressSub()}}
+{\footnotesize\ttfamily virtual void C2\+M2.\+Interaction.\+Signaling.\+Raycast\+Event\+Signaler.\+On\+Press\+Sub (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Signal children that a press is beginning 
+
+
+
+Reimplemented in \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_signaling_1_1_oculus_event_signaler_a05018a4cff128f771b8cb2bec6441ad3}{C2\+M2.\+Interaction.\+Signaling.\+Oculus\+Event\+Signaler}}.
+
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_signaling_1_1_raycast_event_signaler_ae6b47323d8ad0b285f883ec637cd6929}\label{class_c2_m2_1_1_interaction_1_1_signaling_1_1_raycast_event_signaler_ae6b47323d8ad0b285f883ec637cd6929}} 
+\index{C2M2.Interaction.Signaling.RaycastEventSignaler@{C2M2.Interaction.Signaling.RaycastEventSignaler}!OnStart@{OnStart}}
+\index{OnStart@{OnStart}!C2M2.Interaction.Signaling.RaycastEventSignaler@{C2M2.Interaction.Signaling.RaycastEventSignaler}}
+\doxysubsubsection{\texorpdfstring{OnStart()}{OnStart()}}
+{\footnotesize\ttfamily abstract void C2\+M2.\+Interaction.\+Signaling.\+Raycast\+Event\+Signaler.\+On\+Start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_signaling_1_1_oculus_event_signaler_a11d09791f0b23ab35ae3af471945b214}{C2\+M2.\+Interaction.\+Signaling.\+Oculus\+Event\+Signaler}}, and \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_signaling_1_1_mouse_event_signaler_a941e22dec7124fc3d39db8d27d98c780}{C2\+M2.\+Interaction.\+Signaling.\+Mouse\+Event\+Signaler}}.
+
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_signaling_1_1_raycast_event_signaler_a4479c8219db2ccd6c734cd3016febe3e}\label{class_c2_m2_1_1_interaction_1_1_signaling_1_1_raycast_event_signaler_a4479c8219db2ccd6c734cd3016febe3e}} 
+\index{C2M2.Interaction.Signaling.RaycastEventSignaler@{C2M2.Interaction.Signaling.RaycastEventSignaler}!RaycastingMethod@{RaycastingMethod}}
+\index{RaycastingMethod@{RaycastingMethod}!C2M2.Interaction.Signaling.RaycastEventSignaler@{C2M2.Interaction.Signaling.RaycastEventSignaler}}
+\doxysubsubsection{\texorpdfstring{RaycastingMethod()}{RaycastingMethod()}}
+{\footnotesize\ttfamily abstract bool C2\+M2.\+Interaction.\+Signaling.\+Raycast\+Event\+Signaler.\+Raycasting\+Method (\begin{DoxyParamCaption}\item[{out Raycast\+Hit}]{hit,  }\item[{float}]{max\+Distance,  }\item[{Layer\+Mask}]{layer\+Mask }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}
+
+
+
+Let the input type choose their own raycasting method 
+
+
+\begin{DoxyParams}{Parameters}
+{\em hit} & Resulting hit of the raycast \\
+\hline
+{\em layer\+Mask} & Which layer(s) should the raycast paya attention to? \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Whether or not the raycast hit a valid target 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_signaling_1_1_oculus_event_signaler_a156ac1dcec18dbe416610fccf2dee85e}{C2\+M2.\+Interaction.\+Signaling.\+Oculus\+Event\+Signaler}}, and \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_signaling_1_1_mouse_event_signaler_a74e4e9204f0c9efbcde31c62a8ef4162}{C2\+M2.\+Interaction.\+Signaling.\+Mouse\+Event\+Signaler}}.
+
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_signaling_1_1_raycast_event_signaler_aab6e986ac9296e708538a5d14c22a6d6}\label{class_c2_m2_1_1_interaction_1_1_signaling_1_1_raycast_event_signaler_aab6e986ac9296e708538a5d14c22a6d6}} 
+\index{C2M2.Interaction.Signaling.RaycastEventSignaler@{C2M2.Interaction.Signaling.RaycastEventSignaler}!Start@{Start}}
+\index{Start@{Start}!C2M2.Interaction.Signaling.RaycastEventSignaler@{C2M2.Interaction.Signaling.RaycastEventSignaler}}
+\doxysubsubsection{\texorpdfstring{Start()}{Start()}}
+{\footnotesize\ttfamily void C2\+M2.\+Interaction.\+Signaling.\+Raycast\+Event\+Signaler.\+Start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_signaling_1_1_raycast_event_signaler_a1793378f789ae41f3b042ed20328c236}\label{class_c2_m2_1_1_interaction_1_1_signaling_1_1_raycast_event_signaler_a1793378f789ae41f3b042ed20328c236}} 
+\index{C2M2.Interaction.Signaling.RaycastEventSignaler@{C2M2.Interaction.Signaling.RaycastEventSignaler}!activeEvent@{activeEvent}}
+\index{activeEvent@{activeEvent}!C2M2.Interaction.Signaling.RaycastEventSignaler@{C2M2.Interaction.Signaling.RaycastEventSignaler}}
+\doxysubsubsection{\texorpdfstring{activeEvent}{activeEvent}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_raycast_event_manager}{Raycast\+Event\+Manager}} C2\+M2.\+Interaction.\+Signaling.\+Raycast\+Event\+Signaler.\+active\+Event = null\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_signaling_1_1_raycast_event_signaler_ac7123fdbf5baf47a0ca0750cddd83c9d}\label{class_c2_m2_1_1_interaction_1_1_signaling_1_1_raycast_event_signaler_ac7123fdbf5baf47a0ca0750cddd83c9d}} 
+\index{C2M2.Interaction.Signaling.RaycastEventSignaler@{C2M2.Interaction.Signaling.RaycastEventSignaler}!lastHit@{lastHit}}
+\index{lastHit@{lastHit}!C2M2.Interaction.Signaling.RaycastEventSignaler@{C2M2.Interaction.Signaling.RaycastEventSignaler}}
+\doxysubsubsection{\texorpdfstring{lastHit}{lastHit}}
+{\footnotesize\ttfamily Raycast\+Hit C2\+M2.\+Interaction.\+Signaling.\+Raycast\+Event\+Signaler.\+last\+Hit\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_signaling_1_1_raycast_event_signaler_a726777cce7f331f18abe367fb9cae19b}\label{class_c2_m2_1_1_interaction_1_1_signaling_1_1_raycast_event_signaler_a726777cce7f331f18abe367fb9cae19b}} 
+\index{C2M2.Interaction.Signaling.RaycastEventSignaler@{C2M2.Interaction.Signaling.RaycastEventSignaler}!layerMask@{layerMask}}
+\index{layerMask@{layerMask}!C2M2.Interaction.Signaling.RaycastEventSignaler@{C2M2.Interaction.Signaling.RaycastEventSignaler}}
+\doxysubsubsection{\texorpdfstring{layerMask}{layerMask}}
+{\footnotesize\ttfamily Layer\+Mask C2\+M2.\+Interaction.\+Signaling.\+Raycast\+Event\+Signaler.\+layer\+Mask}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_signaling_1_1_raycast_event_signaler_af315cdd744fb6934fde51a3c33236b21}\label{class_c2_m2_1_1_interaction_1_1_signaling_1_1_raycast_event_signaler_af315cdd744fb6934fde51a3c33236b21}} 
+\index{C2M2.Interaction.Signaling.RaycastEventSignaler@{C2M2.Interaction.Signaling.RaycastEventSignaler}!maxRaycastDistance@{maxRaycastDistance}}
+\index{maxRaycastDistance@{maxRaycastDistance}!C2M2.Interaction.Signaling.RaycastEventSignaler@{C2M2.Interaction.Signaling.RaycastEventSignaler}}
+\doxysubsubsection{\texorpdfstring{maxRaycastDistance}{maxRaycastDistance}}
+{\footnotesize\ttfamily float C2\+M2.\+Interaction.\+Signaling.\+Raycast\+Event\+Signaler.\+max\+Raycast\+Distance = 10f}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_signaling_1_1_raycast_event_signaler_adbdbfa8ee4164fa73acb8af7e5a36e67}\label{class_c2_m2_1_1_interaction_1_1_signaling_1_1_raycast_event_signaler_adbdbfa8ee4164fa73acb8af7e5a36e67}} 
+\index{C2M2.Interaction.Signaling.RaycastEventSignaler@{C2M2.Interaction.Signaling.RaycastEventSignaler}!prevObj@{prevObj}}
+\index{prevObj@{prevObj}!C2M2.Interaction.Signaling.RaycastEventSignaler@{C2M2.Interaction.Signaling.RaycastEventSignaler}}
+\doxysubsubsection{\texorpdfstring{prevObj}{prevObj}}
+{\footnotesize\ttfamily Game\+Object C2\+M2.\+Interaction.\+Signaling.\+Raycast\+Event\+Signaler.\+prev\+Obj\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_signaling_1_1_raycast_event_signaler_aac549a94e04bce98c8d6de8032729b6c}\label{class_c2_m2_1_1_interaction_1_1_signaling_1_1_raycast_event_signaler_aac549a94e04bce98c8d6de8032729b6c}} 
+\index{C2M2.Interaction.Signaling.RaycastEventSignaler@{C2M2.Interaction.Signaling.RaycastEventSignaler}!rightHand@{rightHand}}
+\index{rightHand@{rightHand}!C2M2.Interaction.Signaling.RaycastEventSignaler@{C2M2.Interaction.Signaling.RaycastEventSignaler}}
+\doxysubsubsection{\texorpdfstring{rightHand}{rightHand}}
+{\footnotesize\ttfamily bool C2\+M2.\+Interaction.\+Signaling.\+Raycast\+Event\+Signaler.\+right\+Hand = true}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/jaros/\+Desktop/tempvr/virtual-\/reality/\+Assets/\+Scripts/\+C2\+M2/\+Interaction/\+Press\+Event\+Signalers/\mbox{\hyperlink{_raycast_event_signaler_8cs}{Raycast\+Event\+Signaler.\+cs}}\end{DoxyCompactItemize}

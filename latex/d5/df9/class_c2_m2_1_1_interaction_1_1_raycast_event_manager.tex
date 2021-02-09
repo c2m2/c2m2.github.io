@@ -1,0 +1,263 @@
+\hypertarget{class_c2_m2_1_1_interaction_1_1_raycast_event_manager}{}\doxysection{C2\+M2.\+Interaction.\+Raycast\+Event\+Manager Class Reference}
+\label{class_c2_m2_1_1_interaction_1_1_raycast_event_manager}\index{C2M2.Interaction.RaycastEventManager@{C2M2.Interaction.RaycastEventManager}}
+
+
+Attach this script to parent game\+Object, create one child with one raycast trigger per child. Switch between triggers by index or switch the active trigger to any custom Raycast\+Trigger instance.  
+
+
+
+
+Inheritance diagram for C2\+M2.\+Interaction.\+Raycast\+Event\+Manager\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=241pt]{d5/de4/class_c2_m2_1_1_interaction_1_1_raycast_event_manager__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for C2\+M2.\+Interaction.\+Raycast\+Event\+Manager\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{d8/d9b/class_c2_m2_1_1_interaction_1_1_raycast_event_manager__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum class \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_raycast_event_manager_a2cbebad862cdd97c9c35988548ea858c}{Event\+Type}} \{ \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_raycast_event_manager_a2cbebad862cdd97c9c35988548ea858caebfe5e1791db03c4cd6ab95801e0977d}{Hit}}
+, \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_raycast_event_manager_a2cbebad862cdd97c9c35988548ea858cabcd8db575b47c838e5d551e3973db4ac}{Hold}}
+, \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_raycast_event_manager_a2cbebad862cdd97c9c35988548ea858ca87557f11575c0ad78e4e28abedc13b6e}{End}}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_raycast_event_manager_addcd75d55a0e60d290157ceb0e5e7c5a}{Trigger\+Change\+Right}} (\mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_raycast_press_events}{Raycast\+Press\+Events}} trigger)
+\item 
+void \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_raycast_event_manager_a3d0ea27271702bdb0569b25343362986}{Trigger\+Change\+Left}} (\mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_raycast_press_events}{Raycast\+Press\+Events}} trigger)
+\item 
+void \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_raycast_event_manager_a5ddc88f934855d2f8dc62830952fbead}{Trigger\+Change\+Both}} (\mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_raycast_press_events}{Raycast\+Press\+Events}} trigger)
+\item 
+void \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_raycast_event_manager_a48b1687f180e0bf6a5c6eb402f8daa69}{Trigger\+Empty\+Right}} ()
+\item 
+void \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_raycast_event_manager_ae3f42dcabdc840f2090e9edf5a049dd2}{Trigger\+Empty\+Left}} ()
+\item 
+void \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_raycast_event_manager_aefc5de13077923130ebdf713ba19a96d}{Trigger\+Empty\+Both}} ()
+\item 
+void \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_raycast_event_manager_ad72483d7be70d9155109c4614bc097c7}{Hover\+Event}} (bool right\+Hand, Raycast\+Hit hit)
+\item 
+void \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_raycast_event_manager_a614d2bda96b16988dd9b03337a5d2b5a}{Hover\+End\+Event}} (bool right\+Hand, Raycast\+Hit hit)
+\item 
+void \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_raycast_event_manager_a43ac635283c2316238711a13919e1c86}{Press\+Event}} (bool right\+Hand, Raycast\+Hit hit)
+\item 
+void \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_raycast_event_manager_a4afd18f508364a3c77cae71e7dd0ebad}{Hold\+Event}} (bool right\+Hand, Raycast\+Hit hit)
+\item 
+void \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_raycast_event_manager_a4b08b1bc2e492b154db1de59e42ebb3e}{End\+Event}} (bool right\+Hand, Raycast\+Hit hit)
+\item 
+void \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_raycast_event_manager_aca2b21a8921cefb1d0e7d23eed9e7322}{All\+Events}} (bool right\+Hand, Raycast\+Hit hit)
+\item 
+void \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_raycast_event_manager_a4bc7b9127f1a3fbb6191de508ee50fba}{Press\+Event\+Null}} (bool right\+Hand)
+\item 
+void \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_raycast_event_manager_a9dd22a48ae95014027f7441c267292af}{Hold\+Event\+Null}} (bool right\+Hand)
+\item 
+void \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_raycast_event_manager_a8f1f6ccbe5e23e68a6156b7b466f7201}{End\+Event\+Null}} (bool right\+Hand)
+\item 
+void \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_raycast_event_manager_ae5a4d9476e13a3e681bd07870f7f0fda}{All\+Events\+Null}} (bool right\+Hand)
+\item 
+override string \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_raycast_event_manager_a515d23e1b82b823357563f8dad3c49d5}{To\+String}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_raycast_press_events}{Raycast\+Press\+Events}} \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_raycast_event_manager_a3756cab0c4fafe69b97330b48c5ada37}{right\+Trigger}} = null
+\item 
+\mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_raycast_press_events}{Raycast\+Press\+Events}} \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_raycast_event_manager_a8a8716d72e1286854629356585dd7272}{left\+Trigger}} = null
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_raycast_event_manager_a71a05e1f749a584bf63528a1a915039e}{Awake}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_raycast_press_events}{Raycast\+Press\+Events}} \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_raycast_event_manager_a546dac3867cc6c4a9d9d0e6a89312bdb}{empty\+Trigger}} = null
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static Raycast\+Hit \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_raycast_event_manager_aaf383adccabb4167e9aa4fcd72cc185a}{null\+Hit}} = new Raycast\+Hit()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Attach this script to parent game\+Object, create one child with one raycast trigger per child. Switch between triggers by index or switch the active trigger to any custom Raycast\+Trigger instance. 
+
+
+
+\doxysubsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_raycast_event_manager_a2cbebad862cdd97c9c35988548ea858c}\label{class_c2_m2_1_1_interaction_1_1_raycast_event_manager_a2cbebad862cdd97c9c35988548ea858c}} 
+\index{C2M2.Interaction.RaycastEventManager@{C2M2.Interaction.RaycastEventManager}!EventType@{EventType}}
+\index{EventType@{EventType}!C2M2.Interaction.RaycastEventManager@{C2M2.Interaction.RaycastEventManager}}
+\doxysubsubsection{\texorpdfstring{EventType}{EventType}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_raycast_event_manager_a2cbebad862cdd97c9c35988548ea858c}{C2\+M2.\+Interaction.\+Raycast\+Event\+Manager.\+Event\+Type}}\hspace{0.3cm}{\ttfamily [strong]}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Hit@{Hit}!C2M2.Interaction.RaycastEventManager@{C2M2.Interaction.RaycastEventManager}}\index{C2M2.Interaction.RaycastEventManager@{C2M2.Interaction.RaycastEventManager}!Hit@{Hit}}}\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_raycast_event_manager_a2cbebad862cdd97c9c35988548ea858caebfe5e1791db03c4cd6ab95801e0977d}\label{class_c2_m2_1_1_interaction_1_1_raycast_event_manager_a2cbebad862cdd97c9c35988548ea858caebfe5e1791db03c4cd6ab95801e0977d}} 
+Hit&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Hold@{Hold}!C2M2.Interaction.RaycastEventManager@{C2M2.Interaction.RaycastEventManager}}\index{C2M2.Interaction.RaycastEventManager@{C2M2.Interaction.RaycastEventManager}!Hold@{Hold}}}\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_raycast_event_manager_a2cbebad862cdd97c9c35988548ea858cabcd8db575b47c838e5d551e3973db4ac}\label{class_c2_m2_1_1_interaction_1_1_raycast_event_manager_a2cbebad862cdd97c9c35988548ea858cabcd8db575b47c838e5d551e3973db4ac}} 
+Hold&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{End@{End}!C2M2.Interaction.RaycastEventManager@{C2M2.Interaction.RaycastEventManager}}\index{C2M2.Interaction.RaycastEventManager@{C2M2.Interaction.RaycastEventManager}!End@{End}}}\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_raycast_event_manager_a2cbebad862cdd97c9c35988548ea858ca87557f11575c0ad78e4e28abedc13b6e}\label{class_c2_m2_1_1_interaction_1_1_raycast_event_manager_a2cbebad862cdd97c9c35988548ea858ca87557f11575c0ad78e4e28abedc13b6e}} 
+End&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_raycast_event_manager_aca2b21a8921cefb1d0e7d23eed9e7322}\label{class_c2_m2_1_1_interaction_1_1_raycast_event_manager_aca2b21a8921cefb1d0e7d23eed9e7322}} 
+\index{C2M2.Interaction.RaycastEventManager@{C2M2.Interaction.RaycastEventManager}!AllEvents@{AllEvents}}
+\index{AllEvents@{AllEvents}!C2M2.Interaction.RaycastEventManager@{C2M2.Interaction.RaycastEventManager}}
+\doxysubsubsection{\texorpdfstring{AllEvents()}{AllEvents()}}
+{\footnotesize\ttfamily void C2\+M2.\+Interaction.\+Raycast\+Event\+Manager.\+All\+Events (\begin{DoxyParamCaption}\item[{bool}]{right\+Hand,  }\item[{Raycast\+Hit}]{hit }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_raycast_event_manager_ae5a4d9476e13a3e681bd07870f7f0fda}\label{class_c2_m2_1_1_interaction_1_1_raycast_event_manager_ae5a4d9476e13a3e681bd07870f7f0fda}} 
+\index{C2M2.Interaction.RaycastEventManager@{C2M2.Interaction.RaycastEventManager}!AllEventsNull@{AllEventsNull}}
+\index{AllEventsNull@{AllEventsNull}!C2M2.Interaction.RaycastEventManager@{C2M2.Interaction.RaycastEventManager}}
+\doxysubsubsection{\texorpdfstring{AllEventsNull()}{AllEventsNull()}}
+{\footnotesize\ttfamily void C2\+M2.\+Interaction.\+Raycast\+Event\+Manager.\+All\+Events\+Null (\begin{DoxyParamCaption}\item[{bool}]{right\+Hand }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_raycast_event_manager_a71a05e1f749a584bf63528a1a915039e}\label{class_c2_m2_1_1_interaction_1_1_raycast_event_manager_a71a05e1f749a584bf63528a1a915039e}} 
+\index{C2M2.Interaction.RaycastEventManager@{C2M2.Interaction.RaycastEventManager}!Awake@{Awake}}
+\index{Awake@{Awake}!C2M2.Interaction.RaycastEventManager@{C2M2.Interaction.RaycastEventManager}}
+\doxysubsubsection{\texorpdfstring{Awake()}{Awake()}}
+{\footnotesize\ttfamily void C2\+M2.\+Interaction.\+Raycast\+Event\+Manager.\+Awake (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_raycast_event_manager_a4b08b1bc2e492b154db1de59e42ebb3e}\label{class_c2_m2_1_1_interaction_1_1_raycast_event_manager_a4b08b1bc2e492b154db1de59e42ebb3e}} 
+\index{C2M2.Interaction.RaycastEventManager@{C2M2.Interaction.RaycastEventManager}!EndEvent@{EndEvent}}
+\index{EndEvent@{EndEvent}!C2M2.Interaction.RaycastEventManager@{C2M2.Interaction.RaycastEventManager}}
+\doxysubsubsection{\texorpdfstring{EndEvent()}{EndEvent()}}
+{\footnotesize\ttfamily void C2\+M2.\+Interaction.\+Raycast\+Event\+Manager.\+End\+Event (\begin{DoxyParamCaption}\item[{bool}]{right\+Hand,  }\item[{Raycast\+Hit}]{hit }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_raycast_event_manager_a8f1f6ccbe5e23e68a6156b7b466f7201}\label{class_c2_m2_1_1_interaction_1_1_raycast_event_manager_a8f1f6ccbe5e23e68a6156b7b466f7201}} 
+\index{C2M2.Interaction.RaycastEventManager@{C2M2.Interaction.RaycastEventManager}!EndEventNull@{EndEventNull}}
+\index{EndEventNull@{EndEventNull}!C2M2.Interaction.RaycastEventManager@{C2M2.Interaction.RaycastEventManager}}
+\doxysubsubsection{\texorpdfstring{EndEventNull()}{EndEventNull()}}
+{\footnotesize\ttfamily void C2\+M2.\+Interaction.\+Raycast\+Event\+Manager.\+End\+Event\+Null (\begin{DoxyParamCaption}\item[{bool}]{right\+Hand }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_raycast_event_manager_a4afd18f508364a3c77cae71e7dd0ebad}\label{class_c2_m2_1_1_interaction_1_1_raycast_event_manager_a4afd18f508364a3c77cae71e7dd0ebad}} 
+\index{C2M2.Interaction.RaycastEventManager@{C2M2.Interaction.RaycastEventManager}!HoldEvent@{HoldEvent}}
+\index{HoldEvent@{HoldEvent}!C2M2.Interaction.RaycastEventManager@{C2M2.Interaction.RaycastEventManager}}
+\doxysubsubsection{\texorpdfstring{HoldEvent()}{HoldEvent()}}
+{\footnotesize\ttfamily void C2\+M2.\+Interaction.\+Raycast\+Event\+Manager.\+Hold\+Event (\begin{DoxyParamCaption}\item[{bool}]{right\+Hand,  }\item[{Raycast\+Hit}]{hit }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_raycast_event_manager_a9dd22a48ae95014027f7441c267292af}\label{class_c2_m2_1_1_interaction_1_1_raycast_event_manager_a9dd22a48ae95014027f7441c267292af}} 
+\index{C2M2.Interaction.RaycastEventManager@{C2M2.Interaction.RaycastEventManager}!HoldEventNull@{HoldEventNull}}
+\index{HoldEventNull@{HoldEventNull}!C2M2.Interaction.RaycastEventManager@{C2M2.Interaction.RaycastEventManager}}
+\doxysubsubsection{\texorpdfstring{HoldEventNull()}{HoldEventNull()}}
+{\footnotesize\ttfamily void C2\+M2.\+Interaction.\+Raycast\+Event\+Manager.\+Hold\+Event\+Null (\begin{DoxyParamCaption}\item[{bool}]{right\+Hand }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_raycast_event_manager_a614d2bda96b16988dd9b03337a5d2b5a}\label{class_c2_m2_1_1_interaction_1_1_raycast_event_manager_a614d2bda96b16988dd9b03337a5d2b5a}} 
+\index{C2M2.Interaction.RaycastEventManager@{C2M2.Interaction.RaycastEventManager}!HoverEndEvent@{HoverEndEvent}}
+\index{HoverEndEvent@{HoverEndEvent}!C2M2.Interaction.RaycastEventManager@{C2M2.Interaction.RaycastEventManager}}
+\doxysubsubsection{\texorpdfstring{HoverEndEvent()}{HoverEndEvent()}}
+{\footnotesize\ttfamily void C2\+M2.\+Interaction.\+Raycast\+Event\+Manager.\+Hover\+End\+Event (\begin{DoxyParamCaption}\item[{bool}]{right\+Hand,  }\item[{Raycast\+Hit}]{hit }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_raycast_event_manager_ad72483d7be70d9155109c4614bc097c7}\label{class_c2_m2_1_1_interaction_1_1_raycast_event_manager_ad72483d7be70d9155109c4614bc097c7}} 
+\index{C2M2.Interaction.RaycastEventManager@{C2M2.Interaction.RaycastEventManager}!HoverEvent@{HoverEvent}}
+\index{HoverEvent@{HoverEvent}!C2M2.Interaction.RaycastEventManager@{C2M2.Interaction.RaycastEventManager}}
+\doxysubsubsection{\texorpdfstring{HoverEvent()}{HoverEvent()}}
+{\footnotesize\ttfamily void C2\+M2.\+Interaction.\+Raycast\+Event\+Manager.\+Hover\+Event (\begin{DoxyParamCaption}\item[{bool}]{right\+Hand,  }\item[{Raycast\+Hit}]{hit }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_raycast_event_manager_a43ac635283c2316238711a13919e1c86}\label{class_c2_m2_1_1_interaction_1_1_raycast_event_manager_a43ac635283c2316238711a13919e1c86}} 
+\index{C2M2.Interaction.RaycastEventManager@{C2M2.Interaction.RaycastEventManager}!PressEvent@{PressEvent}}
+\index{PressEvent@{PressEvent}!C2M2.Interaction.RaycastEventManager@{C2M2.Interaction.RaycastEventManager}}
+\doxysubsubsection{\texorpdfstring{PressEvent()}{PressEvent()}}
+{\footnotesize\ttfamily void C2\+M2.\+Interaction.\+Raycast\+Event\+Manager.\+Press\+Event (\begin{DoxyParamCaption}\item[{bool}]{right\+Hand,  }\item[{Raycast\+Hit}]{hit }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_raycast_event_manager_a4bc7b9127f1a3fbb6191de508ee50fba}\label{class_c2_m2_1_1_interaction_1_1_raycast_event_manager_a4bc7b9127f1a3fbb6191de508ee50fba}} 
+\index{C2M2.Interaction.RaycastEventManager@{C2M2.Interaction.RaycastEventManager}!PressEventNull@{PressEventNull}}
+\index{PressEventNull@{PressEventNull}!C2M2.Interaction.RaycastEventManager@{C2M2.Interaction.RaycastEventManager}}
+\doxysubsubsection{\texorpdfstring{PressEventNull()}{PressEventNull()}}
+{\footnotesize\ttfamily void C2\+M2.\+Interaction.\+Raycast\+Event\+Manager.\+Press\+Event\+Null (\begin{DoxyParamCaption}\item[{bool}]{right\+Hand }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_raycast_event_manager_a515d23e1b82b823357563f8dad3c49d5}\label{class_c2_m2_1_1_interaction_1_1_raycast_event_manager_a515d23e1b82b823357563f8dad3c49d5}} 
+\index{C2M2.Interaction.RaycastEventManager@{C2M2.Interaction.RaycastEventManager}!ToString@{ToString}}
+\index{ToString@{ToString}!C2M2.Interaction.RaycastEventManager@{C2M2.Interaction.RaycastEventManager}}
+\doxysubsubsection{\texorpdfstring{ToString()}{ToString()}}
+{\footnotesize\ttfamily override string C2\+M2.\+Interaction.\+Raycast\+Event\+Manager.\+To\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_raycast_event_manager_a5ddc88f934855d2f8dc62830952fbead}\label{class_c2_m2_1_1_interaction_1_1_raycast_event_manager_a5ddc88f934855d2f8dc62830952fbead}} 
+\index{C2M2.Interaction.RaycastEventManager@{C2M2.Interaction.RaycastEventManager}!TriggerChangeBoth@{TriggerChangeBoth}}
+\index{TriggerChangeBoth@{TriggerChangeBoth}!C2M2.Interaction.RaycastEventManager@{C2M2.Interaction.RaycastEventManager}}
+\doxysubsubsection{\texorpdfstring{TriggerChangeBoth()}{TriggerChangeBoth()}}
+{\footnotesize\ttfamily void C2\+M2.\+Interaction.\+Raycast\+Event\+Manager.\+Trigger\+Change\+Both (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_raycast_press_events}{Raycast\+Press\+Events}}}]{trigger }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_raycast_event_manager_a3d0ea27271702bdb0569b25343362986}\label{class_c2_m2_1_1_interaction_1_1_raycast_event_manager_a3d0ea27271702bdb0569b25343362986}} 
+\index{C2M2.Interaction.RaycastEventManager@{C2M2.Interaction.RaycastEventManager}!TriggerChangeLeft@{TriggerChangeLeft}}
+\index{TriggerChangeLeft@{TriggerChangeLeft}!C2M2.Interaction.RaycastEventManager@{C2M2.Interaction.RaycastEventManager}}
+\doxysubsubsection{\texorpdfstring{TriggerChangeLeft()}{TriggerChangeLeft()}}
+{\footnotesize\ttfamily void C2\+M2.\+Interaction.\+Raycast\+Event\+Manager.\+Trigger\+Change\+Left (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_raycast_press_events}{Raycast\+Press\+Events}}}]{trigger }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_raycast_event_manager_addcd75d55a0e60d290157ceb0e5e7c5a}\label{class_c2_m2_1_1_interaction_1_1_raycast_event_manager_addcd75d55a0e60d290157ceb0e5e7c5a}} 
+\index{C2M2.Interaction.RaycastEventManager@{C2M2.Interaction.RaycastEventManager}!TriggerChangeRight@{TriggerChangeRight}}
+\index{TriggerChangeRight@{TriggerChangeRight}!C2M2.Interaction.RaycastEventManager@{C2M2.Interaction.RaycastEventManager}}
+\doxysubsubsection{\texorpdfstring{TriggerChangeRight()}{TriggerChangeRight()}}
+{\footnotesize\ttfamily void C2\+M2.\+Interaction.\+Raycast\+Event\+Manager.\+Trigger\+Change\+Right (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_raycast_press_events}{Raycast\+Press\+Events}}}]{trigger }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_raycast_event_manager_aefc5de13077923130ebdf713ba19a96d}\label{class_c2_m2_1_1_interaction_1_1_raycast_event_manager_aefc5de13077923130ebdf713ba19a96d}} 
+\index{C2M2.Interaction.RaycastEventManager@{C2M2.Interaction.RaycastEventManager}!TriggerEmptyBoth@{TriggerEmptyBoth}}
+\index{TriggerEmptyBoth@{TriggerEmptyBoth}!C2M2.Interaction.RaycastEventManager@{C2M2.Interaction.RaycastEventManager}}
+\doxysubsubsection{\texorpdfstring{TriggerEmptyBoth()}{TriggerEmptyBoth()}}
+{\footnotesize\ttfamily void C2\+M2.\+Interaction.\+Raycast\+Event\+Manager.\+Trigger\+Empty\+Both (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_raycast_event_manager_ae3f42dcabdc840f2090e9edf5a049dd2}\label{class_c2_m2_1_1_interaction_1_1_raycast_event_manager_ae3f42dcabdc840f2090e9edf5a049dd2}} 
+\index{C2M2.Interaction.RaycastEventManager@{C2M2.Interaction.RaycastEventManager}!TriggerEmptyLeft@{TriggerEmptyLeft}}
+\index{TriggerEmptyLeft@{TriggerEmptyLeft}!C2M2.Interaction.RaycastEventManager@{C2M2.Interaction.RaycastEventManager}}
+\doxysubsubsection{\texorpdfstring{TriggerEmptyLeft()}{TriggerEmptyLeft()}}
+{\footnotesize\ttfamily void C2\+M2.\+Interaction.\+Raycast\+Event\+Manager.\+Trigger\+Empty\+Left (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_raycast_event_manager_a48b1687f180e0bf6a5c6eb402f8daa69}\label{class_c2_m2_1_1_interaction_1_1_raycast_event_manager_a48b1687f180e0bf6a5c6eb402f8daa69}} 
+\index{C2M2.Interaction.RaycastEventManager@{C2M2.Interaction.RaycastEventManager}!TriggerEmptyRight@{TriggerEmptyRight}}
+\index{TriggerEmptyRight@{TriggerEmptyRight}!C2M2.Interaction.RaycastEventManager@{C2M2.Interaction.RaycastEventManager}}
+\doxysubsubsection{\texorpdfstring{TriggerEmptyRight()}{TriggerEmptyRight()}}
+{\footnotesize\ttfamily void C2\+M2.\+Interaction.\+Raycast\+Event\+Manager.\+Trigger\+Empty\+Right (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_raycast_event_manager_a546dac3867cc6c4a9d9d0e6a89312bdb}\label{class_c2_m2_1_1_interaction_1_1_raycast_event_manager_a546dac3867cc6c4a9d9d0e6a89312bdb}} 
+\index{C2M2.Interaction.RaycastEventManager@{C2M2.Interaction.RaycastEventManager}!emptyTrigger@{emptyTrigger}}
+\index{emptyTrigger@{emptyTrigger}!C2M2.Interaction.RaycastEventManager@{C2M2.Interaction.RaycastEventManager}}
+\doxysubsubsection{\texorpdfstring{emptyTrigger}{emptyTrigger}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_raycast_press_events}{Raycast\+Press\+Events}} C2\+M2.\+Interaction.\+Raycast\+Event\+Manager.\+empty\+Trigger = null\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_raycast_event_manager_a8a8716d72e1286854629356585dd7272}\label{class_c2_m2_1_1_interaction_1_1_raycast_event_manager_a8a8716d72e1286854629356585dd7272}} 
+\index{C2M2.Interaction.RaycastEventManager@{C2M2.Interaction.RaycastEventManager}!leftTrigger@{leftTrigger}}
+\index{leftTrigger@{leftTrigger}!C2M2.Interaction.RaycastEventManager@{C2M2.Interaction.RaycastEventManager}}
+\doxysubsubsection{\texorpdfstring{leftTrigger}{leftTrigger}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_raycast_press_events}{Raycast\+Press\+Events}} C2\+M2.\+Interaction.\+Raycast\+Event\+Manager.\+left\+Trigger = null}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_raycast_event_manager_aaf383adccabb4167e9aa4fcd72cc185a}\label{class_c2_m2_1_1_interaction_1_1_raycast_event_manager_aaf383adccabb4167e9aa4fcd72cc185a}} 
+\index{C2M2.Interaction.RaycastEventManager@{C2M2.Interaction.RaycastEventManager}!nullHit@{nullHit}}
+\index{nullHit@{nullHit}!C2M2.Interaction.RaycastEventManager@{C2M2.Interaction.RaycastEventManager}}
+\doxysubsubsection{\texorpdfstring{nullHit}{nullHit}}
+{\footnotesize\ttfamily Raycast\+Hit C2\+M2.\+Interaction.\+Raycast\+Event\+Manager.\+null\+Hit = new Raycast\+Hit()\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_raycast_event_manager_a3756cab0c4fafe69b97330b48c5ada37}\label{class_c2_m2_1_1_interaction_1_1_raycast_event_manager_a3756cab0c4fafe69b97330b48c5ada37}} 
+\index{C2M2.Interaction.RaycastEventManager@{C2M2.Interaction.RaycastEventManager}!rightTrigger@{rightTrigger}}
+\index{rightTrigger@{rightTrigger}!C2M2.Interaction.RaycastEventManager@{C2M2.Interaction.RaycastEventManager}}
+\doxysubsubsection{\texorpdfstring{rightTrigger}{rightTrigger}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_raycast_press_events}{Raycast\+Press\+Events}} C2\+M2.\+Interaction.\+Raycast\+Event\+Manager.\+right\+Trigger = null}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/jaros/\+Desktop/tempvr/virtual-\/reality/\+Assets/\+Scripts/\+C2\+M2/\+Interaction/\mbox{\hyperlink{_raycast_event_manager_8cs}{Raycast\+Event\+Manager.\+cs}}\end{DoxyCompactItemize}

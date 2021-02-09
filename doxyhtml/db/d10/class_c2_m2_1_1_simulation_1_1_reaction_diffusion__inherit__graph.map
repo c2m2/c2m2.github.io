@@ -1,0 +1,5 @@
+<map id="C2M2.Simulation.ReactionDiffusion" name="C2M2.Simulation.ReactionDiffusion">
+<area shape="rect" id="node1" title="Simulate a diffusion over the surface of a given geometry" alt="" coords="5,608,228,920"/>
+<area shape="rect" id="node2" href="$d4/d24/class_c2_m2_1_1_simulation_1_1_simulation_diffuse_react.html" title="Provide a general access point for information regarding a live simulation. Simulations should inheri..." alt="" coords="17,131,216,560"/>
+<area shape="rect" id="node3" title=" " alt="" coords="53,5,180,83"/>
+</map>

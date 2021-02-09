@@ -12,6 +12,8 @@ var class_c2_m2_1_1_interaction_1_1_raycast_event_manager =
     [ "EndEventNull", "d5/df9/class_c2_m2_1_1_interaction_1_1_raycast_event_manager.html#a8f1f6ccbe5e23e68a6156b7b466f7201", null ],
     [ "HoldEvent", "d5/df9/class_c2_m2_1_1_interaction_1_1_raycast_event_manager.html#a4afd18f508364a3c77cae71e7dd0ebad", null ],
     [ "HoldEventNull", "d5/df9/class_c2_m2_1_1_interaction_1_1_raycast_event_manager.html#a9dd22a48ae95014027f7441c267292af", null ],
+    [ "HoverEndEvent", "d5/df9/class_c2_m2_1_1_interaction_1_1_raycast_event_manager.html#a614d2bda96b16988dd9b03337a5d2b5a", null ],
+    [ "HoverEvent", "d5/df9/class_c2_m2_1_1_interaction_1_1_raycast_event_manager.html#ad72483d7be70d9155109c4614bc097c7", null ],
     [ "PressEvent", "d5/df9/class_c2_m2_1_1_interaction_1_1_raycast_event_manager.html#a43ac635283c2316238711a13919e1c86", null ],
     [ "PressEventNull", "d5/df9/class_c2_m2_1_1_interaction_1_1_raycast_event_manager.html#a4bc7b9127f1a3fbb6191de508ee50fba", null ],
     [ "ToString", "d5/df9/class_c2_m2_1_1_interaction_1_1_raycast_event_manager.html#a515d23e1b82b823357563f8dad3c49d5", null ],

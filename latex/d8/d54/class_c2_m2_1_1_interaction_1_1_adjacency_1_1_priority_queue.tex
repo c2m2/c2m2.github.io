@@ -1,0 +1,157 @@
+\hypertarget{class_c2_m2_1_1_interaction_1_1_adjacency_1_1_priority_queue}{}\doxysection{C2\+M2.\+Interaction.\+Adjacency.\+Priority\+Queue Class Reference}
+\label{class_c2_m2_1_1_interaction_1_1_adjacency_1_1_priority_queue}\index{C2M2.Interaction.Adjacency.PriorityQueue@{C2M2.Interaction.Adjacency.PriorityQueue}}
+
+
+A priority queue represented as a binary heap  
+
+
+
+
+Collaboration diagram for C2\+M2.\+Interaction.\+Adjacency.\+Priority\+Queue\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=259pt]{d3/d6e/class_c2_m2_1_1_interaction_1_1_adjacency_1_1_priority_queue__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_adjacency_1_1_priority_queue_a912e9746442193747b94ecb5ec9c4bec}{Priority\+Queue}} ()
+\begin{DoxyCompactList}\small\item\em Construct a \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_adjacency_1_1_priority_queue}{Priority\+Queue}} \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_adjacency_1_1_priority_queue_a141196e4ccf6305c7dd9ab3400132e95}{Remove}} (\mbox{\hyperlink{struct_c2_m2_1_1_interaction_1_1_adjacency_1_1_node}{Node}} item)
+\begin{DoxyCompactList}\small\item\em Remove an element from the queue \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_adjacency_1_1_priority_queue_a45160061b36c0aa64424f0a28929d483}{Enqueue}} (\mbox{\hyperlink{struct_c2_m2_1_1_interaction_1_1_adjacency_1_1_node}{Node}} item)
+\begin{DoxyCompactList}\small\item\em Add an item to the queue \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_c2_m2_1_1_interaction_1_1_adjacency_1_1_node}{Node}} \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_adjacency_1_1_priority_queue_a7f582e91a6f9a5dda0b04c7fae6d39f4}{Dequeue}} ()
+\begin{DoxyCompactList}\small\item\em Remove the first element from the queue and return the element \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_c2_m2_1_1_interaction_1_1_adjacency_1_1_node}{Node}} \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_adjacency_1_1_priority_queue_abdb8b3c3132d518321bdeda8d726713d}{Peek}} ()
+\begin{DoxyCompactList}\small\item\em Return the first (smallest) element stored in the queue \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_adjacency_1_1_priority_queue_af2d323d8519956d83a6b2501d8e5cb93}{Count}} ()
+\begin{DoxyCompactList}\small\item\em Count the number of elements in the queue \end{DoxyCompactList}\item 
+override string \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_adjacency_1_1_priority_queue_a12434f94759a8d7bf787de1bb00f43da}{To\+String}} ()
+\begin{DoxyCompactList}\small\item\em Represent the queue as a string \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_adjacency_1_1_priority_queue_a99a9a570bc7b06d0febb054aa02ee045}{Is\+Consistent}} ()
+\begin{DoxyCompactList}\small\item\em Check for the consistency of the priority queue \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+List$<$ \mbox{\hyperlink{struct_c2_m2_1_1_interaction_1_1_adjacency_1_1_node}{Node}} $>$ \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_adjacency_1_1_priority_queue_ab3431da0b993c854e17957fd4b9c181e}{data}}
+\begin{DoxyCompactList}\small\item\em Data for the priority queue \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A priority queue represented as a binary heap 
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_adjacency_1_1_priority_queue_a912e9746442193747b94ecb5ec9c4bec}\label{class_c2_m2_1_1_interaction_1_1_adjacency_1_1_priority_queue_a912e9746442193747b94ecb5ec9c4bec}} 
+\index{C2M2.Interaction.Adjacency.PriorityQueue@{C2M2.Interaction.Adjacency.PriorityQueue}!PriorityQueue@{PriorityQueue}}
+\index{PriorityQueue@{PriorityQueue}!C2M2.Interaction.Adjacency.PriorityQueue@{C2M2.Interaction.Adjacency.PriorityQueue}}
+\doxysubsubsection{\texorpdfstring{PriorityQueue()}{PriorityQueue()}}
+{\footnotesize\ttfamily C2\+M2.\+Interaction.\+Adjacency.\+Priority\+Queue.\+Priority\+Queue (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Construct a \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_adjacency_1_1_priority_queue}{Priority\+Queue}} 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_adjacency_1_1_priority_queue_af2d323d8519956d83a6b2501d8e5cb93}\label{class_c2_m2_1_1_interaction_1_1_adjacency_1_1_priority_queue_af2d323d8519956d83a6b2501d8e5cb93}} 
+\index{C2M2.Interaction.Adjacency.PriorityQueue@{C2M2.Interaction.Adjacency.PriorityQueue}!Count@{Count}}
+\index{Count@{Count}!C2M2.Interaction.Adjacency.PriorityQueue@{C2M2.Interaction.Adjacency.PriorityQueue}}
+\doxysubsubsection{\texorpdfstring{Count()}{Count()}}
+{\footnotesize\ttfamily int C2\+M2.\+Interaction.\+Adjacency.\+Priority\+Queue.\+Count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Count the number of elements in the queue 
+
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_adjacency_1_1_priority_queue_a7f582e91a6f9a5dda0b04c7fae6d39f4}\label{class_c2_m2_1_1_interaction_1_1_adjacency_1_1_priority_queue_a7f582e91a6f9a5dda0b04c7fae6d39f4}} 
+\index{C2M2.Interaction.Adjacency.PriorityQueue@{C2M2.Interaction.Adjacency.PriorityQueue}!Dequeue@{Dequeue}}
+\index{Dequeue@{Dequeue}!C2M2.Interaction.Adjacency.PriorityQueue@{C2M2.Interaction.Adjacency.PriorityQueue}}
+\doxysubsubsection{\texorpdfstring{Dequeue()}{Dequeue()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_c2_m2_1_1_interaction_1_1_adjacency_1_1_node}{Node}} C2\+M2.\+Interaction.\+Adjacency.\+Priority\+Queue.\+Dequeue (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Remove the first element from the queue and return the element 
+
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_adjacency_1_1_priority_queue_a45160061b36c0aa64424f0a28929d483}\label{class_c2_m2_1_1_interaction_1_1_adjacency_1_1_priority_queue_a45160061b36c0aa64424f0a28929d483}} 
+\index{C2M2.Interaction.Adjacency.PriorityQueue@{C2M2.Interaction.Adjacency.PriorityQueue}!Enqueue@{Enqueue}}
+\index{Enqueue@{Enqueue}!C2M2.Interaction.Adjacency.PriorityQueue@{C2M2.Interaction.Adjacency.PriorityQueue}}
+\doxysubsubsection{\texorpdfstring{Enqueue()}{Enqueue()}}
+{\footnotesize\ttfamily void C2\+M2.\+Interaction.\+Adjacency.\+Priority\+Queue.\+Enqueue (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_c2_m2_1_1_interaction_1_1_adjacency_1_1_node}{Node}}}]{item }\end{DoxyParamCaption})}
+
+
+
+Add an item to the queue 
+
+
+\begin{DoxyParams}{Parameters}
+{\em item} & A node \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_adjacency_1_1_priority_queue_a99a9a570bc7b06d0febb054aa02ee045}\label{class_c2_m2_1_1_interaction_1_1_adjacency_1_1_priority_queue_a99a9a570bc7b06d0febb054aa02ee045}} 
+\index{C2M2.Interaction.Adjacency.PriorityQueue@{C2M2.Interaction.Adjacency.PriorityQueue}!IsConsistent@{IsConsistent}}
+\index{IsConsistent@{IsConsistent}!C2M2.Interaction.Adjacency.PriorityQueue@{C2M2.Interaction.Adjacency.PriorityQueue}}
+\doxysubsubsection{\texorpdfstring{IsConsistent()}{IsConsistent()}}
+{\footnotesize\ttfamily bool C2\+M2.\+Interaction.\+Adjacency.\+Priority\+Queue.\+Is\+Consistent (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Check for the consistency of the priority queue 
+
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_adjacency_1_1_priority_queue_abdb8b3c3132d518321bdeda8d726713d}\label{class_c2_m2_1_1_interaction_1_1_adjacency_1_1_priority_queue_abdb8b3c3132d518321bdeda8d726713d}} 
+\index{C2M2.Interaction.Adjacency.PriorityQueue@{C2M2.Interaction.Adjacency.PriorityQueue}!Peek@{Peek}}
+\index{Peek@{Peek}!C2M2.Interaction.Adjacency.PriorityQueue@{C2M2.Interaction.Adjacency.PriorityQueue}}
+\doxysubsubsection{\texorpdfstring{Peek()}{Peek()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_c2_m2_1_1_interaction_1_1_adjacency_1_1_node}{Node}} C2\+M2.\+Interaction.\+Adjacency.\+Priority\+Queue.\+Peek (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Return the first (smallest) element stored in the queue 
+
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_adjacency_1_1_priority_queue_a141196e4ccf6305c7dd9ab3400132e95}\label{class_c2_m2_1_1_interaction_1_1_adjacency_1_1_priority_queue_a141196e4ccf6305c7dd9ab3400132e95}} 
+\index{C2M2.Interaction.Adjacency.PriorityQueue@{C2M2.Interaction.Adjacency.PriorityQueue}!Remove@{Remove}}
+\index{Remove@{Remove}!C2M2.Interaction.Adjacency.PriorityQueue@{C2M2.Interaction.Adjacency.PriorityQueue}}
+\doxysubsubsection{\texorpdfstring{Remove()}{Remove()}}
+{\footnotesize\ttfamily void C2\+M2.\+Interaction.\+Adjacency.\+Priority\+Queue.\+Remove (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_c2_m2_1_1_interaction_1_1_adjacency_1_1_node}{Node}}}]{item }\end{DoxyParamCaption})}
+
+
+
+Remove an element from the queue 
+
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_adjacency_1_1_priority_queue_a12434f94759a8d7bf787de1bb00f43da}\label{class_c2_m2_1_1_interaction_1_1_adjacency_1_1_priority_queue_a12434f94759a8d7bf787de1bb00f43da}} 
+\index{C2M2.Interaction.Adjacency.PriorityQueue@{C2M2.Interaction.Adjacency.PriorityQueue}!ToString@{ToString}}
+\index{ToString@{ToString}!C2M2.Interaction.Adjacency.PriorityQueue@{C2M2.Interaction.Adjacency.PriorityQueue}}
+\doxysubsubsection{\texorpdfstring{ToString()}{ToString()}}
+{\footnotesize\ttfamily override string C2\+M2.\+Interaction.\+Adjacency.\+Priority\+Queue.\+To\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Represent the queue as a string 
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_adjacency_1_1_priority_queue_ab3431da0b993c854e17957fd4b9c181e}\label{class_c2_m2_1_1_interaction_1_1_adjacency_1_1_priority_queue_ab3431da0b993c854e17957fd4b9c181e}} 
+\index{C2M2.Interaction.Adjacency.PriorityQueue@{C2M2.Interaction.Adjacency.PriorityQueue}!data@{data}}
+\index{data@{data}!C2M2.Interaction.Adjacency.PriorityQueue@{C2M2.Interaction.Adjacency.PriorityQueue}}
+\doxysubsubsection{\texorpdfstring{data}{data}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{struct_c2_m2_1_1_interaction_1_1_adjacency_1_1_node}{Node}}$>$ C2\+M2.\+Interaction.\+Adjacency.\+Priority\+Queue.\+data\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Data for the priority queue 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/jaros/\+Desktop/tempvr/virtual-\/reality/\+Assets/\+Scripts/\+C2\+M2/\+Interaction/\+Adjacency/\mbox{\hyperlink{_priority_queue_8cs}{Priority\+Queue.\+cs}}\end{DoxyCompactItemize}

@@ -1,6 +1,6 @@
 <map id="C2M2.Interaction.UI.RaycastKey" name="C2M2.Interaction.UI.RaycastKey">
 <area shape="rect" id="node1" title=" " alt="" coords="5,696,268,905"/>
-<area shape="rect" id="node2" title=" " alt="" coords="41,5,168,83"/>
-<area shape="rect" id="node3" href="$d4/d6f/class_c2_m2_1_1_interaction_1_1_u_i_1_1_raycast_keyboard.html" title="Instantiates a raycastable keyboard and manages its input/output" alt="" coords="125,292,364,633"/>
-<area shape="rect" id="node4" title=" " alt="" coords="209,5,280,83"/>
+<area shape="rect" id="node2" title=" " alt="" coords="69,5,196,83"/>
+<area shape="rect" id="node3" href="$d4/d6f/class_c2_m2_1_1_interaction_1_1_u_i_1_1_raycast_keyboard.html" title="Instantiates a raycastable keyboard and manages its input/output" alt="" coords="153,292,392,633"/>
+<area shape="rect" id="node4" title=" " alt="" coords="237,5,308,83"/>
 </map>

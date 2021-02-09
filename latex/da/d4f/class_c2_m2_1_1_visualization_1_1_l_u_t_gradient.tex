@@ -1,0 +1,254 @@
+\hypertarget{class_c2_m2_1_1_visualization_1_1_l_u_t_gradient}{}\doxysection{C2\+M2.\+Visualization.\+LUTGradient Class Reference}
+\label{class_c2_m2_1_1_visualization_1_1_l_u_t_gradient}\index{C2M2.Visualization.LUTGradient@{C2M2.Visualization.LUTGradient}}
+
+
+Create a fast and memory-\/friendly color lookup table from a gradient  
+
+
+
+
+Inheritance diagram for C2\+M2.\+Visualization.\+LUTGradient\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=277pt]{d4/d87/class_c2_m2_1_1_visualization_1_1_l_u_t_gradient__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for C2\+M2.\+Visualization.\+LUTGradient\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=277pt]{d3/dc6/class_c2_m2_1_1_visualization_1_1_l_u_t_gradient__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum class \mbox{\hyperlink{class_c2_m2_1_1_visualization_1_1_l_u_t_gradient_a688932d2ef2f3d19dde01be156a525d6}{Extrema\+Method}} \{ \mbox{\hyperlink{class_c2_m2_1_1_visualization_1_1_l_u_t_gradient_a688932d2ef2f3d19dde01be156a525d6af29485967ef2cc628a9e614b8af558ac}{Local\+Extrema}}
+, \mbox{\hyperlink{class_c2_m2_1_1_visualization_1_1_l_u_t_gradient_a688932d2ef2f3d19dde01be156a525d6ae1a5c50a8bde663d3661fcbd34322bfa}{Global\+Extrema}}
+, \mbox{\hyperlink{class_c2_m2_1_1_visualization_1_1_l_u_t_gradient_a688932d2ef2f3d19dde01be156a525d6a99a708d30e9a6e0382e1e5dc898d6fcd}{Rolling\+Extrema}}
+ \}
+\begin{DoxyCompactList}\small\item\em Should max/min for each time frame be decided by that time frame, a preset \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Color32\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_c2_m2_1_1_visualization_1_1_l_u_t_gradient_a769d2bb864b09a6b46d3bacaff0f82c4}{Evaluate}} (in float\mbox{[}$\,$\mbox{]} times)
+\begin{DoxyCompactList}\small\item\em Given the extrema method, color an entire array of scalers using the LUT \end{DoxyCompactList}\item 
+Color32 \mbox{\hyperlink{class_c2_m2_1_1_visualization_1_1_l_u_t_gradient_a6a84570a767ee286eec27477218802c4}{Evaluate}} (float time)
+\begin{DoxyCompactList}\small\item\em Calculate color at a given time. \end{DoxyCompactList}\item 
+Color32 \mbox{\hyperlink{class_c2_m2_1_1_visualization_1_1_l_u_t_gradient_a109d3bf3cefdf6b803470e2a7d48b631}{Evaluate\+Unscaled}} (float unscaled\+Time)
+\begin{DoxyCompactList}\small\item\em Calculate color at a given UNSCALED time. Assumes min and max have already been calculated \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c2_m2_1_1_visualization_1_1_l_u_t_gradient_a115f67774f6a9005bd6907bf9c92ffca}{Get\+Min\+Max}} (float\mbox{[}$\,$\mbox{]} scalars, \mbox{\hyperlink{class_c2_m2_1_1_visualization_1_1_l_u_t_gradient_a688932d2ef2f3d19dde01be156a525d6}{Extrema\+Method}} \mbox{\hyperlink{class_c2_m2_1_1_visualization_1_1_l_u_t_gradient_a435f33f0555cc4067c96e188bbb2949e}{extrema\+Method}})
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c2_m2_1_1_visualization_1_1_l_u_t_gradient_a688932d2ef2f3d19dde01be156a525d6}{Extrema\+Method}} \mbox{\hyperlink{class_c2_m2_1_1_visualization_1_1_l_u_t_gradient_a435f33f0555cc4067c96e188bbb2949e}{extrema\+Method}} = \mbox{\hyperlink{class_c2_m2_1_1_visualization_1_1_l_u_t_gradient_a688932d2ef2f3d19dde01be156a525d6a99a708d30e9a6e0382e1e5dc898d6fcd}{Extrema\+Method.\+Rolling\+Extrema}}
+\item 
+float \mbox{\hyperlink{class_c2_m2_1_1_visualization_1_1_l_u_t_gradient_a052b82834614becf4681c53e1a1d5672}{global\+Max}} = Mathf.\+Negative\+Infinity
+\item 
+float \mbox{\hyperlink{class_c2_m2_1_1_visualization_1_1_l_u_t_gradient_ab7a52728cf5915377a4925fc96ee39f1}{global\+Min}} = Mathf.\+Infinity
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+float \mbox{\hyperlink{class_c2_m2_1_1_visualization_1_1_l_u_t_gradient_a45ad1f64b4b26337edb90b0f80ce462c}{cur\+Max}} = -\/1\hspace{0.3cm}{\ttfamily  \mbox{[}get, private set\mbox{]}}
+\item 
+float \mbox{\hyperlink{class_c2_m2_1_1_visualization_1_1_l_u_t_gradient_a5adb3e06a1069ccc5d1060f0b0046049}{cur\+Mix}} = -\/1\hspace{0.3cm}{\ttfamily  \mbox{[}get, private set\mbox{]}}
+\item 
+int \mbox{\hyperlink{class_c2_m2_1_1_visualization_1_1_l_u_t_gradient_a82209f5952b054c5693c000c52a20535}{Lut\+Res}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+Gradient \mbox{\hyperlink{class_c2_m2_1_1_visualization_1_1_l_u_t_gradient_a2d41a16b06db0f379e3861a1c03cd81f}{Gradient}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+Color32\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_c2_m2_1_1_visualization_1_1_l_u_t_gradient_adf90904069fcc396dcaaabaf62c61a37}{gradient\+LUT}} = null\hspace{0.3cm}{\ttfamily  \mbox{[}get, private set\mbox{]}}
+\item 
+float \mbox{\hyperlink{class_c2_m2_1_1_visualization_1_1_l_u_t_gradient_ad77a618aaebdf84bfdb97e5bb0e2abdc}{old\+Min}} = 0\hspace{0.3cm}{\ttfamily  \mbox{[}get, private set\mbox{]}}
+\item 
+float \mbox{\hyperlink{class_c2_m2_1_1_visualization_1_1_l_u_t_gradient_a1fb0817fdd7e66b57de790f7a6c98ba4}{old\+Max}} = 0\hspace{0.3cm}{\ttfamily  \mbox{[}get, private set\mbox{]}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Color32\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_c2_m2_1_1_visualization_1_1_l_u_t_gradient_a268d1cd53fb5c7e04dcb82bd85d25153}{Build\+LUT}} (\mbox{\hyperlink{class_c2_m2_1_1_visualization_1_1_l_u_t_gradient_a2d41a16b06db0f379e3861a1c03cd81f}{Gradient}} \mbox{\hyperlink{class_c2_m2_1_1_visualization_1_1_l_u_t_gradient_a10f835e3b135aed5291ef96ca7e55fd0}{gradient}}, int \mbox{\hyperlink{class_c2_m2_1_1_visualization_1_1_l_u_t_gradient_af33d52cde65ec45ae58aa5a747ffdd66}{lut\+Res}})
+\item 
+float\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_c2_m2_1_1_visualization_1_1_l_u_t_gradient_a29c3fc834c2775f18aba0b8d4100fddf}{Rescale\+Array}} (float\mbox{[}$\,$\mbox{]} scalars, \mbox{\hyperlink{class_c2_m2_1_1_visualization_1_1_l_u_t_gradient_a688932d2ef2f3d19dde01be156a525d6}{Extrema\+Method}} \mbox{\hyperlink{class_c2_m2_1_1_visualization_1_1_l_u_t_gradient_a435f33f0555cc4067c96e188bbb2949e}{extrema\+Method}})
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_c2_m2_1_1_visualization_1_1_l_u_t_gradient_af33d52cde65ec45ae58aa5a747ffdd66}{lut\+Res}} = 256
+\begin{DoxyCompactList}\small\item\em Resolution of the lookup table. Increase for finer-\/grained color evaluations \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_c2_m2_1_1_visualization_1_1_l_u_t_gradient_a2d41a16b06db0f379e3861a1c03cd81f}{Gradient}} \mbox{\hyperlink{class_c2_m2_1_1_visualization_1_1_l_u_t_gradient_a10f835e3b135aed5291ef96ca7e55fd0}{gradient}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Create a fast and memory-\/friendly color lookup table from a gradient 
+
+For large applications, like resolving the color of every vertex of a large mesh surface, this script will be much faster than Gradient.\+Evaluate(). 
+
+\doxysubsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{class_c2_m2_1_1_visualization_1_1_l_u_t_gradient_a688932d2ef2f3d19dde01be156a525d6}\label{class_c2_m2_1_1_visualization_1_1_l_u_t_gradient_a688932d2ef2f3d19dde01be156a525d6}} 
+\index{C2M2.Visualization.LUTGradient@{C2M2.Visualization.LUTGradient}!ExtremaMethod@{ExtremaMethod}}
+\index{ExtremaMethod@{ExtremaMethod}!C2M2.Visualization.LUTGradient@{C2M2.Visualization.LUTGradient}}
+\doxysubsubsection{\texorpdfstring{ExtremaMethod}{ExtremaMethod}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{class_c2_m2_1_1_visualization_1_1_l_u_t_gradient_a688932d2ef2f3d19dde01be156a525d6}{C2\+M2.\+Visualization.\+LUTGradient.\+Extrema\+Method}}\hspace{0.3cm}{\ttfamily [strong]}}
+
+
+
+Should max/min for each time frame be decided by that time frame, a preset 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{LocalExtrema@{LocalExtrema}!C2M2.Visualization.LUTGradient@{C2M2.Visualization.LUTGradient}}\index{C2M2.Visualization.LUTGradient@{C2M2.Visualization.LUTGradient}!LocalExtrema@{LocalExtrema}}}\mbox{\Hypertarget{class_c2_m2_1_1_visualization_1_1_l_u_t_gradient_a688932d2ef2f3d19dde01be156a525d6af29485967ef2cc628a9e614b8af558ac}\label{class_c2_m2_1_1_visualization_1_1_l_u_t_gradient_a688932d2ef2f3d19dde01be156a525d6af29485967ef2cc628a9e614b8af558ac}} 
+Local\+Extrema&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{GlobalExtrema@{GlobalExtrema}!C2M2.Visualization.LUTGradient@{C2M2.Visualization.LUTGradient}}\index{C2M2.Visualization.LUTGradient@{C2M2.Visualization.LUTGradient}!GlobalExtrema@{GlobalExtrema}}}\mbox{\Hypertarget{class_c2_m2_1_1_visualization_1_1_l_u_t_gradient_a688932d2ef2f3d19dde01be156a525d6ae1a5c50a8bde663d3661fcbd34322bfa}\label{class_c2_m2_1_1_visualization_1_1_l_u_t_gradient_a688932d2ef2f3d19dde01be156a525d6ae1a5c50a8bde663d3661fcbd34322bfa}} 
+Global\+Extrema&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RollingExtrema@{RollingExtrema}!C2M2.Visualization.LUTGradient@{C2M2.Visualization.LUTGradient}}\index{C2M2.Visualization.LUTGradient@{C2M2.Visualization.LUTGradient}!RollingExtrema@{RollingExtrema}}}\mbox{\Hypertarget{class_c2_m2_1_1_visualization_1_1_l_u_t_gradient_a688932d2ef2f3d19dde01be156a525d6a99a708d30e9a6e0382e1e5dc898d6fcd}\label{class_c2_m2_1_1_visualization_1_1_l_u_t_gradient_a688932d2ef2f3d19dde01be156a525d6a99a708d30e9a6e0382e1e5dc898d6fcd}} 
+Rolling\+Extrema&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_c2_m2_1_1_visualization_1_1_l_u_t_gradient_a268d1cd53fb5c7e04dcb82bd85d25153}\label{class_c2_m2_1_1_visualization_1_1_l_u_t_gradient_a268d1cd53fb5c7e04dcb82bd85d25153}} 
+\index{C2M2.Visualization.LUTGradient@{C2M2.Visualization.LUTGradient}!BuildLUT@{BuildLUT}}
+\index{BuildLUT@{BuildLUT}!C2M2.Visualization.LUTGradient@{C2M2.Visualization.LUTGradient}}
+\doxysubsubsection{\texorpdfstring{BuildLUT()}{BuildLUT()}}
+{\footnotesize\ttfamily Color32 \mbox{[}$\,$\mbox{]} C2\+M2.\+Visualization.\+LUTGradient.\+Build\+LUT (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c2_m2_1_1_visualization_1_1_l_u_t_gradient_a2d41a16b06db0f379e3861a1c03cd81f}{Gradient}}}]{gradient,  }\item[{int}]{lut\+Res }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_visualization_1_1_l_u_t_gradient_a6a84570a767ee286eec27477218802c4}\label{class_c2_m2_1_1_visualization_1_1_l_u_t_gradient_a6a84570a767ee286eec27477218802c4}} 
+\index{C2M2.Visualization.LUTGradient@{C2M2.Visualization.LUTGradient}!Evaluate@{Evaluate}}
+\index{Evaluate@{Evaluate}!C2M2.Visualization.LUTGradient@{C2M2.Visualization.LUTGradient}}
+\doxysubsubsection{\texorpdfstring{Evaluate()}{Evaluate()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Color32 C2\+M2.\+Visualization.\+LUTGradient.\+Evaluate (\begin{DoxyParamCaption}\item[{float}]{time }\end{DoxyParamCaption})}
+
+
+
+Calculate color at a given time. 
+
+\mbox{\Hypertarget{class_c2_m2_1_1_visualization_1_1_l_u_t_gradient_a769d2bb864b09a6b46d3bacaff0f82c4}\label{class_c2_m2_1_1_visualization_1_1_l_u_t_gradient_a769d2bb864b09a6b46d3bacaff0f82c4}} 
+\index{C2M2.Visualization.LUTGradient@{C2M2.Visualization.LUTGradient}!Evaluate@{Evaluate}}
+\index{Evaluate@{Evaluate}!C2M2.Visualization.LUTGradient@{C2M2.Visualization.LUTGradient}}
+\doxysubsubsection{\texorpdfstring{Evaluate()}{Evaluate()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Color32 \mbox{[}$\,$\mbox{]} C2\+M2.\+Visualization.\+LUTGradient.\+Evaluate (\begin{DoxyParamCaption}\item[{in float\mbox{[}$\,$\mbox{]}}]{times }\end{DoxyParamCaption})}
+
+
+
+Given the extrema method, color an entire array of scalers using the LUT 
+
+\mbox{\Hypertarget{class_c2_m2_1_1_visualization_1_1_l_u_t_gradient_a109d3bf3cefdf6b803470e2a7d48b631}\label{class_c2_m2_1_1_visualization_1_1_l_u_t_gradient_a109d3bf3cefdf6b803470e2a7d48b631}} 
+\index{C2M2.Visualization.LUTGradient@{C2M2.Visualization.LUTGradient}!EvaluateUnscaled@{EvaluateUnscaled}}
+\index{EvaluateUnscaled@{EvaluateUnscaled}!C2M2.Visualization.LUTGradient@{C2M2.Visualization.LUTGradient}}
+\doxysubsubsection{\texorpdfstring{EvaluateUnscaled()}{EvaluateUnscaled()}}
+{\footnotesize\ttfamily Color32 C2\+M2.\+Visualization.\+LUTGradient.\+Evaluate\+Unscaled (\begin{DoxyParamCaption}\item[{float}]{unscaled\+Time }\end{DoxyParamCaption})}
+
+
+
+Calculate color at a given UNSCALED time. Assumes min and max have already been calculated 
+
+\mbox{\Hypertarget{class_c2_m2_1_1_visualization_1_1_l_u_t_gradient_a115f67774f6a9005bd6907bf9c92ffca}\label{class_c2_m2_1_1_visualization_1_1_l_u_t_gradient_a115f67774f6a9005bd6907bf9c92ffca}} 
+\index{C2M2.Visualization.LUTGradient@{C2M2.Visualization.LUTGradient}!GetMinMax@{GetMinMax}}
+\index{GetMinMax@{GetMinMax}!C2M2.Visualization.LUTGradient@{C2M2.Visualization.LUTGradient}}
+\doxysubsubsection{\texorpdfstring{GetMinMax()}{GetMinMax()}}
+{\footnotesize\ttfamily void C2\+M2.\+Visualization.\+LUTGradient.\+Get\+Min\+Max (\begin{DoxyParamCaption}\item[{float\mbox{[}$\,$\mbox{]}}]{scalars,  }\item[{\mbox{\hyperlink{class_c2_m2_1_1_visualization_1_1_l_u_t_gradient_a688932d2ef2f3d19dde01be156a525d6}{Extrema\+Method}}}]{extrema\+Method }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_visualization_1_1_l_u_t_gradient_a29c3fc834c2775f18aba0b8d4100fddf}\label{class_c2_m2_1_1_visualization_1_1_l_u_t_gradient_a29c3fc834c2775f18aba0b8d4100fddf}} 
+\index{C2M2.Visualization.LUTGradient@{C2M2.Visualization.LUTGradient}!RescaleArray@{RescaleArray}}
+\index{RescaleArray@{RescaleArray}!C2M2.Visualization.LUTGradient@{C2M2.Visualization.LUTGradient}}
+\doxysubsubsection{\texorpdfstring{RescaleArray()}{RescaleArray()}}
+{\footnotesize\ttfamily float \mbox{[}$\,$\mbox{]} C2\+M2.\+Visualization.\+LUTGradient.\+Rescale\+Array (\begin{DoxyParamCaption}\item[{float\mbox{[}$\,$\mbox{]}}]{scalars,  }\item[{\mbox{\hyperlink{class_c2_m2_1_1_visualization_1_1_l_u_t_gradient_a688932d2ef2f3d19dde01be156a525d6}{Extrema\+Method}}}]{extrema\+Method }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_c2_m2_1_1_visualization_1_1_l_u_t_gradient_a435f33f0555cc4067c96e188bbb2949e}\label{class_c2_m2_1_1_visualization_1_1_l_u_t_gradient_a435f33f0555cc4067c96e188bbb2949e}} 
+\index{C2M2.Visualization.LUTGradient@{C2M2.Visualization.LUTGradient}!extremaMethod@{extremaMethod}}
+\index{extremaMethod@{extremaMethod}!C2M2.Visualization.LUTGradient@{C2M2.Visualization.LUTGradient}}
+\doxysubsubsection{\texorpdfstring{extremaMethod}{extremaMethod}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c2_m2_1_1_visualization_1_1_l_u_t_gradient_a688932d2ef2f3d19dde01be156a525d6}{Extrema\+Method}} C2\+M2.\+Visualization.\+LUTGradient.\+extrema\+Method = \mbox{\hyperlink{class_c2_m2_1_1_visualization_1_1_l_u_t_gradient_a688932d2ef2f3d19dde01be156a525d6a99a708d30e9a6e0382e1e5dc898d6fcd}{Extrema\+Method.\+Rolling\+Extrema}}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_visualization_1_1_l_u_t_gradient_a052b82834614becf4681c53e1a1d5672}\label{class_c2_m2_1_1_visualization_1_1_l_u_t_gradient_a052b82834614becf4681c53e1a1d5672}} 
+\index{C2M2.Visualization.LUTGradient@{C2M2.Visualization.LUTGradient}!globalMax@{globalMax}}
+\index{globalMax@{globalMax}!C2M2.Visualization.LUTGradient@{C2M2.Visualization.LUTGradient}}
+\doxysubsubsection{\texorpdfstring{globalMax}{globalMax}}
+{\footnotesize\ttfamily float C2\+M2.\+Visualization.\+LUTGradient.\+global\+Max = Mathf.\+Negative\+Infinity}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_visualization_1_1_l_u_t_gradient_ab7a52728cf5915377a4925fc96ee39f1}\label{class_c2_m2_1_1_visualization_1_1_l_u_t_gradient_ab7a52728cf5915377a4925fc96ee39f1}} 
+\index{C2M2.Visualization.LUTGradient@{C2M2.Visualization.LUTGradient}!globalMin@{globalMin}}
+\index{globalMin@{globalMin}!C2M2.Visualization.LUTGradient@{C2M2.Visualization.LUTGradient}}
+\doxysubsubsection{\texorpdfstring{globalMin}{globalMin}}
+{\footnotesize\ttfamily float C2\+M2.\+Visualization.\+LUTGradient.\+global\+Min = Mathf.\+Infinity}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_visualization_1_1_l_u_t_gradient_a10f835e3b135aed5291ef96ca7e55fd0}\label{class_c2_m2_1_1_visualization_1_1_l_u_t_gradient_a10f835e3b135aed5291ef96ca7e55fd0}} 
+\index{C2M2.Visualization.LUTGradient@{C2M2.Visualization.LUTGradient}!gradient@{gradient}}
+\index{gradient@{gradient}!C2M2.Visualization.LUTGradient@{C2M2.Visualization.LUTGradient}}
+\doxysubsubsection{\texorpdfstring{gradient}{gradient}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c2_m2_1_1_visualization_1_1_l_u_t_gradient_a2d41a16b06db0f379e3861a1c03cd81f}{Gradient}} C2\+M2.\+Visualization.\+LUTGradient.\+gradient\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_visualization_1_1_l_u_t_gradient_af33d52cde65ec45ae58aa5a747ffdd66}\label{class_c2_m2_1_1_visualization_1_1_l_u_t_gradient_af33d52cde65ec45ae58aa5a747ffdd66}} 
+\index{C2M2.Visualization.LUTGradient@{C2M2.Visualization.LUTGradient}!lutRes@{lutRes}}
+\index{lutRes@{lutRes}!C2M2.Visualization.LUTGradient@{C2M2.Visualization.LUTGradient}}
+\doxysubsubsection{\texorpdfstring{lutRes}{lutRes}}
+{\footnotesize\ttfamily int C2\+M2.\+Visualization.\+LUTGradient.\+lut\+Res = 256\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Resolution of the lookup table. Increase for finer-\/grained color evaluations 
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{class_c2_m2_1_1_visualization_1_1_l_u_t_gradient_a45ad1f64b4b26337edb90b0f80ce462c}\label{class_c2_m2_1_1_visualization_1_1_l_u_t_gradient_a45ad1f64b4b26337edb90b0f80ce462c}} 
+\index{C2M2.Visualization.LUTGradient@{C2M2.Visualization.LUTGradient}!curMax@{curMax}}
+\index{curMax@{curMax}!C2M2.Visualization.LUTGradient@{C2M2.Visualization.LUTGradient}}
+\doxysubsubsection{\texorpdfstring{curMax}{curMax}}
+{\footnotesize\ttfamily float C2\+M2.\+Visualization.\+LUTGradient.\+cur\+Max = -\/1\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [private set]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_visualization_1_1_l_u_t_gradient_a5adb3e06a1069ccc5d1060f0b0046049}\label{class_c2_m2_1_1_visualization_1_1_l_u_t_gradient_a5adb3e06a1069ccc5d1060f0b0046049}} 
+\index{C2M2.Visualization.LUTGradient@{C2M2.Visualization.LUTGradient}!curMix@{curMix}}
+\index{curMix@{curMix}!C2M2.Visualization.LUTGradient@{C2M2.Visualization.LUTGradient}}
+\doxysubsubsection{\texorpdfstring{curMix}{curMix}}
+{\footnotesize\ttfamily float C2\+M2.\+Visualization.\+LUTGradient.\+cur\+Mix = -\/1\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [private set]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_visualization_1_1_l_u_t_gradient_a2d41a16b06db0f379e3861a1c03cd81f}\label{class_c2_m2_1_1_visualization_1_1_l_u_t_gradient_a2d41a16b06db0f379e3861a1c03cd81f}} 
+\index{C2M2.Visualization.LUTGradient@{C2M2.Visualization.LUTGradient}!Gradient@{Gradient}}
+\index{Gradient@{Gradient}!C2M2.Visualization.LUTGradient@{C2M2.Visualization.LUTGradient}}
+\doxysubsubsection{\texorpdfstring{Gradient}{Gradient}}
+{\footnotesize\ttfamily Gradient C2\+M2.\+Visualization.\+LUTGradient.\+Gradient\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_visualization_1_1_l_u_t_gradient_adf90904069fcc396dcaaabaf62c61a37}\label{class_c2_m2_1_1_visualization_1_1_l_u_t_gradient_adf90904069fcc396dcaaabaf62c61a37}} 
+\index{C2M2.Visualization.LUTGradient@{C2M2.Visualization.LUTGradient}!gradientLUT@{gradientLUT}}
+\index{gradientLUT@{gradientLUT}!C2M2.Visualization.LUTGradient@{C2M2.Visualization.LUTGradient}}
+\doxysubsubsection{\texorpdfstring{gradientLUT}{gradientLUT}}
+{\footnotesize\ttfamily Color32 \mbox{[}$\,$\mbox{]} C2\+M2.\+Visualization.\+LUTGradient.\+gradient\+LUT = null\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [private set]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_visualization_1_1_l_u_t_gradient_a82209f5952b054c5693c000c52a20535}\label{class_c2_m2_1_1_visualization_1_1_l_u_t_gradient_a82209f5952b054c5693c000c52a20535}} 
+\index{C2M2.Visualization.LUTGradient@{C2M2.Visualization.LUTGradient}!LutRes@{LutRes}}
+\index{LutRes@{LutRes}!C2M2.Visualization.LUTGradient@{C2M2.Visualization.LUTGradient}}
+\doxysubsubsection{\texorpdfstring{LutRes}{LutRes}}
+{\footnotesize\ttfamily int C2\+M2.\+Visualization.\+LUTGradient.\+Lut\+Res\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_visualization_1_1_l_u_t_gradient_a1fb0817fdd7e66b57de790f7a6c98ba4}\label{class_c2_m2_1_1_visualization_1_1_l_u_t_gradient_a1fb0817fdd7e66b57de790f7a6c98ba4}} 
+\index{C2M2.Visualization.LUTGradient@{C2M2.Visualization.LUTGradient}!oldMax@{oldMax}}
+\index{oldMax@{oldMax}!C2M2.Visualization.LUTGradient@{C2M2.Visualization.LUTGradient}}
+\doxysubsubsection{\texorpdfstring{oldMax}{oldMax}}
+{\footnotesize\ttfamily float C2\+M2.\+Visualization.\+LUTGradient.\+old\+Max = 0\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [private set]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_visualization_1_1_l_u_t_gradient_ad77a618aaebdf84bfdb97e5bb0e2abdc}\label{class_c2_m2_1_1_visualization_1_1_l_u_t_gradient_ad77a618aaebdf84bfdb97e5bb0e2abdc}} 
+\index{C2M2.Visualization.LUTGradient@{C2M2.Visualization.LUTGradient}!oldMin@{oldMin}}
+\index{oldMin@{oldMin}!C2M2.Visualization.LUTGradient@{C2M2.Visualization.LUTGradient}}
+\doxysubsubsection{\texorpdfstring{oldMin}{oldMin}}
+{\footnotesize\ttfamily float C2\+M2.\+Visualization.\+LUTGradient.\+old\+Min = 0\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [private set]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/jaros/\+Desktop/tempvr/virtual-\/reality/\+Assets/\+Scripts/\+C2\+M2/\+Visualization/\mbox{\hyperlink{_l_u_t_gradient_8cs}{LUTGradient.\+cs}}\end{DoxyCompactItemize}

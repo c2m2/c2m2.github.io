@@ -1,0 +1,157 @@
+\hypertarget{class_c2_m2_1_1_simulation_1_1_samples_1_1_combined_mesh_simulation}{}\doxysection{C2\+M2.\+Simulation.\+Samples.\+Combined\+Mesh\+Simulation Class Reference}
+\label{class_c2_m2_1_1_simulation_1_1_samples_1_1_combined_mesh_simulation}\index{C2M2.Simulation.Samples.CombinedMeshSimulation@{C2M2.Simulation.Samples.CombinedMeshSimulation}}
+
+
+Run a blank Scalar\+Field\+Simulation using every Mesh\+Renderer childed under this script  
+
+
+
+
+Inheritance diagram for C2\+M2.\+Simulation.\+Samples.\+Combined\+Mesh\+Simulation\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{d7/dca/class_c2_m2_1_1_simulation_1_1_samples_1_1_combined_mesh_simulation__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for C2\+M2.\+Simulation.\+Samples.\+Combined\+Mesh\+Simulation\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{d0/d60/class_c2_m2_1_1_simulation_1_1_samples_1_1_combined_mesh_simulation__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+override float \mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_samples_1_1_combined_mesh_simulation_a18c1d5b20dd6061a9360683dd1075e6f}{Get\+Simulation\+Time}} ()
+\item 
+override double\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_samples_1_1_combined_mesh_simulation_ae3526fbe15f2afefe3fa81089b041709}{Get\+Values}} ()
+\begin{DoxyCompactList}\small\item\em Send values upwards for visualization \end{DoxyCompactList}\item 
+override void \mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_samples_1_1_combined_mesh_simulation_a764a93e3291a07fc89ceb9c5bd85685a}{Set\+Values}} (Raycast\+Hit hit)
+\begin{DoxyCompactList}\small\item\em Incorporate a raycast hit interaction into simulation values \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+override Mesh \mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_samples_1_1_combined_mesh_simulation_a8b9af62e67ef6f665599181ff531cddc}{Build\+Visualization}} ()
+\begin{DoxyCompactList}\small\item\em Get every child mesh and combine into one mesh \end{DoxyCompactList}\item 
+override void \mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_samples_1_1_combined_mesh_simulation_a3b95103cf62b69b39c768a7f5e3215eb}{Solve}} ()
+\begin{DoxyCompactList}\small\item\em Simply degrades the value at each point by the time change times its current value \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Mesh \mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_samples_1_1_combined_mesh_simulation_adde7aa2840862d08e304c5e353d200ed}{Combine\+Meshes}} (Transform root)
+\begin{DoxyCompactList}\small\item\em Find all meshes childed under a root transform and combine them into one. \end{DoxyCompactList}\item 
+Mesh \mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_samples_1_1_combined_mesh_simulation_a3f92f0a4217271d44e6ad2f524de1046}{Combine\+Meshes}} (Mesh\+Filter\mbox{[}$\,$\mbox{]} mfs)
+\begin{DoxyCompactList}\small\item\em Take all Mesh\+Filter.\+mesh\textquotesingle{}s from an array and combine them into a single Mesh \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+double\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_samples_1_1_combined_mesh_simulation_aa2e1ffbb674ed301b2a5331414862548}{values}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Run a blank Scalar\+Field\+Simulation using every Mesh\+Renderer childed under this script 
+
+Jacob, 4/29/2020. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_c2_m2_1_1_simulation_1_1_samples_1_1_combined_mesh_simulation_a8b9af62e67ef6f665599181ff531cddc}\label{class_c2_m2_1_1_simulation_1_1_samples_1_1_combined_mesh_simulation_a8b9af62e67ef6f665599181ff531cddc}} 
+\index{C2M2.Simulation.Samples.CombinedMeshSimulation@{C2M2.Simulation.Samples.CombinedMeshSimulation}!BuildVisualization@{BuildVisualization}}
+\index{BuildVisualization@{BuildVisualization}!C2M2.Simulation.Samples.CombinedMeshSimulation@{C2M2.Simulation.Samples.CombinedMeshSimulation}}
+\doxysubsubsection{\texorpdfstring{BuildVisualization()}{BuildVisualization()}}
+{\footnotesize\ttfamily override Mesh C2\+M2.\+Simulation.\+Samples.\+Combined\+Mesh\+Simulation.\+Build\+Visualization (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Get every child mesh and combine into one mesh 
+
+\begin{DoxyReturn}{Returns}
+Combined mesh 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_simulation_ad862aff8a93dc71945db0450fddd6cbf}{C2\+M2.\+Simulation.\+Simulation$<$ double\mbox{[}$\,$\mbox{]}, Mesh, VRRaycastable\+Mesh, VRGrabbable\+Mesh $>$}}.
+
+\mbox{\Hypertarget{class_c2_m2_1_1_simulation_1_1_samples_1_1_combined_mesh_simulation_a3f92f0a4217271d44e6ad2f524de1046}\label{class_c2_m2_1_1_simulation_1_1_samples_1_1_combined_mesh_simulation_a3f92f0a4217271d44e6ad2f524de1046}} 
+\index{C2M2.Simulation.Samples.CombinedMeshSimulation@{C2M2.Simulation.Samples.CombinedMeshSimulation}!CombineMeshes@{CombineMeshes}}
+\index{CombineMeshes@{CombineMeshes}!C2M2.Simulation.Samples.CombinedMeshSimulation@{C2M2.Simulation.Samples.CombinedMeshSimulation}}
+\doxysubsubsection{\texorpdfstring{CombineMeshes()}{CombineMeshes()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Mesh C2\+M2.\+Simulation.\+Samples.\+Combined\+Mesh\+Simulation.\+Combine\+Meshes (\begin{DoxyParamCaption}\item[{Mesh\+Filter\mbox{[}$\,$\mbox{]}}]{mfs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Take all Mesh\+Filter.\+mesh\textquotesingle{}s from an array and combine them into a single Mesh 
+
+\mbox{\Hypertarget{class_c2_m2_1_1_simulation_1_1_samples_1_1_combined_mesh_simulation_adde7aa2840862d08e304c5e353d200ed}\label{class_c2_m2_1_1_simulation_1_1_samples_1_1_combined_mesh_simulation_adde7aa2840862d08e304c5e353d200ed}} 
+\index{C2M2.Simulation.Samples.CombinedMeshSimulation@{C2M2.Simulation.Samples.CombinedMeshSimulation}!CombineMeshes@{CombineMeshes}}
+\index{CombineMeshes@{CombineMeshes}!C2M2.Simulation.Samples.CombinedMeshSimulation@{C2M2.Simulation.Samples.CombinedMeshSimulation}}
+\doxysubsubsection{\texorpdfstring{CombineMeshes()}{CombineMeshes()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Mesh C2\+M2.\+Simulation.\+Samples.\+Combined\+Mesh\+Simulation.\+Combine\+Meshes (\begin{DoxyParamCaption}\item[{Transform}]{root }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Find all meshes childed under a root transform and combine them into one. 
+
+\mbox{\Hypertarget{class_c2_m2_1_1_simulation_1_1_samples_1_1_combined_mesh_simulation_a18c1d5b20dd6061a9360683dd1075e6f}\label{class_c2_m2_1_1_simulation_1_1_samples_1_1_combined_mesh_simulation_a18c1d5b20dd6061a9360683dd1075e6f}} 
+\index{C2M2.Simulation.Samples.CombinedMeshSimulation@{C2M2.Simulation.Samples.CombinedMeshSimulation}!GetSimulationTime@{GetSimulationTime}}
+\index{GetSimulationTime@{GetSimulationTime}!C2M2.Simulation.Samples.CombinedMeshSimulation@{C2M2.Simulation.Samples.CombinedMeshSimulation}}
+\doxysubsubsection{\texorpdfstring{GetSimulationTime()}{GetSimulationTime()}}
+{\footnotesize\ttfamily override float C2\+M2.\+Simulation.\+Samples.\+Combined\+Mesh\+Simulation.\+Get\+Simulation\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_simulation_1_1_samples_1_1_combined_mesh_simulation_ae3526fbe15f2afefe3fa81089b041709}\label{class_c2_m2_1_1_simulation_1_1_samples_1_1_combined_mesh_simulation_ae3526fbe15f2afefe3fa81089b041709}} 
+\index{C2M2.Simulation.Samples.CombinedMeshSimulation@{C2M2.Simulation.Samples.CombinedMeshSimulation}!GetValues@{GetValues}}
+\index{GetValues@{GetValues}!C2M2.Simulation.Samples.CombinedMeshSimulation@{C2M2.Simulation.Samples.CombinedMeshSimulation}}
+\doxysubsubsection{\texorpdfstring{GetValues()}{GetValues()}}
+{\footnotesize\ttfamily override double \mbox{[}$\,$\mbox{]} C2\+M2.\+Simulation.\+Samples.\+Combined\+Mesh\+Simulation.\+Get\+Values (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Send values upwards for visualization 
+
+
+
+Implements \mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_simulation_aa34520fa8bc4bedc95c65dfe1984a719}{C2\+M2.\+Simulation.\+Simulation$<$ double\mbox{[}$\,$\mbox{]}, Mesh, VRRaycastable\+Mesh, VRGrabbable\+Mesh $>$}}.
+
+\mbox{\Hypertarget{class_c2_m2_1_1_simulation_1_1_samples_1_1_combined_mesh_simulation_a764a93e3291a07fc89ceb9c5bd85685a}\label{class_c2_m2_1_1_simulation_1_1_samples_1_1_combined_mesh_simulation_a764a93e3291a07fc89ceb9c5bd85685a}} 
+\index{C2M2.Simulation.Samples.CombinedMeshSimulation@{C2M2.Simulation.Samples.CombinedMeshSimulation}!SetValues@{SetValues}}
+\index{SetValues@{SetValues}!C2M2.Simulation.Samples.CombinedMeshSimulation@{C2M2.Simulation.Samples.CombinedMeshSimulation}}
+\doxysubsubsection{\texorpdfstring{SetValues()}{SetValues()}}
+{\footnotesize\ttfamily override void C2\+M2.\+Simulation.\+Samples.\+Combined\+Mesh\+Simulation.\+Set\+Values (\begin{DoxyParamCaption}\item[{Raycast\+Hit}]{hit }\end{DoxyParamCaption})}
+
+
+
+Incorporate a raycast hit interaction into simulation values 
+
+\mbox{\Hypertarget{class_c2_m2_1_1_simulation_1_1_samples_1_1_combined_mesh_simulation_a3b95103cf62b69b39c768a7f5e3215eb}\label{class_c2_m2_1_1_simulation_1_1_samples_1_1_combined_mesh_simulation_a3b95103cf62b69b39c768a7f5e3215eb}} 
+\index{C2M2.Simulation.Samples.CombinedMeshSimulation@{C2M2.Simulation.Samples.CombinedMeshSimulation}!Solve@{Solve}}
+\index{Solve@{Solve}!C2M2.Simulation.Samples.CombinedMeshSimulation@{C2M2.Simulation.Samples.CombinedMeshSimulation}}
+\doxysubsubsection{\texorpdfstring{Solve()}{Solve()}}
+{\footnotesize\ttfamily override void C2\+M2.\+Simulation.\+Samples.\+Combined\+Mesh\+Simulation.\+Solve (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Simply degrades the value at each point by the time change times its current value 
+
+
+
+Implements \mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_simulation_adc5e6e0adf67ae72e144c1424fd93625}{C2\+M2.\+Simulation.\+Simulation$<$ double\mbox{[}$\,$\mbox{]}, Mesh, VRRaycastable\+Mesh, VRGrabbable\+Mesh $>$}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_c2_m2_1_1_simulation_1_1_samples_1_1_combined_mesh_simulation_aa2e1ffbb674ed301b2a5331414862548}\label{class_c2_m2_1_1_simulation_1_1_samples_1_1_combined_mesh_simulation_aa2e1ffbb674ed301b2a5331414862548}} 
+\index{C2M2.Simulation.Samples.CombinedMeshSimulation@{C2M2.Simulation.Samples.CombinedMeshSimulation}!values@{values}}
+\index{values@{values}!C2M2.Simulation.Samples.CombinedMeshSimulation@{C2M2.Simulation.Samples.CombinedMeshSimulation}}
+\doxysubsubsection{\texorpdfstring{values}{values}}
+{\footnotesize\ttfamily double \mbox{[}$\,$\mbox{]} C2\+M2.\+Simulation.\+Samples.\+Combined\+Mesh\+Simulation.\+values\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/jaros/\+Desktop/tempvr/virtual-\/reality/\+Assets/\+Scripts/\+C2\+M2/\mbox{\hyperlink{_combined_mesh_simulation_8cs}{Combined\+Mesh\+Simulation.\+cs}}\end{DoxyCompactItemize}

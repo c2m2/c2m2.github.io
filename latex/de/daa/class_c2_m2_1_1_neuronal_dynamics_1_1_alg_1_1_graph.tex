@@ -1,0 +1,107 @@
+\hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_alg_1_1_graph}{}\doxysection{C2\+M2.\+Neuronal\+Dynamics.\+Alg.\+Graph$<$ T $>$ Class Template Reference}
+\label{class_c2_m2_1_1_neuronal_dynamics_1_1_alg_1_1_graph}\index{C2M2.NeuronalDynamics.Alg.Graph$<$ T $>$@{C2M2.NeuronalDynamics.Alg.Graph$<$ T $>$}}
+
+
+Very simple class representing a graph consisting of vertices and edges of a given type T  
+
+
+
+
+Collaboration diagram for C2\+M2.\+Neuronal\+Dynamics.\+Alg.\+Graph$<$ T $>$\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=253pt]{d9/d8f/class_c2_m2_1_1_neuronal_dynamics_1_1_alg_1_1_graph__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_alg_1_1_graph_a6fed680a2bec20d453ab1c44e3accecc}{Graph}} ()
+\item 
+\mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_alg_1_1_graph_a2ffea58ca0e995d09d9ff06d7a856ff8}{Graph}} (IEnumerable$<$ T $>$ vertices, IEnumerable$<$ Tuple$<$ T, T $>$$>$ edges)
+\begin{DoxyCompactList}\small\item\em Construct a graph out of a list of vertices and edges \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_alg_1_1_graph_ad84f5f420c542e0cd921dc527876a471}{Add\+Vertex}} (T vertex)
+\begin{DoxyCompactList}\small\item\em Add a vertex to the graph \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_alg_1_1_graph_a270af3ee08b904db23e941be703f3b7f}{Add\+Edge}} (Tuple$<$ T, T $>$ edge)
+\begin{DoxyCompactList}\small\item\em Add an edge to the graph \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+Dictionary$<$ T, Hash\+Set$<$ T $>$ $>$ \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_alg_1_1_graph_a77d9b5868b875043dde9bb83c170ac9f}{Adjacency\+List}} = new Dictionary$<$T, Hash\+Set$<$T$>$$>$()\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Store adjacency list. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Very simple class representing a graph consisting of vertices and edges of a given type T 
+
+$<$typeparam=\char`\"{}\+T\char`\"{}$>$ vertex type 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_alg_1_1_graph_a6fed680a2bec20d453ab1c44e3accecc}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_alg_1_1_graph_a6fed680a2bec20d453ab1c44e3accecc}} 
+\index{C2M2.NeuronalDynamics.Alg.Graph$<$ T $>$@{C2M2.NeuronalDynamics.Alg.Graph$<$ T $>$}!Graph@{Graph}}
+\index{Graph@{Graph}!C2M2.NeuronalDynamics.Alg.Graph$<$ T $>$@{C2M2.NeuronalDynamics.Alg.Graph$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Graph()}{Graph()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_alg_1_1_graph}{C2\+M2.\+Neuronal\+Dynamics.\+Alg.\+Graph}}$<$ T $>$.\mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_alg_1_1_graph}{Graph}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_alg_1_1_graph_a2ffea58ca0e995d09d9ff06d7a856ff8}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_alg_1_1_graph_a2ffea58ca0e995d09d9ff06d7a856ff8}} 
+\index{C2M2.NeuronalDynamics.Alg.Graph$<$ T $>$@{C2M2.NeuronalDynamics.Alg.Graph$<$ T $>$}!Graph@{Graph}}
+\index{Graph@{Graph}!C2M2.NeuronalDynamics.Alg.Graph$<$ T $>$@{C2M2.NeuronalDynamics.Alg.Graph$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Graph()}{Graph()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_alg_1_1_graph}{C2\+M2.\+Neuronal\+Dynamics.\+Alg.\+Graph}}$<$ T $>$.\mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_alg_1_1_graph}{Graph}} (\begin{DoxyParamCaption}\item[{IEnumerable$<$ T $>$}]{vertices,  }\item[{IEnumerable$<$ Tuple$<$ T, T $>$$>$}]{edges }\end{DoxyParamCaption})}
+
+
+
+Construct a graph out of a list of vertices and edges 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_alg_1_1_graph_a270af3ee08b904db23e941be703f3b7f}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_alg_1_1_graph_a270af3ee08b904db23e941be703f3b7f}} 
+\index{C2M2.NeuronalDynamics.Alg.Graph$<$ T $>$@{C2M2.NeuronalDynamics.Alg.Graph$<$ T $>$}!AddEdge@{AddEdge}}
+\index{AddEdge@{AddEdge}!C2M2.NeuronalDynamics.Alg.Graph$<$ T $>$@{C2M2.NeuronalDynamics.Alg.Graph$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{AddEdge()}{AddEdge()}}
+{\footnotesize\ttfamily void \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_alg_1_1_graph}{C2\+M2.\+Neuronal\+Dynamics.\+Alg.\+Graph}}$<$ T $>$.Add\+Edge (\begin{DoxyParamCaption}\item[{Tuple$<$ T, T $>$}]{edge }\end{DoxyParamCaption})}
+
+
+
+Add an edge to the graph 
+
+
+\begin{DoxyParams}{Parameters}
+{\em edge} & edge \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_alg_1_1_graph_ad84f5f420c542e0cd921dc527876a471}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_alg_1_1_graph_ad84f5f420c542e0cd921dc527876a471}} 
+\index{C2M2.NeuronalDynamics.Alg.Graph$<$ T $>$@{C2M2.NeuronalDynamics.Alg.Graph$<$ T $>$}!AddVertex@{AddVertex}}
+\index{AddVertex@{AddVertex}!C2M2.NeuronalDynamics.Alg.Graph$<$ T $>$@{C2M2.NeuronalDynamics.Alg.Graph$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{AddVertex()}{AddVertex()}}
+{\footnotesize\ttfamily void \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_alg_1_1_graph}{C2\+M2.\+Neuronal\+Dynamics.\+Alg.\+Graph}}$<$ T $>$.Add\+Vertex (\begin{DoxyParamCaption}\item[{T}]{vertex }\end{DoxyParamCaption})}
+
+
+
+Add a vertex to the graph 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vertex} & A vertex \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_alg_1_1_graph_a77d9b5868b875043dde9bb83c170ac9f}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_alg_1_1_graph_a77d9b5868b875043dde9bb83c170ac9f}} 
+\index{C2M2.NeuronalDynamics.Alg.Graph$<$ T $>$@{C2M2.NeuronalDynamics.Alg.Graph$<$ T $>$}!AdjacencyList@{AdjacencyList}}
+\index{AdjacencyList@{AdjacencyList}!C2M2.NeuronalDynamics.Alg.Graph$<$ T $>$@{C2M2.NeuronalDynamics.Alg.Graph$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{AdjacencyList}{AdjacencyList}}
+{\footnotesize\ttfamily Dictionary$<$T, Hash\+Set$<$T$>$ $>$ \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_alg_1_1_graph}{C2\+M2.\+Neuronal\+Dynamics.\+Alg.\+Graph}}$<$ T $>$.\mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_adjacency_1_1_adjacency_list}{Adjacency\+List}} = new Dictionary$<$T, Hash\+Set$<$T$>$$>$()\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Store adjacency list. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/jaros/\+Desktop/tempvr/virtual-\/reality/\+Assets/\+Scripts/\+C2\+M2/\+Neuronal\+Dynamics/\+Visualization/\+Mapping/\mbox{\hyperlink{_graph_8cs}{Graph.\+cs}}\end{DoxyCompactItemize}

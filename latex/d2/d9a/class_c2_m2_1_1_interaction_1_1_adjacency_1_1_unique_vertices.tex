@@ -1,0 +1,171 @@
+\hypertarget{class_c2_m2_1_1_interaction_1_1_adjacency_1_1_unique_vertices}{}\doxysection{C2\+M2.\+Interaction.\+Adjacency.\+Unique\+Vertices Class Reference}
+\label{class_c2_m2_1_1_interaction_1_1_adjacency_1_1_unique_vertices}\index{C2M2.Interaction.Adjacency.UniqueVertices@{C2M2.Interaction.Adjacency.UniqueVertices}}
+
+
+Get the unique vertices of a mesh and add invisible vertices for adjacency list  
+
+
+
+
+Inheritance diagram for C2\+M2.\+Interaction.\+Adjacency.\+Unique\+Vertices\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=289pt]{de/dec/class_c2_m2_1_1_interaction_1_1_adjacency_1_1_unique_vertices__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for C2\+M2.\+Interaction.\+Adjacency.\+Unique\+Vertices\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=289pt]{dc/d0a/class_c2_m2_1_1_interaction_1_1_adjacency_1_1_unique_vertices__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_adjacency_1_1_unique_vertices_a6157ac01a0d975e0e63f90ad32ea2fd3}{Find\+Nearest\+Unique\+Vert}} (Raycast\+Hit hit)
+\begin{DoxyCompactList}\small\item\em Given a raycast hit, find the nearest unqiue mesh vert to the hit \end{DoxyCompactList}\item 
+List$<$ \mbox{\hyperlink{struct_c2_m2_1_1_interaction_1_1_adjacency_1_1_node}{Node}} $>$ \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_adjacency_1_1_unique_vertices_a72550160b1d414495e7d535434389570}{Raycast\+Find\+Nearest\+Unique\+Verts}} (Raycast\+Hit hit, int \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_adjacency_1_1_unique_vertices_a0f7f60b7b0393898d883605f45b2168a}{subdivisions}})
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_adjacency_1_1_unique_vertices_a0f7f60b7b0393898d883605f45b2168a}{subdivisions}} = 1\hspace{0.3cm}{\ttfamily  \mbox{[}get, private set\mbox{]}}
+\item 
+Vector3\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_adjacency_1_1_unique_vertices_a8cabff094c5a53255fdfb0ad2d63436d}{unique\+Verts}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, private set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Array to hold the unique mesh vertices up to unique\+Mesh\+Vert\+Length, and then the invisible vertices used for more accurate distance measurement \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_adjacency_1_1_unique_vertices_abe90acaea25db9a52b8032135575ba6c}{unique\+Mesh\+Vert\+Length}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, private set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gives the number of unique mesh vertices, separate from invisible vertices used for distance measurements \end{DoxyCompactList}\item 
+Dictionary$<$ Vector3, int $>$ \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_adjacency_1_1_unique_vertices_ae031a7d0213865412f1755af1d516823}{unique\+Vert\+Reverse\+Lookup}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, private set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Given a Vector3 point, return a list of unique AND invisible index numbers corresponding to the unique\+Verts array \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_adjacency_1_1_unique_vertices_ad1ea4007fd5f40d042883ea74e9bb670}{Awake}} ()
+\item 
+Vector3\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_adjacency_1_1_unique_vertices_aaa9a7788db9f7ef870d536bef2c506c9}{Build\+Invisible\+Verts}} (int \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_adjacency_1_1_unique_vertices_a0f7f60b7b0393898d883605f45b2168a}{subdivisions}})
+\begin{DoxyCompactList}\small\item\em Add vertices along each edge according to subdivisions and make it a unique list \end{DoxyCompactList}\item 
+Dictionary$<$ Vector3, int $>$ \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_adjacency_1_1_unique_vertices_ac1fe34e065619861dc86a7cb9008b488}{Build\+Unique\+Vert\+Reverse\+Lookup}} (Vector3\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_adjacency_1_1_unique_vertices_a8cabff094c5a53255fdfb0ad2d63436d}{unique\+Verts}})
+\begin{DoxyCompactList}\small\item\em \char`\"{}\+Flip\char`\"{} the unique vertex array around so that you can lookup a vertex index by its position \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Vector3\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_adjacency_1_1_unique_vertices_aa842d1c03e52b75b7422ab4647182ace}{vertices}}
+\item 
+int\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_adjacency_1_1_unique_vertices_ad50eb0dd99c38baf1742eba8a633d559}{triangles}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Get the unique vertices of a mesh and add invisible vertices for adjacency list 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_adjacency_1_1_unique_vertices_ad1ea4007fd5f40d042883ea74e9bb670}\label{class_c2_m2_1_1_interaction_1_1_adjacency_1_1_unique_vertices_ad1ea4007fd5f40d042883ea74e9bb670}} 
+\index{C2M2.Interaction.Adjacency.UniqueVertices@{C2M2.Interaction.Adjacency.UniqueVertices}!Awake@{Awake}}
+\index{Awake@{Awake}!C2M2.Interaction.Adjacency.UniqueVertices@{C2M2.Interaction.Adjacency.UniqueVertices}}
+\doxysubsubsection{\texorpdfstring{Awake()}{Awake()}}
+{\footnotesize\ttfamily void C2\+M2.\+Interaction.\+Adjacency.\+Unique\+Vertices.\+Awake (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_adjacency_1_1_unique_vertices_aaa9a7788db9f7ef870d536bef2c506c9}\label{class_c2_m2_1_1_interaction_1_1_adjacency_1_1_unique_vertices_aaa9a7788db9f7ef870d536bef2c506c9}} 
+\index{C2M2.Interaction.Adjacency.UniqueVertices@{C2M2.Interaction.Adjacency.UniqueVertices}!BuildInvisibleVerts@{BuildInvisibleVerts}}
+\index{BuildInvisibleVerts@{BuildInvisibleVerts}!C2M2.Interaction.Adjacency.UniqueVertices@{C2M2.Interaction.Adjacency.UniqueVertices}}
+\doxysubsubsection{\texorpdfstring{BuildInvisibleVerts()}{BuildInvisibleVerts()}}
+{\footnotesize\ttfamily Vector3 \mbox{[}$\,$\mbox{]} C2\+M2.\+Interaction.\+Adjacency.\+Unique\+Vertices.\+Build\+Invisible\+Verts (\begin{DoxyParamCaption}\item[{int}]{subdivisions }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Add vertices along each edge according to subdivisions and make it a unique list 
+
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_adjacency_1_1_unique_vertices_ac1fe34e065619861dc86a7cb9008b488}\label{class_c2_m2_1_1_interaction_1_1_adjacency_1_1_unique_vertices_ac1fe34e065619861dc86a7cb9008b488}} 
+\index{C2M2.Interaction.Adjacency.UniqueVertices@{C2M2.Interaction.Adjacency.UniqueVertices}!BuildUniqueVertReverseLookup@{BuildUniqueVertReverseLookup}}
+\index{BuildUniqueVertReverseLookup@{BuildUniqueVertReverseLookup}!C2M2.Interaction.Adjacency.UniqueVertices@{C2M2.Interaction.Adjacency.UniqueVertices}}
+\doxysubsubsection{\texorpdfstring{BuildUniqueVertReverseLookup()}{BuildUniqueVertReverseLookup()}}
+{\footnotesize\ttfamily Dictionary$<$Vector3, int$>$ C2\+M2.\+Interaction.\+Adjacency.\+Unique\+Vertices.\+Build\+Unique\+Vert\+Reverse\+Lookup (\begin{DoxyParamCaption}\item[{Vector3\mbox{[}$\,$\mbox{]}}]{unique\+Verts }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\char`\"{}\+Flip\char`\"{} the unique vertex array around so that you can lookup a vertex index by its position 
+
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_adjacency_1_1_unique_vertices_a6157ac01a0d975e0e63f90ad32ea2fd3}\label{class_c2_m2_1_1_interaction_1_1_adjacency_1_1_unique_vertices_a6157ac01a0d975e0e63f90ad32ea2fd3}} 
+\index{C2M2.Interaction.Adjacency.UniqueVertices@{C2M2.Interaction.Adjacency.UniqueVertices}!FindNearestUniqueVert@{FindNearestUniqueVert}}
+\index{FindNearestUniqueVert@{FindNearestUniqueVert}!C2M2.Interaction.Adjacency.UniqueVertices@{C2M2.Interaction.Adjacency.UniqueVertices}}
+\doxysubsubsection{\texorpdfstring{FindNearestUniqueVert()}{FindNearestUniqueVert()}}
+{\footnotesize\ttfamily int C2\+M2.\+Interaction.\+Adjacency.\+Unique\+Vertices.\+Find\+Nearest\+Unique\+Vert (\begin{DoxyParamCaption}\item[{Raycast\+Hit}]{hit }\end{DoxyParamCaption})}
+
+
+
+Given a raycast hit, find the nearest unqiue mesh vert to the hit 
+
+\begin{DoxyReturn}{Returns}
+unique\+Verts index of the nearest hit vert 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_adjacency_1_1_unique_vertices_a72550160b1d414495e7d535434389570}\label{class_c2_m2_1_1_interaction_1_1_adjacency_1_1_unique_vertices_a72550160b1d414495e7d535434389570}} 
+\index{C2M2.Interaction.Adjacency.UniqueVertices@{C2M2.Interaction.Adjacency.UniqueVertices}!RaycastFindNearestUniqueVerts@{RaycastFindNearestUniqueVerts}}
+\index{RaycastFindNearestUniqueVerts@{RaycastFindNearestUniqueVerts}!C2M2.Interaction.Adjacency.UniqueVertices@{C2M2.Interaction.Adjacency.UniqueVertices}}
+\doxysubsubsection{\texorpdfstring{RaycastFindNearestUniqueVerts()}{RaycastFindNearestUniqueVerts()}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{struct_c2_m2_1_1_interaction_1_1_adjacency_1_1_node}{Node}}$>$ C2\+M2.\+Interaction.\+Adjacency.\+Unique\+Vertices.\+Raycast\+Find\+Nearest\+Unique\+Verts (\begin{DoxyParamCaption}\item[{Raycast\+Hit}]{hit,  }\item[{int}]{subdivisions }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_adjacency_1_1_unique_vertices_ad50eb0dd99c38baf1742eba8a633d559}\label{class_c2_m2_1_1_interaction_1_1_adjacency_1_1_unique_vertices_ad50eb0dd99c38baf1742eba8a633d559}} 
+\index{C2M2.Interaction.Adjacency.UniqueVertices@{C2M2.Interaction.Adjacency.UniqueVertices}!triangles@{triangles}}
+\index{triangles@{triangles}!C2M2.Interaction.Adjacency.UniqueVertices@{C2M2.Interaction.Adjacency.UniqueVertices}}
+\doxysubsubsection{\texorpdfstring{triangles}{triangles}}
+{\footnotesize\ttfamily int \mbox{[}$\,$\mbox{]} C2\+M2.\+Interaction.\+Adjacency.\+Unique\+Vertices.\+triangles\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_adjacency_1_1_unique_vertices_aa842d1c03e52b75b7422ab4647182ace}\label{class_c2_m2_1_1_interaction_1_1_adjacency_1_1_unique_vertices_aa842d1c03e52b75b7422ab4647182ace}} 
+\index{C2M2.Interaction.Adjacency.UniqueVertices@{C2M2.Interaction.Adjacency.UniqueVertices}!vertices@{vertices}}
+\index{vertices@{vertices}!C2M2.Interaction.Adjacency.UniqueVertices@{C2M2.Interaction.Adjacency.UniqueVertices}}
+\doxysubsubsection{\texorpdfstring{vertices}{vertices}}
+{\footnotesize\ttfamily Vector3 \mbox{[}$\,$\mbox{]} C2\+M2.\+Interaction.\+Adjacency.\+Unique\+Vertices.\+vertices\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_adjacency_1_1_unique_vertices_a0f7f60b7b0393898d883605f45b2168a}\label{class_c2_m2_1_1_interaction_1_1_adjacency_1_1_unique_vertices_a0f7f60b7b0393898d883605f45b2168a}} 
+\index{C2M2.Interaction.Adjacency.UniqueVertices@{C2M2.Interaction.Adjacency.UniqueVertices}!subdivisions@{subdivisions}}
+\index{subdivisions@{subdivisions}!C2M2.Interaction.Adjacency.UniqueVertices@{C2M2.Interaction.Adjacency.UniqueVertices}}
+\doxysubsubsection{\texorpdfstring{subdivisions}{subdivisions}}
+{\footnotesize\ttfamily int C2\+M2.\+Interaction.\+Adjacency.\+Unique\+Vertices.\+subdivisions = 1\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [private set]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_adjacency_1_1_unique_vertices_abe90acaea25db9a52b8032135575ba6c}\label{class_c2_m2_1_1_interaction_1_1_adjacency_1_1_unique_vertices_abe90acaea25db9a52b8032135575ba6c}} 
+\index{C2M2.Interaction.Adjacency.UniqueVertices@{C2M2.Interaction.Adjacency.UniqueVertices}!uniqueMeshVertLength@{uniqueMeshVertLength}}
+\index{uniqueMeshVertLength@{uniqueMeshVertLength}!C2M2.Interaction.Adjacency.UniqueVertices@{C2M2.Interaction.Adjacency.UniqueVertices}}
+\doxysubsubsection{\texorpdfstring{uniqueMeshVertLength}{uniqueMeshVertLength}}
+{\footnotesize\ttfamily int C2\+M2.\+Interaction.\+Adjacency.\+Unique\+Vertices.\+unique\+Mesh\+Vert\+Length\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [private set]}}
+
+
+
+Gives the number of unique mesh vertices, separate from invisible vertices used for distance measurements 
+
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_adjacency_1_1_unique_vertices_ae031a7d0213865412f1755af1d516823}\label{class_c2_m2_1_1_interaction_1_1_adjacency_1_1_unique_vertices_ae031a7d0213865412f1755af1d516823}} 
+\index{C2M2.Interaction.Adjacency.UniqueVertices@{C2M2.Interaction.Adjacency.UniqueVertices}!uniqueVertReverseLookup@{uniqueVertReverseLookup}}
+\index{uniqueVertReverseLookup@{uniqueVertReverseLookup}!C2M2.Interaction.Adjacency.UniqueVertices@{C2M2.Interaction.Adjacency.UniqueVertices}}
+\doxysubsubsection{\texorpdfstring{uniqueVertReverseLookup}{uniqueVertReverseLookup}}
+{\footnotesize\ttfamily Dictionary$<$Vector3, int$>$ C2\+M2.\+Interaction.\+Adjacency.\+Unique\+Vertices.\+unique\+Vert\+Reverse\+Lookup\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [private set]}}
+
+
+
+Given a Vector3 point, return a list of unique AND invisible index numbers corresponding to the unique\+Verts array 
+
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_adjacency_1_1_unique_vertices_a8cabff094c5a53255fdfb0ad2d63436d}\label{class_c2_m2_1_1_interaction_1_1_adjacency_1_1_unique_vertices_a8cabff094c5a53255fdfb0ad2d63436d}} 
+\index{C2M2.Interaction.Adjacency.UniqueVertices@{C2M2.Interaction.Adjacency.UniqueVertices}!uniqueVerts@{uniqueVerts}}
+\index{uniqueVerts@{uniqueVerts}!C2M2.Interaction.Adjacency.UniqueVertices@{C2M2.Interaction.Adjacency.UniqueVertices}}
+\doxysubsubsection{\texorpdfstring{uniqueVerts}{uniqueVerts}}
+{\footnotesize\ttfamily Vector3 \mbox{[}$\,$\mbox{]} C2\+M2.\+Interaction.\+Adjacency.\+Unique\+Vertices.\+unique\+Verts\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [private set]}}
+
+
+
+Array to hold the unique mesh vertices up to unique\+Mesh\+Vert\+Length, and then the invisible vertices used for more accurate distance measurement 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/jaros/\+Desktop/tempvr/virtual-\/reality/\+Assets/\+Scripts/\+C2\+M2/\+Interaction/\+Adjacency/\mbox{\hyperlink{_unique_vertices_8cs}{Unique\+Vertices.\+cs}}\end{DoxyCompactItemize}

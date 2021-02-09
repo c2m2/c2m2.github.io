@@ -1,0 +1,157 @@
+\hypertarget{class_c2_m2_1_1_utils_1_1_timer}{}\doxysection{C2\+M2.\+Utils.\+Timer Class Reference}
+\label{class_c2_m2_1_1_utils_1_1_timer}\index{C2M2.Utils.Timer@{C2M2.Utils.Timer}}
+
+
+Collaboration diagram for C2\+M2.\+Utils.\+Timer\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=205pt]{db/d6c/class_c2_m2_1_1_utils_1_1_timer__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_c2_m2_1_1_utils_1_1_timer_1_1_timer_node}{Timer\+Node}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c2_m2_1_1_utils_1_1_timer_a7166ba083d55a66c651463c866a641a6}{Timer}} ()
+\item 
+\mbox{\hyperlink{class_c2_m2_1_1_utils_1_1_timer_acba754b32d4b2cc53f797c879043bbfb}{Timer}} (int size)
+\item 
+void \mbox{\hyperlink{class_c2_m2_1_1_utils_1_1_timer_a34b143e176fe3ff19bbcd3efd4c5179d}{Start\+Timer}} ()
+\begin{DoxyCompactList}\small\item\em Create a new timer node and mark its creation time \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_c2_m2_1_1_utils_1_1_timer_a0568a34989d599a046374eda49048891}{Stop\+Timer}} (string name)
+\begin{DoxyCompactList}\small\item\em Stop the current time node and calculate the time since the node was created \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_c2_m2_1_1_utils_1_1_timer_a7f1e0d94e22c8815f491badeff15c2d8}{Stop\+Timer}} ()
+\item 
+void \mbox{\hyperlink{class_c2_m2_1_1_utils_1_1_timer_a2f84bcb7191a08ed66e38a2793e091ef}{Export\+CSV\+\_\+path}} (string file\+Path)
+\item 
+void \mbox{\hyperlink{class_c2_m2_1_1_utils_1_1_timer_a808d08435efb08bee0836f50cd89f5ae}{Export\+CSV}} (string new\+File\+Name, bool build\+Simple\+Stats=false)
+\item 
+override string \mbox{\hyperlink{class_c2_m2_1_1_utils_1_1_timer_a0663c380eceda1b3c1f8f77cc1233a1d}{To\+String}} ()
+\item 
+string \mbox{\hyperlink{class_c2_m2_1_1_utils_1_1_timer_a3d9496ca4aeb07f3814e5c0b23718b4b}{To\+String\+Plus}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+List$<$ \mbox{\hyperlink{struct_c2_m2_1_1_utils_1_1_timer_1_1_timer_node}{Timer\+Node}} $>$ \mbox{\hyperlink{class_c2_m2_1_1_utils_1_1_timer_aa24390997914e425a7f4ce82c6e5da55}{timer\+Nodes}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, private set\mbox{]}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Date\+Time \mbox{\hyperlink{class_c2_m2_1_1_utils_1_1_timer_ac4628e93a11303dc852c24fc8d76218e}{t0}}
+\item 
+Date\+Time \mbox{\hyperlink{class_c2_m2_1_1_utils_1_1_timer_ade7c605a7432f44e234cecaa3618aee1}{t1}}
+\item 
+Stopwatch \mbox{\hyperlink{class_c2_m2_1_1_utils_1_1_timer_ad2d6246cb46a37bef9465de24c67a57b}{stopwatch}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_c2_m2_1_1_utils_1_1_timer_a7166ba083d55a66c651463c866a641a6}\label{class_c2_m2_1_1_utils_1_1_timer_a7166ba083d55a66c651463c866a641a6}} 
+\index{C2M2.Utils.Timer@{C2M2.Utils.Timer}!Timer@{Timer}}
+\index{Timer@{Timer}!C2M2.Utils.Timer@{C2M2.Utils.Timer}}
+\doxysubsubsection{\texorpdfstring{Timer()}{Timer()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily C2\+M2.\+Utils.\+Timer.\+Timer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_utils_1_1_timer_acba754b32d4b2cc53f797c879043bbfb}\label{class_c2_m2_1_1_utils_1_1_timer_acba754b32d4b2cc53f797c879043bbfb}} 
+\index{C2M2.Utils.Timer@{C2M2.Utils.Timer}!Timer@{Timer}}
+\index{Timer@{Timer}!C2M2.Utils.Timer@{C2M2.Utils.Timer}}
+\doxysubsubsection{\texorpdfstring{Timer()}{Timer()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily C2\+M2.\+Utils.\+Timer.\+Timer (\begin{DoxyParamCaption}\item[{int}]{size }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_c2_m2_1_1_utils_1_1_timer_a808d08435efb08bee0836f50cd89f5ae}\label{class_c2_m2_1_1_utils_1_1_timer_a808d08435efb08bee0836f50cd89f5ae}} 
+\index{C2M2.Utils.Timer@{C2M2.Utils.Timer}!ExportCSV@{ExportCSV}}
+\index{ExportCSV@{ExportCSV}!C2M2.Utils.Timer@{C2M2.Utils.Timer}}
+\doxysubsubsection{\texorpdfstring{ExportCSV()}{ExportCSV()}}
+{\footnotesize\ttfamily void C2\+M2.\+Utils.\+Timer.\+Export\+CSV (\begin{DoxyParamCaption}\item[{string}]{new\+File\+Name,  }\item[{bool}]{build\+Simple\+Stats = {\ttfamily false} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_utils_1_1_timer_a2f84bcb7191a08ed66e38a2793e091ef}\label{class_c2_m2_1_1_utils_1_1_timer_a2f84bcb7191a08ed66e38a2793e091ef}} 
+\index{C2M2.Utils.Timer@{C2M2.Utils.Timer}!ExportCSV\_path@{ExportCSV\_path}}
+\index{ExportCSV\_path@{ExportCSV\_path}!C2M2.Utils.Timer@{C2M2.Utils.Timer}}
+\doxysubsubsection{\texorpdfstring{ExportCSV\_path()}{ExportCSV\_path()}}
+{\footnotesize\ttfamily void C2\+M2.\+Utils.\+Timer.\+Export\+CSV\+\_\+path (\begin{DoxyParamCaption}\item[{string}]{file\+Path }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_utils_1_1_timer_a34b143e176fe3ff19bbcd3efd4c5179d}\label{class_c2_m2_1_1_utils_1_1_timer_a34b143e176fe3ff19bbcd3efd4c5179d}} 
+\index{C2M2.Utils.Timer@{C2M2.Utils.Timer}!StartTimer@{StartTimer}}
+\index{StartTimer@{StartTimer}!C2M2.Utils.Timer@{C2M2.Utils.Timer}}
+\doxysubsubsection{\texorpdfstring{StartTimer()}{StartTimer()}}
+{\footnotesize\ttfamily void C2\+M2.\+Utils.\+Timer.\+Start\+Timer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Create a new timer node and mark its creation time 
+
+\mbox{\Hypertarget{class_c2_m2_1_1_utils_1_1_timer_a7f1e0d94e22c8815f491badeff15c2d8}\label{class_c2_m2_1_1_utils_1_1_timer_a7f1e0d94e22c8815f491badeff15c2d8}} 
+\index{C2M2.Utils.Timer@{C2M2.Utils.Timer}!StopTimer@{StopTimer}}
+\index{StopTimer@{StopTimer}!C2M2.Utils.Timer@{C2M2.Utils.Timer}}
+\doxysubsubsection{\texorpdfstring{StopTimer()}{StopTimer()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily double C2\+M2.\+Utils.\+Timer.\+Stop\+Timer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_utils_1_1_timer_a0568a34989d599a046374eda49048891}\label{class_c2_m2_1_1_utils_1_1_timer_a0568a34989d599a046374eda49048891}} 
+\index{C2M2.Utils.Timer@{C2M2.Utils.Timer}!StopTimer@{StopTimer}}
+\index{StopTimer@{StopTimer}!C2M2.Utils.Timer@{C2M2.Utils.Timer}}
+\doxysubsubsection{\texorpdfstring{StopTimer()}{StopTimer()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily double C2\+M2.\+Utils.\+Timer.\+Stop\+Timer (\begin{DoxyParamCaption}\item[{string}]{name }\end{DoxyParamCaption})}
+
+
+
+Stop the current time node and calculate the time since the node was created 
+
+\begin{DoxyReturn}{Returns}
+Time in milliseconds since the time node was created. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c2_m2_1_1_utils_1_1_timer_a0663c380eceda1b3c1f8f77cc1233a1d}\label{class_c2_m2_1_1_utils_1_1_timer_a0663c380eceda1b3c1f8f77cc1233a1d}} 
+\index{C2M2.Utils.Timer@{C2M2.Utils.Timer}!ToString@{ToString}}
+\index{ToString@{ToString}!C2M2.Utils.Timer@{C2M2.Utils.Timer}}
+\doxysubsubsection{\texorpdfstring{ToString()}{ToString()}}
+{\footnotesize\ttfamily override string C2\+M2.\+Utils.\+Timer.\+To\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_utils_1_1_timer_a3d9496ca4aeb07f3814e5c0b23718b4b}\label{class_c2_m2_1_1_utils_1_1_timer_a3d9496ca4aeb07f3814e5c0b23718b4b}} 
+\index{C2M2.Utils.Timer@{C2M2.Utils.Timer}!ToStringPlus@{ToStringPlus}}
+\index{ToStringPlus@{ToStringPlus}!C2M2.Utils.Timer@{C2M2.Utils.Timer}}
+\doxysubsubsection{\texorpdfstring{ToStringPlus()}{ToStringPlus()}}
+{\footnotesize\ttfamily string C2\+M2.\+Utils.\+Timer.\+To\+String\+Plus (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_c2_m2_1_1_utils_1_1_timer_ad2d6246cb46a37bef9465de24c67a57b}\label{class_c2_m2_1_1_utils_1_1_timer_ad2d6246cb46a37bef9465de24c67a57b}} 
+\index{C2M2.Utils.Timer@{C2M2.Utils.Timer}!stopwatch@{stopwatch}}
+\index{stopwatch@{stopwatch}!C2M2.Utils.Timer@{C2M2.Utils.Timer}}
+\doxysubsubsection{\texorpdfstring{stopwatch}{stopwatch}}
+{\footnotesize\ttfamily Stopwatch C2\+M2.\+Utils.\+Timer.\+stopwatch\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_utils_1_1_timer_ac4628e93a11303dc852c24fc8d76218e}\label{class_c2_m2_1_1_utils_1_1_timer_ac4628e93a11303dc852c24fc8d76218e}} 
+\index{C2M2.Utils.Timer@{C2M2.Utils.Timer}!t0@{t0}}
+\index{t0@{t0}!C2M2.Utils.Timer@{C2M2.Utils.Timer}}
+\doxysubsubsection{\texorpdfstring{t0}{t0}}
+{\footnotesize\ttfamily Date\+Time C2\+M2.\+Utils.\+Timer.\+t0\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_utils_1_1_timer_ade7c605a7432f44e234cecaa3618aee1}\label{class_c2_m2_1_1_utils_1_1_timer_ade7c605a7432f44e234cecaa3618aee1}} 
+\index{C2M2.Utils.Timer@{C2M2.Utils.Timer}!t1@{t1}}
+\index{t1@{t1}!C2M2.Utils.Timer@{C2M2.Utils.Timer}}
+\doxysubsubsection{\texorpdfstring{t1}{t1}}
+{\footnotesize\ttfamily Date\+Time C2\+M2.\+Utils.\+Timer.\+t1\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{class_c2_m2_1_1_utils_1_1_timer_aa24390997914e425a7f4ce82c6e5da55}\label{class_c2_m2_1_1_utils_1_1_timer_aa24390997914e425a7f4ce82c6e5da55}} 
+\index{C2M2.Utils.Timer@{C2M2.Utils.Timer}!timerNodes@{timerNodes}}
+\index{timerNodes@{timerNodes}!C2M2.Utils.Timer@{C2M2.Utils.Timer}}
+\doxysubsubsection{\texorpdfstring{timerNodes}{timerNodes}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{struct_c2_m2_1_1_utils_1_1_timer_1_1_timer_node}{Timer\+Node}}$>$ C2\+M2.\+Utils.\+Timer.\+timer\+Nodes\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [private set]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/jaros/\+Desktop/tempvr/virtual-\/reality/\+Assets/\+Scripts/\+C2\+M2/\+Utils/\mbox{\hyperlink{_timer_8cs}{Timer.\+cs}}\end{DoxyCompactItemize}

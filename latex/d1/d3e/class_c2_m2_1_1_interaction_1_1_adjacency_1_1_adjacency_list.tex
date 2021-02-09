@@ -1,0 +1,170 @@
+\hypertarget{class_c2_m2_1_1_interaction_1_1_adjacency_1_1_adjacency_list}{}\doxysection{C2\+M2.\+Interaction.\+Adjacency.\+Adjacency\+List Class Reference}
+\label{class_c2_m2_1_1_interaction_1_1_adjacency_1_1_adjacency_list}\index{C2M2.Interaction.Adjacency.AdjacencyList@{C2M2.Interaction.Adjacency.AdjacencyList}}
+
+
+Given a mesh, creates and stores an edge list and adjacency list of the mesh vertices  
+
+
+
+
+Inheritance diagram for C2\+M2.\+Interaction.\+Adjacency.\+Adjacency\+List\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=259pt]{db/d8c/class_c2_m2_1_1_interaction_1_1_adjacency_1_1_adjacency_list__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for C2\+M2.\+Interaction.\+Adjacency.\+Adjacency\+List\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d0/d2a/class_c2_m2_1_1_interaction_1_1_adjacency_1_1_adjacency_list__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+List$<$ \mbox{\hyperlink{struct_c2_m2_1_1_interaction_1_1_adjacency_1_1_node}{Node}} $>$\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_adjacency_1_1_adjacency_list_aa7f6729a1a2678f52cb600e00f9393f9}{adjacency\+List}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, private set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Stores the distance between adjacent vertices \end{DoxyCompactList}\item 
+List$<$ \mbox{\hyperlink{struct_c2_m2_1_1_interaction_1_1_adjacency_1_1_edge}{Edge}} $>$ \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_adjacency_1_1_adjacency_list_ae6b750eb2d4011eb633b729925a2e5dc}{edge\+List}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, private set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Stores a list of edges between vertices \end{DoxyCompactList}\item 
+int\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_adjacency_1_1_adjacency_list_ab5a5a74776b01752249780f07bbc2622}{edge\+Count}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, private set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Stores the number of edges connected to each vertex. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_adjacency_1_1_adjacency_list_ad694075b7fc49861a435bb7f381c3b7c}{Awake}} ()
+\item 
+void \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_adjacency_1_1_adjacency_list_a5f37a1178a7555878277f0e6156b0f95}{Create\+Adjacency\+List}} ()
+\begin{DoxyCompactList}\small\item\em Build an adjacency matrix using an edge list \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_adjacency_1_1_adjacency_list_af4f38f3ef54e4e3671967cd6b8321fae}{Adjacency\+List\+Add\+Edge}} (int point1, int point2, float distance, int unique\+Mesh\+Vert\+Length)
+\begin{DoxyCompactList}\small\item\em If it doesn\textquotesingle{}t already exist, add an adjacency list entry \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Mesh \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_adjacency_1_1_adjacency_list_a94f80286003ba5bd7a8dac5f8a8186ea}{mesh}}
+\item 
+Vector3\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_adjacency_1_1_adjacency_list_afb55252eabeffd47c591b599814880f9}{vertices}}
+\item 
+int\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_adjacency_1_1_adjacency_list_a652584d66b2e40f2f45a6aa0b4b86948}{triangles}}
+\item 
+\mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_adjacency_1_1_unique_vertices}{Unique\+Vertices}} \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_adjacency_1_1_adjacency_list_ae38e109fc056e3aa9202e62019116da7}{unique\+Vertices}}
+\item 
+bool \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_adjacency_1_1_adjacency_list_a85dbb471ecfefa78b146e0318cac98e0}{duplicate}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Given a mesh, creates and stores an edge list and adjacency list of the mesh vertices 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_adjacency_1_1_adjacency_list_af4f38f3ef54e4e3671967cd6b8321fae}\label{class_c2_m2_1_1_interaction_1_1_adjacency_1_1_adjacency_list_af4f38f3ef54e4e3671967cd6b8321fae}} 
+\index{C2M2.Interaction.Adjacency.AdjacencyList@{C2M2.Interaction.Adjacency.AdjacencyList}!AdjacencyListAddEdge@{AdjacencyListAddEdge}}
+\index{AdjacencyListAddEdge@{AdjacencyListAddEdge}!C2M2.Interaction.Adjacency.AdjacencyList@{C2M2.Interaction.Adjacency.AdjacencyList}}
+\doxysubsubsection{\texorpdfstring{AdjacencyListAddEdge()}{AdjacencyListAddEdge()}}
+{\footnotesize\ttfamily void C2\+M2.\+Interaction.\+Adjacency.\+Adjacency\+List.\+Adjacency\+List\+Add\+Edge (\begin{DoxyParamCaption}\item[{int}]{point1,  }\item[{int}]{point2,  }\item[{float}]{distance,  }\item[{int}]{unique\+Mesh\+Vert\+Length }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+If it doesn\textquotesingle{}t already exist, add an adjacency list entry 
+
+
+\begin{DoxyParams}{Parameters}
+{\em point1} & First point of the edge \\
+\hline
+{\em point2} & second point of the edge \\
+\hline
+{\em distance} & Vector3 distance between point1 and point2 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_adjacency_1_1_adjacency_list_ad694075b7fc49861a435bb7f381c3b7c}\label{class_c2_m2_1_1_interaction_1_1_adjacency_1_1_adjacency_list_ad694075b7fc49861a435bb7f381c3b7c}} 
+\index{C2M2.Interaction.Adjacency.AdjacencyList@{C2M2.Interaction.Adjacency.AdjacencyList}!Awake@{Awake}}
+\index{Awake@{Awake}!C2M2.Interaction.Adjacency.AdjacencyList@{C2M2.Interaction.Adjacency.AdjacencyList}}
+\doxysubsubsection{\texorpdfstring{Awake()}{Awake()}}
+{\footnotesize\ttfamily void C2\+M2.\+Interaction.\+Adjacency.\+Adjacency\+List.\+Awake (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_adjacency_1_1_adjacency_list_a5f37a1178a7555878277f0e6156b0f95}\label{class_c2_m2_1_1_interaction_1_1_adjacency_1_1_adjacency_list_a5f37a1178a7555878277f0e6156b0f95}} 
+\index{C2M2.Interaction.Adjacency.AdjacencyList@{C2M2.Interaction.Adjacency.AdjacencyList}!CreateAdjacencyList@{CreateAdjacencyList}}
+\index{CreateAdjacencyList@{CreateAdjacencyList}!C2M2.Interaction.Adjacency.AdjacencyList@{C2M2.Interaction.Adjacency.AdjacencyList}}
+\doxysubsubsection{\texorpdfstring{CreateAdjacencyList()}{CreateAdjacencyList()}}
+{\footnotesize\ttfamily void C2\+M2.\+Interaction.\+Adjacency.\+Adjacency\+List.\+Create\+Adjacency\+List (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Build an adjacency matrix using an edge list 
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_adjacency_1_1_adjacency_list_a85dbb471ecfefa78b146e0318cac98e0}\label{class_c2_m2_1_1_interaction_1_1_adjacency_1_1_adjacency_list_a85dbb471ecfefa78b146e0318cac98e0}} 
+\index{C2M2.Interaction.Adjacency.AdjacencyList@{C2M2.Interaction.Adjacency.AdjacencyList}!duplicate@{duplicate}}
+\index{duplicate@{duplicate}!C2M2.Interaction.Adjacency.AdjacencyList@{C2M2.Interaction.Adjacency.AdjacencyList}}
+\doxysubsubsection{\texorpdfstring{duplicate}{duplicate}}
+{\footnotesize\ttfamily bool C2\+M2.\+Interaction.\+Adjacency.\+Adjacency\+List.\+duplicate\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_adjacency_1_1_adjacency_list_a94f80286003ba5bd7a8dac5f8a8186ea}\label{class_c2_m2_1_1_interaction_1_1_adjacency_1_1_adjacency_list_a94f80286003ba5bd7a8dac5f8a8186ea}} 
+\index{C2M2.Interaction.Adjacency.AdjacencyList@{C2M2.Interaction.Adjacency.AdjacencyList}!mesh@{mesh}}
+\index{mesh@{mesh}!C2M2.Interaction.Adjacency.AdjacencyList@{C2M2.Interaction.Adjacency.AdjacencyList}}
+\doxysubsubsection{\texorpdfstring{mesh}{mesh}}
+{\footnotesize\ttfamily Mesh C2\+M2.\+Interaction.\+Adjacency.\+Adjacency\+List.\+mesh\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_adjacency_1_1_adjacency_list_a652584d66b2e40f2f45a6aa0b4b86948}\label{class_c2_m2_1_1_interaction_1_1_adjacency_1_1_adjacency_list_a652584d66b2e40f2f45a6aa0b4b86948}} 
+\index{C2M2.Interaction.Adjacency.AdjacencyList@{C2M2.Interaction.Adjacency.AdjacencyList}!triangles@{triangles}}
+\index{triangles@{triangles}!C2M2.Interaction.Adjacency.AdjacencyList@{C2M2.Interaction.Adjacency.AdjacencyList}}
+\doxysubsubsection{\texorpdfstring{triangles}{triangles}}
+{\footnotesize\ttfamily int \mbox{[}$\,$\mbox{]} C2\+M2.\+Interaction.\+Adjacency.\+Adjacency\+List.\+triangles\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_adjacency_1_1_adjacency_list_ae38e109fc056e3aa9202e62019116da7}\label{class_c2_m2_1_1_interaction_1_1_adjacency_1_1_adjacency_list_ae38e109fc056e3aa9202e62019116da7}} 
+\index{C2M2.Interaction.Adjacency.AdjacencyList@{C2M2.Interaction.Adjacency.AdjacencyList}!uniqueVertices@{uniqueVertices}}
+\index{uniqueVertices@{uniqueVertices}!C2M2.Interaction.Adjacency.AdjacencyList@{C2M2.Interaction.Adjacency.AdjacencyList}}
+\doxysubsubsection{\texorpdfstring{uniqueVertices}{uniqueVertices}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_adjacency_1_1_unique_vertices}{Unique\+Vertices}} C2\+M2.\+Interaction.\+Adjacency.\+Adjacency\+List.\+unique\+Vertices\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_adjacency_1_1_adjacency_list_afb55252eabeffd47c591b599814880f9}\label{class_c2_m2_1_1_interaction_1_1_adjacency_1_1_adjacency_list_afb55252eabeffd47c591b599814880f9}} 
+\index{C2M2.Interaction.Adjacency.AdjacencyList@{C2M2.Interaction.Adjacency.AdjacencyList}!vertices@{vertices}}
+\index{vertices@{vertices}!C2M2.Interaction.Adjacency.AdjacencyList@{C2M2.Interaction.Adjacency.AdjacencyList}}
+\doxysubsubsection{\texorpdfstring{vertices}{vertices}}
+{\footnotesize\ttfamily Vector3 \mbox{[}$\,$\mbox{]} C2\+M2.\+Interaction.\+Adjacency.\+Adjacency\+List.\+vertices\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_adjacency_1_1_adjacency_list_aa7f6729a1a2678f52cb600e00f9393f9}\label{class_c2_m2_1_1_interaction_1_1_adjacency_1_1_adjacency_list_aa7f6729a1a2678f52cb600e00f9393f9}} 
+\index{C2M2.Interaction.Adjacency.AdjacencyList@{C2M2.Interaction.Adjacency.AdjacencyList}!adjacencyList@{adjacencyList}}
+\index{adjacencyList@{adjacencyList}!C2M2.Interaction.Adjacency.AdjacencyList@{C2M2.Interaction.Adjacency.AdjacencyList}}
+\doxysubsubsection{\texorpdfstring{adjacencyList}{adjacencyList}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{struct_c2_m2_1_1_interaction_1_1_adjacency_1_1_node}{Node}}$>$ \mbox{[}$\,$\mbox{]} C2\+M2.\+Interaction.\+Adjacency.\+Adjacency\+List.\+adjacency\+List\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [private set]}}
+
+
+
+Stores the distance between adjacent vertices 
+
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_adjacency_1_1_adjacency_list_ab5a5a74776b01752249780f07bbc2622}\label{class_c2_m2_1_1_interaction_1_1_adjacency_1_1_adjacency_list_ab5a5a74776b01752249780f07bbc2622}} 
+\index{C2M2.Interaction.Adjacency.AdjacencyList@{C2M2.Interaction.Adjacency.AdjacencyList}!edgeCount@{edgeCount}}
+\index{edgeCount@{edgeCount}!C2M2.Interaction.Adjacency.AdjacencyList@{C2M2.Interaction.Adjacency.AdjacencyList}}
+\doxysubsubsection{\texorpdfstring{edgeCount}{edgeCount}}
+{\footnotesize\ttfamily int \mbox{[}$\,$\mbox{]} C2\+M2.\+Interaction.\+Adjacency.\+Adjacency\+List.\+edge\+Count\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [private set]}}
+
+
+
+Stores the number of edges connected to each vertex. 
+
+edge\+Count indices correspond to mesh.\+vertices indices \mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_adjacency_1_1_adjacency_list_ae6b750eb2d4011eb633b729925a2e5dc}\label{class_c2_m2_1_1_interaction_1_1_adjacency_1_1_adjacency_list_ae6b750eb2d4011eb633b729925a2e5dc}} 
+\index{C2M2.Interaction.Adjacency.AdjacencyList@{C2M2.Interaction.Adjacency.AdjacencyList}!edgeList@{edgeList}}
+\index{edgeList@{edgeList}!C2M2.Interaction.Adjacency.AdjacencyList@{C2M2.Interaction.Adjacency.AdjacencyList}}
+\doxysubsubsection{\texorpdfstring{edgeList}{edgeList}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{struct_c2_m2_1_1_interaction_1_1_adjacency_1_1_edge}{Edge}}$>$ C2\+M2.\+Interaction.\+Adjacency.\+Adjacency\+List.\+edge\+List\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [private set]}}
+
+
+
+Stores a list of edges between vertices 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/jaros/\+Desktop/tempvr/virtual-\/reality/\+Assets/\+Scripts/\+C2\+M2/\+Interaction/\+Adjacency/\mbox{\hyperlink{_adjacency_list_8cs}{Adjacency\+List.\+cs}}\end{DoxyCompactItemize}

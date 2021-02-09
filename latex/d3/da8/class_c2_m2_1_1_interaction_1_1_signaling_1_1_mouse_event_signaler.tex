@@ -1,0 +1,145 @@
+\hypertarget{class_c2_m2_1_1_interaction_1_1_signaling_1_1_mouse_event_signaler}{}\doxysection{C2\+M2.\+Interaction.\+Signaling.\+Mouse\+Event\+Signaler Class Reference}
+\label{class_c2_m2_1_1_interaction_1_1_signaling_1_1_mouse_event_signaler}\index{C2M2.Interaction.Signaling.MouseEventSignaler@{C2M2.Interaction.Signaling.MouseEventSignaler}}
+
+
+Inheritance diagram for C2\+M2.\+Interaction.\+Signaling.\+Mouse\+Event\+Signaler\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{d2/d75/class_c2_m2_1_1_interaction_1_1_signaling_1_1_mouse_event_signaler__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for C2\+M2.\+Interaction.\+Signaling.\+Mouse\+Event\+Signaler\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{d8/d42/class_c2_m2_1_1_interaction_1_1_signaling_1_1_mouse_event_signaler__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Key\+Code\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_signaling_1_1_mouse_event_signaler_ae58b39d213ffde497b8e96f330eab546}{grab\+Keys}} = new Key\+Code\mbox{[}$\,$\mbox{]} \{ Key\+Code.\+G \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+override void \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_signaling_1_1_mouse_event_signaler_a4d2e7554f50f060d18a462070afdf262}{On\+Awake}} ()
+\item 
+override void \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_signaling_1_1_mouse_event_signaler_a941e22dec7124fc3d39db8d27d98c780}{On\+Start}} ()
+\item 
+override bool \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_signaling_1_1_mouse_event_signaler_aaa5f0a07c808077e6a3081183eab6712}{Begin\+Raycasting\+Condition}} ()
+\begin{DoxyCompactList}\small\item\em This is returns true if the left mouse button is pressed down \end{DoxyCompactList}\item 
+override bool \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_signaling_1_1_mouse_event_signaler_a74e4e9204f0c9efbcde31c62a8ef4162}{Raycasting\+Method}} (out Raycast\+Hit hit, float max\+Distance, Layer\+Mask \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_signaling_1_1_raycast_event_signaler_a726777cce7f331f18abe367fb9cae19b}{layer\+Mask}})
+\begin{DoxyCompactList}\small\item\em This builds a ray from the mouse\textquotesingle{}s position, and attempts a raycast using that ray \end{DoxyCompactList}\item 
+override bool \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_signaling_1_1_mouse_event_signaler_af27a1a1ed822632a226f4400fa426a20}{Childs\+Press\+Condition}} ()
+\begin{DoxyCompactList}\small\item\em With mouse raycasting, we only want to press the mouse button to trigger events \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Transform \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_signaling_1_1_mouse_event_signaler_a3bd16943b8f6d5b0b1d2adfabf79baf8}{grab\+Transform}}
+\item 
+\mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_v_r_1_1_public_o_v_r_grabber}{Public\+OVRGrabber}} \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_signaling_1_1_mouse_event_signaler_ab912c0e75e392f3c1aa7ebe0939652e3}{grabber}}
+\item 
+Sphere\+Collider \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_signaling_1_1_mouse_event_signaler_a9bce0ed9bd8310c41f51e62fc5aa0138}{grab\+Volume}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_signaling_1_1_mouse_event_signaler_aaa5f0a07c808077e6a3081183eab6712}\label{class_c2_m2_1_1_interaction_1_1_signaling_1_1_mouse_event_signaler_aaa5f0a07c808077e6a3081183eab6712}} 
+\index{C2M2.Interaction.Signaling.MouseEventSignaler@{C2M2.Interaction.Signaling.MouseEventSignaler}!BeginRaycastingCondition@{BeginRaycastingCondition}}
+\index{BeginRaycastingCondition@{BeginRaycastingCondition}!C2M2.Interaction.Signaling.MouseEventSignaler@{C2M2.Interaction.Signaling.MouseEventSignaler}}
+\doxysubsubsection{\texorpdfstring{BeginRaycastingCondition()}{BeginRaycastingCondition()}}
+{\footnotesize\ttfamily override bool C2\+M2.\+Interaction.\+Signaling.\+Mouse\+Event\+Signaler.\+Begin\+Raycasting\+Condition (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+This is returns true if the left mouse button is pressed down 
+
+
+
+Implements \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_signaling_1_1_raycast_event_signaler_a9b13001acb8d7c8ae6f1e6db96204a1a}{C2\+M2.\+Interaction.\+Signaling.\+Raycast\+Event\+Signaler}}.
+
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_signaling_1_1_mouse_event_signaler_af27a1a1ed822632a226f4400fa426a20}\label{class_c2_m2_1_1_interaction_1_1_signaling_1_1_mouse_event_signaler_af27a1a1ed822632a226f4400fa426a20}} 
+\index{C2M2.Interaction.Signaling.MouseEventSignaler@{C2M2.Interaction.Signaling.MouseEventSignaler}!ChildsPressCondition@{ChildsPressCondition}}
+\index{ChildsPressCondition@{ChildsPressCondition}!C2M2.Interaction.Signaling.MouseEventSignaler@{C2M2.Interaction.Signaling.MouseEventSignaler}}
+\doxysubsubsection{\texorpdfstring{ChildsPressCondition()}{ChildsPressCondition()}}
+{\footnotesize\ttfamily override bool C2\+M2.\+Interaction.\+Signaling.\+Mouse\+Event\+Signaler.\+Childs\+Press\+Condition (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+With mouse raycasting, we only want to press the mouse button to trigger events 
+
+
+
+Implements \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_signaling_1_1_raycast_event_signaler_acc162942cbabe415e185b51d3e94e4d4}{C2\+M2.\+Interaction.\+Signaling.\+Raycast\+Event\+Signaler}}.
+
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_signaling_1_1_mouse_event_signaler_a4d2e7554f50f060d18a462070afdf262}\label{class_c2_m2_1_1_interaction_1_1_signaling_1_1_mouse_event_signaler_a4d2e7554f50f060d18a462070afdf262}} 
+\index{C2M2.Interaction.Signaling.MouseEventSignaler@{C2M2.Interaction.Signaling.MouseEventSignaler}!OnAwake@{OnAwake}}
+\index{OnAwake@{OnAwake}!C2M2.Interaction.Signaling.MouseEventSignaler@{C2M2.Interaction.Signaling.MouseEventSignaler}}
+\doxysubsubsection{\texorpdfstring{OnAwake()}{OnAwake()}}
+{\footnotesize\ttfamily override void C2\+M2.\+Interaction.\+Signaling.\+Mouse\+Event\+Signaler.\+On\+Awake (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_signaling_1_1_raycast_event_signaler_ac53b874c38a342dce0b7ed0b05b96480}{C2\+M2.\+Interaction.\+Signaling.\+Raycast\+Event\+Signaler}}.
+
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_signaling_1_1_mouse_event_signaler_a941e22dec7124fc3d39db8d27d98c780}\label{class_c2_m2_1_1_interaction_1_1_signaling_1_1_mouse_event_signaler_a941e22dec7124fc3d39db8d27d98c780}} 
+\index{C2M2.Interaction.Signaling.MouseEventSignaler@{C2M2.Interaction.Signaling.MouseEventSignaler}!OnStart@{OnStart}}
+\index{OnStart@{OnStart}!C2M2.Interaction.Signaling.MouseEventSignaler@{C2M2.Interaction.Signaling.MouseEventSignaler}}
+\doxysubsubsection{\texorpdfstring{OnStart()}{OnStart()}}
+{\footnotesize\ttfamily override void C2\+M2.\+Interaction.\+Signaling.\+Mouse\+Event\+Signaler.\+On\+Start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_signaling_1_1_raycast_event_signaler_ae6b47323d8ad0b285f883ec637cd6929}{C2\+M2.\+Interaction.\+Signaling.\+Raycast\+Event\+Signaler}}.
+
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_signaling_1_1_mouse_event_signaler_a74e4e9204f0c9efbcde31c62a8ef4162}\label{class_c2_m2_1_1_interaction_1_1_signaling_1_1_mouse_event_signaler_a74e4e9204f0c9efbcde31c62a8ef4162}} 
+\index{C2M2.Interaction.Signaling.MouseEventSignaler@{C2M2.Interaction.Signaling.MouseEventSignaler}!RaycastingMethod@{RaycastingMethod}}
+\index{RaycastingMethod@{RaycastingMethod}!C2M2.Interaction.Signaling.MouseEventSignaler@{C2M2.Interaction.Signaling.MouseEventSignaler}}
+\doxysubsubsection{\texorpdfstring{RaycastingMethod()}{RaycastingMethod()}}
+{\footnotesize\ttfamily override bool C2\+M2.\+Interaction.\+Signaling.\+Mouse\+Event\+Signaler.\+Raycasting\+Method (\begin{DoxyParamCaption}\item[{out Raycast\+Hit}]{hit,  }\item[{float}]{max\+Distance,  }\item[{Layer\+Mask}]{layer\+Mask }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+This builds a ray from the mouse\textquotesingle{}s position, and attempts a raycast using that ray 
+
+
+
+Implements \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_signaling_1_1_raycast_event_signaler_a4479c8219db2ccd6c734cd3016febe3e}{C2\+M2.\+Interaction.\+Signaling.\+Raycast\+Event\+Signaler}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_signaling_1_1_mouse_event_signaler_ab912c0e75e392f3c1aa7ebe0939652e3}\label{class_c2_m2_1_1_interaction_1_1_signaling_1_1_mouse_event_signaler_ab912c0e75e392f3c1aa7ebe0939652e3}} 
+\index{C2M2.Interaction.Signaling.MouseEventSignaler@{C2M2.Interaction.Signaling.MouseEventSignaler}!grabber@{grabber}}
+\index{grabber@{grabber}!C2M2.Interaction.Signaling.MouseEventSignaler@{C2M2.Interaction.Signaling.MouseEventSignaler}}
+\doxysubsubsection{\texorpdfstring{grabber}{grabber}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_v_r_1_1_public_o_v_r_grabber}{Public\+OVRGrabber}} C2\+M2.\+Interaction.\+Signaling.\+Mouse\+Event\+Signaler.\+grabber\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_signaling_1_1_mouse_event_signaler_ae58b39d213ffde497b8e96f330eab546}\label{class_c2_m2_1_1_interaction_1_1_signaling_1_1_mouse_event_signaler_ae58b39d213ffde497b8e96f330eab546}} 
+\index{C2M2.Interaction.Signaling.MouseEventSignaler@{C2M2.Interaction.Signaling.MouseEventSignaler}!grabKeys@{grabKeys}}
+\index{grabKeys@{grabKeys}!C2M2.Interaction.Signaling.MouseEventSignaler@{C2M2.Interaction.Signaling.MouseEventSignaler}}
+\doxysubsubsection{\texorpdfstring{grabKeys}{grabKeys}}
+{\footnotesize\ttfamily Key\+Code \mbox{[}$\,$\mbox{]} C2\+M2.\+Interaction.\+Signaling.\+Mouse\+Event\+Signaler.\+grab\+Keys = new Key\+Code\mbox{[}$\,$\mbox{]} \{ Key\+Code.\+G \}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_signaling_1_1_mouse_event_signaler_a3bd16943b8f6d5b0b1d2adfabf79baf8}\label{class_c2_m2_1_1_interaction_1_1_signaling_1_1_mouse_event_signaler_a3bd16943b8f6d5b0b1d2adfabf79baf8}} 
+\index{C2M2.Interaction.Signaling.MouseEventSignaler@{C2M2.Interaction.Signaling.MouseEventSignaler}!grabTransform@{grabTransform}}
+\index{grabTransform@{grabTransform}!C2M2.Interaction.Signaling.MouseEventSignaler@{C2M2.Interaction.Signaling.MouseEventSignaler}}
+\doxysubsubsection{\texorpdfstring{grabTransform}{grabTransform}}
+{\footnotesize\ttfamily Transform C2\+M2.\+Interaction.\+Signaling.\+Mouse\+Event\+Signaler.\+grab\+Transform\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_signaling_1_1_mouse_event_signaler_a9bce0ed9bd8310c41f51e62fc5aa0138}\label{class_c2_m2_1_1_interaction_1_1_signaling_1_1_mouse_event_signaler_a9bce0ed9bd8310c41f51e62fc5aa0138}} 
+\index{C2M2.Interaction.Signaling.MouseEventSignaler@{C2M2.Interaction.Signaling.MouseEventSignaler}!grabVolume@{grabVolume}}
+\index{grabVolume@{grabVolume}!C2M2.Interaction.Signaling.MouseEventSignaler@{C2M2.Interaction.Signaling.MouseEventSignaler}}
+\doxysubsubsection{\texorpdfstring{grabVolume}{grabVolume}}
+{\footnotesize\ttfamily Sphere\+Collider C2\+M2.\+Interaction.\+Signaling.\+Mouse\+Event\+Signaler.\+grab\+Volume\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/jaros/\+Desktop/tempvr/virtual-\/reality/\+Assets/\+Scripts/\+C2\+M2/\+Interaction/\+Press\+Event\+Signalers/\mbox{\hyperlink{_mouse_event_signaler_8cs}{Mouse\+Event\+Signaler.\+cs}}\end{DoxyCompactItemize}

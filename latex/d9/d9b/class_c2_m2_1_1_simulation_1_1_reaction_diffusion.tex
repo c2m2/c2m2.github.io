@@ -1,0 +1,263 @@
+\hypertarget{class_c2_m2_1_1_simulation_1_1_reaction_diffusion}{}\doxysection{C2\+M2.\+Simulation.\+Reaction\+Diffusion Class Reference}
+\label{class_c2_m2_1_1_simulation_1_1_reaction_diffusion}\index{C2M2.Simulation.ReactionDiffusion@{C2M2.Simulation.ReactionDiffusion}}
+
+
+Simulate a diffusion over the surface of a given geometry  
+
+
+
+
+Inheritance diagram for C2\+M2.\+Simulation.\+Reaction\+Diffusion\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{db/d10/class_c2_m2_1_1_simulation_1_1_reaction_diffusion__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for C2\+M2.\+Simulation.\+Reaction\+Diffusion\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{da/d42/class_c2_m2_1_1_simulation_1_1_reaction_diffusion__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_reaction_diffusion_a3733ebc156e9794fb2548c8580c36a38}{Values\+Randomize}} ()
+\item 
+void \mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_reaction_diffusion_a343c84550cb47c0931f1b0af4d57c7ed}{Values\+Empty}} ()
+\item 
+void \mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_reaction_diffusion_abd148a416dd9457721e8fa395c3f8892}{Add\+Diffusion\+Condition}} (int index, double value)
+\begin{DoxyCompactList}\small\item\em Change the current value at a specific point \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+override void \mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_reaction_diffusion_a617324618d09d059318118e8830cf70c}{Initialize}} ()
+\begin{DoxyCompactList}\small\item\em Details initialization process of simulations that inherit from \mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_simulation}{Simulation}} \end{DoxyCompactList}\item 
+override double\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_reaction_diffusion_aafa2239366b9668ff715dc12bec3b097}{Solve}} (double dt\+Real)
+\begin{DoxyCompactList}\small\item\em For each neighbor of each vertex, subtract some amount from the value of the vertex and add it to the neighbor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+double \mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_reaction_diffusion_ad6fba0c5881c4a5003bbd47c9f0eb5c0}{diffusion\+Constant}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em U$^\wedge$$\ast$ = U$^\wedge$n + (Δ\+U$^\wedge$n)dt; Δ\+U$^\wedge$n = diffusion\+Constant(U$^\wedge$n -\/ V$^\wedge$n), where V is a vert that shares an edge with U"{} \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_reaction_diffusion_a6bfcde5f618aa20912ce00821d0686ea}{reaction\+Constant}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em summary$>$ U$^\wedge$\{n+1\} = (reaction\+Constant)(U$^\wedge$$\ast$)(U$^\wedge$$\ast$ -\/ beta)(1 -\/ U$^\wedge$$\ast$) \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_reaction_diffusion_ae3593fd565b48db3fe0502b166e14a07}{beta}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+double \mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_reaction_diffusion_abd559b8be3e0fd8fc6b9e1fc79d08074}{R}} (double u)
+\begin{DoxyCompactList}\small\item\em Calculate Reaction term \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_diffusion_manager}{Diffusion\+Manager}} \mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_reaction_diffusion_a730d6f58cde1f56a854f8c8c3c2b0958}{diffusion\+Manager}}
+\item 
+Mesh\+Info \mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_reaction_diffusion_af3a0e15dce47cdfa412f0def3a4e19ff}{mesh\+Info}}
+\begin{DoxyCompactList}\small\item\em Initially a local copy of adjacency\+List\+Manager.\+component\+Data; this is the live list of simulation values for each unique vertex \end{DoxyCompactList}\item 
+List$<$ \mbox{\hyperlink{struct_c2_m2_1_1_interaction_1_1_adjacency_1_1_edge}{Edge}} $>$ \mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_reaction_diffusion_a5e9b9bf4999e72f6171f112c1a3bca8e}{edge\+List}}
+\begin{DoxyCompactList}\small\item\em List of all edges v1 -\/$>$ v2 on the geometry; local pointer to adjacency\+List\+Manager.\+edge\+List \end{DoxyCompactList}\item 
+int\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_reaction_diffusion_a0607a695d35e8732662314a3dd53529e}{edge\+Count}}
+\begin{DoxyCompactList}\small\item\em Gives the number of edges that each vertex belongs to. edge\+Count\mbox{[}0\mbox{]} corresponds to adjacency\+List\mbox{[}0\mbox{]} \& scalars\mbox{[}0\mbox{]} \end{DoxyCompactList}\item 
+List$<$ \mbox{\hyperlink{struct_c2_m2_1_1_interaction_1_1_adjacency_1_1_node}{Node}} $>$\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_reaction_diffusion_ad1ab4dbb32942540504a7dcf24b288ed}{adjacency\+List}}
+\begin{DoxyCompactList}\small\item\em Local pointer to adjacency\+List\+Manager.\+adjacency\+List \end{DoxyCompactList}\item 
+double\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_reaction_diffusion_a8f96d5a0e7572e20615c9eadb1bacfae}{flux}}
+\begin{DoxyCompactList}\small\item\em Stores a flux along each edge in edge\+List \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_u_i_1_1_raycast_input_field}{Raycast\+Input\+Field}} \mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_reaction_diffusion_acf29dbaf35b8f6b04b5a44da882bbaaf}{input\+Field}}
+\item 
+double \mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_reaction_diffusion_a76be3ea205366a12e9c42c571879c120}{c}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Simulate a diffusion over the surface of a given geometry 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_c2_m2_1_1_simulation_1_1_reaction_diffusion_abd148a416dd9457721e8fa395c3f8892}\label{class_c2_m2_1_1_simulation_1_1_reaction_diffusion_abd148a416dd9457721e8fa395c3f8892}} 
+\index{C2M2.Simulation.ReactionDiffusion@{C2M2.Simulation.ReactionDiffusion}!AddDiffusionCondition@{AddDiffusionCondition}}
+\index{AddDiffusionCondition@{AddDiffusionCondition}!C2M2.Simulation.ReactionDiffusion@{C2M2.Simulation.ReactionDiffusion}}
+\doxysubsubsection{\texorpdfstring{AddDiffusionCondition()}{AddDiffusionCondition()}}
+{\footnotesize\ttfamily void C2\+M2.\+Simulation.\+Reaction\+Diffusion.\+Add\+Diffusion\+Condition (\begin{DoxyParamCaption}\item[{int}]{index,  }\item[{double}]{value }\end{DoxyParamCaption})}
+
+
+
+Change the current value at a specific point 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & UNIQUE index of the point to change (attaches to adjacency\+List.\+unique\+Verts \\
+\hline
+{\em value} & Value to add at this point \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c2_m2_1_1_simulation_1_1_reaction_diffusion_a617324618d09d059318118e8830cf70c}\label{class_c2_m2_1_1_simulation_1_1_reaction_diffusion_a617324618d09d059318118e8830cf70c}} 
+\index{C2M2.Simulation.ReactionDiffusion@{C2M2.Simulation.ReactionDiffusion}!Initialize@{Initialize}}
+\index{Initialize@{Initialize}!C2M2.Simulation.ReactionDiffusion@{C2M2.Simulation.ReactionDiffusion}}
+\doxysubsubsection{\texorpdfstring{Initialize()}{Initialize()}}
+{\footnotesize\ttfamily override void C2\+M2.\+Simulation.\+Reaction\+Diffusion.\+Initialize (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Details initialization process of simulations that inherit from \mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_simulation}{Simulation}} 
+
+
+
+Implements \mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_simulation_diffuse_react_abc1cca9c5cb9b9b1b7f677a71d6c4021}{C2\+M2.\+Simulation.\+Simulation\+Diffuse\+React}}.
+
+\mbox{\Hypertarget{class_c2_m2_1_1_simulation_1_1_reaction_diffusion_abd559b8be3e0fd8fc6b9e1fc79d08074}\label{class_c2_m2_1_1_simulation_1_1_reaction_diffusion_abd559b8be3e0fd8fc6b9e1fc79d08074}} 
+\index{C2M2.Simulation.ReactionDiffusion@{C2M2.Simulation.ReactionDiffusion}!R@{R}}
+\index{R@{R}!C2M2.Simulation.ReactionDiffusion@{C2M2.Simulation.ReactionDiffusion}}
+\doxysubsubsection{\texorpdfstring{R()}{R()}}
+{\footnotesize\ttfamily double C2\+M2.\+Simulation.\+Reaction\+Diffusion.\+R (\begin{DoxyParamCaption}\item[{double}]{u }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Calculate Reaction term 
+
+
+\begin{DoxyParams}{Parameters}
+{\em u} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c2_m2_1_1_simulation_1_1_reaction_diffusion_aafa2239366b9668ff715dc12bec3b097}\label{class_c2_m2_1_1_simulation_1_1_reaction_diffusion_aafa2239366b9668ff715dc12bec3b097}} 
+\index{C2M2.Simulation.ReactionDiffusion@{C2M2.Simulation.ReactionDiffusion}!Solve@{Solve}}
+\index{Solve@{Solve}!C2M2.Simulation.ReactionDiffusion@{C2M2.Simulation.ReactionDiffusion}}
+\doxysubsubsection{\texorpdfstring{Solve()}{Solve()}}
+{\footnotesize\ttfamily override double \mbox{[}$\,$\mbox{]} C2\+M2.\+Simulation.\+Reaction\+Diffusion.\+Solve (\begin{DoxyParamCaption}\item[{double}]{dt\+Real }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+For each neighbor of each vertex, subtract some amount from the value of the vertex and add it to the neighbor. 
+
+
+
+Implements \mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_simulation_diffuse_react_a71d2b8bb1043aa0f0ae83f4d14b9a720}{C2\+M2.\+Simulation.\+Simulation\+Diffuse\+React}}.
+
+\mbox{\Hypertarget{class_c2_m2_1_1_simulation_1_1_reaction_diffusion_a343c84550cb47c0931f1b0af4d57c7ed}\label{class_c2_m2_1_1_simulation_1_1_reaction_diffusion_a343c84550cb47c0931f1b0af4d57c7ed}} 
+\index{C2M2.Simulation.ReactionDiffusion@{C2M2.Simulation.ReactionDiffusion}!ValuesEmpty@{ValuesEmpty}}
+\index{ValuesEmpty@{ValuesEmpty}!C2M2.Simulation.ReactionDiffusion@{C2M2.Simulation.ReactionDiffusion}}
+\doxysubsubsection{\texorpdfstring{ValuesEmpty()}{ValuesEmpty()}}
+{\footnotesize\ttfamily void C2\+M2.\+Simulation.\+Reaction\+Diffusion.\+Values\+Empty (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_simulation_1_1_reaction_diffusion_a3733ebc156e9794fb2548c8580c36a38}\label{class_c2_m2_1_1_simulation_1_1_reaction_diffusion_a3733ebc156e9794fb2548c8580c36a38}} 
+\index{C2M2.Simulation.ReactionDiffusion@{C2M2.Simulation.ReactionDiffusion}!ValuesRandomize@{ValuesRandomize}}
+\index{ValuesRandomize@{ValuesRandomize}!C2M2.Simulation.ReactionDiffusion@{C2M2.Simulation.ReactionDiffusion}}
+\doxysubsubsection{\texorpdfstring{ValuesRandomize()}{ValuesRandomize()}}
+{\footnotesize\ttfamily void C2\+M2.\+Simulation.\+Reaction\+Diffusion.\+Values\+Randomize (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_c2_m2_1_1_simulation_1_1_reaction_diffusion_ad1ab4dbb32942540504a7dcf24b288ed}\label{class_c2_m2_1_1_simulation_1_1_reaction_diffusion_ad1ab4dbb32942540504a7dcf24b288ed}} 
+\index{C2M2.Simulation.ReactionDiffusion@{C2M2.Simulation.ReactionDiffusion}!adjacencyList@{adjacencyList}}
+\index{adjacencyList@{adjacencyList}!C2M2.Simulation.ReactionDiffusion@{C2M2.Simulation.ReactionDiffusion}}
+\doxysubsubsection{\texorpdfstring{adjacencyList}{adjacencyList}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{struct_c2_m2_1_1_interaction_1_1_adjacency_1_1_node}{Node}}$>$ \mbox{[}$\,$\mbox{]} C2\+M2.\+Simulation.\+Reaction\+Diffusion.\+adjacency\+List\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Local pointer to adjacency\+List\+Manager.\+adjacency\+List 
+
+\mbox{\Hypertarget{class_c2_m2_1_1_simulation_1_1_reaction_diffusion_a76be3ea205366a12e9c42c571879c120}\label{class_c2_m2_1_1_simulation_1_1_reaction_diffusion_a76be3ea205366a12e9c42c571879c120}} 
+\index{C2M2.Simulation.ReactionDiffusion@{C2M2.Simulation.ReactionDiffusion}!c@{c}}
+\index{c@{c}!C2M2.Simulation.ReactionDiffusion@{C2M2.Simulation.ReactionDiffusion}}
+\doxysubsubsection{\texorpdfstring{c}{c}}
+{\footnotesize\ttfamily double C2\+M2.\+Simulation.\+Reaction\+Diffusion.\+c\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_simulation_1_1_reaction_diffusion_a730d6f58cde1f56a854f8c8c3c2b0958}\label{class_c2_m2_1_1_simulation_1_1_reaction_diffusion_a730d6f58cde1f56a854f8c8c3c2b0958}} 
+\index{C2M2.Simulation.ReactionDiffusion@{C2M2.Simulation.ReactionDiffusion}!diffusionManager@{diffusionManager}}
+\index{diffusionManager@{diffusionManager}!C2M2.Simulation.ReactionDiffusion@{C2M2.Simulation.ReactionDiffusion}}
+\doxysubsubsection{\texorpdfstring{diffusionManager}{diffusionManager}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_diffusion_manager}{Diffusion\+Manager}} C2\+M2.\+Simulation.\+Reaction\+Diffusion.\+diffusion\+Manager\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_simulation_1_1_reaction_diffusion_a0607a695d35e8732662314a3dd53529e}\label{class_c2_m2_1_1_simulation_1_1_reaction_diffusion_a0607a695d35e8732662314a3dd53529e}} 
+\index{C2M2.Simulation.ReactionDiffusion@{C2M2.Simulation.ReactionDiffusion}!edgeCount@{edgeCount}}
+\index{edgeCount@{edgeCount}!C2M2.Simulation.ReactionDiffusion@{C2M2.Simulation.ReactionDiffusion}}
+\doxysubsubsection{\texorpdfstring{edgeCount}{edgeCount}}
+{\footnotesize\ttfamily int \mbox{[}$\,$\mbox{]} C2\+M2.\+Simulation.\+Reaction\+Diffusion.\+edge\+Count\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Gives the number of edges that each vertex belongs to. edge\+Count\mbox{[}0\mbox{]} corresponds to adjacency\+List\mbox{[}0\mbox{]} \& scalars\mbox{[}0\mbox{]} 
+
+\mbox{\Hypertarget{class_c2_m2_1_1_simulation_1_1_reaction_diffusion_a5e9b9bf4999e72f6171f112c1a3bca8e}\label{class_c2_m2_1_1_simulation_1_1_reaction_diffusion_a5e9b9bf4999e72f6171f112c1a3bca8e}} 
+\index{C2M2.Simulation.ReactionDiffusion@{C2M2.Simulation.ReactionDiffusion}!edgeList@{edgeList}}
+\index{edgeList@{edgeList}!C2M2.Simulation.ReactionDiffusion@{C2M2.Simulation.ReactionDiffusion}}
+\doxysubsubsection{\texorpdfstring{edgeList}{edgeList}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{struct_c2_m2_1_1_interaction_1_1_adjacency_1_1_edge}{Edge}}$>$ C2\+M2.\+Simulation.\+Reaction\+Diffusion.\+edge\+List\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+List of all edges v1 -\/$>$ v2 on the geometry; local pointer to adjacency\+List\+Manager.\+edge\+List 
+
+\mbox{\Hypertarget{class_c2_m2_1_1_simulation_1_1_reaction_diffusion_a8f96d5a0e7572e20615c9eadb1bacfae}\label{class_c2_m2_1_1_simulation_1_1_reaction_diffusion_a8f96d5a0e7572e20615c9eadb1bacfae}} 
+\index{C2M2.Simulation.ReactionDiffusion@{C2M2.Simulation.ReactionDiffusion}!flux@{flux}}
+\index{flux@{flux}!C2M2.Simulation.ReactionDiffusion@{C2M2.Simulation.ReactionDiffusion}}
+\doxysubsubsection{\texorpdfstring{flux}{flux}}
+{\footnotesize\ttfamily double \mbox{[}$\,$\mbox{]} C2\+M2.\+Simulation.\+Reaction\+Diffusion.\+flux\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Stores a flux along each edge in edge\+List 
+
+\mbox{\Hypertarget{class_c2_m2_1_1_simulation_1_1_reaction_diffusion_acf29dbaf35b8f6b04b5a44da882bbaaf}\label{class_c2_m2_1_1_simulation_1_1_reaction_diffusion_acf29dbaf35b8f6b04b5a44da882bbaaf}} 
+\index{C2M2.Simulation.ReactionDiffusion@{C2M2.Simulation.ReactionDiffusion}!inputField@{inputField}}
+\index{inputField@{inputField}!C2M2.Simulation.ReactionDiffusion@{C2M2.Simulation.ReactionDiffusion}}
+\doxysubsubsection{\texorpdfstring{inputField}{inputField}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_u_i_1_1_raycast_input_field}{Raycast\+Input\+Field}} C2\+M2.\+Simulation.\+Reaction\+Diffusion.\+input\+Field\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_simulation_1_1_reaction_diffusion_af3a0e15dce47cdfa412f0def3a4e19ff}\label{class_c2_m2_1_1_simulation_1_1_reaction_diffusion_af3a0e15dce47cdfa412f0def3a4e19ff}} 
+\index{C2M2.Simulation.ReactionDiffusion@{C2M2.Simulation.ReactionDiffusion}!meshInfo@{meshInfo}}
+\index{meshInfo@{meshInfo}!C2M2.Simulation.ReactionDiffusion@{C2M2.Simulation.ReactionDiffusion}}
+\doxysubsubsection{\texorpdfstring{meshInfo}{meshInfo}}
+{\footnotesize\ttfamily Mesh\+Info C2\+M2.\+Simulation.\+Reaction\+Diffusion.\+mesh\+Info\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Initially a local copy of adjacency\+List\+Manager.\+component\+Data; this is the live list of simulation values for each unique vertex 
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{class_c2_m2_1_1_simulation_1_1_reaction_diffusion_ae3593fd565b48db3fe0502b166e14a07}\label{class_c2_m2_1_1_simulation_1_1_reaction_diffusion_ae3593fd565b48db3fe0502b166e14a07}} 
+\index{C2M2.Simulation.ReactionDiffusion@{C2M2.Simulation.ReactionDiffusion}!beta@{beta}}
+\index{beta@{beta}!C2M2.Simulation.ReactionDiffusion@{C2M2.Simulation.ReactionDiffusion}}
+\doxysubsubsection{\texorpdfstring{beta}{beta}}
+{\footnotesize\ttfamily double C2\+M2.\+Simulation.\+Reaction\+Diffusion.\+beta\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_simulation_1_1_reaction_diffusion_ad6fba0c5881c4a5003bbd47c9f0eb5c0}\label{class_c2_m2_1_1_simulation_1_1_reaction_diffusion_ad6fba0c5881c4a5003bbd47c9f0eb5c0}} 
+\index{C2M2.Simulation.ReactionDiffusion@{C2M2.Simulation.ReactionDiffusion}!diffusionConstant@{diffusionConstant}}
+\index{diffusionConstant@{diffusionConstant}!C2M2.Simulation.ReactionDiffusion@{C2M2.Simulation.ReactionDiffusion}}
+\doxysubsubsection{\texorpdfstring{diffusionConstant}{diffusionConstant}}
+{\footnotesize\ttfamily double C2\+M2.\+Simulation.\+Reaction\+Diffusion.\+diffusion\+Constant\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+U$^\wedge$$\ast$ = U$^\wedge$n + (Δ\+U$^\wedge$n)dt; Δ\+U$^\wedge$n = diffusion\+Constant(U$^\wedge$n -\/ V$^\wedge$n), where V is a vert that shares an edge with U"{} 
+
+summary$>$ U$^\wedge$\{n+1\} = (reaction\+Constant)(U$^\wedge$$\ast$)(U$^\wedge$$\ast$ -\/ beta)(1 -\/ U$^\wedge$$\ast$) \mbox{\Hypertarget{class_c2_m2_1_1_simulation_1_1_reaction_diffusion_a6bfcde5f618aa20912ce00821d0686ea}\label{class_c2_m2_1_1_simulation_1_1_reaction_diffusion_a6bfcde5f618aa20912ce00821d0686ea}} 
+\index{C2M2.Simulation.ReactionDiffusion@{C2M2.Simulation.ReactionDiffusion}!reactionConstant@{reactionConstant}}
+\index{reactionConstant@{reactionConstant}!C2M2.Simulation.ReactionDiffusion@{C2M2.Simulation.ReactionDiffusion}}
+\doxysubsubsection{\texorpdfstring{reactionConstant}{reactionConstant}}
+{\footnotesize\ttfamily double C2\+M2.\+Simulation.\+Reaction\+Diffusion.\+reaction\+Constant\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+summary$>$ U$^\wedge$\{n+1\} = (reaction\+Constant)(U$^\wedge$$\ast$)(U$^\wedge$$\ast$ -\/ beta)(1 -\/ U$^\wedge$$\ast$) 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/jaros/\+Desktop/tempvr/virtual-\/reality/\+Assets/\+Scripts/\+C2\+M2/\mbox{\hyperlink{_reaction_diffusion_8cs}{Reaction\+Diffusion.\+cs}}\end{DoxyCompactItemize}

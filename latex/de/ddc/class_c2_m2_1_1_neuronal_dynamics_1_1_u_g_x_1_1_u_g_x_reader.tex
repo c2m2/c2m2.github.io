@@ -1,0 +1,175 @@
+\hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_u_g_x_reader}{}\doxysection{C2\+M2.\+Neuronal\+Dynamics.\+UGX.\+UGXReader Class Reference}
+\label{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_u_g_x_reader}\index{C2M2.NeuronalDynamics.UGX.UGXReader@{C2M2.NeuronalDynamics.UGX.UGXReader}}
+
+
+Simple \mbox{\hyperlink{namespace_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x}{UGX}} reader class  
+
+
+
+
+Collaboration diagram for C2\+M2.\+Neuronal\+Dynamics.\+UGX.\+UGXReader\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=258pt]{dd/db4/class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_u_g_x_reader__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_u_g_x_reader_a1a350097ad872af3ffc07a7e78387714}{Read\+UGX}} ()
+\begin{DoxyCompactList}\small\item\em Read an \mbox{\hyperlink{namespace_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x}{UGX}} and returns a UGXFile which encapsulates 1) The Unity Mesh and 2) The attachments \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_u_g_x_reader_a4fb4f6f1795e749059960e9545e99aa9}{Read\+UGX}} (ref \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_grid}{Grid}} grid)
+\begin{DoxyCompactList}\small\item\em Helper method to test a static grid \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_u_g_x_reader_a05d4466b185799e9ffd0b8fc0023622c}{Read\+UGX}} (in string filename, ref \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_grid}{Grid}} grid)
+\begin{DoxyCompactList}\small\item\em Read \mbox{\hyperlink{namespace_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x}{UGX}} from filename \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_u_g_x_reader_ac34b0647d2b3b275b7c93fe2d6b71f0c}{Read\+UGX}} (in Stream filename, ref \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_grid}{Grid}} grid)
+\begin{DoxyCompactList}\small\item\em Read a \mbox{\hyperlink{namespace_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x}{UGX}} file from a stream \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static Boolean \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_u_g_x_reader_afef68914d8c88ebffc0906fda93ce3e0}{Validate}} = false
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static readonly byte \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_u_g_x_reader_a8c6498dd18c7fb789c26c9746c478b66}{MAPPING\+\_\+\+FIELDS}} = 7
+\item 
+static readonly string \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_u_g_x_reader_a4ece8f6ae27b59295e8e22e97a7d4040}{XSD\+\_\+\+SCHEMA}} = @Application.\+streaming\+Assets\+Path + Path.\+Directory\+Separator\+Char + \char`\"{}ugx.\+xsd\char`\"{}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Simple \mbox{\hyperlink{namespace_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x}{UGX}} reader class 
+
+Methods provided below will allow to read in \mbox{\hyperlink{namespace_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x}{UGX}} grids into Unity Meshes with additional / arbitrary attachment data 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_u_g_x_reader_a1a350097ad872af3ffc07a7e78387714}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_u_g_x_reader_a1a350097ad872af3ffc07a7e78387714}} 
+\index{C2M2.NeuronalDynamics.UGX.UGXReader@{C2M2.NeuronalDynamics.UGX.UGXReader}!ReadUGX@{ReadUGX}}
+\index{ReadUGX@{ReadUGX}!C2M2.NeuronalDynamics.UGX.UGXReader@{C2M2.NeuronalDynamics.UGX.UGXReader}}
+\doxysubsubsection{\texorpdfstring{ReadUGX()}{ReadUGX()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily static void C2\+M2.\+Neuronal\+Dynamics.\+UGX.\+UGXReader.\+Read\+UGX (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Read an \mbox{\hyperlink{namespace_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x}{UGX}} and returns a UGXFile which encapsulates 1) The Unity Mesh and 2) The attachments 
+
+Read\+UGX\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_u_g_x_reader_ac34b0647d2b3b275b7c93fe2d6b71f0c}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_u_g_x_reader_ac34b0647d2b3b275b7c93fe2d6b71f0c}} 
+\index{C2M2.NeuronalDynamics.UGX.UGXReader@{C2M2.NeuronalDynamics.UGX.UGXReader}!ReadUGX@{ReadUGX}}
+\index{ReadUGX@{ReadUGX}!C2M2.NeuronalDynamics.UGX.UGXReader@{C2M2.NeuronalDynamics.UGX.UGXReader}}
+\doxysubsubsection{\texorpdfstring{ReadUGX()}{ReadUGX()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily static void C2\+M2.\+Neuronal\+Dynamics.\+UGX.\+UGXReader.\+Read\+UGX (\begin{DoxyParamCaption}\item[{in Stream}]{filename,  }\item[{ref \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_grid}{Grid}}}]{grid }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Read a \mbox{\hyperlink{namespace_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x}{UGX}} file from a stream 
+
+Read\+UGX
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & name of \mbox{\hyperlink{namespace_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x}{UGX}} file on disk \\
+\hline
+{\em grid} & grid instance \\
+\hline
+\end{DoxyParams}
+Check if diameter data was atttached
+
+Parse the \mbox{\hyperlink{namespace_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x}{UGX}} file and validate before
+
+VERTICES
+
+Note\+: Be careful\+: Right/left handed coordinate systems need to match (\mbox{\hyperlink{namespace_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x}{UGX}} grid vs Unity Mesh!)
+
+EDGES
+
+\mbox{\hyperlink{struct_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_edge}{Edge}}\+: from vertex -\/$>$ to vertex and edges are created from soma to dendrite tips always, DAG
+
+TRIANGLES
+
+TETRAHEDRONS
+
+QUADRILATERAL
+
+VERTEX\+\_\+\+ATTACHMENT
+
+DIAMETER
+
+NORMALS
+
+SYNAPSES
+
+MAPPING
+
+SUBSETS
+
+We ignore subsets with name def\+Sub and zero vertices. These should never be contained in a valid .ugx file.
+
+All other subsets are okay
+
+Grid\+Utils.\+Available\+Subsets(grid);\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_u_g_x_reader_a05d4466b185799e9ffd0b8fc0023622c}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_u_g_x_reader_a05d4466b185799e9ffd0b8fc0023622c}} 
+\index{C2M2.NeuronalDynamics.UGX.UGXReader@{C2M2.NeuronalDynamics.UGX.UGXReader}!ReadUGX@{ReadUGX}}
+\index{ReadUGX@{ReadUGX}!C2M2.NeuronalDynamics.UGX.UGXReader@{C2M2.NeuronalDynamics.UGX.UGXReader}}
+\doxysubsubsection{\texorpdfstring{ReadUGX()}{ReadUGX()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily static void C2\+M2.\+Neuronal\+Dynamics.\+UGX.\+UGXReader.\+Read\+UGX (\begin{DoxyParamCaption}\item[{in string}]{filename,  }\item[{ref \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_grid}{Grid}}}]{grid }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Read \mbox{\hyperlink{namespace_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x}{UGX}} from filename 
+
+Read\+UGX
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & Name of mesh file on disk \\
+\hline
+{\em grid} & \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_grid}{Grid}} to populate with \mbox{\hyperlink{namespace_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x}{UGX}} data \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_u_g_x_reader_a4fb4f6f1795e749059960e9545e99aa9}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_u_g_x_reader_a4fb4f6f1795e749059960e9545e99aa9}} 
+\index{C2M2.NeuronalDynamics.UGX.UGXReader@{C2M2.NeuronalDynamics.UGX.UGXReader}!ReadUGX@{ReadUGX}}
+\index{ReadUGX@{ReadUGX}!C2M2.NeuronalDynamics.UGX.UGXReader@{C2M2.NeuronalDynamics.UGX.UGXReader}}
+\doxysubsubsection{\texorpdfstring{ReadUGX()}{ReadUGX()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily static void C2\+M2.\+Neuronal\+Dynamics.\+UGX.\+UGXReader.\+Read\+UGX (\begin{DoxyParamCaption}\item[{ref \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_grid}{Grid}}}]{grid }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Helper method to test a static grid 
+
+Read\+UGX
+
+
+\begin{DoxyParams}{Parameters}
+{\em grid} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_u_g_x_reader_a8c6498dd18c7fb789c26c9746c478b66}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_u_g_x_reader_a8c6498dd18c7fb789c26c9746c478b66}} 
+\index{C2M2.NeuronalDynamics.UGX.UGXReader@{C2M2.NeuronalDynamics.UGX.UGXReader}!MAPPING\_FIELDS@{MAPPING\_FIELDS}}
+\index{MAPPING\_FIELDS@{MAPPING\_FIELDS}!C2M2.NeuronalDynamics.UGX.UGXReader@{C2M2.NeuronalDynamics.UGX.UGXReader}}
+\doxysubsubsection{\texorpdfstring{MAPPING\_FIELDS}{MAPPING\_FIELDS}}
+{\footnotesize\ttfamily readonly byte C2\+M2.\+Neuronal\+Dynamics.\+UGX.\+UGXReader.\+MAPPING\+\_\+\+FIELDS = 7\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_u_g_x_reader_afef68914d8c88ebffc0906fda93ce3e0}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_u_g_x_reader_afef68914d8c88ebffc0906fda93ce3e0}} 
+\index{C2M2.NeuronalDynamics.UGX.UGXReader@{C2M2.NeuronalDynamics.UGX.UGXReader}!Validate@{Validate}}
+\index{Validate@{Validate}!C2M2.NeuronalDynamics.UGX.UGXReader@{C2M2.NeuronalDynamics.UGX.UGXReader}}
+\doxysubsubsection{\texorpdfstring{Validate}{Validate}}
+{\footnotesize\ttfamily Boolean C2\+M2.\+Neuronal\+Dynamics.\+UGX.\+UGXReader.\+Validate = false\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_u_g_x_reader_a4ece8f6ae27b59295e8e22e97a7d4040}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_u_g_x_reader_a4ece8f6ae27b59295e8e22e97a7d4040}} 
+\index{C2M2.NeuronalDynamics.UGX.UGXReader@{C2M2.NeuronalDynamics.UGX.UGXReader}!XSD\_SCHEMA@{XSD\_SCHEMA}}
+\index{XSD\_SCHEMA@{XSD\_SCHEMA}!C2M2.NeuronalDynamics.UGX.UGXReader@{C2M2.NeuronalDynamics.UGX.UGXReader}}
+\doxysubsubsection{\texorpdfstring{XSD\_SCHEMA}{XSD\_SCHEMA}}
+{\footnotesize\ttfamily readonly string C2\+M2.\+Neuronal\+Dynamics.\+UGX.\+UGXReader.\+XSD\+\_\+\+SCHEMA = @Application.\+streaming\+Assets\+Path + Path.\+Directory\+Separator\+Char + \char`\"{}ugx.\+xsd\char`\"{}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/jaros/\+Desktop/tempvr/virtual-\/reality/\+Assets/\+Scripts/\+C2\+M2/\+Neuronal\+Dynamics/\+Visualization/\+Mapping/\mbox{\hyperlink{_u_g_x_reader_8cs}{UGXReader.\+cs}}\end{DoxyCompactItemize}

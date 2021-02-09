@@ -1,0 +1,198 @@
+\hypertarget{class_c2_m2_1_1_interaction_1_1_scale_limiter}{}\doxysection{C2\+M2.\+Interaction.\+Scale\+Limiter Class Reference}
+\label{class_c2_m2_1_1_interaction_1_1_scale_limiter}\index{C2M2.Interaction.ScaleLimiter@{C2M2.Interaction.ScaleLimiter}}
+
+
+Inheritance diagram for C2\+M2.\+Interaction.\+Scale\+Limiter\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=271pt]{d1/df2/class_c2_m2_1_1_interaction_1_1_scale_limiter__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for C2\+M2.\+Interaction.\+Scale\+Limiter\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=271pt]{d9/d90/class_c2_m2_1_1_interaction_1_1_scale_limiter__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Mesh\+Filter \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_scale_limiter_a75df10041bec63b09dd31f52de671401}{mesh\+Filter}} = null
+\item 
+Vector3 \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_scale_limiter_aae0382b806048531262358ed58ae1428}{max\+Scale}} = Vector3.\+zero
+\item 
+Vector3 \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_scale_limiter_aca3261ff852fd35843c8a405cc3da964}{min\+Scale}} = Vector3.\+zero
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+float \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_scale_limiter_ad39d93ef3d66a7548e3161ce3136e474}{SizeX}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+float \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_scale_limiter_a5e957e32c7bf0397d934630f61329642}{SizeY}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+float \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_scale_limiter_a117ca9073fa5e1c622a344850cd33b2c}{SizeZ}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+float \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_scale_limiter_aa6c561884e6d06a26bc358fd0d577d7d}{MaxX}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+float \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_scale_limiter_a31396a3a2fba2c637f3be39a4b0cd40c}{MaxY}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+float \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_scale_limiter_a8efc37f3fe7e237d9df4b93fc722a37b}{MaxZ}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+float \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_scale_limiter_ad4a4e62ca9a6277a3987f6251769b9fd}{MinX}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+float \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_scale_limiter_acad50f45b135a3166dc52569594710ae}{MinY}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+float \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_scale_limiter_aba8370322407dce0fef267d69afb976b}{MinZ}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+bool \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_scale_limiter_a41fdf3fb51c0423c1c85eb07437c0b9b}{too\+Small}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+bool \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_scale_limiter_a33c596e5a06ea25011d44924edcb7def}{too\+Big}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_scale_limiter_ad61b2d2c782d4217028616d369250121}{Awake}} ()
+\item 
+void \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_scale_limiter_a79676464a4e32ad02da8faa883a25533}{Update}} ()
+\item 
+void \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_scale_limiter_a8b576bc76bae452c31d1d146db7d007a}{Check\+Scale}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Vector3 \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_scale_limiter_a4d6a76ef2120d07bc95d85d4d7cb7ea8}{prev\+Scale}} = Vector3.\+zero
+\item 
+bool \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_scale_limiter_af9d519db9d355bfb91f002330e60f9f5}{prev\+Scale\+Found}} = false
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_scale_limiter_ad61b2d2c782d4217028616d369250121}\label{class_c2_m2_1_1_interaction_1_1_scale_limiter_ad61b2d2c782d4217028616d369250121}} 
+\index{C2M2.Interaction.ScaleLimiter@{C2M2.Interaction.ScaleLimiter}!Awake@{Awake}}
+\index{Awake@{Awake}!C2M2.Interaction.ScaleLimiter@{C2M2.Interaction.ScaleLimiter}}
+\doxysubsubsection{\texorpdfstring{Awake()}{Awake()}}
+{\footnotesize\ttfamily void C2\+M2.\+Interaction.\+Scale\+Limiter.\+Awake (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_scale_limiter_a8b576bc76bae452c31d1d146db7d007a}\label{class_c2_m2_1_1_interaction_1_1_scale_limiter_a8b576bc76bae452c31d1d146db7d007a}} 
+\index{C2M2.Interaction.ScaleLimiter@{C2M2.Interaction.ScaleLimiter}!CheckScale@{CheckScale}}
+\index{CheckScale@{CheckScale}!C2M2.Interaction.ScaleLimiter@{C2M2.Interaction.ScaleLimiter}}
+\doxysubsubsection{\texorpdfstring{CheckScale()}{CheckScale()}}
+{\footnotesize\ttfamily void C2\+M2.\+Interaction.\+Scale\+Limiter.\+Check\+Scale (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_scale_limiter_a79676464a4e32ad02da8faa883a25533}\label{class_c2_m2_1_1_interaction_1_1_scale_limiter_a79676464a4e32ad02da8faa883a25533}} 
+\index{C2M2.Interaction.ScaleLimiter@{C2M2.Interaction.ScaleLimiter}!Update@{Update}}
+\index{Update@{Update}!C2M2.Interaction.ScaleLimiter@{C2M2.Interaction.ScaleLimiter}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void C2\+M2.\+Interaction.\+Scale\+Limiter.\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_scale_limiter_aae0382b806048531262358ed58ae1428}\label{class_c2_m2_1_1_interaction_1_1_scale_limiter_aae0382b806048531262358ed58ae1428}} 
+\index{C2M2.Interaction.ScaleLimiter@{C2M2.Interaction.ScaleLimiter}!maxScale@{maxScale}}
+\index{maxScale@{maxScale}!C2M2.Interaction.ScaleLimiter@{C2M2.Interaction.ScaleLimiter}}
+\doxysubsubsection{\texorpdfstring{maxScale}{maxScale}}
+{\footnotesize\ttfamily Vector3 C2\+M2.\+Interaction.\+Scale\+Limiter.\+max\+Scale = Vector3.\+zero}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_scale_limiter_a75df10041bec63b09dd31f52de671401}\label{class_c2_m2_1_1_interaction_1_1_scale_limiter_a75df10041bec63b09dd31f52de671401}} 
+\index{C2M2.Interaction.ScaleLimiter@{C2M2.Interaction.ScaleLimiter}!meshFilter@{meshFilter}}
+\index{meshFilter@{meshFilter}!C2M2.Interaction.ScaleLimiter@{C2M2.Interaction.ScaleLimiter}}
+\doxysubsubsection{\texorpdfstring{meshFilter}{meshFilter}}
+{\footnotesize\ttfamily Mesh\+Filter C2\+M2.\+Interaction.\+Scale\+Limiter.\+mesh\+Filter = null}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_scale_limiter_aca3261ff852fd35843c8a405cc3da964}\label{class_c2_m2_1_1_interaction_1_1_scale_limiter_aca3261ff852fd35843c8a405cc3da964}} 
+\index{C2M2.Interaction.ScaleLimiter@{C2M2.Interaction.ScaleLimiter}!minScale@{minScale}}
+\index{minScale@{minScale}!C2M2.Interaction.ScaleLimiter@{C2M2.Interaction.ScaleLimiter}}
+\doxysubsubsection{\texorpdfstring{minScale}{minScale}}
+{\footnotesize\ttfamily Vector3 C2\+M2.\+Interaction.\+Scale\+Limiter.\+min\+Scale = Vector3.\+zero}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_scale_limiter_a4d6a76ef2120d07bc95d85d4d7cb7ea8}\label{class_c2_m2_1_1_interaction_1_1_scale_limiter_a4d6a76ef2120d07bc95d85d4d7cb7ea8}} 
+\index{C2M2.Interaction.ScaleLimiter@{C2M2.Interaction.ScaleLimiter}!prevScale@{prevScale}}
+\index{prevScale@{prevScale}!C2M2.Interaction.ScaleLimiter@{C2M2.Interaction.ScaleLimiter}}
+\doxysubsubsection{\texorpdfstring{prevScale}{prevScale}}
+{\footnotesize\ttfamily Vector3 C2\+M2.\+Interaction.\+Scale\+Limiter.\+prev\+Scale = Vector3.\+zero\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_scale_limiter_af9d519db9d355bfb91f002330e60f9f5}\label{class_c2_m2_1_1_interaction_1_1_scale_limiter_af9d519db9d355bfb91f002330e60f9f5}} 
+\index{C2M2.Interaction.ScaleLimiter@{C2M2.Interaction.ScaleLimiter}!prevScaleFound@{prevScaleFound}}
+\index{prevScaleFound@{prevScaleFound}!C2M2.Interaction.ScaleLimiter@{C2M2.Interaction.ScaleLimiter}}
+\doxysubsubsection{\texorpdfstring{prevScaleFound}{prevScaleFound}}
+{\footnotesize\ttfamily bool C2\+M2.\+Interaction.\+Scale\+Limiter.\+prev\+Scale\+Found = false\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_scale_limiter_aa6c561884e6d06a26bc358fd0d577d7d}\label{class_c2_m2_1_1_interaction_1_1_scale_limiter_aa6c561884e6d06a26bc358fd0d577d7d}} 
+\index{C2M2.Interaction.ScaleLimiter@{C2M2.Interaction.ScaleLimiter}!MaxX@{MaxX}}
+\index{MaxX@{MaxX}!C2M2.Interaction.ScaleLimiter@{C2M2.Interaction.ScaleLimiter}}
+\doxysubsubsection{\texorpdfstring{MaxX}{MaxX}}
+{\footnotesize\ttfamily float C2\+M2.\+Interaction.\+Scale\+Limiter.\+MaxX\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_scale_limiter_a31396a3a2fba2c637f3be39a4b0cd40c}\label{class_c2_m2_1_1_interaction_1_1_scale_limiter_a31396a3a2fba2c637f3be39a4b0cd40c}} 
+\index{C2M2.Interaction.ScaleLimiter@{C2M2.Interaction.ScaleLimiter}!MaxY@{MaxY}}
+\index{MaxY@{MaxY}!C2M2.Interaction.ScaleLimiter@{C2M2.Interaction.ScaleLimiter}}
+\doxysubsubsection{\texorpdfstring{MaxY}{MaxY}}
+{\footnotesize\ttfamily float C2\+M2.\+Interaction.\+Scale\+Limiter.\+MaxY\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_scale_limiter_a8efc37f3fe7e237d9df4b93fc722a37b}\label{class_c2_m2_1_1_interaction_1_1_scale_limiter_a8efc37f3fe7e237d9df4b93fc722a37b}} 
+\index{C2M2.Interaction.ScaleLimiter@{C2M2.Interaction.ScaleLimiter}!MaxZ@{MaxZ}}
+\index{MaxZ@{MaxZ}!C2M2.Interaction.ScaleLimiter@{C2M2.Interaction.ScaleLimiter}}
+\doxysubsubsection{\texorpdfstring{MaxZ}{MaxZ}}
+{\footnotesize\ttfamily float C2\+M2.\+Interaction.\+Scale\+Limiter.\+MaxZ\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_scale_limiter_ad4a4e62ca9a6277a3987f6251769b9fd}\label{class_c2_m2_1_1_interaction_1_1_scale_limiter_ad4a4e62ca9a6277a3987f6251769b9fd}} 
+\index{C2M2.Interaction.ScaleLimiter@{C2M2.Interaction.ScaleLimiter}!MinX@{MinX}}
+\index{MinX@{MinX}!C2M2.Interaction.ScaleLimiter@{C2M2.Interaction.ScaleLimiter}}
+\doxysubsubsection{\texorpdfstring{MinX}{MinX}}
+{\footnotesize\ttfamily float C2\+M2.\+Interaction.\+Scale\+Limiter.\+MinX\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_scale_limiter_acad50f45b135a3166dc52569594710ae}\label{class_c2_m2_1_1_interaction_1_1_scale_limiter_acad50f45b135a3166dc52569594710ae}} 
+\index{C2M2.Interaction.ScaleLimiter@{C2M2.Interaction.ScaleLimiter}!MinY@{MinY}}
+\index{MinY@{MinY}!C2M2.Interaction.ScaleLimiter@{C2M2.Interaction.ScaleLimiter}}
+\doxysubsubsection{\texorpdfstring{MinY}{MinY}}
+{\footnotesize\ttfamily float C2\+M2.\+Interaction.\+Scale\+Limiter.\+MinY\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_scale_limiter_aba8370322407dce0fef267d69afb976b}\label{class_c2_m2_1_1_interaction_1_1_scale_limiter_aba8370322407dce0fef267d69afb976b}} 
+\index{C2M2.Interaction.ScaleLimiter@{C2M2.Interaction.ScaleLimiter}!MinZ@{MinZ}}
+\index{MinZ@{MinZ}!C2M2.Interaction.ScaleLimiter@{C2M2.Interaction.ScaleLimiter}}
+\doxysubsubsection{\texorpdfstring{MinZ}{MinZ}}
+{\footnotesize\ttfamily float C2\+M2.\+Interaction.\+Scale\+Limiter.\+MinZ\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_scale_limiter_ad39d93ef3d66a7548e3161ce3136e474}\label{class_c2_m2_1_1_interaction_1_1_scale_limiter_ad39d93ef3d66a7548e3161ce3136e474}} 
+\index{C2M2.Interaction.ScaleLimiter@{C2M2.Interaction.ScaleLimiter}!SizeX@{SizeX}}
+\index{SizeX@{SizeX}!C2M2.Interaction.ScaleLimiter@{C2M2.Interaction.ScaleLimiter}}
+\doxysubsubsection{\texorpdfstring{SizeX}{SizeX}}
+{\footnotesize\ttfamily float C2\+M2.\+Interaction.\+Scale\+Limiter.\+SizeX\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_scale_limiter_a5e957e32c7bf0397d934630f61329642}\label{class_c2_m2_1_1_interaction_1_1_scale_limiter_a5e957e32c7bf0397d934630f61329642}} 
+\index{C2M2.Interaction.ScaleLimiter@{C2M2.Interaction.ScaleLimiter}!SizeY@{SizeY}}
+\index{SizeY@{SizeY}!C2M2.Interaction.ScaleLimiter@{C2M2.Interaction.ScaleLimiter}}
+\doxysubsubsection{\texorpdfstring{SizeY}{SizeY}}
+{\footnotesize\ttfamily float C2\+M2.\+Interaction.\+Scale\+Limiter.\+SizeY\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_scale_limiter_a117ca9073fa5e1c622a344850cd33b2c}\label{class_c2_m2_1_1_interaction_1_1_scale_limiter_a117ca9073fa5e1c622a344850cd33b2c}} 
+\index{C2M2.Interaction.ScaleLimiter@{C2M2.Interaction.ScaleLimiter}!SizeZ@{SizeZ}}
+\index{SizeZ@{SizeZ}!C2M2.Interaction.ScaleLimiter@{C2M2.Interaction.ScaleLimiter}}
+\doxysubsubsection{\texorpdfstring{SizeZ}{SizeZ}}
+{\footnotesize\ttfamily float C2\+M2.\+Interaction.\+Scale\+Limiter.\+SizeZ\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_scale_limiter_a33c596e5a06ea25011d44924edcb7def}\label{class_c2_m2_1_1_interaction_1_1_scale_limiter_a33c596e5a06ea25011d44924edcb7def}} 
+\index{C2M2.Interaction.ScaleLimiter@{C2M2.Interaction.ScaleLimiter}!tooBig@{tooBig}}
+\index{tooBig@{tooBig}!C2M2.Interaction.ScaleLimiter@{C2M2.Interaction.ScaleLimiter}}
+\doxysubsubsection{\texorpdfstring{tooBig}{tooBig}}
+{\footnotesize\ttfamily bool C2\+M2.\+Interaction.\+Scale\+Limiter.\+too\+Big\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_scale_limiter_a41fdf3fb51c0423c1c85eb07437c0b9b}\label{class_c2_m2_1_1_interaction_1_1_scale_limiter_a41fdf3fb51c0423c1c85eb07437c0b9b}} 
+\index{C2M2.Interaction.ScaleLimiter@{C2M2.Interaction.ScaleLimiter}!tooSmall@{tooSmall}}
+\index{tooSmall@{tooSmall}!C2M2.Interaction.ScaleLimiter@{C2M2.Interaction.ScaleLimiter}}
+\doxysubsubsection{\texorpdfstring{tooSmall}{tooSmall}}
+{\footnotesize\ttfamily bool C2\+M2.\+Interaction.\+Scale\+Limiter.\+too\+Small\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/jaros/\+Desktop/tempvr/virtual-\/reality/\+Assets/\+Scripts/\+C2\+M2/\+Interaction/\mbox{\hyperlink{_scale_limiter_8cs}{Scale\+Limiter.\+cs}}\end{DoxyCompactItemize}

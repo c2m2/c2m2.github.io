@@ -31,6 +31,8 @@ var class_c2_m2_1_1_game_manager =
     [ "ovrRightHandAnchor", "d1/d4e/class_c2_m2_1_1_game_manager.html#a780a840ff84a80e7abee6245d9380ae5", null ],
     [ "raycastKeyboardPrefab", "d1/d4e/class_c2_m2_1_1_game_manager.html#aca9413621ef0c25dfe171cca0294790e", null ],
     [ "rightRaycaster", "d1/d4e/class_c2_m2_1_1_game_manager.html#ac8d95c0fff151d5aed7d35c5951e6052", null ],
+    [ "simulation", "d1/d4e/class_c2_m2_1_1_game_manager.html#a6c63f077e6177fe24698533c901db237", null ],
+    [ "timerLabels", "d1/d4e/class_c2_m2_1_1_game_manager.html#aae3ad84b0e6c14ce4b4093b594df8b05", null ],
     [ "vertexColorationMaterial", "d1/d4e/class_c2_m2_1_1_game_manager.html#a25a492d0d0ec9aad29ff235e9f273eed", null ],
     [ "vrDeviceManager", "d1/d4e/class_c2_m2_1_1_game_manager.html#a88c3ec571db694171f99b77067486beb", null ],
     [ "wallColor", "d1/d4e/class_c2_m2_1_1_game_manager.html#a1e7acedc5199360aef956aa0a16c4ce7", null ],

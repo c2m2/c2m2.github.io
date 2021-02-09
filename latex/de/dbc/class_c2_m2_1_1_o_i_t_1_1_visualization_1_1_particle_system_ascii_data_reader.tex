@@ -1,0 +1,173 @@
+\hypertarget{class_c2_m2_1_1_o_i_t_1_1_visualization_1_1_particle_system_ascii_data_reader}{}\doxysection{C2\+M2.\+OIT.\+Visualization.\+Particle\+System\+Ascii\+Data\+Reader Class Reference}
+\label{class_c2_m2_1_1_o_i_t_1_1_visualization_1_1_particle_system_ascii_data_reader}\index{C2M2.OIT.Visualization.ParticleSystemAsciiDataReader@{C2M2.OIT.Visualization.ParticleSystemAsciiDataReader}}
+
+
+Read and store ascii data representing particle data  
+
+
+
+
+Inheritance diagram for C2\+M2.\+OIT.\+Visualization.\+Particle\+System\+Ascii\+Data\+Reader\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=283pt]{dc/d84/class_c2_m2_1_1_o_i_t_1_1_visualization_1_1_particle_system_ascii_data_reader__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for C2\+M2.\+OIT.\+Visualization.\+Particle\+System\+Ascii\+Data\+Reader\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=283pt]{d9/d37/class_c2_m2_1_1_o_i_t_1_1_visualization_1_1_particle_system_ascii_data_reader__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_c2_m2_1_1_o_i_t_1_1_visualization_1_1_particle_system_ascii_data_reader_a426b715557e95f6f74ee7afa88d951f6}{Initialize\+Particle\+Data}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Text\+Asset\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_c2_m2_1_1_o_i_t_1_1_visualization_1_1_particle_system_ascii_data_reader_ad55ab1509ac1cc2a9df3682f56213c43}{assets}}
+\item 
+Game\+Object \mbox{\hyperlink{class_c2_m2_1_1_o_i_t_1_1_visualization_1_1_particle_system_ascii_data_reader_aae03d3b049abca400a8e392c3456f03c}{Room\+Object}}
+\item 
+int \mbox{\hyperlink{class_c2_m2_1_1_o_i_t_1_1_visualization_1_1_particle_system_ascii_data_reader_ac914ebd9b3c3b120fc03e4a60c297e37}{reduce\+By}} = 2
+\item 
+List$<$ \mbox{\hyperlink{class_c2_m2_1_1_o_i_t_1_1_data_set}{Data\+Set}} $>$ \mbox{\hyperlink{class_c2_m2_1_1_o_i_t_1_1_visualization_1_1_particle_system_ascii_data_reader_ad21521c3f43b2a2985d1106fa33fa51d}{data\+Set\+List}} = new List$<$\mbox{\hyperlink{class_c2_m2_1_1_o_i_t_1_1_data_set}{Data\+Set}}$>$()
+\item 
+float \mbox{\hyperlink{class_c2_m2_1_1_o_i_t_1_1_visualization_1_1_particle_system_ascii_data_reader_a32f7552eff7cd8b427753745346eb43e}{color\+Float\+Max}} = 0f
+\item 
+float \mbox{\hyperlink{class_c2_m2_1_1_o_i_t_1_1_visualization_1_1_particle_system_ascii_data_reader_a837e2df399a7b40b9591b7fbd2c988fa}{color\+Float\+Min}} = 0f
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_c2_m2_1_1_o_i_t_1_1_visualization_1_1_particle_system_ascii_data_reader_af278f133444d39c4dbc1fa1e6314a5d5}{Initialize\+Information\+Lists}} (\mbox{\hyperlink{class_c2_m2_1_1_o_i_t_1_1_data_set}{Data\+Set}} data\+Set)
+\item 
+void \mbox{\hyperlink{class_c2_m2_1_1_o_i_t_1_1_visualization_1_1_particle_system_ascii_data_reader_ac476ace05de14595944dd6e6ff9503f3}{Create\+String\+Reader}} (int asset\+Index)
+\item 
+void \mbox{\hyperlink{class_c2_m2_1_1_o_i_t_1_1_visualization_1_1_particle_system_ascii_data_reader_ab9e7d88096ed4808e67b848944ff4482}{Close\+String\+Reader}} (String\+Reader \mbox{\hyperlink{class_c2_m2_1_1_o_i_t_1_1_visualization_1_1_particle_system_ascii_data_reader_a0c2fd76b98e9f246d6e8eed986e178b2}{sR}})
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{class_c2_m2_1_1_o_i_t_1_1_visualization_1_1_particle_system_ascii_data_reader_a181b5bd6836d98c262aacb7743d7f2a0}{asset\+String}} = string.\+Empty
+\item 
+string \mbox{\hyperlink{class_c2_m2_1_1_o_i_t_1_1_visualization_1_1_particle_system_ascii_data_reader_abd8ea56342be7d48ded1cd12ae292eb7}{current\+Line}} = string.\+Empty
+\item 
+String\+Reader \mbox{\hyperlink{class_c2_m2_1_1_o_i_t_1_1_visualization_1_1_particle_system_ascii_data_reader_a0c2fd76b98e9f246d6e8eed986e178b2}{sR}}
+\item 
+string\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_c2_m2_1_1_o_i_t_1_1_visualization_1_1_particle_system_ascii_data_reader_adb3ae2869077827d7598cee4d8028f8a}{current\+Line\+Split}} = new string\mbox{[}4\mbox{]}
+\item 
+List$<$ \mbox{\hyperlink{class_c2_m2_1_1_o_i_t_1_1_data_set}{Data\+Set}} $>$ \mbox{\hyperlink{class_c2_m2_1_1_o_i_t_1_1_visualization_1_1_particle_system_ascii_data_reader_a2f805c36522bc364f6ebdbb48bf1a43e}{backupdata\+Set\+List}} = new List$<$\mbox{\hyperlink{class_c2_m2_1_1_o_i_t_1_1_data_set}{Data\+Set}}$>$()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Read and store ascii data representing particle data 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_c2_m2_1_1_o_i_t_1_1_visualization_1_1_particle_system_ascii_data_reader_ab9e7d88096ed4808e67b848944ff4482}\label{class_c2_m2_1_1_o_i_t_1_1_visualization_1_1_particle_system_ascii_data_reader_ab9e7d88096ed4808e67b848944ff4482}} 
+\index{C2M2.OIT.Visualization.ParticleSystemAsciiDataReader@{C2M2.OIT.Visualization.ParticleSystemAsciiDataReader}!CloseStringReader@{CloseStringReader}}
+\index{CloseStringReader@{CloseStringReader}!C2M2.OIT.Visualization.ParticleSystemAsciiDataReader@{C2M2.OIT.Visualization.ParticleSystemAsciiDataReader}}
+\doxysubsubsection{\texorpdfstring{CloseStringReader()}{CloseStringReader()}}
+{\footnotesize\ttfamily void C2\+M2.\+OIT.\+Visualization.\+Particle\+System\+Ascii\+Data\+Reader.\+Close\+String\+Reader (\begin{DoxyParamCaption}\item[{String\+Reader}]{sR }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_o_i_t_1_1_visualization_1_1_particle_system_ascii_data_reader_ac476ace05de14595944dd6e6ff9503f3}\label{class_c2_m2_1_1_o_i_t_1_1_visualization_1_1_particle_system_ascii_data_reader_ac476ace05de14595944dd6e6ff9503f3}} 
+\index{C2M2.OIT.Visualization.ParticleSystemAsciiDataReader@{C2M2.OIT.Visualization.ParticleSystemAsciiDataReader}!CreateStringReader@{CreateStringReader}}
+\index{CreateStringReader@{CreateStringReader}!C2M2.OIT.Visualization.ParticleSystemAsciiDataReader@{C2M2.OIT.Visualization.ParticleSystemAsciiDataReader}}
+\doxysubsubsection{\texorpdfstring{CreateStringReader()}{CreateStringReader()}}
+{\footnotesize\ttfamily void C2\+M2.\+OIT.\+Visualization.\+Particle\+System\+Ascii\+Data\+Reader.\+Create\+String\+Reader (\begin{DoxyParamCaption}\item[{int}]{asset\+Index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_o_i_t_1_1_visualization_1_1_particle_system_ascii_data_reader_af278f133444d39c4dbc1fa1e6314a5d5}\label{class_c2_m2_1_1_o_i_t_1_1_visualization_1_1_particle_system_ascii_data_reader_af278f133444d39c4dbc1fa1e6314a5d5}} 
+\index{C2M2.OIT.Visualization.ParticleSystemAsciiDataReader@{C2M2.OIT.Visualization.ParticleSystemAsciiDataReader}!InitializeInformationLists@{InitializeInformationLists}}
+\index{InitializeInformationLists@{InitializeInformationLists}!C2M2.OIT.Visualization.ParticleSystemAsciiDataReader@{C2M2.OIT.Visualization.ParticleSystemAsciiDataReader}}
+\doxysubsubsection{\texorpdfstring{InitializeInformationLists()}{InitializeInformationLists()}}
+{\footnotesize\ttfamily void C2\+M2.\+OIT.\+Visualization.\+Particle\+System\+Ascii\+Data\+Reader.\+Initialize\+Information\+Lists (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c2_m2_1_1_o_i_t_1_1_data_set}{Data\+Set}}}]{data\+Set }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_o_i_t_1_1_visualization_1_1_particle_system_ascii_data_reader_a426b715557e95f6f74ee7afa88d951f6}\label{class_c2_m2_1_1_o_i_t_1_1_visualization_1_1_particle_system_ascii_data_reader_a426b715557e95f6f74ee7afa88d951f6}} 
+\index{C2M2.OIT.Visualization.ParticleSystemAsciiDataReader@{C2M2.OIT.Visualization.ParticleSystemAsciiDataReader}!InitializeParticleData@{InitializeParticleData}}
+\index{InitializeParticleData@{InitializeParticleData}!C2M2.OIT.Visualization.ParticleSystemAsciiDataReader@{C2M2.OIT.Visualization.ParticleSystemAsciiDataReader}}
+\doxysubsubsection{\texorpdfstring{InitializeParticleData()}{InitializeParticleData()}}
+{\footnotesize\ttfamily void C2\+M2.\+OIT.\+Visualization.\+Particle\+System\+Ascii\+Data\+Reader.\+Initialize\+Particle\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_c2_m2_1_1_o_i_t_1_1_visualization_1_1_particle_system_ascii_data_reader_ad55ab1509ac1cc2a9df3682f56213c43}\label{class_c2_m2_1_1_o_i_t_1_1_visualization_1_1_particle_system_ascii_data_reader_ad55ab1509ac1cc2a9df3682f56213c43}} 
+\index{C2M2.OIT.Visualization.ParticleSystemAsciiDataReader@{C2M2.OIT.Visualization.ParticleSystemAsciiDataReader}!assets@{assets}}
+\index{assets@{assets}!C2M2.OIT.Visualization.ParticleSystemAsciiDataReader@{C2M2.OIT.Visualization.ParticleSystemAsciiDataReader}}
+\doxysubsubsection{\texorpdfstring{assets}{assets}}
+{\footnotesize\ttfamily Text\+Asset \mbox{[}$\,$\mbox{]} C2\+M2.\+OIT.\+Visualization.\+Particle\+System\+Ascii\+Data\+Reader.\+assets}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_o_i_t_1_1_visualization_1_1_particle_system_ascii_data_reader_a181b5bd6836d98c262aacb7743d7f2a0}\label{class_c2_m2_1_1_o_i_t_1_1_visualization_1_1_particle_system_ascii_data_reader_a181b5bd6836d98c262aacb7743d7f2a0}} 
+\index{C2M2.OIT.Visualization.ParticleSystemAsciiDataReader@{C2M2.OIT.Visualization.ParticleSystemAsciiDataReader}!assetString@{assetString}}
+\index{assetString@{assetString}!C2M2.OIT.Visualization.ParticleSystemAsciiDataReader@{C2M2.OIT.Visualization.ParticleSystemAsciiDataReader}}
+\doxysubsubsection{\texorpdfstring{assetString}{assetString}}
+{\footnotesize\ttfamily string C2\+M2.\+OIT.\+Visualization.\+Particle\+System\+Ascii\+Data\+Reader.\+asset\+String = string.\+Empty\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_o_i_t_1_1_visualization_1_1_particle_system_ascii_data_reader_a2f805c36522bc364f6ebdbb48bf1a43e}\label{class_c2_m2_1_1_o_i_t_1_1_visualization_1_1_particle_system_ascii_data_reader_a2f805c36522bc364f6ebdbb48bf1a43e}} 
+\index{C2M2.OIT.Visualization.ParticleSystemAsciiDataReader@{C2M2.OIT.Visualization.ParticleSystemAsciiDataReader}!backupdataSetList@{backupdataSetList}}
+\index{backupdataSetList@{backupdataSetList}!C2M2.OIT.Visualization.ParticleSystemAsciiDataReader@{C2M2.OIT.Visualization.ParticleSystemAsciiDataReader}}
+\doxysubsubsection{\texorpdfstring{backupdataSetList}{backupdataSetList}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{class_c2_m2_1_1_o_i_t_1_1_data_set}{Data\+Set}}$>$ C2\+M2.\+OIT.\+Visualization.\+Particle\+System\+Ascii\+Data\+Reader.\+backupdata\+Set\+List = new List$<$\mbox{\hyperlink{class_c2_m2_1_1_o_i_t_1_1_data_set}{Data\+Set}}$>$()\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_o_i_t_1_1_visualization_1_1_particle_system_ascii_data_reader_a32f7552eff7cd8b427753745346eb43e}\label{class_c2_m2_1_1_o_i_t_1_1_visualization_1_1_particle_system_ascii_data_reader_a32f7552eff7cd8b427753745346eb43e}} 
+\index{C2M2.OIT.Visualization.ParticleSystemAsciiDataReader@{C2M2.OIT.Visualization.ParticleSystemAsciiDataReader}!colorFloatMax@{colorFloatMax}}
+\index{colorFloatMax@{colorFloatMax}!C2M2.OIT.Visualization.ParticleSystemAsciiDataReader@{C2M2.OIT.Visualization.ParticleSystemAsciiDataReader}}
+\doxysubsubsection{\texorpdfstring{colorFloatMax}{colorFloatMax}}
+{\footnotesize\ttfamily float C2\+M2.\+OIT.\+Visualization.\+Particle\+System\+Ascii\+Data\+Reader.\+color\+Float\+Max = 0f}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_o_i_t_1_1_visualization_1_1_particle_system_ascii_data_reader_a837e2df399a7b40b9591b7fbd2c988fa}\label{class_c2_m2_1_1_o_i_t_1_1_visualization_1_1_particle_system_ascii_data_reader_a837e2df399a7b40b9591b7fbd2c988fa}} 
+\index{C2M2.OIT.Visualization.ParticleSystemAsciiDataReader@{C2M2.OIT.Visualization.ParticleSystemAsciiDataReader}!colorFloatMin@{colorFloatMin}}
+\index{colorFloatMin@{colorFloatMin}!C2M2.OIT.Visualization.ParticleSystemAsciiDataReader@{C2M2.OIT.Visualization.ParticleSystemAsciiDataReader}}
+\doxysubsubsection{\texorpdfstring{colorFloatMin}{colorFloatMin}}
+{\footnotesize\ttfamily float C2\+M2.\+OIT.\+Visualization.\+Particle\+System\+Ascii\+Data\+Reader.\+color\+Float\+Min = 0f}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_o_i_t_1_1_visualization_1_1_particle_system_ascii_data_reader_abd8ea56342be7d48ded1cd12ae292eb7}\label{class_c2_m2_1_1_o_i_t_1_1_visualization_1_1_particle_system_ascii_data_reader_abd8ea56342be7d48ded1cd12ae292eb7}} 
+\index{C2M2.OIT.Visualization.ParticleSystemAsciiDataReader@{C2M2.OIT.Visualization.ParticleSystemAsciiDataReader}!currentLine@{currentLine}}
+\index{currentLine@{currentLine}!C2M2.OIT.Visualization.ParticleSystemAsciiDataReader@{C2M2.OIT.Visualization.ParticleSystemAsciiDataReader}}
+\doxysubsubsection{\texorpdfstring{currentLine}{currentLine}}
+{\footnotesize\ttfamily string C2\+M2.\+OIT.\+Visualization.\+Particle\+System\+Ascii\+Data\+Reader.\+current\+Line = string.\+Empty\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_o_i_t_1_1_visualization_1_1_particle_system_ascii_data_reader_adb3ae2869077827d7598cee4d8028f8a}\label{class_c2_m2_1_1_o_i_t_1_1_visualization_1_1_particle_system_ascii_data_reader_adb3ae2869077827d7598cee4d8028f8a}} 
+\index{C2M2.OIT.Visualization.ParticleSystemAsciiDataReader@{C2M2.OIT.Visualization.ParticleSystemAsciiDataReader}!currentLineSplit@{currentLineSplit}}
+\index{currentLineSplit@{currentLineSplit}!C2M2.OIT.Visualization.ParticleSystemAsciiDataReader@{C2M2.OIT.Visualization.ParticleSystemAsciiDataReader}}
+\doxysubsubsection{\texorpdfstring{currentLineSplit}{currentLineSplit}}
+{\footnotesize\ttfamily string \mbox{[}$\,$\mbox{]} C2\+M2.\+OIT.\+Visualization.\+Particle\+System\+Ascii\+Data\+Reader.\+current\+Line\+Split = new string\mbox{[}4\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_o_i_t_1_1_visualization_1_1_particle_system_ascii_data_reader_ad21521c3f43b2a2985d1106fa33fa51d}\label{class_c2_m2_1_1_o_i_t_1_1_visualization_1_1_particle_system_ascii_data_reader_ad21521c3f43b2a2985d1106fa33fa51d}} 
+\index{C2M2.OIT.Visualization.ParticleSystemAsciiDataReader@{C2M2.OIT.Visualization.ParticleSystemAsciiDataReader}!dataSetList@{dataSetList}}
+\index{dataSetList@{dataSetList}!C2M2.OIT.Visualization.ParticleSystemAsciiDataReader@{C2M2.OIT.Visualization.ParticleSystemAsciiDataReader}}
+\doxysubsubsection{\texorpdfstring{dataSetList}{dataSetList}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{class_c2_m2_1_1_o_i_t_1_1_data_set}{Data\+Set}}$>$ C2\+M2.\+OIT.\+Visualization.\+Particle\+System\+Ascii\+Data\+Reader.\+data\+Set\+List = new List$<$\mbox{\hyperlink{class_c2_m2_1_1_o_i_t_1_1_data_set}{Data\+Set}}$>$()}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_o_i_t_1_1_visualization_1_1_particle_system_ascii_data_reader_ac914ebd9b3c3b120fc03e4a60c297e37}\label{class_c2_m2_1_1_o_i_t_1_1_visualization_1_1_particle_system_ascii_data_reader_ac914ebd9b3c3b120fc03e4a60c297e37}} 
+\index{C2M2.OIT.Visualization.ParticleSystemAsciiDataReader@{C2M2.OIT.Visualization.ParticleSystemAsciiDataReader}!reduceBy@{reduceBy}}
+\index{reduceBy@{reduceBy}!C2M2.OIT.Visualization.ParticleSystemAsciiDataReader@{C2M2.OIT.Visualization.ParticleSystemAsciiDataReader}}
+\doxysubsubsection{\texorpdfstring{reduceBy}{reduceBy}}
+{\footnotesize\ttfamily int C2\+M2.\+OIT.\+Visualization.\+Particle\+System\+Ascii\+Data\+Reader.\+reduce\+By = 2}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_o_i_t_1_1_visualization_1_1_particle_system_ascii_data_reader_aae03d3b049abca400a8e392c3456f03c}\label{class_c2_m2_1_1_o_i_t_1_1_visualization_1_1_particle_system_ascii_data_reader_aae03d3b049abca400a8e392c3456f03c}} 
+\index{C2M2.OIT.Visualization.ParticleSystemAsciiDataReader@{C2M2.OIT.Visualization.ParticleSystemAsciiDataReader}!RoomObject@{RoomObject}}
+\index{RoomObject@{RoomObject}!C2M2.OIT.Visualization.ParticleSystemAsciiDataReader@{C2M2.OIT.Visualization.ParticleSystemAsciiDataReader}}
+\doxysubsubsection{\texorpdfstring{RoomObject}{RoomObject}}
+{\footnotesize\ttfamily Game\+Object C2\+M2.\+OIT.\+Visualization.\+Particle\+System\+Ascii\+Data\+Reader.\+Room\+Object}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_o_i_t_1_1_visualization_1_1_particle_system_ascii_data_reader_a0c2fd76b98e9f246d6e8eed986e178b2}\label{class_c2_m2_1_1_o_i_t_1_1_visualization_1_1_particle_system_ascii_data_reader_a0c2fd76b98e9f246d6e8eed986e178b2}} 
+\index{C2M2.OIT.Visualization.ParticleSystemAsciiDataReader@{C2M2.OIT.Visualization.ParticleSystemAsciiDataReader}!sR@{sR}}
+\index{sR@{sR}!C2M2.OIT.Visualization.ParticleSystemAsciiDataReader@{C2M2.OIT.Visualization.ParticleSystemAsciiDataReader}}
+\doxysubsubsection{\texorpdfstring{sR}{sR}}
+{\footnotesize\ttfamily String\+Reader C2\+M2.\+OIT.\+Visualization.\+Particle\+System\+Ascii\+Data\+Reader.\+sR\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/jaros/\+Desktop/tempvr/virtual-\/reality/\+Assets/\+Scripts/\+C2\+M2/\+OIT/\+Visualization/\mbox{\hyperlink{_particle_system_ascii_data_reader_8cs}{Particle\+System\+Ascii\+Data\+Reader.\+cs}}\end{DoxyCompactItemize}

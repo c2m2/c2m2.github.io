@@ -1,0 +1,96 @@
+\hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_r_n_1_1_vrn_reader_behaviour}{}\doxysection{C2\+M2.\+Neuronal\+Dynamics.\+Visualization.\+VRN.\+Vrn\+Reader\+Behaviour Class Reference}
+\label{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_r_n_1_1_vrn_reader_behaviour}\index{C2M2.NeuronalDynamics.Visualization.VRN.VrnReaderBehaviour@{C2M2.NeuronalDynamics.Visualization.VRN.VrnReaderBehaviour}}
+
+
+Example behaviour to demonstrate vrn\+Reader usage  
+
+
+
+
+Inheritance diagram for C2\+M2.\+Neuronal\+Dynamics.\+Visualization.\+VRN.\+Vrn\+Reader\+Behaviour\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=313pt]{d9/da7/class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_r_n_1_1_vrn_reader_behaviour__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for C2\+M2.\+Neuronal\+Dynamics.\+Visualization.\+VRN.\+Vrn\+Reader\+Behaviour\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=313pt]{d2/d3a/class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_r_n_1_1_vrn_reader_behaviour__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_r_n_1_1_vrn_reader_behaviour_a830d299178adf5db70363235d059186b}{Start}} ()
+\begin{DoxyCompactList}\small\item\em On start a test file (test.\+vrn) is read from the assets folder \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_r_n_1_1_vrn_reader_behaviour_a809a63956e6cee63df822998ee836171}{file\+Name}} = \char`\"{}test\+New.\+vrn\char`\"{}
+\begin{DoxyCompactList}\small\item\em the test archive file test.\+vrn \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Example behaviour to demonstrate vrn\+Reader usage 
+
+VRNREADERBEHAVIOUR
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_r_n_1_1_vrn_reader_behaviour_a830d299178adf5db70363235d059186b}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_r_n_1_1_vrn_reader_behaviour_a830d299178adf5db70363235d059186b}} 
+\index{C2M2.NeuronalDynamics.Visualization.VRN.VrnReaderBehaviour@{C2M2.NeuronalDynamics.Visualization.VRN.VrnReaderBehaviour}!Start@{Start}}
+\index{Start@{Start}!C2M2.NeuronalDynamics.Visualization.VRN.VrnReaderBehaviour@{C2M2.NeuronalDynamics.Visualization.VRN.VrnReaderBehaviour}}
+\doxysubsubsection{\texorpdfstring{Start()}{Start()}}
+{\footnotesize\ttfamily void C2\+M2.\+Neuronal\+Dynamics.\+Visualization.\+VRN.\+Vrn\+Reader\+Behaviour.\+Start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+On start a test file (test.\+vrn) is read from the assets folder 
+
+The coarse 1d mesh is retrieved as well as the by a factor of 2.\+5 inflated 2d mesh is retrieved from the archive test.\+vrn Example 1\+: List grids and/or retrieve mesh file name from archive based on refinement or inflation
+
+Instantiate the \mbox{\hyperlink{namespace_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_r_n}{VRN}} reader with the desired file name (.vrn archive) to load from Assets
+
+List all 1D and 2D geometries contained in given .vrn archive
+
+Get the name of the 1d mesh (0-\/th refinement aka coarse grid) in archive
+
+Get the name of the inflated 2d mesh by a factor of 2.\+5 in archive
+
+Create empty grid with name of grid in archive
+
+Read in the .ugx file into the grid (read\+\_\+ugx uses UGXReader internally)
+
+Example 2\+: Load a \mbox{\hyperlink{namespace_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x}{UGX}} file (mesh) from the .vrn archive and store it in a Grid object\+: Here the 1D coarse grid is loaded
+
+NOTE\+: If the required refinement or inflation is not stored in the archive the first available 1D or 2D mesh is loaded
+\begin{DoxyEnumerate}
+\item Find a refinement in the .vrn archive (0 = 0th refinement = coarse grid, 1 = 1st refinement, 2 = 2nd refinement, ...) or\+: Find a inflated mesh in the .vrn archive (1 = Inflated by factor 1, 2.\+5 = inflated by a factor 2.\+5, ...)
+\item Create empty Grid grid to store the mesh
+\item Read the file from the archive (.ugx filetype) into the Grid grid
+\end{DoxyEnumerate}
+
+Create empty grid with name of grid in archive
+
+Read in the .ugx file into the grid (read\+\_\+ugx uses UGXReader internally)
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_r_n_1_1_vrn_reader_behaviour_a809a63956e6cee63df822998ee836171}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_r_n_1_1_vrn_reader_behaviour_a809a63956e6cee63df822998ee836171}} 
+\index{C2M2.NeuronalDynamics.Visualization.VRN.VrnReaderBehaviour@{C2M2.NeuronalDynamics.Visualization.VRN.VrnReaderBehaviour}!fileName@{fileName}}
+\index{fileName@{fileName}!C2M2.NeuronalDynamics.Visualization.VRN.VrnReaderBehaviour@{C2M2.NeuronalDynamics.Visualization.VRN.VrnReaderBehaviour}}
+\doxysubsubsection{\texorpdfstring{fileName}{fileName}}
+{\footnotesize\ttfamily string C2\+M2.\+Neuronal\+Dynamics.\+Visualization.\+VRN.\+Vrn\+Reader\+Behaviour.\+file\+Name = \char`\"{}test\+New.\+vrn\char`\"{}}
+
+
+
+the test archive file test.\+vrn 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/jaros/\+Desktop/tempvr/virtual-\/reality/\+Assets/\+Scripts/\+C2\+M2/\+Neuronal\+Dynamics/\+Visualization/\mbox{\hyperlink{vrn_reader_behaviour_8cs}{vrn\+Reader\+Behaviour.\+cs}}\end{DoxyCompactItemize}

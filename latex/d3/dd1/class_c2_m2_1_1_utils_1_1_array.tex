@@ -1,0 +1,292 @@
+\hypertarget{class_c2_m2_1_1_utils_1_1_array}{}\doxysection{C2\+M2.\+Utils.\+Array Class Reference}
+\label{class_c2_m2_1_1_utils_1_1_array}\index{C2M2.Utils.Array@{C2M2.Utils.Array}}
+
+
+Utilities with quick but manual array operations for merging, filling, converting to lists, etc.  
+
+
+
+
+Collaboration diagram for C2\+M2.\+Utils.\+Array\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=217pt]{d2/d0f/class_c2_m2_1_1_utils_1_1_array__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static T\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_c2_m2_1_1_utils_1_1_array_ab5cb35c707bcb710e3c7ddde0841c087}{Merge\+Arrays$<$ T $>$}} (this T\mbox{[}$\,$\mbox{]} beginning\+Array, T\mbox{[}$\,$\mbox{]} end\+Array)
+\begin{DoxyCompactList}\small\item\em Returns a new array with end\+Array concatenated onto the end of beginning\+Array \end{DoxyCompactList}\item 
+static T\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_c2_m2_1_1_utils_1_1_array_ac23ebbcb0dfa80990017b53c3dfefd6c}{Fill$<$ T $>$}} (this T\mbox{[}$\,$\mbox{]} array, T value)
+\begin{DoxyCompactList}\small\item\em Fill a preallocated array of type T with identical values of type T. \end{DoxyCompactList}\item 
+static T\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_c2_m2_1_1_utils_1_1_array_a03e7b20a46050fad934cb5fc709de142}{Fill$<$ T $>$}} (this T\mbox{[}$\,$\mbox{]} array, T value, int size)
+\begin{DoxyCompactList}\small\item\em Fill an unallocated array of type T with identical values of type T. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_c2_m2_1_1_utils_1_1_array_abbe5fa920fbf322e09331ed94a0fec10}{Fill\+Array\+Random}} (this int\mbox{[}$\,$\mbox{]} array, int min, int max)
+\begin{DoxyCompactList}\small\item\em Fills float array with random numbers from min \mbox{[}inclusive\mbox{]} to max \mbox{[}inclusive\mbox{]} \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_c2_m2_1_1_utils_1_1_array_a738a4798c4dbcb11faf33d7d106ce525}{Fill\+Array\+Random}} (this float\mbox{[}$\,$\mbox{]} array, float min, float max)
+\begin{DoxyCompactList}\small\item\em Fills float array with random numbers from min \mbox{[}inclusive\mbox{]} to max \mbox{[}inclusive\mbox{]} \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_c2_m2_1_1_utils_1_1_array_aceab21b421ee0fa280368b994785ae30}{Fill\+Array\+Random}} (this double\mbox{[}$\,$\mbox{]} array, float min, float max)
+\begin{DoxyCompactList}\small\item\em Fills double array with random numbers from min \mbox{[}inclusive\mbox{]} to max \mbox{[}inclusive\mbox{]} \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_c2_m2_1_1_utils_1_1_array_a1107e558a38547b3fad62582eb3913ba}{Fill\+Array\+Random}} (this double\mbox{[}$\,$\mbox{]} array, double min, double max)
+\begin{DoxyCompactList}\small\item\em Fills double array with random numbers from min \mbox{[}inclusive\mbox{]} to max \mbox{[}inclusive\mbox{]} \end{DoxyCompactList}\item 
+static int\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_c2_m2_1_1_utils_1_1_array_a409eedbe1c84215574eeeb709e6d5527}{To\+Array}} (this List$<$ int $>$ list)
+\item 
+static float\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_c2_m2_1_1_utils_1_1_array_a10a8b9ce2ca64233ffd6bd912db102d3}{To\+Array}} (this List$<$ float $>$ list)
+\item 
+static double\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_c2_m2_1_1_utils_1_1_array_ab75830ac760b84d384861310f0d03743}{To\+Array}} (this List$<$ double $>$ list)
+\item 
+static List$<$ int $>$ \mbox{\hyperlink{class_c2_m2_1_1_utils_1_1_array_a3841b96b3b684ae39a7f2a99acd77476}{To\+List}} (this int\mbox{[}$\,$\mbox{]} array)
+\item 
+static List$<$ float $>$ \mbox{\hyperlink{class_c2_m2_1_1_utils_1_1_array_ac86bb8d7dbc2c1fb280f92d0ee01997d}{To\+List}} (this float\mbox{[}$\,$\mbox{]} array)
+\item 
+static List$<$ double $>$ \mbox{\hyperlink{class_c2_m2_1_1_utils_1_1_array_ad33e86415cbbc068cbb7fb8b91de2c99}{To\+List}} (this double\mbox{[}$\,$\mbox{]} array)
+\item 
+static float\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_c2_m2_1_1_utils_1_1_array_a7b54d83a465cade35600fd866a9083ab}{To\+Float}} (this double\mbox{[}$\,$\mbox{]} array)
+\begin{DoxyCompactList}\small\item\em Cast an array of doubles into an array of floats \end{DoxyCompactList}\item 
+static int\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_c2_m2_1_1_utils_1_1_array_a5dc9d4d14ad01f3ea6159a9edfed25e8}{Reverse}} (this int\mbox{[}$\,$\mbox{]} array)
+\item 
+static float\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_c2_m2_1_1_utils_1_1_array_a722636b582c3b76f74d82f822c10bf92}{Reverse}} (this float\mbox{[}$\,$\mbox{]} array)
+\item 
+static double\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_c2_m2_1_1_utils_1_1_array_ad419233f183c21ac5f7af793f9ef5e5b}{Reverse}} (this double\mbox{[}$\,$\mbox{]} array)
+\item 
+static void \mbox{\hyperlink{class_c2_m2_1_1_utils_1_1_array_a42bb42695771a71fa6e9e07b9db479f7}{Rescale\+Array}} (this float\mbox{[}$\,$\mbox{]} array, float new\+Min, float new\+Max, float old\+Min, float old\+Max)
+\begin{DoxyCompactList}\small\item\em Rescale an array from (old\+Min, old\+Max) to (new\+Min, new\+Max) \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_c2_m2_1_1_utils_1_1_array_a5e0d5a24d42436407af7a4eb7d5812e3}{Rescale\+Array}} (this float\mbox{[}$\,$\mbox{]} array, float new\+Min, float new\+Max)
+\begin{DoxyCompactList}\small\item\em Rescale an array from (old\+Min, old\+Max) to (new\+Min, new\+Max) \end{DoxyCompactList}\item 
+static float\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_c2_m2_1_1_utils_1_1_array_ab43194001d6c0a5ffd3d0629c587a896}{Times}} (this float\mbox{[}$\,$\mbox{]} array, float s)
+\begin{DoxyCompactList}\small\item\em Multiplies every value in this array by s \end{DoxyCompactList}\item 
+static double\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_c2_m2_1_1_utils_1_1_array_a0966e4026e4cf66c5e5ff83828a38cd4}{Times}} (this double\mbox{[}$\,$\mbox{]} array, double s)
+\begin{DoxyCompactList}\small\item\em Multiplies every value in this array by s \end{DoxyCompactList}\item 
+static T\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_c2_m2_1_1_utils_1_1_array_a1df15dc025f68ca70595e3a4ed92ccbf}{Subset$<$ T $>$}} (this T\mbox{[}$\,$\mbox{]} array, int to, int from=0)
+\begin{DoxyCompactList}\small\item\em Returns a subset of this array from \mbox{[}from\mbox{]} (inclusive) to \mbox{[}to\mbox{]} (exclusive) \end{DoxyCompactList}\item 
+static string \mbox{\hyperlink{class_c2_m2_1_1_utils_1_1_array_aad0fec6850cce606aff50a149a536316}{To\+String\+Full}} (this double\mbox{[}$\,$\mbox{]} array)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static Random \mbox{\hyperlink{class_c2_m2_1_1_utils_1_1_array_af902072a024e660836a8f353ef3be984}{rand}} = new Random()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Utilities with quick but manual array operations for merging, filling, converting to lists, etc. 
+
+Relevant methods should vastly outperform System.\+Linq methods 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_c2_m2_1_1_utils_1_1_array_ac23ebbcb0dfa80990017b53c3dfefd6c}\label{class_c2_m2_1_1_utils_1_1_array_ac23ebbcb0dfa80990017b53c3dfefd6c}} 
+\index{C2M2.Utils.Array@{C2M2.Utils.Array}!Fill$<$ T $>$@{Fill$<$ T $>$}}
+\index{Fill$<$ T $>$@{Fill$<$ T $>$}!C2M2.Utils.Array@{C2M2.Utils.Array}}
+\doxysubsubsection{\texorpdfstring{Fill$<$ T $>$()}{Fill< T >()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily static T \mbox{[}$\,$\mbox{]} C2\+M2.\+Utils.\+Array.\+Fill$<$ T $>$ (\begin{DoxyParamCaption}\item[{this T\mbox{[}$\,$\mbox{]}}]{array,  }\item[{T}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Fill a preallocated array of type T with identical values of type T. 
+
+\mbox{\Hypertarget{class_c2_m2_1_1_utils_1_1_array_a03e7b20a46050fad934cb5fc709de142}\label{class_c2_m2_1_1_utils_1_1_array_a03e7b20a46050fad934cb5fc709de142}} 
+\index{C2M2.Utils.Array@{C2M2.Utils.Array}!Fill$<$ T $>$@{Fill$<$ T $>$}}
+\index{Fill$<$ T $>$@{Fill$<$ T $>$}!C2M2.Utils.Array@{C2M2.Utils.Array}}
+\doxysubsubsection{\texorpdfstring{Fill$<$ T $>$()}{Fill< T >()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily static T \mbox{[}$\,$\mbox{]} C2\+M2.\+Utils.\+Array.\+Fill$<$ T $>$ (\begin{DoxyParamCaption}\item[{this T\mbox{[}$\,$\mbox{]}}]{array,  }\item[{T}]{value,  }\item[{int}]{size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Fill an unallocated array of type T with identical values of type T. 
+
+\mbox{\Hypertarget{class_c2_m2_1_1_utils_1_1_array_a1107e558a38547b3fad62582eb3913ba}\label{class_c2_m2_1_1_utils_1_1_array_a1107e558a38547b3fad62582eb3913ba}} 
+\index{C2M2.Utils.Array@{C2M2.Utils.Array}!FillArrayRandom@{FillArrayRandom}}
+\index{FillArrayRandom@{FillArrayRandom}!C2M2.Utils.Array@{C2M2.Utils.Array}}
+\doxysubsubsection{\texorpdfstring{FillArrayRandom()}{FillArrayRandom()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily static void C2\+M2.\+Utils.\+Array.\+Fill\+Array\+Random (\begin{DoxyParamCaption}\item[{this double\mbox{[}$\,$\mbox{]}}]{array,  }\item[{double}]{min,  }\item[{double}]{max }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Fills double array with random numbers from min \mbox{[}inclusive\mbox{]} to max \mbox{[}inclusive\mbox{]} 
+
+\mbox{\Hypertarget{class_c2_m2_1_1_utils_1_1_array_aceab21b421ee0fa280368b994785ae30}\label{class_c2_m2_1_1_utils_1_1_array_aceab21b421ee0fa280368b994785ae30}} 
+\index{C2M2.Utils.Array@{C2M2.Utils.Array}!FillArrayRandom@{FillArrayRandom}}
+\index{FillArrayRandom@{FillArrayRandom}!C2M2.Utils.Array@{C2M2.Utils.Array}}
+\doxysubsubsection{\texorpdfstring{FillArrayRandom()}{FillArrayRandom()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily static void C2\+M2.\+Utils.\+Array.\+Fill\+Array\+Random (\begin{DoxyParamCaption}\item[{this double\mbox{[}$\,$\mbox{]}}]{array,  }\item[{float}]{min,  }\item[{float}]{max }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Fills double array with random numbers from min \mbox{[}inclusive\mbox{]} to max \mbox{[}inclusive\mbox{]} 
+
+TODO\+: rand.\+Next\+Double() makes a number between 0 and 1, so min is not considered rn \mbox{\Hypertarget{class_c2_m2_1_1_utils_1_1_array_a738a4798c4dbcb11faf33d7d106ce525}\label{class_c2_m2_1_1_utils_1_1_array_a738a4798c4dbcb11faf33d7d106ce525}} 
+\index{C2M2.Utils.Array@{C2M2.Utils.Array}!FillArrayRandom@{FillArrayRandom}}
+\index{FillArrayRandom@{FillArrayRandom}!C2M2.Utils.Array@{C2M2.Utils.Array}}
+\doxysubsubsection{\texorpdfstring{FillArrayRandom()}{FillArrayRandom()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily static void C2\+M2.\+Utils.\+Array.\+Fill\+Array\+Random (\begin{DoxyParamCaption}\item[{this float\mbox{[}$\,$\mbox{]}}]{array,  }\item[{float}]{min,  }\item[{float}]{max }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Fills float array with random numbers from min \mbox{[}inclusive\mbox{]} to max \mbox{[}inclusive\mbox{]} 
+
+\mbox{\Hypertarget{class_c2_m2_1_1_utils_1_1_array_abbe5fa920fbf322e09331ed94a0fec10}\label{class_c2_m2_1_1_utils_1_1_array_abbe5fa920fbf322e09331ed94a0fec10}} 
+\index{C2M2.Utils.Array@{C2M2.Utils.Array}!FillArrayRandom@{FillArrayRandom}}
+\index{FillArrayRandom@{FillArrayRandom}!C2M2.Utils.Array@{C2M2.Utils.Array}}
+\doxysubsubsection{\texorpdfstring{FillArrayRandom()}{FillArrayRandom()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily static void C2\+M2.\+Utils.\+Array.\+Fill\+Array\+Random (\begin{DoxyParamCaption}\item[{this int\mbox{[}$\,$\mbox{]}}]{array,  }\item[{int}]{min,  }\item[{int}]{max }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Fills float array with random numbers from min \mbox{[}inclusive\mbox{]} to max \mbox{[}inclusive\mbox{]} 
+
+\mbox{\Hypertarget{class_c2_m2_1_1_utils_1_1_array_ab5cb35c707bcb710e3c7ddde0841c087}\label{class_c2_m2_1_1_utils_1_1_array_ab5cb35c707bcb710e3c7ddde0841c087}} 
+\index{C2M2.Utils.Array@{C2M2.Utils.Array}!MergeArrays$<$ T $>$@{MergeArrays$<$ T $>$}}
+\index{MergeArrays$<$ T $>$@{MergeArrays$<$ T $>$}!C2M2.Utils.Array@{C2M2.Utils.Array}}
+\doxysubsubsection{\texorpdfstring{MergeArrays$<$ T $>$()}{MergeArrays< T >()}}
+{\footnotesize\ttfamily static T \mbox{[}$\,$\mbox{]} C2\+M2.\+Utils.\+Array.\+Merge\+Arrays$<$ T $>$ (\begin{DoxyParamCaption}\item[{this T\mbox{[}$\,$\mbox{]}}]{beginning\+Array,  }\item[{T\mbox{[}$\,$\mbox{]}}]{end\+Array }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Returns a new array with end\+Array concatenated onto the end of beginning\+Array 
+
+\mbox{\Hypertarget{class_c2_m2_1_1_utils_1_1_array_a5e0d5a24d42436407af7a4eb7d5812e3}\label{class_c2_m2_1_1_utils_1_1_array_a5e0d5a24d42436407af7a4eb7d5812e3}} 
+\index{C2M2.Utils.Array@{C2M2.Utils.Array}!RescaleArray@{RescaleArray}}
+\index{RescaleArray@{RescaleArray}!C2M2.Utils.Array@{C2M2.Utils.Array}}
+\doxysubsubsection{\texorpdfstring{RescaleArray()}{RescaleArray()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily static void C2\+M2.\+Utils.\+Array.\+Rescale\+Array (\begin{DoxyParamCaption}\item[{this float\mbox{[}$\,$\mbox{]}}]{array,  }\item[{float}]{new\+Min,  }\item[{float}]{new\+Max }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Rescale an array from (old\+Min, old\+Max) to (new\+Min, new\+Max) 
+
+\mbox{\Hypertarget{class_c2_m2_1_1_utils_1_1_array_a42bb42695771a71fa6e9e07b9db479f7}\label{class_c2_m2_1_1_utils_1_1_array_a42bb42695771a71fa6e9e07b9db479f7}} 
+\index{C2M2.Utils.Array@{C2M2.Utils.Array}!RescaleArray@{RescaleArray}}
+\index{RescaleArray@{RescaleArray}!C2M2.Utils.Array@{C2M2.Utils.Array}}
+\doxysubsubsection{\texorpdfstring{RescaleArray()}{RescaleArray()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily static void C2\+M2.\+Utils.\+Array.\+Rescale\+Array (\begin{DoxyParamCaption}\item[{this float\mbox{[}$\,$\mbox{]}}]{array,  }\item[{float}]{new\+Min,  }\item[{float}]{new\+Max,  }\item[{float}]{old\+Min,  }\item[{float}]{old\+Max }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Rescale an array from (old\+Min, old\+Max) to (new\+Min, new\+Max) 
+
+\mbox{\Hypertarget{class_c2_m2_1_1_utils_1_1_array_ad419233f183c21ac5f7af793f9ef5e5b}\label{class_c2_m2_1_1_utils_1_1_array_ad419233f183c21ac5f7af793f9ef5e5b}} 
+\index{C2M2.Utils.Array@{C2M2.Utils.Array}!Reverse@{Reverse}}
+\index{Reverse@{Reverse}!C2M2.Utils.Array@{C2M2.Utils.Array}}
+\doxysubsubsection{\texorpdfstring{Reverse()}{Reverse()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily static double \mbox{[}$\,$\mbox{]} C2\+M2.\+Utils.\+Array.\+Reverse (\begin{DoxyParamCaption}\item[{this double\mbox{[}$\,$\mbox{]}}]{array }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_utils_1_1_array_a722636b582c3b76f74d82f822c10bf92}\label{class_c2_m2_1_1_utils_1_1_array_a722636b582c3b76f74d82f822c10bf92}} 
+\index{C2M2.Utils.Array@{C2M2.Utils.Array}!Reverse@{Reverse}}
+\index{Reverse@{Reverse}!C2M2.Utils.Array@{C2M2.Utils.Array}}
+\doxysubsubsection{\texorpdfstring{Reverse()}{Reverse()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily static float \mbox{[}$\,$\mbox{]} C2\+M2.\+Utils.\+Array.\+Reverse (\begin{DoxyParamCaption}\item[{this float\mbox{[}$\,$\mbox{]}}]{array }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_utils_1_1_array_a5dc9d4d14ad01f3ea6159a9edfed25e8}\label{class_c2_m2_1_1_utils_1_1_array_a5dc9d4d14ad01f3ea6159a9edfed25e8}} 
+\index{C2M2.Utils.Array@{C2M2.Utils.Array}!Reverse@{Reverse}}
+\index{Reverse@{Reverse}!C2M2.Utils.Array@{C2M2.Utils.Array}}
+\doxysubsubsection{\texorpdfstring{Reverse()}{Reverse()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily static int \mbox{[}$\,$\mbox{]} C2\+M2.\+Utils.\+Array.\+Reverse (\begin{DoxyParamCaption}\item[{this int\mbox{[}$\,$\mbox{]}}]{array }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_utils_1_1_array_a1df15dc025f68ca70595e3a4ed92ccbf}\label{class_c2_m2_1_1_utils_1_1_array_a1df15dc025f68ca70595e3a4ed92ccbf}} 
+\index{C2M2.Utils.Array@{C2M2.Utils.Array}!Subset$<$ T $>$@{Subset$<$ T $>$}}
+\index{Subset$<$ T $>$@{Subset$<$ T $>$}!C2M2.Utils.Array@{C2M2.Utils.Array}}
+\doxysubsubsection{\texorpdfstring{Subset$<$ T $>$()}{Subset< T >()}}
+{\footnotesize\ttfamily static T \mbox{[}$\,$\mbox{]} C2\+M2.\+Utils.\+Array.\+Subset$<$ T $>$ (\begin{DoxyParamCaption}\item[{this T\mbox{[}$\,$\mbox{]}}]{array,  }\item[{int}]{to,  }\item[{int}]{from = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Returns a subset of this array from \mbox{[}from\mbox{]} (inclusive) to \mbox{[}to\mbox{]} (exclusive) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em from} & Beginning index (included in returned array) \\
+\hline
+{\em to} & Final index + 1 (not included in returned array) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c2_m2_1_1_utils_1_1_array_a0966e4026e4cf66c5e5ff83828a38cd4}\label{class_c2_m2_1_1_utils_1_1_array_a0966e4026e4cf66c5e5ff83828a38cd4}} 
+\index{C2M2.Utils.Array@{C2M2.Utils.Array}!Times@{Times}}
+\index{Times@{Times}!C2M2.Utils.Array@{C2M2.Utils.Array}}
+\doxysubsubsection{\texorpdfstring{Times()}{Times()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily static double \mbox{[}$\,$\mbox{]} C2\+M2.\+Utils.\+Array.\+Times (\begin{DoxyParamCaption}\item[{this double\mbox{[}$\,$\mbox{]}}]{array,  }\item[{double}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Multiplies every value in this array by s 
+
+\mbox{\Hypertarget{class_c2_m2_1_1_utils_1_1_array_ab43194001d6c0a5ffd3d0629c587a896}\label{class_c2_m2_1_1_utils_1_1_array_ab43194001d6c0a5ffd3d0629c587a896}} 
+\index{C2M2.Utils.Array@{C2M2.Utils.Array}!Times@{Times}}
+\index{Times@{Times}!C2M2.Utils.Array@{C2M2.Utils.Array}}
+\doxysubsubsection{\texorpdfstring{Times()}{Times()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily static float \mbox{[}$\,$\mbox{]} C2\+M2.\+Utils.\+Array.\+Times (\begin{DoxyParamCaption}\item[{this float\mbox{[}$\,$\mbox{]}}]{array,  }\item[{float}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Multiplies every value in this array by s 
+
+\mbox{\Hypertarget{class_c2_m2_1_1_utils_1_1_array_ab75830ac760b84d384861310f0d03743}\label{class_c2_m2_1_1_utils_1_1_array_ab75830ac760b84d384861310f0d03743}} 
+\index{C2M2.Utils.Array@{C2M2.Utils.Array}!ToArray@{ToArray}}
+\index{ToArray@{ToArray}!C2M2.Utils.Array@{C2M2.Utils.Array}}
+\doxysubsubsection{\texorpdfstring{ToArray()}{ToArray()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily static double \mbox{[}$\,$\mbox{]} C2\+M2.\+Utils.\+Array.\+To\+Array (\begin{DoxyParamCaption}\item[{this List$<$ double $>$}]{list }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_utils_1_1_array_a10a8b9ce2ca64233ffd6bd912db102d3}\label{class_c2_m2_1_1_utils_1_1_array_a10a8b9ce2ca64233ffd6bd912db102d3}} 
+\index{C2M2.Utils.Array@{C2M2.Utils.Array}!ToArray@{ToArray}}
+\index{ToArray@{ToArray}!C2M2.Utils.Array@{C2M2.Utils.Array}}
+\doxysubsubsection{\texorpdfstring{ToArray()}{ToArray()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily static float \mbox{[}$\,$\mbox{]} C2\+M2.\+Utils.\+Array.\+To\+Array (\begin{DoxyParamCaption}\item[{this List$<$ float $>$}]{list }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_utils_1_1_array_a409eedbe1c84215574eeeb709e6d5527}\label{class_c2_m2_1_1_utils_1_1_array_a409eedbe1c84215574eeeb709e6d5527}} 
+\index{C2M2.Utils.Array@{C2M2.Utils.Array}!ToArray@{ToArray}}
+\index{ToArray@{ToArray}!C2M2.Utils.Array@{C2M2.Utils.Array}}
+\doxysubsubsection{\texorpdfstring{ToArray()}{ToArray()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily static int \mbox{[}$\,$\mbox{]} C2\+M2.\+Utils.\+Array.\+To\+Array (\begin{DoxyParamCaption}\item[{this List$<$ int $>$}]{list }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_utils_1_1_array_a7b54d83a465cade35600fd866a9083ab}\label{class_c2_m2_1_1_utils_1_1_array_a7b54d83a465cade35600fd866a9083ab}} 
+\index{C2M2.Utils.Array@{C2M2.Utils.Array}!ToFloat@{ToFloat}}
+\index{ToFloat@{ToFloat}!C2M2.Utils.Array@{C2M2.Utils.Array}}
+\doxysubsubsection{\texorpdfstring{ToFloat()}{ToFloat()}}
+{\footnotesize\ttfamily static float \mbox{[}$\,$\mbox{]} C2\+M2.\+Utils.\+Array.\+To\+Float (\begin{DoxyParamCaption}\item[{this double\mbox{[}$\,$\mbox{]}}]{array }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Cast an array of doubles into an array of floats 
+
+\mbox{\Hypertarget{class_c2_m2_1_1_utils_1_1_array_ad33e86415cbbc068cbb7fb8b91de2c99}\label{class_c2_m2_1_1_utils_1_1_array_ad33e86415cbbc068cbb7fb8b91de2c99}} 
+\index{C2M2.Utils.Array@{C2M2.Utils.Array}!ToList@{ToList}}
+\index{ToList@{ToList}!C2M2.Utils.Array@{C2M2.Utils.Array}}
+\doxysubsubsection{\texorpdfstring{ToList()}{ToList()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily static List$<$double$>$ C2\+M2.\+Utils.\+Array.\+To\+List (\begin{DoxyParamCaption}\item[{this double\mbox{[}$\,$\mbox{]}}]{array }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_utils_1_1_array_ac86bb8d7dbc2c1fb280f92d0ee01997d}\label{class_c2_m2_1_1_utils_1_1_array_ac86bb8d7dbc2c1fb280f92d0ee01997d}} 
+\index{C2M2.Utils.Array@{C2M2.Utils.Array}!ToList@{ToList}}
+\index{ToList@{ToList}!C2M2.Utils.Array@{C2M2.Utils.Array}}
+\doxysubsubsection{\texorpdfstring{ToList()}{ToList()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily static List$<$float$>$ C2\+M2.\+Utils.\+Array.\+To\+List (\begin{DoxyParamCaption}\item[{this float\mbox{[}$\,$\mbox{]}}]{array }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_utils_1_1_array_a3841b96b3b684ae39a7f2a99acd77476}\label{class_c2_m2_1_1_utils_1_1_array_a3841b96b3b684ae39a7f2a99acd77476}} 
+\index{C2M2.Utils.Array@{C2M2.Utils.Array}!ToList@{ToList}}
+\index{ToList@{ToList}!C2M2.Utils.Array@{C2M2.Utils.Array}}
+\doxysubsubsection{\texorpdfstring{ToList()}{ToList()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily static List$<$int$>$ C2\+M2.\+Utils.\+Array.\+To\+List (\begin{DoxyParamCaption}\item[{this int\mbox{[}$\,$\mbox{]}}]{array }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_utils_1_1_array_aad0fec6850cce606aff50a149a536316}\label{class_c2_m2_1_1_utils_1_1_array_aad0fec6850cce606aff50a149a536316}} 
+\index{C2M2.Utils.Array@{C2M2.Utils.Array}!ToStringFull@{ToStringFull}}
+\index{ToStringFull@{ToStringFull}!C2M2.Utils.Array@{C2M2.Utils.Array}}
+\doxysubsubsection{\texorpdfstring{ToStringFull()}{ToStringFull()}}
+{\footnotesize\ttfamily static string C2\+M2.\+Utils.\+Array.\+To\+String\+Full (\begin{DoxyParamCaption}\item[{this double\mbox{[}$\,$\mbox{]}}]{array }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_c2_m2_1_1_utils_1_1_array_af902072a024e660836a8f353ef3be984}\label{class_c2_m2_1_1_utils_1_1_array_af902072a024e660836a8f353ef3be984}} 
+\index{C2M2.Utils.Array@{C2M2.Utils.Array}!rand@{rand}}
+\index{rand@{rand}!C2M2.Utils.Array@{C2M2.Utils.Array}}
+\doxysubsubsection{\texorpdfstring{rand}{rand}}
+{\footnotesize\ttfamily Random C2\+M2.\+Utils.\+Array.\+rand = new Random()\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/jaros/\+Desktop/tempvr/virtual-\/reality/\+Assets/\+Scripts/\+C2\+M2/\+Utils/\mbox{\hyperlink{_array_8cs}{Array.\+cs}}\end{DoxyCompactItemize}

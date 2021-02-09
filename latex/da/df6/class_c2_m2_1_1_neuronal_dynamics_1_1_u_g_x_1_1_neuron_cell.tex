@@ -1,0 +1,196 @@
+\hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_cell}{}\doxysection{C2\+M2.\+Neuronal\+Dynamics.\+UGX.\+Neuron\+Cell Class Reference}
+\label{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_cell}\index{C2M2.NeuronalDynamics.UGX.NeuronCell@{C2M2.NeuronalDynamics.UGX.NeuronCell}}
+
+
+Collaboration diagram for C2\+M2.\+Neuronal\+Dynamics.\+UGX.\+Neuron\+Cell\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=276pt]{dc/d8a/class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_cell__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_cell_1_1_node_data}{Node\+Data}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_cell_a35092c83775762fe63372876cd6a093f}{Neuron\+Cell}} (\mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_grid}{Grid}} grid)
+\item 
+string \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_cell_a3ceb980213948760901555946eaef1f4}{Node\+To\+String}} (int node\+Id)
+\item 
+void \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_cell_ac62ac2f2c2cb9108d2b690351d7b723d}{Edge\+To\+String}} (int edge\+Id)
+\item 
+override string \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_cell_af0a3ed6e38dc9505439f24c074d1cc4a}{To\+String}} ()
+\item 
+double \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_cell_acfdad2cee43e7582e98154b1803dab3c}{Get\+Edge\+Length}} (int start\+Id, int end\+Id)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+List$<$ \mbox{\hyperlink{struct_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_cell_1_1_node_data}{Node\+Data}} $>$ \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_cell_ae742e1a074bc05437c45385924565105}{node\+Data}} = new List$<$\mbox{\hyperlink{struct_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_cell_1_1_node_data}{Node\+Data}}$>$()
+\item 
+List$<$ Tuple$<$ int, int $>$ $>$ \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_cell_aa0ade66db78a91961b5a228bfa668144}{edges}} = new List$<$Tuple$<$int, int$>$$>$()
+\item 
+List$<$ double $>$ \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_cell_ab0b9d87ce4d2b73650e7c6c9520ff01d}{edge\+Lengths}} = new List$<$double$>$()
+\item 
+List$<$ int $>$ \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_cell_af1134d207b0ef0b64fb80db48a1445a5}{boundary\+ID}} = new List$<$int$>$()
+\item 
+List$<$ int $>$ \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_cell_a67566dcc691909971a82a357574257a2}{soma\+ID}} = new List$<$int$>$()
+\item 
+int \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_cell_affcc860de06dd55bff1a11ece180fb99}{vert\+Count}} = new int()
+\item 
+int \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_cell_a315568990294f5f826e2fd995d161e5f}{edge\+Count}} = new int()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_cell_a04f278c4c76e8be6318cbdeae34ced67}{Node\+Neighbors\+To\+String}} (int node\+Id)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static string \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_cell_a53c292436d1bfc7190e17c3a05bb2617}{node\+Format\+String}}
+\item 
+static string \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_cell_a2c7cf01c0b0b7c978ce762fa2d71b9df}{edge\+Format\+String}}
+\item 
+static string \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_cell_a1a595ba856b3e2b8faa83dc277ab7a48}{cell\+Format\+String}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_cell_a35092c83775762fe63372876cd6a093f}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_cell_a35092c83775762fe63372876cd6a093f}} 
+\index{C2M2.NeuronalDynamics.UGX.NeuronCell@{C2M2.NeuronalDynamics.UGX.NeuronCell}!NeuronCell@{NeuronCell}}
+\index{NeuronCell@{NeuronCell}!C2M2.NeuronalDynamics.UGX.NeuronCell@{C2M2.NeuronalDynamics.UGX.NeuronCell}}
+\doxysubsubsection{\texorpdfstring{NeuronCell()}{NeuronCell()}}
+{\footnotesize\ttfamily C2\+M2.\+Neuronal\+Dynamics.\+UGX.\+Neuron\+Cell.\+Neuron\+Cell (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_grid}{Grid}}}]{grid }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_cell_ac62ac2f2c2cb9108d2b690351d7b723d}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_cell_ac62ac2f2c2cb9108d2b690351d7b723d}} 
+\index{C2M2.NeuronalDynamics.UGX.NeuronCell@{C2M2.NeuronalDynamics.UGX.NeuronCell}!EdgeToString@{EdgeToString}}
+\index{EdgeToString@{EdgeToString}!C2M2.NeuronalDynamics.UGX.NeuronCell@{C2M2.NeuronalDynamics.UGX.NeuronCell}}
+\doxysubsubsection{\texorpdfstring{EdgeToString()}{EdgeToString()}}
+{\footnotesize\ttfamily void C2\+M2.\+Neuronal\+Dynamics.\+UGX.\+Neuron\+Cell.\+Edge\+To\+String (\begin{DoxyParamCaption}\item[{int}]{edge\+Id }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_cell_acfdad2cee43e7582e98154b1803dab3c}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_cell_acfdad2cee43e7582e98154b1803dab3c}} 
+\index{C2M2.NeuronalDynamics.UGX.NeuronCell@{C2M2.NeuronalDynamics.UGX.NeuronCell}!GetEdgeLength@{GetEdgeLength}}
+\index{GetEdgeLength@{GetEdgeLength}!C2M2.NeuronalDynamics.UGX.NeuronCell@{C2M2.NeuronalDynamics.UGX.NeuronCell}}
+\doxysubsubsection{\texorpdfstring{GetEdgeLength()}{GetEdgeLength()}}
+{\footnotesize\ttfamily double C2\+M2.\+Neuronal\+Dynamics.\+UGX.\+Neuron\+Cell.\+Get\+Edge\+Length (\begin{DoxyParamCaption}\item[{int}]{start\+Id,  }\item[{int}]{end\+Id }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_cell_a04f278c4c76e8be6318cbdeae34ced67}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_cell_a04f278c4c76e8be6318cbdeae34ced67}} 
+\index{C2M2.NeuronalDynamics.UGX.NeuronCell@{C2M2.NeuronalDynamics.UGX.NeuronCell}!NodeNeighborsToString@{NodeNeighborsToString}}
+\index{NodeNeighborsToString@{NodeNeighborsToString}!C2M2.NeuronalDynamics.UGX.NeuronCell@{C2M2.NeuronalDynamics.UGX.NeuronCell}}
+\doxysubsubsection{\texorpdfstring{NodeNeighborsToString()}{NodeNeighborsToString()}}
+{\footnotesize\ttfamily string C2\+M2.\+Neuronal\+Dynamics.\+UGX.\+Neuron\+Cell.\+Node\+Neighbors\+To\+String (\begin{DoxyParamCaption}\item[{int}]{node\+Id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_cell_a3ceb980213948760901555946eaef1f4}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_cell_a3ceb980213948760901555946eaef1f4}} 
+\index{C2M2.NeuronalDynamics.UGX.NeuronCell@{C2M2.NeuronalDynamics.UGX.NeuronCell}!NodeToString@{NodeToString}}
+\index{NodeToString@{NodeToString}!C2M2.NeuronalDynamics.UGX.NeuronCell@{C2M2.NeuronalDynamics.UGX.NeuronCell}}
+\doxysubsubsection{\texorpdfstring{NodeToString()}{NodeToString()}}
+{\footnotesize\ttfamily string C2\+M2.\+Neuronal\+Dynamics.\+UGX.\+Neuron\+Cell.\+Node\+To\+String (\begin{DoxyParamCaption}\item[{int}]{node\+Id }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_cell_af0a3ed6e38dc9505439f24c074d1cc4a}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_cell_af0a3ed6e38dc9505439f24c074d1cc4a}} 
+\index{C2M2.NeuronalDynamics.UGX.NeuronCell@{C2M2.NeuronalDynamics.UGX.NeuronCell}!ToString@{ToString}}
+\index{ToString@{ToString}!C2M2.NeuronalDynamics.UGX.NeuronCell@{C2M2.NeuronalDynamics.UGX.NeuronCell}}
+\doxysubsubsection{\texorpdfstring{ToString()}{ToString()}}
+{\footnotesize\ttfamily override string C2\+M2.\+Neuronal\+Dynamics.\+UGX.\+Neuron\+Cell.\+To\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_cell_af1134d207b0ef0b64fb80db48a1445a5}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_cell_af1134d207b0ef0b64fb80db48a1445a5}} 
+\index{C2M2.NeuronalDynamics.UGX.NeuronCell@{C2M2.NeuronalDynamics.UGX.NeuronCell}!boundaryID@{boundaryID}}
+\index{boundaryID@{boundaryID}!C2M2.NeuronalDynamics.UGX.NeuronCell@{C2M2.NeuronalDynamics.UGX.NeuronCell}}
+\doxysubsubsection{\texorpdfstring{boundaryID}{boundaryID}}
+{\footnotesize\ttfamily List$<$int$>$ C2\+M2.\+Neuronal\+Dynamics.\+UGX.\+Neuron\+Cell.\+boundary\+ID = new List$<$int$>$()}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_cell_a1a595ba856b3e2b8faa83dc277ab7a48}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_cell_a1a595ba856b3e2b8faa83dc277ab7a48}} 
+\index{C2M2.NeuronalDynamics.UGX.NeuronCell@{C2M2.NeuronalDynamics.UGX.NeuronCell}!cellFormatString@{cellFormatString}}
+\index{cellFormatString@{cellFormatString}!C2M2.NeuronalDynamics.UGX.NeuronCell@{C2M2.NeuronalDynamics.UGX.NeuronCell}}
+\doxysubsubsection{\texorpdfstring{cellFormatString}{cellFormatString}}
+{\footnotesize\ttfamily string C2\+M2.\+Neuronal\+Dynamics.\+UGX.\+Neuron\+Cell.\+cell\+Format\+String\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= }
+\DoxyCodeLine{            \textcolor{stringliteral}{"{}Vert count = \{0\}\(\backslash\)n"{}} +}
+\DoxyCodeLine{            \textcolor{stringliteral}{"{}Edge count = \{1\}\(\backslash\)n"{}} +}
+\DoxyCodeLine{            \textcolor{stringliteral}{"{}Max edge length = \{2\}\(\backslash\)n"{}} +}
+\DoxyCodeLine{            \textcolor{stringliteral}{"{}Avg edge length = \{3\}\(\backslash\)n"{}} +}
+\DoxyCodeLine{            \textcolor{stringliteral}{"{}Min edge length = \{4\}"{}}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_cell_a315568990294f5f826e2fd995d161e5f}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_cell_a315568990294f5f826e2fd995d161e5f}} 
+\index{C2M2.NeuronalDynamics.UGX.NeuronCell@{C2M2.NeuronalDynamics.UGX.NeuronCell}!edgeCount@{edgeCount}}
+\index{edgeCount@{edgeCount}!C2M2.NeuronalDynamics.UGX.NeuronCell@{C2M2.NeuronalDynamics.UGX.NeuronCell}}
+\doxysubsubsection{\texorpdfstring{edgeCount}{edgeCount}}
+{\footnotesize\ttfamily int C2\+M2.\+Neuronal\+Dynamics.\+UGX.\+Neuron\+Cell.\+edge\+Count = new int()}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_cell_a2c7cf01c0b0b7c978ce762fa2d71b9df}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_cell_a2c7cf01c0b0b7c978ce762fa2d71b9df}} 
+\index{C2M2.NeuronalDynamics.UGX.NeuronCell@{C2M2.NeuronalDynamics.UGX.NeuronCell}!edgeFormatString@{edgeFormatString}}
+\index{edgeFormatString@{edgeFormatString}!C2M2.NeuronalDynamics.UGX.NeuronCell@{C2M2.NeuronalDynamics.UGX.NeuronCell}}
+\doxysubsubsection{\texorpdfstring{edgeFormatString}{edgeFormatString}}
+{\footnotesize\ttfamily string C2\+M2.\+Neuronal\+Dynamics.\+UGX.\+Neuron\+Cell.\+edge\+Format\+String\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=}
+\DoxyCodeLine{            \textcolor{stringliteral}{"{}Start ID = \{0\}\(\backslash\)n"{}} +}
+\DoxyCodeLine{            \textcolor{stringliteral}{"{}End ID = \{1\}\(\backslash\)n"{}} +}
+\DoxyCodeLine{            \textcolor{stringliteral}{"{}Length = \{2\}"{}}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_cell_ab0b9d87ce4d2b73650e7c6c9520ff01d}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_cell_ab0b9d87ce4d2b73650e7c6c9520ff01d}} 
+\index{C2M2.NeuronalDynamics.UGX.NeuronCell@{C2M2.NeuronalDynamics.UGX.NeuronCell}!edgeLengths@{edgeLengths}}
+\index{edgeLengths@{edgeLengths}!C2M2.NeuronalDynamics.UGX.NeuronCell@{C2M2.NeuronalDynamics.UGX.NeuronCell}}
+\doxysubsubsection{\texorpdfstring{edgeLengths}{edgeLengths}}
+{\footnotesize\ttfamily List$<$double$>$ C2\+M2.\+Neuronal\+Dynamics.\+UGX.\+Neuron\+Cell.\+edge\+Lengths = new List$<$double$>$()}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_cell_aa0ade66db78a91961b5a228bfa668144}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_cell_aa0ade66db78a91961b5a228bfa668144}} 
+\index{C2M2.NeuronalDynamics.UGX.NeuronCell@{C2M2.NeuronalDynamics.UGX.NeuronCell}!edges@{edges}}
+\index{edges@{edges}!C2M2.NeuronalDynamics.UGX.NeuronCell@{C2M2.NeuronalDynamics.UGX.NeuronCell}}
+\doxysubsubsection{\texorpdfstring{edges}{edges}}
+{\footnotesize\ttfamily List$<$Tuple$<$int, int$>$ $>$ C2\+M2.\+Neuronal\+Dynamics.\+UGX.\+Neuron\+Cell.\+edges = new List$<$Tuple$<$int, int$>$$>$()}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_cell_ae742e1a074bc05437c45385924565105}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_cell_ae742e1a074bc05437c45385924565105}} 
+\index{C2M2.NeuronalDynamics.UGX.NeuronCell@{C2M2.NeuronalDynamics.UGX.NeuronCell}!nodeData@{nodeData}}
+\index{nodeData@{nodeData}!C2M2.NeuronalDynamics.UGX.NeuronCell@{C2M2.NeuronalDynamics.UGX.NeuronCell}}
+\doxysubsubsection{\texorpdfstring{nodeData}{nodeData}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{struct_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_cell_1_1_node_data}{Node\+Data}}$>$ C2\+M2.\+Neuronal\+Dynamics.\+UGX.\+Neuron\+Cell.\+node\+Data = new List$<$\mbox{\hyperlink{struct_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_cell_1_1_node_data}{Node\+Data}}$>$()}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_cell_a53c292436d1bfc7190e17c3a05bb2617}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_cell_a53c292436d1bfc7190e17c3a05bb2617}} 
+\index{C2M2.NeuronalDynamics.UGX.NeuronCell@{C2M2.NeuronalDynamics.UGX.NeuronCell}!nodeFormatString@{nodeFormatString}}
+\index{nodeFormatString@{nodeFormatString}!C2M2.NeuronalDynamics.UGX.NeuronCell@{C2M2.NeuronalDynamics.UGX.NeuronCell}}
+\doxysubsubsection{\texorpdfstring{nodeFormatString}{nodeFormatString}}
+{\footnotesize\ttfamily string C2\+M2.\+Neuronal\+Dynamics.\+UGX.\+Neuron\+Cell.\+node\+Format\+String\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=}
+\DoxyCodeLine{            \textcolor{stringliteral}{"{}ID = \{0\}\(\backslash\)n"{}} +}
+\DoxyCodeLine{            \textcolor{stringliteral}{"{}Coordinates =  (\{1\}, \{2\}, \{3\})\(\backslash\)n"{}} +}
+\DoxyCodeLine{            \textcolor{stringliteral}{"{}\{4\}"{}}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_cell_a67566dcc691909971a82a357574257a2}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_cell_a67566dcc691909971a82a357574257a2}} 
+\index{C2M2.NeuronalDynamics.UGX.NeuronCell@{C2M2.NeuronalDynamics.UGX.NeuronCell}!somaID@{somaID}}
+\index{somaID@{somaID}!C2M2.NeuronalDynamics.UGX.NeuronCell@{C2M2.NeuronalDynamics.UGX.NeuronCell}}
+\doxysubsubsection{\texorpdfstring{somaID}{somaID}}
+{\footnotesize\ttfamily List$<$int$>$ C2\+M2.\+Neuronal\+Dynamics.\+UGX.\+Neuron\+Cell.\+soma\+ID = new List$<$int$>$()}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_cell_affcc860de06dd55bff1a11ece180fb99}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_cell_affcc860de06dd55bff1a11ece180fb99}} 
+\index{C2M2.NeuronalDynamics.UGX.NeuronCell@{C2M2.NeuronalDynamics.UGX.NeuronCell}!vertCount@{vertCount}}
+\index{vertCount@{vertCount}!C2M2.NeuronalDynamics.UGX.NeuronCell@{C2M2.NeuronalDynamics.UGX.NeuronCell}}
+\doxysubsubsection{\texorpdfstring{vertCount}{vertCount}}
+{\footnotesize\ttfamily int C2\+M2.\+Neuronal\+Dynamics.\+UGX.\+Neuron\+Cell.\+vert\+Count = new int()}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/jaros/\+Desktop/tempvr/virtual-\/reality/\+Assets/\+Scripts/\+C2\+M2/\+Neuronal\+Dynamics/\+UGX/\mbox{\hyperlink{_neuron_cell_8cs}{Neuron\+Cell.\+cs}}\end{DoxyCompactItemize}

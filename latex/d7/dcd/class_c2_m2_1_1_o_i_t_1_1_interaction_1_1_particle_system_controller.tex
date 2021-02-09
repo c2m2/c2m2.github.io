@@ -1,0 +1,235 @@
+\hypertarget{class_c2_m2_1_1_o_i_t_1_1_interaction_1_1_particle_system_controller}{}\doxysection{C2\+M2.\+OIT.\+Interaction.\+Particle\+System\+Controller Class Reference}
+\label{class_c2_m2_1_1_o_i_t_1_1_interaction_1_1_particle_system_controller}\index{C2M2.OIT.Interaction.ParticleSystemController@{C2M2.OIT.Interaction.ParticleSystemController}}
+
+
+Inheritance diagram for C2\+M2.\+OIT.\+Interaction.\+Particle\+System\+Controller\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=271pt]{db/dcc/class_c2_m2_1_1_o_i_t_1_1_interaction_1_1_particle_system_controller__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for C2\+M2.\+OIT.\+Interaction.\+Particle\+System\+Controller\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d6/d5e/class_c2_m2_1_1_o_i_t_1_1_interaction_1_1_particle_system_controller__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_c2_m2_1_1_o_i_t_1_1_interaction_1_1_particle_system_controller_a0192f179a544a182934ffc7b1d8f8ac9}{Update\+Particles}} (\mbox{\hyperlink{class_c2_m2_1_1_o_i_t_1_1_data_set}{Data\+Set}} new\+Data\+Set)
+\item 
+void \mbox{\hyperlink{class_c2_m2_1_1_o_i_t_1_1_interaction_1_1_particle_system_controller_a2b147f6529b1e832bfc53f4eaade67d9}{Update\+Particle\+Size}} (float new\+Size)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_c2_m2_1_1_o_i_t_1_1_interaction_1_1_particle_system_controller_a477c71e8263ca2de35a8dc7f7c4b903c}{number\+Of\+Particles}} = 100
+\item 
+float \mbox{\hyperlink{class_c2_m2_1_1_o_i_t_1_1_interaction_1_1_particle_system_controller_ad2dd3b44ef31f447c96c35fa62fe65ff}{particle\+Size}} = 0.\+1f
+\item 
+Vector3 \mbox{\hyperlink{class_c2_m2_1_1_o_i_t_1_1_interaction_1_1_particle_system_controller_a21e1e9f630bd56f0e8dda09ce1b6e125}{max\+Values}}
+\item 
+Vector3 \mbox{\hyperlink{class_c2_m2_1_1_o_i_t_1_1_interaction_1_1_particle_system_controller_aed3d058a89c35c442ff4738d1d0225ad}{min\+Values}}
+\item 
+float \mbox{\hyperlink{class_c2_m2_1_1_o_i_t_1_1_interaction_1_1_particle_system_controller_a1fa7141e12c830716f809cf98972ddfa}{isoquant\+High}} = 0f
+\item 
+float \mbox{\hyperlink{class_c2_m2_1_1_o_i_t_1_1_interaction_1_1_particle_system_controller_a9b64379afc39cc2c739bb9830f2bc398}{isoquant\+Low}} = 0f
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_c2_m2_1_1_o_i_t_1_1_interaction_1_1_particle_system_controller_af9a9e0e10a67b630c22585e611c67936}{Start}} ()
+\item 
+void \mbox{\hyperlink{class_c2_m2_1_1_o_i_t_1_1_interaction_1_1_particle_system_controller_ad082e5272d61097fb243983a8811a17d}{Update}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Particle\+System.\+Particle\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_c2_m2_1_1_o_i_t_1_1_interaction_1_1_particle_system_controller_a35c07e29242237cd6dc0572bea079c57}{particles}}
+\item 
+bool \mbox{\hyperlink{class_c2_m2_1_1_o_i_t_1_1_interaction_1_1_particle_system_controller_acd9c092acb77292e94373e5711f20e72}{particles\+Updated}} = false
+\item 
+Particle\+System \mbox{\hyperlink{class_c2_m2_1_1_o_i_t_1_1_interaction_1_1_particle_system_controller_af54305e251c0ac5ec04aa48398b9fca1}{particle\+Sys}}
+\item 
+Particle\+System\+Renderer \mbox{\hyperlink{class_c2_m2_1_1_o_i_t_1_1_interaction_1_1_particle_system_controller_a7ef3d6625d2a9ff19ee2325dec8e3233}{particle\+Sys\+Rend}}
+\item 
+\mbox{\hyperlink{class_c2_m2_1_1_o_i_t_1_1_visualization_1_1_particle_system_ascii_data_reader}{Particle\+System\+Ascii\+Data\+Reader}} \mbox{\hyperlink{class_c2_m2_1_1_o_i_t_1_1_interaction_1_1_particle_system_controller_a679d7d3788384c255fa52e11ede33b26}{particle\+Text\+Data}}
+\item 
+\mbox{\hyperlink{class_c2_m2_1_1_o_i_t_1_1_interaction_1_1_particle_field_handle_controller}{Particle\+Field\+Handle\+Controller}} \mbox{\hyperlink{class_c2_m2_1_1_o_i_t_1_1_interaction_1_1_particle_system_controller_a1ee18304026c6a299e774ef6dca9da53}{particle\+Handle\+Controller}}
+\item 
+Vector3\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_c2_m2_1_1_o_i_t_1_1_interaction_1_1_particle_system_controller_ad45f460b67490c9d9a0a0bf4705a9d95}{new\+Positions}}
+\item 
+Color\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_c2_m2_1_1_o_i_t_1_1_interaction_1_1_particle_system_controller_ad90261dd419331c1d5dfd55e31896824}{new\+Colors}}
+\item 
+int \mbox{\hyperlink{class_c2_m2_1_1_o_i_t_1_1_interaction_1_1_particle_system_controller_acc2cb47a2dc77743e9d214f46dedd3b4}{particle\+Number\+Change\+Holder}}
+\item 
+float \mbox{\hyperlink{class_c2_m2_1_1_o_i_t_1_1_interaction_1_1_particle_system_controller_a97ebaf06af440a63e3605e501ac7c1ac}{particle\+Size\+Change\+Holder}}
+\item 
+Vector3 \mbox{\hyperlink{class_c2_m2_1_1_o_i_t_1_1_interaction_1_1_particle_system_controller_af0fe7847e59f56c292dd2971959ae585}{max\+Value\+Holder}}
+\item 
+Vector3 \mbox{\hyperlink{class_c2_m2_1_1_o_i_t_1_1_interaction_1_1_particle_system_controller_a405cb621de79c627f8555fff092e0e49}{min\+Value\+Holder}}
+\item 
+float \mbox{\hyperlink{class_c2_m2_1_1_o_i_t_1_1_interaction_1_1_particle_system_controller_a8fd3c32c9d46f55c2b57ebb28b2ae3a1}{isoquant\+High\+Holder}} = 0f
+\item 
+float \mbox{\hyperlink{class_c2_m2_1_1_o_i_t_1_1_interaction_1_1_particle_system_controller_ab7a7594c8bae6b2a141dfc95e2fc640b}{isoquant\+Low\+Holder}} = 0f
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_c2_m2_1_1_o_i_t_1_1_interaction_1_1_particle_system_controller_af9a9e0e10a67b630c22585e611c67936}\label{class_c2_m2_1_1_o_i_t_1_1_interaction_1_1_particle_system_controller_af9a9e0e10a67b630c22585e611c67936}} 
+\index{C2M2.OIT.Interaction.ParticleSystemController@{C2M2.OIT.Interaction.ParticleSystemController}!Start@{Start}}
+\index{Start@{Start}!C2M2.OIT.Interaction.ParticleSystemController@{C2M2.OIT.Interaction.ParticleSystemController}}
+\doxysubsubsection{\texorpdfstring{Start()}{Start()}}
+{\footnotesize\ttfamily void C2\+M2.\+OIT.\+Interaction.\+Particle\+System\+Controller.\+Start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_o_i_t_1_1_interaction_1_1_particle_system_controller_ad082e5272d61097fb243983a8811a17d}\label{class_c2_m2_1_1_o_i_t_1_1_interaction_1_1_particle_system_controller_ad082e5272d61097fb243983a8811a17d}} 
+\index{C2M2.OIT.Interaction.ParticleSystemController@{C2M2.OIT.Interaction.ParticleSystemController}!Update@{Update}}
+\index{Update@{Update}!C2M2.OIT.Interaction.ParticleSystemController@{C2M2.OIT.Interaction.ParticleSystemController}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void C2\+M2.\+OIT.\+Interaction.\+Particle\+System\+Controller.\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_o_i_t_1_1_interaction_1_1_particle_system_controller_a0192f179a544a182934ffc7b1d8f8ac9}\label{class_c2_m2_1_1_o_i_t_1_1_interaction_1_1_particle_system_controller_a0192f179a544a182934ffc7b1d8f8ac9}} 
+\index{C2M2.OIT.Interaction.ParticleSystemController@{C2M2.OIT.Interaction.ParticleSystemController}!UpdateParticles@{UpdateParticles}}
+\index{UpdateParticles@{UpdateParticles}!C2M2.OIT.Interaction.ParticleSystemController@{C2M2.OIT.Interaction.ParticleSystemController}}
+\doxysubsubsection{\texorpdfstring{UpdateParticles()}{UpdateParticles()}}
+{\footnotesize\ttfamily void C2\+M2.\+OIT.\+Interaction.\+Particle\+System\+Controller.\+Update\+Particles (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c2_m2_1_1_o_i_t_1_1_data_set}{Data\+Set}}}]{new\+Data\+Set }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_o_i_t_1_1_interaction_1_1_particle_system_controller_a2b147f6529b1e832bfc53f4eaade67d9}\label{class_c2_m2_1_1_o_i_t_1_1_interaction_1_1_particle_system_controller_a2b147f6529b1e832bfc53f4eaade67d9}} 
+\index{C2M2.OIT.Interaction.ParticleSystemController@{C2M2.OIT.Interaction.ParticleSystemController}!UpdateParticleSize@{UpdateParticleSize}}
+\index{UpdateParticleSize@{UpdateParticleSize}!C2M2.OIT.Interaction.ParticleSystemController@{C2M2.OIT.Interaction.ParticleSystemController}}
+\doxysubsubsection{\texorpdfstring{UpdateParticleSize()}{UpdateParticleSize()}}
+{\footnotesize\ttfamily void C2\+M2.\+OIT.\+Interaction.\+Particle\+System\+Controller.\+Update\+Particle\+Size (\begin{DoxyParamCaption}\item[{float}]{new\+Size }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_c2_m2_1_1_o_i_t_1_1_interaction_1_1_particle_system_controller_a1fa7141e12c830716f809cf98972ddfa}\label{class_c2_m2_1_1_o_i_t_1_1_interaction_1_1_particle_system_controller_a1fa7141e12c830716f809cf98972ddfa}} 
+\index{C2M2.OIT.Interaction.ParticleSystemController@{C2M2.OIT.Interaction.ParticleSystemController}!isoquantHigh@{isoquantHigh}}
+\index{isoquantHigh@{isoquantHigh}!C2M2.OIT.Interaction.ParticleSystemController@{C2M2.OIT.Interaction.ParticleSystemController}}
+\doxysubsubsection{\texorpdfstring{isoquantHigh}{isoquantHigh}}
+{\footnotesize\ttfamily float C2\+M2.\+OIT.\+Interaction.\+Particle\+System\+Controller.\+isoquant\+High = 0f}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_o_i_t_1_1_interaction_1_1_particle_system_controller_a8fd3c32c9d46f55c2b57ebb28b2ae3a1}\label{class_c2_m2_1_1_o_i_t_1_1_interaction_1_1_particle_system_controller_a8fd3c32c9d46f55c2b57ebb28b2ae3a1}} 
+\index{C2M2.OIT.Interaction.ParticleSystemController@{C2M2.OIT.Interaction.ParticleSystemController}!isoquantHighHolder@{isoquantHighHolder}}
+\index{isoquantHighHolder@{isoquantHighHolder}!C2M2.OIT.Interaction.ParticleSystemController@{C2M2.OIT.Interaction.ParticleSystemController}}
+\doxysubsubsection{\texorpdfstring{isoquantHighHolder}{isoquantHighHolder}}
+{\footnotesize\ttfamily float C2\+M2.\+OIT.\+Interaction.\+Particle\+System\+Controller.\+isoquant\+High\+Holder = 0f\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_o_i_t_1_1_interaction_1_1_particle_system_controller_a9b64379afc39cc2c739bb9830f2bc398}\label{class_c2_m2_1_1_o_i_t_1_1_interaction_1_1_particle_system_controller_a9b64379afc39cc2c739bb9830f2bc398}} 
+\index{C2M2.OIT.Interaction.ParticleSystemController@{C2M2.OIT.Interaction.ParticleSystemController}!isoquantLow@{isoquantLow}}
+\index{isoquantLow@{isoquantLow}!C2M2.OIT.Interaction.ParticleSystemController@{C2M2.OIT.Interaction.ParticleSystemController}}
+\doxysubsubsection{\texorpdfstring{isoquantLow}{isoquantLow}}
+{\footnotesize\ttfamily float C2\+M2.\+OIT.\+Interaction.\+Particle\+System\+Controller.\+isoquant\+Low = 0f}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_o_i_t_1_1_interaction_1_1_particle_system_controller_ab7a7594c8bae6b2a141dfc95e2fc640b}\label{class_c2_m2_1_1_o_i_t_1_1_interaction_1_1_particle_system_controller_ab7a7594c8bae6b2a141dfc95e2fc640b}} 
+\index{C2M2.OIT.Interaction.ParticleSystemController@{C2M2.OIT.Interaction.ParticleSystemController}!isoquantLowHolder@{isoquantLowHolder}}
+\index{isoquantLowHolder@{isoquantLowHolder}!C2M2.OIT.Interaction.ParticleSystemController@{C2M2.OIT.Interaction.ParticleSystemController}}
+\doxysubsubsection{\texorpdfstring{isoquantLowHolder}{isoquantLowHolder}}
+{\footnotesize\ttfamily float C2\+M2.\+OIT.\+Interaction.\+Particle\+System\+Controller.\+isoquant\+Low\+Holder = 0f\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_o_i_t_1_1_interaction_1_1_particle_system_controller_af0fe7847e59f56c292dd2971959ae585}\label{class_c2_m2_1_1_o_i_t_1_1_interaction_1_1_particle_system_controller_af0fe7847e59f56c292dd2971959ae585}} 
+\index{C2M2.OIT.Interaction.ParticleSystemController@{C2M2.OIT.Interaction.ParticleSystemController}!maxValueHolder@{maxValueHolder}}
+\index{maxValueHolder@{maxValueHolder}!C2M2.OIT.Interaction.ParticleSystemController@{C2M2.OIT.Interaction.ParticleSystemController}}
+\doxysubsubsection{\texorpdfstring{maxValueHolder}{maxValueHolder}}
+{\footnotesize\ttfamily Vector3 C2\+M2.\+OIT.\+Interaction.\+Particle\+System\+Controller.\+max\+Value\+Holder\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_o_i_t_1_1_interaction_1_1_particle_system_controller_a21e1e9f630bd56f0e8dda09ce1b6e125}\label{class_c2_m2_1_1_o_i_t_1_1_interaction_1_1_particle_system_controller_a21e1e9f630bd56f0e8dda09ce1b6e125}} 
+\index{C2M2.OIT.Interaction.ParticleSystemController@{C2M2.OIT.Interaction.ParticleSystemController}!maxValues@{maxValues}}
+\index{maxValues@{maxValues}!C2M2.OIT.Interaction.ParticleSystemController@{C2M2.OIT.Interaction.ParticleSystemController}}
+\doxysubsubsection{\texorpdfstring{maxValues}{maxValues}}
+{\footnotesize\ttfamily Vector3 C2\+M2.\+OIT.\+Interaction.\+Particle\+System\+Controller.\+max\+Values}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_o_i_t_1_1_interaction_1_1_particle_system_controller_a405cb621de79c627f8555fff092e0e49}\label{class_c2_m2_1_1_o_i_t_1_1_interaction_1_1_particle_system_controller_a405cb621de79c627f8555fff092e0e49}} 
+\index{C2M2.OIT.Interaction.ParticleSystemController@{C2M2.OIT.Interaction.ParticleSystemController}!minValueHolder@{minValueHolder}}
+\index{minValueHolder@{minValueHolder}!C2M2.OIT.Interaction.ParticleSystemController@{C2M2.OIT.Interaction.ParticleSystemController}}
+\doxysubsubsection{\texorpdfstring{minValueHolder}{minValueHolder}}
+{\footnotesize\ttfamily Vector3 C2\+M2.\+OIT.\+Interaction.\+Particle\+System\+Controller.\+min\+Value\+Holder\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_o_i_t_1_1_interaction_1_1_particle_system_controller_aed3d058a89c35c442ff4738d1d0225ad}\label{class_c2_m2_1_1_o_i_t_1_1_interaction_1_1_particle_system_controller_aed3d058a89c35c442ff4738d1d0225ad}} 
+\index{C2M2.OIT.Interaction.ParticleSystemController@{C2M2.OIT.Interaction.ParticleSystemController}!minValues@{minValues}}
+\index{minValues@{minValues}!C2M2.OIT.Interaction.ParticleSystemController@{C2M2.OIT.Interaction.ParticleSystemController}}
+\doxysubsubsection{\texorpdfstring{minValues}{minValues}}
+{\footnotesize\ttfamily Vector3 C2\+M2.\+OIT.\+Interaction.\+Particle\+System\+Controller.\+min\+Values}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_o_i_t_1_1_interaction_1_1_particle_system_controller_ad90261dd419331c1d5dfd55e31896824}\label{class_c2_m2_1_1_o_i_t_1_1_interaction_1_1_particle_system_controller_ad90261dd419331c1d5dfd55e31896824}} 
+\index{C2M2.OIT.Interaction.ParticleSystemController@{C2M2.OIT.Interaction.ParticleSystemController}!newColors@{newColors}}
+\index{newColors@{newColors}!C2M2.OIT.Interaction.ParticleSystemController@{C2M2.OIT.Interaction.ParticleSystemController}}
+\doxysubsubsection{\texorpdfstring{newColors}{newColors}}
+{\footnotesize\ttfamily Color \mbox{[}$\,$\mbox{]} C2\+M2.\+OIT.\+Interaction.\+Particle\+System\+Controller.\+new\+Colors\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_o_i_t_1_1_interaction_1_1_particle_system_controller_ad45f460b67490c9d9a0a0bf4705a9d95}\label{class_c2_m2_1_1_o_i_t_1_1_interaction_1_1_particle_system_controller_ad45f460b67490c9d9a0a0bf4705a9d95}} 
+\index{C2M2.OIT.Interaction.ParticleSystemController@{C2M2.OIT.Interaction.ParticleSystemController}!newPositions@{newPositions}}
+\index{newPositions@{newPositions}!C2M2.OIT.Interaction.ParticleSystemController@{C2M2.OIT.Interaction.ParticleSystemController}}
+\doxysubsubsection{\texorpdfstring{newPositions}{newPositions}}
+{\footnotesize\ttfamily Vector3 \mbox{[}$\,$\mbox{]} C2\+M2.\+OIT.\+Interaction.\+Particle\+System\+Controller.\+new\+Positions\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_o_i_t_1_1_interaction_1_1_particle_system_controller_a477c71e8263ca2de35a8dc7f7c4b903c}\label{class_c2_m2_1_1_o_i_t_1_1_interaction_1_1_particle_system_controller_a477c71e8263ca2de35a8dc7f7c4b903c}} 
+\index{C2M2.OIT.Interaction.ParticleSystemController@{C2M2.OIT.Interaction.ParticleSystemController}!numberOfParticles@{numberOfParticles}}
+\index{numberOfParticles@{numberOfParticles}!C2M2.OIT.Interaction.ParticleSystemController@{C2M2.OIT.Interaction.ParticleSystemController}}
+\doxysubsubsection{\texorpdfstring{numberOfParticles}{numberOfParticles}}
+{\footnotesize\ttfamily int C2\+M2.\+OIT.\+Interaction.\+Particle\+System\+Controller.\+number\+Of\+Particles = 100}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_o_i_t_1_1_interaction_1_1_particle_system_controller_a1ee18304026c6a299e774ef6dca9da53}\label{class_c2_m2_1_1_o_i_t_1_1_interaction_1_1_particle_system_controller_a1ee18304026c6a299e774ef6dca9da53}} 
+\index{C2M2.OIT.Interaction.ParticleSystemController@{C2M2.OIT.Interaction.ParticleSystemController}!particleHandleController@{particleHandleController}}
+\index{particleHandleController@{particleHandleController}!C2M2.OIT.Interaction.ParticleSystemController@{C2M2.OIT.Interaction.ParticleSystemController}}
+\doxysubsubsection{\texorpdfstring{particleHandleController}{particleHandleController}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c2_m2_1_1_o_i_t_1_1_interaction_1_1_particle_field_handle_controller}{Particle\+Field\+Handle\+Controller}} C2\+M2.\+OIT.\+Interaction.\+Particle\+System\+Controller.\+particle\+Handle\+Controller\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_o_i_t_1_1_interaction_1_1_particle_system_controller_acc2cb47a2dc77743e9d214f46dedd3b4}\label{class_c2_m2_1_1_o_i_t_1_1_interaction_1_1_particle_system_controller_acc2cb47a2dc77743e9d214f46dedd3b4}} 
+\index{C2M2.OIT.Interaction.ParticleSystemController@{C2M2.OIT.Interaction.ParticleSystemController}!particleNumberChangeHolder@{particleNumberChangeHolder}}
+\index{particleNumberChangeHolder@{particleNumberChangeHolder}!C2M2.OIT.Interaction.ParticleSystemController@{C2M2.OIT.Interaction.ParticleSystemController}}
+\doxysubsubsection{\texorpdfstring{particleNumberChangeHolder}{particleNumberChangeHolder}}
+{\footnotesize\ttfamily int C2\+M2.\+OIT.\+Interaction.\+Particle\+System\+Controller.\+particle\+Number\+Change\+Holder\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_o_i_t_1_1_interaction_1_1_particle_system_controller_a35c07e29242237cd6dc0572bea079c57}\label{class_c2_m2_1_1_o_i_t_1_1_interaction_1_1_particle_system_controller_a35c07e29242237cd6dc0572bea079c57}} 
+\index{C2M2.OIT.Interaction.ParticleSystemController@{C2M2.OIT.Interaction.ParticleSystemController}!particles@{particles}}
+\index{particles@{particles}!C2M2.OIT.Interaction.ParticleSystemController@{C2M2.OIT.Interaction.ParticleSystemController}}
+\doxysubsubsection{\texorpdfstring{particles}{particles}}
+{\footnotesize\ttfamily Particle\+System.\+Particle \mbox{[}$\,$\mbox{]} C2\+M2.\+OIT.\+Interaction.\+Particle\+System\+Controller.\+particles\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_o_i_t_1_1_interaction_1_1_particle_system_controller_ad2dd3b44ef31f447c96c35fa62fe65ff}\label{class_c2_m2_1_1_o_i_t_1_1_interaction_1_1_particle_system_controller_ad2dd3b44ef31f447c96c35fa62fe65ff}} 
+\index{C2M2.OIT.Interaction.ParticleSystemController@{C2M2.OIT.Interaction.ParticleSystemController}!particleSize@{particleSize}}
+\index{particleSize@{particleSize}!C2M2.OIT.Interaction.ParticleSystemController@{C2M2.OIT.Interaction.ParticleSystemController}}
+\doxysubsubsection{\texorpdfstring{particleSize}{particleSize}}
+{\footnotesize\ttfamily float C2\+M2.\+OIT.\+Interaction.\+Particle\+System\+Controller.\+particle\+Size = 0.\+1f}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_o_i_t_1_1_interaction_1_1_particle_system_controller_a97ebaf06af440a63e3605e501ac7c1ac}\label{class_c2_m2_1_1_o_i_t_1_1_interaction_1_1_particle_system_controller_a97ebaf06af440a63e3605e501ac7c1ac}} 
+\index{C2M2.OIT.Interaction.ParticleSystemController@{C2M2.OIT.Interaction.ParticleSystemController}!particleSizeChangeHolder@{particleSizeChangeHolder}}
+\index{particleSizeChangeHolder@{particleSizeChangeHolder}!C2M2.OIT.Interaction.ParticleSystemController@{C2M2.OIT.Interaction.ParticleSystemController}}
+\doxysubsubsection{\texorpdfstring{particleSizeChangeHolder}{particleSizeChangeHolder}}
+{\footnotesize\ttfamily float C2\+M2.\+OIT.\+Interaction.\+Particle\+System\+Controller.\+particle\+Size\+Change\+Holder\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_o_i_t_1_1_interaction_1_1_particle_system_controller_acd9c092acb77292e94373e5711f20e72}\label{class_c2_m2_1_1_o_i_t_1_1_interaction_1_1_particle_system_controller_acd9c092acb77292e94373e5711f20e72}} 
+\index{C2M2.OIT.Interaction.ParticleSystemController@{C2M2.OIT.Interaction.ParticleSystemController}!particlesUpdated@{particlesUpdated}}
+\index{particlesUpdated@{particlesUpdated}!C2M2.OIT.Interaction.ParticleSystemController@{C2M2.OIT.Interaction.ParticleSystemController}}
+\doxysubsubsection{\texorpdfstring{particlesUpdated}{particlesUpdated}}
+{\footnotesize\ttfamily bool C2\+M2.\+OIT.\+Interaction.\+Particle\+System\+Controller.\+particles\+Updated = false\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_o_i_t_1_1_interaction_1_1_particle_system_controller_af54305e251c0ac5ec04aa48398b9fca1}\label{class_c2_m2_1_1_o_i_t_1_1_interaction_1_1_particle_system_controller_af54305e251c0ac5ec04aa48398b9fca1}} 
+\index{C2M2.OIT.Interaction.ParticleSystemController@{C2M2.OIT.Interaction.ParticleSystemController}!particleSys@{particleSys}}
+\index{particleSys@{particleSys}!C2M2.OIT.Interaction.ParticleSystemController@{C2M2.OIT.Interaction.ParticleSystemController}}
+\doxysubsubsection{\texorpdfstring{particleSys}{particleSys}}
+{\footnotesize\ttfamily Particle\+System C2\+M2.\+OIT.\+Interaction.\+Particle\+System\+Controller.\+particle\+Sys\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_o_i_t_1_1_interaction_1_1_particle_system_controller_a7ef3d6625d2a9ff19ee2325dec8e3233}\label{class_c2_m2_1_1_o_i_t_1_1_interaction_1_1_particle_system_controller_a7ef3d6625d2a9ff19ee2325dec8e3233}} 
+\index{C2M2.OIT.Interaction.ParticleSystemController@{C2M2.OIT.Interaction.ParticleSystemController}!particleSysRend@{particleSysRend}}
+\index{particleSysRend@{particleSysRend}!C2M2.OIT.Interaction.ParticleSystemController@{C2M2.OIT.Interaction.ParticleSystemController}}
+\doxysubsubsection{\texorpdfstring{particleSysRend}{particleSysRend}}
+{\footnotesize\ttfamily Particle\+System\+Renderer C2\+M2.\+OIT.\+Interaction.\+Particle\+System\+Controller.\+particle\+Sys\+Rend\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_o_i_t_1_1_interaction_1_1_particle_system_controller_a679d7d3788384c255fa52e11ede33b26}\label{class_c2_m2_1_1_o_i_t_1_1_interaction_1_1_particle_system_controller_a679d7d3788384c255fa52e11ede33b26}} 
+\index{C2M2.OIT.Interaction.ParticleSystemController@{C2M2.OIT.Interaction.ParticleSystemController}!particleTextData@{particleTextData}}
+\index{particleTextData@{particleTextData}!C2M2.OIT.Interaction.ParticleSystemController@{C2M2.OIT.Interaction.ParticleSystemController}}
+\doxysubsubsection{\texorpdfstring{particleTextData}{particleTextData}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c2_m2_1_1_o_i_t_1_1_visualization_1_1_particle_system_ascii_data_reader}{Particle\+System\+Ascii\+Data\+Reader}} C2\+M2.\+OIT.\+Interaction.\+Particle\+System\+Controller.\+particle\+Text\+Data\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/jaros/\+Desktop/tempvr/virtual-\/reality/\+Assets/\+Scripts/\+C2\+M2/\+OIT/\+Interaction/\mbox{\hyperlink{_particle_system_controller_8cs}{Particle\+System\+Controller.\+cs}}\end{DoxyCompactItemize}

@@ -1,0 +1,370 @@
+\hypertarget{class_c2_m2_1_1_interaction_1_1_signaling_1_1_oculus_event_signaler}{}\doxysection{C2\+M2.\+Interaction.\+Signaling.\+Oculus\+Event\+Signaler Class Reference}
+\label{class_c2_m2_1_1_interaction_1_1_signaling_1_1_oculus_event_signaler}\index{C2M2.Interaction.Signaling.OculusEventSignaler@{C2M2.Interaction.Signaling.OculusEventSignaler}}
+
+
+Activate raycast triggers using oculus controller buttons and fingertip distance  
+
+
+
+
+Inheritance diagram for C2\+M2.\+Interaction.\+Signaling.\+Oculus\+Event\+Signaler\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{dc/d05/class_c2_m2_1_1_interaction_1_1_signaling_1_1_oculus_event_signaler__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for C2\+M2.\+Interaction.\+Signaling.\+Oculus\+Event\+Signaler\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{d2/d3c/class_c2_m2_1_1_interaction_1_1_signaling_1_1_oculus_event_signaler__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+OVRInput.\+Controller \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_signaling_1_1_oculus_event_signaler_a76122478e31153a20507017d4be08573}{controller}} = OVRInput.\+Controller.\+RTouch
+\item 
+OVRInput.\+Button \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_signaling_1_1_oculus_event_signaler_aa9b7eafd35bb79fb23a860af99022c20}{begin\+Raycasting\+Button}} = OVRInput.\+Button.\+One
+\item 
+bool \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_signaling_1_1_oculus_event_signaler_a3fed153ded3eac49fe962e77c1e5075d}{toggle\+Mode}} = true
+\item 
+OVRInput.\+Button \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_signaling_1_1_oculus_event_signaler_a9f8c0781372a76a22daa186e03f1e327}{trigger\+Events\+Button}} = OVRInput.\+Button.\+Primary\+Index\+Trigger
+\item 
+OVRGrabber \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_signaling_1_1_oculus_event_signaler_a492f1a6260348a15b48561064fa80e29}{grabber}} = null
+\item 
+Line\+Renderer \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_signaling_1_1_oculus_event_signaler_aa8e421a80b204d3b1121534572cc9cee}{line\+Rend}}
+\item 
+Color \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_signaling_1_1_oculus_event_signaler_a77fa864ddd7be848429b26463b0ae0c8}{unpressed\+Color}} = Color.\+cyan
+\item 
+Color \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_signaling_1_1_oculus_event_signaler_aa6780425caf189e57a9ab1f828ea5edc}{pressed\+Color}} = new Color(1f, 0.\+6f, 0f)
+\item 
+Transform \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_signaling_1_1_oculus_event_signaler_ae8663032c704930be678ba9c5d18aa22}{local\+Avatar}}
+\item 
+bool \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_signaling_1_1_oculus_event_signaler_a38321d870d7db234a21f4eaec58f5cf3}{is\+Left\+Hand}} = false
+\item 
+Mesh\+Renderer \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_signaling_1_1_oculus_event_signaler_a4488468bd600c0cc2821cdd49cadff72}{static\+Hand}}
+\item 
+float \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_signaling_1_1_oculus_event_signaler_aab6416616e3e0a5e01ed2c9bc9c880dd}{click\+Distance}} = 0.\+01f
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+override void \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_signaling_1_1_oculus_event_signaler_a05bb72fe706813f2b37a1920b2b59146}{On\+Awake}} ()
+\item 
+override void \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_signaling_1_1_oculus_event_signaler_a11d09791f0b23ab35ae3af471945b214}{On\+Start}} ()
+\item 
+override bool \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_signaling_1_1_oculus_event_signaler_ace80fadaca7361147e30d3d12522938e}{Begin\+Raycasting\+Condition}} ()
+\begin{DoxyCompactList}\small\item\em Rrequire some condition before raycast requests are made. \end{DoxyCompactList}\item 
+override bool \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_signaling_1_1_oculus_event_signaler_ac70400fe6201d21bda655ad109af0795}{Childs\+Press\+Condition}} ()
+\begin{DoxyCompactList}\small\item\em \begin{DoxyReturn}{Returns}
+True if the specified controller button is pressed OR if we are near enough to the raycast target 
+\end{DoxyReturn}
+\end{DoxyCompactList}\item 
+override void \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_signaling_1_1_oculus_event_signaler_a05018a4cff128f771b8cb2bec6441ad3}{On\+Press\+Sub}} ()
+\begin{DoxyCompactList}\small\item\em Signal children that a press is beginning \end{DoxyCompactList}\item 
+override void \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_signaling_1_1_oculus_event_signaler_aa12d1db48f6dc26e33b3b036bab66a8f}{On\+Hold\+Press\+Sub}} ()
+\begin{DoxyCompactList}\small\item\em Signal children that a press is being held \end{DoxyCompactList}\item 
+override void \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_signaling_1_1_oculus_event_signaler_a37784554f2b05e0d6a67d2e9228cbd5e}{On\+End\+Press\+Sub}} ()
+\begin{DoxyCompactList}\small\item\em Signal children that a press is ending \end{DoxyCompactList}\item 
+override bool \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_signaling_1_1_oculus_event_signaler_a156ac1dcec18dbe416610fccf2dee85e}{Raycasting\+Method}} (out Raycast\+Hit hit, float max\+Distance, Layer\+Mask \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_signaling_1_1_raycast_event_signaler_a726777cce7f331f18abe367fb9cae19b}{layer\+Mask}})
+\begin{DoxyCompactList}\small\item\em Raycast using fingertip position/direction, handle fingertip line renderer \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_signaling_1_1_oculus_event_signaler_adb0495fe8a027b0d50b99d1323c1f9c5}{Toggled}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_signaling_1_1_oculus_event_signaler_ad477458f15d470cbf2bf0377bb731996}{Static\+Hand\+Set\+Active}} (bool active)
+\begin{DoxyCompactList}\small\item\em Enable/disable static raycasting hand model and default hand \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_signaling_1_1_oculus_event_signaler_aaff3ce1ed086b8d5c7dd48a75a8120c0}{Line\+Renderer\+Set\+Active}} (bool active)
+\begin{DoxyCompactList}\small\item\em Enable/\+Disable line renderer depending on if raycasting mode is enabled \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_signaling_1_1_oculus_event_signaler_a9af5d9e1df38283f4162bdc158c31124}{Check\+Press\+Distance}} (Raycast\+Hit hit)
+\begin{DoxyCompactList}\small\item\em Figure out if we should trigger a press based on distance \end{DoxyCompactList}\item 
+IEnumerator \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_signaling_1_1_oculus_event_signaler_a0c71ce2b2c6891f88a737b07eaec23bd}{Search\+For\+Hand}} (int wait\+Frames)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_signaling_1_1_oculus_event_signaler_ac353809f3e1daea53f31e19c5c36200a}{toggled}} = false
+\item 
+bool \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_signaling_1_1_oculus_event_signaler_a65334de612c22dae2bd1c8e19d0c546b}{distance\+Pressed}} = false
+\item 
+Unity\+Engine.\+Game\+Object \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_signaling_1_1_oculus_event_signaler_a0981f494976476b0b2f10dc0a5db9a4b}{default\+Hand}} = null
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Activate raycast triggers using oculus controller buttons and fingertip distance 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_signaling_1_1_oculus_event_signaler_ace80fadaca7361147e30d3d12522938e}\label{class_c2_m2_1_1_interaction_1_1_signaling_1_1_oculus_event_signaler_ace80fadaca7361147e30d3d12522938e}} 
+\index{C2M2.Interaction.Signaling.OculusEventSignaler@{C2M2.Interaction.Signaling.OculusEventSignaler}!BeginRaycastingCondition@{BeginRaycastingCondition}}
+\index{BeginRaycastingCondition@{BeginRaycastingCondition}!C2M2.Interaction.Signaling.OculusEventSignaler@{C2M2.Interaction.Signaling.OculusEventSignaler}}
+\doxysubsubsection{\texorpdfstring{BeginRaycastingCondition()}{BeginRaycastingCondition()}}
+{\footnotesize\ttfamily override bool C2\+M2.\+Interaction.\+Signaling.\+Oculus\+Event\+Signaler.\+Begin\+Raycasting\+Condition (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Rrequire some condition before raycast requests are made. 
+
+You can require a button be pressed before raycasting. In Oculus, this returns true if button \char`\"{}\+One\char`\"{} is pressed down. With mouse raycasting, this returns true if the mouse button is pressed down 
+
+Implements \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_signaling_1_1_raycast_event_signaler_a9b13001acb8d7c8ae6f1e6db96204a1a}{C2\+M2.\+Interaction.\+Signaling.\+Raycast\+Event\+Signaler}}.
+
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_signaling_1_1_oculus_event_signaler_a9af5d9e1df38283f4162bdc158c31124}\label{class_c2_m2_1_1_interaction_1_1_signaling_1_1_oculus_event_signaler_a9af5d9e1df38283f4162bdc158c31124}} 
+\index{C2M2.Interaction.Signaling.OculusEventSignaler@{C2M2.Interaction.Signaling.OculusEventSignaler}!CheckPressDistance@{CheckPressDistance}}
+\index{CheckPressDistance@{CheckPressDistance}!C2M2.Interaction.Signaling.OculusEventSignaler@{C2M2.Interaction.Signaling.OculusEventSignaler}}
+\doxysubsubsection{\texorpdfstring{CheckPressDistance()}{CheckPressDistance()}}
+{\footnotesize\ttfamily bool C2\+M2.\+Interaction.\+Signaling.\+Oculus\+Event\+Signaler.\+Check\+Press\+Distance (\begin{DoxyParamCaption}\item[{Raycast\+Hit}]{hit }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Figure out if we should trigger a press based on distance 
+
+\begin{DoxyReturn}{Returns}
+True if we have instigated a click event by coming within click distance, True if we are holding a press by remaining within hysteresis distance (3 $\ast$ click distance) after clicking, False otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_signaling_1_1_oculus_event_signaler_ac70400fe6201d21bda655ad109af0795}\label{class_c2_m2_1_1_interaction_1_1_signaling_1_1_oculus_event_signaler_ac70400fe6201d21bda655ad109af0795}} 
+\index{C2M2.Interaction.Signaling.OculusEventSignaler@{C2M2.Interaction.Signaling.OculusEventSignaler}!ChildsPressCondition@{ChildsPressCondition}}
+\index{ChildsPressCondition@{ChildsPressCondition}!C2M2.Interaction.Signaling.OculusEventSignaler@{C2M2.Interaction.Signaling.OculusEventSignaler}}
+\doxysubsubsection{\texorpdfstring{ChildsPressCondition()}{ChildsPressCondition()}}
+{\footnotesize\ttfamily override bool C2\+M2.\+Interaction.\+Signaling.\+Oculus\+Event\+Signaler.\+Childs\+Press\+Condition (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+\begin{DoxyReturn}{Returns}
+True if the specified controller button is pressed OR if we are near enough to the raycast target 
+\end{DoxyReturn}
+
+
+
+
+Implements \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_signaling_1_1_raycast_event_signaler_acc162942cbabe415e185b51d3e94e4d4}{C2\+M2.\+Interaction.\+Signaling.\+Raycast\+Event\+Signaler}}.
+
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_signaling_1_1_oculus_event_signaler_aaff3ce1ed086b8d5c7dd48a75a8120c0}\label{class_c2_m2_1_1_interaction_1_1_signaling_1_1_oculus_event_signaler_aaff3ce1ed086b8d5c7dd48a75a8120c0}} 
+\index{C2M2.Interaction.Signaling.OculusEventSignaler@{C2M2.Interaction.Signaling.OculusEventSignaler}!LineRendererSetActive@{LineRendererSetActive}}
+\index{LineRendererSetActive@{LineRendererSetActive}!C2M2.Interaction.Signaling.OculusEventSignaler@{C2M2.Interaction.Signaling.OculusEventSignaler}}
+\doxysubsubsection{\texorpdfstring{LineRendererSetActive()}{LineRendererSetActive()}}
+{\footnotesize\ttfamily void C2\+M2.\+Interaction.\+Signaling.\+Oculus\+Event\+Signaler.\+Line\+Renderer\+Set\+Active (\begin{DoxyParamCaption}\item[{bool}]{active }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Enable/\+Disable line renderer depending on if raycasting mode is enabled 
+
+
+\begin{DoxyParams}{Parameters}
+{\em active} & True to enable line renderer, false to disable \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_signaling_1_1_oculus_event_signaler_a05bb72fe706813f2b37a1920b2b59146}\label{class_c2_m2_1_1_interaction_1_1_signaling_1_1_oculus_event_signaler_a05bb72fe706813f2b37a1920b2b59146}} 
+\index{C2M2.Interaction.Signaling.OculusEventSignaler@{C2M2.Interaction.Signaling.OculusEventSignaler}!OnAwake@{OnAwake}}
+\index{OnAwake@{OnAwake}!C2M2.Interaction.Signaling.OculusEventSignaler@{C2M2.Interaction.Signaling.OculusEventSignaler}}
+\doxysubsubsection{\texorpdfstring{OnAwake()}{OnAwake()}}
+{\footnotesize\ttfamily override void C2\+M2.\+Interaction.\+Signaling.\+Oculus\+Event\+Signaler.\+On\+Awake (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_signaling_1_1_raycast_event_signaler_ac53b874c38a342dce0b7ed0b05b96480}{C2\+M2.\+Interaction.\+Signaling.\+Raycast\+Event\+Signaler}}.
+
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_signaling_1_1_oculus_event_signaler_a37784554f2b05e0d6a67d2e9228cbd5e}\label{class_c2_m2_1_1_interaction_1_1_signaling_1_1_oculus_event_signaler_a37784554f2b05e0d6a67d2e9228cbd5e}} 
+\index{C2M2.Interaction.Signaling.OculusEventSignaler@{C2M2.Interaction.Signaling.OculusEventSignaler}!OnEndPressSub@{OnEndPressSub}}
+\index{OnEndPressSub@{OnEndPressSub}!C2M2.Interaction.Signaling.OculusEventSignaler@{C2M2.Interaction.Signaling.OculusEventSignaler}}
+\doxysubsubsection{\texorpdfstring{OnEndPressSub()}{OnEndPressSub()}}
+{\footnotesize\ttfamily override void C2\+M2.\+Interaction.\+Signaling.\+Oculus\+Event\+Signaler.\+On\+End\+Press\+Sub (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Signal children that a press is ending 
+
+
+
+Reimplemented from \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_signaling_1_1_raycast_event_signaler_ac91cd2200f7edb60d322a3049e4c3705}{C2\+M2.\+Interaction.\+Signaling.\+Raycast\+Event\+Signaler}}.
+
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_signaling_1_1_oculus_event_signaler_aa12d1db48f6dc26e33b3b036bab66a8f}\label{class_c2_m2_1_1_interaction_1_1_signaling_1_1_oculus_event_signaler_aa12d1db48f6dc26e33b3b036bab66a8f}} 
+\index{C2M2.Interaction.Signaling.OculusEventSignaler@{C2M2.Interaction.Signaling.OculusEventSignaler}!OnHoldPressSub@{OnHoldPressSub}}
+\index{OnHoldPressSub@{OnHoldPressSub}!C2M2.Interaction.Signaling.OculusEventSignaler@{C2M2.Interaction.Signaling.OculusEventSignaler}}
+\doxysubsubsection{\texorpdfstring{OnHoldPressSub()}{OnHoldPressSub()}}
+{\footnotesize\ttfamily override void C2\+M2.\+Interaction.\+Signaling.\+Oculus\+Event\+Signaler.\+On\+Hold\+Press\+Sub (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Signal children that a press is being held 
+
+
+
+Reimplemented from \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_signaling_1_1_raycast_event_signaler_a587e5d422095824f2ca4589f4140236b}{C2\+M2.\+Interaction.\+Signaling.\+Raycast\+Event\+Signaler}}.
+
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_signaling_1_1_oculus_event_signaler_a05018a4cff128f771b8cb2bec6441ad3}\label{class_c2_m2_1_1_interaction_1_1_signaling_1_1_oculus_event_signaler_a05018a4cff128f771b8cb2bec6441ad3}} 
+\index{C2M2.Interaction.Signaling.OculusEventSignaler@{C2M2.Interaction.Signaling.OculusEventSignaler}!OnPressSub@{OnPressSub}}
+\index{OnPressSub@{OnPressSub}!C2M2.Interaction.Signaling.OculusEventSignaler@{C2M2.Interaction.Signaling.OculusEventSignaler}}
+\doxysubsubsection{\texorpdfstring{OnPressSub()}{OnPressSub()}}
+{\footnotesize\ttfamily override void C2\+M2.\+Interaction.\+Signaling.\+Oculus\+Event\+Signaler.\+On\+Press\+Sub (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Signal children that a press is beginning 
+
+
+
+Reimplemented from \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_signaling_1_1_raycast_event_signaler_a1ffbea0baa5966f89b3e8a2a0ce91d09}{C2\+M2.\+Interaction.\+Signaling.\+Raycast\+Event\+Signaler}}.
+
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_signaling_1_1_oculus_event_signaler_a11d09791f0b23ab35ae3af471945b214}\label{class_c2_m2_1_1_interaction_1_1_signaling_1_1_oculus_event_signaler_a11d09791f0b23ab35ae3af471945b214}} 
+\index{C2M2.Interaction.Signaling.OculusEventSignaler@{C2M2.Interaction.Signaling.OculusEventSignaler}!OnStart@{OnStart}}
+\index{OnStart@{OnStart}!C2M2.Interaction.Signaling.OculusEventSignaler@{C2M2.Interaction.Signaling.OculusEventSignaler}}
+\doxysubsubsection{\texorpdfstring{OnStart()}{OnStart()}}
+{\footnotesize\ttfamily override void C2\+M2.\+Interaction.\+Signaling.\+Oculus\+Event\+Signaler.\+On\+Start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_signaling_1_1_raycast_event_signaler_ae6b47323d8ad0b285f883ec637cd6929}{C2\+M2.\+Interaction.\+Signaling.\+Raycast\+Event\+Signaler}}.
+
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_signaling_1_1_oculus_event_signaler_a156ac1dcec18dbe416610fccf2dee85e}\label{class_c2_m2_1_1_interaction_1_1_signaling_1_1_oculus_event_signaler_a156ac1dcec18dbe416610fccf2dee85e}} 
+\index{C2M2.Interaction.Signaling.OculusEventSignaler@{C2M2.Interaction.Signaling.OculusEventSignaler}!RaycastingMethod@{RaycastingMethod}}
+\index{RaycastingMethod@{RaycastingMethod}!C2M2.Interaction.Signaling.OculusEventSignaler@{C2M2.Interaction.Signaling.OculusEventSignaler}}
+\doxysubsubsection{\texorpdfstring{RaycastingMethod()}{RaycastingMethod()}}
+{\footnotesize\ttfamily override bool C2\+M2.\+Interaction.\+Signaling.\+Oculus\+Event\+Signaler.\+Raycasting\+Method (\begin{DoxyParamCaption}\item[{out Raycast\+Hit}]{hit,  }\item[{float}]{max\+Distance,  }\item[{Layer\+Mask}]{layer\+Mask }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Raycast using fingertip position/direction, handle fingertip line renderer 
+
+
+
+Implements \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_signaling_1_1_raycast_event_signaler_a4479c8219db2ccd6c734cd3016febe3e}{C2\+M2.\+Interaction.\+Signaling.\+Raycast\+Event\+Signaler}}.
+
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_signaling_1_1_oculus_event_signaler_a0c71ce2b2c6891f88a737b07eaec23bd}\label{class_c2_m2_1_1_interaction_1_1_signaling_1_1_oculus_event_signaler_a0c71ce2b2c6891f88a737b07eaec23bd}} 
+\index{C2M2.Interaction.Signaling.OculusEventSignaler@{C2M2.Interaction.Signaling.OculusEventSignaler}!SearchForHand@{SearchForHand}}
+\index{SearchForHand@{SearchForHand}!C2M2.Interaction.Signaling.OculusEventSignaler@{C2M2.Interaction.Signaling.OculusEventSignaler}}
+\doxysubsubsection{\texorpdfstring{SearchForHand()}{SearchForHand()}}
+{\footnotesize\ttfamily IEnumerator C2\+M2.\+Interaction.\+Signaling.\+Oculus\+Event\+Signaler.\+Search\+For\+Hand (\begin{DoxyParamCaption}\item[{int}]{wait\+Frames }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_signaling_1_1_oculus_event_signaler_ad477458f15d470cbf2bf0377bb731996}\label{class_c2_m2_1_1_interaction_1_1_signaling_1_1_oculus_event_signaler_ad477458f15d470cbf2bf0377bb731996}} 
+\index{C2M2.Interaction.Signaling.OculusEventSignaler@{C2M2.Interaction.Signaling.OculusEventSignaler}!StaticHandSetActive@{StaticHandSetActive}}
+\index{StaticHandSetActive@{StaticHandSetActive}!C2M2.Interaction.Signaling.OculusEventSignaler@{C2M2.Interaction.Signaling.OculusEventSignaler}}
+\doxysubsubsection{\texorpdfstring{StaticHandSetActive()}{StaticHandSetActive()}}
+{\footnotesize\ttfamily void C2\+M2.\+Interaction.\+Signaling.\+Oculus\+Event\+Signaler.\+Static\+Hand\+Set\+Active (\begin{DoxyParamCaption}\item[{bool}]{active }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Enable/disable static raycasting hand model and default hand 
+
+
+\begin{DoxyParams}{Parameters}
+{\em active} & True to enable static hand, false to enable regular OVR hand\\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_signaling_1_1_oculus_event_signaler_aa9b7eafd35bb79fb23a860af99022c20}\label{class_c2_m2_1_1_interaction_1_1_signaling_1_1_oculus_event_signaler_aa9b7eafd35bb79fb23a860af99022c20}} 
+\index{C2M2.Interaction.Signaling.OculusEventSignaler@{C2M2.Interaction.Signaling.OculusEventSignaler}!beginRaycastingButton@{beginRaycastingButton}}
+\index{beginRaycastingButton@{beginRaycastingButton}!C2M2.Interaction.Signaling.OculusEventSignaler@{C2M2.Interaction.Signaling.OculusEventSignaler}}
+\doxysubsubsection{\texorpdfstring{beginRaycastingButton}{beginRaycastingButton}}
+{\footnotesize\ttfamily OVRInput.\+Button C2\+M2.\+Interaction.\+Signaling.\+Oculus\+Event\+Signaler.\+begin\+Raycasting\+Button = OVRInput.\+Button.\+One}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_signaling_1_1_oculus_event_signaler_aab6416616e3e0a5e01ed2c9bc9c880dd}\label{class_c2_m2_1_1_interaction_1_1_signaling_1_1_oculus_event_signaler_aab6416616e3e0a5e01ed2c9bc9c880dd}} 
+\index{C2M2.Interaction.Signaling.OculusEventSignaler@{C2M2.Interaction.Signaling.OculusEventSignaler}!clickDistance@{clickDistance}}
+\index{clickDistance@{clickDistance}!C2M2.Interaction.Signaling.OculusEventSignaler@{C2M2.Interaction.Signaling.OculusEventSignaler}}
+\doxysubsubsection{\texorpdfstring{clickDistance}{clickDistance}}
+{\footnotesize\ttfamily float C2\+M2.\+Interaction.\+Signaling.\+Oculus\+Event\+Signaler.\+click\+Distance = 0.\+01f}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_signaling_1_1_oculus_event_signaler_a76122478e31153a20507017d4be08573}\label{class_c2_m2_1_1_interaction_1_1_signaling_1_1_oculus_event_signaler_a76122478e31153a20507017d4be08573}} 
+\index{C2M2.Interaction.Signaling.OculusEventSignaler@{C2M2.Interaction.Signaling.OculusEventSignaler}!controller@{controller}}
+\index{controller@{controller}!C2M2.Interaction.Signaling.OculusEventSignaler@{C2M2.Interaction.Signaling.OculusEventSignaler}}
+\doxysubsubsection{\texorpdfstring{controller}{controller}}
+{\footnotesize\ttfamily OVRInput.\+Controller C2\+M2.\+Interaction.\+Signaling.\+Oculus\+Event\+Signaler.\+controller = OVRInput.\+Controller.\+RTouch}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_signaling_1_1_oculus_event_signaler_a0981f494976476b0b2f10dc0a5db9a4b}\label{class_c2_m2_1_1_interaction_1_1_signaling_1_1_oculus_event_signaler_a0981f494976476b0b2f10dc0a5db9a4b}} 
+\index{C2M2.Interaction.Signaling.OculusEventSignaler@{C2M2.Interaction.Signaling.OculusEventSignaler}!defaultHand@{defaultHand}}
+\index{defaultHand@{defaultHand}!C2M2.Interaction.Signaling.OculusEventSignaler@{C2M2.Interaction.Signaling.OculusEventSignaler}}
+\doxysubsubsection{\texorpdfstring{defaultHand}{defaultHand}}
+{\footnotesize\ttfamily Unity\+Engine.\+Game\+Object C2\+M2.\+Interaction.\+Signaling.\+Oculus\+Event\+Signaler.\+default\+Hand = null\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_signaling_1_1_oculus_event_signaler_a65334de612c22dae2bd1c8e19d0c546b}\label{class_c2_m2_1_1_interaction_1_1_signaling_1_1_oculus_event_signaler_a65334de612c22dae2bd1c8e19d0c546b}} 
+\index{C2M2.Interaction.Signaling.OculusEventSignaler@{C2M2.Interaction.Signaling.OculusEventSignaler}!distancePressed@{distancePressed}}
+\index{distancePressed@{distancePressed}!C2M2.Interaction.Signaling.OculusEventSignaler@{C2M2.Interaction.Signaling.OculusEventSignaler}}
+\doxysubsubsection{\texorpdfstring{distancePressed}{distancePressed}}
+{\footnotesize\ttfamily bool C2\+M2.\+Interaction.\+Signaling.\+Oculus\+Event\+Signaler.\+distance\+Pressed = false\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_signaling_1_1_oculus_event_signaler_a492f1a6260348a15b48561064fa80e29}\label{class_c2_m2_1_1_interaction_1_1_signaling_1_1_oculus_event_signaler_a492f1a6260348a15b48561064fa80e29}} 
+\index{C2M2.Interaction.Signaling.OculusEventSignaler@{C2M2.Interaction.Signaling.OculusEventSignaler}!grabber@{grabber}}
+\index{grabber@{grabber}!C2M2.Interaction.Signaling.OculusEventSignaler@{C2M2.Interaction.Signaling.OculusEventSignaler}}
+\doxysubsubsection{\texorpdfstring{grabber}{grabber}}
+{\footnotesize\ttfamily OVRGrabber C2\+M2.\+Interaction.\+Signaling.\+Oculus\+Event\+Signaler.\+grabber = null}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_signaling_1_1_oculus_event_signaler_a38321d870d7db234a21f4eaec58f5cf3}\label{class_c2_m2_1_1_interaction_1_1_signaling_1_1_oculus_event_signaler_a38321d870d7db234a21f4eaec58f5cf3}} 
+\index{C2M2.Interaction.Signaling.OculusEventSignaler@{C2M2.Interaction.Signaling.OculusEventSignaler}!isLeftHand@{isLeftHand}}
+\index{isLeftHand@{isLeftHand}!C2M2.Interaction.Signaling.OculusEventSignaler@{C2M2.Interaction.Signaling.OculusEventSignaler}}
+\doxysubsubsection{\texorpdfstring{isLeftHand}{isLeftHand}}
+{\footnotesize\ttfamily bool C2\+M2.\+Interaction.\+Signaling.\+Oculus\+Event\+Signaler.\+is\+Left\+Hand = false}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_signaling_1_1_oculus_event_signaler_aa8e421a80b204d3b1121534572cc9cee}\label{class_c2_m2_1_1_interaction_1_1_signaling_1_1_oculus_event_signaler_aa8e421a80b204d3b1121534572cc9cee}} 
+\index{C2M2.Interaction.Signaling.OculusEventSignaler@{C2M2.Interaction.Signaling.OculusEventSignaler}!lineRend@{lineRend}}
+\index{lineRend@{lineRend}!C2M2.Interaction.Signaling.OculusEventSignaler@{C2M2.Interaction.Signaling.OculusEventSignaler}}
+\doxysubsubsection{\texorpdfstring{lineRend}{lineRend}}
+{\footnotesize\ttfamily Line\+Renderer C2\+M2.\+Interaction.\+Signaling.\+Oculus\+Event\+Signaler.\+line\+Rend}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_signaling_1_1_oculus_event_signaler_ae8663032c704930be678ba9c5d18aa22}\label{class_c2_m2_1_1_interaction_1_1_signaling_1_1_oculus_event_signaler_ae8663032c704930be678ba9c5d18aa22}} 
+\index{C2M2.Interaction.Signaling.OculusEventSignaler@{C2M2.Interaction.Signaling.OculusEventSignaler}!localAvatar@{localAvatar}}
+\index{localAvatar@{localAvatar}!C2M2.Interaction.Signaling.OculusEventSignaler@{C2M2.Interaction.Signaling.OculusEventSignaler}}
+\doxysubsubsection{\texorpdfstring{localAvatar}{localAvatar}}
+{\footnotesize\ttfamily Transform C2\+M2.\+Interaction.\+Signaling.\+Oculus\+Event\+Signaler.\+local\+Avatar}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_signaling_1_1_oculus_event_signaler_aa6780425caf189e57a9ab1f828ea5edc}\label{class_c2_m2_1_1_interaction_1_1_signaling_1_1_oculus_event_signaler_aa6780425caf189e57a9ab1f828ea5edc}} 
+\index{C2M2.Interaction.Signaling.OculusEventSignaler@{C2M2.Interaction.Signaling.OculusEventSignaler}!pressedColor@{pressedColor}}
+\index{pressedColor@{pressedColor}!C2M2.Interaction.Signaling.OculusEventSignaler@{C2M2.Interaction.Signaling.OculusEventSignaler}}
+\doxysubsubsection{\texorpdfstring{pressedColor}{pressedColor}}
+{\footnotesize\ttfamily Color C2\+M2.\+Interaction.\+Signaling.\+Oculus\+Event\+Signaler.\+pressed\+Color = new Color(1f, 0.\+6f, 0f)}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_signaling_1_1_oculus_event_signaler_a4488468bd600c0cc2821cdd49cadff72}\label{class_c2_m2_1_1_interaction_1_1_signaling_1_1_oculus_event_signaler_a4488468bd600c0cc2821cdd49cadff72}} 
+\index{C2M2.Interaction.Signaling.OculusEventSignaler@{C2M2.Interaction.Signaling.OculusEventSignaler}!staticHand@{staticHand}}
+\index{staticHand@{staticHand}!C2M2.Interaction.Signaling.OculusEventSignaler@{C2M2.Interaction.Signaling.OculusEventSignaler}}
+\doxysubsubsection{\texorpdfstring{staticHand}{staticHand}}
+{\footnotesize\ttfamily Mesh\+Renderer C2\+M2.\+Interaction.\+Signaling.\+Oculus\+Event\+Signaler.\+static\+Hand}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_signaling_1_1_oculus_event_signaler_ac353809f3e1daea53f31e19c5c36200a}\label{class_c2_m2_1_1_interaction_1_1_signaling_1_1_oculus_event_signaler_ac353809f3e1daea53f31e19c5c36200a}} 
+\index{C2M2.Interaction.Signaling.OculusEventSignaler@{C2M2.Interaction.Signaling.OculusEventSignaler}!toggled@{toggled}}
+\index{toggled@{toggled}!C2M2.Interaction.Signaling.OculusEventSignaler@{C2M2.Interaction.Signaling.OculusEventSignaler}}
+\doxysubsubsection{\texorpdfstring{toggled}{toggled}}
+{\footnotesize\ttfamily bool C2\+M2.\+Interaction.\+Signaling.\+Oculus\+Event\+Signaler.\+toggled = false\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_signaling_1_1_oculus_event_signaler_a3fed153ded3eac49fe962e77c1e5075d}\label{class_c2_m2_1_1_interaction_1_1_signaling_1_1_oculus_event_signaler_a3fed153ded3eac49fe962e77c1e5075d}} 
+\index{C2M2.Interaction.Signaling.OculusEventSignaler@{C2M2.Interaction.Signaling.OculusEventSignaler}!toggleMode@{toggleMode}}
+\index{toggleMode@{toggleMode}!C2M2.Interaction.Signaling.OculusEventSignaler@{C2M2.Interaction.Signaling.OculusEventSignaler}}
+\doxysubsubsection{\texorpdfstring{toggleMode}{toggleMode}}
+{\footnotesize\ttfamily bool C2\+M2.\+Interaction.\+Signaling.\+Oculus\+Event\+Signaler.\+toggle\+Mode = true}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_signaling_1_1_oculus_event_signaler_a9f8c0781372a76a22daa186e03f1e327}\label{class_c2_m2_1_1_interaction_1_1_signaling_1_1_oculus_event_signaler_a9f8c0781372a76a22daa186e03f1e327}} 
+\index{C2M2.Interaction.Signaling.OculusEventSignaler@{C2M2.Interaction.Signaling.OculusEventSignaler}!triggerEventsButton@{triggerEventsButton}}
+\index{triggerEventsButton@{triggerEventsButton}!C2M2.Interaction.Signaling.OculusEventSignaler@{C2M2.Interaction.Signaling.OculusEventSignaler}}
+\doxysubsubsection{\texorpdfstring{triggerEventsButton}{triggerEventsButton}}
+{\footnotesize\ttfamily OVRInput.\+Button C2\+M2.\+Interaction.\+Signaling.\+Oculus\+Event\+Signaler.\+trigger\+Events\+Button = OVRInput.\+Button.\+Primary\+Index\+Trigger}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_signaling_1_1_oculus_event_signaler_a77fa864ddd7be848429b26463b0ae0c8}\label{class_c2_m2_1_1_interaction_1_1_signaling_1_1_oculus_event_signaler_a77fa864ddd7be848429b26463b0ae0c8}} 
+\index{C2M2.Interaction.Signaling.OculusEventSignaler@{C2M2.Interaction.Signaling.OculusEventSignaler}!unpressedColor@{unpressedColor}}
+\index{unpressedColor@{unpressedColor}!C2M2.Interaction.Signaling.OculusEventSignaler@{C2M2.Interaction.Signaling.OculusEventSignaler}}
+\doxysubsubsection{\texorpdfstring{unpressedColor}{unpressedColor}}
+{\footnotesize\ttfamily Color C2\+M2.\+Interaction.\+Signaling.\+Oculus\+Event\+Signaler.\+unpressed\+Color = Color.\+cyan}
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_signaling_1_1_oculus_event_signaler_adb0495fe8a027b0d50b99d1323c1f9c5}\label{class_c2_m2_1_1_interaction_1_1_signaling_1_1_oculus_event_signaler_adb0495fe8a027b0d50b99d1323c1f9c5}} 
+\index{C2M2.Interaction.Signaling.OculusEventSignaler@{C2M2.Interaction.Signaling.OculusEventSignaler}!Toggled@{Toggled}}
+\index{Toggled@{Toggled}!C2M2.Interaction.Signaling.OculusEventSignaler@{C2M2.Interaction.Signaling.OculusEventSignaler}}
+\doxysubsubsection{\texorpdfstring{Toggled}{Toggled}}
+{\footnotesize\ttfamily bool C2\+M2.\+Interaction.\+Signaling.\+Oculus\+Event\+Signaler.\+Toggled\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/jaros/\+Desktop/tempvr/virtual-\/reality/\+Assets/\+Scripts/\+C2\+M2/\+Interaction/\+Press\+Event\+Signalers/\mbox{\hyperlink{_oculus_event_signaler_8cs}{Oculus\+Event\+Signaler.\+cs}}\end{DoxyCompactItemize}

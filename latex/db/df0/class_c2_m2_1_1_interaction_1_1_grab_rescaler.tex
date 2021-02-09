@@ -1,0 +1,176 @@
+\hypertarget{class_c2_m2_1_1_interaction_1_1_grab_rescaler}{}\doxysection{C2\+M2.\+Interaction.\+Grab\+Rescaler Class Reference}
+\label{class_c2_m2_1_1_interaction_1_1_grab_rescaler}\index{C2M2.Interaction.GrabRescaler@{C2M2.Interaction.GrabRescaler}}
+
+
+Adds some percentage of a transform\textquotesingle{}s original scale at runtime  
+
+
+
+
+Inheritance diagram for C2\+M2.\+Interaction.\+Grab\+Rescaler\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=271pt]{de/d34/class_c2_m2_1_1_interaction_1_1_grab_rescaler__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for C2\+M2.\+Interaction.\+Grab\+Rescaler\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d4/dd4/class_c2_m2_1_1_interaction_1_1_grab_rescaler__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+float \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_grab_rescaler_a84bd6246007d7fffa7c1e0a648c5f842}{scaler}} = 0.\+2f
+\item 
+float \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_grab_rescaler_aacec68b9bdfe9a465f2761448d9abb01}{min\+Percentage}} = 0.\+25f
+\item 
+float \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_grab_rescaler_a1e146c5a50fd6217cebfca1337c6129e}{max\+Percentage}} = 4f
+\item 
+bool \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_grab_rescaler_ad924fcf9f6fd464a791de04c2b949c31}{x\+Scale}} = true
+\item 
+bool \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_grab_rescaler_a3308994c8e70b34949172c22d18d9bfa}{y\+Scale}} = true
+\item 
+bool \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_grab_rescaler_a6a5ced9b2b67681ca9cc9211d80a7e77}{z\+Scale}} = true
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+float \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_grab_rescaler_a7db2d77fea84a1356de2f6ae03fb96f2}{Thumbstick\+Scaler}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+bool \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_grab_rescaler_ac3a85927ae6e3d5bb0e054e1dc666e3a}{Thumbstick\+Pressed}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_grab_rescaler_aed0c3103199fcdabebe4984f383c1cf5}{Start}} ()
+\item 
+void \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_grab_rescaler_aa49d735f29518d80daf5f4f2f62c09d0}{Update}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+OVRGrabbable \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_grab_rescaler_a27eed744d0ba8c71217d0a047ef0a747}{grabbable}} = null
+\item 
+Vector3 \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_grab_rescaler_a4c65bc09e54800595fe8d30c2154eaaa}{orig\+Scale}}
+\item 
+Vector3 \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_grab_rescaler_a393a632bd614ebf8018bbfeeb0945f3e}{min\+Scale}}
+\item 
+Vector3 \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_grab_rescaler_a5936b6374a297ef727d9a75486a6e4c7}{max\+Scale}}
+\item 
+\mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_v_r_1_1_public_o_v_r_grabber}{Public\+OVRGrabber}} \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_grab_rescaler_a9814530d135eb461c8d7d50636e00315}{grabber}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Adds some percentage of a transform\textquotesingle{}s original scale at runtime 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_grab_rescaler_aed0c3103199fcdabebe4984f383c1cf5}\label{class_c2_m2_1_1_interaction_1_1_grab_rescaler_aed0c3103199fcdabebe4984f383c1cf5}} 
+\index{C2M2.Interaction.GrabRescaler@{C2M2.Interaction.GrabRescaler}!Start@{Start}}
+\index{Start@{Start}!C2M2.Interaction.GrabRescaler@{C2M2.Interaction.GrabRescaler}}
+\doxysubsubsection{\texorpdfstring{Start()}{Start()}}
+{\footnotesize\ttfamily void C2\+M2.\+Interaction.\+Grab\+Rescaler.\+Start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_grab_rescaler_aa49d735f29518d80daf5f4f2f62c09d0}\label{class_c2_m2_1_1_interaction_1_1_grab_rescaler_aa49d735f29518d80daf5f4f2f62c09d0}} 
+\index{C2M2.Interaction.GrabRescaler@{C2M2.Interaction.GrabRescaler}!Update@{Update}}
+\index{Update@{Update}!C2M2.Interaction.GrabRescaler@{C2M2.Interaction.GrabRescaler}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void C2\+M2.\+Interaction.\+Grab\+Rescaler.\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_grab_rescaler_a27eed744d0ba8c71217d0a047ef0a747}\label{class_c2_m2_1_1_interaction_1_1_grab_rescaler_a27eed744d0ba8c71217d0a047ef0a747}} 
+\index{C2M2.Interaction.GrabRescaler@{C2M2.Interaction.GrabRescaler}!grabbable@{grabbable}}
+\index{grabbable@{grabbable}!C2M2.Interaction.GrabRescaler@{C2M2.Interaction.GrabRescaler}}
+\doxysubsubsection{\texorpdfstring{grabbable}{grabbable}}
+{\footnotesize\ttfamily OVRGrabbable C2\+M2.\+Interaction.\+Grab\+Rescaler.\+grabbable = null\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_grab_rescaler_a9814530d135eb461c8d7d50636e00315}\label{class_c2_m2_1_1_interaction_1_1_grab_rescaler_a9814530d135eb461c8d7d50636e00315}} 
+\index{C2M2.Interaction.GrabRescaler@{C2M2.Interaction.GrabRescaler}!grabber@{grabber}}
+\index{grabber@{grabber}!C2M2.Interaction.GrabRescaler@{C2M2.Interaction.GrabRescaler}}
+\doxysubsubsection{\texorpdfstring{grabber}{grabber}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_v_r_1_1_public_o_v_r_grabber}{Public\+OVRGrabber}} C2\+M2.\+Interaction.\+Grab\+Rescaler.\+grabber\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_grab_rescaler_a1e146c5a50fd6217cebfca1337c6129e}\label{class_c2_m2_1_1_interaction_1_1_grab_rescaler_a1e146c5a50fd6217cebfca1337c6129e}} 
+\index{C2M2.Interaction.GrabRescaler@{C2M2.Interaction.GrabRescaler}!maxPercentage@{maxPercentage}}
+\index{maxPercentage@{maxPercentage}!C2M2.Interaction.GrabRescaler@{C2M2.Interaction.GrabRescaler}}
+\doxysubsubsection{\texorpdfstring{maxPercentage}{maxPercentage}}
+{\footnotesize\ttfamily float C2\+M2.\+Interaction.\+Grab\+Rescaler.\+max\+Percentage = 4f}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_grab_rescaler_a5936b6374a297ef727d9a75486a6e4c7}\label{class_c2_m2_1_1_interaction_1_1_grab_rescaler_a5936b6374a297ef727d9a75486a6e4c7}} 
+\index{C2M2.Interaction.GrabRescaler@{C2M2.Interaction.GrabRescaler}!maxScale@{maxScale}}
+\index{maxScale@{maxScale}!C2M2.Interaction.GrabRescaler@{C2M2.Interaction.GrabRescaler}}
+\doxysubsubsection{\texorpdfstring{maxScale}{maxScale}}
+{\footnotesize\ttfamily Vector3 C2\+M2.\+Interaction.\+Grab\+Rescaler.\+max\+Scale\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_grab_rescaler_aacec68b9bdfe9a465f2761448d9abb01}\label{class_c2_m2_1_1_interaction_1_1_grab_rescaler_aacec68b9bdfe9a465f2761448d9abb01}} 
+\index{C2M2.Interaction.GrabRescaler@{C2M2.Interaction.GrabRescaler}!minPercentage@{minPercentage}}
+\index{minPercentage@{minPercentage}!C2M2.Interaction.GrabRescaler@{C2M2.Interaction.GrabRescaler}}
+\doxysubsubsection{\texorpdfstring{minPercentage}{minPercentage}}
+{\footnotesize\ttfamily float C2\+M2.\+Interaction.\+Grab\+Rescaler.\+min\+Percentage = 0.\+25f}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_grab_rescaler_a393a632bd614ebf8018bbfeeb0945f3e}\label{class_c2_m2_1_1_interaction_1_1_grab_rescaler_a393a632bd614ebf8018bbfeeb0945f3e}} 
+\index{C2M2.Interaction.GrabRescaler@{C2M2.Interaction.GrabRescaler}!minScale@{minScale}}
+\index{minScale@{minScale}!C2M2.Interaction.GrabRescaler@{C2M2.Interaction.GrabRescaler}}
+\doxysubsubsection{\texorpdfstring{minScale}{minScale}}
+{\footnotesize\ttfamily Vector3 C2\+M2.\+Interaction.\+Grab\+Rescaler.\+min\+Scale\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_grab_rescaler_a4c65bc09e54800595fe8d30c2154eaaa}\label{class_c2_m2_1_1_interaction_1_1_grab_rescaler_a4c65bc09e54800595fe8d30c2154eaaa}} 
+\index{C2M2.Interaction.GrabRescaler@{C2M2.Interaction.GrabRescaler}!origScale@{origScale}}
+\index{origScale@{origScale}!C2M2.Interaction.GrabRescaler@{C2M2.Interaction.GrabRescaler}}
+\doxysubsubsection{\texorpdfstring{origScale}{origScale}}
+{\footnotesize\ttfamily Vector3 C2\+M2.\+Interaction.\+Grab\+Rescaler.\+orig\+Scale\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_grab_rescaler_a84bd6246007d7fffa7c1e0a648c5f842}\label{class_c2_m2_1_1_interaction_1_1_grab_rescaler_a84bd6246007d7fffa7c1e0a648c5f842}} 
+\index{C2M2.Interaction.GrabRescaler@{C2M2.Interaction.GrabRescaler}!scaler@{scaler}}
+\index{scaler@{scaler}!C2M2.Interaction.GrabRescaler@{C2M2.Interaction.GrabRescaler}}
+\doxysubsubsection{\texorpdfstring{scaler}{scaler}}
+{\footnotesize\ttfamily float C2\+M2.\+Interaction.\+Grab\+Rescaler.\+scaler = 0.\+2f}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_grab_rescaler_ad924fcf9f6fd464a791de04c2b949c31}\label{class_c2_m2_1_1_interaction_1_1_grab_rescaler_ad924fcf9f6fd464a791de04c2b949c31}} 
+\index{C2M2.Interaction.GrabRescaler@{C2M2.Interaction.GrabRescaler}!xScale@{xScale}}
+\index{xScale@{xScale}!C2M2.Interaction.GrabRescaler@{C2M2.Interaction.GrabRescaler}}
+\doxysubsubsection{\texorpdfstring{xScale}{xScale}}
+{\footnotesize\ttfamily bool C2\+M2.\+Interaction.\+Grab\+Rescaler.\+x\+Scale = true}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_grab_rescaler_a3308994c8e70b34949172c22d18d9bfa}\label{class_c2_m2_1_1_interaction_1_1_grab_rescaler_a3308994c8e70b34949172c22d18d9bfa}} 
+\index{C2M2.Interaction.GrabRescaler@{C2M2.Interaction.GrabRescaler}!yScale@{yScale}}
+\index{yScale@{yScale}!C2M2.Interaction.GrabRescaler@{C2M2.Interaction.GrabRescaler}}
+\doxysubsubsection{\texorpdfstring{yScale}{yScale}}
+{\footnotesize\ttfamily bool C2\+M2.\+Interaction.\+Grab\+Rescaler.\+y\+Scale = true}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_grab_rescaler_a6a5ced9b2b67681ca9cc9211d80a7e77}\label{class_c2_m2_1_1_interaction_1_1_grab_rescaler_a6a5ced9b2b67681ca9cc9211d80a7e77}} 
+\index{C2M2.Interaction.GrabRescaler@{C2M2.Interaction.GrabRescaler}!zScale@{zScale}}
+\index{zScale@{zScale}!C2M2.Interaction.GrabRescaler@{C2M2.Interaction.GrabRescaler}}
+\doxysubsubsection{\texorpdfstring{zScale}{zScale}}
+{\footnotesize\ttfamily bool C2\+M2.\+Interaction.\+Grab\+Rescaler.\+z\+Scale = true}
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_grab_rescaler_ac3a85927ae6e3d5bb0e054e1dc666e3a}\label{class_c2_m2_1_1_interaction_1_1_grab_rescaler_ac3a85927ae6e3d5bb0e054e1dc666e3a}} 
+\index{C2M2.Interaction.GrabRescaler@{C2M2.Interaction.GrabRescaler}!ThumbstickPressed@{ThumbstickPressed}}
+\index{ThumbstickPressed@{ThumbstickPressed}!C2M2.Interaction.GrabRescaler@{C2M2.Interaction.GrabRescaler}}
+\doxysubsubsection{\texorpdfstring{ThumbstickPressed}{ThumbstickPressed}}
+{\footnotesize\ttfamily bool C2\+M2.\+Interaction.\+Grab\+Rescaler.\+Thumbstick\+Pressed\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_grab_rescaler_a7db2d77fea84a1356de2f6ae03fb96f2}\label{class_c2_m2_1_1_interaction_1_1_grab_rescaler_a7db2d77fea84a1356de2f6ae03fb96f2}} 
+\index{C2M2.Interaction.GrabRescaler@{C2M2.Interaction.GrabRescaler}!ThumbstickScaler@{ThumbstickScaler}}
+\index{ThumbstickScaler@{ThumbstickScaler}!C2M2.Interaction.GrabRescaler@{C2M2.Interaction.GrabRescaler}}
+\doxysubsubsection{\texorpdfstring{ThumbstickScaler}{ThumbstickScaler}}
+{\footnotesize\ttfamily float C2\+M2.\+Interaction.\+Grab\+Rescaler.\+Thumbstick\+Scaler\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/jaros/\+Desktop/tempvr/virtual-\/reality/\+Assets/\+Scripts/\+C2\+M2/\+Interaction/\mbox{\hyperlink{_grab_rescaler_8cs}{Grab\+Rescaler.\+cs}}\end{DoxyCompactItemize}

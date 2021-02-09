@@ -1,9 +1,9 @@
 <map id="C2M2.Interaction.RaycastForward" name="C2M2.Interaction.RaycastForward">
-<area shape="rect" id="node1" title=" " alt="" coords="5,933,228,1421"/>
-<area shape="rect" id="node2" title=" " alt="" coords="29,139,156,217"/>
-<area shape="rect" id="node3" href="$d5/df9/class_c2_m2_1_1_interaction_1_1_raycast_event_manager.html" title="Attach this script to parent gameObject, create one child with one raycast trigger per child...." alt="" coords="117,559,332,871"/>
-<area shape="rect" id="node5" href="$d8/d68/class_c2_m2_1_1_interaction_1_1_raycast_press_events.html" title="Store custom events that the corresponding RaycastTriggerManager will invoke" alt="" coords="156,316,371,467"/>
-<area shape="rect" id="node4" title=" " alt="" coords="395,353,465,430"/>
-<area shape="rect" id="node6" href="$d2/d43/class_c2_m2_1_1_interaction_1_1_raycast_press_events_1_1_raycast_hit_event.html" title=" " alt="" coords="180,132,419,224"/>
-<area shape="rect" id="node7" title=" " alt="" coords="192,5,407,83"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,963,228,1451"/>
+<area shape="rect" id="node2" title=" " alt="" coords="57,139,184,217"/>
+<area shape="rect" id="node3" href="$d5/df9/class_c2_m2_1_1_interaction_1_1_raycast_event_manager.html" title="Attach this script to parent gameObject, create one child with one raycast trigger per child...." alt="" coords="159,647,373,900"/>
+<area shape="rect" id="node5" href="$d8/d68/class_c2_m2_1_1_interaction_1_1_raycast_press_events.html" title="Store custom events that the corresponding RaycastTriggerManager will invoke" alt="" coords="184,345,399,555"/>
+<area shape="rect" id="node4" title=" " alt="" coords="423,411,493,489"/>
+<area shape="rect" id="node6" href="$d2/d43/class_c2_m2_1_1_interaction_1_1_raycast_press_events_1_1_raycast_hit_event.html" title=" " alt="" coords="208,132,447,224"/>
+<area shape="rect" id="node7" title=" " alt="" coords="220,5,435,83"/>
 </map>

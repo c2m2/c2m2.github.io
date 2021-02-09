@@ -1,0 +1,248 @@
+\hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_tests_1_1_mesh_tests}{}\doxysection{C2\+M2.\+Neuronal\+Dynamics.\+Tests.\+Mesh\+Tests Class Reference}
+\label{class_c2_m2_1_1_neuronal_dynamics_1_1_tests_1_1_mesh_tests}\index{C2M2.NeuronalDynamics.Tests.MeshTests@{C2M2.NeuronalDynamics.Tests.MeshTests}}
+
+
+Behaviour can be attached to test mesh consistency  
+
+
+
+
+Inheritance diagram for C2\+M2.\+Neuronal\+Dynamics.\+Tests.\+Mesh\+Tests\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=289pt]{d9/d2d/class_c2_m2_1_1_neuronal_dynamics_1_1_tests_1_1_mesh_tests__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for C2\+M2.\+Neuronal\+Dynamics.\+Tests.\+Mesh\+Tests\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=330pt]{dd/d60/class_c2_m2_1_1_neuronal_dynamics_1_1_tests_1_1_mesh_tests__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_tests_1_1_mesh_tests_a4f8e17d6138aa1adf3aafd60b2576bff}{is\+Model\+Geometry\+Visible}} = false
+\item 
+bool \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_tests_1_1_mesh_tests_a4b6dec91b1c74dbb046e2d6676ed1464}{is\+Mapping\+Checked}} = true
+\item 
+bool \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_tests_1_1_mesh_tests_ac90104dc1bf7297911462784e56e60b8}{is\+Winding\+Consistent}} = true
+\item 
+bool \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_tests_1_1_mesh_tests_aa7648615afbc2b2b2220db8d59e915b6}{are\+Normals\+Consistent}} = true
+\item 
+float \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_tests_1_1_mesh_tests_abf7e7df76b3cb0d8d90f01975a70dd61}{eps}} = 1e-\/6f
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_tests_1_1_mesh_tests_a05aaff1b04971fe72fd4365a1a96c830}{Start}} ()
+\begin{DoxyCompactList}\small\item\em Start. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_tests_1_1_mesh_tests_afe6e76c34d8682ec96d8eb840fc25ce7}{Check\+Normals\+Consistency}} (in \mbox{\hyperlink{namespace_c2_m2_1_1_neuronal_dynamics_1_1_tests_ace7635b7cc977387a37fefbe6b60c438}{Grid}} grid2d)
+\item 
+bool \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_tests_1_1_mesh_tests_a80d5ecf12829849fde6faf8e685bcb1f}{Check\+Winding\+Order\+Consistency}} (in Mesh mesh)
+\item 
+bool \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_tests_1_1_mesh_tests_a975732e9cd5c36c88fd90aaae84309d4}{Check\+Winding}} (in int i, in int j, in int k, in List$<$ Tuple$<$ int, int, int $>$$>$ tris)
+\begin{DoxyCompactList}\small\item\em Check\+Winding. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_tests_1_1_mesh_tests_a6e028905ecee02a6cc29f7ebcc9075f5}{Check\+Winding}} (in int i, in int j, in int k, in Tuple$<$ int, int, int $>$ tri)
+\begin{DoxyCompactList}\small\item\em Check\+Winding\+: Use Ordered edge rule. \end{DoxyCompactList}\item 
+string\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_tests_1_1_mesh_tests_acc0b36362741e08650bc7f334937d9d4}{Get\+Cell\+Files}} (in string \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_tests_1_1_mesh_tests_afc9bcef335da1b5e735125fbb6db673f}{hh\+Cell\+Folder}}, in string \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_tests_1_1_mesh_tests_afe109a091e004116ba6b298cc35d9672}{active\+Cell\+Folder}})
+\begin{DoxyCompactList}\small\item\em Helper method. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_tests_1_1_mesh_tests_a375fb91b2ed44198615a8c249c0fb889}{Draw\+Line}} (in Vector3 start, in Vector3 end, in Color color\+Start, in Color color\+End)
+\begin{DoxyCompactList}\small\item\em Draw\+Line helper. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+float \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_tests_1_1_mesh_tests_a28dfc8ba8dd3ebe2ebb75d81c9b02257}{thresh}} = 5f
+\item 
+Game\+Object \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_tests_1_1_mesh_tests_abd20d070ac878a3e977a633648f4e139}{go}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static string \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_tests_1_1_mesh_tests_afc9bcef335da1b5e735125fbb6db673f}{hh\+Cell\+Folder}} = \char`\"{}HHSolver\char`\"{}
+\item 
+static string \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_tests_1_1_mesh_tests_afe109a091e004116ba6b298cc35d9672}{active\+Cell\+Folder}} = \char`\"{}Active\+Cell\char`\"{}
+\item 
+static string \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_tests_1_1_mesh_tests_a514d3113aef03d30716af56073f6d73d}{ugx\+Ext}} = \char`\"{}.ugx\char`\"{}
+\item 
+static string \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_tests_1_1_mesh_tests_a75185ddf421bcfe17f46d2bdafc5e7a6}{cng\+Ext}} = \char`\"{}.CNG\char`\"{}
+\item 
+static string \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_tests_1_1_mesh_tests_a0eab57c41fa1e04fbe95a4d163e92ab2}{spec1D}} = \char`\"{}\+\_\+1d\char`\"{}
+\item 
+static string \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_tests_1_1_mesh_tests_affc987cc3161f442abd05bc466dd2f80}{spec\+Tris}} = \char`\"{}\+\_\+tris\char`\"{}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Behaviour can be attached to test mesh consistency 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_tests_1_1_mesh_tests_afe6e76c34d8682ec96d8eb840fc25ce7}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_tests_1_1_mesh_tests_afe6e76c34d8682ec96d8eb840fc25ce7}} 
+\index{C2M2.NeuronalDynamics.Tests.MeshTests@{C2M2.NeuronalDynamics.Tests.MeshTests}!CheckNormalsConsistency@{CheckNormalsConsistency}}
+\index{CheckNormalsConsistency@{CheckNormalsConsistency}!C2M2.NeuronalDynamics.Tests.MeshTests@{C2M2.NeuronalDynamics.Tests.MeshTests}}
+\doxysubsubsection{\texorpdfstring{CheckNormalsConsistency()}{CheckNormalsConsistency()}}
+{\footnotesize\ttfamily bool C2\+M2.\+Neuronal\+Dynamics.\+Tests.\+Mesh\+Tests.\+Check\+Normals\+Consistency (\begin{DoxyParamCaption}\item[{in \mbox{\hyperlink{namespace_c2_m2_1_1_neuronal_dynamics_1_1_tests_ace7635b7cc977387a37fefbe6b60c438}{Grid}}}]{grid2d }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_tests_1_1_mesh_tests_a975732e9cd5c36c88fd90aaae84309d4}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_tests_1_1_mesh_tests_a975732e9cd5c36c88fd90aaae84309d4}} 
+\index{C2M2.NeuronalDynamics.Tests.MeshTests@{C2M2.NeuronalDynamics.Tests.MeshTests}!CheckWinding@{CheckWinding}}
+\index{CheckWinding@{CheckWinding}!C2M2.NeuronalDynamics.Tests.MeshTests@{C2M2.NeuronalDynamics.Tests.MeshTests}}
+\doxysubsubsection{\texorpdfstring{CheckWinding()}{CheckWinding()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily bool C2\+M2.\+Neuronal\+Dynamics.\+Tests.\+Mesh\+Tests.\+Check\+Winding (\begin{DoxyParamCaption}\item[{in int}]{i,  }\item[{in int}]{j,  }\item[{in int}]{k,  }\item[{in List$<$ Tuple$<$ int, int, int $>$$>$}]{tris }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Check\+Winding. 
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_tests_1_1_mesh_tests_a6e028905ecee02a6cc29f7ebcc9075f5}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_tests_1_1_mesh_tests_a6e028905ecee02a6cc29f7ebcc9075f5}} 
+\index{C2M2.NeuronalDynamics.Tests.MeshTests@{C2M2.NeuronalDynamics.Tests.MeshTests}!CheckWinding@{CheckWinding}}
+\index{CheckWinding@{CheckWinding}!C2M2.NeuronalDynamics.Tests.MeshTests@{C2M2.NeuronalDynamics.Tests.MeshTests}}
+\doxysubsubsection{\texorpdfstring{CheckWinding()}{CheckWinding()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily bool C2\+M2.\+Neuronal\+Dynamics.\+Tests.\+Mesh\+Tests.\+Check\+Winding (\begin{DoxyParamCaption}\item[{in int}]{i,  }\item[{in int}]{j,  }\item[{in int}]{k,  }\item[{in Tuple$<$ int, int, int $>$}]{tri }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Check\+Winding\+: Use Ordered edge rule. 
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_tests_1_1_mesh_tests_a80d5ecf12829849fde6faf8e685bcb1f}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_tests_1_1_mesh_tests_a80d5ecf12829849fde6faf8e685bcb1f}} 
+\index{C2M2.NeuronalDynamics.Tests.MeshTests@{C2M2.NeuronalDynamics.Tests.MeshTests}!CheckWindingOrderConsistency@{CheckWindingOrderConsistency}}
+\index{CheckWindingOrderConsistency@{CheckWindingOrderConsistency}!C2M2.NeuronalDynamics.Tests.MeshTests@{C2M2.NeuronalDynamics.Tests.MeshTests}}
+\doxysubsubsection{\texorpdfstring{CheckWindingOrderConsistency()}{CheckWindingOrderConsistency()}}
+{\footnotesize\ttfamily bool C2\+M2.\+Neuronal\+Dynamics.\+Tests.\+Mesh\+Tests.\+Check\+Winding\+Order\+Consistency (\begin{DoxyParamCaption}\item[{in Mesh}]{mesh }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+mesh out of 1 triangle has always consistent winding order
+
+get neighbor triangle\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_tests_1_1_mesh_tests_a375fb91b2ed44198615a8c249c0fb889}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_tests_1_1_mesh_tests_a375fb91b2ed44198615a8c249c0fb889}} 
+\index{C2M2.NeuronalDynamics.Tests.MeshTests@{C2M2.NeuronalDynamics.Tests.MeshTests}!DrawLine@{DrawLine}}
+\index{DrawLine@{DrawLine}!C2M2.NeuronalDynamics.Tests.MeshTests@{C2M2.NeuronalDynamics.Tests.MeshTests}}
+\doxysubsubsection{\texorpdfstring{DrawLine()}{DrawLine()}}
+{\footnotesize\ttfamily static void C2\+M2.\+Neuronal\+Dynamics.\+Tests.\+Mesh\+Tests.\+Draw\+Line (\begin{DoxyParamCaption}\item[{in Vector3}]{start,  }\item[{in Vector3}]{end,  }\item[{in Color}]{color\+Start,  }\item[{in Color}]{color\+End }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Draw\+Line helper. 
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_tests_1_1_mesh_tests_acc0b36362741e08650bc7f334937d9d4}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_tests_1_1_mesh_tests_acc0b36362741e08650bc7f334937d9d4}} 
+\index{C2M2.NeuronalDynamics.Tests.MeshTests@{C2M2.NeuronalDynamics.Tests.MeshTests}!GetCellFiles@{GetCellFiles}}
+\index{GetCellFiles@{GetCellFiles}!C2M2.NeuronalDynamics.Tests.MeshTests@{C2M2.NeuronalDynamics.Tests.MeshTests}}
+\doxysubsubsection{\texorpdfstring{GetCellFiles()}{GetCellFiles()}}
+{\footnotesize\ttfamily string \mbox{[}$\,$\mbox{]} C2\+M2.\+Neuronal\+Dynamics.\+Tests.\+Mesh\+Tests.\+Get\+Cell\+Files (\begin{DoxyParamCaption}\item[{in string}]{hh\+Cell\+Folder,  }\item[{in string}]{active\+Cell\+Folder }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Helper method. 
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_tests_1_1_mesh_tests_a05aaff1b04971fe72fd4365a1a96c830}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_tests_1_1_mesh_tests_a05aaff1b04971fe72fd4365a1a96c830}} 
+\index{C2M2.NeuronalDynamics.Tests.MeshTests@{C2M2.NeuronalDynamics.Tests.MeshTests}!Start@{Start}}
+\index{Start@{Start}!C2M2.NeuronalDynamics.Tests.MeshTests@{C2M2.NeuronalDynamics.Tests.MeshTests}}
+\doxysubsubsection{\texorpdfstring{Start()}{Start()}}
+{\footnotesize\ttfamily void C2\+M2.\+Neuronal\+Dynamics.\+Tests.\+Mesh\+Tests.\+Start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Start. 
+
+Read in grid files from Active\+Cell folder
+
+Add visual components
+
+1D within 3D cell test
+
+Draw\+Line(vertices\mbox{[}from\mbox{]}, vertices\mbox{[}to\mbox{]}, Color.\+red, Color.\+red);
+
+Check winding order
+
+Check read-\/in normals from ug4 with calculated from Unity
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_tests_1_1_mesh_tests_afe109a091e004116ba6b298cc35d9672}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_tests_1_1_mesh_tests_afe109a091e004116ba6b298cc35d9672}} 
+\index{C2M2.NeuronalDynamics.Tests.MeshTests@{C2M2.NeuronalDynamics.Tests.MeshTests}!activeCellFolder@{activeCellFolder}}
+\index{activeCellFolder@{activeCellFolder}!C2M2.NeuronalDynamics.Tests.MeshTests@{C2M2.NeuronalDynamics.Tests.MeshTests}}
+\doxysubsubsection{\texorpdfstring{activeCellFolder}{activeCellFolder}}
+{\footnotesize\ttfamily string C2\+M2.\+Neuronal\+Dynamics.\+Tests.\+Mesh\+Tests.\+active\+Cell\+Folder = \char`\"{}Active\+Cell\char`\"{}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_tests_1_1_mesh_tests_aa7648615afbc2b2b2220db8d59e915b6}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_tests_1_1_mesh_tests_aa7648615afbc2b2b2220db8d59e915b6}} 
+\index{C2M2.NeuronalDynamics.Tests.MeshTests@{C2M2.NeuronalDynamics.Tests.MeshTests}!areNormalsConsistent@{areNormalsConsistent}}
+\index{areNormalsConsistent@{areNormalsConsistent}!C2M2.NeuronalDynamics.Tests.MeshTests@{C2M2.NeuronalDynamics.Tests.MeshTests}}
+\doxysubsubsection{\texorpdfstring{areNormalsConsistent}{areNormalsConsistent}}
+{\footnotesize\ttfamily bool C2\+M2.\+Neuronal\+Dynamics.\+Tests.\+Mesh\+Tests.\+are\+Normals\+Consistent = true}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_tests_1_1_mesh_tests_a75185ddf421bcfe17f46d2bdafc5e7a6}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_tests_1_1_mesh_tests_a75185ddf421bcfe17f46d2bdafc5e7a6}} 
+\index{C2M2.NeuronalDynamics.Tests.MeshTests@{C2M2.NeuronalDynamics.Tests.MeshTests}!cngExt@{cngExt}}
+\index{cngExt@{cngExt}!C2M2.NeuronalDynamics.Tests.MeshTests@{C2M2.NeuronalDynamics.Tests.MeshTests}}
+\doxysubsubsection{\texorpdfstring{cngExt}{cngExt}}
+{\footnotesize\ttfamily string C2\+M2.\+Neuronal\+Dynamics.\+Tests.\+Mesh\+Tests.\+cng\+Ext = \char`\"{}.CNG\char`\"{}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_tests_1_1_mesh_tests_abf7e7df76b3cb0d8d90f01975a70dd61}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_tests_1_1_mesh_tests_abf7e7df76b3cb0d8d90f01975a70dd61}} 
+\index{C2M2.NeuronalDynamics.Tests.MeshTests@{C2M2.NeuronalDynamics.Tests.MeshTests}!eps@{eps}}
+\index{eps@{eps}!C2M2.NeuronalDynamics.Tests.MeshTests@{C2M2.NeuronalDynamics.Tests.MeshTests}}
+\doxysubsubsection{\texorpdfstring{eps}{eps}}
+{\footnotesize\ttfamily float C2\+M2.\+Neuronal\+Dynamics.\+Tests.\+Mesh\+Tests.\+eps = 1e-\/6f}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_tests_1_1_mesh_tests_abd20d070ac878a3e977a633648f4e139}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_tests_1_1_mesh_tests_abd20d070ac878a3e977a633648f4e139}} 
+\index{C2M2.NeuronalDynamics.Tests.MeshTests@{C2M2.NeuronalDynamics.Tests.MeshTests}!go@{go}}
+\index{go@{go}!C2M2.NeuronalDynamics.Tests.MeshTests@{C2M2.NeuronalDynamics.Tests.MeshTests}}
+\doxysubsubsection{\texorpdfstring{go}{go}}
+{\footnotesize\ttfamily Game\+Object C2\+M2.\+Neuronal\+Dynamics.\+Tests.\+Mesh\+Tests.\+go\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_tests_1_1_mesh_tests_afc9bcef335da1b5e735125fbb6db673f}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_tests_1_1_mesh_tests_afc9bcef335da1b5e735125fbb6db673f}} 
+\index{C2M2.NeuronalDynamics.Tests.MeshTests@{C2M2.NeuronalDynamics.Tests.MeshTests}!hhCellFolder@{hhCellFolder}}
+\index{hhCellFolder@{hhCellFolder}!C2M2.NeuronalDynamics.Tests.MeshTests@{C2M2.NeuronalDynamics.Tests.MeshTests}}
+\doxysubsubsection{\texorpdfstring{hhCellFolder}{hhCellFolder}}
+{\footnotesize\ttfamily string C2\+M2.\+Neuronal\+Dynamics.\+Tests.\+Mesh\+Tests.\+hh\+Cell\+Folder = \char`\"{}HHSolver\char`\"{}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_tests_1_1_mesh_tests_a4b6dec91b1c74dbb046e2d6676ed1464}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_tests_1_1_mesh_tests_a4b6dec91b1c74dbb046e2d6676ed1464}} 
+\index{C2M2.NeuronalDynamics.Tests.MeshTests@{C2M2.NeuronalDynamics.Tests.MeshTests}!isMappingChecked@{isMappingChecked}}
+\index{isMappingChecked@{isMappingChecked}!C2M2.NeuronalDynamics.Tests.MeshTests@{C2M2.NeuronalDynamics.Tests.MeshTests}}
+\doxysubsubsection{\texorpdfstring{isMappingChecked}{isMappingChecked}}
+{\footnotesize\ttfamily bool C2\+M2.\+Neuronal\+Dynamics.\+Tests.\+Mesh\+Tests.\+is\+Mapping\+Checked = true}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_tests_1_1_mesh_tests_a4f8e17d6138aa1adf3aafd60b2576bff}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_tests_1_1_mesh_tests_a4f8e17d6138aa1adf3aafd60b2576bff}} 
+\index{C2M2.NeuronalDynamics.Tests.MeshTests@{C2M2.NeuronalDynamics.Tests.MeshTests}!isModelGeometryVisible@{isModelGeometryVisible}}
+\index{isModelGeometryVisible@{isModelGeometryVisible}!C2M2.NeuronalDynamics.Tests.MeshTests@{C2M2.NeuronalDynamics.Tests.MeshTests}}
+\doxysubsubsection{\texorpdfstring{isModelGeometryVisible}{isModelGeometryVisible}}
+{\footnotesize\ttfamily bool C2\+M2.\+Neuronal\+Dynamics.\+Tests.\+Mesh\+Tests.\+is\+Model\+Geometry\+Visible = false}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_tests_1_1_mesh_tests_ac90104dc1bf7297911462784e56e60b8}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_tests_1_1_mesh_tests_ac90104dc1bf7297911462784e56e60b8}} 
+\index{C2M2.NeuronalDynamics.Tests.MeshTests@{C2M2.NeuronalDynamics.Tests.MeshTests}!isWindingConsistent@{isWindingConsistent}}
+\index{isWindingConsistent@{isWindingConsistent}!C2M2.NeuronalDynamics.Tests.MeshTests@{C2M2.NeuronalDynamics.Tests.MeshTests}}
+\doxysubsubsection{\texorpdfstring{isWindingConsistent}{isWindingConsistent}}
+{\footnotesize\ttfamily bool C2\+M2.\+Neuronal\+Dynamics.\+Tests.\+Mesh\+Tests.\+is\+Winding\+Consistent = true}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_tests_1_1_mesh_tests_a0eab57c41fa1e04fbe95a4d163e92ab2}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_tests_1_1_mesh_tests_a0eab57c41fa1e04fbe95a4d163e92ab2}} 
+\index{C2M2.NeuronalDynamics.Tests.MeshTests@{C2M2.NeuronalDynamics.Tests.MeshTests}!spec1D@{spec1D}}
+\index{spec1D@{spec1D}!C2M2.NeuronalDynamics.Tests.MeshTests@{C2M2.NeuronalDynamics.Tests.MeshTests}}
+\doxysubsubsection{\texorpdfstring{spec1D}{spec1D}}
+{\footnotesize\ttfamily string C2\+M2.\+Neuronal\+Dynamics.\+Tests.\+Mesh\+Tests.\+spec1D = \char`\"{}\+\_\+1d\char`\"{}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_tests_1_1_mesh_tests_affc987cc3161f442abd05bc466dd2f80}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_tests_1_1_mesh_tests_affc987cc3161f442abd05bc466dd2f80}} 
+\index{C2M2.NeuronalDynamics.Tests.MeshTests@{C2M2.NeuronalDynamics.Tests.MeshTests}!specTris@{specTris}}
+\index{specTris@{specTris}!C2M2.NeuronalDynamics.Tests.MeshTests@{C2M2.NeuronalDynamics.Tests.MeshTests}}
+\doxysubsubsection{\texorpdfstring{specTris}{specTris}}
+{\footnotesize\ttfamily string C2\+M2.\+Neuronal\+Dynamics.\+Tests.\+Mesh\+Tests.\+spec\+Tris = \char`\"{}\+\_\+tris\char`\"{}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_tests_1_1_mesh_tests_a28dfc8ba8dd3ebe2ebb75d81c9b02257}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_tests_1_1_mesh_tests_a28dfc8ba8dd3ebe2ebb75d81c9b02257}} 
+\index{C2M2.NeuronalDynamics.Tests.MeshTests@{C2M2.NeuronalDynamics.Tests.MeshTests}!thresh@{thresh}}
+\index{thresh@{thresh}!C2M2.NeuronalDynamics.Tests.MeshTests@{C2M2.NeuronalDynamics.Tests.MeshTests}}
+\doxysubsubsection{\texorpdfstring{thresh}{thresh}}
+{\footnotesize\ttfamily float C2\+M2.\+Neuronal\+Dynamics.\+Tests.\+Mesh\+Tests.\+thresh = 5f\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_tests_1_1_mesh_tests_a514d3113aef03d30716af56073f6d73d}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_tests_1_1_mesh_tests_a514d3113aef03d30716af56073f6d73d}} 
+\index{C2M2.NeuronalDynamics.Tests.MeshTests@{C2M2.NeuronalDynamics.Tests.MeshTests}!ugxExt@{ugxExt}}
+\index{ugxExt@{ugxExt}!C2M2.NeuronalDynamics.Tests.MeshTests@{C2M2.NeuronalDynamics.Tests.MeshTests}}
+\doxysubsubsection{\texorpdfstring{ugxExt}{ugxExt}}
+{\footnotesize\ttfamily string C2\+M2.\+Neuronal\+Dynamics.\+Tests.\+Mesh\+Tests.\+ugx\+Ext = \char`\"{}.ugx\char`\"{}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/jaros/\+Desktop/tempvr/virtual-\/reality/\+Assets/\+Scripts/\+C2\+M2/\+Neuronal\+Dynamics/\+Tests/\+Mesh\+Tests/\mbox{\hyperlink{_mesh_tests_8cs}{Mesh\+Tests.\+cs}}\end{DoxyCompactItemize}

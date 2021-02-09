@@ -1,0 +1,186 @@
+\hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_grid}{}\doxysection{C2\+M2.\+Neuronal\+Dynamics.\+UGX.\+Grid Class Reference}
+\label{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_grid}\index{C2M2.NeuronalDynamics.UGX.Grid@{C2M2.NeuronalDynamics.UGX.Grid}}
+
+
+Encapsulates Unity mesh and the edges of the \mbox{\hyperlink{namespace_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x}{UGX}} file  
+
+
+
+
+Collaboration diagram for C2\+M2.\+Neuronal\+Dynamics.\+UGX.\+Grid\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=277pt]{df/dab/class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_grid__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+override string \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_grid_a4740500b0f3edbb62da3f04e6b828bc2}{To\+String}} ()
+\begin{DoxyCompactList}\small\item\em Returns a string representation of the \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_grid}{Grid}} containign useful information \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_grid_a7a1e9f72fcebea26385d0e195a4e9f72}{Grid}} (in \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_grid_aeb5d8597ebe203671fa49aaa162948c2}{Mesh}} \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_grid_aeb5d8597ebe203671fa49aaa162948c2}{Mesh}}, in string name=\char`\"{}UGX \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_grid}{Grid}}\char`\"{})
+\begin{DoxyCompactList}\small\item\em Constructs an empty grid with a given name \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_grid_a8adeaae6c4ecd7d31e40890cf1fc2dff}{Has\+Vertex\+Attachment$<$ T $>$}} ()
+\begin{DoxyCompactList}\small\item\em Check if a grid contains a certain vertex attachmen with type T \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_grid_a3f0f8dd809c96905613878783ce63900}{Clear}} (in string name)
+\begin{DoxyCompactList}\small\item\em Clears the attachment with name from the attachment lists for this grid \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Dictionary$<$ string, Type $>$ \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_grid_a8ebb8f9ea4259116b31a99499da4be20}{types}} = new Dictionary$<$string, Type$>$()
+\item 
+Dictionary$<$ string, \mbox{\hyperlink{interface_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_attachment}{Attachment}} $>$ \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_grid_a2a638e5da90c517efab8eb9d6967f67c}{data}} = new Dictionary$<$string, \mbox{\hyperlink{interface_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_attachment}{Attachment}}$>$()
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_attachment_info}{Attachment\+Info}} \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_grid_a4dbf6111a54941d83cfeac13cfa25fb1}{Attachment\+Info}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+Mesh \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_grid_aeb5d8597ebe203671fa49aaa162948c2}{Mesh}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+List$<$ \mbox{\hyperlink{struct_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_edge}{Edge}} $>$ \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_grid_a1fcdb09f87ba2e75c8e01f65b177f98a}{Edges}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+List$<$ \mbox{\hyperlink{struct_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_vertex}{Vertex}} $>$ \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_grid_ac99f23e59836a220d717a5cc0fb37a14}{Vertices}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_subset_collection}{Subset\+Collection}} \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_grid_aae4716c47d09767188e76f50597cbddb}{Subsets}} = new \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_subset_collection}{Subset\+Collection}}()\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Subset\+Information. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Encapsulates Unity mesh and the edges of the \mbox{\hyperlink{namespace_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x}{UGX}} file 
+
+\mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_grid}{Grid}}
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_grid_a7a1e9f72fcebea26385d0e195a4e9f72}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_grid_a7a1e9f72fcebea26385d0e195a4e9f72}} 
+\index{C2M2.NeuronalDynamics.UGX.Grid@{C2M2.NeuronalDynamics.UGX.Grid}!Grid@{Grid}}
+\index{Grid@{Grid}!C2M2.NeuronalDynamics.UGX.Grid@{C2M2.NeuronalDynamics.UGX.Grid}}
+\doxysubsubsection{\texorpdfstring{Grid()}{Grid()}}
+{\footnotesize\ttfamily C2\+M2.\+Neuronal\+Dynamics.\+UGX.\+Grid.\+Grid (\begin{DoxyParamCaption}\item[{in \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_grid_aeb5d8597ebe203671fa49aaa162948c2}{Mesh}}}]{Mesh,  }\item[{in string}]{name = {\ttfamily \char`\"{}UGX~\mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_grid}{Grid}}\char`\"{}} }\end{DoxyParamCaption})}
+
+
+
+Constructs an empty grid with a given name 
+
+\mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_grid}{Grid}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em Mesh} & Unity mesh \\
+\hline
+{\em name} & \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_grid}{Grid}}\textquotesingle{}s name \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_grid_a3f0f8dd809c96905613878783ce63900}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_grid_a3f0f8dd809c96905613878783ce63900}} 
+\index{C2M2.NeuronalDynamics.UGX.Grid@{C2M2.NeuronalDynamics.UGX.Grid}!Clear@{Clear}}
+\index{Clear@{Clear}!C2M2.NeuronalDynamics.UGX.Grid@{C2M2.NeuronalDynamics.UGX.Grid}}
+\doxysubsubsection{\texorpdfstring{Clear()}{Clear()}}
+{\footnotesize\ttfamily void C2\+M2.\+Neuronal\+Dynamics.\+UGX.\+Grid.\+Clear (\begin{DoxyParamCaption}\item[{in string}]{name }\end{DoxyParamCaption})}
+
+
+
+Clears the attachment with name from the attachment lists for this grid 
+
+Clear
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & Name of attachment \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_grid_a8adeaae6c4ecd7d31e40890cf1fc2dff}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_grid_a8adeaae6c4ecd7d31e40890cf1fc2dff}} 
+\index{C2M2.NeuronalDynamics.UGX.Grid@{C2M2.NeuronalDynamics.UGX.Grid}!HasVertexAttachment$<$ T $>$@{HasVertexAttachment$<$ T $>$}}
+\index{HasVertexAttachment$<$ T $>$@{HasVertexAttachment$<$ T $>$}!C2M2.NeuronalDynamics.UGX.Grid@{C2M2.NeuronalDynamics.UGX.Grid}}
+\doxysubsubsection{\texorpdfstring{HasVertexAttachment$<$ T $>$()}{HasVertexAttachment< T >()}}
+{\footnotesize\ttfamily bool C2\+M2.\+Neuronal\+Dynamics.\+UGX.\+Grid.\+Has\+Vertex\+Attachment$<$ T $>$ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Check if a grid contains a certain vertex attachmen with type T 
+
+Has\+Vertex\+Attachment
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & Name of the vertex attachment \\
+\hline
+\end{DoxyTemplParams}
+\begin{DoxyReturn}{Returns}
+True if vertex with given type present otherwise false 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_grid_a4740500b0f3edbb62da3f04e6b828bc2}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_grid_a4740500b0f3edbb62da3f04e6b828bc2}} 
+\index{C2M2.NeuronalDynamics.UGX.Grid@{C2M2.NeuronalDynamics.UGX.Grid}!ToString@{ToString}}
+\index{ToString@{ToString}!C2M2.NeuronalDynamics.UGX.Grid@{C2M2.NeuronalDynamics.UGX.Grid}}
+\doxysubsubsection{\texorpdfstring{ToString()}{ToString()}}
+{\footnotesize\ttfamily override string C2\+M2.\+Neuronal\+Dynamics.\+UGX.\+Grid.\+To\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns a string representation of the \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_grid}{Grid}} containign useful information 
+
+To\+String
+
+\begin{DoxyReturn}{Returns}
+String representation of a \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_grid}{Grid}}
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_grid_a2a638e5da90c517efab8eb9d6967f67c}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_grid_a2a638e5da90c517efab8eb9d6967f67c}} 
+\index{C2M2.NeuronalDynamics.UGX.Grid@{C2M2.NeuronalDynamics.UGX.Grid}!data@{data}}
+\index{data@{data}!C2M2.NeuronalDynamics.UGX.Grid@{C2M2.NeuronalDynamics.UGX.Grid}}
+\doxysubsubsection{\texorpdfstring{data}{data}}
+{\footnotesize\ttfamily Dictionary$<$string, \mbox{\hyperlink{interface_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_attachment}{Attachment}}$>$ C2\+M2.\+Neuronal\+Dynamics.\+UGX.\+Grid.\+data = new Dictionary$<$string, \mbox{\hyperlink{interface_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_attachment}{Attachment}}$>$()}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_grid_a8ebb8f9ea4259116b31a99499da4be20}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_grid_a8ebb8f9ea4259116b31a99499da4be20}} 
+\index{C2M2.NeuronalDynamics.UGX.Grid@{C2M2.NeuronalDynamics.UGX.Grid}!types@{types}}
+\index{types@{types}!C2M2.NeuronalDynamics.UGX.Grid@{C2M2.NeuronalDynamics.UGX.Grid}}
+\doxysubsubsection{\texorpdfstring{types}{types}}
+{\footnotesize\ttfamily Dictionary$<$string, Type$>$ C2\+M2.\+Neuronal\+Dynamics.\+UGX.\+Grid.\+types = new Dictionary$<$string, Type$>$()}
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_grid_a4dbf6111a54941d83cfeac13cfa25fb1}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_grid_a4dbf6111a54941d83cfeac13cfa25fb1}} 
+\index{C2M2.NeuronalDynamics.UGX.Grid@{C2M2.NeuronalDynamics.UGX.Grid}!AttachmentInfo@{AttachmentInfo}}
+\index{AttachmentInfo@{AttachmentInfo}!C2M2.NeuronalDynamics.UGX.Grid@{C2M2.NeuronalDynamics.UGX.Grid}}
+\doxysubsubsection{\texorpdfstring{AttachmentInfo}{AttachmentInfo}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_attachment_info}{Attachment\+Info}} C2\+M2.\+Neuronal\+Dynamics.\+UGX.\+Grid.\+Attachment\+Info\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_grid_a1fcdb09f87ba2e75c8e01f65b177f98a}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_grid_a1fcdb09f87ba2e75c8e01f65b177f98a}} 
+\index{C2M2.NeuronalDynamics.UGX.Grid@{C2M2.NeuronalDynamics.UGX.Grid}!Edges@{Edges}}
+\index{Edges@{Edges}!C2M2.NeuronalDynamics.UGX.Grid@{C2M2.NeuronalDynamics.UGX.Grid}}
+\doxysubsubsection{\texorpdfstring{Edges}{Edges}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{struct_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_edge}{Edge}}$>$ C2\+M2.\+Neuronal\+Dynamics.\+UGX.\+Grid.\+Edges\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_grid_aeb5d8597ebe203671fa49aaa162948c2}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_grid_aeb5d8597ebe203671fa49aaa162948c2}} 
+\index{C2M2.NeuronalDynamics.UGX.Grid@{C2M2.NeuronalDynamics.UGX.Grid}!Mesh@{Mesh}}
+\index{Mesh@{Mesh}!C2M2.NeuronalDynamics.UGX.Grid@{C2M2.NeuronalDynamics.UGX.Grid}}
+\doxysubsubsection{\texorpdfstring{Mesh}{Mesh}}
+{\footnotesize\ttfamily Mesh C2\+M2.\+Neuronal\+Dynamics.\+UGX.\+Grid.\+Mesh\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_grid_aae4716c47d09767188e76f50597cbddb}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_grid_aae4716c47d09767188e76f50597cbddb}} 
+\index{C2M2.NeuronalDynamics.UGX.Grid@{C2M2.NeuronalDynamics.UGX.Grid}!Subsets@{Subsets}}
+\index{Subsets@{Subsets}!C2M2.NeuronalDynamics.UGX.Grid@{C2M2.NeuronalDynamics.UGX.Grid}}
+\doxysubsubsection{\texorpdfstring{Subsets}{Subsets}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_subset_collection}{Subset\+Collection}} C2\+M2.\+Neuronal\+Dynamics.\+UGX.\+Grid.\+Subsets = new \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_subset_collection}{Subset\+Collection}}()\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Subset\+Information. 
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_grid_ac99f23e59836a220d717a5cc0fb37a14}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_grid_ac99f23e59836a220d717a5cc0fb37a14}} 
+\index{C2M2.NeuronalDynamics.UGX.Grid@{C2M2.NeuronalDynamics.UGX.Grid}!Vertices@{Vertices}}
+\index{Vertices@{Vertices}!C2M2.NeuronalDynamics.UGX.Grid@{C2M2.NeuronalDynamics.UGX.Grid}}
+\doxysubsubsection{\texorpdfstring{Vertices}{Vertices}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{struct_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_vertex}{Vertex}}$>$ C2\+M2.\+Neuronal\+Dynamics.\+UGX.\+Grid.\+Vertices\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/jaros/\+Desktop/tempvr/virtual-\/reality/\+Assets/\+Scripts/\+C2\+M2/\+Neuronal\+Dynamics/\+Visualization/\+Mapping/\mbox{\hyperlink{_grid_8cs}{Grid.\+cs}}\end{DoxyCompactItemize}

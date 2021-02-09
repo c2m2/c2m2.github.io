@@ -1,0 +1,148 @@
+\hypertarget{class_c2_m2_1_1_o_i_t_1_1_data_set}{}\doxysection{C2\+M2.\+OIT.\+Data\+Set Class Reference}
+\label{class_c2_m2_1_1_o_i_t_1_1_data_set}\index{C2M2.OIT.DataSet@{C2M2.OIT.DataSet}}
+
+
+Stores a list of Data\+Points, resizes particle fields,  
+
+
+
+
+Collaboration diagram for C2\+M2.\+OIT.\+Data\+Set\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=271pt]{d6/dcd/class_c2_m2_1_1_o_i_t_1_1_data_set__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c2_m2_1_1_o_i_t_1_1_data_set_a783f4a38658121b39aba3cc9e4e50604}{Data\+Set}} ()
+\item 
+\mbox{\hyperlink{class_c2_m2_1_1_o_i_t_1_1_data_set_a25884bf1a44a6ecdc6c68706444dffd9}{Data\+Set}} (List$<$ \mbox{\hyperlink{class_c2_m2_1_1_o_i_t_1_1_data_point}{Data\+Point}} $>$ \mbox{\hyperlink{class_c2_m2_1_1_o_i_t_1_1_data_set_ab772aa0d376a0c13befa9fe0d147da3e}{data\+List}})
+\item 
+void \mbox{\hyperlink{class_c2_m2_1_1_o_i_t_1_1_data_set_a97224b5123ecc13b156afb8fb8932499}{Positions\+Bounds\+Resize}} (Vector3 global\+Max\+Values, Vector3 global\+Min\+Values)
+\item 
+void \mbox{\hyperlink{class_c2_m2_1_1_o_i_t_1_1_data_set_a4450db3927f9c68d5e0d55c7e32e703d}{Positions\+Percentage\+Resize}} (float resize\+Percent)
+\item 
+void \mbox{\hyperlink{class_c2_m2_1_1_o_i_t_1_1_data_set_a2c89fdeb379c8711e22b1de324035b1a}{Color\+Map\+\_\+\+Kelvin\+Scale}} ()
+\item 
+void \mbox{\hyperlink{class_c2_m2_1_1_o_i_t_1_1_data_set_a8abe37657d5cd61d1b490990b5dddc2a}{Color\+Map\+\_\+\+Red\+White\+Blue}} ()
+\item 
+void \mbox{\hyperlink{class_c2_m2_1_1_o_i_t_1_1_data_set_a77cca79b978b143674006c929b60ab3a}{Reduce\+Lists}} (int reduce\+Count)
+\item 
+void \mbox{\hyperlink{class_c2_m2_1_1_o_i_t_1_1_data_set_a726cd05bff38fcb0cff5a0dfd5d7572d}{Isolate\+Quantity}} (float low\+Range, float high\+Range)
+\item 
+void \mbox{\hyperlink{class_c2_m2_1_1_o_i_t_1_1_data_set_a4af56bac5b4b78956dde7b0c421b98a7}{Restore\+Original\+Values}} ()
+\item 
+void \mbox{\hyperlink{class_c2_m2_1_1_o_i_t_1_1_data_set_ad974d5b0ae035330da59b191a3a5d437}{Backup\+Data\+Set}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+List$<$ \mbox{\hyperlink{class_c2_m2_1_1_o_i_t_1_1_data_point}{Data\+Point}} $>$ \mbox{\hyperlink{class_c2_m2_1_1_o_i_t_1_1_data_set_ab772aa0d376a0c13befa9fe0d147da3e}{data\+List}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+List$<$ \mbox{\hyperlink{class_c2_m2_1_1_o_i_t_1_1_data_point}{Data\+Point}} $>$ \mbox{\hyperlink{class_c2_m2_1_1_o_i_t_1_1_data_set_aa6c4a5c9509ae56f279b594c15e7c24d}{data\+List\+Backup}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Stores a list of Data\+Points, resizes particle fields, 
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_c2_m2_1_1_o_i_t_1_1_data_set_a783f4a38658121b39aba3cc9e4e50604}\label{class_c2_m2_1_1_o_i_t_1_1_data_set_a783f4a38658121b39aba3cc9e4e50604}} 
+\index{C2M2.OIT.DataSet@{C2M2.OIT.DataSet}!DataSet@{DataSet}}
+\index{DataSet@{DataSet}!C2M2.OIT.DataSet@{C2M2.OIT.DataSet}}
+\doxysubsubsection{\texorpdfstring{DataSet()}{DataSet()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily C2\+M2.\+OIT.\+Data\+Set.\+Data\+Set (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_o_i_t_1_1_data_set_a25884bf1a44a6ecdc6c68706444dffd9}\label{class_c2_m2_1_1_o_i_t_1_1_data_set_a25884bf1a44a6ecdc6c68706444dffd9}} 
+\index{C2M2.OIT.DataSet@{C2M2.OIT.DataSet}!DataSet@{DataSet}}
+\index{DataSet@{DataSet}!C2M2.OIT.DataSet@{C2M2.OIT.DataSet}}
+\doxysubsubsection{\texorpdfstring{DataSet()}{DataSet()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily C2\+M2.\+OIT.\+Data\+Set.\+Data\+Set (\begin{DoxyParamCaption}\item[{List$<$ \mbox{\hyperlink{class_c2_m2_1_1_o_i_t_1_1_data_point}{Data\+Point}} $>$}]{data\+List }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_c2_m2_1_1_o_i_t_1_1_data_set_ad974d5b0ae035330da59b191a3a5d437}\label{class_c2_m2_1_1_o_i_t_1_1_data_set_ad974d5b0ae035330da59b191a3a5d437}} 
+\index{C2M2.OIT.DataSet@{C2M2.OIT.DataSet}!BackupDataSet@{BackupDataSet}}
+\index{BackupDataSet@{BackupDataSet}!C2M2.OIT.DataSet@{C2M2.OIT.DataSet}}
+\doxysubsubsection{\texorpdfstring{BackupDataSet()}{BackupDataSet()}}
+{\footnotesize\ttfamily void C2\+M2.\+OIT.\+Data\+Set.\+Backup\+Data\+Set (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_o_i_t_1_1_data_set_a2c89fdeb379c8711e22b1de324035b1a}\label{class_c2_m2_1_1_o_i_t_1_1_data_set_a2c89fdeb379c8711e22b1de324035b1a}} 
+\index{C2M2.OIT.DataSet@{C2M2.OIT.DataSet}!ColorMap\_KelvinScale@{ColorMap\_KelvinScale}}
+\index{ColorMap\_KelvinScale@{ColorMap\_KelvinScale}!C2M2.OIT.DataSet@{C2M2.OIT.DataSet}}
+\doxysubsubsection{\texorpdfstring{ColorMap\_KelvinScale()}{ColorMap\_KelvinScale()}}
+{\footnotesize\ttfamily void C2\+M2.\+OIT.\+Data\+Set.\+Color\+Map\+\_\+\+Kelvin\+Scale (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_o_i_t_1_1_data_set_a8abe37657d5cd61d1b490990b5dddc2a}\label{class_c2_m2_1_1_o_i_t_1_1_data_set_a8abe37657d5cd61d1b490990b5dddc2a}} 
+\index{C2M2.OIT.DataSet@{C2M2.OIT.DataSet}!ColorMap\_RedWhiteBlue@{ColorMap\_RedWhiteBlue}}
+\index{ColorMap\_RedWhiteBlue@{ColorMap\_RedWhiteBlue}!C2M2.OIT.DataSet@{C2M2.OIT.DataSet}}
+\doxysubsubsection{\texorpdfstring{ColorMap\_RedWhiteBlue()}{ColorMap\_RedWhiteBlue()}}
+{\footnotesize\ttfamily void C2\+M2.\+OIT.\+Data\+Set.\+Color\+Map\+\_\+\+Red\+White\+Blue (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+For each colorfloat we use the following equation to scale a range \mbox{[}min, max\mbox{]} to \mbox{[}a, b\mbox{]} \begin{DoxyVerb}    (b - a)(x - min)
+\end{DoxyVerb}
+ f(x) = -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/--- + a max -\/ min
+
+where, for instance in the y dimension, holderY = y, min = local\+YMin, max = local\+YMax, a = global\+YMax, \& b = global\+YMin Then repeat for each position\+List in the list of lists \mbox{\Hypertarget{class_c2_m2_1_1_o_i_t_1_1_data_set_a726cd05bff38fcb0cff5a0dfd5d7572d}\label{class_c2_m2_1_1_o_i_t_1_1_data_set_a726cd05bff38fcb0cff5a0dfd5d7572d}} 
+\index{C2M2.OIT.DataSet@{C2M2.OIT.DataSet}!IsolateQuantity@{IsolateQuantity}}
+\index{IsolateQuantity@{IsolateQuantity}!C2M2.OIT.DataSet@{C2M2.OIT.DataSet}}
+\doxysubsubsection{\texorpdfstring{IsolateQuantity()}{IsolateQuantity()}}
+{\footnotesize\ttfamily void C2\+M2.\+OIT.\+Data\+Set.\+Isolate\+Quantity (\begin{DoxyParamCaption}\item[{float}]{low\+Range,  }\item[{float}]{high\+Range }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_o_i_t_1_1_data_set_a97224b5123ecc13b156afb8fb8932499}\label{class_c2_m2_1_1_o_i_t_1_1_data_set_a97224b5123ecc13b156afb8fb8932499}} 
+\index{C2M2.OIT.DataSet@{C2M2.OIT.DataSet}!PositionsBoundsResize@{PositionsBoundsResize}}
+\index{PositionsBoundsResize@{PositionsBoundsResize}!C2M2.OIT.DataSet@{C2M2.OIT.DataSet}}
+\doxysubsubsection{\texorpdfstring{PositionsBoundsResize()}{PositionsBoundsResize()}}
+{\footnotesize\ttfamily void C2\+M2.\+OIT.\+Data\+Set.\+Positions\+Bounds\+Resize (\begin{DoxyParamCaption}\item[{Vector3}]{global\+Max\+Values,  }\item[{Vector3}]{global\+Min\+Values }\end{DoxyParamCaption})}
+
+For each dimension we use the following equation to scale a range \mbox{[}min, max\mbox{]} to \mbox{[}a, b\mbox{]} \begin{DoxyVerb}    (b - a)(x - min)
+\end{DoxyVerb}
+ f(x) = -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/--- + a max -\/ min
+
+where, for instance in the y dimension, holderY = y, min = local\+YMin, max = local\+YMax, a = global\+YMax, \& b = global\+YMin Then repeat for each position\+List in the list of lists \mbox{\Hypertarget{class_c2_m2_1_1_o_i_t_1_1_data_set_a4450db3927f9c68d5e0d55c7e32e703d}\label{class_c2_m2_1_1_o_i_t_1_1_data_set_a4450db3927f9c68d5e0d55c7e32e703d}} 
+\index{C2M2.OIT.DataSet@{C2M2.OIT.DataSet}!PositionsPercentageResize@{PositionsPercentageResize}}
+\index{PositionsPercentageResize@{PositionsPercentageResize}!C2M2.OIT.DataSet@{C2M2.OIT.DataSet}}
+\doxysubsubsection{\texorpdfstring{PositionsPercentageResize()}{PositionsPercentageResize()}}
+{\footnotesize\ttfamily void C2\+M2.\+OIT.\+Data\+Set.\+Positions\+Percentage\+Resize (\begin{DoxyParamCaption}\item[{float}]{resize\+Percent }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_o_i_t_1_1_data_set_a77cca79b978b143674006c929b60ab3a}\label{class_c2_m2_1_1_o_i_t_1_1_data_set_a77cca79b978b143674006c929b60ab3a}} 
+\index{C2M2.OIT.DataSet@{C2M2.OIT.DataSet}!ReduceLists@{ReduceLists}}
+\index{ReduceLists@{ReduceLists}!C2M2.OIT.DataSet@{C2M2.OIT.DataSet}}
+\doxysubsubsection{\texorpdfstring{ReduceLists()}{ReduceLists()}}
+{\footnotesize\ttfamily void C2\+M2.\+OIT.\+Data\+Set.\+Reduce\+Lists (\begin{DoxyParamCaption}\item[{int}]{reduce\+Count }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_o_i_t_1_1_data_set_a4af56bac5b4b78956dde7b0c421b98a7}\label{class_c2_m2_1_1_o_i_t_1_1_data_set_a4af56bac5b4b78956dde7b0c421b98a7}} 
+\index{C2M2.OIT.DataSet@{C2M2.OIT.DataSet}!RestoreOriginalValues@{RestoreOriginalValues}}
+\index{RestoreOriginalValues@{RestoreOriginalValues}!C2M2.OIT.DataSet@{C2M2.OIT.DataSet}}
+\doxysubsubsection{\texorpdfstring{RestoreOriginalValues()}{RestoreOriginalValues()}}
+{\footnotesize\ttfamily void C2\+M2.\+OIT.\+Data\+Set.\+Restore\+Original\+Values (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_c2_m2_1_1_o_i_t_1_1_data_set_ab772aa0d376a0c13befa9fe0d147da3e}\label{class_c2_m2_1_1_o_i_t_1_1_data_set_ab772aa0d376a0c13befa9fe0d147da3e}} 
+\index{C2M2.OIT.DataSet@{C2M2.OIT.DataSet}!dataList@{dataList}}
+\index{dataList@{dataList}!C2M2.OIT.DataSet@{C2M2.OIT.DataSet}}
+\doxysubsubsection{\texorpdfstring{dataList}{dataList}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{class_c2_m2_1_1_o_i_t_1_1_data_point}{Data\+Point}}$>$ C2\+M2.\+OIT.\+Data\+Set.\+data\+List}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_o_i_t_1_1_data_set_aa6c4a5c9509ae56f279b594c15e7c24d}\label{class_c2_m2_1_1_o_i_t_1_1_data_set_aa6c4a5c9509ae56f279b594c15e7c24d}} 
+\index{C2M2.OIT.DataSet@{C2M2.OIT.DataSet}!dataListBackup@{dataListBackup}}
+\index{dataListBackup@{dataListBackup}!C2M2.OIT.DataSet@{C2M2.OIT.DataSet}}
+\doxysubsubsection{\texorpdfstring{dataListBackup}{dataListBackup}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{class_c2_m2_1_1_o_i_t_1_1_data_point}{Data\+Point}}$>$ C2\+M2.\+OIT.\+Data\+Set.\+data\+List\+Backup\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/jaros/\+Desktop/tempvr/virtual-\/reality/\+Assets/\+Scripts/\+C2\+M2/\+OIT/\mbox{\hyperlink{_data_set_8cs}{Data\+Set.\+cs}}\end{DoxyCompactItemize}

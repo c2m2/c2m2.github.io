@@ -1,0 +1,143 @@
+\hypertarget{class_c2_m2_1_1_utils_1_1_c_s_v_builder}{}\doxysection{C2\+M2.\+Utils.\+CSVBuilder Class Reference}
+\label{class_c2_m2_1_1_utils_1_1_c_s_v_builder}\index{C2M2.Utils.CSVBuilder@{C2M2.Utils.CSVBuilder}}
+
+
+Writes general data to a CSV file  
+
+
+
+
+Collaboration diagram for C2\+M2.\+Utils.\+CSVBuilder\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=223pt]{d2/da6/class_c2_m2_1_1_utils_1_1_c_s_v_builder__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c2_m2_1_1_utils_1_1_c_s_v_builder_a20c69fe689cf8c731ae43ac496cfccec}{CSVBuilder}} (string \mbox{\hyperlink{class_c2_m2_1_1_utils_1_1_c_s_v_builder_a4c46d0ff8988d816fdc19e01b9878cb4}{file\+Path}}=null, int char\+Capacity=0)
+\begin{DoxyCompactList}\small\item\em Format data and save it to a csv file \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c2_m2_1_1_utils_1_1_c_s_v_builder_af45d377e740f35737c044f8b2a1a851d}{Add\+Row$<$ T $>$}} (T\mbox{[}$\,$\mbox{]} new\+Data)
+\begin{DoxyCompactList}\small\item\em Append a new line to the existing CSV file \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c2_m2_1_1_utils_1_1_c_s_v_builder_affde796e7424e9eebdfdc56bbdd8d7e9}{Add\+Row$<$ T $>$}} (List$<$ T $>$ new\+Data)
+\item 
+void \mbox{\hyperlink{class_c2_m2_1_1_utils_1_1_c_s_v_builder_ac13847a074ca6ca7974cd74659d61a7f}{Add\+Matrix$<$ T $>$}} (T\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} new\+Data)
+\begin{DoxyCompactList}\small\item\em Append several new lines to the existing CSV file \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c2_m2_1_1_utils_1_1_c_s_v_builder_a0c0df9ae1c16a7ef0b77b0f33d708497}{Add\+Matrix$<$ T $>$}} (List$<$ T\mbox{[}$\,$\mbox{]}$>$ new\+Data)
+\item 
+void \mbox{\hyperlink{class_c2_m2_1_1_utils_1_1_c_s_v_builder_a66d805a7aaf3212bc5bfc42df297d842}{Export\+CSV}} (string \mbox{\hyperlink{class_c2_m2_1_1_utils_1_1_c_s_v_builder_a4c46d0ff8988d816fdc19e01b9878cb4}{file\+Path}}=null, bool overwrite=true)
+\begin{DoxyCompactList}\small\item\em Save the built CSV-\/format data to a CSV file \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c2_m2_1_1_utils_1_1_c_s_v_builder_a138084fb7671fcdbcfe90033bd35c9e7}{Export\+CSV}} (string full\+File, string \mbox{\hyperlink{class_c2_m2_1_1_utils_1_1_c_s_v_builder_a4c46d0ff8988d816fdc19e01b9878cb4}{file\+Path}}=null, bool overwrite=true)
+\begin{DoxyCompactList}\small\item\em Provide fully-\/formatted CSV data and save it to a CSV file \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{class_c2_m2_1_1_utils_1_1_c_s_v_builder_a4c46d0ff8988d816fdc19e01b9878cb4}{file\+Path}} = null
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+String\+Builder \mbox{\hyperlink{class_c2_m2_1_1_utils_1_1_c_s_v_builder_ab326535687811434ab5466b38578dee9}{csv}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Writes general data to a CSV file 
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_c2_m2_1_1_utils_1_1_c_s_v_builder_a20c69fe689cf8c731ae43ac496cfccec}\label{class_c2_m2_1_1_utils_1_1_c_s_v_builder_a20c69fe689cf8c731ae43ac496cfccec}} 
+\index{C2M2.Utils.CSVBuilder@{C2M2.Utils.CSVBuilder}!CSVBuilder@{CSVBuilder}}
+\index{CSVBuilder@{CSVBuilder}!C2M2.Utils.CSVBuilder@{C2M2.Utils.CSVBuilder}}
+\doxysubsubsection{\texorpdfstring{CSVBuilder()}{CSVBuilder()}}
+{\footnotesize\ttfamily C2\+M2.\+Utils.\+CSVBuilder.\+CSVBuilder (\begin{DoxyParamCaption}\item[{string}]{file\+Path = {\ttfamily null},  }\item[{int}]{char\+Capacity = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+
+
+Format data and save it to a csv file 
+
+
+\begin{DoxyParams}{Parameters}
+{\em char\+Capacity} & (Optional) Number of characters your file will take. Improves performance if supplied befor ebuilding. \\
+\hline
+{\em file\+Path} & (Optional) Supply a filepath. Otherwise file will be saved in the assets folder. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_c2_m2_1_1_utils_1_1_c_s_v_builder_a0c0df9ae1c16a7ef0b77b0f33d708497}\label{class_c2_m2_1_1_utils_1_1_c_s_v_builder_a0c0df9ae1c16a7ef0b77b0f33d708497}} 
+\index{C2M2.Utils.CSVBuilder@{C2M2.Utils.CSVBuilder}!AddMatrix$<$ T $>$@{AddMatrix$<$ T $>$}}
+\index{AddMatrix$<$ T $>$@{AddMatrix$<$ T $>$}!C2M2.Utils.CSVBuilder@{C2M2.Utils.CSVBuilder}}
+\doxysubsubsection{\texorpdfstring{AddMatrix$<$ T $>$()}{AddMatrix< T >()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void C2\+M2.\+Utils.\+CSVBuilder.\+Add\+Matrix$<$ T $>$ (\begin{DoxyParamCaption}\item[{List$<$ T\mbox{[}$\,$\mbox{]}$>$}]{new\+Data }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_utils_1_1_c_s_v_builder_ac13847a074ca6ca7974cd74659d61a7f}\label{class_c2_m2_1_1_utils_1_1_c_s_v_builder_ac13847a074ca6ca7974cd74659d61a7f}} 
+\index{C2M2.Utils.CSVBuilder@{C2M2.Utils.CSVBuilder}!AddMatrix$<$ T $>$@{AddMatrix$<$ T $>$}}
+\index{AddMatrix$<$ T $>$@{AddMatrix$<$ T $>$}!C2M2.Utils.CSVBuilder@{C2M2.Utils.CSVBuilder}}
+\doxysubsubsection{\texorpdfstring{AddMatrix$<$ T $>$()}{AddMatrix< T >()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void C2\+M2.\+Utils.\+CSVBuilder.\+Add\+Matrix$<$ T $>$ (\begin{DoxyParamCaption}\item[{T}]{new\+Data\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Append several new lines to the existing CSV file 
+
+\mbox{\Hypertarget{class_c2_m2_1_1_utils_1_1_c_s_v_builder_affde796e7424e9eebdfdc56bbdd8d7e9}\label{class_c2_m2_1_1_utils_1_1_c_s_v_builder_affde796e7424e9eebdfdc56bbdd8d7e9}} 
+\index{C2M2.Utils.CSVBuilder@{C2M2.Utils.CSVBuilder}!AddRow$<$ T $>$@{AddRow$<$ T $>$}}
+\index{AddRow$<$ T $>$@{AddRow$<$ T $>$}!C2M2.Utils.CSVBuilder@{C2M2.Utils.CSVBuilder}}
+\doxysubsubsection{\texorpdfstring{AddRow$<$ T $>$()}{AddRow< T >()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void C2\+M2.\+Utils.\+CSVBuilder.\+Add\+Row$<$ T $>$ (\begin{DoxyParamCaption}\item[{List$<$ T $>$}]{new\+Data }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_utils_1_1_c_s_v_builder_af45d377e740f35737c044f8b2a1a851d}\label{class_c2_m2_1_1_utils_1_1_c_s_v_builder_af45d377e740f35737c044f8b2a1a851d}} 
+\index{C2M2.Utils.CSVBuilder@{C2M2.Utils.CSVBuilder}!AddRow$<$ T $>$@{AddRow$<$ T $>$}}
+\index{AddRow$<$ T $>$@{AddRow$<$ T $>$}!C2M2.Utils.CSVBuilder@{C2M2.Utils.CSVBuilder}}
+\doxysubsubsection{\texorpdfstring{AddRow$<$ T $>$()}{AddRow< T >()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void C2\+M2.\+Utils.\+CSVBuilder.\+Add\+Row$<$ T $>$ (\begin{DoxyParamCaption}\item[{T\mbox{[}$\,$\mbox{]}}]{new\+Data }\end{DoxyParamCaption})}
+
+
+
+Append a new line to the existing CSV file 
+
+\mbox{\Hypertarget{class_c2_m2_1_1_utils_1_1_c_s_v_builder_a66d805a7aaf3212bc5bfc42df297d842}\label{class_c2_m2_1_1_utils_1_1_c_s_v_builder_a66d805a7aaf3212bc5bfc42df297d842}} 
+\index{C2M2.Utils.CSVBuilder@{C2M2.Utils.CSVBuilder}!ExportCSV@{ExportCSV}}
+\index{ExportCSV@{ExportCSV}!C2M2.Utils.CSVBuilder@{C2M2.Utils.CSVBuilder}}
+\doxysubsubsection{\texorpdfstring{ExportCSV()}{ExportCSV()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void C2\+M2.\+Utils.\+CSVBuilder.\+Export\+CSV (\begin{DoxyParamCaption}\item[{string}]{file\+Path = {\ttfamily null},  }\item[{bool}]{overwrite = {\ttfamily true} }\end{DoxyParamCaption})}
+
+
+
+Save the built CSV-\/format data to a CSV file 
+
+\mbox{\Hypertarget{class_c2_m2_1_1_utils_1_1_c_s_v_builder_a138084fb7671fcdbcfe90033bd35c9e7}\label{class_c2_m2_1_1_utils_1_1_c_s_v_builder_a138084fb7671fcdbcfe90033bd35c9e7}} 
+\index{C2M2.Utils.CSVBuilder@{C2M2.Utils.CSVBuilder}!ExportCSV@{ExportCSV}}
+\index{ExportCSV@{ExportCSV}!C2M2.Utils.CSVBuilder@{C2M2.Utils.CSVBuilder}}
+\doxysubsubsection{\texorpdfstring{ExportCSV()}{ExportCSV()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void C2\+M2.\+Utils.\+CSVBuilder.\+Export\+CSV (\begin{DoxyParamCaption}\item[{string}]{full\+File,  }\item[{string}]{file\+Path = {\ttfamily null},  }\item[{bool}]{overwrite = {\ttfamily true} }\end{DoxyParamCaption})}
+
+
+
+Provide fully-\/formatted CSV data and save it to a CSV file 
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_c2_m2_1_1_utils_1_1_c_s_v_builder_ab326535687811434ab5466b38578dee9}\label{class_c2_m2_1_1_utils_1_1_c_s_v_builder_ab326535687811434ab5466b38578dee9}} 
+\index{C2M2.Utils.CSVBuilder@{C2M2.Utils.CSVBuilder}!csv@{csv}}
+\index{csv@{csv}!C2M2.Utils.CSVBuilder@{C2M2.Utils.CSVBuilder}}
+\doxysubsubsection{\texorpdfstring{csv}{csv}}
+{\footnotesize\ttfamily String\+Builder C2\+M2.\+Utils.\+CSVBuilder.\+csv\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_utils_1_1_c_s_v_builder_a4c46d0ff8988d816fdc19e01b9878cb4}\label{class_c2_m2_1_1_utils_1_1_c_s_v_builder_a4c46d0ff8988d816fdc19e01b9878cb4}} 
+\index{C2M2.Utils.CSVBuilder@{C2M2.Utils.CSVBuilder}!filePath@{filePath}}
+\index{filePath@{filePath}!C2M2.Utils.CSVBuilder@{C2M2.Utils.CSVBuilder}}
+\doxysubsubsection{\texorpdfstring{filePath}{filePath}}
+{\footnotesize\ttfamily string C2\+M2.\+Utils.\+CSVBuilder.\+file\+Path = null}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/jaros/\+Desktop/tempvr/virtual-\/reality/\+Assets/\+Scripts/\+C2\+M2/\+Utils/\mbox{\hyperlink{_c_s_v_builder_8cs}{CSVBuilder.\+cs}}\end{DoxyCompactItemize}

@@ -1,0 +1,214 @@
+\hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_vertex_attachement_accessor}{}\doxysection{C2\+M2.\+Neuronal\+Dynamics.\+UGX.\+Vertex\+Attachement\+Accessor$<$ T $>$ Class Template Reference}
+\label{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_vertex_attachement_accessor}\index{C2M2.NeuronalDynamics.UGX.VertexAttachementAccessor$<$ T $>$@{C2M2.NeuronalDynamics.UGX.VertexAttachementAccessor$<$ T $>$}}
+
+
+Vertex\+Attachment\+Acccesor  
+
+
+
+
+Inheritance diagram for C2\+M2.\+Neuronal\+Dynamics.\+UGX.\+Vertex\+Attachement\+Accessor$<$ T $>$\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=277pt]{d0/d26/class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_vertex_attachement_accessor__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for C2\+M2.\+Neuronal\+Dynamics.\+UGX.\+Vertex\+Attachement\+Accessor$<$ T $>$\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{da/de9/class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_vertex_attachement_accessor__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_vertex_attachement_accessor_a887a34b84fb5cdf584b44b975290e786}{Vertex\+Attachement\+Accessor}} (in \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_grid}{Grid}} \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_vertex_attachement_accessor_a84fda138d9c82363a92e28546e6269df}{grid}})
+\begin{DoxyCompactList}\small\item\em Create the accessor \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_vertex_attachement_accessor_aaa189002b29298b811540e2b83d7bbc9}{Vertex\+Attachement\+Accessor}} (in \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_grid}{Grid}} \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_vertex_attachement_accessor_a84fda138d9c82363a92e28546e6269df}{grid}}, int size, T def)
+\begin{DoxyCompactList}\small\item\em Create the accesor with default data and a given size \end{DoxyCompactList}\item 
+IEnumerator$<$ T $>$ \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_vertex_attachement_accessor_ab51863f1a4a71505b148fd7eee587389}{Get\+Enumerator}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+T \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_vertex_attachement_accessor_a636a53c57375259e386f68732f3747b5}{this\mbox{[}int key\mbox{]}}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Get data \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+T \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_vertex_attachement_accessor_a480120426c264b34f255ab712c706987}{Get\+Value}} (int index)
+\begin{DoxyCompactList}\small\item\em Get\textquotesingle{}s the value of the attachment \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_vertex_attachement_accessor_a165b219efb84f295ed4fea3f4bfe4b53}{Set\+Value}} (int key, in T value)
+\begin{DoxyCompactList}\small\item\em Set the value of the attachment \end{DoxyCompactList}\item 
+IEnumerator IEnumerable. \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_vertex_attachement_accessor_a1311ddde1ec92c4fd38ac8e35aeda51e}{Get\+Enumerator}} ()
+\begin{DoxyCompactList}\small\item\em Enumerator implementation \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+readonly \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_grid}{Grid}} \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_vertex_attachement_accessor_a84fda138d9c82363a92e28546e6269df}{grid}}
+\begin{DoxyCompactList}\small\item\em associated grid \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Vertex\+Attachment\+Acccesor 
+
+Note\+: Could enhance this as a generic attachment accessor also for other geometric elements like edges, and so forth with ease. Basically use this as Attachment\+Accessor$<$\+T, E$>$ with T being the attachment data and E the element type\begin{Desc}
+\item[Type Constraints]\begin{description}
+\item[{\em T} : {\em \mbox{\hyperlink{interface_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_i_attachment_data}{IAttachment\+Data}}}]\end{description}
+\end{Desc}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_vertex_attachement_accessor_a887a34b84fb5cdf584b44b975290e786}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_vertex_attachement_accessor_a887a34b84fb5cdf584b44b975290e786}} 
+\index{C2M2.NeuronalDynamics.UGX.VertexAttachementAccessor$<$ T $>$@{C2M2.NeuronalDynamics.UGX.VertexAttachementAccessor$<$ T $>$}!VertexAttachementAccessor@{VertexAttachementAccessor}}
+\index{VertexAttachementAccessor@{VertexAttachementAccessor}!C2M2.NeuronalDynamics.UGX.VertexAttachementAccessor$<$ T $>$@{C2M2.NeuronalDynamics.UGX.VertexAttachementAccessor$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{VertexAttachementAccessor()}{VertexAttachementAccessor()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_vertex_attachement_accessor}{C2\+M2.\+Neuronal\+Dynamics.\+UGX.\+Vertex\+Attachement\+Accessor}}$<$ T $>$.\mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_vertex_attachement_accessor}{Vertex\+Attachement\+Accessor}} (\begin{DoxyParamCaption}\item[{in \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_grid}{Grid}}}]{grid }\end{DoxyParamCaption})}
+
+
+
+Create the accessor 
+
+Vertex\+Attachment\+Acccesor
+
+
+\begin{DoxyParams}{Parameters}
+{\em grid} & A grid which should be accessed with a Vertex\+Attachment\+Accessor \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_vertex_attachement_accessor_aaa189002b29298b811540e2b83d7bbc9}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_vertex_attachement_accessor_aaa189002b29298b811540e2b83d7bbc9}} 
+\index{C2M2.NeuronalDynamics.UGX.VertexAttachementAccessor$<$ T $>$@{C2M2.NeuronalDynamics.UGX.VertexAttachementAccessor$<$ T $>$}!VertexAttachementAccessor@{VertexAttachementAccessor}}
+\index{VertexAttachementAccessor@{VertexAttachementAccessor}!C2M2.NeuronalDynamics.UGX.VertexAttachementAccessor$<$ T $>$@{C2M2.NeuronalDynamics.UGX.VertexAttachementAccessor$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{VertexAttachementAccessor()}{VertexAttachementAccessor()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_vertex_attachement_accessor}{C2\+M2.\+Neuronal\+Dynamics.\+UGX.\+Vertex\+Attachement\+Accessor}}$<$ T $>$.\mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_vertex_attachement_accessor}{Vertex\+Attachement\+Accessor}} (\begin{DoxyParamCaption}\item[{in \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_grid}{Grid}}}]{grid,  }\item[{int}]{size,  }\item[{T}]{def }\end{DoxyParamCaption})}
+
+
+
+Create the accesor with default data and a given size 
+
+Vertex\+Attachment\+Acccesor
+
+
+\begin{DoxyParams}{Parameters}
+{\em grid} & \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_grid}{Grid}} instance \\
+\hline
+{\em size} & Number of elements \\
+\hline
+{\em def} & default value for unassigned attachment data at vertex index \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_vertex_attachement_accessor_ab51863f1a4a71505b148fd7eee587389}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_vertex_attachement_accessor_ab51863f1a4a71505b148fd7eee587389}} 
+\index{C2M2.NeuronalDynamics.UGX.VertexAttachementAccessor$<$ T $>$@{C2M2.NeuronalDynamics.UGX.VertexAttachementAccessor$<$ T $>$}!GetEnumerator@{GetEnumerator}}
+\index{GetEnumerator@{GetEnumerator}!C2M2.NeuronalDynamics.UGX.VertexAttachementAccessor$<$ T $>$@{C2M2.NeuronalDynamics.UGX.VertexAttachementAccessor$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{GetEnumerator()}{GetEnumerator()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily IEnumerator$<$T$>$ \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_vertex_attachement_accessor}{C2\+M2.\+Neuronal\+Dynamics.\+UGX.\+Vertex\+Attachement\+Accessor}}$<$ T $>$.Get\+Enumerator (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+
+
+Get\+Enumerator
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_vertex_attachement_accessor_a1311ddde1ec92c4fd38ac8e35aeda51e}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_vertex_attachement_accessor_a1311ddde1ec92c4fd38ac8e35aeda51e}} 
+\index{C2M2.NeuronalDynamics.UGX.VertexAttachementAccessor$<$ T $>$@{C2M2.NeuronalDynamics.UGX.VertexAttachementAccessor$<$ T $>$}!GetEnumerator@{GetEnumerator}}
+\index{GetEnumerator@{GetEnumerator}!C2M2.NeuronalDynamics.UGX.VertexAttachementAccessor$<$ T $>$@{C2M2.NeuronalDynamics.UGX.VertexAttachementAccessor$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{GetEnumerator()}{GetEnumerator()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily IEnumerator IEnumerable. \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_vertex_attachement_accessor}{C2\+M2.\+Neuronal\+Dynamics.\+UGX.\+Vertex\+Attachement\+Accessor}}$<$ T $>$.Get\+Enumerator (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Enumerator implementation 
+
+Get\+Enumerator
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_vertex_attachement_accessor_a480120426c264b34f255ab712c706987}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_vertex_attachement_accessor_a480120426c264b34f255ab712c706987}} 
+\index{C2M2.NeuronalDynamics.UGX.VertexAttachementAccessor$<$ T $>$@{C2M2.NeuronalDynamics.UGX.VertexAttachementAccessor$<$ T $>$}!GetValue@{GetValue}}
+\index{GetValue@{GetValue}!C2M2.NeuronalDynamics.UGX.VertexAttachementAccessor$<$ T $>$@{C2M2.NeuronalDynamics.UGX.VertexAttachementAccessor$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{GetValue()}{GetValue()}}
+{\footnotesize\ttfamily T \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_vertex_attachement_accessor}{C2\+M2.\+Neuronal\+Dynamics.\+UGX.\+Vertex\+Attachement\+Accessor}}$<$ T $>$.Get\+Value (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Get\textquotesingle{}s the value of the attachment 
+
+Get\+Value
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & Index of vertex\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_vertex_attachement_accessor_a165b219efb84f295ed4fea3f4bfe4b53}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_vertex_attachement_accessor_a165b219efb84f295ed4fea3f4bfe4b53}} 
+\index{C2M2.NeuronalDynamics.UGX.VertexAttachementAccessor$<$ T $>$@{C2M2.NeuronalDynamics.UGX.VertexAttachementAccessor$<$ T $>$}!SetValue@{SetValue}}
+\index{SetValue@{SetValue}!C2M2.NeuronalDynamics.UGX.VertexAttachementAccessor$<$ T $>$@{C2M2.NeuronalDynamics.UGX.VertexAttachementAccessor$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{SetValue()}{SetValue()}}
+{\footnotesize\ttfamily void \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_vertex_attachement_accessor}{C2\+M2.\+Neuronal\+Dynamics.\+UGX.\+Vertex\+Attachement\+Accessor}}$<$ T $>$.Set\+Value (\begin{DoxyParamCaption}\item[{int}]{key,  }\item[{in T}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Set the value of the attachment 
+
+Set\+Value
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & \\
+\hline
+{\em val} & \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_vertex_attachement_accessor_a84fda138d9c82363a92e28546e6269df}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_vertex_attachement_accessor_a84fda138d9c82363a92e28546e6269df}} 
+\index{C2M2.NeuronalDynamics.UGX.VertexAttachementAccessor$<$ T $>$@{C2M2.NeuronalDynamics.UGX.VertexAttachementAccessor$<$ T $>$}!grid@{grid}}
+\index{grid@{grid}!C2M2.NeuronalDynamics.UGX.VertexAttachementAccessor$<$ T $>$@{C2M2.NeuronalDynamics.UGX.VertexAttachementAccessor$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{grid}{grid}}
+{\footnotesize\ttfamily readonly \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_grid}{Grid}} \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_vertex_attachement_accessor}{C2\+M2.\+Neuronal\+Dynamics.\+UGX.\+Vertex\+Attachement\+Accessor}}$<$ T $>$.grid\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+associated grid 
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_vertex_attachement_accessor_a636a53c57375259e386f68732f3747b5}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_vertex_attachement_accessor_a636a53c57375259e386f68732f3747b5}} 
+\index{C2M2.NeuronalDynamics.UGX.VertexAttachementAccessor$<$ T $>$@{C2M2.NeuronalDynamics.UGX.VertexAttachementAccessor$<$ T $>$}!this\mbox{[}int key\mbox{]}@{this[int key]}}
+\index{this\mbox{[}int key\mbox{]}@{this[int key]}!C2M2.NeuronalDynamics.UGX.VertexAttachementAccessor$<$ T $>$@{C2M2.NeuronalDynamics.UGX.VertexAttachementAccessor$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{this[int key]}{this[int key]}}
+{\footnotesize\ttfamily T \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_vertex_attachement_accessor}{C2\+M2.\+Neuronal\+Dynamics.\+UGX.\+Vertex\+Attachement\+Accessor}}$<$ T $>$.this\mbox{[}int key\mbox{]}\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Get data 
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/jaros/\+Desktop/tempvr/virtual-\/reality/\+Assets/\+Scripts/\+C2\+M2/\+Neuronal\+Dynamics/\+Visualization/\+Mapping/\mbox{\hyperlink{_vertex_attachment_accessor_8cs}{Vertex\+Attachment\+Accessor.\+cs}}\end{DoxyCompactItemize}

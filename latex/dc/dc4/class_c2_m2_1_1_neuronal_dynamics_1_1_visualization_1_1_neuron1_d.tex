@@ -1,0 +1,143 @@
+\hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_neuron1_d}{}\doxysection{C2\+M2.\+Neuronal\+Dynamics.\+Visualization.\+Neuron1D Class Reference}
+\label{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_neuron1_d}\index{C2M2.NeuronalDynamics.Visualization.Neuron1D@{C2M2.NeuronalDynamics.Visualization.Neuron1D}}
+
+
+Read in a map associating 1D neuron vertices to 3D mesh vertices.  
+
+
+
+
+Inheritance diagram for C2\+M2.\+Neuronal\+Dynamics.\+Visualization.\+Neuron1D\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=313pt]{d5/df0/class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_neuron1_d__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for C2\+M2.\+Neuronal\+Dynamics.\+Visualization.\+Neuron1D\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=313pt]{d1/de7/class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_neuron1_d__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_neuron1_d_aafcec6d250883a26bfa221f96ffddc7e}{Start}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_neuron1_d_a371453c544a4b22cdf0b4a35f16ddde0}{obj\+File\+Path}} = \char`\"{}C\+:\char`\"{} + Path.\+Directory\+Separator\+Char + \char`\"{}Users\char`\"{} + Path.\+Directory\+Separator\+Char + \char`\"{}tuf91497\char`\"{} + Path.\+Directory\+Separator\+Char + \char`\"{}Desktop\char`\"{} + Path.\+Directory\+Separator\+Char + \char`\"{}C2\+M2\char`\"{} + Path.\+Directory\+Separator\+Char + \char`\"{}Y\+\_\+shape\char`\"{} + Path.\+Directory\+Separator\+Char + \char`\"{}Y\+\_\+shape.\+obj\char`\"{}
+\item 
+string \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_neuron1_d_a26bba01f982faec70b6cc159d4d0a789}{map\+Path}} = Application.\+streaming\+Assets\+Path + Path.\+Directory\+Separator\+Char + \char`\"{}1DNeuron\char`\"{} + Path.\+Directory\+Separator\+Char + \char`\"{}Y\+\_\+shape\+\_\+1\+D3\+D.\+map\char`\"{}
+\item 
+Gradient \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_neuron1_d_a2c191bd9ef487d04fe06c11d3296513c}{gradient}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_neuron1_d_vert_map}{Neuron1\+DVert\+Map}} \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_neuron1_d_ab5ef8997461af5aa773acb5722ca5b37}{vert\+Map}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, private set\mbox{]}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_neuron1_d_a641497cf6bc9bfa68f609af96aea33fe}{Awake}} ()
+\item 
+IEnumerator \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_neuron1_d_a8c541334dc8d1ebfa78453cc67c2121c}{Test\+Simulation}} (float wait\+Time)
+\begin{DoxyCompactList}\small\item\em Add some dummy initial conditions onto the 1D neurons and watch the initial values diffuse over the 3D surface \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_neuron1_d_a4925aed0a3081d7288994e2a56e7e624}{Evaluate\+Colors32}} (Color32\mbox{[}$\,$\mbox{]} colors32, in float\mbox{[}$\,$\mbox{]} scalars1D)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Mesh\+Filter \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_neuron1_d_a0474559f1d5a4b15633fef456c3999da}{mesh\+Filter3D}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Read in a map associating 1D neuron vertices to 3D mesh vertices. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_neuron1_d_a641497cf6bc9bfa68f609af96aea33fe}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_neuron1_d_a641497cf6bc9bfa68f609af96aea33fe}} 
+\index{C2M2.NeuronalDynamics.Visualization.Neuron1D@{C2M2.NeuronalDynamics.Visualization.Neuron1D}!Awake@{Awake}}
+\index{Awake@{Awake}!C2M2.NeuronalDynamics.Visualization.Neuron1D@{C2M2.NeuronalDynamics.Visualization.Neuron1D}}
+\doxysubsubsection{\texorpdfstring{Awake()}{Awake()}}
+{\footnotesize\ttfamily void C2\+M2.\+Neuronal\+Dynamics.\+Visualization.\+Neuron1\+D.\+Awake (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_neuron1_d_a4925aed0a3081d7288994e2a56e7e624}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_neuron1_d_a4925aed0a3081d7288994e2a56e7e624}} 
+\index{C2M2.NeuronalDynamics.Visualization.Neuron1D@{C2M2.NeuronalDynamics.Visualization.Neuron1D}!EvaluateColors32@{EvaluateColors32}}
+\index{EvaluateColors32@{EvaluateColors32}!C2M2.NeuronalDynamics.Visualization.Neuron1D@{C2M2.NeuronalDynamics.Visualization.Neuron1D}}
+\doxysubsubsection{\texorpdfstring{EvaluateColors32()}{EvaluateColors32()}}
+{\footnotesize\ttfamily void C2\+M2.\+Neuronal\+Dynamics.\+Visualization.\+Neuron1\+D.\+Evaluate\+Colors32 (\begin{DoxyParamCaption}\item[{Color32\mbox{[}$\,$\mbox{]}}]{colors32,  }\item[{in float\mbox{[}$\,$\mbox{]}}]{scalars1D }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_neuron1_d_aafcec6d250883a26bfa221f96ffddc7e}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_neuron1_d_aafcec6d250883a26bfa221f96ffddc7e}} 
+\index{C2M2.NeuronalDynamics.Visualization.Neuron1D@{C2M2.NeuronalDynamics.Visualization.Neuron1D}!Start@{Start}}
+\index{Start@{Start}!C2M2.NeuronalDynamics.Visualization.Neuron1D@{C2M2.NeuronalDynamics.Visualization.Neuron1D}}
+\doxysubsubsection{\texorpdfstring{Start()}{Start()}}
+{\footnotesize\ttfamily void C2\+M2.\+Neuronal\+Dynamics.\+Visualization.\+Neuron1\+D.\+Start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_neuron1_d_a8c541334dc8d1ebfa78453cc67c2121c}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_neuron1_d_a8c541334dc8d1ebfa78453cc67c2121c}} 
+\index{C2M2.NeuronalDynamics.Visualization.Neuron1D@{C2M2.NeuronalDynamics.Visualization.Neuron1D}!TestSimulation@{TestSimulation}}
+\index{TestSimulation@{TestSimulation}!C2M2.NeuronalDynamics.Visualization.Neuron1D@{C2M2.NeuronalDynamics.Visualization.Neuron1D}}
+\doxysubsubsection{\texorpdfstring{TestSimulation()}{TestSimulation()}}
+{\footnotesize\ttfamily IEnumerator C2\+M2.\+Neuronal\+Dynamics.\+Visualization.\+Neuron1\+D.\+Test\+Simulation (\begin{DoxyParamCaption}\item[{float}]{wait\+Time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Add some dummy initial conditions onto the 1D neurons and watch the initial values diffuse over the 3D surface 
+
+
+\begin{DoxyParams}{Parameters}
+{\em wait\+Time} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_neuron1_d_a2c191bd9ef487d04fe06c11d3296513c}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_neuron1_d_a2c191bd9ef487d04fe06c11d3296513c}} 
+\index{C2M2.NeuronalDynamics.Visualization.Neuron1D@{C2M2.NeuronalDynamics.Visualization.Neuron1D}!gradient@{gradient}}
+\index{gradient@{gradient}!C2M2.NeuronalDynamics.Visualization.Neuron1D@{C2M2.NeuronalDynamics.Visualization.Neuron1D}}
+\doxysubsubsection{\texorpdfstring{gradient}{gradient}}
+{\footnotesize\ttfamily Gradient C2\+M2.\+Neuronal\+Dynamics.\+Visualization.\+Neuron1\+D.\+gradient}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_neuron1_d_a26bba01f982faec70b6cc159d4d0a789}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_neuron1_d_a26bba01f982faec70b6cc159d4d0a789}} 
+\index{C2M2.NeuronalDynamics.Visualization.Neuron1D@{C2M2.NeuronalDynamics.Visualization.Neuron1D}!mapPath@{mapPath}}
+\index{mapPath@{mapPath}!C2M2.NeuronalDynamics.Visualization.Neuron1D@{C2M2.NeuronalDynamics.Visualization.Neuron1D}}
+\doxysubsubsection{\texorpdfstring{mapPath}{mapPath}}
+{\footnotesize\ttfamily string C2\+M2.\+Neuronal\+Dynamics.\+Visualization.\+Neuron1\+D.\+map\+Path = Application.\+streaming\+Assets\+Path + Path.\+Directory\+Separator\+Char + \char`\"{}1DNeuron\char`\"{} + Path.\+Directory\+Separator\+Char + \char`\"{}Y\+\_\+shape\+\_\+1\+D3\+D.\+map\char`\"{}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_neuron1_d_a0474559f1d5a4b15633fef456c3999da}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_neuron1_d_a0474559f1d5a4b15633fef456c3999da}} 
+\index{C2M2.NeuronalDynamics.Visualization.Neuron1D@{C2M2.NeuronalDynamics.Visualization.Neuron1D}!meshFilter3D@{meshFilter3D}}
+\index{meshFilter3D@{meshFilter3D}!C2M2.NeuronalDynamics.Visualization.Neuron1D@{C2M2.NeuronalDynamics.Visualization.Neuron1D}}
+\doxysubsubsection{\texorpdfstring{meshFilter3D}{meshFilter3D}}
+{\footnotesize\ttfamily Mesh\+Filter C2\+M2.\+Neuronal\+Dynamics.\+Visualization.\+Neuron1\+D.\+mesh\+Filter3D\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_neuron1_d_a371453c544a4b22cdf0b4a35f16ddde0}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_neuron1_d_a371453c544a4b22cdf0b4a35f16ddde0}} 
+\index{C2M2.NeuronalDynamics.Visualization.Neuron1D@{C2M2.NeuronalDynamics.Visualization.Neuron1D}!objFilePath@{objFilePath}}
+\index{objFilePath@{objFilePath}!C2M2.NeuronalDynamics.Visualization.Neuron1D@{C2M2.NeuronalDynamics.Visualization.Neuron1D}}
+\doxysubsubsection{\texorpdfstring{objFilePath}{objFilePath}}
+{\footnotesize\ttfamily string C2\+M2.\+Neuronal\+Dynamics.\+Visualization.\+Neuron1\+D.\+obj\+File\+Path = \char`\"{}C\+:\char`\"{} + Path.\+Directory\+Separator\+Char + \char`\"{}Users\char`\"{} + Path.\+Directory\+Separator\+Char + \char`\"{}tuf91497\char`\"{} + Path.\+Directory\+Separator\+Char + \char`\"{}Desktop\char`\"{} + Path.\+Directory\+Separator\+Char + \char`\"{}C2\+M2\char`\"{} + Path.\+Directory\+Separator\+Char + \char`\"{}Y\+\_\+shape\char`\"{} + Path.\+Directory\+Separator\+Char + \char`\"{}Y\+\_\+shape.\+obj\char`\"{}}
+
+WORKFLOW\+: Read in 1D-\/$>$3D mapping Run some color function on the 1D vertices Translate colors to the 3D vertices 
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_neuron1_d_ab5ef8997461af5aa773acb5722ca5b37}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_neuron1_d_ab5ef8997461af5aa773acb5722ca5b37}} 
+\index{C2M2.NeuronalDynamics.Visualization.Neuron1D@{C2M2.NeuronalDynamics.Visualization.Neuron1D}!vertMap@{vertMap}}
+\index{vertMap@{vertMap}!C2M2.NeuronalDynamics.Visualization.Neuron1D@{C2M2.NeuronalDynamics.Visualization.Neuron1D}}
+\doxysubsubsection{\texorpdfstring{vertMap}{vertMap}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_neuron1_d_vert_map}{Neuron1\+DVert\+Map}} C2\+M2.\+Neuronal\+Dynamics.\+Visualization.\+Neuron1\+D.\+vert\+Map\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [private set]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/jaros/\+Desktop/tempvr/virtual-\/reality/\+Assets/\+Scripts/\+C2\+M2/\+Neuronal\+Dynamics/\+Visualization/1\+DNeuron\+Modelling/\mbox{\hyperlink{_neuron1_d_8cs}{Neuron1\+D.\+cs}}\end{DoxyCompactItemize}

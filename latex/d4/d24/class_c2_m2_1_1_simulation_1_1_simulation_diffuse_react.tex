@@ -1,0 +1,358 @@
+\hypertarget{class_c2_m2_1_1_simulation_1_1_simulation_diffuse_react}{}\doxysection{C2\+M2.\+Simulation.\+Simulation\+Diffuse\+React Class Reference}
+\label{class_c2_m2_1_1_simulation_1_1_simulation_diffuse_react}\index{C2M2.Simulation.SimulationDiffuseReact@{C2M2.Simulation.SimulationDiffuseReact}}
+
+
+Provide a general access point for information regarding a live simulation. Simulations should inherit from this class and match its abstract methods  
+
+
+
+
+Inheritance diagram for C2\+M2.\+Simulation.\+Simulation\+Diffuse\+React\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{df/d44/class_c2_m2_1_1_simulation_1_1_simulation_diffuse_react__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for C2\+M2.\+Simulation.\+Simulation\+Diffuse\+React\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{d3/dee/class_c2_m2_1_1_simulation_1_1_simulation_diffuse_react__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum class \mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_simulation_diffuse_react_ac7d7dd3afea82bf521d922f745443d19}{Play\+State}} \{ \mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_simulation_diffuse_react_ac7d7dd3afea82bf521d922f745443d19a6c3e226b4d4795d518ab341b0824ec29}{NULL}}
+, \mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_simulation_diffuse_react_ac7d7dd3afea82bf521d922f745443d19a50366a49630a416ab3ccaa004196027e}{PLAYING}}
+, \mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_simulation_diffuse_react_ac7d7dd3afea82bf521d922f745443d19a99b2439e63f73ad515f7ab2447a80673}{PAUSED}}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_simulation_diffuse_react_aa7f1b93e83a9c29524cce5aa03d7618d}{Initialize}} (\mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_object_manager}{Object\+Manager}} \mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_simulation_diffuse_react_ad6a9205b237ab388ae7fb2a0f78a192d}{object\+Manager}})
+\begin{DoxyCompactList}\small\item\em Store the calling object manager, then defer to the custom simulation\textquotesingle{}s initialization \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_simulation_diffuse_react_a29da61ca97866d868d926067e1210a2b}{Start\+Simulation}} ()
+\item 
+void \mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_simulation_diffuse_react_af50533ee5b3a0dfed2d0b56e8c96352f}{Stop\+Simulation}} ()
+\item 
+void \mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_simulation_diffuse_react_a96c6cff695d7b879970fb2b0f3e753e1}{Change\+Values}} (double\mbox{[}$\,$\mbox{]} changes)
+\begin{DoxyCompactList}\small\item\em Attempt to change simulation values \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_simulation_diffuse_react_afa0a206411308e6c9d99e22fa5889a71}{adapt\+Steps\+Per\+Sec}} = true
+\item 
+int \mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_simulation_diffuse_react_a6df7bb6f59a77a3fd4ab077e38419a6d}{ideal\+Render\+FPS}} = 50
+\item 
+int \mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_simulation_diffuse_react_a27f3e988cdc7c31d5fdef29fbda4559e}{steps\+Per\+Sec}} = 20
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+abstract void \mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_simulation_diffuse_react_abc1cca9c5cb9b9b1b7f677a71d6c4021}{Initialize}} ()
+\begin{DoxyCompactList}\small\item\em Details initialization process of simulations that inherit from \mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_simulation}{Simulation}} \end{DoxyCompactList}\item 
+abstract double\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_simulation_diffuse_react_a71d2b8bb1043aa0f0ae83f4d14b9a720}{Solve}} (double dt\+Real)
+\item 
+void \mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_simulation_diffuse_react_add04ddd8d1d5ac38c5e790aabc3db386}{Apply\+Changes}} ()
+\begin{DoxyCompactList}\small\item\em Send out changes to the mesh for visualization \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_object_manager}{Object\+Manager}} \mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_simulation_diffuse_react_ad6a9205b237ab388ae7fb2a0f78a192d}{object\+Manager}}
+\item 
+double \mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_simulation_diffuse_react_aefa6f1b0d400a0fbf3fa686062b682ee}{max}} = 1
+\begin{DoxyCompactList}\small\item\em Maximum allowed value of simulation conditions \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_simulation_diffuse_react_aef2fbd332fca5d7b6c06726fc210a5b2}{min}} = 0
+\begin{DoxyCompactList}\small\item\em Minimum allowed value of simulation conditions \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_simulation_diffuse_react_afae8b3f472b562bf32ed02e9aae68312}{allow\+Outside\+Changes}} = true
+\begin{DoxyCompactList}\small\item\em Should outside forces, such as hand interaction, be allowed to affect simulation conditions? \end{DoxyCompactList}\item 
+Date\+Time \mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_simulation_diffuse_react_aea601d04f4718584fe761342926aa34b}{pause\+Start\+Time}}
+\item 
+double \mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_simulation_diffuse_react_ada9e4eb8fac8ab26dd7abc64f2746e7c}{pause\+Time}}
+\item 
+bool \mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_simulation_diffuse_react_a319aafa5b11a7d9bc0598b3cb0e2ebe8}{new\+Unpause}} = false
+\item 
+Coroutine \mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_simulation_diffuse_react_ae2d3acc8f89c4fb52ea8f5ab12e932ad}{simulation\+Routine}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+double\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_simulation_diffuse_react_a76d4c5bf840cf1e3a034c86786ea113a}{simulation\+Conditions}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, protected set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Scalar value corresponding to one 3d point on a simulation\textquotesingle{}s mesh. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_simulation_diffuse_react_ac7d7dd3afea82bf521d922f745443d19}{Play\+State}} \mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_simulation_diffuse_react_aac6eac9e9b504cf066ada78c7764a935}{play\+State}} = \mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_simulation_diffuse_react_ac7d7dd3afea82bf521d922f745443d19a6c3e226b4d4795d518ab341b0824ec29}{Play\+State.\+NULL}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, private set\mbox{]}}
+\item 
+bool \mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_simulation_diffuse_react_aa505392a59be0d41669d509c59f33415}{paused}} = false\hspace{0.3cm}{\ttfamily  \mbox{[}get, private set\mbox{]}}
+\item 
+bool \mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_simulation_diffuse_react_a97bd2f34386bcdc47fefd7caaf7288ea}{started}} = false\hspace{0.3cm}{\ttfamily  \mbox{[}get, private set\mbox{]}}
+\item 
+bool \mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_simulation_diffuse_react_adcf987870488a5ac4729bf63b8ac9f78}{has\+Changed}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, protected set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Has the simulation changed since the last time the flag was set to false? \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_simulation_diffuse_react_a2040c88a8ce13397d2a9892b20ff3399}{Update}} ()
+\item 
+IEnumerator \mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_simulation_diffuse_react_a70070928820a84ffe4d0ecbd37338615}{Solve\+Wrapper}} (float wait\+Time)
+\begin{DoxyCompactList}\small\item\em Wrap user simulation code in order to provide useful information and control play/pause functionality \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_simulation_diffuse_react_a644a3546396adba5ff4547ccf3053371}{Adapt\+Steps\+Per\+Sec}} ()
+\begin{DoxyCompactList}\small\item\em Adapt computation update speeds based on average frames per second \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Provide a general access point for information regarding a live simulation. Simulations should inherit from this class and match its abstract methods 
+
+TODO\+: This script should either replace \mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_diffusion_manager}{Diffusion\+Manager}}, or there should be some new Simulation\+Manager script TODO\+: Create a get/set values requirement TODO\+: Solve code should possibly be wrapped in a method here that tracks pauses/unpauses, pause\+Time, has\+Changed, etc, for launching user solve code. This would simplify user\textquotesingle{}s coding requirements TODO\+: This really should just be an interface for simulations happening somewhere else, it should only send and receive values to the simulation, not manage how the simulation runs 
+
+\doxysubsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{class_c2_m2_1_1_simulation_1_1_simulation_diffuse_react_ac7d7dd3afea82bf521d922f745443d19}\label{class_c2_m2_1_1_simulation_1_1_simulation_diffuse_react_ac7d7dd3afea82bf521d922f745443d19}} 
+\index{C2M2.Simulation.SimulationDiffuseReact@{C2M2.Simulation.SimulationDiffuseReact}!PlayState@{PlayState}}
+\index{PlayState@{PlayState}!C2M2.Simulation.SimulationDiffuseReact@{C2M2.Simulation.SimulationDiffuseReact}}
+\doxysubsubsection{\texorpdfstring{PlayState}{PlayState}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_simulation_diffuse_react_ac7d7dd3afea82bf521d922f745443d19}{C2\+M2.\+Simulation.\+Simulation\+Diffuse\+React.\+Play\+State}}\hspace{0.3cm}{\ttfamily [strong]}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{NULL@{NULL}!C2M2.Simulation.SimulationDiffuseReact@{C2M2.Simulation.SimulationDiffuseReact}}\index{C2M2.Simulation.SimulationDiffuseReact@{C2M2.Simulation.SimulationDiffuseReact}!NULL@{NULL}}}\mbox{\Hypertarget{class_c2_m2_1_1_simulation_1_1_simulation_diffuse_react_ac7d7dd3afea82bf521d922f745443d19a6c3e226b4d4795d518ab341b0824ec29}\label{class_c2_m2_1_1_simulation_1_1_simulation_diffuse_react_ac7d7dd3afea82bf521d922f745443d19a6c3e226b4d4795d518ab341b0824ec29}} 
+NULL&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{PLAYING@{PLAYING}!C2M2.Simulation.SimulationDiffuseReact@{C2M2.Simulation.SimulationDiffuseReact}}\index{C2M2.Simulation.SimulationDiffuseReact@{C2M2.Simulation.SimulationDiffuseReact}!PLAYING@{PLAYING}}}\mbox{\Hypertarget{class_c2_m2_1_1_simulation_1_1_simulation_diffuse_react_ac7d7dd3afea82bf521d922f745443d19a50366a49630a416ab3ccaa004196027e}\label{class_c2_m2_1_1_simulation_1_1_simulation_diffuse_react_ac7d7dd3afea82bf521d922f745443d19a50366a49630a416ab3ccaa004196027e}} 
+PLAYING&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{PAUSED@{PAUSED}!C2M2.Simulation.SimulationDiffuseReact@{C2M2.Simulation.SimulationDiffuseReact}}\index{C2M2.Simulation.SimulationDiffuseReact@{C2M2.Simulation.SimulationDiffuseReact}!PAUSED@{PAUSED}}}\mbox{\Hypertarget{class_c2_m2_1_1_simulation_1_1_simulation_diffuse_react_ac7d7dd3afea82bf521d922f745443d19a99b2439e63f73ad515f7ab2447a80673}\label{class_c2_m2_1_1_simulation_1_1_simulation_diffuse_react_ac7d7dd3afea82bf521d922f745443d19a99b2439e63f73ad515f7ab2447a80673}} 
+PAUSED&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_c2_m2_1_1_simulation_1_1_simulation_diffuse_react_a644a3546396adba5ff4547ccf3053371}\label{class_c2_m2_1_1_simulation_1_1_simulation_diffuse_react_a644a3546396adba5ff4547ccf3053371}} 
+\index{C2M2.Simulation.SimulationDiffuseReact@{C2M2.Simulation.SimulationDiffuseReact}!AdaptStepsPerSec@{AdaptStepsPerSec}}
+\index{AdaptStepsPerSec@{AdaptStepsPerSec}!C2M2.Simulation.SimulationDiffuseReact@{C2M2.Simulation.SimulationDiffuseReact}}
+\doxysubsubsection{\texorpdfstring{AdaptStepsPerSec()}{AdaptStepsPerSec()}}
+{\footnotesize\ttfamily void C2\+M2.\+Simulation.\+Simulation\+Diffuse\+React.\+Adapt\+Steps\+Per\+Sec (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Adapt computation update speeds based on average frames per second 
+
+\mbox{\Hypertarget{class_c2_m2_1_1_simulation_1_1_simulation_diffuse_react_add04ddd8d1d5ac38c5e790aabc3db386}\label{class_c2_m2_1_1_simulation_1_1_simulation_diffuse_react_add04ddd8d1d5ac38c5e790aabc3db386}} 
+\index{C2M2.Simulation.SimulationDiffuseReact@{C2M2.Simulation.SimulationDiffuseReact}!ApplyChanges@{ApplyChanges}}
+\index{ApplyChanges@{ApplyChanges}!C2M2.Simulation.SimulationDiffuseReact@{C2M2.Simulation.SimulationDiffuseReact}}
+\doxysubsubsection{\texorpdfstring{ApplyChanges()}{ApplyChanges()}}
+{\footnotesize\ttfamily void C2\+M2.\+Simulation.\+Simulation\+Diffuse\+React.\+Apply\+Changes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Send out changes to the mesh for visualization 
+
+\mbox{\Hypertarget{class_c2_m2_1_1_simulation_1_1_simulation_diffuse_react_a96c6cff695d7b879970fb2b0f3e753e1}\label{class_c2_m2_1_1_simulation_1_1_simulation_diffuse_react_a96c6cff695d7b879970fb2b0f3e753e1}} 
+\index{C2M2.Simulation.SimulationDiffuseReact@{C2M2.Simulation.SimulationDiffuseReact}!ChangeValues@{ChangeValues}}
+\index{ChangeValues@{ChangeValues}!C2M2.Simulation.SimulationDiffuseReact@{C2M2.Simulation.SimulationDiffuseReact}}
+\doxysubsubsection{\texorpdfstring{ChangeValues()}{ChangeValues()}}
+{\footnotesize\ttfamily void C2\+M2.\+Simulation.\+Simulation\+Diffuse\+React.\+Change\+Values (\begin{DoxyParamCaption}\item[{double\mbox{[}$\,$\mbox{]}}]{changes }\end{DoxyParamCaption})}
+
+
+
+Attempt to change simulation values 
+
+\mbox{\Hypertarget{class_c2_m2_1_1_simulation_1_1_simulation_diffuse_react_abc1cca9c5cb9b9b1b7f677a71d6c4021}\label{class_c2_m2_1_1_simulation_1_1_simulation_diffuse_react_abc1cca9c5cb9b9b1b7f677a71d6c4021}} 
+\index{C2M2.Simulation.SimulationDiffuseReact@{C2M2.Simulation.SimulationDiffuseReact}!Initialize@{Initialize}}
+\index{Initialize@{Initialize}!C2M2.Simulation.SimulationDiffuseReact@{C2M2.Simulation.SimulationDiffuseReact}}
+\doxysubsubsection{\texorpdfstring{Initialize()}{Initialize()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily abstract void C2\+M2.\+Simulation.\+Simulation\+Diffuse\+React.\+Initialize (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}
+
+
+
+Details initialization process of simulations that inherit from \mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_simulation}{Simulation}} 
+
+
+
+Implemented in \mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_reaction_diffusion_a617324618d09d059318118e8830cf70c}{C2\+M2.\+Simulation.\+Reaction\+Diffusion}}.
+
+\mbox{\Hypertarget{class_c2_m2_1_1_simulation_1_1_simulation_diffuse_react_aa7f1b93e83a9c29524cce5aa03d7618d}\label{class_c2_m2_1_1_simulation_1_1_simulation_diffuse_react_aa7f1b93e83a9c29524cce5aa03d7618d}} 
+\index{C2M2.Simulation.SimulationDiffuseReact@{C2M2.Simulation.SimulationDiffuseReact}!Initialize@{Initialize}}
+\index{Initialize@{Initialize}!C2M2.Simulation.SimulationDiffuseReact@{C2M2.Simulation.SimulationDiffuseReact}}
+\doxysubsubsection{\texorpdfstring{Initialize()}{Initialize()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void C2\+M2.\+Simulation.\+Simulation\+Diffuse\+React.\+Initialize (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_object_manager}{Object\+Manager}}}]{object\+Manager }\end{DoxyParamCaption})}
+
+
+
+Store the calling object manager, then defer to the custom simulation\textquotesingle{}s initialization 
+
+
+\begin{DoxyParams}{Parameters}
+{\em object\+Manager} & Object manager that creates this script \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c2_m2_1_1_simulation_1_1_simulation_diffuse_react_a71d2b8bb1043aa0f0ae83f4d14b9a720}\label{class_c2_m2_1_1_simulation_1_1_simulation_diffuse_react_a71d2b8bb1043aa0f0ae83f4d14b9a720}} 
+\index{C2M2.Simulation.SimulationDiffuseReact@{C2M2.Simulation.SimulationDiffuseReact}!Solve@{Solve}}
+\index{Solve@{Solve}!C2M2.Simulation.SimulationDiffuseReact@{C2M2.Simulation.SimulationDiffuseReact}}
+\doxysubsubsection{\texorpdfstring{Solve()}{Solve()}}
+{\footnotesize\ttfamily abstract double \mbox{[}$\,$\mbox{]} C2\+M2.\+Simulation.\+Simulation\+Diffuse\+React.\+Solve (\begin{DoxyParamCaption}\item[{double}]{dt\+Real }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_reaction_diffusion_aafa2239366b9668ff715dc12bec3b097}{C2\+M2.\+Simulation.\+Reaction\+Diffusion}}.
+
+\mbox{\Hypertarget{class_c2_m2_1_1_simulation_1_1_simulation_diffuse_react_a70070928820a84ffe4d0ecbd37338615}\label{class_c2_m2_1_1_simulation_1_1_simulation_diffuse_react_a70070928820a84ffe4d0ecbd37338615}} 
+\index{C2M2.Simulation.SimulationDiffuseReact@{C2M2.Simulation.SimulationDiffuseReact}!SolveWrapper@{SolveWrapper}}
+\index{SolveWrapper@{SolveWrapper}!C2M2.Simulation.SimulationDiffuseReact@{C2M2.Simulation.SimulationDiffuseReact}}
+\doxysubsubsection{\texorpdfstring{SolveWrapper()}{SolveWrapper()}}
+{\footnotesize\ttfamily IEnumerator C2\+M2.\+Simulation.\+Simulation\+Diffuse\+React.\+Solve\+Wrapper (\begin{DoxyParamCaption}\item[{float}]{wait\+Time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Wrap user simulation code in order to provide useful information and control play/pause functionality 
+
+\mbox{\Hypertarget{class_c2_m2_1_1_simulation_1_1_simulation_diffuse_react_a29da61ca97866d868d926067e1210a2b}\label{class_c2_m2_1_1_simulation_1_1_simulation_diffuse_react_a29da61ca97866d868d926067e1210a2b}} 
+\index{C2M2.Simulation.SimulationDiffuseReact@{C2M2.Simulation.SimulationDiffuseReact}!StartSimulation@{StartSimulation}}
+\index{StartSimulation@{StartSimulation}!C2M2.Simulation.SimulationDiffuseReact@{C2M2.Simulation.SimulationDiffuseReact}}
+\doxysubsubsection{\texorpdfstring{StartSimulation()}{StartSimulation()}}
+{\footnotesize\ttfamily void C2\+M2.\+Simulation.\+Simulation\+Diffuse\+React.\+Start\+Simulation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_simulation_1_1_simulation_diffuse_react_af50533ee5b3a0dfed2d0b56e8c96352f}\label{class_c2_m2_1_1_simulation_1_1_simulation_diffuse_react_af50533ee5b3a0dfed2d0b56e8c96352f}} 
+\index{C2M2.Simulation.SimulationDiffuseReact@{C2M2.Simulation.SimulationDiffuseReact}!StopSimulation@{StopSimulation}}
+\index{StopSimulation@{StopSimulation}!C2M2.Simulation.SimulationDiffuseReact@{C2M2.Simulation.SimulationDiffuseReact}}
+\doxysubsubsection{\texorpdfstring{StopSimulation()}{StopSimulation()}}
+{\footnotesize\ttfamily void C2\+M2.\+Simulation.\+Simulation\+Diffuse\+React.\+Stop\+Simulation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_simulation_1_1_simulation_diffuse_react_a2040c88a8ce13397d2a9892b20ff3399}\label{class_c2_m2_1_1_simulation_1_1_simulation_diffuse_react_a2040c88a8ce13397d2a9892b20ff3399}} 
+\index{C2M2.Simulation.SimulationDiffuseReact@{C2M2.Simulation.SimulationDiffuseReact}!Update@{Update}}
+\index{Update@{Update}!C2M2.Simulation.SimulationDiffuseReact@{C2M2.Simulation.SimulationDiffuseReact}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void C2\+M2.\+Simulation.\+Simulation\+Diffuse\+React.\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_c2_m2_1_1_simulation_1_1_simulation_diffuse_react_afa0a206411308e6c9d99e22fa5889a71}\label{class_c2_m2_1_1_simulation_1_1_simulation_diffuse_react_afa0a206411308e6c9d99e22fa5889a71}} 
+\index{C2M2.Simulation.SimulationDiffuseReact@{C2M2.Simulation.SimulationDiffuseReact}!adaptStepsPerSec@{adaptStepsPerSec}}
+\index{adaptStepsPerSec@{adaptStepsPerSec}!C2M2.Simulation.SimulationDiffuseReact@{C2M2.Simulation.SimulationDiffuseReact}}
+\doxysubsubsection{\texorpdfstring{adaptStepsPerSec}{adaptStepsPerSec}}
+{\footnotesize\ttfamily bool C2\+M2.\+Simulation.\+Simulation\+Diffuse\+React.\+adapt\+Steps\+Per\+Sec = true}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_simulation_1_1_simulation_diffuse_react_afae8b3f472b562bf32ed02e9aae68312}\label{class_c2_m2_1_1_simulation_1_1_simulation_diffuse_react_afae8b3f472b562bf32ed02e9aae68312}} 
+\index{C2M2.Simulation.SimulationDiffuseReact@{C2M2.Simulation.SimulationDiffuseReact}!allowOutsideChanges@{allowOutsideChanges}}
+\index{allowOutsideChanges@{allowOutsideChanges}!C2M2.Simulation.SimulationDiffuseReact@{C2M2.Simulation.SimulationDiffuseReact}}
+\doxysubsubsection{\texorpdfstring{allowOutsideChanges}{allowOutsideChanges}}
+{\footnotesize\ttfamily bool C2\+M2.\+Simulation.\+Simulation\+Diffuse\+React.\+allow\+Outside\+Changes = true\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Should outside forces, such as hand interaction, be allowed to affect simulation conditions? 
+
+\mbox{\Hypertarget{class_c2_m2_1_1_simulation_1_1_simulation_diffuse_react_a6df7bb6f59a77a3fd4ab077e38419a6d}\label{class_c2_m2_1_1_simulation_1_1_simulation_diffuse_react_a6df7bb6f59a77a3fd4ab077e38419a6d}} 
+\index{C2M2.Simulation.SimulationDiffuseReact@{C2M2.Simulation.SimulationDiffuseReact}!idealRenderFPS@{idealRenderFPS}}
+\index{idealRenderFPS@{idealRenderFPS}!C2M2.Simulation.SimulationDiffuseReact@{C2M2.Simulation.SimulationDiffuseReact}}
+\doxysubsubsection{\texorpdfstring{idealRenderFPS}{idealRenderFPS}}
+{\footnotesize\ttfamily int C2\+M2.\+Simulation.\+Simulation\+Diffuse\+React.\+ideal\+Render\+FPS = 50}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_simulation_1_1_simulation_diffuse_react_aefa6f1b0d400a0fbf3fa686062b682ee}\label{class_c2_m2_1_1_simulation_1_1_simulation_diffuse_react_aefa6f1b0d400a0fbf3fa686062b682ee}} 
+\index{C2M2.Simulation.SimulationDiffuseReact@{C2M2.Simulation.SimulationDiffuseReact}!max@{max}}
+\index{max@{max}!C2M2.Simulation.SimulationDiffuseReact@{C2M2.Simulation.SimulationDiffuseReact}}
+\doxysubsubsection{\texorpdfstring{max}{max}}
+{\footnotesize\ttfamily double C2\+M2.\+Simulation.\+Simulation\+Diffuse\+React.\+max = 1\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Maximum allowed value of simulation conditions 
+
+\mbox{\Hypertarget{class_c2_m2_1_1_simulation_1_1_simulation_diffuse_react_aef2fbd332fca5d7b6c06726fc210a5b2}\label{class_c2_m2_1_1_simulation_1_1_simulation_diffuse_react_aef2fbd332fca5d7b6c06726fc210a5b2}} 
+\index{C2M2.Simulation.SimulationDiffuseReact@{C2M2.Simulation.SimulationDiffuseReact}!min@{min}}
+\index{min@{min}!C2M2.Simulation.SimulationDiffuseReact@{C2M2.Simulation.SimulationDiffuseReact}}
+\doxysubsubsection{\texorpdfstring{min}{min}}
+{\footnotesize\ttfamily double C2\+M2.\+Simulation.\+Simulation\+Diffuse\+React.\+min = 0\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Minimum allowed value of simulation conditions 
+
+\mbox{\Hypertarget{class_c2_m2_1_1_simulation_1_1_simulation_diffuse_react_a319aafa5b11a7d9bc0598b3cb0e2ebe8}\label{class_c2_m2_1_1_simulation_1_1_simulation_diffuse_react_a319aafa5b11a7d9bc0598b3cb0e2ebe8}} 
+\index{C2M2.Simulation.SimulationDiffuseReact@{C2M2.Simulation.SimulationDiffuseReact}!newUnpause@{newUnpause}}
+\index{newUnpause@{newUnpause}!C2M2.Simulation.SimulationDiffuseReact@{C2M2.Simulation.SimulationDiffuseReact}}
+\doxysubsubsection{\texorpdfstring{newUnpause}{newUnpause}}
+{\footnotesize\ttfamily bool C2\+M2.\+Simulation.\+Simulation\+Diffuse\+React.\+new\+Unpause = false\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_simulation_1_1_simulation_diffuse_react_ad6a9205b237ab388ae7fb2a0f78a192d}\label{class_c2_m2_1_1_simulation_1_1_simulation_diffuse_react_ad6a9205b237ab388ae7fb2a0f78a192d}} 
+\index{C2M2.Simulation.SimulationDiffuseReact@{C2M2.Simulation.SimulationDiffuseReact}!objectManager@{objectManager}}
+\index{objectManager@{objectManager}!C2M2.Simulation.SimulationDiffuseReact@{C2M2.Simulation.SimulationDiffuseReact}}
+\doxysubsubsection{\texorpdfstring{objectManager}{objectManager}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_object_manager}{Object\+Manager}} C2\+M2.\+Simulation.\+Simulation\+Diffuse\+React.\+object\+Manager\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_simulation_1_1_simulation_diffuse_react_aea601d04f4718584fe761342926aa34b}\label{class_c2_m2_1_1_simulation_1_1_simulation_diffuse_react_aea601d04f4718584fe761342926aa34b}} 
+\index{C2M2.Simulation.SimulationDiffuseReact@{C2M2.Simulation.SimulationDiffuseReact}!pauseStartTime@{pauseStartTime}}
+\index{pauseStartTime@{pauseStartTime}!C2M2.Simulation.SimulationDiffuseReact@{C2M2.Simulation.SimulationDiffuseReact}}
+\doxysubsubsection{\texorpdfstring{pauseStartTime}{pauseStartTime}}
+{\footnotesize\ttfamily Date\+Time C2\+M2.\+Simulation.\+Simulation\+Diffuse\+React.\+pause\+Start\+Time\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_simulation_1_1_simulation_diffuse_react_ada9e4eb8fac8ab26dd7abc64f2746e7c}\label{class_c2_m2_1_1_simulation_1_1_simulation_diffuse_react_ada9e4eb8fac8ab26dd7abc64f2746e7c}} 
+\index{C2M2.Simulation.SimulationDiffuseReact@{C2M2.Simulation.SimulationDiffuseReact}!pauseTime@{pauseTime}}
+\index{pauseTime@{pauseTime}!C2M2.Simulation.SimulationDiffuseReact@{C2M2.Simulation.SimulationDiffuseReact}}
+\doxysubsubsection{\texorpdfstring{pauseTime}{pauseTime}}
+{\footnotesize\ttfamily double C2\+M2.\+Simulation.\+Simulation\+Diffuse\+React.\+pause\+Time\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_simulation_1_1_simulation_diffuse_react_ae2d3acc8f89c4fb52ea8f5ab12e932ad}\label{class_c2_m2_1_1_simulation_1_1_simulation_diffuse_react_ae2d3acc8f89c4fb52ea8f5ab12e932ad}} 
+\index{C2M2.Simulation.SimulationDiffuseReact@{C2M2.Simulation.SimulationDiffuseReact}!simulationRoutine@{simulationRoutine}}
+\index{simulationRoutine@{simulationRoutine}!C2M2.Simulation.SimulationDiffuseReact@{C2M2.Simulation.SimulationDiffuseReact}}
+\doxysubsubsection{\texorpdfstring{simulationRoutine}{simulationRoutine}}
+{\footnotesize\ttfamily Coroutine C2\+M2.\+Simulation.\+Simulation\+Diffuse\+React.\+simulation\+Routine\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_simulation_1_1_simulation_diffuse_react_a27f3e988cdc7c31d5fdef29fbda4559e}\label{class_c2_m2_1_1_simulation_1_1_simulation_diffuse_react_a27f3e988cdc7c31d5fdef29fbda4559e}} 
+\index{C2M2.Simulation.SimulationDiffuseReact@{C2M2.Simulation.SimulationDiffuseReact}!stepsPerSec@{stepsPerSec}}
+\index{stepsPerSec@{stepsPerSec}!C2M2.Simulation.SimulationDiffuseReact@{C2M2.Simulation.SimulationDiffuseReact}}
+\doxysubsubsection{\texorpdfstring{stepsPerSec}{stepsPerSec}}
+{\footnotesize\ttfamily int C2\+M2.\+Simulation.\+Simulation\+Diffuse\+React.\+steps\+Per\+Sec = 20}
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{class_c2_m2_1_1_simulation_1_1_simulation_diffuse_react_adcf987870488a5ac4729bf63b8ac9f78}\label{class_c2_m2_1_1_simulation_1_1_simulation_diffuse_react_adcf987870488a5ac4729bf63b8ac9f78}} 
+\index{C2M2.Simulation.SimulationDiffuseReact@{C2M2.Simulation.SimulationDiffuseReact}!hasChanged@{hasChanged}}
+\index{hasChanged@{hasChanged}!C2M2.Simulation.SimulationDiffuseReact@{C2M2.Simulation.SimulationDiffuseReact}}
+\doxysubsubsection{\texorpdfstring{hasChanged}{hasChanged}}
+{\footnotesize\ttfamily bool C2\+M2.\+Simulation.\+Simulation\+Diffuse\+React.\+has\+Changed\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [protected set]}}
+
+
+
+Has the simulation changed since the last time the flag was set to false? 
+
+\mbox{\Hypertarget{class_c2_m2_1_1_simulation_1_1_simulation_diffuse_react_aa505392a59be0d41669d509c59f33415}\label{class_c2_m2_1_1_simulation_1_1_simulation_diffuse_react_aa505392a59be0d41669d509c59f33415}} 
+\index{C2M2.Simulation.SimulationDiffuseReact@{C2M2.Simulation.SimulationDiffuseReact}!paused@{paused}}
+\index{paused@{paused}!C2M2.Simulation.SimulationDiffuseReact@{C2M2.Simulation.SimulationDiffuseReact}}
+\doxysubsubsection{\texorpdfstring{paused}{paused}}
+{\footnotesize\ttfamily bool C2\+M2.\+Simulation.\+Simulation\+Diffuse\+React.\+paused = false\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [private set]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_simulation_1_1_simulation_diffuse_react_aac6eac9e9b504cf066ada78c7764a935}\label{class_c2_m2_1_1_simulation_1_1_simulation_diffuse_react_aac6eac9e9b504cf066ada78c7764a935}} 
+\index{C2M2.Simulation.SimulationDiffuseReact@{C2M2.Simulation.SimulationDiffuseReact}!playState@{playState}}
+\index{playState@{playState}!C2M2.Simulation.SimulationDiffuseReact@{C2M2.Simulation.SimulationDiffuseReact}}
+\doxysubsubsection{\texorpdfstring{playState}{playState}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_simulation_diffuse_react_ac7d7dd3afea82bf521d922f745443d19}{Play\+State}} C2\+M2.\+Simulation.\+Simulation\+Diffuse\+React.\+play\+State = \mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_simulation_diffuse_react_ac7d7dd3afea82bf521d922f745443d19a6c3e226b4d4795d518ab341b0824ec29}{Play\+State.\+NULL}}\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [private set]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_simulation_1_1_simulation_diffuse_react_a76d4c5bf840cf1e3a034c86786ea113a}\label{class_c2_m2_1_1_simulation_1_1_simulation_diffuse_react_a76d4c5bf840cf1e3a034c86786ea113a}} 
+\index{C2M2.Simulation.SimulationDiffuseReact@{C2M2.Simulation.SimulationDiffuseReact}!simulationConditions@{simulationConditions}}
+\index{simulationConditions@{simulationConditions}!C2M2.Simulation.SimulationDiffuseReact@{C2M2.Simulation.SimulationDiffuseReact}}
+\doxysubsubsection{\texorpdfstring{simulationConditions}{simulationConditions}}
+{\footnotesize\ttfamily double \mbox{[}$\,$\mbox{]} C2\+M2.\+Simulation.\+Simulation\+Diffuse\+React.\+simulation\+Conditions\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [protected set]}}
+
+
+
+Scalar value corresponding to one 3d point on a simulation\textquotesingle{}s mesh. 
+
+\mbox{\Hypertarget{class_c2_m2_1_1_simulation_1_1_simulation_diffuse_react_a97bd2f34386bcdc47fefd7caaf7288ea}\label{class_c2_m2_1_1_simulation_1_1_simulation_diffuse_react_a97bd2f34386bcdc47fefd7caaf7288ea}} 
+\index{C2M2.Simulation.SimulationDiffuseReact@{C2M2.Simulation.SimulationDiffuseReact}!started@{started}}
+\index{started@{started}!C2M2.Simulation.SimulationDiffuseReact@{C2M2.Simulation.SimulationDiffuseReact}}
+\doxysubsubsection{\texorpdfstring{started}{started}}
+{\footnotesize\ttfamily bool C2\+M2.\+Simulation.\+Simulation\+Diffuse\+React.\+started = false\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [private set]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/jaros/\+Desktop/tempvr/virtual-\/reality/\+Assets/\+Scripts/\+C2\+M2/\mbox{\hyperlink{_simulation_diffuse_react_8cs}{Simulation\+Diffuse\+React.\+cs}}\end{DoxyCompactItemize}

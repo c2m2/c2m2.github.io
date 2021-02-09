@@ -1,0 +1,155 @@
+\hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_map_utils}{}\doxysection{C2\+M2.\+Neuronal\+Dynamics.\+UGX.\+Map\+Utils Class Reference}
+\label{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_map_utils}\index{C2M2.NeuronalDynamics.UGX.MapUtils@{C2M2.NeuronalDynamics.UGX.MapUtils}}
+
+
+Utility class for all mapping associated utility functions  
+
+
+
+
+Collaboration diagram for C2\+M2.\+Neuronal\+Dynamics.\+UGX.\+Map\+Utils\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=253pt]{d9/de7/class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_map_utils__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static ? \mbox{\hyperlink{struct_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_mapping_info}{Mapping\+Info}} \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_map_utils_a31f1d9b71a9f5e317f287c8c02196e2f}{Build\+Map}} (in \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_grid}{Grid}} grid1d, in \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_grid}{Grid}} grid2d, in \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_grid}{Grid}} grid2dvis=null)
+\begin{DoxyCompactList}\small\item\em Build the mapping from two grid objects \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{struct_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_mapping_info}{Mapping\+Info}} \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_map_utils_a3d1b475c2629c2299cd0ec4655a8a1c4}{Build\+Map}} (in string geom1d, in string geom2d, in bool validate=false, in string geom\+Tris=null)
+\begin{DoxyCompactList}\small\item\em Build the meshes of the model geometry and surface geometry as well as the 2d-\/$>$1d mapping Thus the additional geom3dtris geometry will be discarded in the future. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{struct_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_mapping_info}{Mapping\+Info}} \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_map_utils_aa72869cb07f9a248aad46909c700b82a}{Build\+Map}} (in string geom1d, in string geom2d, in bool validate=false)
+\begin{DoxyCompactList}\small\item\em Delegate to Build\+Map without a special visualization surface geometry \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{struct_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_mapping_info}{Mapping\+Info}} \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_map_utils_a85284f1c5a478d0388a377da14768590}{Build\+Map}} ()
+\begin{DoxyCompactList}\small\item\em Delegate to build a default map for testing purposes \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{struct_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_mapping_info}{Mapping\+Info}} \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_map_utils_a007f230426a241585108d31b02d7027e}{build}} (in \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_grid}{Grid}} grid2d, in \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_grid}{Grid}} grid1d, in \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_grid}{Grid}} grid2dvis)
+\begin{DoxyCompactList}\small\item\em Helper method to which other methods can delegate to \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Utility class for all mapping associated utility functions 
+
+\mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_map_utils}{Map\+Utils}}
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_map_utils_a007f230426a241585108d31b02d7027e}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_map_utils_a007f230426a241585108d31b02d7027e}} 
+\index{C2M2.NeuronalDynamics.UGX.MapUtils@{C2M2.NeuronalDynamics.UGX.MapUtils}!build@{build}}
+\index{build@{build}!C2M2.NeuronalDynamics.UGX.MapUtils@{C2M2.NeuronalDynamics.UGX.MapUtils}}
+\doxysubsubsection{\texorpdfstring{build()}{build()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{struct_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_mapping_info}{Mapping\+Info}} C2\+M2.\+Neuronal\+Dynamics.\+UGX.\+Map\+Utils.\+build (\begin{DoxyParamCaption}\item[{in \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_grid}{Grid}}}]{grid2d,  }\item[{in \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_grid}{Grid}}}]{grid1d,  }\item[{in \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_grid}{Grid}}}]{grid2dvis }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Helper method to which other methods can delegate to 
+
+Build
+
+
+\begin{DoxyParams}{Parameters}
+{\em grid2d} & 2D mesh \\
+\hline
+{\em grid1d} & 1D mesh \\
+\hline
+{\em grid2dvis} & 2D mesh for visualization \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mapping information as \mbox{\hyperlink{struct_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_mapping_info}{Mapping\+Info}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_map_utils_a85284f1c5a478d0388a377da14768590}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_map_utils_a85284f1c5a478d0388a377da14768590}} 
+\index{C2M2.NeuronalDynamics.UGX.MapUtils@{C2M2.NeuronalDynamics.UGX.MapUtils}!BuildMap@{BuildMap}}
+\index{BuildMap@{BuildMap}!C2M2.NeuronalDynamics.UGX.MapUtils@{C2M2.NeuronalDynamics.UGX.MapUtils}}
+\doxysubsubsection{\texorpdfstring{BuildMap()}{BuildMap()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{struct_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_mapping_info}{Mapping\+Info}} C2\+M2.\+Neuronal\+Dynamics.\+UGX.\+Map\+Utils.\+Build\+Map (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Delegate to build a default map for testing purposes 
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_map_utils_a31f1d9b71a9f5e317f287c8c02196e2f}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_map_utils_a31f1d9b71a9f5e317f287c8c02196e2f}} 
+\index{C2M2.NeuronalDynamics.UGX.MapUtils@{C2M2.NeuronalDynamics.UGX.MapUtils}!BuildMap@{BuildMap}}
+\index{BuildMap@{BuildMap}!C2M2.NeuronalDynamics.UGX.MapUtils@{C2M2.NeuronalDynamics.UGX.MapUtils}}
+\doxysubsubsection{\texorpdfstring{BuildMap()}{BuildMap()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily static ? \mbox{\hyperlink{struct_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_mapping_info}{Mapping\+Info}} C2\+M2.\+Neuronal\+Dynamics.\+UGX.\+Map\+Utils.\+Build\+Map (\begin{DoxyParamCaption}\item[{in \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_grid}{Grid}}}]{grid1d,  }\item[{in \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_grid}{Grid}}}]{grid2d,  }\item[{in \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_grid}{Grid}}}]{grid2dvis = {\ttfamily null} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Build the mapping from two grid objects 
+
+Build\+Map
+
+This delegates to the (private) helper build method\+: \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_map_utils_a007f230426a241585108d31b02d7027e}{Map\+Utils.\+build(in Grid, in Grid, in Grid)()}} 
+\begin{DoxyParams}{Parameters}
+{\em grid1d} & 1D mesh \\
+\hline
+{\em grid2d} & 2D mesh \\
+\hline
+{\em grid2dvis} & 2D mesh for visualization (Default\+: null)\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mapping information as \mbox{\hyperlink{struct_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_mapping_info}{Mapping\+Info}} or null if grids not consistent 
+\end{DoxyReturn}
+1d mesh needs a diameter
+
+2d mesh needs a mapping
+
+otherwise can build map\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_map_utils_aa72869cb07f9a248aad46909c700b82a}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_map_utils_aa72869cb07f9a248aad46909c700b82a}} 
+\index{C2M2.NeuronalDynamics.UGX.MapUtils@{C2M2.NeuronalDynamics.UGX.MapUtils}!BuildMap@{BuildMap}}
+\index{BuildMap@{BuildMap}!C2M2.NeuronalDynamics.UGX.MapUtils@{C2M2.NeuronalDynamics.UGX.MapUtils}}
+\doxysubsubsection{\texorpdfstring{BuildMap()}{BuildMap()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{struct_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_mapping_info}{Mapping\+Info}} C2\+M2.\+Neuronal\+Dynamics.\+UGX.\+Map\+Utils.\+Build\+Map (\begin{DoxyParamCaption}\item[{in string}]{geom1d,  }\item[{in string}]{geom2d,  }\item[{in bool}]{validate = {\ttfamily false} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Delegate to Build\+Map without a special visualization surface geometry 
+
+
+\begin{DoxyParams}{Parameters}
+{\em geom1d} & \\
+\hline
+{\em geom2d} & \\
+\hline
+{\em validate} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{struct_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_mapping_info}{Mapping\+Info}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_map_utils_a3d1b475c2629c2299cd0ec4655a8a1c4}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_map_utils_a3d1b475c2629c2299cd0ec4655a8a1c4}} 
+\index{C2M2.NeuronalDynamics.UGX.MapUtils@{C2M2.NeuronalDynamics.UGX.MapUtils}!BuildMap@{BuildMap}}
+\index{BuildMap@{BuildMap}!C2M2.NeuronalDynamics.UGX.MapUtils@{C2M2.NeuronalDynamics.UGX.MapUtils}}
+\doxysubsubsection{\texorpdfstring{BuildMap()}{BuildMap()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{struct_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_mapping_info}{Mapping\+Info}} C2\+M2.\+Neuronal\+Dynamics.\+UGX.\+Map\+Utils.\+Build\+Map (\begin{DoxyParamCaption}\item[{in string}]{geom1d,  }\item[{in string}]{geom2d,  }\item[{in bool}]{validate = {\ttfamily false},  }\item[{in string}]{geom\+Tris = {\ttfamily null} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Build the meshes of the model geometry and surface geometry as well as the 2d-\/$>$1d mapping Thus the additional geom3dtris geometry will be discarded in the future. 
+
+Build\+Map
+
+This delegates to the (private) helper build method\+: \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_map_utils_a007f230426a241585108d31b02d7027e}{Map\+Utils.\+build(in Grid, in Grid, in Grid)()}} 
+\begin{DoxyParams}{Parameters}
+{\em geom1d} & Filename of 1d (model) geometry \\
+\hline
+{\em geom2d} & Filename of 2d (surface) geometry with mapping data \\
+\hline
+{\em geom\+Tris} & Filename of 2d (surface) geometry for visualitation \\
+\hline
+{\em validate} & Validate XML file (default is not to validate) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The mapping information as \mbox{\hyperlink{struct_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_mapping_info}{Mapping\+Info}} 
+\end{DoxyReturn}
+\mbox{\hyperlink{struct_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_mapping_info}{Mapping\+Info struct for details }} Note\+: Mapping data could be encapsulated also in the triangulated mesh, thus eliminating the third mesh parameter build the mapping
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/jaros/\+Desktop/tempvr/virtual-\/reality/\+Assets/\+Scripts/\+C2\+M2/\+Neuronal\+Dynamics/\+Visualization/\+Mapping/\mbox{\hyperlink{_map_utils_8cs}{Map\+Utils.\+cs}}\end{DoxyCompactItemize}

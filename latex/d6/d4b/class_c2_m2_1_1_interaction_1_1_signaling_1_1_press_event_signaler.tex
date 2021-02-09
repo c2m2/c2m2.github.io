@@ -1,0 +1,133 @@
+\hypertarget{class_c2_m2_1_1_interaction_1_1_signaling_1_1_press_event_signaler}{}\doxysection{C2\+M2.\+Interaction.\+Signaling.\+Press\+Event\+Signaler Class Reference}
+\label{class_c2_m2_1_1_interaction_1_1_signaling_1_1_press_event_signaler}\index{C2M2.Interaction.Signaling.PressEventSignaler@{C2M2.Interaction.Signaling.PressEventSignaler}}
+
+
+Send press, hold\+Press, and end\+Press events based on set values of Pressed and Raycast\+Trigger\+Manager  
+
+
+
+
+Inheritance diagram for C2\+M2.\+Interaction.\+Signaling.\+Press\+Event\+Signaler\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{d0/d3a/class_c2_m2_1_1_interaction_1_1_signaling_1_1_press_event_signaler__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for C2\+M2.\+Interaction.\+Signaling.\+Press\+Event\+Signaler\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=259pt]{da/d5c/class_c2_m2_1_1_interaction_1_1_signaling_1_1_press_event_signaler__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_signaling_1_1_press_event_signaler_a70dc90a8086ffc96e484efff00ef1859}{On\+Hover}} ()
+\item 
+virtual void \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_signaling_1_1_press_event_signaler_a49cf6935dac023ef086402c9550f83af}{On\+Hover\+End}} ()
+\item 
+virtual void \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_signaling_1_1_press_event_signaler_a521b648b3bdaf464fad1fccb24b792f3}{On\+Press}} ()
+\item 
+virtual void \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_signaling_1_1_press_event_signaler_a2c576082230bf07286ca0fc3ec08dd60}{On\+Hold\+Press}} ()
+\item 
+virtual void \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_signaling_1_1_press_event_signaler_adc5f7d2ab90b6fa57ef55dfb70cb2eeb}{On\+End\+Press}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_signaling_1_1_press_event_signaler_a220697dc696edf37292273adf6e3a4ec}{Pressed}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Was the input source pressed in the previous frame? \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_signaling_1_1_press_event_signaler_a94176ce8109f135a5896b9f7e5bd54be}{pressed\+Prev\+Frame}} = false
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Send press, hold\+Press, and end\+Press events based on set values of Pressed and Raycast\+Trigger\+Manager 
+
+Make a class inherit from this class. The child class should monitor for input, and then set press whenever input is received. This calss will handle checking for whether the input is a press, a hold, or an end press 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_signaling_1_1_press_event_signaler_adc5f7d2ab90b6fa57ef55dfb70cb2eeb}\label{class_c2_m2_1_1_interaction_1_1_signaling_1_1_press_event_signaler_adc5f7d2ab90b6fa57ef55dfb70cb2eeb}} 
+\index{C2M2.Interaction.Signaling.PressEventSignaler@{C2M2.Interaction.Signaling.PressEventSignaler}!OnEndPress@{OnEndPress}}
+\index{OnEndPress@{OnEndPress}!C2M2.Interaction.Signaling.PressEventSignaler@{C2M2.Interaction.Signaling.PressEventSignaler}}
+\doxysubsubsection{\texorpdfstring{OnEndPress()}{OnEndPress()}}
+{\footnotesize\ttfamily virtual void C2\+M2.\+Interaction.\+Signaling.\+Press\+Event\+Signaler.\+On\+End\+Press (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_signaling_1_1_raycast_event_signaler_a64e4e82c6b2da21e6d5d687a8fcae0b3}{C2\+M2.\+Interaction.\+Signaling.\+Raycast\+Event\+Signaler}}.
+
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_signaling_1_1_press_event_signaler_a2c576082230bf07286ca0fc3ec08dd60}\label{class_c2_m2_1_1_interaction_1_1_signaling_1_1_press_event_signaler_a2c576082230bf07286ca0fc3ec08dd60}} 
+\index{C2M2.Interaction.Signaling.PressEventSignaler@{C2M2.Interaction.Signaling.PressEventSignaler}!OnHoldPress@{OnHoldPress}}
+\index{OnHoldPress@{OnHoldPress}!C2M2.Interaction.Signaling.PressEventSignaler@{C2M2.Interaction.Signaling.PressEventSignaler}}
+\doxysubsubsection{\texorpdfstring{OnHoldPress()}{OnHoldPress()}}
+{\footnotesize\ttfamily virtual void C2\+M2.\+Interaction.\+Signaling.\+Press\+Event\+Signaler.\+On\+Hold\+Press (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_signaling_1_1_raycast_event_signaler_ae11be9bbc108498a8abbfa57498d8f75}{C2\+M2.\+Interaction.\+Signaling.\+Raycast\+Event\+Signaler}}.
+
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_signaling_1_1_press_event_signaler_a70dc90a8086ffc96e484efff00ef1859}\label{class_c2_m2_1_1_interaction_1_1_signaling_1_1_press_event_signaler_a70dc90a8086ffc96e484efff00ef1859}} 
+\index{C2M2.Interaction.Signaling.PressEventSignaler@{C2M2.Interaction.Signaling.PressEventSignaler}!OnHover@{OnHover}}
+\index{OnHover@{OnHover}!C2M2.Interaction.Signaling.PressEventSignaler@{C2M2.Interaction.Signaling.PressEventSignaler}}
+\doxysubsubsection{\texorpdfstring{OnHover()}{OnHover()}}
+{\footnotesize\ttfamily virtual void C2\+M2.\+Interaction.\+Signaling.\+Press\+Event\+Signaler.\+On\+Hover (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_signaling_1_1_raycast_event_signaler_ad79a8be81cfe076d7be77700eab2fc07}{C2\+M2.\+Interaction.\+Signaling.\+Raycast\+Event\+Signaler}}.
+
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_signaling_1_1_press_event_signaler_a49cf6935dac023ef086402c9550f83af}\label{class_c2_m2_1_1_interaction_1_1_signaling_1_1_press_event_signaler_a49cf6935dac023ef086402c9550f83af}} 
+\index{C2M2.Interaction.Signaling.PressEventSignaler@{C2M2.Interaction.Signaling.PressEventSignaler}!OnHoverEnd@{OnHoverEnd}}
+\index{OnHoverEnd@{OnHoverEnd}!C2M2.Interaction.Signaling.PressEventSignaler@{C2M2.Interaction.Signaling.PressEventSignaler}}
+\doxysubsubsection{\texorpdfstring{OnHoverEnd()}{OnHoverEnd()}}
+{\footnotesize\ttfamily virtual void C2\+M2.\+Interaction.\+Signaling.\+Press\+Event\+Signaler.\+On\+Hover\+End (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_signaling_1_1_raycast_event_signaler_ab998dcf955ec9954d51b78a0eb7660a1}{C2\+M2.\+Interaction.\+Signaling.\+Raycast\+Event\+Signaler}}.
+
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_signaling_1_1_press_event_signaler_a521b648b3bdaf464fad1fccb24b792f3}\label{class_c2_m2_1_1_interaction_1_1_signaling_1_1_press_event_signaler_a521b648b3bdaf464fad1fccb24b792f3}} 
+\index{C2M2.Interaction.Signaling.PressEventSignaler@{C2M2.Interaction.Signaling.PressEventSignaler}!OnPress@{OnPress}}
+\index{OnPress@{OnPress}!C2M2.Interaction.Signaling.PressEventSignaler@{C2M2.Interaction.Signaling.PressEventSignaler}}
+\doxysubsubsection{\texorpdfstring{OnPress()}{OnPress()}}
+{\footnotesize\ttfamily virtual void C2\+M2.\+Interaction.\+Signaling.\+Press\+Event\+Signaler.\+On\+Press (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_signaling_1_1_raycast_event_signaler_a0097a4551979a708d614935c52be2d08}{C2\+M2.\+Interaction.\+Signaling.\+Raycast\+Event\+Signaler}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_signaling_1_1_press_event_signaler_a94176ce8109f135a5896b9f7e5bd54be}\label{class_c2_m2_1_1_interaction_1_1_signaling_1_1_press_event_signaler_a94176ce8109f135a5896b9f7e5bd54be}} 
+\index{C2M2.Interaction.Signaling.PressEventSignaler@{C2M2.Interaction.Signaling.PressEventSignaler}!pressedPrevFrame@{pressedPrevFrame}}
+\index{pressedPrevFrame@{pressedPrevFrame}!C2M2.Interaction.Signaling.PressEventSignaler@{C2M2.Interaction.Signaling.PressEventSignaler}}
+\doxysubsubsection{\texorpdfstring{pressedPrevFrame}{pressedPrevFrame}}
+{\footnotesize\ttfamily bool C2\+M2.\+Interaction.\+Signaling.\+Press\+Event\+Signaler.\+pressed\+Prev\+Frame = false\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_signaling_1_1_press_event_signaler_a220697dc696edf37292273adf6e3a4ec}\label{class_c2_m2_1_1_interaction_1_1_signaling_1_1_press_event_signaler_a220697dc696edf37292273adf6e3a4ec}} 
+\index{C2M2.Interaction.Signaling.PressEventSignaler@{C2M2.Interaction.Signaling.PressEventSignaler}!Pressed@{Pressed}}
+\index{Pressed@{Pressed}!C2M2.Interaction.Signaling.PressEventSignaler@{C2M2.Interaction.Signaling.PressEventSignaler}}
+\doxysubsubsection{\texorpdfstring{Pressed}{Pressed}}
+{\footnotesize\ttfamily bool C2\+M2.\+Interaction.\+Signaling.\+Press\+Event\+Signaler.\+Pressed\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}, {\ttfamily [protected]}}
+
+
+
+Was the input source pressed in the previous frame? 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/jaros/\+Desktop/tempvr/virtual-\/reality/\+Assets/\+Scripts/\+C2\+M2/\+Interaction/\+Press\+Event\+Signalers/\mbox{\hyperlink{_press_event_signaler_8cs}{Press\+Event\+Signaler.\+cs}}\end{DoxyCompactItemize}

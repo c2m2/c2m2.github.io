@@ -1,5 +1,5 @@
 <map id="C2M2.Interaction.RaycastPressEvents" name="C2M2.Interaction.RaycastPressEvents">
-<area shape="rect" id="node1" title="Store custom events that the corresponding RaycastTriggerManager will invoke" alt="" coords="24,316,239,467"/>
+<area shape="rect" id="node1" title="Store custom events that the corresponding RaycastTriggerManager will invoke" alt="" coords="24,345,239,555"/>
 <area shape="rect" id="node2" title=" " alt="" coords="5,139,132,217"/>
 <area shape="rect" id="node3" href="$d2/d43/class_c2_m2_1_1_interaction_1_1_raycast_press_events_1_1_raycast_hit_event.html" title=" " alt="" coords="156,132,395,224"/>
 <area shape="rect" id="node4" title=" " alt="" coords="168,5,383,83"/>

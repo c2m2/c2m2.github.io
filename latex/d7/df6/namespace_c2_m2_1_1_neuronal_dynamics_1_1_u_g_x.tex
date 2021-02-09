@@ -1,0 +1,152 @@
+\hypertarget{namespace_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x}{}\doxysection{C2\+M2.\+Neuronal\+Dynamics.\+UGX Namespace Reference}
+\label{namespace_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x}\index{C2M2.NeuronalDynamics.UGX@{C2M2.NeuronalDynamics.UGX}}
+
+
+Utilities for processing .ugx files containing 1D, 3D, and mapping geometry info  
+
+
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_cell}{Neuron\+Cell}}
+\item 
+class \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_subset_not_found_exception}{Subset\+Not\+Found\+Exception}}
+\begin{DoxyCompactList}\small\item\em Custom RTE for situations when subset is not found in geometry \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{struct_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_attachment_info}{Attachment\+Info}}
+\begin{DoxyCompactList}\small\item\em Encapsulate attachment information as immutable \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_grid}{Grid}}
+\begin{DoxyCompactList}\small\item\em Encapsulates Unity mesh and the edges of the \mbox{\hyperlink{namespace_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x}{UGX}} file \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{struct_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_vertex}{Vertex}}
+\begin{DoxyCompactList}\small\item\em Immutable vertex representation \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{struct_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_edge}{Edge}}
+\begin{DoxyCompactList}\small\item\em Immutable edge representation \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_grid_extensions}{Grid\+Extensions}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_grid}{Grid}} extension methods \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_grid_utils}{Grid\+Utils}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_grid}{Grid}} utility methods \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{struct_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_mapping_info}{Mapping\+Info}}
+\begin{DoxyCompactList}\small\item\em Encapsulates the grids and mapping data \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{struct_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_map_entry}{Map\+Entry}}
+\begin{DoxyCompactList}\small\item\em A map entry represents mapping data for one vertex pair v1, v2 and a scalar lambda Note\+: Lambda ist used to determine how to interpolate between v1 and v2 \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_map_utils}{Map\+Utils}}
+\begin{DoxyCompactList}\small\item\em Utility class for all mapping associated utility functions \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_map_not_build_exception}{Map\+Not\+Build\+Exception}}
+\begin{DoxyCompactList}\small\item\em Custom exception thrown if map could not be build \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_sine_wave_colorizer}{Sine\+Wave\+Colorizer}}
+\begin{DoxyCompactList}\small\item\em A simple sine wave colorizer The component colorizes a linear geometry or a cylinder surface by a sine wave pattern Frequency and amplitude can be specified, for instance varying by 10 Hz between colors red and blue \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_subset_collection}{Subset\+Collection}}
+\begin{DoxyCompactList}\small\item\em Wrapper class for subset information \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{struct_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_subset}{Subset}}
+\begin{DoxyCompactList}\small\item\em A simple data class representing \mbox{\hyperlink{struct_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_subset}{Subset}} information \end{DoxyCompactList}\item 
+interface \mbox{\hyperlink{interface_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_i_synapse}{ISynapse}}
+\begin{DoxyCompactList}\small\item\em A synapse respresentation \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{struct_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_e_x_p2_synapse}{EXP2\+Synapse}}
+\begin{DoxyCompactList}\small\item\em A bi-\/exponential synapse \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{struct_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_alpha_post_synapse}{Alpha\+Post\+Synapse}}
+\begin{DoxyCompactList}\small\item\em A alpha post synapse \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{struct_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_undef_synapse}{Undef\+Synapse}}
+\begin{DoxyCompactList}\small\item\em Undefined Synapse \end{DoxyCompactList}\item 
+class {\bfseries Algebra}
+\begin{DoxyCompactList}\small\item\em Utility class to provide access to vertex and DOF indices \end{DoxyCompactList}\item 
+interface \mbox{\hyperlink{interface_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_attachment}{Attachment}}
+\begin{DoxyCompactList}\small\item\em Marker interface for attachments \end{DoxyCompactList}\item 
+interface \mbox{\hyperlink{interface_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_i_attachment_data}{IAttachment\+Data}}
+\begin{DoxyCompactList}\small\item\em Marker interface for attachment data \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_i_attachment}{IAttachment}}
+\begin{DoxyCompactList}\small\item\em Abstract base class for all attachments providing common functionality \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_attachment_handler}{Attachment\+Handler}}
+\begin{DoxyCompactList}\small\item\em The attachment handler allows managing attachments of grids \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{struct_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_diameter_data}{Diameter\+Data}}
+\begin{DoxyCompactList}\small\item\em Data for diameter attachment Used to store diameters during reading in a grid \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{struct_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_index_data}{Index\+Data}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{struct_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_index_data}{Index\+Data}} \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{struct_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_normal_data}{Normal\+Data}}
+\begin{DoxyCompactList}\small\item\em Data for normals of grid Used to store normals during reading in a grid \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{struct_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_mapping_data}{Mapping\+Data}}
+\begin{DoxyCompactList}\small\item\em Data for mapping attachment Used to read in mapping data which maps between 1d and 2d vertices \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{struct_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_synapse_data}{Synapse\+Data}}
+\begin{DoxyCompactList}\small\item\em Data for synapse attachment Used to store synapse data during reading in a grid \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_u_g_x_reader}{UGXReader}}
+\begin{DoxyCompactList}\small\item\em Simple \mbox{\hyperlink{namespace_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x}{UGX}} reader class \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_u_g_x_reader_test}{UGXReader\+Test}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_u_g_x_reader_test}{UGXReader\+Test}} \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_vertex_attachement_accessor}{Vertex\+Attachement\+Accessor}}
+\begin{DoxyCompactList}\small\item\em Vertex\+Attachment\+Acccesor \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+using \mbox{\hyperlink{namespace_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_a668fa70767b7cebac1473b512b6cf84b}{Diameter\+Attachment}} = \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_i_attachment}{IAttachment}}$<$ \mbox{\hyperlink{struct_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_diameter_data}{Diameter\+Data}} $>$
+\item 
+using \mbox{\hyperlink{namespace_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_a1a4847018043e3175f44cf587a2dd6ad}{Mapping\+Attachment}} = \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_i_attachment}{IAttachment}}$<$ \mbox{\hyperlink{struct_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_mapping_data}{Mapping\+Data}} $>$
+\item 
+using \mbox{\hyperlink{namespace_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_a2cd51055092fd968a0ec2c92ff66798c}{Normal\+Attachment}} = \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_i_attachment}{IAttachment}}$<$ \mbox{\hyperlink{struct_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_normal_data}{Normal\+Data}} $>$
+\item 
+using \mbox{\hyperlink{namespace_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_a736667977e82897acad9c0552aa08a6d}{Index\+Attachment}} = \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_i_attachment}{IAttachment}}$<$ \mbox{\hyperlink{struct_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_index_data}{Index\+Data}} $>$
+\end{DoxyCompactItemize}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum class \mbox{\hyperlink{namespace_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_acba8adcd72d5b952ef8cf88c5f82fdc0}{Synapse\+Type}} \+: byte \{ \mbox{\hyperlink{namespace_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_acba8adcd72d5b952ef8cf88c5f82fdc0ab3f7791472924b0d1530bb9112409c01}{UNDEF}}
+, \mbox{\hyperlink{namespace_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_acba8adcd72d5b952ef8cf88c5f82fdc0a65b0b4921f95d10ed656c3b089de3f3e}{ALPHA\+\_\+\+POST}}
+, \mbox{\hyperlink{namespace_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_acba8adcd72d5b952ef8cf88c5f82fdc0a834da766816ba4a2ec800803c32b8dac}{EXP2}}
+ \}
+\begin{DoxyCompactList}\small\item\em Represent the type of synapse \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Utilities for processing .ugx files containing 1D, 3D, and mapping geometry info 
+
+
+
+\doxysubsection{Typedef Documentation}
+\mbox{\Hypertarget{namespace_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_a668fa70767b7cebac1473b512b6cf84b}\label{namespace_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_a668fa70767b7cebac1473b512b6cf84b}} 
+\index{C2M2.NeuronalDynamics.UGX@{C2M2.NeuronalDynamics.UGX}!DiameterAttachment@{DiameterAttachment}}
+\index{DiameterAttachment@{DiameterAttachment}!C2M2.NeuronalDynamics.UGX@{C2M2.NeuronalDynamics.UGX}}
+\doxysubsubsection{\texorpdfstring{DiameterAttachment}{DiameterAttachment}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_i_attachment}{IAttachment}}$<$ \mbox{\hyperlink{struct_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_diameter_data}{Diameter\+Data}} $>$ \mbox{\hyperlink{namespace_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_a668fa70767b7cebac1473b512b6cf84b}{C2\+M2.\+Neuronal\+Dynamics.\+UGX.\+Diameter\+Attachment}}}
+
+\mbox{\Hypertarget{namespace_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_a736667977e82897acad9c0552aa08a6d}\label{namespace_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_a736667977e82897acad9c0552aa08a6d}} 
+\index{C2M2.NeuronalDynamics.UGX@{C2M2.NeuronalDynamics.UGX}!IndexAttachment@{IndexAttachment}}
+\index{IndexAttachment@{IndexAttachment}!C2M2.NeuronalDynamics.UGX@{C2M2.NeuronalDynamics.UGX}}
+\doxysubsubsection{\texorpdfstring{IndexAttachment}{IndexAttachment}}
+{\footnotesize\ttfamily using \mbox{\hyperlink{namespace_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_a736667977e82897acad9c0552aa08a6d}{C2\+M2.\+Neuronal\+Dynamics.\+UGX.\+Index\+Attachment}} = typedef \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_i_attachment}{IAttachment}}$<$\mbox{\hyperlink{struct_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_index_data}{Index\+Data}}$>$}
+
+\mbox{\Hypertarget{namespace_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_a1a4847018043e3175f44cf587a2dd6ad}\label{namespace_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_a1a4847018043e3175f44cf587a2dd6ad}} 
+\index{C2M2.NeuronalDynamics.UGX@{C2M2.NeuronalDynamics.UGX}!MappingAttachment@{MappingAttachment}}
+\index{MappingAttachment@{MappingAttachment}!C2M2.NeuronalDynamics.UGX@{C2M2.NeuronalDynamics.UGX}}
+\doxysubsubsection{\texorpdfstring{MappingAttachment}{MappingAttachment}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_i_attachment}{IAttachment}}$<$ \mbox{\hyperlink{struct_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_mapping_data}{Mapping\+Data}} $>$ \mbox{\hyperlink{namespace_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_a1a4847018043e3175f44cf587a2dd6ad}{C2\+M2.\+Neuronal\+Dynamics.\+UGX.\+Mapping\+Attachment}}}
+
+\mbox{\Hypertarget{namespace_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_a2cd51055092fd968a0ec2c92ff66798c}\label{namespace_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_a2cd51055092fd968a0ec2c92ff66798c}} 
+\index{C2M2.NeuronalDynamics.UGX@{C2M2.NeuronalDynamics.UGX}!NormalAttachment@{NormalAttachment}}
+\index{NormalAttachment@{NormalAttachment}!C2M2.NeuronalDynamics.UGX@{C2M2.NeuronalDynamics.UGX}}
+\doxysubsubsection{\texorpdfstring{NormalAttachment}{NormalAttachment}}
+{\footnotesize\ttfamily using \mbox{\hyperlink{namespace_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_a2cd51055092fd968a0ec2c92ff66798c}{C2\+M2.\+Neuronal\+Dynamics.\+UGX.\+Normal\+Attachment}} = typedef \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_i_attachment}{IAttachment}}$<$\mbox{\hyperlink{struct_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_normal_data}{Normal\+Data}}$>$}
+
+
+
+\doxysubsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{namespace_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_acba8adcd72d5b952ef8cf88c5f82fdc0}\label{namespace_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_acba8adcd72d5b952ef8cf88c5f82fdc0}} 
+\index{C2M2.NeuronalDynamics.UGX@{C2M2.NeuronalDynamics.UGX}!SynapseType@{SynapseType}}
+\index{SynapseType@{SynapseType}!C2M2.NeuronalDynamics.UGX@{C2M2.NeuronalDynamics.UGX}}
+\doxysubsubsection{\texorpdfstring{SynapseType}{SynapseType}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{namespace_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_acba8adcd72d5b952ef8cf88c5f82fdc0}{C2\+M2.\+Neuronal\+Dynamics.\+UGX.\+Synapse\+Type}} \+: byte\hspace{0.3cm}{\ttfamily [strong]}}
+
+
+
+Represent the type of synapse 
+
+Synapse\+Type\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{UNDEF@{UNDEF}!C2M2.NeuronalDynamics.UGX@{C2M2.NeuronalDynamics.UGX}}\index{C2M2.NeuronalDynamics.UGX@{C2M2.NeuronalDynamics.UGX}!UNDEF@{UNDEF}}}\mbox{\Hypertarget{namespace_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_acba8adcd72d5b952ef8cf88c5f82fdc0ab3f7791472924b0d1530bb9112409c01}\label{namespace_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_acba8adcd72d5b952ef8cf88c5f82fdc0ab3f7791472924b0d1530bb9112409c01}} 
+UNDEF&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ALPHA\_POST@{ALPHA\_POST}!C2M2.NeuronalDynamics.UGX@{C2M2.NeuronalDynamics.UGX}}\index{C2M2.NeuronalDynamics.UGX@{C2M2.NeuronalDynamics.UGX}!ALPHA\_POST@{ALPHA\_POST}}}\mbox{\Hypertarget{namespace_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_acba8adcd72d5b952ef8cf88c5f82fdc0a65b0b4921f95d10ed656c3b089de3f3e}\label{namespace_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_acba8adcd72d5b952ef8cf88c5f82fdc0a65b0b4921f95d10ed656c3b089de3f3e}} 
+ALPHA\+\_\+\+POST&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EXP2@{EXP2}!C2M2.NeuronalDynamics.UGX@{C2M2.NeuronalDynamics.UGX}}\index{C2M2.NeuronalDynamics.UGX@{C2M2.NeuronalDynamics.UGX}!EXP2@{EXP2}}}\mbox{\Hypertarget{namespace_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_acba8adcd72d5b952ef8cf88c5f82fdc0a834da766816ba4a2ec800803c32b8dac}\label{namespace_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_acba8adcd72d5b952ef8cf88c5f82fdc0a834da766816ba4a2ec800803c32b8dac}} 
+EXP2&\\
+\hline
+
+\end{DoxyEnumFields}

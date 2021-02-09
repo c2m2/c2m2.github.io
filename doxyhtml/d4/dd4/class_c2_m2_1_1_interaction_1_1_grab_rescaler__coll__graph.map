@@ -1,0 +1,6 @@
+<map id="C2M2.Interaction.GrabRescaler" name="C2M2.Interaction.GrabRescaler">
+<area shape="rect" id="node1" title="Adds some percentage of a transform&#39;s original scale at runtime" alt="" coords="5,301,260,555"/>
+<area shape="rect" id="node2" title=" " alt="" coords="8,147,135,224"/>
+<area shape="rect" id="node3" href="$dd/d45/class_c2_m2_1_1_interaction_1_1_v_r_1_1_public_o_v_r_grabber.html" title="Offers a public interface for other scripts to change OVRGrabber&#39;s grab volume." alt="" coords="159,132,389,239"/>
+<area shape="rect" id="node4" title=" " alt="" coords="223,5,325,83"/>
+</map>

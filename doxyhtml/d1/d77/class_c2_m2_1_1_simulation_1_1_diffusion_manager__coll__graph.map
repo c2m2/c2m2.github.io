@@ -1,0 +1,11 @@
+<map id="C2M2.Simulation.DiffusionManager" name="C2M2.Simulation.DiffusionManager">
+<area shape="rect" id="node1" title=" " alt="" coords="37,1397,260,1841"/>
+<area shape="rect" id="node2" title=" " alt="" coords="160,5,286,83"/>
+<area shape="rect" id="node3" href="$d6/dad/class_c2_m2_1_1_interaction_1_1_u_i_1_1_raycast_input_field.html" title=" " alt="" coords="314,803,553,1276"/>
+<area shape="rect" id="node6" href="$d4/d6f/class_c2_m2_1_1_interaction_1_1_u_i_1_1_raycast_keyboard.html" title="Instantiates a raycastable keyboard and manages its input/output" alt="" coords="314,292,553,633"/>
+<area shape="rect" id="node9" href="$d9/d15/class_c2_m2_1_1_simulation_1_1_object_manager.html" title=" " alt="" coords="21,657,276,779"/>
+<area shape="rect" id="node4" href="$da/d7b/class_c2_m2_1_1_interaction_1_1_u_i_1_1_raycast_input_field_1_1_on_change_event.html" title=" " alt="" coords="577,417,816,509"/>
+<area shape="rect" id="node5" title=" " alt="" coords="736,5,918,83"/>
+<area shape="rect" id="node8" href="$d4/de5/class_c2_m2_1_1_interaction_1_1_u_i_1_1_raycast_input_field_1_1_on_submit_event.html" title=" " alt="" coords="840,417,1078,509"/>
+<area shape="rect" id="node7" title=" " alt="" coords="398,5,469,83"/>
+</map>

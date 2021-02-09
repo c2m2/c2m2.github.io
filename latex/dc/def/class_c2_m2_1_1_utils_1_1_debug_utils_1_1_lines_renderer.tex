@@ -1,0 +1,137 @@
+\hypertarget{class_c2_m2_1_1_utils_1_1_debug_utils_1_1_lines_renderer}{}\doxysection{C2\+M2.\+Utils.\+Debug\+Utils.\+Lines\+Renderer Class Reference}
+\label{class_c2_m2_1_1_utils_1_1_debug_utils_1_1_lines_renderer}\index{C2M2.Utils.DebugUtils.LinesRenderer@{C2M2.Utils.DebugUtils.LinesRenderer}}
+
+
+Draw a series of disjointed lines given a list of edges using the native Line\+Renderer class  
+
+
+
+
+Inheritance diagram for C2\+M2.\+Utils.\+Debug\+Utils.\+Lines\+Renderer\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=259pt]{d2/d5a/class_c2_m2_1_1_utils_1_1_debug_utils_1_1_lines_renderer__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for C2\+M2.\+Utils.\+Debug\+Utils.\+Lines\+Renderer\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=259pt]{d3/dba/class_c2_m2_1_1_utils_1_1_debug_utils_1_1_lines_renderer__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Game\+Object \mbox{\hyperlink{class_c2_m2_1_1_utils_1_1_debug_utils_1_1_lines_renderer_a380305e7f5f167bdbfa3ada0a0891934}{Draw}} (\mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_grid}{Grid}} grid, Color \mbox{\hyperlink{class_c2_m2_1_1_utils_1_1_debug_utils_1_1_lines_renderer_a848be4b385247dce256b0f5a60a60cc7}{color}}, float line\+Width)
+\begin{DoxyCompactList}\small\item\em Build line renderers and get parent Game\+Object back \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c2_m2_1_1_utils_1_1_debug_utils_1_1_lines_renderer_a89f9a8b9a5784f81a2afd34189909953}{Toggle}} (bool on)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Color \mbox{\hyperlink{class_c2_m2_1_1_utils_1_1_debug_utils_1_1_lines_renderer_a848be4b385247dce256b0f5a60a60cc7}{color}} = Color.\+green
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Game\+Object \mbox{\hyperlink{class_c2_m2_1_1_utils_1_1_debug_utils_1_1_lines_renderer_a174937e11b315c0458df7b405872e1bb}{Initialize\+Renderers}} (List$<$ \mbox{\hyperlink{struct_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_vertex}{Vertex}} $>$ verts, Vector3\mbox{[}$\,$\mbox{]} vert\+Pos, float line\+Width)
+\item 
+Game\+Object \mbox{\hyperlink{class_c2_m2_1_1_utils_1_1_debug_utils_1_1_lines_renderer_a0255dd023b5b80688bd7f508e4b37aed}{Initialize\+Renderers}} (List$<$ \mbox{\hyperlink{struct_c2_m2_1_1_interaction_1_1_adjacency_1_1_edge}{Edge}} $>$ edges, Vector3\mbox{[}$\,$\mbox{]} vertices, float line\+Width)
+\item 
+Game\+Object \mbox{\hyperlink{class_c2_m2_1_1_utils_1_1_debug_utils_1_1_lines_renderer_ac971d404e1b1520f49974e0c73ef5069}{Instantiate\+Child}} (Transform parent)
+\item 
+IEnumerator \mbox{\hyperlink{class_c2_m2_1_1_utils_1_1_debug_utils_1_1_lines_renderer_a8ce2cd768e45adf63da380c8d7698aba}{Check\+Toggle}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Line\+Renderer\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_c2_m2_1_1_utils_1_1_debug_utils_1_1_lines_renderer_a831ae6c760a78fdbd59bbbc4489e2da5}{line\+Renderers}}
+\item 
+Game\+Object \mbox{\hyperlink{class_c2_m2_1_1_utils_1_1_debug_utils_1_1_lines_renderer_a10f249e3085cba4ecdef094f8f023ce8}{renderers\+Go}}
+\item 
+bool \mbox{\hyperlink{class_c2_m2_1_1_utils_1_1_debug_utils_1_1_lines_renderer_a4ee463096887be6f58a48fe37162f938}{enabled\+Prev}} = true
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Draw a series of disjointed lines given a list of edges using the native Line\+Renderer class 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_c2_m2_1_1_utils_1_1_debug_utils_1_1_lines_renderer_a8ce2cd768e45adf63da380c8d7698aba}\label{class_c2_m2_1_1_utils_1_1_debug_utils_1_1_lines_renderer_a8ce2cd768e45adf63da380c8d7698aba}} 
+\index{C2M2.Utils.DebugUtils.LinesRenderer@{C2M2.Utils.DebugUtils.LinesRenderer}!CheckToggle@{CheckToggle}}
+\index{CheckToggle@{CheckToggle}!C2M2.Utils.DebugUtils.LinesRenderer@{C2M2.Utils.DebugUtils.LinesRenderer}}
+\doxysubsubsection{\texorpdfstring{CheckToggle()}{CheckToggle()}}
+{\footnotesize\ttfamily IEnumerator C2\+M2.\+Utils.\+Debug\+Utils.\+Lines\+Renderer.\+Check\+Toggle (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_utils_1_1_debug_utils_1_1_lines_renderer_a380305e7f5f167bdbfa3ada0a0891934}\label{class_c2_m2_1_1_utils_1_1_debug_utils_1_1_lines_renderer_a380305e7f5f167bdbfa3ada0a0891934}} 
+\index{C2M2.Utils.DebugUtils.LinesRenderer@{C2M2.Utils.DebugUtils.LinesRenderer}!Draw@{Draw}}
+\index{Draw@{Draw}!C2M2.Utils.DebugUtils.LinesRenderer@{C2M2.Utils.DebugUtils.LinesRenderer}}
+\doxysubsubsection{\texorpdfstring{Draw()}{Draw()}}
+{\footnotesize\ttfamily Game\+Object C2\+M2.\+Utils.\+Debug\+Utils.\+Lines\+Renderer.\+Draw (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_grid}{Grid}}}]{grid,  }\item[{Color}]{color,  }\item[{float}]{line\+Width }\end{DoxyParamCaption})}
+
+
+
+Build line renderers and get parent Game\+Object back 
+
+\mbox{\Hypertarget{class_c2_m2_1_1_utils_1_1_debug_utils_1_1_lines_renderer_a0255dd023b5b80688bd7f508e4b37aed}\label{class_c2_m2_1_1_utils_1_1_debug_utils_1_1_lines_renderer_a0255dd023b5b80688bd7f508e4b37aed}} 
+\index{C2M2.Utils.DebugUtils.LinesRenderer@{C2M2.Utils.DebugUtils.LinesRenderer}!InitializeRenderers@{InitializeRenderers}}
+\index{InitializeRenderers@{InitializeRenderers}!C2M2.Utils.DebugUtils.LinesRenderer@{C2M2.Utils.DebugUtils.LinesRenderer}}
+\doxysubsubsection{\texorpdfstring{InitializeRenderers()}{InitializeRenderers()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Game\+Object C2\+M2.\+Utils.\+Debug\+Utils.\+Lines\+Renderer.\+Initialize\+Renderers (\begin{DoxyParamCaption}\item[{List$<$ \mbox{\hyperlink{struct_c2_m2_1_1_interaction_1_1_adjacency_1_1_edge}{Edge}} $>$}]{edges,  }\item[{Vector3\mbox{[}$\,$\mbox{]}}]{vertices,  }\item[{float}]{line\+Width }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_utils_1_1_debug_utils_1_1_lines_renderer_a174937e11b315c0458df7b405872e1bb}\label{class_c2_m2_1_1_utils_1_1_debug_utils_1_1_lines_renderer_a174937e11b315c0458df7b405872e1bb}} 
+\index{C2M2.Utils.DebugUtils.LinesRenderer@{C2M2.Utils.DebugUtils.LinesRenderer}!InitializeRenderers@{InitializeRenderers}}
+\index{InitializeRenderers@{InitializeRenderers}!C2M2.Utils.DebugUtils.LinesRenderer@{C2M2.Utils.DebugUtils.LinesRenderer}}
+\doxysubsubsection{\texorpdfstring{InitializeRenderers()}{InitializeRenderers()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Game\+Object C2\+M2.\+Utils.\+Debug\+Utils.\+Lines\+Renderer.\+Initialize\+Renderers (\begin{DoxyParamCaption}\item[{List$<$ \mbox{\hyperlink{struct_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_vertex}{Vertex}} $>$}]{verts,  }\item[{Vector3\mbox{[}$\,$\mbox{]}}]{vert\+Pos,  }\item[{float}]{line\+Width }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_utils_1_1_debug_utils_1_1_lines_renderer_ac971d404e1b1520f49974e0c73ef5069}\label{class_c2_m2_1_1_utils_1_1_debug_utils_1_1_lines_renderer_ac971d404e1b1520f49974e0c73ef5069}} 
+\index{C2M2.Utils.DebugUtils.LinesRenderer@{C2M2.Utils.DebugUtils.LinesRenderer}!InstantiateChild@{InstantiateChild}}
+\index{InstantiateChild@{InstantiateChild}!C2M2.Utils.DebugUtils.LinesRenderer@{C2M2.Utils.DebugUtils.LinesRenderer}}
+\doxysubsubsection{\texorpdfstring{InstantiateChild()}{InstantiateChild()}}
+{\footnotesize\ttfamily Game\+Object C2\+M2.\+Utils.\+Debug\+Utils.\+Lines\+Renderer.\+Instantiate\+Child (\begin{DoxyParamCaption}\item[{Transform}]{parent }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_utils_1_1_debug_utils_1_1_lines_renderer_a89f9a8b9a5784f81a2afd34189909953}\label{class_c2_m2_1_1_utils_1_1_debug_utils_1_1_lines_renderer_a89f9a8b9a5784f81a2afd34189909953}} 
+\index{C2M2.Utils.DebugUtils.LinesRenderer@{C2M2.Utils.DebugUtils.LinesRenderer}!Toggle@{Toggle}}
+\index{Toggle@{Toggle}!C2M2.Utils.DebugUtils.LinesRenderer@{C2M2.Utils.DebugUtils.LinesRenderer}}
+\doxysubsubsection{\texorpdfstring{Toggle()}{Toggle()}}
+{\footnotesize\ttfamily void C2\+M2.\+Utils.\+Debug\+Utils.\+Lines\+Renderer.\+Toggle (\begin{DoxyParamCaption}\item[{bool}]{on }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_c2_m2_1_1_utils_1_1_debug_utils_1_1_lines_renderer_a848be4b385247dce256b0f5a60a60cc7}\label{class_c2_m2_1_1_utils_1_1_debug_utils_1_1_lines_renderer_a848be4b385247dce256b0f5a60a60cc7}} 
+\index{C2M2.Utils.DebugUtils.LinesRenderer@{C2M2.Utils.DebugUtils.LinesRenderer}!color@{color}}
+\index{color@{color}!C2M2.Utils.DebugUtils.LinesRenderer@{C2M2.Utils.DebugUtils.LinesRenderer}}
+\doxysubsubsection{\texorpdfstring{color}{color}}
+{\footnotesize\ttfamily Color C2\+M2.\+Utils.\+Debug\+Utils.\+Lines\+Renderer.\+color = Color.\+green}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_utils_1_1_debug_utils_1_1_lines_renderer_a4ee463096887be6f58a48fe37162f938}\label{class_c2_m2_1_1_utils_1_1_debug_utils_1_1_lines_renderer_a4ee463096887be6f58a48fe37162f938}} 
+\index{C2M2.Utils.DebugUtils.LinesRenderer@{C2M2.Utils.DebugUtils.LinesRenderer}!enabledPrev@{enabledPrev}}
+\index{enabledPrev@{enabledPrev}!C2M2.Utils.DebugUtils.LinesRenderer@{C2M2.Utils.DebugUtils.LinesRenderer}}
+\doxysubsubsection{\texorpdfstring{enabledPrev}{enabledPrev}}
+{\footnotesize\ttfamily bool C2\+M2.\+Utils.\+Debug\+Utils.\+Lines\+Renderer.\+enabled\+Prev = true\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_utils_1_1_debug_utils_1_1_lines_renderer_a831ae6c760a78fdbd59bbbc4489e2da5}\label{class_c2_m2_1_1_utils_1_1_debug_utils_1_1_lines_renderer_a831ae6c760a78fdbd59bbbc4489e2da5}} 
+\index{C2M2.Utils.DebugUtils.LinesRenderer@{C2M2.Utils.DebugUtils.LinesRenderer}!lineRenderers@{lineRenderers}}
+\index{lineRenderers@{lineRenderers}!C2M2.Utils.DebugUtils.LinesRenderer@{C2M2.Utils.DebugUtils.LinesRenderer}}
+\doxysubsubsection{\texorpdfstring{lineRenderers}{lineRenderers}}
+{\footnotesize\ttfamily Line\+Renderer \mbox{[}$\,$\mbox{]} C2\+M2.\+Utils.\+Debug\+Utils.\+Lines\+Renderer.\+line\+Renderers\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_utils_1_1_debug_utils_1_1_lines_renderer_a10f249e3085cba4ecdef094f8f023ce8}\label{class_c2_m2_1_1_utils_1_1_debug_utils_1_1_lines_renderer_a10f249e3085cba4ecdef094f8f023ce8}} 
+\index{C2M2.Utils.DebugUtils.LinesRenderer@{C2M2.Utils.DebugUtils.LinesRenderer}!renderersGo@{renderersGo}}
+\index{renderersGo@{renderersGo}!C2M2.Utils.DebugUtils.LinesRenderer@{C2M2.Utils.DebugUtils.LinesRenderer}}
+\doxysubsubsection{\texorpdfstring{renderersGo}{renderersGo}}
+{\footnotesize\ttfamily Game\+Object C2\+M2.\+Utils.\+Debug\+Utils.\+Lines\+Renderer.\+renderers\+Go\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/jaros/\+Desktop/tempvr/virtual-\/reality/\+Assets/\+Scripts/\+C2\+M2/\+Utils/\+Debug\+Utils/\mbox{\hyperlink{_lines_renderer_8cs}{Lines\+Renderer.\+cs}}\end{DoxyCompactItemize}

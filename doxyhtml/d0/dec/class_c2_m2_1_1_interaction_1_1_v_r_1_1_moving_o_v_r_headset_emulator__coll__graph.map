@@ -1,4 +1,6 @@
 <map id="C2M2.Interaction.VR.MovingOVRHeadsetEmulator" name="C2M2.Interaction.VR.MovingOVRHeadsetEmulator">
-<area shape="rect" id="node1" title="Add movement functionality to Oculus HMD headset emulator, add some additional small functionality li..." alt="" coords="5,131,236,369"/>
-<area shape="rect" id="node2" title=" " alt="" coords="37,5,204,83"/>
+<area shape="rect" id="node1" title="Add movement functionality to Oculus HMD headset emulator, add some additional small functionality li..." alt="" coords="32,507,263,731"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,249,172,327"/>
+<area shape="rect" id="node3" href="$d7/d46/class_movement_controller.html" title=" " alt="" coords="196,132,371,444"/>
+<area shape="rect" id="node4" title=" " alt="" coords="220,5,347,83"/>
 </map>

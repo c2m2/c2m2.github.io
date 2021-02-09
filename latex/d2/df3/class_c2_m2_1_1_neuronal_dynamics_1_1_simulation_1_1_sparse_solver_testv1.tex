@@ -1,0 +1,864 @@
+\hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_sparse_solver_testv1}{}\doxysection{C2\+M2.\+Neuronal\+Dynamics.\+Simulation.\+Sparse\+Solver\+Testv1 Class Reference}
+\label{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_sparse_solver_testv1}\index{C2M2.NeuronalDynamics.Simulation.SparseSolverTestv1@{C2M2.NeuronalDynamics.Simulation.SparseSolverTestv1}}
+
+
+This is the sparse solver class for solving the Hodgkin-\/\+Huxley equations for the propagation of action potentials. Below are the HH equations this is a system of partial differential equations (PDE), the first equation is for the membrane potential (voltage) it is time spatially dependent and the remaining equations are the ODE equations for the state variables n,m,h (these are unitless). The system is non-\/trivial in that the PDE equation on Voltage is coupled to the ODE equations using n,m,h and these ODE equations are also non-\/linear.  
+
+
+
+
+Inheritance diagram for C2\+M2.\+Neuronal\+Dynamics.\+Simulation.\+Sparse\+Solver\+Testv1\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{d9/d77/class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_sparse_solver_testv1__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for C2\+M2.\+Neuronal\+Dynamics.\+Simulation.\+Sparse\+Solver\+Testv1\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{df/d36/class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_sparse_solver_testv1__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+override float \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_sparse_solver_testv1_ad04d347e86b0fc505d915a78e32605ce}{Get\+Simulation\+Time}} ()
+\begin{DoxyCompactList}\small\item\em This sends the current time to the simulation timer Carefully notice that it has to be multiplied by 1000, this is because the solver is in MKS and the simulation timer object uses \mbox{[}ms\mbox{]}! \end{DoxyCompactList}\item 
+override double\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_sparse_solver_testv1_af8fa02f8261090f67c386564d2912c14}{Get1\+DValues}} ()
+\begin{DoxyCompactList}\small\item\em Send simulation 1D values, this send the current voltage after the solve runs 1 iteration it passes {\ttfamily cur\+Vals} \end{DoxyCompactList}\item 
+override void \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_sparse_solver_testv1_a4be7d00f18c954fb62ccac509abbdc8f}{Set1\+DValues}} (Tuple$<$ int, double $>$\mbox{[}$\,$\mbox{]} new\+Values)
+\begin{DoxyCompactList}\small\item\em Receive new simulation 1D index/value pairings Carefully, notice that {\ttfamily val} needs to be multiplied by 0.\+001 this is because the hit value is in \mbox{[}mV\mbox{]} and the solver uses \mbox{[}V\mbox{]} \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static List$<$ Coordinate\+Storage$<$ double $>$ $>$ \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_sparse_solver_testv1_ae3338ea454a4f5b681daaf668c5bba99}{make\+Sparse\+Stencils}} (\mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_cell}{Neuron\+Cell}} my\+Cell, double \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_sparse_solver_testv1_aeeae05f2d873e57bebf257aa91ac0f29}{res}}, double \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_sparse_solver_testv1_a1165385fda9531ac642f499d747c4cbc}{cap}}, double \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_sparse_solver_testv1_adceb698b149bfd0e68b6ae904aa5e17a}{k}})
+\begin{DoxyCompactList}\small\item\em This is for constructing the lhs and rhs of system matrix ~\newline
+This will construct a HINES matrix (symmetric), it should be tridiagonal with some off diagonal entries corresponding to a branch location in the neuron graph ~\newline
+The entries are defined by the following\+: \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+double \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_sparse_solver_testv1_a4608f4b390f5523c1e3654620d740019}{vstart}} = 0.\+050
+\begin{DoxyCompactList}\small\item\em This is the voltage for the voltage clamp, this is primarily used for when we do the convergence analysis of the code using a soma clamp at 50 \mbox{[}mV\mbox{]}, the units for voltage in the solver is \mbox{[}V\mbox{]} that is why {\ttfamily vstart} is set to 0.\+05 /summary$>$ \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_sparse_solver_testv1_a5acda23d8923110217b3c29812b437ed}{end\+Time}} = 0.\+1
+\begin{DoxyCompactList}\small\item\em \mbox{[}s\mbox{]} end\+Time of the simulation. This is the endtime of the simulation which is measured in seconds, this is a parameter that the user can set for now \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_sparse_solver_testv1_adceb698b149bfd0e68b6ae904aa5e17a}{k}} = 0.\+0025 $\ast$ 1.\+0E-\/3
+\begin{DoxyCompactList}\small\item\em User enters the time step size \mbox{[}s\mbox{]}, this is the time step size of the simulation, this needs to be chosen carefully as too large of a time step size may cause numerical instability for the solver. Notice that that this is in \mbox{[}s\mbox{]} therefore 0.\+0025\mbox{[}ms\mbox{]} = 0.\+0025e-\/3 \mbox{[}s\mbox{]} \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_sparse_solver_testv1_aebdc649c22bd37499064a728900c363c}{Soma\+On}} = false
+\begin{DoxyCompactList}\small\item\em This is for turning the soma on/off, this option is primarily used for testing purposes for the convergence analysis, for a soma clamp experiment \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+override void \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_sparse_solver_testv1_a71f84ce0834c7f05b0bcae9b31afc39f}{Pre\+Solve}} ()
+\begin{DoxyCompactList}\small\item\em This is a small routine call to initialize the Neuron Cell this will initialize the solution vectors which are {\ttfamily U}, {\ttfamily M}, {\ttfamily N}, and {\ttfamily H} \end{DoxyCompactList}\item 
+override void \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_sparse_solver_testv1_a5db6c67891c0239069409e693be74ed3}{Solve}} ()
+\begin{DoxyCompactList}\small\item\em This is the main solver, it is running on it own thread. Inside this solver it \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_sparse_solver_testv1_a1ad41540e1ed5e79c346b6ffee11a938}{Initialize\+Neuron\+Cell}} ()
+\begin{DoxyCompactList}\small\item\em This function initializes the voltage vector {\ttfamily U} and the state vectors {\ttfamily M}, {\ttfamily N}, and {\ttfamily H} ~\newline
+The input {\ttfamily Neuron\+Cell.\+vert\+Count} is the vertex count of the neuron geometry ~\newline
+{\ttfamily U} is initialized to 0 \mbox{[}V\mbox{]} for the entire cell ~\newline
+{\ttfamily M} is initialized to $m_i$ which is set by {\ttfamily mi} ~\newline
+{\ttfamily N} is initialized to $n_i$ which is set by {\ttfamily ni} ~\newline
+{\ttfamily H} is initialized to $h_i$ which is set by {\ttfamily hi} \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{_sparse_solver_testv1_8cs_a90e5369014f032bde39e79eacb048ede}{Vector}} \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_sparse_solver_testv1_a4128d10ab51bdd1ac210c4819b2a39d7}{reactF}} (List$<$ double $>$ react\+Const, \mbox{\hyperlink{_sparse_solver_testv1_8cs_a90e5369014f032bde39e79eacb048ede}{Vector}} V, \mbox{\hyperlink{_sparse_solver_testv1_8cs_a90e5369014f032bde39e79eacb048ede}{Vector}} NN, \mbox{\hyperlink{_sparse_solver_testv1_8cs_a90e5369014f032bde39e79eacb048ede}{Vector}} MM, \mbox{\hyperlink{_sparse_solver_testv1_8cs_a90e5369014f032bde39e79eacb048ede}{Vector}} HH, double \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_sparse_solver_testv1_a1165385fda9531ac642f499d747c4cbc}{cap}})
+\begin{DoxyCompactList}\small\item\em This is the reaction term of the HH equation which is defined by \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{_sparse_solver_testv1_8cs_a90e5369014f032bde39e79eacb048ede}{Vector}} \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_sparse_solver_testv1_ac18e40b00e2665af205ddff3523447f0}{fN}} (\mbox{\hyperlink{_sparse_solver_testv1_8cs_a90e5369014f032bde39e79eacb048ede}{Vector}} V, \mbox{\hyperlink{_sparse_solver_testv1_8cs_a90e5369014f032bde39e79eacb048ede}{Vector}} \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_sparse_solver_testv1_a3bee3ff082c7363f8026b533c8f8e904}{N}})
+\begin{DoxyCompactList}\small\item\em This is the function for the right hand side of the ODE on state N, which is given by\+: \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{_sparse_solver_testv1_8cs_a90e5369014f032bde39e79eacb048ede}{Vector}} \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_sparse_solver_testv1_a6872c0fbe947805facdfc39505af59b9}{fM}} (\mbox{\hyperlink{_sparse_solver_testv1_8cs_a90e5369014f032bde39e79eacb048ede}{Vector}} V, \mbox{\hyperlink{_sparse_solver_testv1_8cs_a90e5369014f032bde39e79eacb048ede}{Vector}} \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_sparse_solver_testv1_acd34ffc0ef4b42dc059f8920a70609cb}{M}})
+\begin{DoxyCompactList}\small\item\em This is the function for the right hand side of the ODE on state M, which is given by\+: \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{_sparse_solver_testv1_8cs_a90e5369014f032bde39e79eacb048ede}{Vector}} \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_sparse_solver_testv1_a9fe1e033ed85a7c241b2221e83cd7734}{fH}} (\mbox{\hyperlink{_sparse_solver_testv1_8cs_a90e5369014f032bde39e79eacb048ede}{Vector}} V, \mbox{\hyperlink{_sparse_solver_testv1_8cs_a90e5369014f032bde39e79eacb048ede}{Vector}} \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_sparse_solver_testv1_addf78ca166af48f0a18445d543f01bfb}{H}})
+\begin{DoxyCompactList}\small\item\em This is the function for the right hand side of the ODE on state H, which is given by\+: \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{_sparse_solver_testv1_8cs_a90e5369014f032bde39e79eacb048ede}{Vector}} \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_sparse_solver_testv1_a5cdb260289f487e351330a786504b462}{an}} (\mbox{\hyperlink{_sparse_solver_testv1_8cs_a90e5369014f032bde39e79eacb048ede}{Vector}} V)
+\begin{DoxyCompactList}\small\item\em This is $\alpha_n$ rate function, the rate functions take the form of \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{_sparse_solver_testv1_8cs_a90e5369014f032bde39e79eacb048ede}{Vector}} \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_sparse_solver_testv1_af1b11e6a23d34b0434554340ffaab49b}{bn}} (\mbox{\hyperlink{_sparse_solver_testv1_8cs_a90e5369014f032bde39e79eacb048ede}{Vector}} V)
+\begin{DoxyCompactList}\small\item\em This is $\beta_n$ rate function, the rate functions take the form of \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{_sparse_solver_testv1_8cs_a90e5369014f032bde39e79eacb048ede}{Vector}} \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_sparse_solver_testv1_a6f02872d7b7003497bd585f54bd2af9f}{am}} (\mbox{\hyperlink{_sparse_solver_testv1_8cs_a90e5369014f032bde39e79eacb048ede}{Vector}} V)
+\begin{DoxyCompactList}\small\item\em This is $\alpha_m$ rate function, the rate functions take the form of \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{_sparse_solver_testv1_8cs_a90e5369014f032bde39e79eacb048ede}{Vector}} \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_sparse_solver_testv1_a8eef1df99496ae8142b66ce1e1f13634}{bm}} (\mbox{\hyperlink{_sparse_solver_testv1_8cs_a90e5369014f032bde39e79eacb048ede}{Vector}} V)
+\begin{DoxyCompactList}\small\item\em This is $\beta_m$ rate function, the rate functions take the form of \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{_sparse_solver_testv1_8cs_a90e5369014f032bde39e79eacb048ede}{Vector}} \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_sparse_solver_testv1_ab6f60a61413fe4c69225a3941d6c5ff4}{ah}} (\mbox{\hyperlink{_sparse_solver_testv1_8cs_a90e5369014f032bde39e79eacb048ede}{Vector}} V)
+\begin{DoxyCompactList}\small\item\em This is $\alpha_h$ rate function, the rate functions take the form of \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{_sparse_solver_testv1_8cs_a90e5369014f032bde39e79eacb048ede}{Vector}} \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_sparse_solver_testv1_a518c8a506e880385e76174bdd7264df5}{bh}} (\mbox{\hyperlink{_sparse_solver_testv1_8cs_a90e5369014f032bde39e79eacb048ede}{Vector}} V)
+\begin{DoxyCompactList}\small\item\em This is $\beta_h$ rate function, the rate functions take the form of \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_sparse_solver_testv1_a4459a92fa7a5562787018e60231c3425}{save\+Matrices}} = false
+\begin{DoxyCompactList}\small\item\em send LHS and RHS stencil matrices to output file for saving. This option is available if the user would like to check the sparsity pattern of the HINES matrix, this is a sparse matrix which corresponds to the sparsity nature of the stencil matrix. The stencil matrix is used for the diffusion solve of the PDE equation when we perform the operator splitting. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_sparse_solver_testv1_aeeae05f2d873e57bebf257aa91ac0f29}{res}} = 2500.\+0 $\ast$ 1.\+0E-\/2
+\item 
+double \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_sparse_solver_testv1_a1165385fda9531ac642f499d747c4cbc}{cap}} = 1.\+0 $\ast$ 1.\+0E-\/2
+\begin{DoxyCompactList}\small\item\em \mbox{[}F/m2\mbox{]} capacitance per unit area, this is the plasma membrane capacitance, this a standard value for the capacitance \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_sparse_solver_testv1_a66b25f7506fcbc47b7427fd0211de5a3}{gk}} = 5.\+0 $\ast$ 1.\+0\+E1
+\begin{DoxyCompactList}\small\item\em \mbox{[}S/m2\mbox{]} potassium conductance per unit area, this is the Potassium conductance per unit area, it is used in this term \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_sparse_solver_testv1_a2a7f0587cc4146b95de2f85b0758cd08}{gna}} = 50.\+0 $\ast$ 1.\+0\+E1
+\begin{DoxyCompactList}\small\item\em \mbox{[}S/m2\mbox{]} sodium conductance per unit area, this is the Sodium conductance per unit area, it is used in this term \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_sparse_solver_testv1_aef4ea9c2296e6510cebec9230c8d01b3}{gl}} = 0.\+0 $\ast$ 1.\+0\+E1
+\begin{DoxyCompactList}\small\item\em \mbox{[}S/m2\mbox{]} leak conductance per unit area, this is the leak conductance per unit area, it is used in this term \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_sparse_solver_testv1_abe393c0c52afdf78393bc820c8cf887a}{ek}} = -\/90.\+0 $\ast$ 1.\+0E-\/3
+\begin{DoxyCompactList}\small\item\em \mbox{[}V\mbox{]} potassium reversal potential \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_sparse_solver_testv1_ab8c6302fb1721f5e5ce825186a01e608}{ena}} = 50.\+0 $\ast$ 1.\+0E-\/3
+\begin{DoxyCompactList}\small\item\em \mbox{[}V\mbox{]} sodium reversal potential \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_sparse_solver_testv1_a71cf560fb3203c26aa1ba9e16d132f20}{el}} = -\/70.\+0 $\ast$ 1.\+0E-\/3
+\begin{DoxyCompactList}\small\item\em \mbox{[}V\mbox{]} leak reversal potential \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_sparse_solver_testv1_ae5689c724a4523f3238182ba146c7f88}{ni}} = 0.\+0376969
+\begin{DoxyCompactList}\small\item\em \mbox{[}\mbox{]} potassium channel state probability, unitless \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_sparse_solver_testv1_a88b41a1e59d0b16637be43cb79154286}{mi}} = 0.\+0147567
+\begin{DoxyCompactList}\small\item\em \mbox{[}\mbox{]} sodium channel state probability, unitless \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_sparse_solver_testv1_acda4c3e171f73cd1b9d44df1e77eebe8}{hi}} = 0.\+9959410
+\begin{DoxyCompactList}\small\item\em \mbox{[}\mbox{]} sodium channel state probability, unitless ~\newline
+ \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_sparse_solver_testv1_8cs_a90e5369014f032bde39e79eacb048ede}{Vector}} \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_sparse_solver_testv1_acfad53d0694b92ce6b1b6d76e2cc4316}{U}}
+\begin{DoxyCompactList}\small\item\em These are the solution vectors for the voltage \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_sparse_solver_testv1_8cs_a90e5369014f032bde39e79eacb048ede}{Vector}} \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_sparse_solver_testv1_acd34ffc0ef4b42dc059f8920a70609cb}{M}}
+\begin{DoxyCompactList}\small\item\em These are the solution vectors for the voltage \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_sparse_solver_testv1_8cs_a90e5369014f032bde39e79eacb048ede}{Vector}} \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_sparse_solver_testv1_a3bee3ff082c7363f8026b533c8f8e904}{N}}
+\begin{DoxyCompactList}\small\item\em These are the solution vectors for the voltage \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_sparse_solver_testv1_8cs_a90e5369014f032bde39e79eacb048ede}{Vector}} \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_sparse_solver_testv1_addf78ca166af48f0a18445d543f01bfb}{H}}
+\begin{DoxyCompactList}\small\item\em These are the solution vectors for the voltage \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_sparse_solver_testv1_a78ec2163e356e19b61d37e78a78d88b1}{i}} = -\/1
+\begin{DoxyCompactList}\small\item\em This keeps track of which simulation frame to send to the other scripts {\ttfamily i} gets track of the time step number \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+This is the sparse solver class for solving the Hodgkin-\/\+Huxley equations for the propagation of action potentials. Below are the HH equations this is a system of partial differential equations (PDE), the first equation is for the membrane potential (voltage) it is time spatially dependent and the remaining equations are the ODE equations for the state variables n,m,h (these are unitless). The system is non-\/trivial in that the PDE equation on Voltage is coupled to the ODE equations using n,m,h and these ODE equations are also non-\/linear. 
+
+\[\frac{a}{2R}\frac{\partial^2V}{\partial x^2}=C\frac{\partial V}{\partial t}+\bar{g}_{K}n^4(V-V_k)+\bar{g}_{Na}m^3h(V-V_{Na})+\bar{g}_l(V-V_l)\]
+
+\[\frac{dn}{dt}=\alpha_n(V)(1-n)-\beta_n(V)n\]
+
+\[\frac{dm}{dt}=\alpha_m(V)(1-m)-\beta_m(V)m\]
+
+\[\frac{dh}{dt}=\alpha_h(V)(1-h)-\beta_h(V)h\]
+
+The main solver begins with the function call {\ttfamily \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_sparse_solver_testv1_a5db6c67891c0239069409e693be74ed3}{Solve()}}} prior to each iteration of {\ttfamily \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_sparse_solver_testv1_a5db6c67891c0239069409e693be74ed3}{Solve()}}} the new voltage values {\ttfamily U} are sent to this class and then new {\ttfamily U} are sent out from {\ttfamily \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_sparse_solver_testv1_a5db6c67891c0239069409e693be74ed3}{Solve()}}}
+
+The solver currently uses Forward Euler time stepping and the spatial solve is done using Crank-\/\+Nicolson in 1D The solver takes into account the non-\/uniform radii of the geometry and the non-\/uniform edgelength of the geometry
+
+The first part of the code is labeled with \textquotesingle{}\mbox{\hyperlink{namespace_c2_m2_1_1_neuronal_dynamics_1_1_simulation}{Simulation}} Parameters\textquotesingle{} and \textquotesingle{}Biological Parameters\textquotesingle{} These parameters need to be made available to the user to modify for their particular simulation parameters The rate functions are defined at the end Note\+: Very important -\/-\/$>$ ALL UNITS FOR THE SOLVER ARE IN MKS, therefore when modifying the color bars ranges, and raycast/clamp hit values they need to be in \mbox{[}V\mbox{]} not \mbox{[}mV\mbox{]} so if you intend to use 50 \mbox{[}mV\mbox{]} it needs to be coded as 0.\+05 \mbox{[}V\mbox{]}
+
+The simulation parameters are defined first, initial voltage hit value for raycasting, the end\+Time, time step size (k) Also other options are defined here such as having the Soma\+On for clamping the soma on for voltage clamp tests (this is mostly used for verifying the voltage output against Yale Neuron). Another set of options that need to be incorporated is to select whether to output voltage data
+
+1) TODO\+: define default time step size
+
+2) TODO\+: get rid of end time user should signal off in vr, this will require changing the loop structure in the solver to a while loop()
+
+3) These are the biological parameters that can also be set by the user, right now they are set to private but we want the user to be able to modify these prior to the start of the simulation
+
+4) TODO\+: have the inputs for these parameters be shown inspector for easy changing -\/-\/$>$ as sliders
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_sparse_solver_testv1_ab6f60a61413fe4c69225a3941d6c5ff4}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_sparse_solver_testv1_ab6f60a61413fe4c69225a3941d6c5ff4}} 
+\index{C2M2.NeuronalDynamics.Simulation.SparseSolverTestv1@{C2M2.NeuronalDynamics.Simulation.SparseSolverTestv1}!ah@{ah}}
+\index{ah@{ah}!C2M2.NeuronalDynamics.Simulation.SparseSolverTestv1@{C2M2.NeuronalDynamics.Simulation.SparseSolverTestv1}}
+\doxysubsubsection{\texorpdfstring{ah()}{ah()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{_sparse_solver_testv1_8cs_a90e5369014f032bde39e79eacb048ede}{Vector}} C2\+M2.\+Neuronal\+Dynamics.\+Simulation.\+Sparse\+Solver\+Testv1.\+ah (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_sparse_solver_testv1_8cs_a90e5369014f032bde39e79eacb048ede}{Vector}}}]{V }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+This is $\alpha_h$ rate function, the rate functions take the form of 
+
+\[ \frac{a_p(V-B_p)}{\exp(\frac{V-B_p}{C_p})-D_p} \] the constants $a_p,B_p,C_p,D_p$ are manually coded in for this version of the simulation~\newline
+TODO\+: come up with an implementation where the user can enter in their own parameters (Yale Neuron has this capability)
+
+
+\begin{DoxyParams}{Parameters}
+{\em V} & \\
+\hline
+\end{DoxyParams}
+this is the input voltage \begin{DoxyReturn}{Returns}
+ah
+\end{DoxyReturn}
+this function returns the rate at the given voltage \mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_sparse_solver_testv1_a6f02872d7b7003497bd585f54bd2af9f}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_sparse_solver_testv1_a6f02872d7b7003497bd585f54bd2af9f}} 
+\index{C2M2.NeuronalDynamics.Simulation.SparseSolverTestv1@{C2M2.NeuronalDynamics.Simulation.SparseSolverTestv1}!am@{am}}
+\index{am@{am}!C2M2.NeuronalDynamics.Simulation.SparseSolverTestv1@{C2M2.NeuronalDynamics.Simulation.SparseSolverTestv1}}
+\doxysubsubsection{\texorpdfstring{am()}{am()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{_sparse_solver_testv1_8cs_a90e5369014f032bde39e79eacb048ede}{Vector}} C2\+M2.\+Neuronal\+Dynamics.\+Simulation.\+Sparse\+Solver\+Testv1.\+am (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_sparse_solver_testv1_8cs_a90e5369014f032bde39e79eacb048ede}{Vector}}}]{V }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+This is $\alpha_m$ rate function, the rate functions take the form of 
+
+\[ \frac{a_p(V-B_p)}{\exp(\frac{V-B_p}{C_p})-D_p} \] the constants $a_p,B_p,C_p,D_p$ are manually coded in for this version of the simulation~\newline
+TODO\+: come up with an implementation where the user can enter in their own parameters (Yale Neuron has this capability)
+
+
+\begin{DoxyParams}{Parameters}
+{\em V} & \\
+\hline
+\end{DoxyParams}
+this is the input voltage \begin{DoxyReturn}{Returns}
+am
+\end{DoxyReturn}
+this function returns the rate at the given voltage \mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_sparse_solver_testv1_a5cdb260289f487e351330a786504b462}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_sparse_solver_testv1_a5cdb260289f487e351330a786504b462}} 
+\index{C2M2.NeuronalDynamics.Simulation.SparseSolverTestv1@{C2M2.NeuronalDynamics.Simulation.SparseSolverTestv1}!an@{an}}
+\index{an@{an}!C2M2.NeuronalDynamics.Simulation.SparseSolverTestv1@{C2M2.NeuronalDynamics.Simulation.SparseSolverTestv1}}
+\doxysubsubsection{\texorpdfstring{an()}{an()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{_sparse_solver_testv1_8cs_a90e5369014f032bde39e79eacb048ede}{Vector}} C2\+M2.\+Neuronal\+Dynamics.\+Simulation.\+Sparse\+Solver\+Testv1.\+an (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_sparse_solver_testv1_8cs_a90e5369014f032bde39e79eacb048ede}{Vector}}}]{V }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+This is $\alpha_n$ rate function, the rate functions take the form of 
+
+\[ \frac{a_p(V-B_p)}{\exp(\frac{V-B_p}{C_p})-D_p} \] the constants $a_p,B_p,C_p,D_p$ are manually coded in for this version of the simulation~\newline
+TODO\+: come up with an implementation where the user can enter in their own parameters (Yale Neuron has this capability)
+
+
+\begin{DoxyParams}{Parameters}
+{\em V} & \\
+\hline
+\end{DoxyParams}
+this is the input voltage \begin{DoxyReturn}{Returns}
+an
+\end{DoxyReturn}
+this function returns the rate at the given voltage \mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_sparse_solver_testv1_a518c8a506e880385e76174bdd7264df5}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_sparse_solver_testv1_a518c8a506e880385e76174bdd7264df5}} 
+\index{C2M2.NeuronalDynamics.Simulation.SparseSolverTestv1@{C2M2.NeuronalDynamics.Simulation.SparseSolverTestv1}!bh@{bh}}
+\index{bh@{bh}!C2M2.NeuronalDynamics.Simulation.SparseSolverTestv1@{C2M2.NeuronalDynamics.Simulation.SparseSolverTestv1}}
+\doxysubsubsection{\texorpdfstring{bh()}{bh()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{_sparse_solver_testv1_8cs_a90e5369014f032bde39e79eacb048ede}{Vector}} C2\+M2.\+Neuronal\+Dynamics.\+Simulation.\+Sparse\+Solver\+Testv1.\+bh (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_sparse_solver_testv1_8cs_a90e5369014f032bde39e79eacb048ede}{Vector}}}]{V }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+This is $\beta_h$ rate function, the rate functions take the form of 
+
+\[ \frac{a_p(V-B_p)}{\exp(\frac{V-B_p}{C_p})-D_p} \] the constants $a_p,B_p,C_p,D_p$ are manually coded in for this version of the simulation~\newline
+TODO\+: come up with an implementation where the user can enter in their own parameters (Yale Neuron has this capability)
+
+
+\begin{DoxyParams}{Parameters}
+{\em V} & \\
+\hline
+\end{DoxyParams}
+this is the input voltage \begin{DoxyReturn}{Returns}
+bh
+\end{DoxyReturn}
+this function returns the rate at the given voltage \mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_sparse_solver_testv1_a8eef1df99496ae8142b66ce1e1f13634}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_sparse_solver_testv1_a8eef1df99496ae8142b66ce1e1f13634}} 
+\index{C2M2.NeuronalDynamics.Simulation.SparseSolverTestv1@{C2M2.NeuronalDynamics.Simulation.SparseSolverTestv1}!bm@{bm}}
+\index{bm@{bm}!C2M2.NeuronalDynamics.Simulation.SparseSolverTestv1@{C2M2.NeuronalDynamics.Simulation.SparseSolverTestv1}}
+\doxysubsubsection{\texorpdfstring{bm()}{bm()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{_sparse_solver_testv1_8cs_a90e5369014f032bde39e79eacb048ede}{Vector}} C2\+M2.\+Neuronal\+Dynamics.\+Simulation.\+Sparse\+Solver\+Testv1.\+bm (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_sparse_solver_testv1_8cs_a90e5369014f032bde39e79eacb048ede}{Vector}}}]{V }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+This is $\beta_m$ rate function, the rate functions take the form of 
+
+\[ \frac{a_p(V-B_p)}{\exp(\frac{V-B_p}{C_p})-D_p} \] the constants $a_p,B_p,C_p,D_p$ are manually coded in for this version of the simulation~\newline
+TODO\+: come up with an implementation where the user can enter in their own parameters (Yale Neuron has this capability)
+
+
+\begin{DoxyParams}{Parameters}
+{\em V} & \\
+\hline
+\end{DoxyParams}
+this is the input voltage \begin{DoxyReturn}{Returns}
+bm
+\end{DoxyReturn}
+this function returns the rate at the given voltage \mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_sparse_solver_testv1_af1b11e6a23d34b0434554340ffaab49b}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_sparse_solver_testv1_af1b11e6a23d34b0434554340ffaab49b}} 
+\index{C2M2.NeuronalDynamics.Simulation.SparseSolverTestv1@{C2M2.NeuronalDynamics.Simulation.SparseSolverTestv1}!bn@{bn}}
+\index{bn@{bn}!C2M2.NeuronalDynamics.Simulation.SparseSolverTestv1@{C2M2.NeuronalDynamics.Simulation.SparseSolverTestv1}}
+\doxysubsubsection{\texorpdfstring{bn()}{bn()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{_sparse_solver_testv1_8cs_a90e5369014f032bde39e79eacb048ede}{Vector}} C2\+M2.\+Neuronal\+Dynamics.\+Simulation.\+Sparse\+Solver\+Testv1.\+bn (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_sparse_solver_testv1_8cs_a90e5369014f032bde39e79eacb048ede}{Vector}}}]{V }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+This is $\beta_n$ rate function, the rate functions take the form of 
+
+\[ \frac{a_p(V-B_p)}{\exp(\frac{V-B_p}{C_p})-D_p} \] the constants $a_p,B_p,C_p,D_p$ are manually coded in for this version of the simulation~\newline
+TODO\+: come up with an implementation where the user can enter in their own parameters (Yale Neuron has this capability)
+
+
+\begin{DoxyParams}{Parameters}
+{\em V} & \\
+\hline
+\end{DoxyParams}
+this is the input voltage \begin{DoxyReturn}{Returns}
+bn
+\end{DoxyReturn}
+this function returns the rate at the given voltage \mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_sparse_solver_testv1_a9fe1e033ed85a7c241b2221e83cd7734}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_sparse_solver_testv1_a9fe1e033ed85a7c241b2221e83cd7734}} 
+\index{C2M2.NeuronalDynamics.Simulation.SparseSolverTestv1@{C2M2.NeuronalDynamics.Simulation.SparseSolverTestv1}!fH@{fH}}
+\index{fH@{fH}!C2M2.NeuronalDynamics.Simulation.SparseSolverTestv1@{C2M2.NeuronalDynamics.Simulation.SparseSolverTestv1}}
+\doxysubsubsection{\texorpdfstring{fH()}{fH()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{_sparse_solver_testv1_8cs_a90e5369014f032bde39e79eacb048ede}{Vector}} C2\+M2.\+Neuronal\+Dynamics.\+Simulation.\+Sparse\+Solver\+Testv1.\+fH (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_sparse_solver_testv1_8cs_a90e5369014f032bde39e79eacb048ede}{Vector}}}]{V,  }\item[{\mbox{\hyperlink{_sparse_solver_testv1_8cs_a90e5369014f032bde39e79eacb048ede}{Vector}}}]{H }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+This is the function for the right hand side of the ODE on state H, which is given by\+: 
+
+\[\frac{dh}{dt}=\alpha_h(V)(1-h)-\beta_h(V)h\]
+
+
+\begin{DoxyParams}{Parameters}
+{\em V} & \\
+\hline
+\end{DoxyParams}
+this is the current input voltage for the geometry 
+\begin{DoxyParams}{Parameters}
+{\em H} & \\
+\hline
+\end{DoxyParams}
+this is the current vector of state H for the geometry \begin{DoxyReturn}{Returns}
+f(\+V,\+H)
+\end{DoxyReturn}
+the function returns the right hand side of the state H ODE. \mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_sparse_solver_testv1_a6872c0fbe947805facdfc39505af59b9}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_sparse_solver_testv1_a6872c0fbe947805facdfc39505af59b9}} 
+\index{C2M2.NeuronalDynamics.Simulation.SparseSolverTestv1@{C2M2.NeuronalDynamics.Simulation.SparseSolverTestv1}!fM@{fM}}
+\index{fM@{fM}!C2M2.NeuronalDynamics.Simulation.SparseSolverTestv1@{C2M2.NeuronalDynamics.Simulation.SparseSolverTestv1}}
+\doxysubsubsection{\texorpdfstring{fM()}{fM()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{_sparse_solver_testv1_8cs_a90e5369014f032bde39e79eacb048ede}{Vector}} C2\+M2.\+Neuronal\+Dynamics.\+Simulation.\+Sparse\+Solver\+Testv1.\+fM (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_sparse_solver_testv1_8cs_a90e5369014f032bde39e79eacb048ede}{Vector}}}]{V,  }\item[{\mbox{\hyperlink{_sparse_solver_testv1_8cs_a90e5369014f032bde39e79eacb048ede}{Vector}}}]{M }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+This is the function for the right hand side of the ODE on state M, which is given by\+: 
+
+\[\frac{dm}{dt}=\alpha_m(V)(1-m)-\beta_m(V)m\]
+
+
+\begin{DoxyParams}{Parameters}
+{\em V} & \\
+\hline
+\end{DoxyParams}
+this is the current input voltage for the geometry 
+\begin{DoxyParams}{Parameters}
+{\em M} & \\
+\hline
+\end{DoxyParams}
+this is the current vector of state M for the geometry \begin{DoxyReturn}{Returns}
+f(\+V,\+M)
+\end{DoxyReturn}
+the function returns the right hand side of the state M ODE. \mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_sparse_solver_testv1_ac18e40b00e2665af205ddff3523447f0}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_sparse_solver_testv1_ac18e40b00e2665af205ddff3523447f0}} 
+\index{C2M2.NeuronalDynamics.Simulation.SparseSolverTestv1@{C2M2.NeuronalDynamics.Simulation.SparseSolverTestv1}!fN@{fN}}
+\index{fN@{fN}!C2M2.NeuronalDynamics.Simulation.SparseSolverTestv1@{C2M2.NeuronalDynamics.Simulation.SparseSolverTestv1}}
+\doxysubsubsection{\texorpdfstring{fN()}{fN()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{_sparse_solver_testv1_8cs_a90e5369014f032bde39e79eacb048ede}{Vector}} C2\+M2.\+Neuronal\+Dynamics.\+Simulation.\+Sparse\+Solver\+Testv1.\+fN (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_sparse_solver_testv1_8cs_a90e5369014f032bde39e79eacb048ede}{Vector}}}]{V,  }\item[{\mbox{\hyperlink{_sparse_solver_testv1_8cs_a90e5369014f032bde39e79eacb048ede}{Vector}}}]{N }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+This is the function for the right hand side of the ODE on state N, which is given by\+: 
+
+\[\frac{dn}{dt}=\alpha_n(V)(1-n)-\beta_n(V)n\]
+
+
+\begin{DoxyParams}{Parameters}
+{\em V} & \\
+\hline
+\end{DoxyParams}
+this is the current input voltage for the geometry 
+\begin{DoxyParams}{Parameters}
+{\em N} & \\
+\hline
+\end{DoxyParams}
+this is the current vector of state N for the geometry \begin{DoxyReturn}{Returns}
+f(\+V,\+N)
+\end{DoxyReturn}
+the function returns the right hand side of the state N ODE. \mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_sparse_solver_testv1_af8fa02f8261090f67c386564d2912c14}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_sparse_solver_testv1_af8fa02f8261090f67c386564d2912c14}} 
+\index{C2M2.NeuronalDynamics.Simulation.SparseSolverTestv1@{C2M2.NeuronalDynamics.Simulation.SparseSolverTestv1}!Get1DValues@{Get1DValues}}
+\index{Get1DValues@{Get1DValues}!C2M2.NeuronalDynamics.Simulation.SparseSolverTestv1@{C2M2.NeuronalDynamics.Simulation.SparseSolverTestv1}}
+\doxysubsubsection{\texorpdfstring{Get1DValues()}{Get1DValues()}}
+{\footnotesize\ttfamily override double \mbox{[}$\,$\mbox{]} C2\+M2.\+Neuronal\+Dynamics.\+Simulation.\+Sparse\+Solver\+Testv1.\+Get1\+DValues (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Send simulation 1D values, this send the current voltage after the solve runs 1 iteration it passes {\ttfamily cur\+Vals} 
+
+\begin{DoxyReturn}{Returns}
+cur\+Vals
+\end{DoxyReturn}
+this initialize the curvals which will be sent back to the VR simulation
+
+check if this beginning of the simulation
+
+define the current time slice to send and initialize it to the correct size which is the number of vertices in the geometry initialize it to the current state of the voltage, this is the voltage we are sending back to vr simulation
+
+convert the time slice to an Array
+
+Implements \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation_aefdd7ea612fa748e52befd89da5b2504}{C2\+M2.\+Neuronal\+Dynamics.\+Simulation.\+NDSimulation}}.
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_sparse_solver_testv1_ad04d347e86b0fc505d915a78e32605ce}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_sparse_solver_testv1_ad04d347e86b0fc505d915a78e32605ce}} 
+\index{C2M2.NeuronalDynamics.Simulation.SparseSolverTestv1@{C2M2.NeuronalDynamics.Simulation.SparseSolverTestv1}!GetSimulationTime@{GetSimulationTime}}
+\index{GetSimulationTime@{GetSimulationTime}!C2M2.NeuronalDynamics.Simulation.SparseSolverTestv1@{C2M2.NeuronalDynamics.Simulation.SparseSolverTestv1}}
+\doxysubsubsection{\texorpdfstring{GetSimulationTime()}{GetSimulationTime()}}
+{\footnotesize\ttfamily override float C2\+M2.\+Neuronal\+Dynamics.\+Simulation.\+Sparse\+Solver\+Testv1.\+Get\+Simulation\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+This sends the current time to the simulation timer Carefully notice that it has to be multiplied by 1000, this is because the solver is in MKS and the simulation timer object uses \mbox{[}ms\mbox{]}! 
+
+\begin{DoxyReturn}{Returns}
+i$\ast$(float)1000$\ast$(float) k
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_sparse_solver_testv1_a1ad41540e1ed5e79c346b6ffee11a938}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_sparse_solver_testv1_a1ad41540e1ed5e79c346b6ffee11a938}} 
+\index{C2M2.NeuronalDynamics.Simulation.SparseSolverTestv1@{C2M2.NeuronalDynamics.Simulation.SparseSolverTestv1}!InitializeNeuronCell@{InitializeNeuronCell}}
+\index{InitializeNeuronCell@{InitializeNeuronCell}!C2M2.NeuronalDynamics.Simulation.SparseSolverTestv1@{C2M2.NeuronalDynamics.Simulation.SparseSolverTestv1}}
+\doxysubsubsection{\texorpdfstring{InitializeNeuronCell()}{InitializeNeuronCell()}}
+{\footnotesize\ttfamily void C2\+M2.\+Neuronal\+Dynamics.\+Simulation.\+Sparse\+Solver\+Testv1.\+Initialize\+Neuron\+Cell (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+This function initializes the voltage vector {\ttfamily U} and the state vectors {\ttfamily M}, {\ttfamily N}, and {\ttfamily H} ~\newline
+The input {\ttfamily Neuron\+Cell.\+vert\+Count} is the vertex count of the neuron geometry ~\newline
+{\ttfamily U} is initialized to 0 \mbox{[}V\mbox{]} for the entire cell ~\newline
+{\ttfamily M} is initialized to $m_i$ which is set by {\ttfamily mi} ~\newline
+{\ttfamily N} is initialized to $n_i$ which is set by {\ttfamily ni} ~\newline
+{\ttfamily H} is initialized to $h_i$ which is set by {\ttfamily hi} 
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_sparse_solver_testv1_ae3338ea454a4f5b681daaf668c5bba99}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_sparse_solver_testv1_ae3338ea454a4f5b681daaf668c5bba99}} 
+\index{C2M2.NeuronalDynamics.Simulation.SparseSolverTestv1@{C2M2.NeuronalDynamics.Simulation.SparseSolverTestv1}!makeSparseStencils@{makeSparseStencils}}
+\index{makeSparseStencils@{makeSparseStencils}!C2M2.NeuronalDynamics.Simulation.SparseSolverTestv1@{C2M2.NeuronalDynamics.Simulation.SparseSolverTestv1}}
+\doxysubsubsection{\texorpdfstring{makeSparseStencils()}{makeSparseStencils()}}
+{\footnotesize\ttfamily static List$<$Coordinate\+Storage$<$double$>$ $>$ C2\+M2.\+Neuronal\+Dynamics.\+Simulation.\+Sparse\+Solver\+Testv1.\+make\+Sparse\+Stencils (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_cell}{Neuron\+Cell}}}]{my\+Cell,  }\item[{double}]{res,  }\item[{double}]{cap,  }\item[{double}]{k }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+This is for constructing the lhs and rhs of system matrix ~\newline
+This will construct a HINES matrix (symmetric), it should be tridiagonal with some off diagonal entries corresponding to a branch location in the neuron graph ~\newline
+The entries are defined by the following\+: 
+
+\[ \left(-\sum_{k\in\mathcal{N}_j}\eta_kV_k^{n+1}\right)+\omega_jV_j^{n+1}=\left(\sum_{k\in\mathcal{N}_j}\eta_kV_k^{n}\right)+\bar{\omega}_jV_j^{n} \] where \[\eta_k = \frac{\gamma_{k, j}\Delta t}{ 2}\] and \[\omega_j = 1+\frac{\theta_j\Delta t}{ 2} = 1 +\frac{\Delta t\sum_{ p\in\mathcal{ N} _j}\gamma_{ p,j} }{ 2}\] and $\gamma_{ k,j}$ is defined as \[\gamma_{k, j}:=\frac{ 1}{ C_mR_a a_j\widetilde{\Delta x_j} }\cdot \frac{ 1}{\left(\frac{ 1} { a_{ k} ^2} +\frac{ 1} { a_j ^ 2}\right)\Delta x_{ { k},j} }\]
+
+
+\begin{DoxyParams}{Parameters}
+{\em my\+Cell} & \\
+\hline
+\end{DoxyParams}
+this is the {\ttfamily Neuron\+Cell} that contains all the information about the cell geometry 
+\begin{DoxyParams}{Parameters}
+{\em res} & \\
+\hline
+\end{DoxyParams}
+this is the axial resistance 
+\begin{DoxyParams}{Parameters}
+{\em cap} & \\
+\hline
+\end{DoxyParams}
+this is the membrane capacitance 
+\begin{DoxyParams}{Parameters}
+{\em k} & \\
+\hline
+\end{DoxyParams}
+this is the fixed time step size \begin{DoxyReturn}{Returns}
+LHS,RHS
+\end{DoxyReturn}
+the function returns the LHS, RHS stencil matrices for the diffusion solve in sparse format, it is compressed in the main solver routine. send output matrices as a list \{rhs, lhs\}~\newline
+{\ttfamily List$<$Coordinate\+Storage$<$double$>$$>$ stencils = new List$<$Coordinate\+Storage$<$double$>$$>$();} initializes empty list storage for the stencil matrices ~\newline
+in this case they are of type {\ttfamily Coordinate\+Storage} ~\newline
+
+
+initialize new coordinate storage ~\newline
+{\ttfamily var rhs = new Coordinate\+Storage$<$double$>$(my\+Cell.\+vert\+Count, my\+Cell.\+vert\+Count, my\+Cell.\+vert\+Count $\ast$ my\+Cell.\+vert\+Count);} this initializes our empty coordinate storage matrices {\ttfamily rhs} and {\ttfamily lhs}
+
+for keeping track of the neighbors of a node ~\newline
+{\ttfamily List$<$int$>$ nghbrlist;} this is for collecting the neighbor indices of the current node ~\newline
+
+
+make an empty list to collect edgelengths ~\newline
+{\ttfamily List$<$double$>$ edgelengths = new List$<$double$>$();} initialize empty list for collecting edgelengths
+
+{\ttfamily double sum\+Recip = 0;} this is for adding the sum of reciprocals which is in our stencil scheme ~\newline
+
+
+1e-\/6 scale factor to convert to micrometers for radii and edge length ~\newline
+
+
+{\ttfamily nghbrlist = my\+Cell.\+node\+Data\mbox{[}j\mbox{]}.neighbor\+IDs;} this gets the current neighbor list for node j ~\newline
+
+
+{\ttfamily nghbr\+Len = nghbrlist.\+Count();} this is the length of the neighbor list ~\newline
+
+
+{\ttfamily temp\+Radius = my\+Cell.\+node\+Data\mbox{[}j\mbox{]}.node\+Radius$\ast$scf;} get the current radius at node j ~\newline
+
+
+in this loop we collect the edgelengths that go to node j, and we compute the coefficient given in our paper ~\newline
+
+
+{\ttfamily temp\+Edge\+Len = my\+Cell.\+Get\+Edge\+Length(j, nghbrlist\mbox{[}p\mbox{]})$\ast$scf;} get the edge length at current node j, to node neighbor p, scale to micro meters ~\newline
+
+
+{\ttfamily edgelengths.\+Add(temp\+Edge\+Len);} put the edge length in the list, this list of edges will have length equal to length of neighbor list ~\newline
+
+
+get the average edge lengths of neighbors ~\newline
+{\ttfamily foreach \{... ave\+Edge\+Lengths = ave\+Edge\+Lengths + val;\} ave\+Edge\+Lengths = ave\+Edge\+Lengths / edgelengths.\+Count;}
+
+set main diagonal entries using {\ttfamily rhs.\+At()}
+
+set off diagonal entries by going through the neighbor list, and using {\ttfamily rhs.\+At()}
+
+{\ttfamily stencil.\+Add()} this adds the completed stencil matrices to the output list\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_sparse_solver_testv1_a71f84ce0834c7f05b0bcae9b31afc39f}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_sparse_solver_testv1_a71f84ce0834c7f05b0bcae9b31afc39f}} 
+\index{C2M2.NeuronalDynamics.Simulation.SparseSolverTestv1@{C2M2.NeuronalDynamics.Simulation.SparseSolverTestv1}!PreSolve@{PreSolve}}
+\index{PreSolve@{PreSolve}!C2M2.NeuronalDynamics.Simulation.SparseSolverTestv1@{C2M2.NeuronalDynamics.Simulation.SparseSolverTestv1}}
+\doxysubsubsection{\texorpdfstring{PreSolve()}{PreSolve()}}
+{\footnotesize\ttfamily override void C2\+M2.\+Neuronal\+Dynamics.\+Simulation.\+Sparse\+Solver\+Testv1.\+Pre\+Solve (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+This is a small routine call to initialize the Neuron Cell this will initialize the solution vectors which are {\ttfamily U}, {\ttfamily M}, {\ttfamily N}, and {\ttfamily H} 
+
+
+
+Reimplemented from \mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_simulation_a136e0cdc6fdf83cb91747fe09dbd1b4d}{C2\+M2.\+Simulation.\+Simulation$<$ double\mbox{[}$\,$\mbox{]}, Mesh, VRRaycastable\+Mesh, VRGrabbable\+Mesh $>$}}.
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_sparse_solver_testv1_a4128d10ab51bdd1ac210c4819b2a39d7}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_sparse_solver_testv1_a4128d10ab51bdd1ac210c4819b2a39d7}} 
+\index{C2M2.NeuronalDynamics.Simulation.SparseSolverTestv1@{C2M2.NeuronalDynamics.Simulation.SparseSolverTestv1}!reactF@{reactF}}
+\index{reactF@{reactF}!C2M2.NeuronalDynamics.Simulation.SparseSolverTestv1@{C2M2.NeuronalDynamics.Simulation.SparseSolverTestv1}}
+\doxysubsubsection{\texorpdfstring{reactF()}{reactF()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{_sparse_solver_testv1_8cs_a90e5369014f032bde39e79eacb048ede}{Vector}} C2\+M2.\+Neuronal\+Dynamics.\+Simulation.\+Sparse\+Solver\+Testv1.\+reactF (\begin{DoxyParamCaption}\item[{List$<$ double $>$}]{react\+Const,  }\item[{\mbox{\hyperlink{_sparse_solver_testv1_8cs_a90e5369014f032bde39e79eacb048ede}{Vector}}}]{V,  }\item[{\mbox{\hyperlink{_sparse_solver_testv1_8cs_a90e5369014f032bde39e79eacb048ede}{Vector}}}]{NN,  }\item[{\mbox{\hyperlink{_sparse_solver_testv1_8cs_a90e5369014f032bde39e79eacb048ede}{Vector}}}]{MM,  }\item[{\mbox{\hyperlink{_sparse_solver_testv1_8cs_a90e5369014f032bde39e79eacb048ede}{Vector}}}]{HH,  }\item[{double}]{cap }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+This is the reaction term of the HH equation which is defined by 
+
+\[ r(V):=-\frac{\bar{g}_{K}}{C}n^4(V-V_k)-\frac{\bar{g}_{Na}}{C}m^3h(V-V_{Na})-\frac{\bar{g}_l}{C}(V-V_l) \]
+
+
+\begin{DoxyParams}{Parameters}
+{\em react\+Const} & \\
+\hline
+\end{DoxyParams}
+these are the conductances and reversal potentials defined by {\ttfamily List$<$double$>$ react\+Const = new List$<$double$>$ \{ gk, gna, gl, ek, ena, el \};} 
+\begin{DoxyParams}{Parameters}
+{\em V} & \\
+\hline
+\end{DoxyParams}
+this is the voltage vector 
+\begin{DoxyParams}{Parameters}
+{\em NN} & \\
+\hline
+\end{DoxyParams}
+this is the state vector n 
+\begin{DoxyParams}{Parameters}
+{\em MM} & \\
+\hline
+\end{DoxyParams}
+this is the state vector m 
+\begin{DoxyParams}{Parameters}
+{\em HH} & \\
+\hline
+\end{DoxyParams}
+this is the state vector h 
+\begin{DoxyParams}{Parameters}
+{\em cap} & \\
+\hline
+\end{DoxyParams}
+this is the capacitance \begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+initialize the output vector and prod vector these will be used to assemble the different parts of the reaction calculation ~\newline
+{\ttfamily Vector output = Vector.\+Build.\+Dense(V.\+Count, 0.\+0);} initializes the output vector of length equation to number of entries in voltage vector, initialized to 0 ~\newline
+{\ttfamily Vector prod = Vector.\+Build.\+Dense(V.\+Count, 0.\+0);} initializes the product vector of length equation to number of entries in voltage vector, initialized to 0 ~\newline
+{\ttfamily double ek, ena, el, gk, gna, gl; } these are the conductances and reversal potentials that we need to assign using {\ttfamily react\+Const} parameter that is sent ~\newline
+
+
+this sets the constants for the conductances ~\newline
+{\ttfamily gk = react\+Const\mbox{[}0\mbox{]}; gna = react\+Const\mbox{[}1\mbox{]}; gl = react\+Const\mbox{[}2\mbox{]};}
+
+this sets constants for reversal potentials ~\newline
+{\ttfamily ek = react\+Const\mbox{[}3\mbox{]}; ena = react\+Const\mbox{[}4\mbox{]}; el = react\+Const\mbox{[}5\mbox{]};}
+
+{\ttfamily output.\+Add(prod.\+Multiply(gk), output);} this adds current due to potassium
+
+{\ttfamily output.\+Add(prod.\+Multiply(gna), output);} this adds current due to sodium
+
+{\ttfamily output.\+Add((V.\+Subtract(el)).Multiply(gl), output);} this adds leak current
+
+Return the negative of the total\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_sparse_solver_testv1_a4be7d00f18c954fb62ccac509abbdc8f}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_sparse_solver_testv1_a4be7d00f18c954fb62ccac509abbdc8f}} 
+\index{C2M2.NeuronalDynamics.Simulation.SparseSolverTestv1@{C2M2.NeuronalDynamics.Simulation.SparseSolverTestv1}!Set1DValues@{Set1DValues}}
+\index{Set1DValues@{Set1DValues}!C2M2.NeuronalDynamics.Simulation.SparseSolverTestv1@{C2M2.NeuronalDynamics.Simulation.SparseSolverTestv1}}
+\doxysubsubsection{\texorpdfstring{Set1DValues()}{Set1DValues()}}
+{\footnotesize\ttfamily override void C2\+M2.\+Neuronal\+Dynamics.\+Simulation.\+Sparse\+Solver\+Testv1.\+Set1\+DValues (\begin{DoxyParamCaption}\item[{Tuple$<$ int, double $>$\mbox{[}$\,$\mbox{]}}]{new\+Values }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Receive new simulation 1D index/value pairings Carefully, notice that {\ttfamily val} needs to be multiplied by 0.\+001 this is because the hit value is in \mbox{[}mV\mbox{]} and the solver uses \mbox{[}V\mbox{]} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+Values} & \\
+\hline
+\end{DoxyParams}
+here we set the voltage at the location, notice that we multiply by 0.\+0001 to convert to volts \mbox{[}V\mbox{]}
+
+Implements \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation_a7aa4b8f83f1f38882f4ae73b16cc8ad3}{C2\+M2.\+Neuronal\+Dynamics.\+Simulation.\+NDSimulation}}.
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_sparse_solver_testv1_a5db6c67891c0239069409e693be74ed3}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_sparse_solver_testv1_a5db6c67891c0239069409e693be74ed3}} 
+\index{C2M2.NeuronalDynamics.Simulation.SparseSolverTestv1@{C2M2.NeuronalDynamics.Simulation.SparseSolverTestv1}!Solve@{Solve}}
+\index{Solve@{Solve}!C2M2.NeuronalDynamics.Simulation.SparseSolverTestv1@{C2M2.NeuronalDynamics.Simulation.SparseSolverTestv1}}
+\doxysubsubsection{\texorpdfstring{Solve()}{Solve()}}
+{\footnotesize\ttfamily override void C2\+M2.\+Neuronal\+Dynamics.\+Simulation.\+Sparse\+Solver\+Testv1.\+Solve (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+This is the main solver, it is running on it own thread. Inside this solver it 
+
+
+\begin{DoxyEnumerate}
+\item initialize the stencil matrix (only once) for the diffusion solve of the operator splitting
+\item there is a for-\/loop which is controled by {\ttfamily i}
+\item Inside the for-\/loop we do the diffusion solve first, then reaction solve, and then updated the state ODEs We make the following definitions\+: ~\newline
+ \[A(V):=\frac{a}{2RC}\frac{\partial ^ 2V}{\partial x^2}\] ~\newline
+ \[r(V):= -\frac{\bar{ g} _{ K} }{ C}n ^ 4(V - V_k) -\frac{\bar{ g} _{ Na} }{ C}m ^ 3h(V - V_{ Na})-\frac{\bar{ g} _l}{ C} (V - V_l)\] ~\newline
+ then we solve in two separate steps ~\newline
+ \[\frac{dV}{dt}=A(V)+r(V),\] ~\newline
+ where $A(V)$ is the second order differential operator on $V$ and $r(V)$ is the reaction part. We employ a Lie Splitting by first solving ~\newline
+ \[\frac{ dV ^ *}{ dt}= A(V ^ *)\] ~\newline
+ with initial conditions $V_0^*=V(t_n)= V_n$ at the beginning of the time step to get the intermediate solution $V^*$ Then we solve $\frac{dV^{**}}{dt}=r(V^{**})$ with initial condition $V_0^{**}=V^*$ to get $V^{**}$, and $V_{n+1}=V(t_{n+1})=V^{**}$ the voltage at the end of the time step. For equation the diffusion we use a Crank-\/\+Nicolson scheme
+\end{DoxyEnumerate}{\ttfamily int nT} is the Number of time steps
+
+{\ttfamily R} this is the reaction vector for the reaction solve
+
+{\ttfamily react\+Const} this is a small list for collecting the conductances and reversal potential which is sent to the reaction solve routine
+
+{\ttfamily List$<$Coordinate\+Storage$<$double$>$$>$ sparse\+\_\+stencils = make\+Sparse\+Stencils(\+Neuron\+Cell, res, cap, k);} Construct sparse RHS and LHS in coordinate storage format, no zeros are stored ~\newline
+ {\ttfamily sparse\+\_\+stencils} this is a list which contains only two matrices the LHS and RHS matrices for the Crank-\/\+Nicolson solve
+
+{\ttfamily Compressed\+Column\+Storage} call Compresses the sparse matrices which are stored in {\ttfamily sparse\+\_\+stencils\mbox{[}0\mbox{]}} and {\ttfamily sparse\+\_\+stencils\mbox{[}1\mbox{]}}
+
+{\ttfamily double \mbox{[}\mbox{]} b} we define storage for the diffusion solve part
+
+{\ttfamily var lu = Sparse\+LU.\+Create(l\+\_\+csc, Column\+Ordering.\+Minimum\+Degree\+AtA, 0.\+1);} this creates the LU decomposition of the HINES matrix which is defined by {\ttfamily l\+\_\+csc}
+
+{\ttfamily if ((i $\ast$ k $>$= 0.\+015) \&\& Soma\+On) \{ U\mbox{[}0\mbox{]} = vstart; \}} this checks of the somaclamp is on and sets the soma location to {\ttfamily vstart}
+
+This part does the diffusion solve ~\newline
+ {\ttfamily r\+\_\+csc.\+Multiply(U.\+To\+Array(), b);} the performs the RHS$\ast$\+Ucurr and stores it in {\ttfamily b} ~\newline
+ {\ttfamily lu.\+Solve(b, b);} this does the forward/backward substitution of the LU solve and sovles LHS = b ~\newline
+ {\ttfamily U.\+Set\+Sub\+Vector(0, Neuron\+Cell.\+vert\+Count, Vector.\+Build.\+Dense\+Of\+Array(b));} this sets the U vector to the voltage at the end of the diffusion solve
+
+this part solves the reaction portion of the operator splitting ~\newline
+{\ttfamily R.\+Set\+Sub\+Vector(0, Neuron\+Cell.\+vert\+Count, react\+F(react\+Const, U, N, M, H, cap));} this first evaluates at the reaction function $r(V)$ ~\newline
+{\ttfamily R.\+Multiply(k, R); } this multiplies by the time step size ~\newline
+{\ttfamily U.\+add(\+R,\+U)} adds it back to U to finish off the operator splitting For the reaction solve we are solving \[\frac{U_{next}-U_{curr}}{k} = R(U_{curr})\]
+
+this part solve the state variables using Forward Euler the general rule is $N_{next} = N_{curr}+k\cdot f_N(U_{curr},N_{curr})$
+
+{\ttfamily if ((i $\ast$ k $>$= 0.\+015) \&\& Soma\+On) \{ U\mbox{[}0\mbox{]} = vstart; \}} this checks of the somaclamp is on and sets the soma location to {\ttfamily vstart}
+
+{\ttfamily U\mbox{[}clamp.\+focus\+Vert\mbox{]} = (1E-\/03)$\ast$clamp.clamp\+Power;} notice we multiply by 1e-\/3 since the hit value is in \mbox{[}mV\mbox{]} we need to convert to \mbox{[}V\mbox{]}, volts.
+
+Implements \mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_simulation_adc5e6e0adf67ae72e144c1424fd93625}{C2\+M2.\+Simulation.\+Simulation$<$ double\mbox{[}$\,$\mbox{]}, Mesh, VRRaycastable\+Mesh, VRGrabbable\+Mesh $>$}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_sparse_solver_testv1_a1165385fda9531ac642f499d747c4cbc}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_sparse_solver_testv1_a1165385fda9531ac642f499d747c4cbc}} 
+\index{C2M2.NeuronalDynamics.Simulation.SparseSolverTestv1@{C2M2.NeuronalDynamics.Simulation.SparseSolverTestv1}!cap@{cap}}
+\index{cap@{cap}!C2M2.NeuronalDynamics.Simulation.SparseSolverTestv1@{C2M2.NeuronalDynamics.Simulation.SparseSolverTestv1}}
+\doxysubsubsection{\texorpdfstring{cap}{cap}}
+{\footnotesize\ttfamily double C2\+M2.\+Neuronal\+Dynamics.\+Simulation.\+Sparse\+Solver\+Testv1.\+cap = 1.\+0 $\ast$ 1.\+0E-\/2\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\mbox{[}F/m2\mbox{]} capacitance per unit area, this is the plasma membrane capacitance, this a standard value for the capacitance 
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_sparse_solver_testv1_abe393c0c52afdf78393bc820c8cf887a}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_sparse_solver_testv1_abe393c0c52afdf78393bc820c8cf887a}} 
+\index{C2M2.NeuronalDynamics.Simulation.SparseSolverTestv1@{C2M2.NeuronalDynamics.Simulation.SparseSolverTestv1}!ek@{ek}}
+\index{ek@{ek}!C2M2.NeuronalDynamics.Simulation.SparseSolverTestv1@{C2M2.NeuronalDynamics.Simulation.SparseSolverTestv1}}
+\doxysubsubsection{\texorpdfstring{ek}{ek}}
+{\footnotesize\ttfamily double C2\+M2.\+Neuronal\+Dynamics.\+Simulation.\+Sparse\+Solver\+Testv1.\+ek = -\/90.\+0 $\ast$ 1.\+0E-\/3\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\mbox{[}V\mbox{]} potassium reversal potential 
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_sparse_solver_testv1_a71cf560fb3203c26aa1ba9e16d132f20}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_sparse_solver_testv1_a71cf560fb3203c26aa1ba9e16d132f20}} 
+\index{C2M2.NeuronalDynamics.Simulation.SparseSolverTestv1@{C2M2.NeuronalDynamics.Simulation.SparseSolverTestv1}!el@{el}}
+\index{el@{el}!C2M2.NeuronalDynamics.Simulation.SparseSolverTestv1@{C2M2.NeuronalDynamics.Simulation.SparseSolverTestv1}}
+\doxysubsubsection{\texorpdfstring{el}{el}}
+{\footnotesize\ttfamily double C2\+M2.\+Neuronal\+Dynamics.\+Simulation.\+Sparse\+Solver\+Testv1.\+el = -\/70.\+0 $\ast$ 1.\+0E-\/3\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\mbox{[}V\mbox{]} leak reversal potential 
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_sparse_solver_testv1_ab8c6302fb1721f5e5ce825186a01e608}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_sparse_solver_testv1_ab8c6302fb1721f5e5ce825186a01e608}} 
+\index{C2M2.NeuronalDynamics.Simulation.SparseSolverTestv1@{C2M2.NeuronalDynamics.Simulation.SparseSolverTestv1}!ena@{ena}}
+\index{ena@{ena}!C2M2.NeuronalDynamics.Simulation.SparseSolverTestv1@{C2M2.NeuronalDynamics.Simulation.SparseSolverTestv1}}
+\doxysubsubsection{\texorpdfstring{ena}{ena}}
+{\footnotesize\ttfamily double C2\+M2.\+Neuronal\+Dynamics.\+Simulation.\+Sparse\+Solver\+Testv1.\+ena = 50.\+0 $\ast$ 1.\+0E-\/3\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\mbox{[}V\mbox{]} sodium reversal potential 
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_sparse_solver_testv1_a5acda23d8923110217b3c29812b437ed}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_sparse_solver_testv1_a5acda23d8923110217b3c29812b437ed}} 
+\index{C2M2.NeuronalDynamics.Simulation.SparseSolverTestv1@{C2M2.NeuronalDynamics.Simulation.SparseSolverTestv1}!endTime@{endTime}}
+\index{endTime@{endTime}!C2M2.NeuronalDynamics.Simulation.SparseSolverTestv1@{C2M2.NeuronalDynamics.Simulation.SparseSolverTestv1}}
+\doxysubsubsection{\texorpdfstring{endTime}{endTime}}
+{\footnotesize\ttfamily double C2\+M2.\+Neuronal\+Dynamics.\+Simulation.\+Sparse\+Solver\+Testv1.\+end\+Time = 0.\+1}
+
+
+
+\mbox{[}s\mbox{]} end\+Time of the simulation. This is the endtime of the simulation which is measured in seconds, this is a parameter that the user can set for now 
+
+TODO\+: we would like the simulation to run without an endtime and the use clicks an \textquotesingle{}end button\textquotesingle{} to terminate the vr-\/simulation\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_sparse_solver_testv1_a66b25f7506fcbc47b7427fd0211de5a3}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_sparse_solver_testv1_a66b25f7506fcbc47b7427fd0211de5a3}} 
+\index{C2M2.NeuronalDynamics.Simulation.SparseSolverTestv1@{C2M2.NeuronalDynamics.Simulation.SparseSolverTestv1}!gk@{gk}}
+\index{gk@{gk}!C2M2.NeuronalDynamics.Simulation.SparseSolverTestv1@{C2M2.NeuronalDynamics.Simulation.SparseSolverTestv1}}
+\doxysubsubsection{\texorpdfstring{gk}{gk}}
+{\footnotesize\ttfamily double C2\+M2.\+Neuronal\+Dynamics.\+Simulation.\+Sparse\+Solver\+Testv1.\+gk = 5.\+0 $\ast$ 1.\+0\+E1\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\mbox{[}S/m2\mbox{]} potassium conductance per unit area, this is the Potassium conductance per unit area, it is used in this term 
+
+\[\bar{g}_{K}n^4(V-V_k)\] where $n$ is the state variable, and $V_k$ is the reversal potential.\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_sparse_solver_testv1_aef4ea9c2296e6510cebec9230c8d01b3}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_sparse_solver_testv1_aef4ea9c2296e6510cebec9230c8d01b3}} 
+\index{C2M2.NeuronalDynamics.Simulation.SparseSolverTestv1@{C2M2.NeuronalDynamics.Simulation.SparseSolverTestv1}!gl@{gl}}
+\index{gl@{gl}!C2M2.NeuronalDynamics.Simulation.SparseSolverTestv1@{C2M2.NeuronalDynamics.Simulation.SparseSolverTestv1}}
+\doxysubsubsection{\texorpdfstring{gl}{gl}}
+{\footnotesize\ttfamily double C2\+M2.\+Neuronal\+Dynamics.\+Simulation.\+Sparse\+Solver\+Testv1.\+gl = 0.\+0 $\ast$ 1.\+0\+E1\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\mbox{[}S/m2\mbox{]} leak conductance per unit area, this is the leak conductance per unit area, it is used in this term 
+
+\[\bar{g}_{l}(V-V_l)\] $V_l$ is the leak reversal potential.\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_sparse_solver_testv1_a2a7f0587cc4146b95de2f85b0758cd08}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_sparse_solver_testv1_a2a7f0587cc4146b95de2f85b0758cd08}} 
+\index{C2M2.NeuronalDynamics.Simulation.SparseSolverTestv1@{C2M2.NeuronalDynamics.Simulation.SparseSolverTestv1}!gna@{gna}}
+\index{gna@{gna}!C2M2.NeuronalDynamics.Simulation.SparseSolverTestv1@{C2M2.NeuronalDynamics.Simulation.SparseSolverTestv1}}
+\doxysubsubsection{\texorpdfstring{gna}{gna}}
+{\footnotesize\ttfamily double C2\+M2.\+Neuronal\+Dynamics.\+Simulation.\+Sparse\+Solver\+Testv1.\+gna = 50.\+0 $\ast$ 1.\+0\+E1\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\mbox{[}S/m2\mbox{]} sodium conductance per unit area, this is the Sodium conductance per unit area, it is used in this term 
+
+\[\bar{g}_{Na}m^3h(V-V_{Na})\] where $m,h$ are the state variables, and $V_{Na}$ is the reversal potential for sodium.\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_sparse_solver_testv1_addf78ca166af48f0a18445d543f01bfb}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_sparse_solver_testv1_addf78ca166af48f0a18445d543f01bfb}} 
+\index{C2M2.NeuronalDynamics.Simulation.SparseSolverTestv1@{C2M2.NeuronalDynamics.Simulation.SparseSolverTestv1}!H@{H}}
+\index{H@{H}!C2M2.NeuronalDynamics.Simulation.SparseSolverTestv1@{C2M2.NeuronalDynamics.Simulation.SparseSolverTestv1}}
+\doxysubsubsection{\texorpdfstring{H}{H}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_sparse_solver_testv1_8cs_a90e5369014f032bde39e79eacb048ede}{Vector}} C2\+M2.\+Neuronal\+Dynamics.\+Simulation.\+Sparse\+Solver\+Testv1.\+H\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+These are the solution vectors for the voltage 
+
+{\ttfamily U} the state {\ttfamily M}, state {\ttfamily N}, and state {\ttfamily H}\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_sparse_solver_testv1_acda4c3e171f73cd1b9d44df1e77eebe8}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_sparse_solver_testv1_acda4c3e171f73cd1b9d44df1e77eebe8}} 
+\index{C2M2.NeuronalDynamics.Simulation.SparseSolverTestv1@{C2M2.NeuronalDynamics.Simulation.SparseSolverTestv1}!hi@{hi}}
+\index{hi@{hi}!C2M2.NeuronalDynamics.Simulation.SparseSolverTestv1@{C2M2.NeuronalDynamics.Simulation.SparseSolverTestv1}}
+\doxysubsubsection{\texorpdfstring{hi}{hi}}
+{\footnotesize\ttfamily double C2\+M2.\+Neuronal\+Dynamics.\+Simulation.\+Sparse\+Solver\+Testv1.\+hi = 0.\+9959410\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\mbox{[}\mbox{]} sodium channel state probability, unitless ~\newline
+ 
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_sparse_solver_testv1_a78ec2163e356e19b61d37e78a78d88b1}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_sparse_solver_testv1_a78ec2163e356e19b61d37e78a78d88b1}} 
+\index{C2M2.NeuronalDynamics.Simulation.SparseSolverTestv1@{C2M2.NeuronalDynamics.Simulation.SparseSolverTestv1}!i@{i}}
+\index{i@{i}!C2M2.NeuronalDynamics.Simulation.SparseSolverTestv1@{C2M2.NeuronalDynamics.Simulation.SparseSolverTestv1}}
+\doxysubsubsection{\texorpdfstring{i}{i}}
+{\footnotesize\ttfamily int C2\+M2.\+Neuronal\+Dynamics.\+Simulation.\+Sparse\+Solver\+Testv1.\+i = -\/1\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+This keeps track of which simulation frame to send to the other scripts {\ttfamily i} gets track of the time step number 
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_sparse_solver_testv1_adceb698b149bfd0e68b6ae904aa5e17a}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_sparse_solver_testv1_adceb698b149bfd0e68b6ae904aa5e17a}} 
+\index{C2M2.NeuronalDynamics.Simulation.SparseSolverTestv1@{C2M2.NeuronalDynamics.Simulation.SparseSolverTestv1}!k@{k}}
+\index{k@{k}!C2M2.NeuronalDynamics.Simulation.SparseSolverTestv1@{C2M2.NeuronalDynamics.Simulation.SparseSolverTestv1}}
+\doxysubsubsection{\texorpdfstring{k}{k}}
+{\footnotesize\ttfamily double C2\+M2.\+Neuronal\+Dynamics.\+Simulation.\+Sparse\+Solver\+Testv1.\+k = 0.\+0025 $\ast$ 1.\+0E-\/3}
+
+
+
+User enters the time step size \mbox{[}s\mbox{]}, this is the time step size of the simulation, this needs to be chosen carefully as too large of a time step size may cause numerical instability for the solver. Notice that that this is in \mbox{[}s\mbox{]} therefore 0.\+0025\mbox{[}ms\mbox{]} = 0.\+0025e-\/3 \mbox{[}s\mbox{]} 
+
+TODO\+: need to formulate a default time step size given a refinement level of geometry\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_sparse_solver_testv1_acd34ffc0ef4b42dc059f8920a70609cb}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_sparse_solver_testv1_acd34ffc0ef4b42dc059f8920a70609cb}} 
+\index{C2M2.NeuronalDynamics.Simulation.SparseSolverTestv1@{C2M2.NeuronalDynamics.Simulation.SparseSolverTestv1}!M@{M}}
+\index{M@{M}!C2M2.NeuronalDynamics.Simulation.SparseSolverTestv1@{C2M2.NeuronalDynamics.Simulation.SparseSolverTestv1}}
+\doxysubsubsection{\texorpdfstring{M}{M}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_sparse_solver_testv1_8cs_a90e5369014f032bde39e79eacb048ede}{Vector}} C2\+M2.\+Neuronal\+Dynamics.\+Simulation.\+Sparse\+Solver\+Testv1.\+M\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+These are the solution vectors for the voltage 
+
+{\ttfamily U} the state {\ttfamily M}, state {\ttfamily N}, and state {\ttfamily H}\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_sparse_solver_testv1_a88b41a1e59d0b16637be43cb79154286}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_sparse_solver_testv1_a88b41a1e59d0b16637be43cb79154286}} 
+\index{C2M2.NeuronalDynamics.Simulation.SparseSolverTestv1@{C2M2.NeuronalDynamics.Simulation.SparseSolverTestv1}!mi@{mi}}
+\index{mi@{mi}!C2M2.NeuronalDynamics.Simulation.SparseSolverTestv1@{C2M2.NeuronalDynamics.Simulation.SparseSolverTestv1}}
+\doxysubsubsection{\texorpdfstring{mi}{mi}}
+{\footnotesize\ttfamily double C2\+M2.\+Neuronal\+Dynamics.\+Simulation.\+Sparse\+Solver\+Testv1.\+mi = 0.\+0147567\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\mbox{[}\mbox{]} sodium channel state probability, unitless 
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_sparse_solver_testv1_a3bee3ff082c7363f8026b533c8f8e904}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_sparse_solver_testv1_a3bee3ff082c7363f8026b533c8f8e904}} 
+\index{C2M2.NeuronalDynamics.Simulation.SparseSolverTestv1@{C2M2.NeuronalDynamics.Simulation.SparseSolverTestv1}!N@{N}}
+\index{N@{N}!C2M2.NeuronalDynamics.Simulation.SparseSolverTestv1@{C2M2.NeuronalDynamics.Simulation.SparseSolverTestv1}}
+\doxysubsubsection{\texorpdfstring{N}{N}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_sparse_solver_testv1_8cs_a90e5369014f032bde39e79eacb048ede}{Vector}} C2\+M2.\+Neuronal\+Dynamics.\+Simulation.\+Sparse\+Solver\+Testv1.\+N\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+These are the solution vectors for the voltage 
+
+{\ttfamily U} the state {\ttfamily M}, state {\ttfamily N}, and state {\ttfamily H}\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_sparse_solver_testv1_ae5689c724a4523f3238182ba146c7f88}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_sparse_solver_testv1_ae5689c724a4523f3238182ba146c7f88}} 
+\index{C2M2.NeuronalDynamics.Simulation.SparseSolverTestv1@{C2M2.NeuronalDynamics.Simulation.SparseSolverTestv1}!ni@{ni}}
+\index{ni@{ni}!C2M2.NeuronalDynamics.Simulation.SparseSolverTestv1@{C2M2.NeuronalDynamics.Simulation.SparseSolverTestv1}}
+\doxysubsubsection{\texorpdfstring{ni}{ni}}
+{\footnotesize\ttfamily double C2\+M2.\+Neuronal\+Dynamics.\+Simulation.\+Sparse\+Solver\+Testv1.\+ni = 0.\+0376969\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\mbox{[}\mbox{]} potassium channel state probability, unitless 
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_sparse_solver_testv1_aeeae05f2d873e57bebf257aa91ac0f29}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_sparse_solver_testv1_aeeae05f2d873e57bebf257aa91ac0f29}} 
+\index{C2M2.NeuronalDynamics.Simulation.SparseSolverTestv1@{C2M2.NeuronalDynamics.Simulation.SparseSolverTestv1}!res@{res}}
+\index{res@{res}!C2M2.NeuronalDynamics.Simulation.SparseSolverTestv1@{C2M2.NeuronalDynamics.Simulation.SparseSolverTestv1}}
+\doxysubsubsection{\texorpdfstring{res}{res}}
+{\footnotesize\ttfamily double C2\+M2.\+Neuronal\+Dynamics.\+Simulation.\+Sparse\+Solver\+Testv1.\+res = 2500.\+0 $\ast$ 1.\+0E-\/2\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_sparse_solver_testv1_a4459a92fa7a5562787018e60231c3425}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_sparse_solver_testv1_a4459a92fa7a5562787018e60231c3425}} 
+\index{C2M2.NeuronalDynamics.Simulation.SparseSolverTestv1@{C2M2.NeuronalDynamics.Simulation.SparseSolverTestv1}!saveMatrices@{saveMatrices}}
+\index{saveMatrices@{saveMatrices}!C2M2.NeuronalDynamics.Simulation.SparseSolverTestv1@{C2M2.NeuronalDynamics.Simulation.SparseSolverTestv1}}
+\doxysubsubsection{\texorpdfstring{saveMatrices}{saveMatrices}}
+{\footnotesize\ttfamily bool C2\+M2.\+Neuronal\+Dynamics.\+Simulation.\+Sparse\+Solver\+Testv1.\+save\+Matrices = false\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+send LHS and RHS stencil matrices to output file for saving. This option is available if the user would like to check the sparsity pattern of the HINES matrix, this is a sparse matrix which corresponds to the sparsity nature of the stencil matrix. The stencil matrix is used for the diffusion solve of the PDE equation when we perform the operator splitting. 
+
+summary$>$ \mbox{[}ohm.\+m\mbox{]} resistance.\+length, this is the axial resistence of the neuron, increasing this value has the effect of making the AP waves more localized and slower conduction speed decreasing this value has the effect of make the AP waves larger and have a faster conduction speed\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_sparse_solver_testv1_aebdc649c22bd37499064a728900c363c}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_sparse_solver_testv1_aebdc649c22bd37499064a728900c363c}} 
+\index{C2M2.NeuronalDynamics.Simulation.SparseSolverTestv1@{C2M2.NeuronalDynamics.Simulation.SparseSolverTestv1}!SomaOn@{SomaOn}}
+\index{SomaOn@{SomaOn}!C2M2.NeuronalDynamics.Simulation.SparseSolverTestv1@{C2M2.NeuronalDynamics.Simulation.SparseSolverTestv1}}
+\doxysubsubsection{\texorpdfstring{SomaOn}{SomaOn}}
+{\footnotesize\ttfamily bool C2\+M2.\+Neuronal\+Dynamics.\+Simulation.\+Sparse\+Solver\+Testv1.\+Soma\+On = false}
+
+
+
+This is for turning the soma on/off, this option is primarily used for testing purposes for the convergence analysis, for a soma clamp experiment 
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_sparse_solver_testv1_acfad53d0694b92ce6b1b6d76e2cc4316}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_sparse_solver_testv1_acfad53d0694b92ce6b1b6d76e2cc4316}} 
+\index{C2M2.NeuronalDynamics.Simulation.SparseSolverTestv1@{C2M2.NeuronalDynamics.Simulation.SparseSolverTestv1}!U@{U}}
+\index{U@{U}!C2M2.NeuronalDynamics.Simulation.SparseSolverTestv1@{C2M2.NeuronalDynamics.Simulation.SparseSolverTestv1}}
+\doxysubsubsection{\texorpdfstring{U}{U}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_sparse_solver_testv1_8cs_a90e5369014f032bde39e79eacb048ede}{Vector}} C2\+M2.\+Neuronal\+Dynamics.\+Simulation.\+Sparse\+Solver\+Testv1.\+U\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+These are the solution vectors for the voltage 
+
+{\ttfamily U} the state {\ttfamily M}, state {\ttfamily N}, and state {\ttfamily H}\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_sparse_solver_testv1_a4608f4b390f5523c1e3654620d740019}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_sparse_solver_testv1_a4608f4b390f5523c1e3654620d740019}} 
+\index{C2M2.NeuronalDynamics.Simulation.SparseSolverTestv1@{C2M2.NeuronalDynamics.Simulation.SparseSolverTestv1}!vstart@{vstart}}
+\index{vstart@{vstart}!C2M2.NeuronalDynamics.Simulation.SparseSolverTestv1@{C2M2.NeuronalDynamics.Simulation.SparseSolverTestv1}}
+\doxysubsubsection{\texorpdfstring{vstart}{vstart}}
+{\footnotesize\ttfamily double C2\+M2.\+Neuronal\+Dynamics.\+Simulation.\+Sparse\+Solver\+Testv1.\+vstart = 0.\+050}
+
+
+
+This is the voltage for the voltage clamp, this is primarily used for when we do the convergence analysis of the code using a soma clamp at 50 \mbox{[}mV\mbox{]}, the units for voltage in the solver is \mbox{[}V\mbox{]} that is why {\ttfamily vstart} is set to 0.\+05 /summary$>$ 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/jaros/\+Desktop/tempvr/virtual-\/reality/\+Assets/\+Scripts/\+C2\+M2/\+Neuronal\+Dynamics/\+Simulation/\+Cell\+Solvers/\mbox{\hyperlink{_sparse_solver_testv1_8cs}{Sparse\+Solver\+Testv1.\+cs}}\end{DoxyCompactItemize}

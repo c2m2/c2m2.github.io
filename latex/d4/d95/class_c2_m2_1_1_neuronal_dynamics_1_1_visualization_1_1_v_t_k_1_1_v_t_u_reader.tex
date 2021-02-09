@@ -1,0 +1,146 @@
+\hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_t_k_1_1_v_t_u_reader}{}\doxysection{C2\+M2.\+Neuronal\+Dynamics.\+Visualization.\+VTK.\+VTUReader Class Reference}
+\label{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_t_k_1_1_v_t_u_reader}\index{C2M2.NeuronalDynamics.Visualization.VTK.VTUReader@{C2M2.NeuronalDynamics.Visualization.VTK.VTUReader}}
+
+
+Translates 1 or more \mbox{\hyperlink{namespace_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_t_k}{VTK}} files into Unity meshes  
+
+
+
+
+Collaboration diagram for C2\+M2.\+Neuronal\+Dynamics.\+Visualization.\+VTK.\+VTUReader\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=313pt]{db/dc6/class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_t_k_1_1_v_t_u_reader__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_t_k_1_1_v_t_u_object}{VTUObject}} \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_t_k_1_1_v_t_u_reader_ac83afd7d56d7cb419661c355da7dac5b}{Parse\+File}} (string vtu\+File)
+\begin{DoxyCompactList}\small\item\em Parse a given VTU file and store it in a mesh \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static int\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_t_k_1_1_v_t_u_reader_a3161c17921736a00a5b7d155d9b0dcdc}{Translate\+Cell\+Data\+Binary}} (Xml\+Reader reader, int number\+Of\+Cells)
+\item 
+static int\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_t_k_1_1_v_t_u_reader_a06f745cf783801abd02ad2b61cc34b7b}{Translate\+Cell\+Data}} (string format, string cell\+Raw\+String)
+\item 
+static byte\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_t_k_1_1_v_t_u_reader_ada97fc6b451b1a74fe12d60a493822db}{Translate\+Type\+Data\+Binary}} (Xml\+Reader reader, int number\+Of\+Cells)
+\item 
+static byte\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_t_k_1_1_v_t_u_reader_a8ca82c9195d23f5ac7d27d6e04dc68e5}{Translate\+Type\+Data}} (string format, string type\+Raw\+String)
+\item 
+static int\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_t_k_1_1_v_t_u_reader_a4f6d1ab1d7f732106992b69f79d07701}{Translate\+Offset\+Data\+Binary}} (Xml\+Reader reader, int number\+Of\+Cells)
+\item 
+static int\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_t_k_1_1_v_t_u_reader_a9153e60a394f003689e642333f4bdcdd}{Translate\+Offset\+Data}} (string format, string offset\+Raw\+String)
+\item 
+static float\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_t_k_1_1_v_t_u_reader_a1076d14bee05fc10a946b88b7ddf2248}{Translate\+Component\+Data\+Binary}} (Xml\+Reader reader, int number\+Of\+Points)
+\item 
+static float\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_t_k_1_1_v_t_u_reader_ac8160b0c6797081ebef9847d8988a254}{Translate\+Component\+Data}} (string format, string component\+Raw\+String)
+\item 
+static Vector3\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_t_k_1_1_v_t_u_reader_a1667bde81aec384abdb82ac9b7b08cdd}{Translate\+Points\+Binary}} (Xml\+Reader reader, int number\+Of\+Points)
+\item 
+static Vector3\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_t_k_1_1_v_t_u_reader_a871f87965212c57e26715fafb94f6cf1}{Translate\+Points}} (string format, string point\+Raw\+String, int number\+Of\+Points)
+\item 
+static List$<$ int $>$ \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_t_k_1_1_v_t_u_reader_a41f6bd6b0e2a9e40b655872c1593fee6}{Build\+Triangles}} (int\mbox{[}$\,$\mbox{]} offset\+Data, byte\mbox{[}$\,$\mbox{]} type\+Data, int\mbox{[}$\,$\mbox{]} cell\+Data)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Translates 1 or more \mbox{\hyperlink{namespace_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_t_k}{VTK}} files into Unity meshes 
+
+TODO\+: This needs to be able to take general \textquotesingle{}types\textquotesingle{}. Each element should be able to be int32, int64, float32, float64, etc We should also have a setting called \char`\"{}geometry static\char`\"{}, which when enabled should skip reading new points, cells, offsets, \& types, \& should ONLY read new point\+Data 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_t_k_1_1_v_t_u_reader_a41f6bd6b0e2a9e40b655872c1593fee6}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_t_k_1_1_v_t_u_reader_a41f6bd6b0e2a9e40b655872c1593fee6}} 
+\index{C2M2.NeuronalDynamics.Visualization.VTK.VTUReader@{C2M2.NeuronalDynamics.Visualization.VTK.VTUReader}!BuildTriangles@{BuildTriangles}}
+\index{BuildTriangles@{BuildTriangles}!C2M2.NeuronalDynamics.Visualization.VTK.VTUReader@{C2M2.NeuronalDynamics.Visualization.VTK.VTUReader}}
+\doxysubsubsection{\texorpdfstring{BuildTriangles()}{BuildTriangles()}}
+{\footnotesize\ttfamily static List$<$int$>$ C2\+M2.\+Neuronal\+Dynamics.\+Visualization.\+VTK.\+VTUReader.\+Build\+Triangles (\begin{DoxyParamCaption}\item[{int\mbox{[}$\,$\mbox{]}}]{offset\+Data,  }\item[{byte\mbox{[}$\,$\mbox{]}}]{type\+Data,  }\item[{int\mbox{[}$\,$\mbox{]}}]{cell\+Data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+TRIANGLE BUILDING
+
+this is very important\+: matches the \mbox{\hyperlink{namespace_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_t_k}{VTK}} coordinate system\+: see vtk file format TODO\+: This is only relevant for tetrahedrons, not triangles like our retina model\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_t_k_1_1_v_t_u_reader_ac83afd7d56d7cb419661c355da7dac5b}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_t_k_1_1_v_t_u_reader_ac83afd7d56d7cb419661c355da7dac5b}} 
+\index{C2M2.NeuronalDynamics.Visualization.VTK.VTUReader@{C2M2.NeuronalDynamics.Visualization.VTK.VTUReader}!ParseFile@{ParseFile}}
+\index{ParseFile@{ParseFile}!C2M2.NeuronalDynamics.Visualization.VTK.VTUReader@{C2M2.NeuronalDynamics.Visualization.VTK.VTUReader}}
+\doxysubsubsection{\texorpdfstring{ParseFile()}{ParseFile()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_t_k_1_1_v_t_u_object}{VTUObject}} C2\+M2.\+Neuronal\+Dynamics.\+Visualization.\+VTK.\+VTUReader.\+Parse\+File (\begin{DoxyParamCaption}\item[{string}]{vtu\+File }\end{DoxyParamCaption})}
+
+
+
+Parse a given VTU file and store it in a mesh 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vtu\+File} & Sample VTU file \\
+\hline
+{\em mesh} & Read-\/in VTU data will be stored in a Unity mesh \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_t_k_1_1_v_t_u_reader_a06f745cf783801abd02ad2b61cc34b7b}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_t_k_1_1_v_t_u_reader_a06f745cf783801abd02ad2b61cc34b7b}} 
+\index{C2M2.NeuronalDynamics.Visualization.VTK.VTUReader@{C2M2.NeuronalDynamics.Visualization.VTK.VTUReader}!TranslateCellData@{TranslateCellData}}
+\index{TranslateCellData@{TranslateCellData}!C2M2.NeuronalDynamics.Visualization.VTK.VTUReader@{C2M2.NeuronalDynamics.Visualization.VTK.VTUReader}}
+\doxysubsubsection{\texorpdfstring{TranslateCellData()}{TranslateCellData()}}
+{\footnotesize\ttfamily static int \mbox{[}$\,$\mbox{]} C2\+M2.\+Neuronal\+Dynamics.\+Visualization.\+VTK.\+VTUReader.\+Translate\+Cell\+Data (\begin{DoxyParamCaption}\item[{string}]{format,  }\item[{string}]{cell\+Raw\+String }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_t_k_1_1_v_t_u_reader_a3161c17921736a00a5b7d155d9b0dcdc}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_t_k_1_1_v_t_u_reader_a3161c17921736a00a5b7d155d9b0dcdc}} 
+\index{C2M2.NeuronalDynamics.Visualization.VTK.VTUReader@{C2M2.NeuronalDynamics.Visualization.VTK.VTUReader}!TranslateCellDataBinary@{TranslateCellDataBinary}}
+\index{TranslateCellDataBinary@{TranslateCellDataBinary}!C2M2.NeuronalDynamics.Visualization.VTK.VTUReader@{C2M2.NeuronalDynamics.Visualization.VTK.VTUReader}}
+\doxysubsubsection{\texorpdfstring{TranslateCellDataBinary()}{TranslateCellDataBinary()}}
+{\footnotesize\ttfamily static int \mbox{[}$\,$\mbox{]} C2\+M2.\+Neuronal\+Dynamics.\+Visualization.\+VTK.\+VTUReader.\+Translate\+Cell\+Data\+Binary (\begin{DoxyParamCaption}\item[{Xml\+Reader}]{reader,  }\item[{int}]{number\+Of\+Cells }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_t_k_1_1_v_t_u_reader_ac8160b0c6797081ebef9847d8988a254}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_t_k_1_1_v_t_u_reader_ac8160b0c6797081ebef9847d8988a254}} 
+\index{C2M2.NeuronalDynamics.Visualization.VTK.VTUReader@{C2M2.NeuronalDynamics.Visualization.VTK.VTUReader}!TranslateComponentData@{TranslateComponentData}}
+\index{TranslateComponentData@{TranslateComponentData}!C2M2.NeuronalDynamics.Visualization.VTK.VTUReader@{C2M2.NeuronalDynamics.Visualization.VTK.VTUReader}}
+\doxysubsubsection{\texorpdfstring{TranslateComponentData()}{TranslateComponentData()}}
+{\footnotesize\ttfamily static float \mbox{[}$\,$\mbox{]} C2\+M2.\+Neuronal\+Dynamics.\+Visualization.\+VTK.\+VTUReader.\+Translate\+Component\+Data (\begin{DoxyParamCaption}\item[{string}]{format,  }\item[{string}]{component\+Raw\+String }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_t_k_1_1_v_t_u_reader_a1076d14bee05fc10a946b88b7ddf2248}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_t_k_1_1_v_t_u_reader_a1076d14bee05fc10a946b88b7ddf2248}} 
+\index{C2M2.NeuronalDynamics.Visualization.VTK.VTUReader@{C2M2.NeuronalDynamics.Visualization.VTK.VTUReader}!TranslateComponentDataBinary@{TranslateComponentDataBinary}}
+\index{TranslateComponentDataBinary@{TranslateComponentDataBinary}!C2M2.NeuronalDynamics.Visualization.VTK.VTUReader@{C2M2.NeuronalDynamics.Visualization.VTK.VTUReader}}
+\doxysubsubsection{\texorpdfstring{TranslateComponentDataBinary()}{TranslateComponentDataBinary()}}
+{\footnotesize\ttfamily static float \mbox{[}$\,$\mbox{]} C2\+M2.\+Neuronal\+Dynamics.\+Visualization.\+VTK.\+VTUReader.\+Translate\+Component\+Data\+Binary (\begin{DoxyParamCaption}\item[{Xml\+Reader}]{reader,  }\item[{int}]{number\+Of\+Points }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_t_k_1_1_v_t_u_reader_a9153e60a394f003689e642333f4bdcdd}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_t_k_1_1_v_t_u_reader_a9153e60a394f003689e642333f4bdcdd}} 
+\index{C2M2.NeuronalDynamics.Visualization.VTK.VTUReader@{C2M2.NeuronalDynamics.Visualization.VTK.VTUReader}!TranslateOffsetData@{TranslateOffsetData}}
+\index{TranslateOffsetData@{TranslateOffsetData}!C2M2.NeuronalDynamics.Visualization.VTK.VTUReader@{C2M2.NeuronalDynamics.Visualization.VTK.VTUReader}}
+\doxysubsubsection{\texorpdfstring{TranslateOffsetData()}{TranslateOffsetData()}}
+{\footnotesize\ttfamily static int \mbox{[}$\,$\mbox{]} C2\+M2.\+Neuronal\+Dynamics.\+Visualization.\+VTK.\+VTUReader.\+Translate\+Offset\+Data (\begin{DoxyParamCaption}\item[{string}]{format,  }\item[{string}]{offset\+Raw\+String }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_t_k_1_1_v_t_u_reader_a4f6d1ab1d7f732106992b69f79d07701}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_t_k_1_1_v_t_u_reader_a4f6d1ab1d7f732106992b69f79d07701}} 
+\index{C2M2.NeuronalDynamics.Visualization.VTK.VTUReader@{C2M2.NeuronalDynamics.Visualization.VTK.VTUReader}!TranslateOffsetDataBinary@{TranslateOffsetDataBinary}}
+\index{TranslateOffsetDataBinary@{TranslateOffsetDataBinary}!C2M2.NeuronalDynamics.Visualization.VTK.VTUReader@{C2M2.NeuronalDynamics.Visualization.VTK.VTUReader}}
+\doxysubsubsection{\texorpdfstring{TranslateOffsetDataBinary()}{TranslateOffsetDataBinary()}}
+{\footnotesize\ttfamily static int \mbox{[}$\,$\mbox{]} C2\+M2.\+Neuronal\+Dynamics.\+Visualization.\+VTK.\+VTUReader.\+Translate\+Offset\+Data\+Binary (\begin{DoxyParamCaption}\item[{Xml\+Reader}]{reader,  }\item[{int}]{number\+Of\+Cells }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_t_k_1_1_v_t_u_reader_a871f87965212c57e26715fafb94f6cf1}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_t_k_1_1_v_t_u_reader_a871f87965212c57e26715fafb94f6cf1}} 
+\index{C2M2.NeuronalDynamics.Visualization.VTK.VTUReader@{C2M2.NeuronalDynamics.Visualization.VTK.VTUReader}!TranslatePoints@{TranslatePoints}}
+\index{TranslatePoints@{TranslatePoints}!C2M2.NeuronalDynamics.Visualization.VTK.VTUReader@{C2M2.NeuronalDynamics.Visualization.VTK.VTUReader}}
+\doxysubsubsection{\texorpdfstring{TranslatePoints()}{TranslatePoints()}}
+{\footnotesize\ttfamily static Vector3 \mbox{[}$\,$\mbox{]} C2\+M2.\+Neuronal\+Dynamics.\+Visualization.\+VTK.\+VTUReader.\+Translate\+Points (\begin{DoxyParamCaption}\item[{string}]{format,  }\item[{string}]{point\+Raw\+String,  }\item[{int}]{number\+Of\+Points }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+This line is important\+: Unity uses a different coordinate system than \mbox{\hyperlink{namespace_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_t_k}{VTK}}\+: Right hand vs. left hand coordinate system!
+
+This line is important\+: Unity uses a different coordinate system than \mbox{\hyperlink{namespace_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_t_k}{VTK}}\+: Right hand vs. left hand coordinate system!\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_t_k_1_1_v_t_u_reader_a1667bde81aec384abdb82ac9b7b08cdd}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_t_k_1_1_v_t_u_reader_a1667bde81aec384abdb82ac9b7b08cdd}} 
+\index{C2M2.NeuronalDynamics.Visualization.VTK.VTUReader@{C2M2.NeuronalDynamics.Visualization.VTK.VTUReader}!TranslatePointsBinary@{TranslatePointsBinary}}
+\index{TranslatePointsBinary@{TranslatePointsBinary}!C2M2.NeuronalDynamics.Visualization.VTK.VTUReader@{C2M2.NeuronalDynamics.Visualization.VTK.VTUReader}}
+\doxysubsubsection{\texorpdfstring{TranslatePointsBinary()}{TranslatePointsBinary()}}
+{\footnotesize\ttfamily static Vector3 \mbox{[}$\,$\mbox{]} C2\+M2.\+Neuronal\+Dynamics.\+Visualization.\+VTK.\+VTUReader.\+Translate\+Points\+Binary (\begin{DoxyParamCaption}\item[{Xml\+Reader}]{reader,  }\item[{int}]{number\+Of\+Points }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+This line is important\+: Unity uses a different coordinate system than \mbox{\hyperlink{namespace_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_t_k}{VTK}}\+: Right hand vs. left hand coordinate system!\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_t_k_1_1_v_t_u_reader_a8ca82c9195d23f5ac7d27d6e04dc68e5}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_t_k_1_1_v_t_u_reader_a8ca82c9195d23f5ac7d27d6e04dc68e5}} 
+\index{C2M2.NeuronalDynamics.Visualization.VTK.VTUReader@{C2M2.NeuronalDynamics.Visualization.VTK.VTUReader}!TranslateTypeData@{TranslateTypeData}}
+\index{TranslateTypeData@{TranslateTypeData}!C2M2.NeuronalDynamics.Visualization.VTK.VTUReader@{C2M2.NeuronalDynamics.Visualization.VTK.VTUReader}}
+\doxysubsubsection{\texorpdfstring{TranslateTypeData()}{TranslateTypeData()}}
+{\footnotesize\ttfamily static byte \mbox{[}$\,$\mbox{]} C2\+M2.\+Neuronal\+Dynamics.\+Visualization.\+VTK.\+VTUReader.\+Translate\+Type\+Data (\begin{DoxyParamCaption}\item[{string}]{format,  }\item[{string}]{type\+Raw\+String }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_t_k_1_1_v_t_u_reader_ada97fc6b451b1a74fe12d60a493822db}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_t_k_1_1_v_t_u_reader_ada97fc6b451b1a74fe12d60a493822db}} 
+\index{C2M2.NeuronalDynamics.Visualization.VTK.VTUReader@{C2M2.NeuronalDynamics.Visualization.VTK.VTUReader}!TranslateTypeDataBinary@{TranslateTypeDataBinary}}
+\index{TranslateTypeDataBinary@{TranslateTypeDataBinary}!C2M2.NeuronalDynamics.Visualization.VTK.VTUReader@{C2M2.NeuronalDynamics.Visualization.VTK.VTUReader}}
+\doxysubsubsection{\texorpdfstring{TranslateTypeDataBinary()}{TranslateTypeDataBinary()}}
+{\footnotesize\ttfamily static byte \mbox{[}$\,$\mbox{]} C2\+M2.\+Neuronal\+Dynamics.\+Visualization.\+VTK.\+VTUReader.\+Translate\+Type\+Data\+Binary (\begin{DoxyParamCaption}\item[{Xml\+Reader}]{reader,  }\item[{int}]{number\+Of\+Cells }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/jaros/\+Desktop/tempvr/virtual-\/reality/\+Assets/\+Scripts/\+C2\+M2/\+Neuronal\+Dynamics/\+Visualization/\+VTK/\mbox{\hyperlink{_v_t_u_reader_8cs}{VTUReader.\+cs}}\end{DoxyCompactItemize}

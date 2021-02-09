@@ -1,0 +1,187 @@
+\hypertarget{class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_example_m_d_simulation}{}\doxysection{C2\+M2.\+Molecular\+Dynamics.\+Simulation.\+Example\+MDSimulation Class Reference}
+\label{class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_example_m_d_simulation}\index{C2M2.MolecularDynamics.Simulation.ExampleMDSimulation@{C2M2.MolecularDynamics.Simulation.ExampleMDSimulation}}
+
+
+Inheritance diagram for C2\+M2.\+Molecular\+Dynamics.\+Simulation.\+Example\+MDSimulation\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{d2/d6b/class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_example_m_d_simulation__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for C2\+M2.\+Molecular\+Dynamics.\+Simulation.\+Example\+MDSimulation\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{d9/def/class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_example_m_d_simulation__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+override float \mbox{\hyperlink{class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_example_m_d_simulation_afb9c8559a3155d98a4737f2e99407226}{Get\+Simulation\+Time}} ()
+\item 
+override Vector3\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_example_m_d_simulation_a963397f41a10fdfd60f9bc8f706249d0}{Get\+Values}} ()
+\begin{DoxyCompactList}\small\item\em Require derived classes to make simulation values available \end{DoxyCompactList}\item 
+override void \mbox{\hyperlink{class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_example_m_d_simulation_a9705b552c416379a12e368205737984f}{Set\+Values}} (Raycast\+Hit hit)
+\begin{DoxyCompactList}\small\item\em Receive an interaction request, and translate it onto the proper sphere \end{DoxyCompactList}\item 
+Vector3\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_example_m_d_simulation_a1e1951d60670a4e4fec2374f95ddd0e7}{Force}} (Vector3\mbox{[}$\,$\mbox{]} pos, int\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_m_d_simulation_ad4ac6f6da6d0dc4e0dcf6505484dfe8b}{bond\+\_\+topo}})
+\begin{DoxyCompactList}\small\item\em Evaluates the forces. First will try doing for system of oscillators. Then will extend to non-\/bonded interactions \end{DoxyCompactList}\item 
+Vector3\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_example_m_d_simulation_a0698d176f363fe0742f98e8433550821}{angle\+\_\+\+Force}} (Vector3\mbox{[}$\,$\mbox{]} pos)
+\begin{DoxyCompactList}\small\item\em Compute angle forces \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+float \mbox{\hyperlink{class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_example_m_d_simulation_ae0509d96be650ca7558a0c452ded47a0}{kb}} = 0.\+001987f
+\item 
+float \mbox{\hyperlink{class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_example_m_d_simulation_ac720b57601c1a66a21762a956432a6a0}{T}} = 100.\+0f
+\item 
+float \mbox{\hyperlink{class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_example_m_d_simulation_abf0e2e1d104f5e2a0d89e5a834928c0d}{kappa}} = 6f
+\item 
+float \mbox{\hyperlink{class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_example_m_d_simulation_a33ebd82030288fc0ce5e2da903f60a07}{r0}} = 3.\+65f
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+override void \mbox{\hyperlink{class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_example_m_d_simulation_a23b4fdf12e94e11b67a002c3047ab749}{Solve}} ()
+\begin{DoxyCompactList}\small\item\em Molecular dynamics simulation code \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_example_m_d_simulation_ab4430c461697c8fd1ccc8e46e272f94a}{Resolve\+PBC}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Vector3\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_example_m_d_simulation_a560fac0fbba103417f98c03e7a1ef032}{force}} = null
+\item 
+float \mbox{\hyperlink{class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_example_m_d_simulation_ae896890fa3d2a4a20bf2ee5fcdaacef2}{dt}}
+\item 
+int \mbox{\hyperlink{class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_example_m_d_simulation_a7097bc0d127a17030347844be459f590}{t}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_example_m_d_simulation_a0698d176f363fe0742f98e8433550821}\label{class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_example_m_d_simulation_a0698d176f363fe0742f98e8433550821}} 
+\index{C2M2.MolecularDynamics.Simulation.ExampleMDSimulation@{C2M2.MolecularDynamics.Simulation.ExampleMDSimulation}!angle\_Force@{angle\_Force}}
+\index{angle\_Force@{angle\_Force}!C2M2.MolecularDynamics.Simulation.ExampleMDSimulation@{C2M2.MolecularDynamics.Simulation.ExampleMDSimulation}}
+\doxysubsubsection{\texorpdfstring{angle\_Force()}{angle\_Force()}}
+{\footnotesize\ttfamily Vector3 \mbox{[}$\,$\mbox{]} C2\+M2.\+Molecular\+Dynamics.\+Simulation.\+Example\+MDSimulation.\+angle\+\_\+\+Force (\begin{DoxyParamCaption}\item[{Vector3\mbox{[}$\,$\mbox{]}}]{pos }\end{DoxyParamCaption})}
+
+
+
+Compute angle forces 
+
+\mbox{\Hypertarget{class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_example_m_d_simulation_a1e1951d60670a4e4fec2374f95ddd0e7}\label{class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_example_m_d_simulation_a1e1951d60670a4e4fec2374f95ddd0e7}} 
+\index{C2M2.MolecularDynamics.Simulation.ExampleMDSimulation@{C2M2.MolecularDynamics.Simulation.ExampleMDSimulation}!Force@{Force}}
+\index{Force@{Force}!C2M2.MolecularDynamics.Simulation.ExampleMDSimulation@{C2M2.MolecularDynamics.Simulation.ExampleMDSimulation}}
+\doxysubsubsection{\texorpdfstring{Force()}{Force()}}
+{\footnotesize\ttfamily Vector3 \mbox{[}$\,$\mbox{]} C2\+M2.\+Molecular\+Dynamics.\+Simulation.\+Example\+MDSimulation.\+Force (\begin{DoxyParamCaption}\item[{Vector3\mbox{[}$\,$\mbox{]}}]{pos,  }\item[{int}]{bond\+\_\+topo\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Evaluates the forces. First will try doing for system of oscillators. Then will extend to non-\/bonded interactions 
+
+\mbox{\Hypertarget{class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_example_m_d_simulation_afb9c8559a3155d98a4737f2e99407226}\label{class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_example_m_d_simulation_afb9c8559a3155d98a4737f2e99407226}} 
+\index{C2M2.MolecularDynamics.Simulation.ExampleMDSimulation@{C2M2.MolecularDynamics.Simulation.ExampleMDSimulation}!GetSimulationTime@{GetSimulationTime}}
+\index{GetSimulationTime@{GetSimulationTime}!C2M2.MolecularDynamics.Simulation.ExampleMDSimulation@{C2M2.MolecularDynamics.Simulation.ExampleMDSimulation}}
+\doxysubsubsection{\texorpdfstring{GetSimulationTime()}{GetSimulationTime()}}
+{\footnotesize\ttfamily override float C2\+M2.\+Molecular\+Dynamics.\+Simulation.\+Example\+MDSimulation.\+Get\+Simulation\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_example_m_d_simulation_a963397f41a10fdfd60f9bc8f706249d0}\label{class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_example_m_d_simulation_a963397f41a10fdfd60f9bc8f706249d0}} 
+\index{C2M2.MolecularDynamics.Simulation.ExampleMDSimulation@{C2M2.MolecularDynamics.Simulation.ExampleMDSimulation}!GetValues@{GetValues}}
+\index{GetValues@{GetValues}!C2M2.MolecularDynamics.Simulation.ExampleMDSimulation@{C2M2.MolecularDynamics.Simulation.ExampleMDSimulation}}
+\doxysubsubsection{\texorpdfstring{GetValues()}{GetValues()}}
+{\footnotesize\ttfamily override Vector3 \mbox{[}$\,$\mbox{]} C2\+M2.\+Molecular\+Dynamics.\+Simulation.\+Example\+MDSimulation.\+Get\+Values (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Require derived classes to make simulation values available 
+
+
+
+Implements \mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_simulation_aa34520fa8bc4bedc95c65dfe1984a719}{C2\+M2.\+Simulation.\+Simulation$<$ Vector3\mbox{[}$\,$\mbox{]}, Transform\mbox{[}$\,$\mbox{]}, VRRaycastable\+Colliders, VRGrabbable\+Colliders $>$}}.
+
+\mbox{\Hypertarget{class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_example_m_d_simulation_ab4430c461697c8fd1ccc8e46e272f94a}\label{class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_example_m_d_simulation_ab4430c461697c8fd1ccc8e46e272f94a}} 
+\index{C2M2.MolecularDynamics.Simulation.ExampleMDSimulation@{C2M2.MolecularDynamics.Simulation.ExampleMDSimulation}!ResolvePBC@{ResolvePBC}}
+\index{ResolvePBC@{ResolvePBC}!C2M2.MolecularDynamics.Simulation.ExampleMDSimulation@{C2M2.MolecularDynamics.Simulation.ExampleMDSimulation}}
+\doxysubsubsection{\texorpdfstring{ResolvePBC()}{ResolvePBC()}}
+{\footnotesize\ttfamily void C2\+M2.\+Molecular\+Dynamics.\+Simulation.\+Example\+MDSimulation.\+Resolve\+PBC (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_example_m_d_simulation_a9705b552c416379a12e368205737984f}\label{class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_example_m_d_simulation_a9705b552c416379a12e368205737984f}} 
+\index{C2M2.MolecularDynamics.Simulation.ExampleMDSimulation@{C2M2.MolecularDynamics.Simulation.ExampleMDSimulation}!SetValues@{SetValues}}
+\index{SetValues@{SetValues}!C2M2.MolecularDynamics.Simulation.ExampleMDSimulation@{C2M2.MolecularDynamics.Simulation.ExampleMDSimulation}}
+\doxysubsubsection{\texorpdfstring{SetValues()}{SetValues()}}
+{\footnotesize\ttfamily override void C2\+M2.\+Molecular\+Dynamics.\+Simulation.\+Example\+MDSimulation.\+Set\+Values (\begin{DoxyParamCaption}\item[{Raycast\+Hit}]{hit }\end{DoxyParamCaption})}
+
+
+
+Receive an interaction request, and translate it onto the proper sphere 
+
+\mbox{\Hypertarget{class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_example_m_d_simulation_a23b4fdf12e94e11b67a002c3047ab749}\label{class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_example_m_d_simulation_a23b4fdf12e94e11b67a002c3047ab749}} 
+\index{C2M2.MolecularDynamics.Simulation.ExampleMDSimulation@{C2M2.MolecularDynamics.Simulation.ExampleMDSimulation}!Solve@{Solve}}
+\index{Solve@{Solve}!C2M2.MolecularDynamics.Simulation.ExampleMDSimulation@{C2M2.MolecularDynamics.Simulation.ExampleMDSimulation}}
+\doxysubsubsection{\texorpdfstring{Solve()}{Solve()}}
+{\footnotesize\ttfamily override void C2\+M2.\+Molecular\+Dynamics.\+Simulation.\+Example\+MDSimulation.\+Solve (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Molecular dynamics simulation code 
+
+
+
+Implements \mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_simulation_adc5e6e0adf67ae72e144c1424fd93625}{C2\+M2.\+Simulation.\+Simulation$<$ Vector3\mbox{[}$\,$\mbox{]}, Transform\mbox{[}$\,$\mbox{]}, VRRaycastable\+Colliders, VRGrabbable\+Colliders $>$}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_example_m_d_simulation_ae896890fa3d2a4a20bf2ee5fcdaacef2}\label{class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_example_m_d_simulation_ae896890fa3d2a4a20bf2ee5fcdaacef2}} 
+\index{C2M2.MolecularDynamics.Simulation.ExampleMDSimulation@{C2M2.MolecularDynamics.Simulation.ExampleMDSimulation}!dt@{dt}}
+\index{dt@{dt}!C2M2.MolecularDynamics.Simulation.ExampleMDSimulation@{C2M2.MolecularDynamics.Simulation.ExampleMDSimulation}}
+\doxysubsubsection{\texorpdfstring{dt}{dt}}
+{\footnotesize\ttfamily float C2\+M2.\+Molecular\+Dynamics.\+Simulation.\+Example\+MDSimulation.\+dt\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_example_m_d_simulation_a560fac0fbba103417f98c03e7a1ef032}\label{class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_example_m_d_simulation_a560fac0fbba103417f98c03e7a1ef032}} 
+\index{C2M2.MolecularDynamics.Simulation.ExampleMDSimulation@{C2M2.MolecularDynamics.Simulation.ExampleMDSimulation}!force@{force}}
+\index{force@{force}!C2M2.MolecularDynamics.Simulation.ExampleMDSimulation@{C2M2.MolecularDynamics.Simulation.ExampleMDSimulation}}
+\doxysubsubsection{\texorpdfstring{force}{force}}
+{\footnotesize\ttfamily Vector3 \mbox{[}$\,$\mbox{]} C2\+M2.\+Molecular\+Dynamics.\+Simulation.\+Example\+MDSimulation.\+force = null\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_example_m_d_simulation_abf0e2e1d104f5e2a0d89e5a834928c0d}\label{class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_example_m_d_simulation_abf0e2e1d104f5e2a0d89e5a834928c0d}} 
+\index{C2M2.MolecularDynamics.Simulation.ExampleMDSimulation@{C2M2.MolecularDynamics.Simulation.ExampleMDSimulation}!kappa@{kappa}}
+\index{kappa@{kappa}!C2M2.MolecularDynamics.Simulation.ExampleMDSimulation@{C2M2.MolecularDynamics.Simulation.ExampleMDSimulation}}
+\doxysubsubsection{\texorpdfstring{kappa}{kappa}}
+{\footnotesize\ttfamily float C2\+M2.\+Molecular\+Dynamics.\+Simulation.\+Example\+MDSimulation.\+kappa = 6f}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_example_m_d_simulation_ae0509d96be650ca7558a0c452ded47a0}\label{class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_example_m_d_simulation_ae0509d96be650ca7558a0c452ded47a0}} 
+\index{C2M2.MolecularDynamics.Simulation.ExampleMDSimulation@{C2M2.MolecularDynamics.Simulation.ExampleMDSimulation}!kb@{kb}}
+\index{kb@{kb}!C2M2.MolecularDynamics.Simulation.ExampleMDSimulation@{C2M2.MolecularDynamics.Simulation.ExampleMDSimulation}}
+\doxysubsubsection{\texorpdfstring{kb}{kb}}
+{\footnotesize\ttfamily float C2\+M2.\+Molecular\+Dynamics.\+Simulation.\+Example\+MDSimulation.\+kb = 0.\+001987f}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_example_m_d_simulation_a33ebd82030288fc0ce5e2da903f60a07}\label{class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_example_m_d_simulation_a33ebd82030288fc0ce5e2da903f60a07}} 
+\index{C2M2.MolecularDynamics.Simulation.ExampleMDSimulation@{C2M2.MolecularDynamics.Simulation.ExampleMDSimulation}!r0@{r0}}
+\index{r0@{r0}!C2M2.MolecularDynamics.Simulation.ExampleMDSimulation@{C2M2.MolecularDynamics.Simulation.ExampleMDSimulation}}
+\doxysubsubsection{\texorpdfstring{r0}{r0}}
+{\footnotesize\ttfamily float C2\+M2.\+Molecular\+Dynamics.\+Simulation.\+Example\+MDSimulation.\+r0 = 3.\+65f}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_example_m_d_simulation_ac720b57601c1a66a21762a956432a6a0}\label{class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_example_m_d_simulation_ac720b57601c1a66a21762a956432a6a0}} 
+\index{C2M2.MolecularDynamics.Simulation.ExampleMDSimulation@{C2M2.MolecularDynamics.Simulation.ExampleMDSimulation}!T@{T}}
+\index{T@{T}!C2M2.MolecularDynamics.Simulation.ExampleMDSimulation@{C2M2.MolecularDynamics.Simulation.ExampleMDSimulation}}
+\doxysubsubsection{\texorpdfstring{T}{T}}
+{\footnotesize\ttfamily float C2\+M2.\+Molecular\+Dynamics.\+Simulation.\+Example\+MDSimulation.\+T = 100.\+0f}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_example_m_d_simulation_a7097bc0d127a17030347844be459f590}\label{class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_example_m_d_simulation_a7097bc0d127a17030347844be459f590}} 
+\index{C2M2.MolecularDynamics.Simulation.ExampleMDSimulation@{C2M2.MolecularDynamics.Simulation.ExampleMDSimulation}!t@{t}}
+\index{t@{t}!C2M2.MolecularDynamics.Simulation.ExampleMDSimulation@{C2M2.MolecularDynamics.Simulation.ExampleMDSimulation}}
+\doxysubsubsection{\texorpdfstring{t}{t}}
+{\footnotesize\ttfamily int C2\+M2.\+Molecular\+Dynamics.\+Simulation.\+Example\+MDSimulation.\+t\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/jaros/\+Desktop/tempvr/virtual-\/reality/\+Assets/\+Scripts/\+C2\+M2/\+Molecular\+Dynamics/\+Simulation/\mbox{\hyperlink{_example_m_d_simulation_8cs}{Example\+MDSimulation.\+cs}}\end{DoxyCompactItemize}

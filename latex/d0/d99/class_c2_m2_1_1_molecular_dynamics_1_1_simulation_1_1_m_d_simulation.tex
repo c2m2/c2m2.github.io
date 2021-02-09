@@ -1,0 +1,389 @@
+\hypertarget{class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_m_d_simulation}{}\doxysection{C2\+M2.\+Molecular\+Dynamics.\+Simulation.\+MDSimulation Class Reference}
+\label{class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_m_d_simulation}\index{C2M2.MolecularDynamics.Simulation.MDSimulation@{C2M2.MolecularDynamics.Simulation.MDSimulation}}
+
+
+Reads data files and creates and updates visualizations for molecular dynamics systemss  
+
+
+
+
+Inheritance diagram for C2\+M2.\+Molecular\+Dynamics.\+Simulation.\+MDSimulation\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{d9/dac/class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_m_d_simulation__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for C2\+M2.\+Molecular\+Dynamics.\+Simulation.\+MDSimulation\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d6/d89/class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_m_d_simulation__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_m_d_simulation_1_1_vector3_int}{Vector3\+Int}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum class \mbox{\hyperlink{class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_m_d_simulation_a2b0fa12658a342140dd3369aa289c90d}{Method\+Type}} \{ \mbox{\hyperlink{class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_m_d_simulation_a2b0fa12658a342140dd3369aa289c90da37033c09307b7f90d4a46d1d1352298f}{gjI}}
+, \mbox{\hyperlink{class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_m_d_simulation_a2b0fa12658a342140dd3369aa289c90da83ec1b0ebb12d4f5fe2881c4507ec670}{gj\+II}}
+, \mbox{\hyperlink{class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_m_d_simulation_a2b0fa12658a342140dd3369aa289c90da84d8ce95c58a694d941b59967199e478}{gj\+III}}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_m_d_simulation_af3da2d4b2d42b1d90eb43836465b2826}{pdb\+Path}} = \char`\"{}PE/pe\+\_\+cg.\+pdb\char`\"{}
+\item 
+string \mbox{\hyperlink{class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_m_d_simulation_aa7e42584fbc82dbfde216a4dd760791e}{psf\+Path}} = \char`\"{}PE/octatetracontane\+\_\+128.\+cg.\+psf\char`\"{}
+\item 
+float \mbox{\hyperlink{class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_m_d_simulation_a8317f724cd84871ad62ca86617e5f505}{radius}} = 1f
+\item 
+string \mbox{\hyperlink{class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_m_d_simulation_ad038baa745e44fb94bf3d28020a64fa7}{shader\+Name}} = \char`\"{}Standard\char`\"{}
+\item 
+Color\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_m_d_simulation_ac64a219528efb38adf7c00ccb2f43b98}{atom\+Colors}} = new Color\mbox{[}$\,$\mbox{]} \{ Color.\+cyan, Color.\+gray \}
+\item 
+Material \mbox{\hyperlink{class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_m_d_simulation_a82b15add37e1b40ca279ab282a61501f}{bond\+Material}}
+\item 
+float \mbox{\hyperlink{class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_m_d_simulation_aa0dda49bad2c62b1cf4d7cd6f8c10ece}{max\+Bond\+Length}} = 10f
+\item 
+\mbox{\hyperlink{class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_m_d_simulation_a2b0fa12658a342140dd3369aa289c90d}{Method\+Type}} \mbox{\hyperlink{class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_m_d_simulation_aaa68bf514048491ff4048f08aa2cab46}{method\+Type}} = \mbox{\hyperlink{class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_m_d_simulation_a2b0fa12658a342140dd3369aa289c90da37033c09307b7f90d4a46d1d1352298f}{Method\+Type.\+gjI}}
+\item 
+int \mbox{\hyperlink{class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_m_d_simulation_aafe4c0cbde4f979483d2fea1fddf1b21}{timestep\+Count}} = 50000
+\item 
+float \mbox{\hyperlink{class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_m_d_simulation_a9fb7b8e8ed00633201afbcf8e69b06e7}{timestep\+Size}} = .\+1f
+\item 
+float \mbox{\hyperlink{class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_m_d_simulation_afba57f6e6a6cce29c0b69b8287a423da}{gamma}} = 0.\+1f
+\item 
+float \mbox{\hyperlink{class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_m_d_simulation_ad1dfff6ceef0b568a62778b3b9e32ec3}{box\+LengthX}} = 58.\+065f
+\item 
+float \mbox{\hyperlink{class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_m_d_simulation_a0270adb1cb6d41ab76304bc87ab537a2}{box\+LengthY}} = 58.\+065f
+\item 
+float \mbox{\hyperlink{class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_m_d_simulation_a9288677ed992b5763dbb822ee58ebe28}{box\+LengthZ}} = 58.\+065f
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+override Transform\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_m_d_simulation_a28c31d560ef224835d0c6b77924efa76}{Build\+Visualization}} ()
+\begin{DoxyCompactList}\small\item\em Reads and stores PDB and PSF data, uses the data to build the system visualization \end{DoxyCompactList}\item 
+override void \mbox{\hyperlink{class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_m_d_simulation_a04d2e4333f58062d90b2949fb4bef95e}{Update\+Vis\+Child}} (in Vector3\mbox{[}$\,$\mbox{]} simulation\+Values)
+\begin{DoxyCompactList}\small\item\em Used here to update bond visualization. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+float \mbox{\hyperlink{class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_m_d_simulation_a756174d1d8b549b7edee32d9ce0174be}{c}} = -\/1
+\item 
+Dictionary$<$ Transform, int $>$ \mbox{\hyperlink{class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_m_d_simulation_a262d0ecd7c1c170590c01fb05b93cfee}{particle\+Lookup}}
+\item 
+Vector3\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_m_d_simulation_ac50ccd13a85f9db1440d0f3d24a48889}{coord}} = null
+\item 
+Vector3\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_m_d_simulation_a7204e0e0b69e39b1b2d7e4d207a64bf3}{vel}} = null
+\begin{DoxyCompactList}\small\item\em Velocity of each particle \end{DoxyCompactList}\item 
+Vector3\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_m_d_simulation_ae6be1b21f6bec9f71c28ee572f1153e0}{r}} = null
+\item 
+\mbox{\hyperlink{class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_m_d_simulation_1_1_vector3_int}{Vector3\+Int}}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_m_d_simulation_a0cc56c45ffc37a35ddb7d2b87de55b3a}{pbc\+Flag}} = null
+\item 
+int\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_m_d_simulation_ad61008b14c8a5a8fbf864a799cabeab7}{bonds}} = null
+\begin{DoxyCompactList}\small\item\em Each two indices represents one bond. \end{DoxyCompactList}\item 
+int\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_m_d_simulation_a50cc4a8ddf3cda6cef7059bf6c20904a}{angles}} = null
+\item 
+float\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_m_d_simulation_a5801aa0919cb402c6c2b5cfdbbc58036}{mass}} = null
+\item 
+string\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_m_d_simulation_ad301f32244d589b3d5e390bb882959ee}{types}} = null
+\item 
+int\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_m_d_simulation_ad4ac6f6da6d0dc4e0dcf6505484dfe8b}{bond\+\_\+topo}} = null
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_m_d_simulation_af7862096ec67e21f8ddf971e360b3728}{Read\+Data}} ()
+\item 
+float \mbox{\hyperlink{class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_m_d_simulation_a41cdf43e03e719337c7782f2487ee3ff}{gjI}} (float \mbox{\hyperlink{class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_m_d_simulation_afba57f6e6a6cce29c0b69b8287a423da}{gamma}}, float dt)
+\item 
+float \mbox{\hyperlink{class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_m_d_simulation_aecaec2c1ec8b65999b3dc3afd737a07f}{gj\+II}} (float \mbox{\hyperlink{class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_m_d_simulation_afba57f6e6a6cce29c0b69b8287a423da}{gamma}}, float dt)
+\item 
+float \mbox{\hyperlink{class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_m_d_simulation_a0d034ea62f2ccaf0c2e2a6eede9d6294}{gj\+III}} (float \mbox{\hyperlink{class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_m_d_simulation_afba57f6e6a6cce29c0b69b8287a423da}{gamma}}, float dt)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+readonly string \mbox{\hyperlink{class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_m_d_simulation_ad494b63dcc06da521a526dfa34a84ccb}{path}} = Application.\+streaming\+Assets\+Path + @\char`\"{}/Molecular\+Dynamics/\char`\"{}
+\item 
+\mbox{\hyperlink{struct_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_bond_renderer}{Bond\+Renderer}}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_m_d_simulation_a7a2d6b246e60198c9b573727edfc6043}{bond\+Renderers}}
+\item 
+Shader \mbox{\hyperlink{class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_m_d_simulation_abd53ce3b1ffb028064f4b6a19c0f23ba}{shader}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Reads data files and creates and updates visualizations for molecular dynamics systemss 
+
+
+
+\doxysubsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_m_d_simulation_a2b0fa12658a342140dd3369aa289c90d}\label{class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_m_d_simulation_a2b0fa12658a342140dd3369aa289c90d}} 
+\index{C2M2.MolecularDynamics.Simulation.MDSimulation@{C2M2.MolecularDynamics.Simulation.MDSimulation}!MethodType@{MethodType}}
+\index{MethodType@{MethodType}!C2M2.MolecularDynamics.Simulation.MDSimulation@{C2M2.MolecularDynamics.Simulation.MDSimulation}}
+\doxysubsubsection{\texorpdfstring{MethodType}{MethodType}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_m_d_simulation_a2b0fa12658a342140dd3369aa289c90d}{C2\+M2.\+Molecular\+Dynamics.\+Simulation.\+MDSimulation.\+Method\+Type}}\hspace{0.3cm}{\ttfamily [strong]}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{gjI@{gjI}!C2M2.MolecularDynamics.Simulation.MDSimulation@{C2M2.MolecularDynamics.Simulation.MDSimulation}}\index{C2M2.MolecularDynamics.Simulation.MDSimulation@{C2M2.MolecularDynamics.Simulation.MDSimulation}!gjI@{gjI}}}\mbox{\Hypertarget{class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_m_d_simulation_a2b0fa12658a342140dd3369aa289c90da37033c09307b7f90d4a46d1d1352298f}\label{class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_m_d_simulation_a2b0fa12658a342140dd3369aa289c90da37033c09307b7f90d4a46d1d1352298f}} 
+gjI&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{gjII@{gjII}!C2M2.MolecularDynamics.Simulation.MDSimulation@{C2M2.MolecularDynamics.Simulation.MDSimulation}}\index{C2M2.MolecularDynamics.Simulation.MDSimulation@{C2M2.MolecularDynamics.Simulation.MDSimulation}!gjII@{gjII}}}\mbox{\Hypertarget{class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_m_d_simulation_a2b0fa12658a342140dd3369aa289c90da83ec1b0ebb12d4f5fe2881c4507ec670}\label{class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_m_d_simulation_a2b0fa12658a342140dd3369aa289c90da83ec1b0ebb12d4f5fe2881c4507ec670}} 
+gj\+II&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{gjIII@{gjIII}!C2M2.MolecularDynamics.Simulation.MDSimulation@{C2M2.MolecularDynamics.Simulation.MDSimulation}}\index{C2M2.MolecularDynamics.Simulation.MDSimulation@{C2M2.MolecularDynamics.Simulation.MDSimulation}!gjIII@{gjIII}}}\mbox{\Hypertarget{class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_m_d_simulation_a2b0fa12658a342140dd3369aa289c90da84d8ce95c58a694d941b59967199e478}\label{class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_m_d_simulation_a2b0fa12658a342140dd3369aa289c90da84d8ce95c58a694d941b59967199e478}} 
+gj\+III&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_m_d_simulation_a28c31d560ef224835d0c6b77924efa76}\label{class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_m_d_simulation_a28c31d560ef224835d0c6b77924efa76}} 
+\index{C2M2.MolecularDynamics.Simulation.MDSimulation@{C2M2.MolecularDynamics.Simulation.MDSimulation}!BuildVisualization@{BuildVisualization}}
+\index{BuildVisualization@{BuildVisualization}!C2M2.MolecularDynamics.Simulation.MDSimulation@{C2M2.MolecularDynamics.Simulation.MDSimulation}}
+\doxysubsubsection{\texorpdfstring{BuildVisualization()}{BuildVisualization()}}
+{\footnotesize\ttfamily override Transform \mbox{[}$\,$\mbox{]} C2\+M2.\+Molecular\+Dynamics.\+Simulation.\+MDSimulation.\+Build\+Visualization (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Reads and stores PDB and PSF data, uses the data to build the system visualization 
+
+
+
+Implements \mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_simulation_ad862aff8a93dc71945db0450fddd6cbf}{C2\+M2.\+Simulation.\+Simulation$<$ Vector3\mbox{[}$\,$\mbox{]}, Transform\mbox{[}$\,$\mbox{]}, VRRaycastable\+Colliders, VRGrabbable\+Colliders $>$}}.
+
+\mbox{\Hypertarget{class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_m_d_simulation_a41cdf43e03e719337c7782f2487ee3ff}\label{class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_m_d_simulation_a41cdf43e03e719337c7782f2487ee3ff}} 
+\index{C2M2.MolecularDynamics.Simulation.MDSimulation@{C2M2.MolecularDynamics.Simulation.MDSimulation}!gjI@{gjI}}
+\index{gjI@{gjI}!C2M2.MolecularDynamics.Simulation.MDSimulation@{C2M2.MolecularDynamics.Simulation.MDSimulation}}
+\doxysubsubsection{\texorpdfstring{gjI()}{gjI()}}
+{\footnotesize\ttfamily float C2\+M2.\+Molecular\+Dynamics.\+Simulation.\+MDSimulation.\+gjI (\begin{DoxyParamCaption}\item[{float}]{gamma,  }\item[{float}]{dt }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_m_d_simulation_aecaec2c1ec8b65999b3dc3afd737a07f}\label{class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_m_d_simulation_aecaec2c1ec8b65999b3dc3afd737a07f}} 
+\index{C2M2.MolecularDynamics.Simulation.MDSimulation@{C2M2.MolecularDynamics.Simulation.MDSimulation}!gjII@{gjII}}
+\index{gjII@{gjII}!C2M2.MolecularDynamics.Simulation.MDSimulation@{C2M2.MolecularDynamics.Simulation.MDSimulation}}
+\doxysubsubsection{\texorpdfstring{gjII()}{gjII()}}
+{\footnotesize\ttfamily float C2\+M2.\+Molecular\+Dynamics.\+Simulation.\+MDSimulation.\+gj\+II (\begin{DoxyParamCaption}\item[{float}]{gamma,  }\item[{float}]{dt }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_m_d_simulation_a0d034ea62f2ccaf0c2e2a6eede9d6294}\label{class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_m_d_simulation_a0d034ea62f2ccaf0c2e2a6eede9d6294}} 
+\index{C2M2.MolecularDynamics.Simulation.MDSimulation@{C2M2.MolecularDynamics.Simulation.MDSimulation}!gjIII@{gjIII}}
+\index{gjIII@{gjIII}!C2M2.MolecularDynamics.Simulation.MDSimulation@{C2M2.MolecularDynamics.Simulation.MDSimulation}}
+\doxysubsubsection{\texorpdfstring{gjIII()}{gjIII()}}
+{\footnotesize\ttfamily float C2\+M2.\+Molecular\+Dynamics.\+Simulation.\+MDSimulation.\+gj\+III (\begin{DoxyParamCaption}\item[{float}]{gamma,  }\item[{float}]{dt }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_m_d_simulation_af7862096ec67e21f8ddf971e360b3728}\label{class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_m_d_simulation_af7862096ec67e21f8ddf971e360b3728}} 
+\index{C2M2.MolecularDynamics.Simulation.MDSimulation@{C2M2.MolecularDynamics.Simulation.MDSimulation}!ReadData@{ReadData}}
+\index{ReadData@{ReadData}!C2M2.MolecularDynamics.Simulation.MDSimulation@{C2M2.MolecularDynamics.Simulation.MDSimulation}}
+\doxysubsubsection{\texorpdfstring{ReadData()}{ReadData()}}
+{\footnotesize\ttfamily void C2\+M2.\+Molecular\+Dynamics.\+Simulation.\+MDSimulation.\+Read\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_m_d_simulation_a04d2e4333f58062d90b2949fb4bef95e}\label{class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_m_d_simulation_a04d2e4333f58062d90b2949fb4bef95e}} 
+\index{C2M2.MolecularDynamics.Simulation.MDSimulation@{C2M2.MolecularDynamics.Simulation.MDSimulation}!UpdateVisChild@{UpdateVisChild}}
+\index{UpdateVisChild@{UpdateVisChild}!C2M2.MolecularDynamics.Simulation.MDSimulation@{C2M2.MolecularDynamics.Simulation.MDSimulation}}
+\doxysubsubsection{\texorpdfstring{UpdateVisChild()}{UpdateVisChild()}}
+{\footnotesize\ttfamily override void C2\+M2.\+Molecular\+Dynamics.\+Simulation.\+MDSimulation.\+Update\+Vis\+Child (\begin{DoxyParamCaption}\item[{in Vector3\mbox{[}$\,$\mbox{]}}]{simulation\+Values }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Used here to update bond visualization. 
+
+Called after position field transforms are updated. 
+
+Reimplemented from \mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_position_field_simulation_abe6ed5cdf1967ee5eedcdc63703369d6}{C2\+M2.\+Simulation.\+Position\+Field\+Simulation}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_m_d_simulation_a50cc4a8ddf3cda6cef7059bf6c20904a}\label{class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_m_d_simulation_a50cc4a8ddf3cda6cef7059bf6c20904a}} 
+\index{C2M2.MolecularDynamics.Simulation.MDSimulation@{C2M2.MolecularDynamics.Simulation.MDSimulation}!angles@{angles}}
+\index{angles@{angles}!C2M2.MolecularDynamics.Simulation.MDSimulation@{C2M2.MolecularDynamics.Simulation.MDSimulation}}
+\doxysubsubsection{\texorpdfstring{angles}{angles}}
+{\footnotesize\ttfamily int \mbox{[}$\,$\mbox{]} C2\+M2.\+Molecular\+Dynamics.\+Simulation.\+MDSimulation.\+angles = null\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_m_d_simulation_ac64a219528efb38adf7c00ccb2f43b98}\label{class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_m_d_simulation_ac64a219528efb38adf7c00ccb2f43b98}} 
+\index{C2M2.MolecularDynamics.Simulation.MDSimulation@{C2M2.MolecularDynamics.Simulation.MDSimulation}!atomColors@{atomColors}}
+\index{atomColors@{atomColors}!C2M2.MolecularDynamics.Simulation.MDSimulation@{C2M2.MolecularDynamics.Simulation.MDSimulation}}
+\doxysubsubsection{\texorpdfstring{atomColors}{atomColors}}
+{\footnotesize\ttfamily Color \mbox{[}$\,$\mbox{]} C2\+M2.\+Molecular\+Dynamics.\+Simulation.\+MDSimulation.\+atom\+Colors = new Color\mbox{[}$\,$\mbox{]} \{ Color.\+cyan, Color.\+gray \}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_m_d_simulation_ad4ac6f6da6d0dc4e0dcf6505484dfe8b}\label{class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_m_d_simulation_ad4ac6f6da6d0dc4e0dcf6505484dfe8b}} 
+\index{C2M2.MolecularDynamics.Simulation.MDSimulation@{C2M2.MolecularDynamics.Simulation.MDSimulation}!bond\_topo@{bond\_topo}}
+\index{bond\_topo@{bond\_topo}!C2M2.MolecularDynamics.Simulation.MDSimulation@{C2M2.MolecularDynamics.Simulation.MDSimulation}}
+\doxysubsubsection{\texorpdfstring{bond\_topo}{bond\_topo}}
+{\footnotesize\ttfamily int \mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} C2\+M2.\+Molecular\+Dynamics.\+Simulation.\+MDSimulation.\+bond\+\_\+topo = null\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_m_d_simulation_a82b15add37e1b40ca279ab282a61501f}\label{class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_m_d_simulation_a82b15add37e1b40ca279ab282a61501f}} 
+\index{C2M2.MolecularDynamics.Simulation.MDSimulation@{C2M2.MolecularDynamics.Simulation.MDSimulation}!bondMaterial@{bondMaterial}}
+\index{bondMaterial@{bondMaterial}!C2M2.MolecularDynamics.Simulation.MDSimulation@{C2M2.MolecularDynamics.Simulation.MDSimulation}}
+\doxysubsubsection{\texorpdfstring{bondMaterial}{bondMaterial}}
+{\footnotesize\ttfamily Material C2\+M2.\+Molecular\+Dynamics.\+Simulation.\+MDSimulation.\+bond\+Material}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_m_d_simulation_a7a2d6b246e60198c9b573727edfc6043}\label{class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_m_d_simulation_a7a2d6b246e60198c9b573727edfc6043}} 
+\index{C2M2.MolecularDynamics.Simulation.MDSimulation@{C2M2.MolecularDynamics.Simulation.MDSimulation}!bondRenderers@{bondRenderers}}
+\index{bondRenderers@{bondRenderers}!C2M2.MolecularDynamics.Simulation.MDSimulation@{C2M2.MolecularDynamics.Simulation.MDSimulation}}
+\doxysubsubsection{\texorpdfstring{bondRenderers}{bondRenderers}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_bond_renderer}{Bond\+Renderer}} \mbox{[}$\,$\mbox{]} C2\+M2.\+Molecular\+Dynamics.\+Simulation.\+MDSimulation.\+bond\+Renderers\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_m_d_simulation_ad61008b14c8a5a8fbf864a799cabeab7}\label{class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_m_d_simulation_ad61008b14c8a5a8fbf864a799cabeab7}} 
+\index{C2M2.MolecularDynamics.Simulation.MDSimulation@{C2M2.MolecularDynamics.Simulation.MDSimulation}!bonds@{bonds}}
+\index{bonds@{bonds}!C2M2.MolecularDynamics.Simulation.MDSimulation@{C2M2.MolecularDynamics.Simulation.MDSimulation}}
+\doxysubsubsection{\texorpdfstring{bonds}{bonds}}
+{\footnotesize\ttfamily int \mbox{[}$\,$\mbox{]} C2\+M2.\+Molecular\+Dynamics.\+Simulation.\+MDSimulation.\+bonds = null\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Each two indices represents one bond. 
+
+If bonds\mbox{[}0\mbox{]} = 10 and bonds\mbox{[}1\mbox{]} = 15, then the particles at x\mbox{[}10\mbox{]} \& x\mbox{[}15\mbox{]} represent a bonded pair. \mbox{\Hypertarget{class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_m_d_simulation_ad1dfff6ceef0b568a62778b3b9e32ec3}\label{class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_m_d_simulation_ad1dfff6ceef0b568a62778b3b9e32ec3}} 
+\index{C2M2.MolecularDynamics.Simulation.MDSimulation@{C2M2.MolecularDynamics.Simulation.MDSimulation}!boxLengthX@{boxLengthX}}
+\index{boxLengthX@{boxLengthX}!C2M2.MolecularDynamics.Simulation.MDSimulation@{C2M2.MolecularDynamics.Simulation.MDSimulation}}
+\doxysubsubsection{\texorpdfstring{boxLengthX}{boxLengthX}}
+{\footnotesize\ttfamily float C2\+M2.\+Molecular\+Dynamics.\+Simulation.\+MDSimulation.\+box\+LengthX = 58.\+065f}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_m_d_simulation_a0270adb1cb6d41ab76304bc87ab537a2}\label{class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_m_d_simulation_a0270adb1cb6d41ab76304bc87ab537a2}} 
+\index{C2M2.MolecularDynamics.Simulation.MDSimulation@{C2M2.MolecularDynamics.Simulation.MDSimulation}!boxLengthY@{boxLengthY}}
+\index{boxLengthY@{boxLengthY}!C2M2.MolecularDynamics.Simulation.MDSimulation@{C2M2.MolecularDynamics.Simulation.MDSimulation}}
+\doxysubsubsection{\texorpdfstring{boxLengthY}{boxLengthY}}
+{\footnotesize\ttfamily float C2\+M2.\+Molecular\+Dynamics.\+Simulation.\+MDSimulation.\+box\+LengthY = 58.\+065f}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_m_d_simulation_a9288677ed992b5763dbb822ee58ebe28}\label{class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_m_d_simulation_a9288677ed992b5763dbb822ee58ebe28}} 
+\index{C2M2.MolecularDynamics.Simulation.MDSimulation@{C2M2.MolecularDynamics.Simulation.MDSimulation}!boxLengthZ@{boxLengthZ}}
+\index{boxLengthZ@{boxLengthZ}!C2M2.MolecularDynamics.Simulation.MDSimulation@{C2M2.MolecularDynamics.Simulation.MDSimulation}}
+\doxysubsubsection{\texorpdfstring{boxLengthZ}{boxLengthZ}}
+{\footnotesize\ttfamily float C2\+M2.\+Molecular\+Dynamics.\+Simulation.\+MDSimulation.\+box\+LengthZ = 58.\+065f}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_m_d_simulation_a756174d1d8b549b7edee32d9ce0174be}\label{class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_m_d_simulation_a756174d1d8b549b7edee32d9ce0174be}} 
+\index{C2M2.MolecularDynamics.Simulation.MDSimulation@{C2M2.MolecularDynamics.Simulation.MDSimulation}!c@{c}}
+\index{c@{c}!C2M2.MolecularDynamics.Simulation.MDSimulation@{C2M2.MolecularDynamics.Simulation.MDSimulation}}
+\doxysubsubsection{\texorpdfstring{c}{c}}
+{\footnotesize\ttfamily float C2\+M2.\+Molecular\+Dynamics.\+Simulation.\+MDSimulation.\+c = -\/1\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_m_d_simulation_ac50ccd13a85f9db1440d0f3d24a48889}\label{class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_m_d_simulation_ac50ccd13a85f9db1440d0f3d24a48889}} 
+\index{C2M2.MolecularDynamics.Simulation.MDSimulation@{C2M2.MolecularDynamics.Simulation.MDSimulation}!coord@{coord}}
+\index{coord@{coord}!C2M2.MolecularDynamics.Simulation.MDSimulation@{C2M2.MolecularDynamics.Simulation.MDSimulation}}
+\doxysubsubsection{\texorpdfstring{coord}{coord}}
+{\footnotesize\ttfamily Vector3 \mbox{[}$\,$\mbox{]} C2\+M2.\+Molecular\+Dynamics.\+Simulation.\+MDSimulation.\+coord = null\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_m_d_simulation_afba57f6e6a6cce29c0b69b8287a423da}\label{class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_m_d_simulation_afba57f6e6a6cce29c0b69b8287a423da}} 
+\index{C2M2.MolecularDynamics.Simulation.MDSimulation@{C2M2.MolecularDynamics.Simulation.MDSimulation}!gamma@{gamma}}
+\index{gamma@{gamma}!C2M2.MolecularDynamics.Simulation.MDSimulation@{C2M2.MolecularDynamics.Simulation.MDSimulation}}
+\doxysubsubsection{\texorpdfstring{gamma}{gamma}}
+{\footnotesize\ttfamily float C2\+M2.\+Molecular\+Dynamics.\+Simulation.\+MDSimulation.\+gamma = 0.\+1f}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_m_d_simulation_a5801aa0919cb402c6c2b5cfdbbc58036}\label{class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_m_d_simulation_a5801aa0919cb402c6c2b5cfdbbc58036}} 
+\index{C2M2.MolecularDynamics.Simulation.MDSimulation@{C2M2.MolecularDynamics.Simulation.MDSimulation}!mass@{mass}}
+\index{mass@{mass}!C2M2.MolecularDynamics.Simulation.MDSimulation@{C2M2.MolecularDynamics.Simulation.MDSimulation}}
+\doxysubsubsection{\texorpdfstring{mass}{mass}}
+{\footnotesize\ttfamily float \mbox{[}$\,$\mbox{]} C2\+M2.\+Molecular\+Dynamics.\+Simulation.\+MDSimulation.\+mass = null\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_m_d_simulation_aa0dda49bad2c62b1cf4d7cd6f8c10ece}\label{class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_m_d_simulation_aa0dda49bad2c62b1cf4d7cd6f8c10ece}} 
+\index{C2M2.MolecularDynamics.Simulation.MDSimulation@{C2M2.MolecularDynamics.Simulation.MDSimulation}!maxBondLength@{maxBondLength}}
+\index{maxBondLength@{maxBondLength}!C2M2.MolecularDynamics.Simulation.MDSimulation@{C2M2.MolecularDynamics.Simulation.MDSimulation}}
+\doxysubsubsection{\texorpdfstring{maxBondLength}{maxBondLength}}
+{\footnotesize\ttfamily float C2\+M2.\+Molecular\+Dynamics.\+Simulation.\+MDSimulation.\+max\+Bond\+Length = 10f}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_m_d_simulation_aaa68bf514048491ff4048f08aa2cab46}\label{class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_m_d_simulation_aaa68bf514048491ff4048f08aa2cab46}} 
+\index{C2M2.MolecularDynamics.Simulation.MDSimulation@{C2M2.MolecularDynamics.Simulation.MDSimulation}!methodType@{methodType}}
+\index{methodType@{methodType}!C2M2.MolecularDynamics.Simulation.MDSimulation@{C2M2.MolecularDynamics.Simulation.MDSimulation}}
+\doxysubsubsection{\texorpdfstring{methodType}{methodType}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_m_d_simulation_a2b0fa12658a342140dd3369aa289c90d}{Method\+Type}} C2\+M2.\+Molecular\+Dynamics.\+Simulation.\+MDSimulation.\+method\+Type = \mbox{\hyperlink{class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_m_d_simulation_a2b0fa12658a342140dd3369aa289c90da37033c09307b7f90d4a46d1d1352298f}{Method\+Type.\+gjI}}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_m_d_simulation_a262d0ecd7c1c170590c01fb05b93cfee}\label{class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_m_d_simulation_a262d0ecd7c1c170590c01fb05b93cfee}} 
+\index{C2M2.MolecularDynamics.Simulation.MDSimulation@{C2M2.MolecularDynamics.Simulation.MDSimulation}!particleLookup@{particleLookup}}
+\index{particleLookup@{particleLookup}!C2M2.MolecularDynamics.Simulation.MDSimulation@{C2M2.MolecularDynamics.Simulation.MDSimulation}}
+\doxysubsubsection{\texorpdfstring{particleLookup}{particleLookup}}
+{\footnotesize\ttfamily Dictionary$<$Transform, int$>$ C2\+M2.\+Molecular\+Dynamics.\+Simulation.\+MDSimulation.\+particle\+Lookup\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_m_d_simulation_ad494b63dcc06da521a526dfa34a84ccb}\label{class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_m_d_simulation_ad494b63dcc06da521a526dfa34a84ccb}} 
+\index{C2M2.MolecularDynamics.Simulation.MDSimulation@{C2M2.MolecularDynamics.Simulation.MDSimulation}!path@{path}}
+\index{path@{path}!C2M2.MolecularDynamics.Simulation.MDSimulation@{C2M2.MolecularDynamics.Simulation.MDSimulation}}
+\doxysubsubsection{\texorpdfstring{path}{path}}
+{\footnotesize\ttfamily readonly string C2\+M2.\+Molecular\+Dynamics.\+Simulation.\+MDSimulation.\+path = Application.\+streaming\+Assets\+Path + @\char`\"{}/Molecular\+Dynamics/\char`\"{}\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_m_d_simulation_a0cc56c45ffc37a35ddb7d2b87de55b3a}\label{class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_m_d_simulation_a0cc56c45ffc37a35ddb7d2b87de55b3a}} 
+\index{C2M2.MolecularDynamics.Simulation.MDSimulation@{C2M2.MolecularDynamics.Simulation.MDSimulation}!pbcFlag@{pbcFlag}}
+\index{pbcFlag@{pbcFlag}!C2M2.MolecularDynamics.Simulation.MDSimulation@{C2M2.MolecularDynamics.Simulation.MDSimulation}}
+\doxysubsubsection{\texorpdfstring{pbcFlag}{pbcFlag}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_m_d_simulation_1_1_vector3_int}{Vector3\+Int}} \mbox{[}$\,$\mbox{]} C2\+M2.\+Molecular\+Dynamics.\+Simulation.\+MDSimulation.\+pbc\+Flag = null\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_m_d_simulation_af3da2d4b2d42b1d90eb43836465b2826}\label{class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_m_d_simulation_af3da2d4b2d42b1d90eb43836465b2826}} 
+\index{C2M2.MolecularDynamics.Simulation.MDSimulation@{C2M2.MolecularDynamics.Simulation.MDSimulation}!pdbPath@{pdbPath}}
+\index{pdbPath@{pdbPath}!C2M2.MolecularDynamics.Simulation.MDSimulation@{C2M2.MolecularDynamics.Simulation.MDSimulation}}
+\doxysubsubsection{\texorpdfstring{pdbPath}{pdbPath}}
+{\footnotesize\ttfamily string C2\+M2.\+Molecular\+Dynamics.\+Simulation.\+MDSimulation.\+pdb\+Path = \char`\"{}PE/pe\+\_\+cg.\+pdb\char`\"{}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_m_d_simulation_aa7e42584fbc82dbfde216a4dd760791e}\label{class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_m_d_simulation_aa7e42584fbc82dbfde216a4dd760791e}} 
+\index{C2M2.MolecularDynamics.Simulation.MDSimulation@{C2M2.MolecularDynamics.Simulation.MDSimulation}!psfPath@{psfPath}}
+\index{psfPath@{psfPath}!C2M2.MolecularDynamics.Simulation.MDSimulation@{C2M2.MolecularDynamics.Simulation.MDSimulation}}
+\doxysubsubsection{\texorpdfstring{psfPath}{psfPath}}
+{\footnotesize\ttfamily string C2\+M2.\+Molecular\+Dynamics.\+Simulation.\+MDSimulation.\+psf\+Path = \char`\"{}PE/octatetracontane\+\_\+128.\+cg.\+psf\char`\"{}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_m_d_simulation_ae6be1b21f6bec9f71c28ee572f1153e0}\label{class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_m_d_simulation_ae6be1b21f6bec9f71c28ee572f1153e0}} 
+\index{C2M2.MolecularDynamics.Simulation.MDSimulation@{C2M2.MolecularDynamics.Simulation.MDSimulation}!r@{r}}
+\index{r@{r}!C2M2.MolecularDynamics.Simulation.MDSimulation@{C2M2.MolecularDynamics.Simulation.MDSimulation}}
+\doxysubsubsection{\texorpdfstring{r}{r}}
+{\footnotesize\ttfamily Vector3 \mbox{[}$\,$\mbox{]} C2\+M2.\+Molecular\+Dynamics.\+Simulation.\+MDSimulation.\+r = null\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_m_d_simulation_a8317f724cd84871ad62ca86617e5f505}\label{class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_m_d_simulation_a8317f724cd84871ad62ca86617e5f505}} 
+\index{C2M2.MolecularDynamics.Simulation.MDSimulation@{C2M2.MolecularDynamics.Simulation.MDSimulation}!radius@{radius}}
+\index{radius@{radius}!C2M2.MolecularDynamics.Simulation.MDSimulation@{C2M2.MolecularDynamics.Simulation.MDSimulation}}
+\doxysubsubsection{\texorpdfstring{radius}{radius}}
+{\footnotesize\ttfamily float C2\+M2.\+Molecular\+Dynamics.\+Simulation.\+MDSimulation.\+radius = 1f}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_m_d_simulation_abd53ce3b1ffb028064f4b6a19c0f23ba}\label{class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_m_d_simulation_abd53ce3b1ffb028064f4b6a19c0f23ba}} 
+\index{C2M2.MolecularDynamics.Simulation.MDSimulation@{C2M2.MolecularDynamics.Simulation.MDSimulation}!shader@{shader}}
+\index{shader@{shader}!C2M2.MolecularDynamics.Simulation.MDSimulation@{C2M2.MolecularDynamics.Simulation.MDSimulation}}
+\doxysubsubsection{\texorpdfstring{shader}{shader}}
+{\footnotesize\ttfamily Shader C2\+M2.\+Molecular\+Dynamics.\+Simulation.\+MDSimulation.\+shader\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_m_d_simulation_ad038baa745e44fb94bf3d28020a64fa7}\label{class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_m_d_simulation_ad038baa745e44fb94bf3d28020a64fa7}} 
+\index{C2M2.MolecularDynamics.Simulation.MDSimulation@{C2M2.MolecularDynamics.Simulation.MDSimulation}!shaderName@{shaderName}}
+\index{shaderName@{shaderName}!C2M2.MolecularDynamics.Simulation.MDSimulation@{C2M2.MolecularDynamics.Simulation.MDSimulation}}
+\doxysubsubsection{\texorpdfstring{shaderName}{shaderName}}
+{\footnotesize\ttfamily string C2\+M2.\+Molecular\+Dynamics.\+Simulation.\+MDSimulation.\+shader\+Name = \char`\"{}Standard\char`\"{}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_m_d_simulation_aafe4c0cbde4f979483d2fea1fddf1b21}\label{class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_m_d_simulation_aafe4c0cbde4f979483d2fea1fddf1b21}} 
+\index{C2M2.MolecularDynamics.Simulation.MDSimulation@{C2M2.MolecularDynamics.Simulation.MDSimulation}!timestepCount@{timestepCount}}
+\index{timestepCount@{timestepCount}!C2M2.MolecularDynamics.Simulation.MDSimulation@{C2M2.MolecularDynamics.Simulation.MDSimulation}}
+\doxysubsubsection{\texorpdfstring{timestepCount}{timestepCount}}
+{\footnotesize\ttfamily int C2\+M2.\+Molecular\+Dynamics.\+Simulation.\+MDSimulation.\+timestep\+Count = 50000}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_m_d_simulation_a9fb7b8e8ed00633201afbcf8e69b06e7}\label{class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_m_d_simulation_a9fb7b8e8ed00633201afbcf8e69b06e7}} 
+\index{C2M2.MolecularDynamics.Simulation.MDSimulation@{C2M2.MolecularDynamics.Simulation.MDSimulation}!timestepSize@{timestepSize}}
+\index{timestepSize@{timestepSize}!C2M2.MolecularDynamics.Simulation.MDSimulation@{C2M2.MolecularDynamics.Simulation.MDSimulation}}
+\doxysubsubsection{\texorpdfstring{timestepSize}{timestepSize}}
+{\footnotesize\ttfamily float C2\+M2.\+Molecular\+Dynamics.\+Simulation.\+MDSimulation.\+timestep\+Size = .\+1f}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_m_d_simulation_ad301f32244d589b3d5e390bb882959ee}\label{class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_m_d_simulation_ad301f32244d589b3d5e390bb882959ee}} 
+\index{C2M2.MolecularDynamics.Simulation.MDSimulation@{C2M2.MolecularDynamics.Simulation.MDSimulation}!types@{types}}
+\index{types@{types}!C2M2.MolecularDynamics.Simulation.MDSimulation@{C2M2.MolecularDynamics.Simulation.MDSimulation}}
+\doxysubsubsection{\texorpdfstring{types}{types}}
+{\footnotesize\ttfamily string \mbox{[}$\,$\mbox{]} C2\+M2.\+Molecular\+Dynamics.\+Simulation.\+MDSimulation.\+types = null\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_m_d_simulation_a7204e0e0b69e39b1b2d7e4d207a64bf3}\label{class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_m_d_simulation_a7204e0e0b69e39b1b2d7e4d207a64bf3}} 
+\index{C2M2.MolecularDynamics.Simulation.MDSimulation@{C2M2.MolecularDynamics.Simulation.MDSimulation}!vel@{vel}}
+\index{vel@{vel}!C2M2.MolecularDynamics.Simulation.MDSimulation@{C2M2.MolecularDynamics.Simulation.MDSimulation}}
+\doxysubsubsection{\texorpdfstring{vel}{vel}}
+{\footnotesize\ttfamily Vector3 \mbox{[}$\,$\mbox{]} C2\+M2.\+Molecular\+Dynamics.\+Simulation.\+MDSimulation.\+vel = null\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Velocity of each particle 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/jaros/\+Desktop/tempvr/virtual-\/reality/\+Assets/\+Scripts/\+C2\+M2/\+Molecular\+Dynamics/\+Simulation/\mbox{\hyperlink{_m_d_simulation_8cs}{MDSimulation.\+cs}}\end{DoxyCompactItemize}

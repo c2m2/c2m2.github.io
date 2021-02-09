@@ -1,0 +1,229 @@
+\hypertarget{class_c2_m2_1_1_interaction_1_1_adjacency_1_1_gaussian_distance_calculator}{}\doxysection{C2\+M2.\+Interaction.\+Adjacency.\+Gaussian\+Distance\+Calculator Class Reference}
+\label{class_c2_m2_1_1_interaction_1_1_adjacency_1_1_gaussian_distance_calculator}\index{C2M2.Interaction.Adjacency.GaussianDistanceCalculator@{C2M2.Interaction.Adjacency.GaussianDistanceCalculator}}
+
+
+Find Gaussian curve values in 3D space at a given distance from origin  
+
+
+
+
+Inheritance diagram for C2\+M2.\+Interaction.\+Adjacency.\+Gaussian\+Distance\+Calculator\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=259pt]{d6/d1d/class_c2_m2_1_1_interaction_1_1_adjacency_1_1_gaussian_distance_calculator__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for C2\+M2.\+Interaction.\+Adjacency.\+Gaussian\+Distance\+Calculator\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=263pt]{dc/db9/class_c2_m2_1_1_interaction_1_1_adjacency_1_1_gaussian_distance_calculator__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_adjacency_1_1_gaussian_distance_calculator_ab91ce53802660fa821d9b43284603923}{Set\+Gaussian}} (double \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_adjacency_1_1_gaussian_distance_calculator_a2f193a83d4230cc573dd140a81820b24}{height}}, double \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_adjacency_1_1_gaussian_distance_calculator_a2c2d327cd24013fc0dee8f85ab1e6d2f}{std\+Dev}})
+\begin{DoxyCompactList}\small\item\em Gaussian constructor \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_adjacency_1_1_gaussian_distance_calculator_aae3484767c5ca1684120acbd509cf32c}{Calculate\+Gaussian}} (double distance)
+\begin{DoxyCompactList}\small\item\em Find the probability of getting a value == distance \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_adjacency_1_1_gaussian_distance_calculator_ad4628a7386636583d058eed72daabe0e}{Calculate\+Gaussian}} (float dist)
+\item 
+double \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_adjacency_1_1_gaussian_distance_calculator_ab9c20679fee69f1ac6f02925f78232dc}{Calculate\+Gaussian\+Dist\+Sq}} (double dist\+Sq)
+\begin{DoxyCompactList}\small\item\em Identitcal to Calculate\+Gaussian, but provide the distance squared beforehand to speed calculation \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_adjacency_1_1_gaussian_distance_calculator_aa800f2a91274319526474cbafeda04db}{Distance\+Threshold}} (float probability)
+\begin{DoxyCompactList}\small\item\em Calculate\+Gaussian solved for distance \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+double \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_adjacency_1_1_gaussian_distance_calculator_a2f193a83d4230cc573dd140a81820b24}{height}} = 1\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em height of the curve \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_adjacency_1_1_gaussian_distance_calculator_a7d32d4e136d5c26262d2e158b387dea0}{Std\+Dev}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+double \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_adjacency_1_1_gaussian_distance_calculator_a2c2d327cd24013fc0dee8f85ab1e6d2f}{std\+Dev}} = 0.\+01
+\begin{DoxyCompactList}\small\item\em Standard deviation of the curve \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_adjacency_1_1_gaussian_distance_calculator_a95257c70b0de657a7fee66ce2c8439ab}{std\+Dev\+Sq}} = 1
+\begin{DoxyCompactList}\small\item\em = std\+Dev$^\wedge$2 \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_adjacency_1_1_gaussian_distance_calculator_a401b241bad7d6290ff98b8284778eb6c}{two\+Xstd\+Dev\+Sq}} = 2
+\begin{DoxyCompactList}\small\item\em = 2 $\ast$ std\+Dev$^\wedge$2 \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_adjacency_1_1_gaussian_distance_calculator_a0839365bddd7c3c301252839b1cc3e98}{std\+Dev\+Cb}} = 1
+\begin{DoxyCompactList}\small\item\em = std\+Dev$^\wedge$3 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static double \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_adjacency_1_1_gaussian_distance_calculator_a5b28c2ad3ba491c7f2329dec2f8c8ba5}{e}} = Math.\+E
+\begin{DoxyCompactList}\small\item\em = 2.\+7182818284590451 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Find Gaussian curve values in 3D space at a given distance from origin 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_adjacency_1_1_gaussian_distance_calculator_aae3484767c5ca1684120acbd509cf32c}\label{class_c2_m2_1_1_interaction_1_1_adjacency_1_1_gaussian_distance_calculator_aae3484767c5ca1684120acbd509cf32c}} 
+\index{C2M2.Interaction.Adjacency.GaussianDistanceCalculator@{C2M2.Interaction.Adjacency.GaussianDistanceCalculator}!CalculateGaussian@{CalculateGaussian}}
+\index{CalculateGaussian@{CalculateGaussian}!C2M2.Interaction.Adjacency.GaussianDistanceCalculator@{C2M2.Interaction.Adjacency.GaussianDistanceCalculator}}
+\doxysubsubsection{\texorpdfstring{CalculateGaussian()}{CalculateGaussian()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily double C2\+M2.\+Interaction.\+Adjacency.\+Gaussian\+Distance\+Calculator.\+Calculate\+Gaussian (\begin{DoxyParamCaption}\item[{double}]{distance }\end{DoxyParamCaption})}
+
+
+
+Find the probability of getting a value == distance 
+
+
+\begin{DoxyParams}{Parameters}
+{\em distance} & distance from the origin/mean \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+value of gaussian function at given distance 
+\end{DoxyReturn}
+Represents the function\+: \begin{DoxyVerb}      height
+\end{DoxyVerb}
+ \DoxyHorRuler{0}
+ distance$^\wedge$2 \DoxyHorRuler{0}
+
+
+2 $\ast$ standard\+Deviation$^\wedge$2 e \mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_adjacency_1_1_gaussian_distance_calculator_ad4628a7386636583d058eed72daabe0e}\label{class_c2_m2_1_1_interaction_1_1_adjacency_1_1_gaussian_distance_calculator_ad4628a7386636583d058eed72daabe0e}} 
+\index{C2M2.Interaction.Adjacency.GaussianDistanceCalculator@{C2M2.Interaction.Adjacency.GaussianDistanceCalculator}!CalculateGaussian@{CalculateGaussian}}
+\index{CalculateGaussian@{CalculateGaussian}!C2M2.Interaction.Adjacency.GaussianDistanceCalculator@{C2M2.Interaction.Adjacency.GaussianDistanceCalculator}}
+\doxysubsubsection{\texorpdfstring{CalculateGaussian()}{CalculateGaussian()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily double C2\+M2.\+Interaction.\+Adjacency.\+Gaussian\+Distance\+Calculator.\+Calculate\+Gaussian (\begin{DoxyParamCaption}\item[{float}]{dist }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_adjacency_1_1_gaussian_distance_calculator_ab9c20679fee69f1ac6f02925f78232dc}\label{class_c2_m2_1_1_interaction_1_1_adjacency_1_1_gaussian_distance_calculator_ab9c20679fee69f1ac6f02925f78232dc}} 
+\index{C2M2.Interaction.Adjacency.GaussianDistanceCalculator@{C2M2.Interaction.Adjacency.GaussianDistanceCalculator}!CalculateGaussianDistSq@{CalculateGaussianDistSq}}
+\index{CalculateGaussianDistSq@{CalculateGaussianDistSq}!C2M2.Interaction.Adjacency.GaussianDistanceCalculator@{C2M2.Interaction.Adjacency.GaussianDistanceCalculator}}
+\doxysubsubsection{\texorpdfstring{CalculateGaussianDistSq()}{CalculateGaussianDistSq()}}
+{\footnotesize\ttfamily double C2\+M2.\+Interaction.\+Adjacency.\+Gaussian\+Distance\+Calculator.\+Calculate\+Gaussian\+Dist\+Sq (\begin{DoxyParamCaption}\item[{double}]{dist\+Sq }\end{DoxyParamCaption})}
+
+
+
+Identitcal to Calculate\+Gaussian, but provide the distance squared beforehand to speed calculation 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dist\+Sq} & distance from the origin squared \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+value of gaussian function at given distance 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_adjacency_1_1_gaussian_distance_calculator_aa800f2a91274319526474cbafeda04db}\label{class_c2_m2_1_1_interaction_1_1_adjacency_1_1_gaussian_distance_calculator_aa800f2a91274319526474cbafeda04db}} 
+\index{C2M2.Interaction.Adjacency.GaussianDistanceCalculator@{C2M2.Interaction.Adjacency.GaussianDistanceCalculator}!DistanceThreshold@{DistanceThreshold}}
+\index{DistanceThreshold@{DistanceThreshold}!C2M2.Interaction.Adjacency.GaussianDistanceCalculator@{C2M2.Interaction.Adjacency.GaussianDistanceCalculator}}
+\doxysubsubsection{\texorpdfstring{DistanceThreshold()}{DistanceThreshold()}}
+{\footnotesize\ttfamily float C2\+M2.\+Interaction.\+Adjacency.\+Gaussian\+Distance\+Calculator.\+Distance\+Threshold (\begin{DoxyParamCaption}\item[{float}]{probability }\end{DoxyParamCaption})}
+
+
+
+Calculate\+Gaussian solved for distance 
+
+
+\begin{DoxyParams}{Parameters}
+{\em probability} & quantile must be greater than 0 and less than 1, noninclusive. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Distance d at which Calculate\+Gaussian(d) == probability, scaled by Std\+Dev 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_adjacency_1_1_gaussian_distance_calculator_ab91ce53802660fa821d9b43284603923}\label{class_c2_m2_1_1_interaction_1_1_adjacency_1_1_gaussian_distance_calculator_ab91ce53802660fa821d9b43284603923}} 
+\index{C2M2.Interaction.Adjacency.GaussianDistanceCalculator@{C2M2.Interaction.Adjacency.GaussianDistanceCalculator}!SetGaussian@{SetGaussian}}
+\index{SetGaussian@{SetGaussian}!C2M2.Interaction.Adjacency.GaussianDistanceCalculator@{C2M2.Interaction.Adjacency.GaussianDistanceCalculator}}
+\doxysubsubsection{\texorpdfstring{SetGaussian()}{SetGaussian()}}
+{\footnotesize\ttfamily void C2\+M2.\+Interaction.\+Adjacency.\+Gaussian\+Distance\+Calculator.\+Set\+Gaussian (\begin{DoxyParamCaption}\item[{double}]{height,  }\item[{double}]{std\+Dev }\end{DoxyParamCaption})}
+
+
+
+Gaussian constructor 
+
+
+\begin{DoxyParams}{Parameters}
+{\em height} & Height of the curve\textquotesingle{}s peak \\
+\hline
+{\em std\+Dev} & The standard deviation, sometimes called the Gaussian RMS width. Controls the width of the \char`\"{}bell\char`\"{} \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_adjacency_1_1_gaussian_distance_calculator_a5b28c2ad3ba491c7f2329dec2f8c8ba5}\label{class_c2_m2_1_1_interaction_1_1_adjacency_1_1_gaussian_distance_calculator_a5b28c2ad3ba491c7f2329dec2f8c8ba5}} 
+\index{C2M2.Interaction.Adjacency.GaussianDistanceCalculator@{C2M2.Interaction.Adjacency.GaussianDistanceCalculator}!e@{e}}
+\index{e@{e}!C2M2.Interaction.Adjacency.GaussianDistanceCalculator@{C2M2.Interaction.Adjacency.GaussianDistanceCalculator}}
+\doxysubsubsection{\texorpdfstring{e}{e}}
+{\footnotesize\ttfamily double C2\+M2.\+Interaction.\+Adjacency.\+Gaussian\+Distance\+Calculator.\+e = Math.\+E\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+= 2.\+7182818284590451 
+
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_adjacency_1_1_gaussian_distance_calculator_a2c2d327cd24013fc0dee8f85ab1e6d2f}\label{class_c2_m2_1_1_interaction_1_1_adjacency_1_1_gaussian_distance_calculator_a2c2d327cd24013fc0dee8f85ab1e6d2f}} 
+\index{C2M2.Interaction.Adjacency.GaussianDistanceCalculator@{C2M2.Interaction.Adjacency.GaussianDistanceCalculator}!stdDev@{stdDev}}
+\index{stdDev@{stdDev}!C2M2.Interaction.Adjacency.GaussianDistanceCalculator@{C2M2.Interaction.Adjacency.GaussianDistanceCalculator}}
+\doxysubsubsection{\texorpdfstring{stdDev}{stdDev}}
+{\footnotesize\ttfamily double C2\+M2.\+Interaction.\+Adjacency.\+Gaussian\+Distance\+Calculator.\+std\+Dev = 0.\+01\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Standard deviation of the curve 
+
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_adjacency_1_1_gaussian_distance_calculator_a0839365bddd7c3c301252839b1cc3e98}\label{class_c2_m2_1_1_interaction_1_1_adjacency_1_1_gaussian_distance_calculator_a0839365bddd7c3c301252839b1cc3e98}} 
+\index{C2M2.Interaction.Adjacency.GaussianDistanceCalculator@{C2M2.Interaction.Adjacency.GaussianDistanceCalculator}!stdDevCb@{stdDevCb}}
+\index{stdDevCb@{stdDevCb}!C2M2.Interaction.Adjacency.GaussianDistanceCalculator@{C2M2.Interaction.Adjacency.GaussianDistanceCalculator}}
+\doxysubsubsection{\texorpdfstring{stdDevCb}{stdDevCb}}
+{\footnotesize\ttfamily double C2\+M2.\+Interaction.\+Adjacency.\+Gaussian\+Distance\+Calculator.\+std\+Dev\+Cb = 1\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+= std\+Dev$^\wedge$3 
+
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_adjacency_1_1_gaussian_distance_calculator_a95257c70b0de657a7fee66ce2c8439ab}\label{class_c2_m2_1_1_interaction_1_1_adjacency_1_1_gaussian_distance_calculator_a95257c70b0de657a7fee66ce2c8439ab}} 
+\index{C2M2.Interaction.Adjacency.GaussianDistanceCalculator@{C2M2.Interaction.Adjacency.GaussianDistanceCalculator}!stdDevSq@{stdDevSq}}
+\index{stdDevSq@{stdDevSq}!C2M2.Interaction.Adjacency.GaussianDistanceCalculator@{C2M2.Interaction.Adjacency.GaussianDistanceCalculator}}
+\doxysubsubsection{\texorpdfstring{stdDevSq}{stdDevSq}}
+{\footnotesize\ttfamily double C2\+M2.\+Interaction.\+Adjacency.\+Gaussian\+Distance\+Calculator.\+std\+Dev\+Sq = 1\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+= std\+Dev$^\wedge$2 
+
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_adjacency_1_1_gaussian_distance_calculator_a401b241bad7d6290ff98b8284778eb6c}\label{class_c2_m2_1_1_interaction_1_1_adjacency_1_1_gaussian_distance_calculator_a401b241bad7d6290ff98b8284778eb6c}} 
+\index{C2M2.Interaction.Adjacency.GaussianDistanceCalculator@{C2M2.Interaction.Adjacency.GaussianDistanceCalculator}!twoXstdDevSq@{twoXstdDevSq}}
+\index{twoXstdDevSq@{twoXstdDevSq}!C2M2.Interaction.Adjacency.GaussianDistanceCalculator@{C2M2.Interaction.Adjacency.GaussianDistanceCalculator}}
+\doxysubsubsection{\texorpdfstring{twoXstdDevSq}{twoXstdDevSq}}
+{\footnotesize\ttfamily double C2\+M2.\+Interaction.\+Adjacency.\+Gaussian\+Distance\+Calculator.\+two\+Xstd\+Dev\+Sq = 2\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+= 2 $\ast$ std\+Dev$^\wedge$2 
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_adjacency_1_1_gaussian_distance_calculator_a2f193a83d4230cc573dd140a81820b24}\label{class_c2_m2_1_1_interaction_1_1_adjacency_1_1_gaussian_distance_calculator_a2f193a83d4230cc573dd140a81820b24}} 
+\index{C2M2.Interaction.Adjacency.GaussianDistanceCalculator@{C2M2.Interaction.Adjacency.GaussianDistanceCalculator}!height@{height}}
+\index{height@{height}!C2M2.Interaction.Adjacency.GaussianDistanceCalculator@{C2M2.Interaction.Adjacency.GaussianDistanceCalculator}}
+\doxysubsubsection{\texorpdfstring{height}{height}}
+{\footnotesize\ttfamily double C2\+M2.\+Interaction.\+Adjacency.\+Gaussian\+Distance\+Calculator.\+height = 1\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+height of the curve 
+
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_adjacency_1_1_gaussian_distance_calculator_a7d32d4e136d5c26262d2e158b387dea0}\label{class_c2_m2_1_1_interaction_1_1_adjacency_1_1_gaussian_distance_calculator_a7d32d4e136d5c26262d2e158b387dea0}} 
+\index{C2M2.Interaction.Adjacency.GaussianDistanceCalculator@{C2M2.Interaction.Adjacency.GaussianDistanceCalculator}!StdDev@{StdDev}}
+\index{StdDev@{StdDev}!C2M2.Interaction.Adjacency.GaussianDistanceCalculator@{C2M2.Interaction.Adjacency.GaussianDistanceCalculator}}
+\doxysubsubsection{\texorpdfstring{StdDev}{StdDev}}
+{\footnotesize\ttfamily double C2\+M2.\+Interaction.\+Adjacency.\+Gaussian\+Distance\+Calculator.\+Std\+Dev\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/jaros/\+Desktop/tempvr/virtual-\/reality/\+Assets/\+Scripts/\+C2\+M2/\+Interaction/\+Adjacency/\mbox{\hyperlink{_gaussian_distance_calculator_8cs}{Gaussian\+Distance\+Calculator.\+cs}}\end{DoxyCompactItemize}

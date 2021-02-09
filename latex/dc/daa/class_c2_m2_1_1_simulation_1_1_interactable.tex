@@ -1,0 +1,141 @@
+\hypertarget{class_c2_m2_1_1_simulation_1_1_interactable}{}\doxysection{C2\+M2.\+Simulation.\+Interactable Class Reference}
+\label{class_c2_m2_1_1_simulation_1_1_interactable}\index{C2M2.Simulation.Interactable@{C2M2.Simulation.Interactable}}
+
+
+Interface for interaction scripts  
+
+
+
+
+Inheritance diagram for C2\+M2.\+Simulation.\+Interactable\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{de/db8/class_c2_m2_1_1_simulation_1_1_interactable__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for C2\+M2.\+Simulation.\+Interactable\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=310pt]{dc/d25/class_c2_m2_1_1_simulation_1_1_interactable__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum class \mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_interactable_a3993dd66c33e70674c6faf19dd8dad04}{Interaction\+Type}} \{ \mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_interactable_a3993dd66c33e70674c6faf19dd8dad04a4984667940802dedc139aa7a430a6553}{Discrete}}
+, \mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_interactable_a3993dd66c33e70674c6faf19dd8dad04a535863a82f163709557e59e2eb8139a7}{Continuous}}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+abstract void \mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_interactable_a6a71591bc93ef5c54431a637e8e5da08}{Set\+Values}} (Raycast\+Hit hit)
+\begin{DoxyCompactList}\small\item\em Require derived classes to know how to receive an interaction event \end{DoxyCompactList}\item 
+abstract float \mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_interactable_aee48028f8cb21dbca4f01626e0eef051}{Get\+Simulation\+Time}} ()
+\begin{DoxyCompactList}\small\item\em Return the current timestep for the simulation \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_interactable_a3993dd66c33e70674c6faf19dd8dad04}{Interaction\+Type}} \mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_interactable_a9da5ce146b73585d5474907da2813348}{interaction\+Type}} = \mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_interactable_a3993dd66c33e70674c6faf19dd8dad04a4984667940802dedc139aa7a430a6553}{Interaction\+Type.\+Discrete}}
+\begin{DoxyCompactList}\small\item\em Continuous interaction can interact with mesh surface regions using an adjacency list and Dijkstra search. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_raycast_heater}{Raycast\+Heater}} \mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_interactable_a8b25136e383fc647839611ec0fcad1f9}{Heater}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, protected set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{namespace_c2_m2_1_1_interaction}{Interaction}} script that resolves player interaction and passes new values back here \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_raycast_heater}{Raycast\+Heater}} \mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_interactable_a8175efa3990ad5487a9354191aa1e8a7}{heater}} = null
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Interface for interaction scripts 
+
+\mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_interactable}{Interactable}} provides an interface so that interaction scripts can affect a \mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_simulation}{Simulation}} without needing to know its type. 
+
+\doxysubsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{class_c2_m2_1_1_simulation_1_1_interactable_a3993dd66c33e70674c6faf19dd8dad04}\label{class_c2_m2_1_1_simulation_1_1_interactable_a3993dd66c33e70674c6faf19dd8dad04}} 
+\index{C2M2.Simulation.Interactable@{C2M2.Simulation.Interactable}!InteractionType@{InteractionType}}
+\index{InteractionType@{InteractionType}!C2M2.Simulation.Interactable@{C2M2.Simulation.Interactable}}
+\doxysubsubsection{\texorpdfstring{InteractionType}{InteractionType}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_interactable_a3993dd66c33e70674c6faf19dd8dad04}{C2\+M2.\+Simulation.\+Interactable.\+Interaction\+Type}}\hspace{0.3cm}{\ttfamily [strong]}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Discrete@{Discrete}!C2M2.Simulation.Interactable@{C2M2.Simulation.Interactable}}\index{C2M2.Simulation.Interactable@{C2M2.Simulation.Interactable}!Discrete@{Discrete}}}\mbox{\Hypertarget{class_c2_m2_1_1_simulation_1_1_interactable_a3993dd66c33e70674c6faf19dd8dad04a4984667940802dedc139aa7a430a6553}\label{class_c2_m2_1_1_simulation_1_1_interactable_a3993dd66c33e70674c6faf19dd8dad04a4984667940802dedc139aa7a430a6553}} 
+Discrete&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Continuous@{Continuous}!C2M2.Simulation.Interactable@{C2M2.Simulation.Interactable}}\index{C2M2.Simulation.Interactable@{C2M2.Simulation.Interactable}!Continuous@{Continuous}}}\mbox{\Hypertarget{class_c2_m2_1_1_simulation_1_1_interactable_a3993dd66c33e70674c6faf19dd8dad04a535863a82f163709557e59e2eb8139a7}\label{class_c2_m2_1_1_simulation_1_1_interactable_a3993dd66c33e70674c6faf19dd8dad04a535863a82f163709557e59e2eb8139a7}} 
+Continuous&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_c2_m2_1_1_simulation_1_1_interactable_aee48028f8cb21dbca4f01626e0eef051}\label{class_c2_m2_1_1_simulation_1_1_interactable_aee48028f8cb21dbca4f01626e0eef051}} 
+\index{C2M2.Simulation.Interactable@{C2M2.Simulation.Interactable}!GetSimulationTime@{GetSimulationTime}}
+\index{GetSimulationTime@{GetSimulationTime}!C2M2.Simulation.Interactable@{C2M2.Simulation.Interactable}}
+\doxysubsubsection{\texorpdfstring{GetSimulationTime()}{GetSimulationTime()}}
+{\footnotesize\ttfamily abstract float C2\+M2.\+Simulation.\+Interactable.\+Get\+Simulation\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Return the current timestep for the simulation 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c2_m2_1_1_simulation_1_1_interactable_a6a71591bc93ef5c54431a637e8e5da08}\label{class_c2_m2_1_1_simulation_1_1_interactable_a6a71591bc93ef5c54431a637e8e5da08}} 
+\index{C2M2.Simulation.Interactable@{C2M2.Simulation.Interactable}!SetValues@{SetValues}}
+\index{SetValues@{SetValues}!C2M2.Simulation.Interactable@{C2M2.Simulation.Interactable}}
+\doxysubsubsection{\texorpdfstring{SetValues()}{SetValues()}}
+{\footnotesize\ttfamily abstract void C2\+M2.\+Simulation.\+Interactable.\+Set\+Values (\begin{DoxyParamCaption}\item[{Raycast\+Hit}]{hit }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Require derived classes to know how to receive an interaction event 
+
+In order to affect live simulations, this method must know how to add values between 0 and 1 to the current simulation values 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_c2_m2_1_1_simulation_1_1_interactable_a8175efa3990ad5487a9354191aa1e8a7}\label{class_c2_m2_1_1_simulation_1_1_interactable_a8175efa3990ad5487a9354191aa1e8a7}} 
+\index{C2M2.Simulation.Interactable@{C2M2.Simulation.Interactable}!heater@{heater}}
+\index{heater@{heater}!C2M2.Simulation.Interactable@{C2M2.Simulation.Interactable}}
+\doxysubsubsection{\texorpdfstring{heater}{heater}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_raycast_heater}{Raycast\+Heater}} C2\+M2.\+Simulation.\+Interactable.\+heater = null\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_simulation_1_1_interactable_a9da5ce146b73585d5474907da2813348}\label{class_c2_m2_1_1_simulation_1_1_interactable_a9da5ce146b73585d5474907da2813348}} 
+\index{C2M2.Simulation.Interactable@{C2M2.Simulation.Interactable}!interactionType@{interactionType}}
+\index{interactionType@{interactionType}!C2M2.Simulation.Interactable@{C2M2.Simulation.Interactable}}
+\doxysubsubsection{\texorpdfstring{interactionType}{interactionType}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_interactable_a3993dd66c33e70674c6faf19dd8dad04}{Interaction\+Type}} C2\+M2.\+Simulation.\+Interactable.\+interaction\+Type = \mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_interactable_a3993dd66c33e70674c6faf19dd8dad04a4984667940802dedc139aa7a430a6553}{Interaction\+Type.\+Discrete}}\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Continuous interaction can interact with mesh surface regions using an adjacency list and Dijkstra search. 
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{class_c2_m2_1_1_simulation_1_1_interactable_a8b25136e383fc647839611ec0fcad1f9}\label{class_c2_m2_1_1_simulation_1_1_interactable_a8b25136e383fc647839611ec0fcad1f9}} 
+\index{C2M2.Simulation.Interactable@{C2M2.Simulation.Interactable}!Heater@{Heater}}
+\index{Heater@{Heater}!C2M2.Simulation.Interactable@{C2M2.Simulation.Interactable}}
+\doxysubsubsection{\texorpdfstring{Heater}{Heater}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_raycast_heater}{Raycast\+Heater}} C2\+M2.\+Simulation.\+Interactable.\+Heater\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [protected set]}}
+
+
+
+\mbox{\hyperlink{namespace_c2_m2_1_1_interaction}{Interaction}} script that resolves player interaction and passes new values back here 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/jaros/\+Desktop/tempvr/virtual-\/reality/\+Assets/\+Scripts/\+C2\+M2/\mbox{\hyperlink{_interactable_8cs}{Interactable.\+cs}}\end{DoxyCompactItemize}

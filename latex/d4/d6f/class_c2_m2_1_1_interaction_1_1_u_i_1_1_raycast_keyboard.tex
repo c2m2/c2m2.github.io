@@ -1,0 +1,300 @@
+\hypertarget{class_c2_m2_1_1_interaction_1_1_u_i_1_1_raycast_keyboard}{}\doxysection{C2\+M2.\+Interaction.\+UI.\+Raycast\+Keyboard Class Reference}
+\label{class_c2_m2_1_1_interaction_1_1_u_i_1_1_raycast_keyboard}\index{C2M2.Interaction.UI.RaycastKeyboard@{C2M2.Interaction.UI.RaycastKeyboard}}
+
+
+Instantiates a raycastable keyboard and manages its input/output  
+
+
+
+
+Inheritance diagram for C2\+M2.\+Interaction.\+UI.\+Raycast\+Keyboard\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=259pt]{d4/d47/class_c2_m2_1_1_interaction_1_1_u_i_1_1_raycast_keyboard__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for C2\+M2.\+Interaction.\+UI.\+Raycast\+Keyboard\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{d5/d39/class_c2_m2_1_1_interaction_1_1_u_i_1_1_raycast_keyboard__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_u_i_1_1_raycast_keyboard_a90785bcbe410487068496790954d85e6}{Pass\+Char}} (string c)
+\item 
+void \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_u_i_1_1_raycast_keyboard_a466b2c9160de74f1c5ba20f04c18ddf7}{Input\+Field\+Activate}} (\mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_u_i_1_1_raycast_input_field}{Raycast\+Input\+Field}} new\+Active\+Field, Raycast\+Hit hit)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Game\+Object \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_u_i_1_1_raycast_keyboard_ab1c269723e7b9edab5f0d163428624f5}{key\+Prefab}}
+\item 
+Game\+Object \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_u_i_1_1_raycast_keyboard_a1abbd9a1db40784721f9459685e6f9ba}{special\+Key\+Container}}
+\item 
+Transform \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_u_i_1_1_raycast_keyboard_af0144cb20ae436cff7ad953e41b990f3}{lower\+Key\+Container}}
+\item 
+Transform \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_u_i_1_1_raycast_keyboard_a5d8d7b7d7252ef68e34832785790e6a0}{upper\+Key\+Container}}
+\item 
+Transform \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_u_i_1_1_raycast_keyboard_add7cda9fc91c5ff85465eedd0f8fefff}{menu\+Anchor}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_u_i_1_1_raycast_input_field}{Raycast\+Input\+Field}} \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_u_i_1_1_raycast_keyboard_a97b4bc5ce12148db230cb5e2beb43aff}{active\+Field}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, private set\mbox{]}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_u_i_1_1_raycast_keyboard_add1c229a07a24b43eed6c9f37d9c35e0}{Awake}} ()
+\item 
+void \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_u_i_1_1_raycast_keyboard_a1163e2c053fef217f0b77f9996603497}{On\+Enable}} ()
+\item 
+void \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_u_i_1_1_raycast_keyboard_a046e4126557e3f19d2c8e826bc9eccc0}{Build\+Keyboard}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_u_i_1_1_raycast_keyboard_ab841b24ec6bda60df7091c81d0dd1ed8}{has\+Active\+Field}} = false
+\item 
+Raycast\+Hit \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_u_i_1_1_raycast_keyboard_a9527269aaf9d38ad0323c760b921ab8d}{last\+Hit}}
+\item 
+float\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_u_i_1_1_raycast_keyboard_a64216ea0962b1e015924dffb27a572e7}{key\+Positions}} = \{ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static string\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_u_i_1_1_raycast_keyboard_a70e26f78b04f02c5894c389121abf9be}{special\+Keys}}
+\item 
+static float\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_u_i_1_1_raycast_keyboard_a42cba2db73ff07771f8766d0a91e4a15}{special\+Key\+Locations}} = \{ 258f, -\/413f, 2702f, -\/230f, 258f, -\/596f, 2663.\+25f, -\/596f, 258f, -\/779f, 2585.\+75f, -\/779f, 1023.\+107f, -\/962f \}
+\item 
+static string\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_u_i_1_1_raycast_keyboard_a2c968940675f65c724f1c24e14863e01}{lower\+Char\+Row0}} = new string\mbox{[}$\,$\mbox{]} \{ \char`\"{}\textquotesingle{}\char`\"{}, \char`\"{}1\char`\"{}, \char`\"{}2\char`\"{}, \char`\"{}3\char`\"{}, \char`\"{}4\char`\"{}, \char`\"{}5\char`\"{}, \char`\"{}6\char`\"{}, \char`\"{}7\char`\"{}, \char`\"{}8\char`\"{}, \char`\"{}9\char`\"{}, \char`\"{}0\char`\"{}, \char`\"{}-\/\char`\"{}, \char`\"{}=\char`\"{} \}
+\item 
+static string\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_u_i_1_1_raycast_keyboard_a936744dbc4199f5222e6ea2b8a86e76c}{lower\+Char\+Row1}} = new string\mbox{[}$\,$\mbox{]} \{ \char`\"{}q\char`\"{}, \char`\"{}w\char`\"{}, \char`\"{}e\char`\"{}, \char`\"{}r\char`\"{}, \char`\"{}t\char`\"{}, \char`\"{}y\char`\"{}, \char`\"{}u\char`\"{}, \char`\"{}i\char`\"{}, \char`\"{}o\char`\"{}, \char`\"{}p\char`\"{}, \char`\"{}\mbox{[}\char`\"{}, \char`\"{}\mbox{]}\char`\"{}, \char`\"{}\textbackslash{}\textbackslash{}\char`\"{} \}
+\item 
+static string\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_u_i_1_1_raycast_keyboard_af94a7d67e2307a1b069add6b54797b68}{lower\+Char\+Row2}} = new string\mbox{[}$\,$\mbox{]} \{ \char`\"{}a\char`\"{}, \char`\"{}s\char`\"{}, \char`\"{}d\char`\"{}, \char`\"{}f\char`\"{}, \char`\"{}g\char`\"{}, \char`\"{}h\char`\"{}, \char`\"{}j\char`\"{}, \char`\"{}k\char`\"{}, \char`\"{}l\char`\"{}, \char`\"{};\char`\"{}, \char`\"{}\textquotesingle{}\char`\"{} \}
+\item 
+static string\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_u_i_1_1_raycast_keyboard_aba9135b1bb7c9a98798819674e50d083}{lower\+Char\+Row3}} = new string\mbox{[}$\,$\mbox{]} \{ \char`\"{}z\char`\"{}, \char`\"{}x\char`\"{}, \char`\"{}c\char`\"{}, \char`\"{}v\char`\"{}, \char`\"{}b\char`\"{}, \char`\"{}n\char`\"{}, \char`\"{}m\char`\"{}, \char`\"{},\char`\"{}, \char`\"{}.\char`\"{}, \char`\"{}/\char`\"{} \}
+\item 
+static string\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_u_i_1_1_raycast_keyboard_a23248ce61b9424300be88e144c0b8c79}{upper\+Char\+Row0}} = new string\mbox{[}$\,$\mbox{]} \{ \char`\"{}$\sim$\char`\"{}, \char`\"{}!\char`\"{}, \char`\"{}@\char`\"{}, \char`\"{}\#\char`\"{}, \char`\"{}\$\char`\"{}, \char`\"{}\%\char`\"{}, \char`\"{}$^\wedge$\char`\"{}, \char`\"{}\&\char`\"{}, \char`\"{}$\ast$\char`\"{}, \char`\"{}(\char`\"{}, \char`\"{})\char`\"{}, \char`\"{}\+\_\+\char`\"{}, \char`\"{}+\char`\"{} \}
+\item 
+static string\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_u_i_1_1_raycast_keyboard_a35bdfb610314587283481345a85a3640}{upper\+Char\+Row1}} = new string\mbox{[}$\,$\mbox{]} \{ \char`\"{}Q\char`\"{}, \char`\"{}W\char`\"{}, \char`\"{}E\char`\"{}, \char`\"{}R\char`\"{}, \char`\"{}T\char`\"{}, \char`\"{}Y\char`\"{}, \char`\"{}U\char`\"{}, \char`\"{}I\char`\"{}, \char`\"{}O\char`\"{}, \char`\"{}P\char`\"{}, \char`\"{}\{\char`\"{}, \char`\"{}\}\char`\"{}, \char`\"{}$\vert$\char`\"{} \}
+\item 
+static string\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_u_i_1_1_raycast_keyboard_a25eacaf0858acf0c27010eb3c1ad463c}{upper\+Char\+Row2}} = new string\mbox{[}$\,$\mbox{]} \{ \char`\"{}A\char`\"{}, \char`\"{}S\char`\"{}, \char`\"{}D\char`\"{}, \char`\"{}F\char`\"{}, \char`\"{}G\char`\"{}, \char`\"{}H\char`\"{}, \char`\"{}J\char`\"{}, \char`\"{}K\char`\"{}, \char`\"{}L\char`\"{}, \char`\"{}\+:\char`\"{}, \char`\"{}\textbackslash{}\char`\"{}\char`\"{} \}
+\item 
+static string\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_u_i_1_1_raycast_keyboard_ad7e3f17c8038e9515cfb49d53e5a83a9}{upper\+Char\+Row3}} = new string\mbox{[}$\,$\mbox{]} \{ \char`\"{}Z\char`\"{}, \char`\"{}X\char`\"{}, \char`\"{}C\char`\"{}, \char`\"{}V\char`\"{}, \char`\"{}B\char`\"{}, \char`\"{}N\char`\"{}, \char`\"{}M\char`\"{}, \char`\"{}$<$\char`\"{}, \char`\"{}$>$\char`\"{}, \char`\"{}?\char`\"{} \}
+\item 
+static float\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_u_i_1_1_raycast_keyboard_a52d49821dfc5030afbb97e517f4a1378}{positionj}} = \{ -\/230f, -\/413f, -\/596f, -\/779f \}
+\item 
+static float\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_u_i_1_1_raycast_keyboard_a6767585323d7cd61dbc0f2e5951aa668}{position0i}} = \{ 258f, 446f, 634f, 822f, 1010f, 1198f, 1386f, 1574f, 1762f, 1950f, 2138f, 2326f, 2514f \}
+\item 
+static float\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_u_i_1_1_raycast_keyboard_aa904799d5a18d6c37a089e216e562269}{position1i}} = \{ 523.\+5f, 711.\+5f, 899.\+5f, 1087.\+5f, 1275.\+5f, 1463.\+5f, 1651.\+5f, 1839.\+5f, 2027.\+5f, 2215.\+5f, 2403.\+5f, 2591.\+5f, 2779.\+5f \}
+\item 
+static float\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_u_i_1_1_raycast_keyboard_ad7216e04e76dea88e51176af99c258ad}{position2i}} = \{ 565f, 755.\+7497f, 946.\+4996f, 1137.\+25f, 1328f, 1518.\+75f, 1709.\+5f, 1900.\+25f, 2091f, 2281.\+75f, 2472.\+5f \}
+\item 
+static float\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_u_i_1_1_raycast_keyboard_acda63a924d53c8e25920a26105d3ca56}{position3i}} = \{ 645.\+75f, 839.\+7496f, 1033.\+75f, 1227.\+75f, 1421.\+75f, 1615.\+75f, 1809.\+75f, 2003.\+75f, 2197.\+75f, 2391.\+75f \}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Instantiates a raycastable keyboard and manages its input/output 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_u_i_1_1_raycast_keyboard_add1c229a07a24b43eed6c9f37d9c35e0}\label{class_c2_m2_1_1_interaction_1_1_u_i_1_1_raycast_keyboard_add1c229a07a24b43eed6c9f37d9c35e0}} 
+\index{C2M2.Interaction.UI.RaycastKeyboard@{C2M2.Interaction.UI.RaycastKeyboard}!Awake@{Awake}}
+\index{Awake@{Awake}!C2M2.Interaction.UI.RaycastKeyboard@{C2M2.Interaction.UI.RaycastKeyboard}}
+\doxysubsubsection{\texorpdfstring{Awake()}{Awake()}}
+{\footnotesize\ttfamily void C2\+M2.\+Interaction.\+UI.\+Raycast\+Keyboard.\+Awake (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_u_i_1_1_raycast_keyboard_a046e4126557e3f19d2c8e826bc9eccc0}\label{class_c2_m2_1_1_interaction_1_1_u_i_1_1_raycast_keyboard_a046e4126557e3f19d2c8e826bc9eccc0}} 
+\index{C2M2.Interaction.UI.RaycastKeyboard@{C2M2.Interaction.UI.RaycastKeyboard}!BuildKeyboard@{BuildKeyboard}}
+\index{BuildKeyboard@{BuildKeyboard}!C2M2.Interaction.UI.RaycastKeyboard@{C2M2.Interaction.UI.RaycastKeyboard}}
+\doxysubsubsection{\texorpdfstring{BuildKeyboard()}{BuildKeyboard()}}
+{\footnotesize\ttfamily void C2\+M2.\+Interaction.\+UI.\+Raycast\+Keyboard.\+Build\+Keyboard (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_u_i_1_1_raycast_keyboard_a466b2c9160de74f1c5ba20f04c18ddf7}\label{class_c2_m2_1_1_interaction_1_1_u_i_1_1_raycast_keyboard_a466b2c9160de74f1c5ba20f04c18ddf7}} 
+\index{C2M2.Interaction.UI.RaycastKeyboard@{C2M2.Interaction.UI.RaycastKeyboard}!InputFieldActivate@{InputFieldActivate}}
+\index{InputFieldActivate@{InputFieldActivate}!C2M2.Interaction.UI.RaycastKeyboard@{C2M2.Interaction.UI.RaycastKeyboard}}
+\doxysubsubsection{\texorpdfstring{InputFieldActivate()}{InputFieldActivate()}}
+{\footnotesize\ttfamily void C2\+M2.\+Interaction.\+UI.\+Raycast\+Keyboard.\+Input\+Field\+Activate (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_u_i_1_1_raycast_input_field}{Raycast\+Input\+Field}}}]{new\+Active\+Field,  }\item[{Raycast\+Hit}]{hit }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_u_i_1_1_raycast_keyboard_a1163e2c053fef217f0b77f9996603497}\label{class_c2_m2_1_1_interaction_1_1_u_i_1_1_raycast_keyboard_a1163e2c053fef217f0b77f9996603497}} 
+\index{C2M2.Interaction.UI.RaycastKeyboard@{C2M2.Interaction.UI.RaycastKeyboard}!OnEnable@{OnEnable}}
+\index{OnEnable@{OnEnable}!C2M2.Interaction.UI.RaycastKeyboard@{C2M2.Interaction.UI.RaycastKeyboard}}
+\doxysubsubsection{\texorpdfstring{OnEnable()}{OnEnable()}}
+{\footnotesize\ttfamily void C2\+M2.\+Interaction.\+UI.\+Raycast\+Keyboard.\+On\+Enable (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_u_i_1_1_raycast_keyboard_a90785bcbe410487068496790954d85e6}\label{class_c2_m2_1_1_interaction_1_1_u_i_1_1_raycast_keyboard_a90785bcbe410487068496790954d85e6}} 
+\index{C2M2.Interaction.UI.RaycastKeyboard@{C2M2.Interaction.UI.RaycastKeyboard}!PassChar@{PassChar}}
+\index{PassChar@{PassChar}!C2M2.Interaction.UI.RaycastKeyboard@{C2M2.Interaction.UI.RaycastKeyboard}}
+\doxysubsubsection{\texorpdfstring{PassChar()}{PassChar()}}
+{\footnotesize\ttfamily bool C2\+M2.\+Interaction.\+UI.\+Raycast\+Keyboard.\+Pass\+Char (\begin{DoxyParamCaption}\item[{string}]{c }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_u_i_1_1_raycast_keyboard_ab841b24ec6bda60df7091c81d0dd1ed8}\label{class_c2_m2_1_1_interaction_1_1_u_i_1_1_raycast_keyboard_ab841b24ec6bda60df7091c81d0dd1ed8}} 
+\index{C2M2.Interaction.UI.RaycastKeyboard@{C2M2.Interaction.UI.RaycastKeyboard}!hasActiveField@{hasActiveField}}
+\index{hasActiveField@{hasActiveField}!C2M2.Interaction.UI.RaycastKeyboard@{C2M2.Interaction.UI.RaycastKeyboard}}
+\doxysubsubsection{\texorpdfstring{hasActiveField}{hasActiveField}}
+{\footnotesize\ttfamily bool C2\+M2.\+Interaction.\+UI.\+Raycast\+Keyboard.\+has\+Active\+Field = false\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_u_i_1_1_raycast_keyboard_a64216ea0962b1e015924dffb27a572e7}\label{class_c2_m2_1_1_interaction_1_1_u_i_1_1_raycast_keyboard_a64216ea0962b1e015924dffb27a572e7}} 
+\index{C2M2.Interaction.UI.RaycastKeyboard@{C2M2.Interaction.UI.RaycastKeyboard}!keyPositions@{keyPositions}}
+\index{keyPositions@{keyPositions}!C2M2.Interaction.UI.RaycastKeyboard@{C2M2.Interaction.UI.RaycastKeyboard}}
+\doxysubsubsection{\texorpdfstring{keyPositions}{keyPositions}}
+{\footnotesize\ttfamily float \mbox{[}$\,$\mbox{]} C2\+M2.\+Interaction.\+UI.\+Raycast\+Keyboard.\+key\+Positions = \{ \}\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_u_i_1_1_raycast_keyboard_ab1c269723e7b9edab5f0d163428624f5}\label{class_c2_m2_1_1_interaction_1_1_u_i_1_1_raycast_keyboard_ab1c269723e7b9edab5f0d163428624f5}} 
+\index{C2M2.Interaction.UI.RaycastKeyboard@{C2M2.Interaction.UI.RaycastKeyboard}!keyPrefab@{keyPrefab}}
+\index{keyPrefab@{keyPrefab}!C2M2.Interaction.UI.RaycastKeyboard@{C2M2.Interaction.UI.RaycastKeyboard}}
+\doxysubsubsection{\texorpdfstring{keyPrefab}{keyPrefab}}
+{\footnotesize\ttfamily Game\+Object C2\+M2.\+Interaction.\+UI.\+Raycast\+Keyboard.\+key\+Prefab}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_u_i_1_1_raycast_keyboard_a9527269aaf9d38ad0323c760b921ab8d}\label{class_c2_m2_1_1_interaction_1_1_u_i_1_1_raycast_keyboard_a9527269aaf9d38ad0323c760b921ab8d}} 
+\index{C2M2.Interaction.UI.RaycastKeyboard@{C2M2.Interaction.UI.RaycastKeyboard}!lastHit@{lastHit}}
+\index{lastHit@{lastHit}!C2M2.Interaction.UI.RaycastKeyboard@{C2M2.Interaction.UI.RaycastKeyboard}}
+\doxysubsubsection{\texorpdfstring{lastHit}{lastHit}}
+{\footnotesize\ttfamily Raycast\+Hit C2\+M2.\+Interaction.\+UI.\+Raycast\+Keyboard.\+last\+Hit\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_u_i_1_1_raycast_keyboard_a2c968940675f65c724f1c24e14863e01}\label{class_c2_m2_1_1_interaction_1_1_u_i_1_1_raycast_keyboard_a2c968940675f65c724f1c24e14863e01}} 
+\index{C2M2.Interaction.UI.RaycastKeyboard@{C2M2.Interaction.UI.RaycastKeyboard}!lowerCharRow0@{lowerCharRow0}}
+\index{lowerCharRow0@{lowerCharRow0}!C2M2.Interaction.UI.RaycastKeyboard@{C2M2.Interaction.UI.RaycastKeyboard}}
+\doxysubsubsection{\texorpdfstring{lowerCharRow0}{lowerCharRow0}}
+{\footnotesize\ttfamily string \mbox{[}$\,$\mbox{]} C2\+M2.\+Interaction.\+UI.\+Raycast\+Keyboard.\+lower\+Char\+Row0 = new string\mbox{[}$\,$\mbox{]} \{ \char`\"{}\textquotesingle{}\char`\"{}, \char`\"{}1\char`\"{}, \char`\"{}2\char`\"{}, \char`\"{}3\char`\"{}, \char`\"{}4\char`\"{}, \char`\"{}5\char`\"{}, \char`\"{}6\char`\"{}, \char`\"{}7\char`\"{}, \char`\"{}8\char`\"{}, \char`\"{}9\char`\"{}, \char`\"{}0\char`\"{}, \char`\"{}-\/\char`\"{}, \char`\"{}=\char`\"{} \}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_u_i_1_1_raycast_keyboard_a936744dbc4199f5222e6ea2b8a86e76c}\label{class_c2_m2_1_1_interaction_1_1_u_i_1_1_raycast_keyboard_a936744dbc4199f5222e6ea2b8a86e76c}} 
+\index{C2M2.Interaction.UI.RaycastKeyboard@{C2M2.Interaction.UI.RaycastKeyboard}!lowerCharRow1@{lowerCharRow1}}
+\index{lowerCharRow1@{lowerCharRow1}!C2M2.Interaction.UI.RaycastKeyboard@{C2M2.Interaction.UI.RaycastKeyboard}}
+\doxysubsubsection{\texorpdfstring{lowerCharRow1}{lowerCharRow1}}
+{\footnotesize\ttfamily string \mbox{[}$\,$\mbox{]} C2\+M2.\+Interaction.\+UI.\+Raycast\+Keyboard.\+lower\+Char\+Row1 = new string\mbox{[}$\,$\mbox{]} \{ \char`\"{}q\char`\"{}, \char`\"{}w\char`\"{}, \char`\"{}e\char`\"{}, \char`\"{}r\char`\"{}, \char`\"{}t\char`\"{}, \char`\"{}y\char`\"{}, \char`\"{}u\char`\"{}, \char`\"{}i\char`\"{}, \char`\"{}o\char`\"{}, \char`\"{}p\char`\"{}, \char`\"{}\mbox{[}\char`\"{}, \char`\"{}\mbox{]}\char`\"{}, \char`\"{}\textbackslash{}\textbackslash{}\char`\"{} \}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_u_i_1_1_raycast_keyboard_af94a7d67e2307a1b069add6b54797b68}\label{class_c2_m2_1_1_interaction_1_1_u_i_1_1_raycast_keyboard_af94a7d67e2307a1b069add6b54797b68}} 
+\index{C2M2.Interaction.UI.RaycastKeyboard@{C2M2.Interaction.UI.RaycastKeyboard}!lowerCharRow2@{lowerCharRow2}}
+\index{lowerCharRow2@{lowerCharRow2}!C2M2.Interaction.UI.RaycastKeyboard@{C2M2.Interaction.UI.RaycastKeyboard}}
+\doxysubsubsection{\texorpdfstring{lowerCharRow2}{lowerCharRow2}}
+{\footnotesize\ttfamily string \mbox{[}$\,$\mbox{]} C2\+M2.\+Interaction.\+UI.\+Raycast\+Keyboard.\+lower\+Char\+Row2 = new string\mbox{[}$\,$\mbox{]} \{ \char`\"{}a\char`\"{}, \char`\"{}s\char`\"{}, \char`\"{}d\char`\"{}, \char`\"{}f\char`\"{}, \char`\"{}g\char`\"{}, \char`\"{}h\char`\"{}, \char`\"{}j\char`\"{}, \char`\"{}k\char`\"{}, \char`\"{}l\char`\"{}, \char`\"{};\char`\"{}, \char`\"{}\textquotesingle{}\char`\"{} \}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_u_i_1_1_raycast_keyboard_aba9135b1bb7c9a98798819674e50d083}\label{class_c2_m2_1_1_interaction_1_1_u_i_1_1_raycast_keyboard_aba9135b1bb7c9a98798819674e50d083}} 
+\index{C2M2.Interaction.UI.RaycastKeyboard@{C2M2.Interaction.UI.RaycastKeyboard}!lowerCharRow3@{lowerCharRow3}}
+\index{lowerCharRow3@{lowerCharRow3}!C2M2.Interaction.UI.RaycastKeyboard@{C2M2.Interaction.UI.RaycastKeyboard}}
+\doxysubsubsection{\texorpdfstring{lowerCharRow3}{lowerCharRow3}}
+{\footnotesize\ttfamily string \mbox{[}$\,$\mbox{]} C2\+M2.\+Interaction.\+UI.\+Raycast\+Keyboard.\+lower\+Char\+Row3 = new string\mbox{[}$\,$\mbox{]} \{ \char`\"{}z\char`\"{}, \char`\"{}x\char`\"{}, \char`\"{}c\char`\"{}, \char`\"{}v\char`\"{}, \char`\"{}b\char`\"{}, \char`\"{}n\char`\"{}, \char`\"{}m\char`\"{}, \char`\"{},\char`\"{}, \char`\"{}.\char`\"{}, \char`\"{}/\char`\"{} \}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_u_i_1_1_raycast_keyboard_af0144cb20ae436cff7ad953e41b990f3}\label{class_c2_m2_1_1_interaction_1_1_u_i_1_1_raycast_keyboard_af0144cb20ae436cff7ad953e41b990f3}} 
+\index{C2M2.Interaction.UI.RaycastKeyboard@{C2M2.Interaction.UI.RaycastKeyboard}!lowerKeyContainer@{lowerKeyContainer}}
+\index{lowerKeyContainer@{lowerKeyContainer}!C2M2.Interaction.UI.RaycastKeyboard@{C2M2.Interaction.UI.RaycastKeyboard}}
+\doxysubsubsection{\texorpdfstring{lowerKeyContainer}{lowerKeyContainer}}
+{\footnotesize\ttfamily Transform C2\+M2.\+Interaction.\+UI.\+Raycast\+Keyboard.\+lower\+Key\+Container}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_u_i_1_1_raycast_keyboard_add7cda9fc91c5ff85465eedd0f8fefff}\label{class_c2_m2_1_1_interaction_1_1_u_i_1_1_raycast_keyboard_add7cda9fc91c5ff85465eedd0f8fefff}} 
+\index{C2M2.Interaction.UI.RaycastKeyboard@{C2M2.Interaction.UI.RaycastKeyboard}!menuAnchor@{menuAnchor}}
+\index{menuAnchor@{menuAnchor}!C2M2.Interaction.UI.RaycastKeyboard@{C2M2.Interaction.UI.RaycastKeyboard}}
+\doxysubsubsection{\texorpdfstring{menuAnchor}{menuAnchor}}
+{\footnotesize\ttfamily Transform C2\+M2.\+Interaction.\+UI.\+Raycast\+Keyboard.\+menu\+Anchor}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_u_i_1_1_raycast_keyboard_a6767585323d7cd61dbc0f2e5951aa668}\label{class_c2_m2_1_1_interaction_1_1_u_i_1_1_raycast_keyboard_a6767585323d7cd61dbc0f2e5951aa668}} 
+\index{C2M2.Interaction.UI.RaycastKeyboard@{C2M2.Interaction.UI.RaycastKeyboard}!position0i@{position0i}}
+\index{position0i@{position0i}!C2M2.Interaction.UI.RaycastKeyboard@{C2M2.Interaction.UI.RaycastKeyboard}}
+\doxysubsubsection{\texorpdfstring{position0i}{position0i}}
+{\footnotesize\ttfamily float \mbox{[}$\,$\mbox{]} C2\+M2.\+Interaction.\+UI.\+Raycast\+Keyboard.\+position0i = \{ 258f, 446f, 634f, 822f, 1010f, 1198f, 1386f, 1574f, 1762f, 1950f, 2138f, 2326f, 2514f \}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_u_i_1_1_raycast_keyboard_aa904799d5a18d6c37a089e216e562269}\label{class_c2_m2_1_1_interaction_1_1_u_i_1_1_raycast_keyboard_aa904799d5a18d6c37a089e216e562269}} 
+\index{C2M2.Interaction.UI.RaycastKeyboard@{C2M2.Interaction.UI.RaycastKeyboard}!position1i@{position1i}}
+\index{position1i@{position1i}!C2M2.Interaction.UI.RaycastKeyboard@{C2M2.Interaction.UI.RaycastKeyboard}}
+\doxysubsubsection{\texorpdfstring{position1i}{position1i}}
+{\footnotesize\ttfamily float \mbox{[}$\,$\mbox{]} C2\+M2.\+Interaction.\+UI.\+Raycast\+Keyboard.\+position1i = \{ 523.\+5f, 711.\+5f, 899.\+5f, 1087.\+5f, 1275.\+5f, 1463.\+5f, 1651.\+5f, 1839.\+5f, 2027.\+5f, 2215.\+5f, 2403.\+5f, 2591.\+5f, 2779.\+5f \}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_u_i_1_1_raycast_keyboard_ad7216e04e76dea88e51176af99c258ad}\label{class_c2_m2_1_1_interaction_1_1_u_i_1_1_raycast_keyboard_ad7216e04e76dea88e51176af99c258ad}} 
+\index{C2M2.Interaction.UI.RaycastKeyboard@{C2M2.Interaction.UI.RaycastKeyboard}!position2i@{position2i}}
+\index{position2i@{position2i}!C2M2.Interaction.UI.RaycastKeyboard@{C2M2.Interaction.UI.RaycastKeyboard}}
+\doxysubsubsection{\texorpdfstring{position2i}{position2i}}
+{\footnotesize\ttfamily float \mbox{[}$\,$\mbox{]} C2\+M2.\+Interaction.\+UI.\+Raycast\+Keyboard.\+position2i = \{ 565f, 755.\+7497f, 946.\+4996f, 1137.\+25f, 1328f, 1518.\+75f, 1709.\+5f, 1900.\+25f, 2091f, 2281.\+75f, 2472.\+5f \}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_u_i_1_1_raycast_keyboard_acda63a924d53c8e25920a26105d3ca56}\label{class_c2_m2_1_1_interaction_1_1_u_i_1_1_raycast_keyboard_acda63a924d53c8e25920a26105d3ca56}} 
+\index{C2M2.Interaction.UI.RaycastKeyboard@{C2M2.Interaction.UI.RaycastKeyboard}!position3i@{position3i}}
+\index{position3i@{position3i}!C2M2.Interaction.UI.RaycastKeyboard@{C2M2.Interaction.UI.RaycastKeyboard}}
+\doxysubsubsection{\texorpdfstring{position3i}{position3i}}
+{\footnotesize\ttfamily float \mbox{[}$\,$\mbox{]} C2\+M2.\+Interaction.\+UI.\+Raycast\+Keyboard.\+position3i = \{ 645.\+75f, 839.\+7496f, 1033.\+75f, 1227.\+75f, 1421.\+75f, 1615.\+75f, 1809.\+75f, 2003.\+75f, 2197.\+75f, 2391.\+75f \}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_u_i_1_1_raycast_keyboard_a52d49821dfc5030afbb97e517f4a1378}\label{class_c2_m2_1_1_interaction_1_1_u_i_1_1_raycast_keyboard_a52d49821dfc5030afbb97e517f4a1378}} 
+\index{C2M2.Interaction.UI.RaycastKeyboard@{C2M2.Interaction.UI.RaycastKeyboard}!positionj@{positionj}}
+\index{positionj@{positionj}!C2M2.Interaction.UI.RaycastKeyboard@{C2M2.Interaction.UI.RaycastKeyboard}}
+\doxysubsubsection{\texorpdfstring{positionj}{positionj}}
+{\footnotesize\ttfamily float \mbox{[}$\,$\mbox{]} C2\+M2.\+Interaction.\+UI.\+Raycast\+Keyboard.\+positionj = \{ -\/230f, -\/413f, -\/596f, -\/779f \}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_u_i_1_1_raycast_keyboard_a1abbd9a1db40784721f9459685e6f9ba}\label{class_c2_m2_1_1_interaction_1_1_u_i_1_1_raycast_keyboard_a1abbd9a1db40784721f9459685e6f9ba}} 
+\index{C2M2.Interaction.UI.RaycastKeyboard@{C2M2.Interaction.UI.RaycastKeyboard}!specialKeyContainer@{specialKeyContainer}}
+\index{specialKeyContainer@{specialKeyContainer}!C2M2.Interaction.UI.RaycastKeyboard@{C2M2.Interaction.UI.RaycastKeyboard}}
+\doxysubsubsection{\texorpdfstring{specialKeyContainer}{specialKeyContainer}}
+{\footnotesize\ttfamily Game\+Object C2\+M2.\+Interaction.\+UI.\+Raycast\+Keyboard.\+special\+Key\+Container}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_u_i_1_1_raycast_keyboard_a42cba2db73ff07771f8766d0a91e4a15}\label{class_c2_m2_1_1_interaction_1_1_u_i_1_1_raycast_keyboard_a42cba2db73ff07771f8766d0a91e4a15}} 
+\index{C2M2.Interaction.UI.RaycastKeyboard@{C2M2.Interaction.UI.RaycastKeyboard}!specialKeyLocations@{specialKeyLocations}}
+\index{specialKeyLocations@{specialKeyLocations}!C2M2.Interaction.UI.RaycastKeyboard@{C2M2.Interaction.UI.RaycastKeyboard}}
+\doxysubsubsection{\texorpdfstring{specialKeyLocations}{specialKeyLocations}}
+{\footnotesize\ttfamily float \mbox{[}$\,$\mbox{]} C2\+M2.\+Interaction.\+UI.\+Raycast\+Keyboard.\+special\+Key\+Locations = \{ 258f, -\/413f, 2702f, -\/230f, 258f, -\/596f, 2663.\+25f, -\/596f, 258f, -\/779f, 2585.\+75f, -\/779f, 1023.\+107f, -\/962f \}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_u_i_1_1_raycast_keyboard_a70e26f78b04f02c5894c389121abf9be}\label{class_c2_m2_1_1_interaction_1_1_u_i_1_1_raycast_keyboard_a70e26f78b04f02c5894c389121abf9be}} 
+\index{C2M2.Interaction.UI.RaycastKeyboard@{C2M2.Interaction.UI.RaycastKeyboard}!specialKeys@{specialKeys}}
+\index{specialKeys@{specialKeys}!C2M2.Interaction.UI.RaycastKeyboard@{C2M2.Interaction.UI.RaycastKeyboard}}
+\doxysubsubsection{\texorpdfstring{specialKeys}{specialKeys}}
+{\footnotesize\ttfamily string \mbox{[}$\,$\mbox{]} C2\+M2.\+Interaction.\+UI.\+Raycast\+Keyboard.\+special\+Keys\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=}
+\DoxyCodeLine{            \{ \textcolor{stringliteral}{"{}tab"{}}, \textcolor{stringliteral}{"{}del"{}}, \textcolor{stringliteral}{"{}cap"{}}, \textcolor{stringliteral}{"{}ent"{}}, \textcolor{stringliteral}{"{}shift"{}}, \textcolor{stringliteral}{"{}shift"{}}, \textcolor{stringliteral}{"{}space"{}} \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_u_i_1_1_raycast_keyboard_a23248ce61b9424300be88e144c0b8c79}\label{class_c2_m2_1_1_interaction_1_1_u_i_1_1_raycast_keyboard_a23248ce61b9424300be88e144c0b8c79}} 
+\index{C2M2.Interaction.UI.RaycastKeyboard@{C2M2.Interaction.UI.RaycastKeyboard}!upperCharRow0@{upperCharRow0}}
+\index{upperCharRow0@{upperCharRow0}!C2M2.Interaction.UI.RaycastKeyboard@{C2M2.Interaction.UI.RaycastKeyboard}}
+\doxysubsubsection{\texorpdfstring{upperCharRow0}{upperCharRow0}}
+{\footnotesize\ttfamily string \mbox{[}$\,$\mbox{]} C2\+M2.\+Interaction.\+UI.\+Raycast\+Keyboard.\+upper\+Char\+Row0 = new string\mbox{[}$\,$\mbox{]} \{ \char`\"{}$\sim$\char`\"{}, \char`\"{}!\char`\"{}, \char`\"{}@\char`\"{}, \char`\"{}\#\char`\"{}, \char`\"{}\$\char`\"{}, \char`\"{}\%\char`\"{}, \char`\"{}$^\wedge$\char`\"{}, \char`\"{}\&\char`\"{}, \char`\"{}$\ast$\char`\"{}, \char`\"{}(\char`\"{}, \char`\"{})\char`\"{}, \char`\"{}\+\_\+\char`\"{}, \char`\"{}+\char`\"{} \}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_u_i_1_1_raycast_keyboard_a35bdfb610314587283481345a85a3640}\label{class_c2_m2_1_1_interaction_1_1_u_i_1_1_raycast_keyboard_a35bdfb610314587283481345a85a3640}} 
+\index{C2M2.Interaction.UI.RaycastKeyboard@{C2M2.Interaction.UI.RaycastKeyboard}!upperCharRow1@{upperCharRow1}}
+\index{upperCharRow1@{upperCharRow1}!C2M2.Interaction.UI.RaycastKeyboard@{C2M2.Interaction.UI.RaycastKeyboard}}
+\doxysubsubsection{\texorpdfstring{upperCharRow1}{upperCharRow1}}
+{\footnotesize\ttfamily string \mbox{[}$\,$\mbox{]} C2\+M2.\+Interaction.\+UI.\+Raycast\+Keyboard.\+upper\+Char\+Row1 = new string\mbox{[}$\,$\mbox{]} \{ \char`\"{}Q\char`\"{}, \char`\"{}W\char`\"{}, \char`\"{}E\char`\"{}, \char`\"{}R\char`\"{}, \char`\"{}T\char`\"{}, \char`\"{}Y\char`\"{}, \char`\"{}U\char`\"{}, \char`\"{}I\char`\"{}, \char`\"{}O\char`\"{}, \char`\"{}P\char`\"{}, \char`\"{}\{\char`\"{}, \char`\"{}\}\char`\"{}, \char`\"{}$\vert$\char`\"{} \}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_u_i_1_1_raycast_keyboard_a25eacaf0858acf0c27010eb3c1ad463c}\label{class_c2_m2_1_1_interaction_1_1_u_i_1_1_raycast_keyboard_a25eacaf0858acf0c27010eb3c1ad463c}} 
+\index{C2M2.Interaction.UI.RaycastKeyboard@{C2M2.Interaction.UI.RaycastKeyboard}!upperCharRow2@{upperCharRow2}}
+\index{upperCharRow2@{upperCharRow2}!C2M2.Interaction.UI.RaycastKeyboard@{C2M2.Interaction.UI.RaycastKeyboard}}
+\doxysubsubsection{\texorpdfstring{upperCharRow2}{upperCharRow2}}
+{\footnotesize\ttfamily string \mbox{[}$\,$\mbox{]} C2\+M2.\+Interaction.\+UI.\+Raycast\+Keyboard.\+upper\+Char\+Row2 = new string\mbox{[}$\,$\mbox{]} \{ \char`\"{}A\char`\"{}, \char`\"{}S\char`\"{}, \char`\"{}D\char`\"{}, \char`\"{}F\char`\"{}, \char`\"{}G\char`\"{}, \char`\"{}H\char`\"{}, \char`\"{}J\char`\"{}, \char`\"{}K\char`\"{}, \char`\"{}L\char`\"{}, \char`\"{}\+:\char`\"{}, \char`\"{}\textbackslash{}\char`\"{}\char`\"{} \}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_u_i_1_1_raycast_keyboard_ad7e3f17c8038e9515cfb49d53e5a83a9}\label{class_c2_m2_1_1_interaction_1_1_u_i_1_1_raycast_keyboard_ad7e3f17c8038e9515cfb49d53e5a83a9}} 
+\index{C2M2.Interaction.UI.RaycastKeyboard@{C2M2.Interaction.UI.RaycastKeyboard}!upperCharRow3@{upperCharRow3}}
+\index{upperCharRow3@{upperCharRow3}!C2M2.Interaction.UI.RaycastKeyboard@{C2M2.Interaction.UI.RaycastKeyboard}}
+\doxysubsubsection{\texorpdfstring{upperCharRow3}{upperCharRow3}}
+{\footnotesize\ttfamily string \mbox{[}$\,$\mbox{]} C2\+M2.\+Interaction.\+UI.\+Raycast\+Keyboard.\+upper\+Char\+Row3 = new string\mbox{[}$\,$\mbox{]} \{ \char`\"{}Z\char`\"{}, \char`\"{}X\char`\"{}, \char`\"{}C\char`\"{}, \char`\"{}V\char`\"{}, \char`\"{}B\char`\"{}, \char`\"{}N\char`\"{}, \char`\"{}M\char`\"{}, \char`\"{}$<$\char`\"{}, \char`\"{}$>$\char`\"{}, \char`\"{}?\char`\"{} \}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_u_i_1_1_raycast_keyboard_a5d8d7b7d7252ef68e34832785790e6a0}\label{class_c2_m2_1_1_interaction_1_1_u_i_1_1_raycast_keyboard_a5d8d7b7d7252ef68e34832785790e6a0}} 
+\index{C2M2.Interaction.UI.RaycastKeyboard@{C2M2.Interaction.UI.RaycastKeyboard}!upperKeyContainer@{upperKeyContainer}}
+\index{upperKeyContainer@{upperKeyContainer}!C2M2.Interaction.UI.RaycastKeyboard@{C2M2.Interaction.UI.RaycastKeyboard}}
+\doxysubsubsection{\texorpdfstring{upperKeyContainer}{upperKeyContainer}}
+{\footnotesize\ttfamily Transform C2\+M2.\+Interaction.\+UI.\+Raycast\+Keyboard.\+upper\+Key\+Container}
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_u_i_1_1_raycast_keyboard_a97b4bc5ce12148db230cb5e2beb43aff}\label{class_c2_m2_1_1_interaction_1_1_u_i_1_1_raycast_keyboard_a97b4bc5ce12148db230cb5e2beb43aff}} 
+\index{C2M2.Interaction.UI.RaycastKeyboard@{C2M2.Interaction.UI.RaycastKeyboard}!activeField@{activeField}}
+\index{activeField@{activeField}!C2M2.Interaction.UI.RaycastKeyboard@{C2M2.Interaction.UI.RaycastKeyboard}}
+\doxysubsubsection{\texorpdfstring{activeField}{activeField}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_u_i_1_1_raycast_input_field}{Raycast\+Input\+Field}} C2\+M2.\+Interaction.\+UI.\+Raycast\+Keyboard.\+active\+Field\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [private set]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/jaros/\+Desktop/tempvr/virtual-\/reality/\+Assets/\+Scripts/\+C2\+M2/\+Interaction/\+UI/\+Keyboard/\mbox{\hyperlink{_raycast_keyboard_8cs}{Raycast\+Keyboard.\+cs}}\end{DoxyCompactItemize}

@@ -1,0 +1,156 @@
+\hypertarget{class_c2_m2_1_1_interaction_1_1_v_r_1_1_moving_o_v_r_headset_emulator}{}\doxysection{C2\+M2.\+Interaction.\+VR.\+Moving\+OVRHeadset\+Emulator Class Reference}
+\label{class_c2_m2_1_1_interaction_1_1_v_r_1_1_moving_o_v_r_headset_emulator}\index{C2M2.Interaction.VR.MovingOVRHeadsetEmulator@{C2M2.Interaction.VR.MovingOVRHeadsetEmulator}}
+
+
+Add movement functionality to Oculus HMD headset emulator, add some additional small functionality like disabling hands in emulator mode, allow slow movement  
+
+
+
+
+Inheritance diagram for C2\+M2.\+Interaction.\+VR.\+Moving\+OVRHeadset\+Emulator\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=253pt]{d5/d56/class_c2_m2_1_1_interaction_1_1_v_r_1_1_moving_o_v_r_headset_emulator__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for C2\+M2.\+Interaction.\+VR.\+Moving\+OVRHeadset\+Emulator\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{d0/dec/class_c2_m2_1_1_interaction_1_1_v_r_1_1_moving_o_v_r_headset_emulator__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Key\+Code\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_v_r_1_1_moving_o_v_r_headset_emulator_aad40c5183dc89fd1be32463063640b72}{slow\+Move\+Keys}} = new Key\+Code\mbox{[}$\,$\mbox{]} \{ Key\+Code.\+Left\+Shift, Key\+Code.\+Right\+Shift \}
+\item 
+float \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_v_r_1_1_moving_o_v_r_headset_emulator_a1fd2e95822632f61bd4b87599e45ae12}{speed}} = 0.\+1f
+\item 
+float \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_v_r_1_1_moving_o_v_r_headset_emulator_a6e1c4666e16f78f9625240a2cb943340}{slow\+Speed}} = 0.\+025f
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_v_r_1_1_moving_o_v_r_headset_emulator_ab6b3a2ef8c8a709a004804e29da5068b}{Slow\+Moving}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_v_r_1_1_moving_o_v_r_headset_emulator_afb3ae4c263baf6de2e70beea38e628af}{Awake}} ()
+\item 
+void \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_v_r_1_1_moving_o_v_r_headset_emulator_acbe65899a75da3a05e58c95f000e3f83}{Start}} ()
+\item 
+IEnumerator \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_v_r_1_1_moving_o_v_r_headset_emulator_ab0625eb34e73191fe6969a8752c61307}{Check\+Speed}} ()
+\item 
+void \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_v_r_1_1_moving_o_v_r_headset_emulator_aae9ca639814f51c2243004d30a2a8226}{Disable\+Avatar}} ()
+\begin{DoxyCompactList}\small\item\em Disables OVRAvatar body, head, and hand rendering \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_v_r_1_1_moving_o_v_r_headset_emulator_aa9b40c62e0651d70567c70971a992a58}{Init\+UI}} ()
+\item 
+void \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_v_r_1_1_moving_o_v_r_headset_emulator_a917dfdd8570eb85969bcb688bd3bb278}{On\+Enable}} ()
+\item 
+void \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_v_r_1_1_moving_o_v_r_headset_emulator_ae26f84b4d196aa2b4f6d73a75d47d40d}{On\+Disable}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_movement_controller}{Movement\+Controller}} \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_v_r_1_1_moving_o_v_r_headset_emulator_a64a06a1ae8501ef7e1b5846e3d14671b}{controller}} = null
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Add movement functionality to Oculus HMD headset emulator, add some additional small functionality like disabling hands in emulator mode, allow slow movement 
+
+Jacob Wells, 4/30/2020. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_v_r_1_1_moving_o_v_r_headset_emulator_afb3ae4c263baf6de2e70beea38e628af}\label{class_c2_m2_1_1_interaction_1_1_v_r_1_1_moving_o_v_r_headset_emulator_afb3ae4c263baf6de2e70beea38e628af}} 
+\index{C2M2.Interaction.VR.MovingOVRHeadsetEmulator@{C2M2.Interaction.VR.MovingOVRHeadsetEmulator}!Awake@{Awake}}
+\index{Awake@{Awake}!C2M2.Interaction.VR.MovingOVRHeadsetEmulator@{C2M2.Interaction.VR.MovingOVRHeadsetEmulator}}
+\doxysubsubsection{\texorpdfstring{Awake()}{Awake()}}
+{\footnotesize\ttfamily void C2\+M2.\+Interaction.\+VR.\+Moving\+OVRHeadset\+Emulator.\+Awake (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_v_r_1_1_moving_o_v_r_headset_emulator_ab0625eb34e73191fe6969a8752c61307}\label{class_c2_m2_1_1_interaction_1_1_v_r_1_1_moving_o_v_r_headset_emulator_ab0625eb34e73191fe6969a8752c61307}} 
+\index{C2M2.Interaction.VR.MovingOVRHeadsetEmulator@{C2M2.Interaction.VR.MovingOVRHeadsetEmulator}!CheckSpeed@{CheckSpeed}}
+\index{CheckSpeed@{CheckSpeed}!C2M2.Interaction.VR.MovingOVRHeadsetEmulator@{C2M2.Interaction.VR.MovingOVRHeadsetEmulator}}
+\doxysubsubsection{\texorpdfstring{CheckSpeed()}{CheckSpeed()}}
+{\footnotesize\ttfamily IEnumerator C2\+M2.\+Interaction.\+VR.\+Moving\+OVRHeadset\+Emulator.\+Check\+Speed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_v_r_1_1_moving_o_v_r_headset_emulator_aae9ca639814f51c2243004d30a2a8226}\label{class_c2_m2_1_1_interaction_1_1_v_r_1_1_moving_o_v_r_headset_emulator_aae9ca639814f51c2243004d30a2a8226}} 
+\index{C2M2.Interaction.VR.MovingOVRHeadsetEmulator@{C2M2.Interaction.VR.MovingOVRHeadsetEmulator}!DisableAvatar@{DisableAvatar}}
+\index{DisableAvatar@{DisableAvatar}!C2M2.Interaction.VR.MovingOVRHeadsetEmulator@{C2M2.Interaction.VR.MovingOVRHeadsetEmulator}}
+\doxysubsubsection{\texorpdfstring{DisableAvatar()}{DisableAvatar()}}
+{\footnotesize\ttfamily void C2\+M2.\+Interaction.\+VR.\+Moving\+OVRHeadset\+Emulator.\+Disable\+Avatar (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Disables OVRAvatar body, head, and hand rendering 
+
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_v_r_1_1_moving_o_v_r_headset_emulator_aa9b40c62e0651d70567c70971a992a58}\label{class_c2_m2_1_1_interaction_1_1_v_r_1_1_moving_o_v_r_headset_emulator_aa9b40c62e0651d70567c70971a992a58}} 
+\index{C2M2.Interaction.VR.MovingOVRHeadsetEmulator@{C2M2.Interaction.VR.MovingOVRHeadsetEmulator}!InitUI@{InitUI}}
+\index{InitUI@{InitUI}!C2M2.Interaction.VR.MovingOVRHeadsetEmulator@{C2M2.Interaction.VR.MovingOVRHeadsetEmulator}}
+\doxysubsubsection{\texorpdfstring{InitUI()}{InitUI()}}
+{\footnotesize\ttfamily void C2\+M2.\+Interaction.\+VR.\+Moving\+OVRHeadset\+Emulator.\+Init\+UI (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_v_r_1_1_moving_o_v_r_headset_emulator_ae26f84b4d196aa2b4f6d73a75d47d40d}\label{class_c2_m2_1_1_interaction_1_1_v_r_1_1_moving_o_v_r_headset_emulator_ae26f84b4d196aa2b4f6d73a75d47d40d}} 
+\index{C2M2.Interaction.VR.MovingOVRHeadsetEmulator@{C2M2.Interaction.VR.MovingOVRHeadsetEmulator}!OnDisable@{OnDisable}}
+\index{OnDisable@{OnDisable}!C2M2.Interaction.VR.MovingOVRHeadsetEmulator@{C2M2.Interaction.VR.MovingOVRHeadsetEmulator}}
+\doxysubsubsection{\texorpdfstring{OnDisable()}{OnDisable()}}
+{\footnotesize\ttfamily void C2\+M2.\+Interaction.\+VR.\+Moving\+OVRHeadset\+Emulator.\+On\+Disable (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_v_r_1_1_moving_o_v_r_headset_emulator_a917dfdd8570eb85969bcb688bd3bb278}\label{class_c2_m2_1_1_interaction_1_1_v_r_1_1_moving_o_v_r_headset_emulator_a917dfdd8570eb85969bcb688bd3bb278}} 
+\index{C2M2.Interaction.VR.MovingOVRHeadsetEmulator@{C2M2.Interaction.VR.MovingOVRHeadsetEmulator}!OnEnable@{OnEnable}}
+\index{OnEnable@{OnEnable}!C2M2.Interaction.VR.MovingOVRHeadsetEmulator@{C2M2.Interaction.VR.MovingOVRHeadsetEmulator}}
+\doxysubsubsection{\texorpdfstring{OnEnable()}{OnEnable()}}
+{\footnotesize\ttfamily void C2\+M2.\+Interaction.\+VR.\+Moving\+OVRHeadset\+Emulator.\+On\+Enable (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_v_r_1_1_moving_o_v_r_headset_emulator_acbe65899a75da3a05e58c95f000e3f83}\label{class_c2_m2_1_1_interaction_1_1_v_r_1_1_moving_o_v_r_headset_emulator_acbe65899a75da3a05e58c95f000e3f83}} 
+\index{C2M2.Interaction.VR.MovingOVRHeadsetEmulator@{C2M2.Interaction.VR.MovingOVRHeadsetEmulator}!Start@{Start}}
+\index{Start@{Start}!C2M2.Interaction.VR.MovingOVRHeadsetEmulator@{C2M2.Interaction.VR.MovingOVRHeadsetEmulator}}
+\doxysubsubsection{\texorpdfstring{Start()}{Start()}}
+{\footnotesize\ttfamily void C2\+M2.\+Interaction.\+VR.\+Moving\+OVRHeadset\+Emulator.\+Start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_v_r_1_1_moving_o_v_r_headset_emulator_a64a06a1ae8501ef7e1b5846e3d14671b}\label{class_c2_m2_1_1_interaction_1_1_v_r_1_1_moving_o_v_r_headset_emulator_a64a06a1ae8501ef7e1b5846e3d14671b}} 
+\index{C2M2.Interaction.VR.MovingOVRHeadsetEmulator@{C2M2.Interaction.VR.MovingOVRHeadsetEmulator}!controller@{controller}}
+\index{controller@{controller}!C2M2.Interaction.VR.MovingOVRHeadsetEmulator@{C2M2.Interaction.VR.MovingOVRHeadsetEmulator}}
+\doxysubsubsection{\texorpdfstring{controller}{controller}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_movement_controller}{Movement\+Controller}} C2\+M2.\+Interaction.\+VR.\+Moving\+OVRHeadset\+Emulator.\+controller = null\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_v_r_1_1_moving_o_v_r_headset_emulator_aad40c5183dc89fd1be32463063640b72}\label{class_c2_m2_1_1_interaction_1_1_v_r_1_1_moving_o_v_r_headset_emulator_aad40c5183dc89fd1be32463063640b72}} 
+\index{C2M2.Interaction.VR.MovingOVRHeadsetEmulator@{C2M2.Interaction.VR.MovingOVRHeadsetEmulator}!slowMoveKeys@{slowMoveKeys}}
+\index{slowMoveKeys@{slowMoveKeys}!C2M2.Interaction.VR.MovingOVRHeadsetEmulator@{C2M2.Interaction.VR.MovingOVRHeadsetEmulator}}
+\doxysubsubsection{\texorpdfstring{slowMoveKeys}{slowMoveKeys}}
+{\footnotesize\ttfamily Key\+Code \mbox{[}$\,$\mbox{]} C2\+M2.\+Interaction.\+VR.\+Moving\+OVRHeadset\+Emulator.\+slow\+Move\+Keys = new Key\+Code\mbox{[}$\,$\mbox{]} \{ Key\+Code.\+Left\+Shift, Key\+Code.\+Right\+Shift \}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_v_r_1_1_moving_o_v_r_headset_emulator_a6e1c4666e16f78f9625240a2cb943340}\label{class_c2_m2_1_1_interaction_1_1_v_r_1_1_moving_o_v_r_headset_emulator_a6e1c4666e16f78f9625240a2cb943340}} 
+\index{C2M2.Interaction.VR.MovingOVRHeadsetEmulator@{C2M2.Interaction.VR.MovingOVRHeadsetEmulator}!slowSpeed@{slowSpeed}}
+\index{slowSpeed@{slowSpeed}!C2M2.Interaction.VR.MovingOVRHeadsetEmulator@{C2M2.Interaction.VR.MovingOVRHeadsetEmulator}}
+\doxysubsubsection{\texorpdfstring{slowSpeed}{slowSpeed}}
+{\footnotesize\ttfamily float C2\+M2.\+Interaction.\+VR.\+Moving\+OVRHeadset\+Emulator.\+slow\+Speed = 0.\+025f}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_v_r_1_1_moving_o_v_r_headset_emulator_a1fd2e95822632f61bd4b87599e45ae12}\label{class_c2_m2_1_1_interaction_1_1_v_r_1_1_moving_o_v_r_headset_emulator_a1fd2e95822632f61bd4b87599e45ae12}} 
+\index{C2M2.Interaction.VR.MovingOVRHeadsetEmulator@{C2M2.Interaction.VR.MovingOVRHeadsetEmulator}!speed@{speed}}
+\index{speed@{speed}!C2M2.Interaction.VR.MovingOVRHeadsetEmulator@{C2M2.Interaction.VR.MovingOVRHeadsetEmulator}}
+\doxysubsubsection{\texorpdfstring{speed}{speed}}
+{\footnotesize\ttfamily float C2\+M2.\+Interaction.\+VR.\+Moving\+OVRHeadset\+Emulator.\+speed = 0.\+1f}
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_v_r_1_1_moving_o_v_r_headset_emulator_ab6b3a2ef8c8a709a004804e29da5068b}\label{class_c2_m2_1_1_interaction_1_1_v_r_1_1_moving_o_v_r_headset_emulator_ab6b3a2ef8c8a709a004804e29da5068b}} 
+\index{C2M2.Interaction.VR.MovingOVRHeadsetEmulator@{C2M2.Interaction.VR.MovingOVRHeadsetEmulator}!SlowMoving@{SlowMoving}}
+\index{SlowMoving@{SlowMoving}!C2M2.Interaction.VR.MovingOVRHeadsetEmulator@{C2M2.Interaction.VR.MovingOVRHeadsetEmulator}}
+\doxysubsubsection{\texorpdfstring{SlowMoving}{SlowMoving}}
+{\footnotesize\ttfamily bool C2\+M2.\+Interaction.\+VR.\+Moving\+OVRHeadset\+Emulator.\+Slow\+Moving\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/jaros/\+Desktop/tempvr/virtual-\/reality/\+Assets/\+Scripts/\+C2\+M2/\+Neuronal\+Dynamics/\+Visualization/\+VR/\mbox{\hyperlink{_moving_o_v_r_headset_emulator_8cs}{Moving\+OVRHeadset\+Emulator.\+cs}}\end{DoxyCompactItemize}

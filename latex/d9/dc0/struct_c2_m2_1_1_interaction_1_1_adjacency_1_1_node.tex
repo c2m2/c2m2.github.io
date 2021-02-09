@@ -1,0 +1,122 @@
+\hypertarget{struct_c2_m2_1_1_interaction_1_1_adjacency_1_1_node}{}\doxysection{C2\+M2.\+Interaction.\+Adjacency.\+Node Struct Reference}
+\label{struct_c2_m2_1_1_interaction_1_1_adjacency_1_1_node}\index{C2M2.Interaction.Adjacency.Node@{C2M2.Interaction.Adjacency.Node}}
+
+
+Neighboring vertex/graph of the mesh  
+
+
+
+
+Inheritance diagram for C2\+M2.\+Interaction.\+Adjacency.\+Node\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=283pt]{d0/d4e/struct_c2_m2_1_1_interaction_1_1_adjacency_1_1_node__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for C2\+M2.\+Interaction.\+Adjacency.\+Node\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=283pt]{da/d1f/struct_c2_m2_1_1_interaction_1_1_adjacency_1_1_node__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_c2_m2_1_1_interaction_1_1_adjacency_1_1_node_ae1b13811f22be51011267b484160ff61}{Node}} (float \mbox{\hyperlink{struct_c2_m2_1_1_interaction_1_1_adjacency_1_1_node_ae3d681ae4086b827079b143a4c55f36c}{weight}}, int \mbox{\hyperlink{struct_c2_m2_1_1_interaction_1_1_adjacency_1_1_node_ab9f69e19f2476c769953076002304c15}{index}})
+\begin{DoxyCompactList}\small\item\em Construct a neighbor \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{struct_c2_m2_1_1_interaction_1_1_adjacency_1_1_node_aab644d2b874fa944e21bf7b0c7af5479}{Compare\+To}} (\mbox{\hyperlink{struct_c2_m2_1_1_interaction_1_1_adjacency_1_1_node}{Node}} other)
+\begin{DoxyCompactList}\small\item\em Compare two neighbors by weight. IComparable$<$\+T$>$ \end{DoxyCompactList}\item 
+override string \mbox{\hyperlink{struct_c2_m2_1_1_interaction_1_1_adjacency_1_1_node_a8c07801c57b9f290820f426dad2f8dad}{To\+String}} ()
+\begin{DoxyCompactList}\small\item\em Represent a neighbor as a string \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+float \mbox{\hyperlink{struct_c2_m2_1_1_interaction_1_1_adjacency_1_1_node_ae3d681ae4086b827079b143a4c55f36c}{weight}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+int \mbox{\hyperlink{struct_c2_m2_1_1_interaction_1_1_adjacency_1_1_node_ab9f69e19f2476c769953076002304c15}{index}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Neighboring vertex/graph of the mesh 
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{struct_c2_m2_1_1_interaction_1_1_adjacency_1_1_node_ae1b13811f22be51011267b484160ff61}\label{struct_c2_m2_1_1_interaction_1_1_adjacency_1_1_node_ae1b13811f22be51011267b484160ff61}} 
+\index{C2M2.Interaction.Adjacency.Node@{C2M2.Interaction.Adjacency.Node}!Node@{Node}}
+\index{Node@{Node}!C2M2.Interaction.Adjacency.Node@{C2M2.Interaction.Adjacency.Node}}
+\doxysubsubsection{\texorpdfstring{Node()}{Node()}}
+{\footnotesize\ttfamily C2\+M2.\+Interaction.\+Adjacency.\+Node.\+Node (\begin{DoxyParamCaption}\item[{float}]{weight,  }\item[{int}]{index }\end{DoxyParamCaption})}
+
+
+
+Construct a neighbor 
+
+
+\begin{DoxyParams}{Parameters}
+{\em weight} & Weight to neighbor \\
+\hline
+{\em index} & Index of neighbor \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{struct_c2_m2_1_1_interaction_1_1_adjacency_1_1_node_aab644d2b874fa944e21bf7b0c7af5479}\label{struct_c2_m2_1_1_interaction_1_1_adjacency_1_1_node_aab644d2b874fa944e21bf7b0c7af5479}} 
+\index{C2M2.Interaction.Adjacency.Node@{C2M2.Interaction.Adjacency.Node}!CompareTo@{CompareTo}}
+\index{CompareTo@{CompareTo}!C2M2.Interaction.Adjacency.Node@{C2M2.Interaction.Adjacency.Node}}
+\doxysubsubsection{\texorpdfstring{CompareTo()}{CompareTo()}}
+{\footnotesize\ttfamily int C2\+M2.\+Interaction.\+Adjacency.\+Node.\+Compare\+To (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_c2_m2_1_1_interaction_1_1_adjacency_1_1_node}{Node}}}]{other }\end{DoxyParamCaption})}
+
+
+
+Compare two neighbors by weight. IComparable$<$\+T$>$ 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & Neighbor to compare to \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 if this node has higher weight than node \char`\"{}other\char`\"{}, -\/1 if this node has lower weight, 0 if weights are equal 
+\end{DoxyReturn}
+TODO\+: This isn\textquotesingle{}t safe code, since it outright compares floats. It might be more accurate as some form of\+:
+
+double difference = weight -\/ other.\+weight; double epsilon = 1.\+19e-\/7f $\ast$ Max(weight, other.\+weight); \mbox{\Hypertarget{struct_c2_m2_1_1_interaction_1_1_adjacency_1_1_node_a8c07801c57b9f290820f426dad2f8dad}\label{struct_c2_m2_1_1_interaction_1_1_adjacency_1_1_node_a8c07801c57b9f290820f426dad2f8dad}} 
+\index{C2M2.Interaction.Adjacency.Node@{C2M2.Interaction.Adjacency.Node}!ToString@{ToString}}
+\index{ToString@{ToString}!C2M2.Interaction.Adjacency.Node@{C2M2.Interaction.Adjacency.Node}}
+\doxysubsubsection{\texorpdfstring{ToString()}{ToString()}}
+{\footnotesize\ttfamily override string C2\+M2.\+Interaction.\+Adjacency.\+Node.\+To\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Represent a neighbor as a string 
+
+\begin{DoxyReturn}{Returns}
+string representation 
+\end{DoxyReturn}
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{struct_c2_m2_1_1_interaction_1_1_adjacency_1_1_node_ab9f69e19f2476c769953076002304c15}\label{struct_c2_m2_1_1_interaction_1_1_adjacency_1_1_node_ab9f69e19f2476c769953076002304c15}} 
+\index{C2M2.Interaction.Adjacency.Node@{C2M2.Interaction.Adjacency.Node}!index@{index}}
+\index{index@{index}!C2M2.Interaction.Adjacency.Node@{C2M2.Interaction.Adjacency.Node}}
+\doxysubsubsection{\texorpdfstring{index}{index}}
+{\footnotesize\ttfamily int C2\+M2.\+Interaction.\+Adjacency.\+Node.\+index\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{struct_c2_m2_1_1_interaction_1_1_adjacency_1_1_node_ae3d681ae4086b827079b143a4c55f36c}\label{struct_c2_m2_1_1_interaction_1_1_adjacency_1_1_node_ae3d681ae4086b827079b143a4c55f36c}} 
+\index{C2M2.Interaction.Adjacency.Node@{C2M2.Interaction.Adjacency.Node}!weight@{weight}}
+\index{weight@{weight}!C2M2.Interaction.Adjacency.Node@{C2M2.Interaction.Adjacency.Node}}
+\doxysubsubsection{\texorpdfstring{weight}{weight}}
+{\footnotesize\ttfamily float C2\+M2.\+Interaction.\+Adjacency.\+Node.\+weight\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/jaros/\+Desktop/tempvr/virtual-\/reality/\+Assets/\+Scripts/\+C2\+M2/\+Interaction/\+Adjacency/\mbox{\hyperlink{_node_8cs}{Node.\+cs}}\end{DoxyCompactItemize}

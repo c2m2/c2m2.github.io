@@ -1,0 +1,522 @@
+\hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation}{}\doxysection{C2\+M2.\+Neuronal\+Dynamics.\+Simulation.\+NDSimulation Class Reference}
+\label{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation}\index{C2M2.NeuronalDynamics.Simulation.NDSimulation@{C2M2.NeuronalDynamics.Simulation.NDSimulation}}
+
+
+Provide an interface for 1D neuron-\/surface simulations to be visualized and interacted with  
+
+
+
+
+Inheritance diagram for C2\+M2.\+Neuronal\+Dynamics.\+Simulation.\+NDSimulation\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{d8/d46/class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for C2\+M2.\+Neuronal\+Dynamics.\+Simulation.\+NDSimulation\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d7/d35/class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+delegate void \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation_aafdea5a8032940035cad6a1738d18bd1}{On\+Visual\+Inflation\+Change\+Delegate}} (double new\+Inflation)
+\item 
+sealed override double\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation_a2d818e0d8f96478074095c8aaa254a31}{Get\+Values}} ()
+\begin{DoxyCompactList}\small\item\em Translate 1D vertex values to 3D values and pass them upwards for visualization \end{DoxyCompactList}\item 
+sealed override void \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation_ac9581ed259f09797daee53f6de5eca58}{Set\+Values}} (Raycast\+Hit hit)
+\begin{DoxyCompactList}\small\item\em Translate 3D vertex values to 1D values, and pass them downwards for interaction \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation_aca7a4fa562eafea1c729881b8f69330e}{Set\+Values}} (Tuple$<$ int, double $>$\mbox{[}$\,$\mbox{]} new\+Values)
+\begin{DoxyCompactList}\small\item\em Translate 3D vertex values to 1D values, and pass them downwards for interaction \end{DoxyCompactList}\item 
+abstract void \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation_a7aa4b8f83f1f38882f4ae73b16cc8ad3}{Set1\+DValues}} (Tuple$<$ int, double $>$\mbox{[}$\,$\mbox{]} new\+Values)
+\begin{DoxyCompactList}\small\item\em Requires deived classes to know how to receive one value to add onto each 1D vert index \end{DoxyCompactList}\item 
+abstract double\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation_aefdd7ea612fa748e52befd89da5b2504}{Get1\+DValues}} ()
+\begin{DoxyCompactList}\small\item\em Requires derived classes to know how to make available one value for each 1D vertex \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation_a59cc371829994a0af610df4ccb4c3648}{Switch\+Collider\+Mesh}} (double inflation)
+\item 
+void \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation_a564b5b570b31e8d6b1242cbdbc216e31}{Switch\+Mesh}} (double inflation)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation_a8c38070cf39ccff11090c2e12eafa46e}{visualize1D}} = false
+\item 
+Color32 \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation_a125182cbbc990615be1e23dd8c96b46e}{color1D}} = Color.\+yellow
+\item 
+float \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation_a2b1452d5c89cdd50730d6d84bc23eadf}{line\+Width1D}} = 0.\+005f
+\item 
+string \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation_a7ec5c7eabb8a9e250379bb8ee9909d88}{vrn\+File\+Name}} = \char`\"{}test.\+vrn\char`\"{}
+\item 
+double \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation_a8d4dfb1104e7bc51bf3e8bf3ffa5d920}{hit\+Value}} = 55
+\item 
+List$<$ \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_neuron_clamp}{Neuron\+Clamp}} $>$ \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation_a2d1cc00b60945fba4faf149f25f616a3}{clamps}} = new List$<$\mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_neuron_clamp}{Neuron\+Clamp}}$>$()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+override void \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation_a8c2195bf0e1ebc10fcf6f49eb703172f}{On\+Awake\+Pre}} ()
+\item 
+override void \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation_a910d6a6847b13140be49997df41d2da3}{On\+Start}} ()
+\item 
+override Mesh \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation_ad79247c0e2900dc78aa6ee877c6a01bd}{Build\+Visualization}} ()
+\begin{DoxyCompactList}\small\item\em Read in the cell and initialize 3D/1D visualization/interaction infrastructure \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+double? \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation_a9b299733cd1c116fe4e886b3849ae4a6}{Visual\+Inflation}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+double \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation_a9837d5c18015254455d8429834c5ebfd}{Collider\+Inflation}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+int \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation_a230042a6666f090f5adf3229f1bfcc02}{Refinement\+Level}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+bool? \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation_aa61640972c2ffd69c0d5ec28c539a454}{Clamp\+Mode}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_r_n_1_1_vrn_reader}{Vrn\+Reader}} \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation_aa883eea0b3ec4a4f8742485906d0f174}{Vrn\+Reader}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_grid}{Grid}} \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation_a7f4c3e4be08511b50b42c4b0f977fde8}{Grid1D}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+Vector3\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation_a58f2ec6c456c92c0d70416b8b16fae02}{Verts1D}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_grid}{Grid}} \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation_a4007846d7a9dfadcd783f680e06e1688}{Grid2D}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_cell}{Neuron\+Cell}} \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation_a03cff8aa1a375b7a8ef8e330b58b7cd0}{Neuron\+Cell}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+float \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation_a8efd68e24142dc91dafee4254714c4f8}{Average\+Dendrite\+Radius}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\hyperlink{struct_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_vert3_d1_d_pair}{Vert3\+D1\+DPair}}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation_a2f3951bc018ca2d99940d08163d4ea11}{Map}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\hyperlink{struct_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_mapping_info}{Mapping\+Info}} \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation_a97ef96ba6952755b63e8706c029dff56}{Mapping}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+double\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation_a7efc53e5501ec7e5af214815d2e6b376}{Scalars3D}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Events}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation_aafdea5a8032940035cad6a1738d18bd1}{On\+Visual\+Inflation\+Change\+Delegate}} \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation_a76ff3144bf4b181dbc1bb591dd9028c7}{On\+Visual\+Inflation\+Change}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Mesh \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation_a6a0e9fd39f1f3d867ba6a2e5fbfe9d4b}{Check\+Mesh\+Cache}} (double inflation)
+\item 
+void \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation_ad6eef06fca49e1bedee31fd737e6e9c3}{Update\+Grid1D}} ()
+\item 
+void \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation_a3bfc79a29920e74905ef1b31501ed2c9}{Update2\+DGrid}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+double \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation_a76f767d66678be0bb52eedc96540647f}{visual\+Inflation}} = 1
+\item 
+double \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation_a9f2e6fd45ee7ee32ef1881b69b17abcb}{collider\+Inflation}} = 1
+\item 
+int \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation_a32bbd40de7c64421277883ce3677ff75}{refinement\+Level}} = 0
+\item 
+Dictionary$<$ double, Mesh $>$ \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation_a5ff43fca4ad2c9d3d31318000da6a07e}{mesh\+Cache}} = new Dictionary$<$double, Mesh$>$()
+\item 
+bool \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation_a975d72fac5360b08bd57ca01be83d31e}{clamp\+Mode}} = false
+\item 
+\mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_r_n_1_1_vrn_reader}{Vrn\+Reader}} \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation_a7c6f3f1c222d5d33bf49f051add8b6bd}{vrn\+Reader}} = null
+\item 
+\mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_grid}{Grid}} \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation_ad03e95596a59c9841dd5a722d33d32c3}{grid1D}} = null
+\item 
+\mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_grid}{Grid}} \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation_a489d74e29ed80890abeedf33c8711450}{grid2D}} = null
+\item 
+\mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_cell}{Neuron\+Cell}} \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation_ac0420c10007d89edeff4818338dcb9ad}{neuron\+Cell}} = null
+\item 
+float \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation_adfee979c86ba238bb46fe513612731f5}{average\+Dendrite\+Radius}} = 0
+\item 
+\mbox{\hyperlink{struct_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_vert3_d1_d_pair}{Vert3\+D1\+DPair}}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation_a1b40d87d0aa22b7d5db689400d3b5216}{map}} = null
+\item 
+\mbox{\hyperlink{struct_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_mapping_info}{Mapping\+Info}} \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation_a22f8d3a1962f5dc545f239009d9002bc}{mapping}} = default
+\item 
+\mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_raycast_event_manager}{Raycast\+Event\+Manager}} \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation_a12f545af211127fffe8b987fed4fc551}{raycast\+Manager}} = null
+\item 
+double\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation_a8216558682e8837b43fe45535802be17}{scalars3D}} = new double\mbox{[}0\mbox{]}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Provide an interface for 1D neuron-\/surface simulations to be visualized and interacted with 
+
+1D Neuron surface simulations should derive from this class. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation_ad79247c0e2900dc78aa6ee877c6a01bd}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation_ad79247c0e2900dc78aa6ee877c6a01bd}} 
+\index{C2M2.NeuronalDynamics.Simulation.NDSimulation@{C2M2.NeuronalDynamics.Simulation.NDSimulation}!BuildVisualization@{BuildVisualization}}
+\index{BuildVisualization@{BuildVisualization}!C2M2.NeuronalDynamics.Simulation.NDSimulation@{C2M2.NeuronalDynamics.Simulation.NDSimulation}}
+\doxysubsubsection{\texorpdfstring{BuildVisualization()}{BuildVisualization()}}
+{\footnotesize\ttfamily override Mesh C2\+M2.\+Neuronal\+Dynamics.\+Simulation.\+NDSimulation.\+Build\+Visualization (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Read in the cell and initialize 3D/1D visualization/interaction infrastructure 
+
+\begin{DoxyReturn}{Returns}
+Unity Mesh visualization of the 3D geometry. 
+\end{DoxyReturn}
+
+
+Build\+Visualization is called by \mbox{\hyperlink{_simulation_8cs}{Simulation.\+cs}}, it is called after On\+Awake\+Pre and before On\+Awake\+Post. If dry\+Run == true, \mbox{\hyperlink{namespace_c2_m2_1_1_neuronal_dynamics_1_1_simulation}{Simulation}} will not call Build\+Visualization. 
+
+Implements \mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_simulation_ad862aff8a93dc71945db0450fddd6cbf}{C2\+M2.\+Simulation.\+Simulation$<$ double\mbox{[}$\,$\mbox{]}, Mesh, VRRaycastable\+Mesh, VRGrabbable\+Mesh $>$}}.
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation_a6a0e9fd39f1f3d867ba6a2e5fbfe9d4b}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation_a6a0e9fd39f1f3d867ba6a2e5fbfe9d4b}} 
+\index{C2M2.NeuronalDynamics.Simulation.NDSimulation@{C2M2.NeuronalDynamics.Simulation.NDSimulation}!CheckMeshCache@{CheckMeshCache}}
+\index{CheckMeshCache@{CheckMeshCache}!C2M2.NeuronalDynamics.Simulation.NDSimulation@{C2M2.NeuronalDynamics.Simulation.NDSimulation}}
+\doxysubsubsection{\texorpdfstring{CheckMeshCache()}{CheckMeshCache()}}
+{\footnotesize\ttfamily Mesh C2\+M2.\+Neuronal\+Dynamics.\+Simulation.\+NDSimulation.\+Check\+Mesh\+Cache (\begin{DoxyParamCaption}\item[{double}]{inflation }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation_aefdd7ea612fa748e52befd89da5b2504}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation_aefdd7ea612fa748e52befd89da5b2504}} 
+\index{C2M2.NeuronalDynamics.Simulation.NDSimulation@{C2M2.NeuronalDynamics.Simulation.NDSimulation}!Get1DValues@{Get1DValues}}
+\index{Get1DValues@{Get1DValues}!C2M2.NeuronalDynamics.Simulation.NDSimulation@{C2M2.NeuronalDynamics.Simulation.NDSimulation}}
+\doxysubsubsection{\texorpdfstring{Get1DValues()}{Get1DValues()}}
+{\footnotesize\ttfamily abstract double \mbox{[}$\,$\mbox{]} C2\+M2.\+Neuronal\+Dynamics.\+Simulation.\+NDSimulation.\+Get1\+DValues (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Requires derived classes to know how to make available one value for each 1D vertex 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_sparse_solver_testv1_af8fa02f8261090f67c386564d2912c14}{C2\+M2.\+Neuronal\+Dynamics.\+Simulation.\+Sparse\+Solver\+Testv1}}.
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation_a2d818e0d8f96478074095c8aaa254a31}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation_a2d818e0d8f96478074095c8aaa254a31}} 
+\index{C2M2.NeuronalDynamics.Simulation.NDSimulation@{C2M2.NeuronalDynamics.Simulation.NDSimulation}!GetValues@{GetValues}}
+\index{GetValues@{GetValues}!C2M2.NeuronalDynamics.Simulation.NDSimulation@{C2M2.NeuronalDynamics.Simulation.NDSimulation}}
+\doxysubsubsection{\texorpdfstring{GetValues()}{GetValues()}}
+{\footnotesize\ttfamily sealed override double \mbox{[}$\,$\mbox{]} C2\+M2.\+Neuronal\+Dynamics.\+Simulation.\+NDSimulation.\+Get\+Values (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Translate 1D vertex values to 3D values and pass them upwards for visualization 
+
+\begin{DoxyReturn}{Returns}
+One scalar value for each 3D vertex based on its 1D vert\textquotesingle{}s scalar value 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_simulation_aa34520fa8bc4bedc95c65dfe1984a719}{C2\+M2.\+Simulation.\+Simulation$<$ double\mbox{[}$\,$\mbox{]}, Mesh, VRRaycastable\+Mesh, VRGrabbable\+Mesh $>$}}.
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation_a8c2195bf0e1ebc10fcf6f49eb703172f}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation_a8c2195bf0e1ebc10fcf6f49eb703172f}} 
+\index{C2M2.NeuronalDynamics.Simulation.NDSimulation@{C2M2.NeuronalDynamics.Simulation.NDSimulation}!OnAwakePre@{OnAwakePre}}
+\index{OnAwakePre@{OnAwakePre}!C2M2.NeuronalDynamics.Simulation.NDSimulation@{C2M2.NeuronalDynamics.Simulation.NDSimulation}}
+\doxysubsubsection{\texorpdfstring{OnAwakePre()}{OnAwakePre()}}
+{\footnotesize\ttfamily override void C2\+M2.\+Neuronal\+Dynamics.\+Simulation.\+NDSimulation.\+On\+Awake\+Pre (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_simulation_af812e57771b0d37ef7b244f8e3132a5f}{C2\+M2.\+Simulation.\+Simulation$<$ double\mbox{[}$\,$\mbox{]}, Mesh, VRRaycastable\+Mesh, VRGrabbable\+Mesh $>$}}.
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation_a910d6a6847b13140be49997df41d2da3}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation_a910d6a6847b13140be49997df41d2da3}} 
+\index{C2M2.NeuronalDynamics.Simulation.NDSimulation@{C2M2.NeuronalDynamics.Simulation.NDSimulation}!OnStart@{OnStart}}
+\index{OnStart@{OnStart}!C2M2.NeuronalDynamics.Simulation.NDSimulation@{C2M2.NeuronalDynamics.Simulation.NDSimulation}}
+\doxysubsubsection{\texorpdfstring{OnStart()}{OnStart()}}
+{\footnotesize\ttfamily override void C2\+M2.\+Neuronal\+Dynamics.\+Simulation.\+NDSimulation.\+On\+Start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_simulation_a33ebbb8b7e6c1fc57d9d0bc292605ed5}{C2\+M2.\+Simulation.\+Simulation$<$ double\mbox{[}$\,$\mbox{]}, Mesh, VRRaycastable\+Mesh, VRGrabbable\+Mesh $>$}}.
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation_aafdea5a8032940035cad6a1738d18bd1}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation_aafdea5a8032940035cad6a1738d18bd1}} 
+\index{C2M2.NeuronalDynamics.Simulation.NDSimulation@{C2M2.NeuronalDynamics.Simulation.NDSimulation}!OnVisualInflationChangeDelegate@{OnVisualInflationChangeDelegate}}
+\index{OnVisualInflationChangeDelegate@{OnVisualInflationChangeDelegate}!C2M2.NeuronalDynamics.Simulation.NDSimulation@{C2M2.NeuronalDynamics.Simulation.NDSimulation}}
+\doxysubsubsection{\texorpdfstring{OnVisualInflationChangeDelegate()}{OnVisualInflationChangeDelegate()}}
+{\footnotesize\ttfamily delegate void C2\+M2.\+Neuronal\+Dynamics.\+Simulation.\+NDSimulation.\+On\+Visual\+Inflation\+Change\+Delegate (\begin{DoxyParamCaption}\item[{double}]{new\+Inflation }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation_a7aa4b8f83f1f38882f4ae73b16cc8ad3}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation_a7aa4b8f83f1f38882f4ae73b16cc8ad3}} 
+\index{C2M2.NeuronalDynamics.Simulation.NDSimulation@{C2M2.NeuronalDynamics.Simulation.NDSimulation}!Set1DValues@{Set1DValues}}
+\index{Set1DValues@{Set1DValues}!C2M2.NeuronalDynamics.Simulation.NDSimulation@{C2M2.NeuronalDynamics.Simulation.NDSimulation}}
+\doxysubsubsection{\texorpdfstring{Set1DValues()}{Set1DValues()}}
+{\footnotesize\ttfamily abstract void C2\+M2.\+Neuronal\+Dynamics.\+Simulation.\+NDSimulation.\+Set1\+DValues (\begin{DoxyParamCaption}\item[{Tuple$<$ int, double $>$\mbox{[}$\,$\mbox{]}}]{new\+Values }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Requires deived classes to know how to receive one value to add onto each 1D vert index 
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+Values} & List of 1D vert indices and values to add onto that index. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_sparse_solver_testv1_a4be7d00f18c954fb62ccac509abbdc8f}{C2\+M2.\+Neuronal\+Dynamics.\+Simulation.\+Sparse\+Solver\+Testv1}}.
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation_ac9581ed259f09797daee53f6de5eca58}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation_ac9581ed259f09797daee53f6de5eca58}} 
+\index{C2M2.NeuronalDynamics.Simulation.NDSimulation@{C2M2.NeuronalDynamics.Simulation.NDSimulation}!SetValues@{SetValues}}
+\index{SetValues@{SetValues}!C2M2.NeuronalDynamics.Simulation.NDSimulation@{C2M2.NeuronalDynamics.Simulation.NDSimulation}}
+\doxysubsubsection{\texorpdfstring{SetValues()}{SetValues()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily sealed override void C2\+M2.\+Neuronal\+Dynamics.\+Simulation.\+NDSimulation.\+Set\+Values (\begin{DoxyParamCaption}\item[{Raycast\+Hit}]{hit }\end{DoxyParamCaption})}
+
+
+
+Translate 3D vertex values to 1D values, and pass them downwards for interaction 
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation_aca7a4fa562eafea1c729881b8f69330e}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation_aca7a4fa562eafea1c729881b8f69330e}} 
+\index{C2M2.NeuronalDynamics.Simulation.NDSimulation@{C2M2.NeuronalDynamics.Simulation.NDSimulation}!SetValues@{SetValues}}
+\index{SetValues@{SetValues}!C2M2.NeuronalDynamics.Simulation.NDSimulation@{C2M2.NeuronalDynamics.Simulation.NDSimulation}}
+\doxysubsubsection{\texorpdfstring{SetValues()}{SetValues()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void C2\+M2.\+Neuronal\+Dynamics.\+Simulation.\+NDSimulation.\+Set\+Values (\begin{DoxyParamCaption}\item[{Tuple$<$ int, double $>$\mbox{[}$\,$\mbox{]}}]{new\+Values }\end{DoxyParamCaption})}
+
+
+
+Translate 3D vertex values to 1D values, and pass them downwards for interaction 
+
+\begin{DoxyReturn}{Returns}
+Either the same set of values given, or values translated 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation_a59cc371829994a0af610df4ccb4c3648}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation_a59cc371829994a0af610df4ccb4c3648}} 
+\index{C2M2.NeuronalDynamics.Simulation.NDSimulation@{C2M2.NeuronalDynamics.Simulation.NDSimulation}!SwitchColliderMesh@{SwitchColliderMesh}}
+\index{SwitchColliderMesh@{SwitchColliderMesh}!C2M2.NeuronalDynamics.Simulation.NDSimulation@{C2M2.NeuronalDynamics.Simulation.NDSimulation}}
+\doxysubsubsection{\texorpdfstring{SwitchColliderMesh()}{SwitchColliderMesh()}}
+{\footnotesize\ttfamily void C2\+M2.\+Neuronal\+Dynamics.\+Simulation.\+NDSimulation.\+Switch\+Collider\+Mesh (\begin{DoxyParamCaption}\item[{double}]{inflation }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation_a564b5b570b31e8d6b1242cbdbc216e31}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation_a564b5b570b31e8d6b1242cbdbc216e31}} 
+\index{C2M2.NeuronalDynamics.Simulation.NDSimulation@{C2M2.NeuronalDynamics.Simulation.NDSimulation}!SwitchMesh@{SwitchMesh}}
+\index{SwitchMesh@{SwitchMesh}!C2M2.NeuronalDynamics.Simulation.NDSimulation@{C2M2.NeuronalDynamics.Simulation.NDSimulation}}
+\doxysubsubsection{\texorpdfstring{SwitchMesh()}{SwitchMesh()}}
+{\footnotesize\ttfamily void C2\+M2.\+Neuronal\+Dynamics.\+Simulation.\+NDSimulation.\+Switch\+Mesh (\begin{DoxyParamCaption}\item[{double}]{inflation }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation_a3bfc79a29920e74905ef1b31501ed2c9}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation_a3bfc79a29920e74905ef1b31501ed2c9}} 
+\index{C2M2.NeuronalDynamics.Simulation.NDSimulation@{C2M2.NeuronalDynamics.Simulation.NDSimulation}!Update2DGrid@{Update2DGrid}}
+\index{Update2DGrid@{Update2DGrid}!C2M2.NeuronalDynamics.Simulation.NDSimulation@{C2M2.NeuronalDynamics.Simulation.NDSimulation}}
+\doxysubsubsection{\texorpdfstring{Update2DGrid()}{Update2DGrid()}}
+{\footnotesize\ttfamily void C2\+M2.\+Neuronal\+Dynamics.\+Simulation.\+NDSimulation.\+Update2\+DGrid (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Retrieve mesh names from archive
+
+Empty 2D grid which stores geometry + mapping data\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation_ad6eef06fca49e1bedee31fd737e6e9c3}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation_ad6eef06fca49e1bedee31fd737e6e9c3}} 
+\index{C2M2.NeuronalDynamics.Simulation.NDSimulation@{C2M2.NeuronalDynamics.Simulation.NDSimulation}!UpdateGrid1D@{UpdateGrid1D}}
+\index{UpdateGrid1D@{UpdateGrid1D}!C2M2.NeuronalDynamics.Simulation.NDSimulation@{C2M2.NeuronalDynamics.Simulation.NDSimulation}}
+\doxysubsubsection{\texorpdfstring{UpdateGrid1D()}{UpdateGrid1D()}}
+{\footnotesize\ttfamily void C2\+M2.\+Neuronal\+Dynamics.\+Simulation.\+NDSimulation.\+Update\+Grid1D (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Create empty grid with name of grid in archive
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation_adfee979c86ba238bb46fe513612731f5}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation_adfee979c86ba238bb46fe513612731f5}} 
+\index{C2M2.NeuronalDynamics.Simulation.NDSimulation@{C2M2.NeuronalDynamics.Simulation.NDSimulation}!averageDendriteRadius@{averageDendriteRadius}}
+\index{averageDendriteRadius@{averageDendriteRadius}!C2M2.NeuronalDynamics.Simulation.NDSimulation@{C2M2.NeuronalDynamics.Simulation.NDSimulation}}
+\doxysubsubsection{\texorpdfstring{averageDendriteRadius}{averageDendriteRadius}}
+{\footnotesize\ttfamily float C2\+M2.\+Neuronal\+Dynamics.\+Simulation.\+NDSimulation.\+average\+Dendrite\+Radius = 0\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation_a975d72fac5360b08bd57ca01be83d31e}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation_a975d72fac5360b08bd57ca01be83d31e}} 
+\index{C2M2.NeuronalDynamics.Simulation.NDSimulation@{C2M2.NeuronalDynamics.Simulation.NDSimulation}!clampMode@{clampMode}}
+\index{clampMode@{clampMode}!C2M2.NeuronalDynamics.Simulation.NDSimulation@{C2M2.NeuronalDynamics.Simulation.NDSimulation}}
+\doxysubsubsection{\texorpdfstring{clampMode}{clampMode}}
+{\footnotesize\ttfamily bool C2\+M2.\+Neuronal\+Dynamics.\+Simulation.\+NDSimulation.\+clamp\+Mode = false\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation_a2d1cc00b60945fba4faf149f25f616a3}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation_a2d1cc00b60945fba4faf149f25f616a3}} 
+\index{C2M2.NeuronalDynamics.Simulation.NDSimulation@{C2M2.NeuronalDynamics.Simulation.NDSimulation}!clamps@{clamps}}
+\index{clamps@{clamps}!C2M2.NeuronalDynamics.Simulation.NDSimulation@{C2M2.NeuronalDynamics.Simulation.NDSimulation}}
+\doxysubsubsection{\texorpdfstring{clamps}{clamps}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_neuron_clamp}{Neuron\+Clamp}}$>$ C2\+M2.\+Neuronal\+Dynamics.\+Simulation.\+NDSimulation.\+clamps = new List$<$\mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_neuron_clamp}{Neuron\+Clamp}}$>$()}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation_a9f2e6fd45ee7ee32ef1881b69b17abcb}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation_a9f2e6fd45ee7ee32ef1881b69b17abcb}} 
+\index{C2M2.NeuronalDynamics.Simulation.NDSimulation@{C2M2.NeuronalDynamics.Simulation.NDSimulation}!colliderInflation@{colliderInflation}}
+\index{colliderInflation@{colliderInflation}!C2M2.NeuronalDynamics.Simulation.NDSimulation@{C2M2.NeuronalDynamics.Simulation.NDSimulation}}
+\doxysubsubsection{\texorpdfstring{colliderInflation}{colliderInflation}}
+{\footnotesize\ttfamily double C2\+M2.\+Neuronal\+Dynamics.\+Simulation.\+NDSimulation.\+collider\+Inflation = 1\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation_a125182cbbc990615be1e23dd8c96b46e}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation_a125182cbbc990615be1e23dd8c96b46e}} 
+\index{C2M2.NeuronalDynamics.Simulation.NDSimulation@{C2M2.NeuronalDynamics.Simulation.NDSimulation}!color1D@{color1D}}
+\index{color1D@{color1D}!C2M2.NeuronalDynamics.Simulation.NDSimulation@{C2M2.NeuronalDynamics.Simulation.NDSimulation}}
+\doxysubsubsection{\texorpdfstring{color1D}{color1D}}
+{\footnotesize\ttfamily Color32 C2\+M2.\+Neuronal\+Dynamics.\+Simulation.\+NDSimulation.\+color1D = Color.\+yellow}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation_ad03e95596a59c9841dd5a722d33d32c3}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation_ad03e95596a59c9841dd5a722d33d32c3}} 
+\index{C2M2.NeuronalDynamics.Simulation.NDSimulation@{C2M2.NeuronalDynamics.Simulation.NDSimulation}!grid1D@{grid1D}}
+\index{grid1D@{grid1D}!C2M2.NeuronalDynamics.Simulation.NDSimulation@{C2M2.NeuronalDynamics.Simulation.NDSimulation}}
+\doxysubsubsection{\texorpdfstring{grid1D}{grid1D}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_grid}{Grid}} C2\+M2.\+Neuronal\+Dynamics.\+Simulation.\+NDSimulation.\+grid1D = null\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation_a489d74e29ed80890abeedf33c8711450}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation_a489d74e29ed80890abeedf33c8711450}} 
+\index{C2M2.NeuronalDynamics.Simulation.NDSimulation@{C2M2.NeuronalDynamics.Simulation.NDSimulation}!grid2D@{grid2D}}
+\index{grid2D@{grid2D}!C2M2.NeuronalDynamics.Simulation.NDSimulation@{C2M2.NeuronalDynamics.Simulation.NDSimulation}}
+\doxysubsubsection{\texorpdfstring{grid2D}{grid2D}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_grid}{Grid}} C2\+M2.\+Neuronal\+Dynamics.\+Simulation.\+NDSimulation.\+grid2D = null\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation_a8d4dfb1104e7bc51bf3e8bf3ffa5d920}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation_a8d4dfb1104e7bc51bf3e8bf3ffa5d920}} 
+\index{C2M2.NeuronalDynamics.Simulation.NDSimulation@{C2M2.NeuronalDynamics.Simulation.NDSimulation}!hitValue@{hitValue}}
+\index{hitValue@{hitValue}!C2M2.NeuronalDynamics.Simulation.NDSimulation@{C2M2.NeuronalDynamics.Simulation.NDSimulation}}
+\doxysubsubsection{\texorpdfstring{hitValue}{hitValue}}
+{\footnotesize\ttfamily double C2\+M2.\+Neuronal\+Dynamics.\+Simulation.\+NDSimulation.\+hit\+Value = 55}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation_a2b1452d5c89cdd50730d6d84bc23eadf}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation_a2b1452d5c89cdd50730d6d84bc23eadf}} 
+\index{C2M2.NeuronalDynamics.Simulation.NDSimulation@{C2M2.NeuronalDynamics.Simulation.NDSimulation}!lineWidth1D@{lineWidth1D}}
+\index{lineWidth1D@{lineWidth1D}!C2M2.NeuronalDynamics.Simulation.NDSimulation@{C2M2.NeuronalDynamics.Simulation.NDSimulation}}
+\doxysubsubsection{\texorpdfstring{lineWidth1D}{lineWidth1D}}
+{\footnotesize\ttfamily float C2\+M2.\+Neuronal\+Dynamics.\+Simulation.\+NDSimulation.\+line\+Width1D = 0.\+005f}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation_a1b40d87d0aa22b7d5db689400d3b5216}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation_a1b40d87d0aa22b7d5db689400d3b5216}} 
+\index{C2M2.NeuronalDynamics.Simulation.NDSimulation@{C2M2.NeuronalDynamics.Simulation.NDSimulation}!map@{map}}
+\index{map@{map}!C2M2.NeuronalDynamics.Simulation.NDSimulation@{C2M2.NeuronalDynamics.Simulation.NDSimulation}}
+\doxysubsubsection{\texorpdfstring{map}{map}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_vert3_d1_d_pair}{Vert3\+D1\+DPair}} \mbox{[}$\,$\mbox{]} C2\+M2.\+Neuronal\+Dynamics.\+Simulation.\+NDSimulation.\+map = null\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation_a22f8d3a1962f5dc545f239009d9002bc}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation_a22f8d3a1962f5dc545f239009d9002bc}} 
+\index{C2M2.NeuronalDynamics.Simulation.NDSimulation@{C2M2.NeuronalDynamics.Simulation.NDSimulation}!mapping@{mapping}}
+\index{mapping@{mapping}!C2M2.NeuronalDynamics.Simulation.NDSimulation@{C2M2.NeuronalDynamics.Simulation.NDSimulation}}
+\doxysubsubsection{\texorpdfstring{mapping}{mapping}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_mapping_info}{Mapping\+Info}} C2\+M2.\+Neuronal\+Dynamics.\+Simulation.\+NDSimulation.\+mapping = default\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation_a5ff43fca4ad2c9d3d31318000da6a07e}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation_a5ff43fca4ad2c9d3d31318000da6a07e}} 
+\index{C2M2.NeuronalDynamics.Simulation.NDSimulation@{C2M2.NeuronalDynamics.Simulation.NDSimulation}!meshCache@{meshCache}}
+\index{meshCache@{meshCache}!C2M2.NeuronalDynamics.Simulation.NDSimulation@{C2M2.NeuronalDynamics.Simulation.NDSimulation}}
+\doxysubsubsection{\texorpdfstring{meshCache}{meshCache}}
+{\footnotesize\ttfamily Dictionary$<$double, Mesh$>$ C2\+M2.\+Neuronal\+Dynamics.\+Simulation.\+NDSimulation.\+mesh\+Cache = new Dictionary$<$double, Mesh$>$()\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation_ac0420c10007d89edeff4818338dcb9ad}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation_ac0420c10007d89edeff4818338dcb9ad}} 
+\index{C2M2.NeuronalDynamics.Simulation.NDSimulation@{C2M2.NeuronalDynamics.Simulation.NDSimulation}!neuronCell@{neuronCell}}
+\index{neuronCell@{neuronCell}!C2M2.NeuronalDynamics.Simulation.NDSimulation@{C2M2.NeuronalDynamics.Simulation.NDSimulation}}
+\doxysubsubsection{\texorpdfstring{neuronCell}{neuronCell}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_cell}{Neuron\+Cell}} C2\+M2.\+Neuronal\+Dynamics.\+Simulation.\+NDSimulation.\+neuron\+Cell = null\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation_a12f545af211127fffe8b987fed4fc551}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation_a12f545af211127fffe8b987fed4fc551}} 
+\index{C2M2.NeuronalDynamics.Simulation.NDSimulation@{C2M2.NeuronalDynamics.Simulation.NDSimulation}!raycastManager@{raycastManager}}
+\index{raycastManager@{raycastManager}!C2M2.NeuronalDynamics.Simulation.NDSimulation@{C2M2.NeuronalDynamics.Simulation.NDSimulation}}
+\doxysubsubsection{\texorpdfstring{raycastManager}{raycastManager}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_raycast_event_manager}{Raycast\+Event\+Manager}} C2\+M2.\+Neuronal\+Dynamics.\+Simulation.\+NDSimulation.\+raycast\+Manager = null\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation_a32bbd40de7c64421277883ce3677ff75}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation_a32bbd40de7c64421277883ce3677ff75}} 
+\index{C2M2.NeuronalDynamics.Simulation.NDSimulation@{C2M2.NeuronalDynamics.Simulation.NDSimulation}!refinementLevel@{refinementLevel}}
+\index{refinementLevel@{refinementLevel}!C2M2.NeuronalDynamics.Simulation.NDSimulation@{C2M2.NeuronalDynamics.Simulation.NDSimulation}}
+\doxysubsubsection{\texorpdfstring{refinementLevel}{refinementLevel}}
+{\footnotesize\ttfamily int C2\+M2.\+Neuronal\+Dynamics.\+Simulation.\+NDSimulation.\+refinement\+Level = 0\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation_a8216558682e8837b43fe45535802be17}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation_a8216558682e8837b43fe45535802be17}} 
+\index{C2M2.NeuronalDynamics.Simulation.NDSimulation@{C2M2.NeuronalDynamics.Simulation.NDSimulation}!scalars3D@{scalars3D}}
+\index{scalars3D@{scalars3D}!C2M2.NeuronalDynamics.Simulation.NDSimulation@{C2M2.NeuronalDynamics.Simulation.NDSimulation}}
+\doxysubsubsection{\texorpdfstring{scalars3D}{scalars3D}}
+{\footnotesize\ttfamily double \mbox{[}$\,$\mbox{]} C2\+M2.\+Neuronal\+Dynamics.\+Simulation.\+NDSimulation.\+scalars3D = new double\mbox{[}0\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation_a76f767d66678be0bb52eedc96540647f}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation_a76f767d66678be0bb52eedc96540647f}} 
+\index{C2M2.NeuronalDynamics.Simulation.NDSimulation@{C2M2.NeuronalDynamics.Simulation.NDSimulation}!visualInflation@{visualInflation}}
+\index{visualInflation@{visualInflation}!C2M2.NeuronalDynamics.Simulation.NDSimulation@{C2M2.NeuronalDynamics.Simulation.NDSimulation}}
+\doxysubsubsection{\texorpdfstring{visualInflation}{visualInflation}}
+{\footnotesize\ttfamily double C2\+M2.\+Neuronal\+Dynamics.\+Simulation.\+NDSimulation.\+visual\+Inflation = 1\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation_a8c38070cf39ccff11090c2e12eafa46e}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation_a8c38070cf39ccff11090c2e12eafa46e}} 
+\index{C2M2.NeuronalDynamics.Simulation.NDSimulation@{C2M2.NeuronalDynamics.Simulation.NDSimulation}!visualize1D@{visualize1D}}
+\index{visualize1D@{visualize1D}!C2M2.NeuronalDynamics.Simulation.NDSimulation@{C2M2.NeuronalDynamics.Simulation.NDSimulation}}
+\doxysubsubsection{\texorpdfstring{visualize1D}{visualize1D}}
+{\footnotesize\ttfamily bool C2\+M2.\+Neuronal\+Dynamics.\+Simulation.\+NDSimulation.\+visualize1D = false}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation_a7ec5c7eabb8a9e250379bb8ee9909d88}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation_a7ec5c7eabb8a9e250379bb8ee9909d88}} 
+\index{C2M2.NeuronalDynamics.Simulation.NDSimulation@{C2M2.NeuronalDynamics.Simulation.NDSimulation}!vrnFileName@{vrnFileName}}
+\index{vrnFileName@{vrnFileName}!C2M2.NeuronalDynamics.Simulation.NDSimulation@{C2M2.NeuronalDynamics.Simulation.NDSimulation}}
+\doxysubsubsection{\texorpdfstring{vrnFileName}{vrnFileName}}
+{\footnotesize\ttfamily string C2\+M2.\+Neuronal\+Dynamics.\+Simulation.\+NDSimulation.\+vrn\+File\+Name = \char`\"{}test.\+vrn\char`\"{}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation_a7c6f3f1c222d5d33bf49f051add8b6bd}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation_a7c6f3f1c222d5d33bf49f051add8b6bd}} 
+\index{C2M2.NeuronalDynamics.Simulation.NDSimulation@{C2M2.NeuronalDynamics.Simulation.NDSimulation}!vrnReader@{vrnReader}}
+\index{vrnReader@{vrnReader}!C2M2.NeuronalDynamics.Simulation.NDSimulation@{C2M2.NeuronalDynamics.Simulation.NDSimulation}}
+\doxysubsubsection{\texorpdfstring{vrnReader}{vrnReader}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_r_n_1_1_vrn_reader}{Vrn\+Reader}} C2\+M2.\+Neuronal\+Dynamics.\+Simulation.\+NDSimulation.\+vrn\+Reader = null\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation_a8efd68e24142dc91dafee4254714c4f8}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation_a8efd68e24142dc91dafee4254714c4f8}} 
+\index{C2M2.NeuronalDynamics.Simulation.NDSimulation@{C2M2.NeuronalDynamics.Simulation.NDSimulation}!AverageDendriteRadius@{AverageDendriteRadius}}
+\index{AverageDendriteRadius@{AverageDendriteRadius}!C2M2.NeuronalDynamics.Simulation.NDSimulation@{C2M2.NeuronalDynamics.Simulation.NDSimulation}}
+\doxysubsubsection{\texorpdfstring{AverageDendriteRadius}{AverageDendriteRadius}}
+{\footnotesize\ttfamily float C2\+M2.\+Neuronal\+Dynamics.\+Simulation.\+NDSimulation.\+Average\+Dendrite\+Radius\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation_aa61640972c2ffd69c0d5ec28c539a454}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation_aa61640972c2ffd69c0d5ec28c539a454}} 
+\index{C2M2.NeuronalDynamics.Simulation.NDSimulation@{C2M2.NeuronalDynamics.Simulation.NDSimulation}!ClampMode@{ClampMode}}
+\index{ClampMode@{ClampMode}!C2M2.NeuronalDynamics.Simulation.NDSimulation@{C2M2.NeuronalDynamics.Simulation.NDSimulation}}
+\doxysubsubsection{\texorpdfstring{ClampMode}{ClampMode}}
+{\footnotesize\ttfamily bool? C2\+M2.\+Neuronal\+Dynamics.\+Simulation.\+NDSimulation.\+Clamp\+Mode\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation_a9837d5c18015254455d8429834c5ebfd}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation_a9837d5c18015254455d8429834c5ebfd}} 
+\index{C2M2.NeuronalDynamics.Simulation.NDSimulation@{C2M2.NeuronalDynamics.Simulation.NDSimulation}!ColliderInflation@{ColliderInflation}}
+\index{ColliderInflation@{ColliderInflation}!C2M2.NeuronalDynamics.Simulation.NDSimulation@{C2M2.NeuronalDynamics.Simulation.NDSimulation}}
+\doxysubsubsection{\texorpdfstring{ColliderInflation}{ColliderInflation}}
+{\footnotesize\ttfamily double C2\+M2.\+Neuronal\+Dynamics.\+Simulation.\+NDSimulation.\+Collider\+Inflation\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation_a7f4c3e4be08511b50b42c4b0f977fde8}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation_a7f4c3e4be08511b50b42c4b0f977fde8}} 
+\index{C2M2.NeuronalDynamics.Simulation.NDSimulation@{C2M2.NeuronalDynamics.Simulation.NDSimulation}!Grid1D@{Grid1D}}
+\index{Grid1D@{Grid1D}!C2M2.NeuronalDynamics.Simulation.NDSimulation@{C2M2.NeuronalDynamics.Simulation.NDSimulation}}
+\doxysubsubsection{\texorpdfstring{Grid1D}{Grid1D}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_grid}{Grid}} C2\+M2.\+Neuronal\+Dynamics.\+Simulation.\+NDSimulation.\+Grid1D\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation_a4007846d7a9dfadcd783f680e06e1688}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation_a4007846d7a9dfadcd783f680e06e1688}} 
+\index{C2M2.NeuronalDynamics.Simulation.NDSimulation@{C2M2.NeuronalDynamics.Simulation.NDSimulation}!Grid2D@{Grid2D}}
+\index{Grid2D@{Grid2D}!C2M2.NeuronalDynamics.Simulation.NDSimulation@{C2M2.NeuronalDynamics.Simulation.NDSimulation}}
+\doxysubsubsection{\texorpdfstring{Grid2D}{Grid2D}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_grid}{Grid}} C2\+M2.\+Neuronal\+Dynamics.\+Simulation.\+NDSimulation.\+Grid2D\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation_a2f3951bc018ca2d99940d08163d4ea11}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation_a2f3951bc018ca2d99940d08163d4ea11}} 
+\index{C2M2.NeuronalDynamics.Simulation.NDSimulation@{C2M2.NeuronalDynamics.Simulation.NDSimulation}!Map@{Map}}
+\index{Map@{Map}!C2M2.NeuronalDynamics.Simulation.NDSimulation@{C2M2.NeuronalDynamics.Simulation.NDSimulation}}
+\doxysubsubsection{\texorpdfstring{Map}{Map}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_vert3_d1_d_pair}{Vert3\+D1\+DPair}} \mbox{[}$\,$\mbox{]} C2\+M2.\+Neuronal\+Dynamics.\+Simulation.\+NDSimulation.\+Map\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation_a97ef96ba6952755b63e8706c029dff56}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation_a97ef96ba6952755b63e8706c029dff56}} 
+\index{C2M2.NeuronalDynamics.Simulation.NDSimulation@{C2M2.NeuronalDynamics.Simulation.NDSimulation}!Mapping@{Mapping}}
+\index{Mapping@{Mapping}!C2M2.NeuronalDynamics.Simulation.NDSimulation@{C2M2.NeuronalDynamics.Simulation.NDSimulation}}
+\doxysubsubsection{\texorpdfstring{Mapping}{Mapping}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_mapping_info}{Mapping\+Info}} C2\+M2.\+Neuronal\+Dynamics.\+Simulation.\+NDSimulation.\+Mapping\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation_a03cff8aa1a375b7a8ef8e330b58b7cd0}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation_a03cff8aa1a375b7a8ef8e330b58b7cd0}} 
+\index{C2M2.NeuronalDynamics.Simulation.NDSimulation@{C2M2.NeuronalDynamics.Simulation.NDSimulation}!NeuronCell@{NeuronCell}}
+\index{NeuronCell@{NeuronCell}!C2M2.NeuronalDynamics.Simulation.NDSimulation@{C2M2.NeuronalDynamics.Simulation.NDSimulation}}
+\doxysubsubsection{\texorpdfstring{NeuronCell}{NeuronCell}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_cell}{Neuron\+Cell}} C2\+M2.\+Neuronal\+Dynamics.\+Simulation.\+NDSimulation.\+Neuron\+Cell\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation_a230042a6666f090f5adf3229f1bfcc02}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation_a230042a6666f090f5adf3229f1bfcc02}} 
+\index{C2M2.NeuronalDynamics.Simulation.NDSimulation@{C2M2.NeuronalDynamics.Simulation.NDSimulation}!RefinementLevel@{RefinementLevel}}
+\index{RefinementLevel@{RefinementLevel}!C2M2.NeuronalDynamics.Simulation.NDSimulation@{C2M2.NeuronalDynamics.Simulation.NDSimulation}}
+\doxysubsubsection{\texorpdfstring{RefinementLevel}{RefinementLevel}}
+{\footnotesize\ttfamily int C2\+M2.\+Neuronal\+Dynamics.\+Simulation.\+NDSimulation.\+Refinement\+Level\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation_a7efc53e5501ec7e5af214815d2e6b376}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation_a7efc53e5501ec7e5af214815d2e6b376}} 
+\index{C2M2.NeuronalDynamics.Simulation.NDSimulation@{C2M2.NeuronalDynamics.Simulation.NDSimulation}!Scalars3D@{Scalars3D}}
+\index{Scalars3D@{Scalars3D}!C2M2.NeuronalDynamics.Simulation.NDSimulation@{C2M2.NeuronalDynamics.Simulation.NDSimulation}}
+\doxysubsubsection{\texorpdfstring{Scalars3D}{Scalars3D}}
+{\footnotesize\ttfamily double \mbox{[}$\,$\mbox{]} C2\+M2.\+Neuronal\+Dynamics.\+Simulation.\+NDSimulation.\+Scalars3D\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation_a58f2ec6c456c92c0d70416b8b16fae02}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation_a58f2ec6c456c92c0d70416b8b16fae02}} 
+\index{C2M2.NeuronalDynamics.Simulation.NDSimulation@{C2M2.NeuronalDynamics.Simulation.NDSimulation}!Verts1D@{Verts1D}}
+\index{Verts1D@{Verts1D}!C2M2.NeuronalDynamics.Simulation.NDSimulation@{C2M2.NeuronalDynamics.Simulation.NDSimulation}}
+\doxysubsubsection{\texorpdfstring{Verts1D}{Verts1D}}
+{\footnotesize\ttfamily Vector3 \mbox{[}$\,$\mbox{]} C2\+M2.\+Neuronal\+Dynamics.\+Simulation.\+NDSimulation.\+Verts1D\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation_a9b299733cd1c116fe4e886b3849ae4a6}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation_a9b299733cd1c116fe4e886b3849ae4a6}} 
+\index{C2M2.NeuronalDynamics.Simulation.NDSimulation@{C2M2.NeuronalDynamics.Simulation.NDSimulation}!VisualInflation@{VisualInflation}}
+\index{VisualInflation@{VisualInflation}!C2M2.NeuronalDynamics.Simulation.NDSimulation@{C2M2.NeuronalDynamics.Simulation.NDSimulation}}
+\doxysubsubsection{\texorpdfstring{VisualInflation}{VisualInflation}}
+{\footnotesize\ttfamily double? C2\+M2.\+Neuronal\+Dynamics.\+Simulation.\+NDSimulation.\+Visual\+Inflation\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation_aa883eea0b3ec4a4f8742485906d0f174}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation_aa883eea0b3ec4a4f8742485906d0f174}} 
+\index{C2M2.NeuronalDynamics.Simulation.NDSimulation@{C2M2.NeuronalDynamics.Simulation.NDSimulation}!VrnReader@{VrnReader}}
+\index{VrnReader@{VrnReader}!C2M2.NeuronalDynamics.Simulation.NDSimulation@{C2M2.NeuronalDynamics.Simulation.NDSimulation}}
+\doxysubsubsection{\texorpdfstring{VrnReader}{VrnReader}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_r_n_1_1_vrn_reader}{Vrn\+Reader}} C2\+M2.\+Neuronal\+Dynamics.\+Simulation.\+NDSimulation.\+Vrn\+Reader\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}, {\ttfamily [private]}}
+
+
+
+\doxysubsection{Event Documentation}
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation_a76ff3144bf4b181dbc1bb591dd9028c7}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation_a76ff3144bf4b181dbc1bb591dd9028c7}} 
+\index{C2M2.NeuronalDynamics.Simulation.NDSimulation@{C2M2.NeuronalDynamics.Simulation.NDSimulation}!OnVisualInflationChange@{OnVisualInflationChange}}
+\index{OnVisualInflationChange@{OnVisualInflationChange}!C2M2.NeuronalDynamics.Simulation.NDSimulation@{C2M2.NeuronalDynamics.Simulation.NDSimulation}}
+\doxysubsubsection{\texorpdfstring{OnVisualInflationChange}{OnVisualInflationChange}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation_aafdea5a8032940035cad6a1738d18bd1}{On\+Visual\+Inflation\+Change\+Delegate}} C2\+M2.\+Neuronal\+Dynamics.\+Simulation.\+NDSimulation.\+On\+Visual\+Inflation\+Change}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/jaros/\+Desktop/tempvr/virtual-\/reality/\+Assets/\+Scripts/\+C2\+M2/\+Neuronal\+Dynamics/\+Simulation/\mbox{\hyperlink{_n_d_simulation_8cs}{NDSimulation.\+cs}}\end{DoxyCompactItemize}

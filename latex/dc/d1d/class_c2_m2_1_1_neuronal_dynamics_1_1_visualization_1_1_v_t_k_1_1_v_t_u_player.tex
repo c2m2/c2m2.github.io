@@ -1,0 +1,211 @@
+\hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_t_k_1_1_v_t_u_player}{}\doxysection{C2\+M2.\+Neuronal\+Dynamics.\+Visualization.\+VTK.\+VTUPlayer Class Reference}
+\label{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_t_k_1_1_v_t_u_player}\index{C2M2.NeuronalDynamics.Visualization.VTK.VTUPlayer@{C2M2.NeuronalDynamics.Visualization.VTK.VTUPlayer}}
+
+
+Inheritance diagram for C2\+M2.\+Neuronal\+Dynamics.\+Visualization.\+VTK.\+VTUPlayer\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=313pt]{df/d56/class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_t_k_1_1_v_t_u_player__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for C2\+M2.\+Neuronal\+Dynamics.\+Visualization.\+VTK.\+VTUPlayer\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{d3/d48/class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_t_k_1_1_v_t_u_player__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_t_k_1_1_v_t_u_player_af70d6636152bc9b0a4856e93bfe6fda5}{Initialize}} ()
+\item 
+void \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_t_k_1_1_v_t_u_player_a834ac5b2dd24bb235fed365c98c9ce95}{Play}} (int frames\+Per\+Second)
+\begin{DoxyCompactList}\small\item\em Flip forward through animation frames repeatedly \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_t_k_1_1_v_t_u_player_a730320f52cfeb2a6762714c9bc88d69d}{Pause}} ()
+\begin{DoxyCompactList}\small\item\em Pause the animation \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_t_k_1_1_v_t_u_player_a59c022adb988e9370d24d20ae4eda8ad}{Rewind}} (int frames\+Per\+Second)
+\begin{DoxyCompactList}\small\item\em Flip backwards through animation frames repeatedly \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_t_k_1_1_v_t_u_player_a8d19505a0a18fb7a2e88fe39cccfd282}{Next\+Frame}} ()
+\begin{DoxyCompactList}\small\item\em Slide up to the next animation frame \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_t_k_1_1_v_t_u_player_a6021004921db7c4c0e39314c589dff4a}{Previous\+Frame}} ()
+\begin{DoxyCompactList}\small\item\em Slide back to the next animation frame \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_t_k_1_1_v_t_u_manager}{VTUManager}} \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_t_k_1_1_v_t_u_player_a7da8f50f0545d4131ad6ee95c96120bd}{vtu\+Manager}}
+\item 
+Text\+Mesh\+Pro\+UGUI \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_t_k_1_1_v_t_u_player_a92e0e20cc463db93c049b648312c6e7a}{frame\+Count\+Display}}
+\item 
+\mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_raycast_press_events}{Raycast\+Press\+Events}} \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_t_k_1_1_v_t_u_player_abafb1ca0cac2efead9a4068eeff8157f}{full\+Pause}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+IEnumerator \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_t_k_1_1_v_t_u_player_af43bf5d15830387c68bd4e9149c53c8c}{Next\+Frame\+Repeating}} (float wait\+Time)
+\begin{DoxyCompactList}\small\item\em Enumerator for flipping forwards through frames \end{DoxyCompactList}\item 
+IEnumerator \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_t_k_1_1_v_t_u_player_ad15c29038b6667a02dcf6d9fe77b8b53}{Previous\+Frame\+Previous}} (float wait\+Time)
+\begin{DoxyCompactList}\small\item\em Enumerator for flipping backwards through frames \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_t_k_1_1_v_t_u_player_ac123a2500758dc028956230ba3844177}{Update\+Mesh}} ()
+\begin{DoxyCompactList}\small\item\em Update the mesh (and menu text) to reflect changes \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Mesh\+Filter \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_t_k_1_1_v_t_u_player_a7612f9316e3c5a2490ba064b3dc61c08}{mf}}
+\item 
+int \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_t_k_1_1_v_t_u_player_adbb4eeb120670a33a2f6ac10a3207a67}{max\+Frame}}
+\item 
+Slider \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_t_k_1_1_v_t_u_player_a138b03bef956cabf1bfd29ca87950d5c}{slider}}
+\item 
+string \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_t_k_1_1_v_t_u_player_a17155496a839d7039a1214c9726f50c6}{format\+String}} = \char`\"{}\mbox{[}\{0\}/\{1\}\mbox{]}\char`\"{}
+\item 
+int \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_t_k_1_1_v_t_u_player_a8462105507b69f113e357f27dbe13978}{current\+Frame}} = 0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_t_k_1_1_v_t_u_player_af70d6636152bc9b0a4856e93bfe6fda5}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_t_k_1_1_v_t_u_player_af70d6636152bc9b0a4856e93bfe6fda5}} 
+\index{C2M2.NeuronalDynamics.Visualization.VTK.VTUPlayer@{C2M2.NeuronalDynamics.Visualization.VTK.VTUPlayer}!Initialize@{Initialize}}
+\index{Initialize@{Initialize}!C2M2.NeuronalDynamics.Visualization.VTK.VTUPlayer@{C2M2.NeuronalDynamics.Visualization.VTK.VTUPlayer}}
+\doxysubsubsection{\texorpdfstring{Initialize()}{Initialize()}}
+{\footnotesize\ttfamily void C2\+M2.\+Neuronal\+Dynamics.\+Visualization.\+VTK.\+VTUPlayer.\+Initialize (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_t_k_1_1_v_t_u_player_a8d19505a0a18fb7a2e88fe39cccfd282}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_t_k_1_1_v_t_u_player_a8d19505a0a18fb7a2e88fe39cccfd282}} 
+\index{C2M2.NeuronalDynamics.Visualization.VTK.VTUPlayer@{C2M2.NeuronalDynamics.Visualization.VTK.VTUPlayer}!NextFrame@{NextFrame}}
+\index{NextFrame@{NextFrame}!C2M2.NeuronalDynamics.Visualization.VTK.VTUPlayer@{C2M2.NeuronalDynamics.Visualization.VTK.VTUPlayer}}
+\doxysubsubsection{\texorpdfstring{NextFrame()}{NextFrame()}}
+{\footnotesize\ttfamily void C2\+M2.\+Neuronal\+Dynamics.\+Visualization.\+VTK.\+VTUPlayer.\+Next\+Frame (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Slide up to the next animation frame 
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_t_k_1_1_v_t_u_player_af43bf5d15830387c68bd4e9149c53c8c}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_t_k_1_1_v_t_u_player_af43bf5d15830387c68bd4e9149c53c8c}} 
+\index{C2M2.NeuronalDynamics.Visualization.VTK.VTUPlayer@{C2M2.NeuronalDynamics.Visualization.VTK.VTUPlayer}!NextFrameRepeating@{NextFrameRepeating}}
+\index{NextFrameRepeating@{NextFrameRepeating}!C2M2.NeuronalDynamics.Visualization.VTK.VTUPlayer@{C2M2.NeuronalDynamics.Visualization.VTK.VTUPlayer}}
+\doxysubsubsection{\texorpdfstring{NextFrameRepeating()}{NextFrameRepeating()}}
+{\footnotesize\ttfamily IEnumerator C2\+M2.\+Neuronal\+Dynamics.\+Visualization.\+VTK.\+VTUPlayer.\+Next\+Frame\+Repeating (\begin{DoxyParamCaption}\item[{float}]{wait\+Time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Enumerator for flipping forwards through frames 
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_t_k_1_1_v_t_u_player_a730320f52cfeb2a6762714c9bc88d69d}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_t_k_1_1_v_t_u_player_a730320f52cfeb2a6762714c9bc88d69d}} 
+\index{C2M2.NeuronalDynamics.Visualization.VTK.VTUPlayer@{C2M2.NeuronalDynamics.Visualization.VTK.VTUPlayer}!Pause@{Pause}}
+\index{Pause@{Pause}!C2M2.NeuronalDynamics.Visualization.VTK.VTUPlayer@{C2M2.NeuronalDynamics.Visualization.VTK.VTUPlayer}}
+\doxysubsubsection{\texorpdfstring{Pause()}{Pause()}}
+{\footnotesize\ttfamily void C2\+M2.\+Neuronal\+Dynamics.\+Visualization.\+VTK.\+VTUPlayer.\+Pause (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Pause the animation 
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_t_k_1_1_v_t_u_player_a834ac5b2dd24bb235fed365c98c9ce95}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_t_k_1_1_v_t_u_player_a834ac5b2dd24bb235fed365c98c9ce95}} 
+\index{C2M2.NeuronalDynamics.Visualization.VTK.VTUPlayer@{C2M2.NeuronalDynamics.Visualization.VTK.VTUPlayer}!Play@{Play}}
+\index{Play@{Play}!C2M2.NeuronalDynamics.Visualization.VTK.VTUPlayer@{C2M2.NeuronalDynamics.Visualization.VTK.VTUPlayer}}
+\doxysubsubsection{\texorpdfstring{Play()}{Play()}}
+{\footnotesize\ttfamily void C2\+M2.\+Neuronal\+Dynamics.\+Visualization.\+VTK.\+VTUPlayer.\+Play (\begin{DoxyParamCaption}\item[{int}]{frames\+Per\+Second }\end{DoxyParamCaption})}
+
+
+
+Flip forward through animation frames repeatedly 
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_t_k_1_1_v_t_u_player_a6021004921db7c4c0e39314c589dff4a}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_t_k_1_1_v_t_u_player_a6021004921db7c4c0e39314c589dff4a}} 
+\index{C2M2.NeuronalDynamics.Visualization.VTK.VTUPlayer@{C2M2.NeuronalDynamics.Visualization.VTK.VTUPlayer}!PreviousFrame@{PreviousFrame}}
+\index{PreviousFrame@{PreviousFrame}!C2M2.NeuronalDynamics.Visualization.VTK.VTUPlayer@{C2M2.NeuronalDynamics.Visualization.VTK.VTUPlayer}}
+\doxysubsubsection{\texorpdfstring{PreviousFrame()}{PreviousFrame()}}
+{\footnotesize\ttfamily void C2\+M2.\+Neuronal\+Dynamics.\+Visualization.\+VTK.\+VTUPlayer.\+Previous\+Frame (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Slide back to the next animation frame 
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_t_k_1_1_v_t_u_player_ad15c29038b6667a02dcf6d9fe77b8b53}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_t_k_1_1_v_t_u_player_ad15c29038b6667a02dcf6d9fe77b8b53}} 
+\index{C2M2.NeuronalDynamics.Visualization.VTK.VTUPlayer@{C2M2.NeuronalDynamics.Visualization.VTK.VTUPlayer}!PreviousFramePrevious@{PreviousFramePrevious}}
+\index{PreviousFramePrevious@{PreviousFramePrevious}!C2M2.NeuronalDynamics.Visualization.VTK.VTUPlayer@{C2M2.NeuronalDynamics.Visualization.VTK.VTUPlayer}}
+\doxysubsubsection{\texorpdfstring{PreviousFramePrevious()}{PreviousFramePrevious()}}
+{\footnotesize\ttfamily IEnumerator C2\+M2.\+Neuronal\+Dynamics.\+Visualization.\+VTK.\+VTUPlayer.\+Previous\+Frame\+Previous (\begin{DoxyParamCaption}\item[{float}]{wait\+Time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Enumerator for flipping backwards through frames 
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_t_k_1_1_v_t_u_player_a59c022adb988e9370d24d20ae4eda8ad}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_t_k_1_1_v_t_u_player_a59c022adb988e9370d24d20ae4eda8ad}} 
+\index{C2M2.NeuronalDynamics.Visualization.VTK.VTUPlayer@{C2M2.NeuronalDynamics.Visualization.VTK.VTUPlayer}!Rewind@{Rewind}}
+\index{Rewind@{Rewind}!C2M2.NeuronalDynamics.Visualization.VTK.VTUPlayer@{C2M2.NeuronalDynamics.Visualization.VTK.VTUPlayer}}
+\doxysubsubsection{\texorpdfstring{Rewind()}{Rewind()}}
+{\footnotesize\ttfamily void C2\+M2.\+Neuronal\+Dynamics.\+Visualization.\+VTK.\+VTUPlayer.\+Rewind (\begin{DoxyParamCaption}\item[{int}]{frames\+Per\+Second }\end{DoxyParamCaption})}
+
+
+
+Flip backwards through animation frames repeatedly 
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_t_k_1_1_v_t_u_player_ac123a2500758dc028956230ba3844177}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_t_k_1_1_v_t_u_player_ac123a2500758dc028956230ba3844177}} 
+\index{C2M2.NeuronalDynamics.Visualization.VTK.VTUPlayer@{C2M2.NeuronalDynamics.Visualization.VTK.VTUPlayer}!UpdateMesh@{UpdateMesh}}
+\index{UpdateMesh@{UpdateMesh}!C2M2.NeuronalDynamics.Visualization.VTK.VTUPlayer@{C2M2.NeuronalDynamics.Visualization.VTK.VTUPlayer}}
+\doxysubsubsection{\texorpdfstring{UpdateMesh()}{UpdateMesh()}}
+{\footnotesize\ttfamily void C2\+M2.\+Neuronal\+Dynamics.\+Visualization.\+VTK.\+VTUPlayer.\+Update\+Mesh (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Update the mesh (and menu text) to reflect changes 
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_t_k_1_1_v_t_u_player_a8462105507b69f113e357f27dbe13978}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_t_k_1_1_v_t_u_player_a8462105507b69f113e357f27dbe13978}} 
+\index{C2M2.NeuronalDynamics.Visualization.VTK.VTUPlayer@{C2M2.NeuronalDynamics.Visualization.VTK.VTUPlayer}!currentFrame@{currentFrame}}
+\index{currentFrame@{currentFrame}!C2M2.NeuronalDynamics.Visualization.VTK.VTUPlayer@{C2M2.NeuronalDynamics.Visualization.VTK.VTUPlayer}}
+\doxysubsubsection{\texorpdfstring{currentFrame}{currentFrame}}
+{\footnotesize\ttfamily int C2\+M2.\+Neuronal\+Dynamics.\+Visualization.\+VTK.\+VTUPlayer.\+current\+Frame = 0\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_t_k_1_1_v_t_u_player_a17155496a839d7039a1214c9726f50c6}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_t_k_1_1_v_t_u_player_a17155496a839d7039a1214c9726f50c6}} 
+\index{C2M2.NeuronalDynamics.Visualization.VTK.VTUPlayer@{C2M2.NeuronalDynamics.Visualization.VTK.VTUPlayer}!formatString@{formatString}}
+\index{formatString@{formatString}!C2M2.NeuronalDynamics.Visualization.VTK.VTUPlayer@{C2M2.NeuronalDynamics.Visualization.VTK.VTUPlayer}}
+\doxysubsubsection{\texorpdfstring{formatString}{formatString}}
+{\footnotesize\ttfamily string C2\+M2.\+Neuronal\+Dynamics.\+Visualization.\+VTK.\+VTUPlayer.\+format\+String = \char`\"{}\mbox{[}\{0\}/\{1\}\mbox{]}\char`\"{}\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_t_k_1_1_v_t_u_player_a92e0e20cc463db93c049b648312c6e7a}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_t_k_1_1_v_t_u_player_a92e0e20cc463db93c049b648312c6e7a}} 
+\index{C2M2.NeuronalDynamics.Visualization.VTK.VTUPlayer@{C2M2.NeuronalDynamics.Visualization.VTK.VTUPlayer}!frameCountDisplay@{frameCountDisplay}}
+\index{frameCountDisplay@{frameCountDisplay}!C2M2.NeuronalDynamics.Visualization.VTK.VTUPlayer@{C2M2.NeuronalDynamics.Visualization.VTK.VTUPlayer}}
+\doxysubsubsection{\texorpdfstring{frameCountDisplay}{frameCountDisplay}}
+{\footnotesize\ttfamily Text\+Mesh\+Pro\+UGUI C2\+M2.\+Neuronal\+Dynamics.\+Visualization.\+VTK.\+VTUPlayer.\+frame\+Count\+Display}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_t_k_1_1_v_t_u_player_abafb1ca0cac2efead9a4068eeff8157f}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_t_k_1_1_v_t_u_player_abafb1ca0cac2efead9a4068eeff8157f}} 
+\index{C2M2.NeuronalDynamics.Visualization.VTK.VTUPlayer@{C2M2.NeuronalDynamics.Visualization.VTK.VTUPlayer}!fullPause@{fullPause}}
+\index{fullPause@{fullPause}!C2M2.NeuronalDynamics.Visualization.VTK.VTUPlayer@{C2M2.NeuronalDynamics.Visualization.VTK.VTUPlayer}}
+\doxysubsubsection{\texorpdfstring{fullPause}{fullPause}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_raycast_press_events}{Raycast\+Press\+Events}} C2\+M2.\+Neuronal\+Dynamics.\+Visualization.\+VTK.\+VTUPlayer.\+full\+Pause}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_t_k_1_1_v_t_u_player_adbb4eeb120670a33a2f6ac10a3207a67}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_t_k_1_1_v_t_u_player_adbb4eeb120670a33a2f6ac10a3207a67}} 
+\index{C2M2.NeuronalDynamics.Visualization.VTK.VTUPlayer@{C2M2.NeuronalDynamics.Visualization.VTK.VTUPlayer}!maxFrame@{maxFrame}}
+\index{maxFrame@{maxFrame}!C2M2.NeuronalDynamics.Visualization.VTK.VTUPlayer@{C2M2.NeuronalDynamics.Visualization.VTK.VTUPlayer}}
+\doxysubsubsection{\texorpdfstring{maxFrame}{maxFrame}}
+{\footnotesize\ttfamily int C2\+M2.\+Neuronal\+Dynamics.\+Visualization.\+VTK.\+VTUPlayer.\+max\+Frame\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_t_k_1_1_v_t_u_player_a7612f9316e3c5a2490ba064b3dc61c08}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_t_k_1_1_v_t_u_player_a7612f9316e3c5a2490ba064b3dc61c08}} 
+\index{C2M2.NeuronalDynamics.Visualization.VTK.VTUPlayer@{C2M2.NeuronalDynamics.Visualization.VTK.VTUPlayer}!mf@{mf}}
+\index{mf@{mf}!C2M2.NeuronalDynamics.Visualization.VTK.VTUPlayer@{C2M2.NeuronalDynamics.Visualization.VTK.VTUPlayer}}
+\doxysubsubsection{\texorpdfstring{mf}{mf}}
+{\footnotesize\ttfamily Mesh\+Filter C2\+M2.\+Neuronal\+Dynamics.\+Visualization.\+VTK.\+VTUPlayer.\+mf\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_t_k_1_1_v_t_u_player_a138b03bef956cabf1bfd29ca87950d5c}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_t_k_1_1_v_t_u_player_a138b03bef956cabf1bfd29ca87950d5c}} 
+\index{C2M2.NeuronalDynamics.Visualization.VTK.VTUPlayer@{C2M2.NeuronalDynamics.Visualization.VTK.VTUPlayer}!slider@{slider}}
+\index{slider@{slider}!C2M2.NeuronalDynamics.Visualization.VTK.VTUPlayer@{C2M2.NeuronalDynamics.Visualization.VTK.VTUPlayer}}
+\doxysubsubsection{\texorpdfstring{slider}{slider}}
+{\footnotesize\ttfamily Slider C2\+M2.\+Neuronal\+Dynamics.\+Visualization.\+VTK.\+VTUPlayer.\+slider\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_t_k_1_1_v_t_u_player_a7da8f50f0545d4131ad6ee95c96120bd}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_t_k_1_1_v_t_u_player_a7da8f50f0545d4131ad6ee95c96120bd}} 
+\index{C2M2.NeuronalDynamics.Visualization.VTK.VTUPlayer@{C2M2.NeuronalDynamics.Visualization.VTK.VTUPlayer}!vtuManager@{vtuManager}}
+\index{vtuManager@{vtuManager}!C2M2.NeuronalDynamics.Visualization.VTK.VTUPlayer@{C2M2.NeuronalDynamics.Visualization.VTK.VTUPlayer}}
+\doxysubsubsection{\texorpdfstring{vtuManager}{vtuManager}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_t_k_1_1_v_t_u_manager}{VTUManager}} C2\+M2.\+Neuronal\+Dynamics.\+Visualization.\+VTK.\+VTUPlayer.\+vtu\+Manager}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/jaros/\+Desktop/tempvr/virtual-\/reality/\+Assets/\+Scripts/\+C2\+M2/\+Neuronal\+Dynamics/\+Visualization/\+VTK/\mbox{\hyperlink{_v_t_u_player_8cs}{VTUPlayer.\+cs}}\end{DoxyCompactItemize}

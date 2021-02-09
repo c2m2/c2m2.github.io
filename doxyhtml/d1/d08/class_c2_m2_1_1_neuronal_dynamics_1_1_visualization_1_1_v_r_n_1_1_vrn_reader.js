@@ -6,6 +6,7 @@ var class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_r_n_1_1_vrn_reader
     [ "Geometry", "d9/d5c/class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_r_n_1_1_vrn_reader_1_1_geometry.html", "d9/d5c/class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_r_n_1_1_vrn_reader_1_1_geometry" ],
     [ "VrnReader", "d1/d08/class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_r_n_1_1_vrn_reader.html#ae5b8733729ec0a2afc4362e697e77842", null ],
     [ "List", "d1/d08/class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_r_n_1_1_vrn_reader.html#a888971407a759af2098066c010190f9a", null ],
+    [ "Load", "d1/d08/class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_r_n_1_1_vrn_reader.html#a56a797f0c7ec990eab76552946d9a571", null ],
     [ "ReadUGX", "d1/d08/class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_r_n_1_1_vrn_reader.html#aa8e820dd6d77a1b892b709c312a624d2", null ],
     [ "Retrieve1DMeshName", "d1/d08/class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_r_n_1_1_vrn_reader.html#a95ca9dad58f28e8407d4dc0f03ddd70c", null ],
     [ "Retrieve2DMeshName", "d1/d08/class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_r_n_1_1_vrn_reader.html#a3b1a4591ac559a04f6e48e56ceba7640", null ],

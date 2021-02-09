@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['statecode_2759',['StateCode',['../dd/dfe/class_c2_m2_1_1_interaction_1_1_raycast_forward.html#ab13112b55e4a4c8131ccf91ea95179d4',1,'C2M2::Interaction::RaycastForward']]],
-  ['synapsetype_2760',['SynapseType',['../d7/df6/namespace_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x.html#acba8adcd72d5b952ef8cf88c5f82fdc0',1,'C2M2::NeuronalDynamics::UGX']]]
+  ['playstate_3076',['PlayState',['../d4/d24/class_c2_m2_1_1_simulation_1_1_simulation_diffuse_react.html#ac7d7dd3afea82bf521d922f745443d19',1,'C2M2::Simulation::SimulationDiffuseReact']]]
 ];

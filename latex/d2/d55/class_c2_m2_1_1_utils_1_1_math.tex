@@ -1,0 +1,440 @@
+\hypertarget{class_c2_m2_1_1_utils_1_1_math}{}\doxysection{C2\+M2.\+Utils.\+Math Class Reference}
+\label{class_c2_m2_1_1_utils_1_1_math}\index{C2M2.Utils.Math@{C2M2.Utils.Math}}
+
+
+Quick, static methods for finding max, min, and clamped scalar values and arrays  
+
+
+
+
+Collaboration diagram for C2\+M2.\+Utils.\+Math\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=187pt]{d9/de1/class_c2_m2_1_1_utils_1_1_math__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static int \mbox{\hyperlink{class_c2_m2_1_1_utils_1_1_math_a7ce4727b1e91cbd336bdb5107152a433}{Min}} (int a, int b)
+\item 
+static float \mbox{\hyperlink{class_c2_m2_1_1_utils_1_1_math_aa0052acf133a5bb054d7797228467232}{Min}} (float a, float b)
+\item 
+static double \mbox{\hyperlink{class_c2_m2_1_1_utils_1_1_math_a850e5efbdb93f10d86eade1631d6acf2}{Min}} (double a, double b)
+\item 
+static int \mbox{\hyperlink{class_c2_m2_1_1_utils_1_1_math_a7f8022e53a901c98d52b687319a3477c}{Max}} (int a, int b)
+\item 
+static float \mbox{\hyperlink{class_c2_m2_1_1_utils_1_1_math_a1a29a7ba13808701822ba83d4fe753c1}{Max}} (float a, float b)
+\item 
+static double \mbox{\hyperlink{class_c2_m2_1_1_utils_1_1_math_a7ab8e3e63ff217afa8140b39dd0dcfb5}{Max}} (double a, double b)
+\item 
+static float \mbox{\hyperlink{class_c2_m2_1_1_utils_1_1_math_a9607af0f19b66f6534994d9f506ed62c}{Max}} (this Vector3 a)
+\item 
+static float \mbox{\hyperlink{class_c2_m2_1_1_utils_1_1_math_ae713903adced9a257482a8b3d2759764}{Min}} (this Vector3 a)
+\item 
+static int \mbox{\hyperlink{class_c2_m2_1_1_utils_1_1_math_a805a23bfab56ce715d7a92f700225077}{Clamp}} (int value, int min, int max)
+\begin{DoxyCompactList}\small\item\em If value $<$ min, returns min, If min $<$= value $<$= max, returns value, If value $>$ max, returns max \end{DoxyCompactList}\item 
+static float \mbox{\hyperlink{class_c2_m2_1_1_utils_1_1_math_aa21781bec23e0afe1e3034c7fd66ba26}{Clamp}} (float value, float min, float max)
+\begin{DoxyCompactList}\small\item\em If value $<$ min, returns min, If min $<$= value $<$= max, returns value, If value $>$ max, returns max \end{DoxyCompactList}\item 
+static double \mbox{\hyperlink{class_c2_m2_1_1_utils_1_1_math_a986508b4e3eb836a1de98bc6d4466e22}{Clamp}} (double value, double min, double max)
+\begin{DoxyCompactList}\small\item\em If value $<$ min, returns min, If min $<$= value $<$= max, returns value, If value $>$ max, returns max \end{DoxyCompactList}\item 
+static int \mbox{\hyperlink{class_c2_m2_1_1_utils_1_1_math_a36ec8197dd811e50d6b82d33b0149674}{Max}} (this int\mbox{[}$\,$\mbox{]} array)
+\item 
+static float \mbox{\hyperlink{class_c2_m2_1_1_utils_1_1_math_abbf840c39002917f300b6b256d987325}{Max}} (this float\mbox{[}$\,$\mbox{]} array)
+\item 
+static double \mbox{\hyperlink{class_c2_m2_1_1_utils_1_1_math_a9ca5c46466b8f7f96309681a8ebb8290}{Max}} (this double\mbox{[}$\,$\mbox{]} array)
+\item 
+static int \mbox{\hyperlink{class_c2_m2_1_1_utils_1_1_math_ae32b609584911aa45ce81dacc20d9e20}{Max}} (this List$<$ int $>$ list)
+\item 
+static float \mbox{\hyperlink{class_c2_m2_1_1_utils_1_1_math_a32daa2efc57a5008ac39f1779af66f93}{Max}} (this List$<$ float $>$ list)
+\item 
+static double \mbox{\hyperlink{class_c2_m2_1_1_utils_1_1_math_a81f200a3bb867ae863e9712cb893631a}{Max}} (this List$<$ double $>$ list)
+\item 
+static int \mbox{\hyperlink{class_c2_m2_1_1_utils_1_1_math_ac813a84ac0e2c2c2009b84a9b293e1ac}{Min}} (this int\mbox{[}$\,$\mbox{]} array)
+\item 
+static float \mbox{\hyperlink{class_c2_m2_1_1_utils_1_1_math_a542641d650b08b9fd43699daedd9b635}{Min}} (this float\mbox{[}$\,$\mbox{]} array)
+\item 
+static double \mbox{\hyperlink{class_c2_m2_1_1_utils_1_1_math_a0fdde2e873c4ea9276a3f4b6fd20ee04}{Min}} (this double\mbox{[}$\,$\mbox{]} array)
+\item 
+static int \mbox{\hyperlink{class_c2_m2_1_1_utils_1_1_math_a55d18386fd48f161de60dd104640e479}{Min}} (this List$<$ int $>$ list)
+\item 
+static float \mbox{\hyperlink{class_c2_m2_1_1_utils_1_1_math_a6e2918c8484dc6187d54ae983bd2a050}{Min}} (this List$<$ float $>$ list)
+\item 
+static double \mbox{\hyperlink{class_c2_m2_1_1_utils_1_1_math_ab45819e41af03ec477d60b1671577a17}{Min}} (this List$<$ double $>$ list)
+\item 
+static float \mbox{\hyperlink{class_c2_m2_1_1_utils_1_1_math_aa2814160abce104e573aae60cd463da2}{Avg}} (this int\mbox{[}$\,$\mbox{]} array)
+\item 
+static float \mbox{\hyperlink{class_c2_m2_1_1_utils_1_1_math_ac097832a9d453bffb85ab2d1640aca05}{Avg}} (this float\mbox{[}$\,$\mbox{]} array)
+\item 
+static double \mbox{\hyperlink{class_c2_m2_1_1_utils_1_1_math_a4d820105211da5684b637f9e790abdcc}{Avg}} (this double\mbox{[}$\,$\mbox{]} array)
+\item 
+static float \mbox{\hyperlink{class_c2_m2_1_1_utils_1_1_math_a6232a77e9c4a745c2777e31a4cea0fa7}{Avg}} (this List$<$ int $>$ list)
+\item 
+static float \mbox{\hyperlink{class_c2_m2_1_1_utils_1_1_math_a6e529da565ebf927b2a28a2a90fca3ae}{Avg}} (this List$<$ float $>$ list)
+\item 
+static double \mbox{\hyperlink{class_c2_m2_1_1_utils_1_1_math_a1e8480d174755b3892f5295efb232c5b}{Avg}} (this List$<$ double $>$ list)
+\item 
+static float \mbox{\hyperlink{class_c2_m2_1_1_utils_1_1_math_a53c0d5beddb9d6e495d793005261bd80}{Std\+Dev}} (this int\mbox{[}$\,$\mbox{]} array)
+\item 
+static float \mbox{\hyperlink{class_c2_m2_1_1_utils_1_1_math_a269ee28ecfdc76d814b37f93c3739925}{Std\+Dev}} (this float\mbox{[}$\,$\mbox{]} array)
+\item 
+static float \mbox{\hyperlink{class_c2_m2_1_1_utils_1_1_math_ac628fbe7bf4d0b6ff6f9bd21e687644b}{Std\+Dev}} (this double\mbox{[}$\,$\mbox{]} array)
+\item 
+static float \mbox{\hyperlink{class_c2_m2_1_1_utils_1_1_math_ac7040d64c9b0a7d790fe7b2f6721b6cb}{Std\+Dev}} (this List$<$ int $>$ list)
+\item 
+static float \mbox{\hyperlink{class_c2_m2_1_1_utils_1_1_math_a211468f50ff34390414eaef23abdec7c}{Std\+Dev}} (this List$<$ float $>$ list)
+\item 
+static float \mbox{\hyperlink{class_c2_m2_1_1_utils_1_1_math_ad1c1f3e23da4b2eac9a8eb6b48062026}{Std\+Dev}} (this List$<$ double $>$ list)
+\item 
+static int \mbox{\hyperlink{class_c2_m2_1_1_utils_1_1_math_a86b575f92660f71630abd3ca93dabcb5}{Sum}} (this int\mbox{[}$\,$\mbox{]} array)
+\item 
+static float \mbox{\hyperlink{class_c2_m2_1_1_utils_1_1_math_ad571ace4616feb244830f7d06e176951}{Sum}} (this float\mbox{[}$\,$\mbox{]} array)
+\item 
+static double \mbox{\hyperlink{class_c2_m2_1_1_utils_1_1_math_af7a2f19cd8afb2977a7ebccd421ff019}{Sum}} (this double\mbox{[}$\,$\mbox{]} array)
+\item 
+static int \mbox{\hyperlink{class_c2_m2_1_1_utils_1_1_math_a518a9f39cd7c522df0be8917117a2396}{Sum}} (this List$<$ int $>$ list)
+\item 
+static float \mbox{\hyperlink{class_c2_m2_1_1_utils_1_1_math_a43ade069f34f993cfac72f5df4b89ace}{Sum}} (this List$<$ float $>$ list)
+\item 
+static double \mbox{\hyperlink{class_c2_m2_1_1_utils_1_1_math_a9662d99e577c4cd22bcd6776f7882d3d}{Sum}} (this List$<$ double $>$ list)
+\item 
+static int\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_c2_m2_1_1_utils_1_1_math_a1ec145d4db6783d474fa7e36d35615bf}{Abs}} (this int\mbox{[}$\,$\mbox{]} array)
+\item 
+static float\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_c2_m2_1_1_utils_1_1_math_acec0bf54734a41c107a68b11c387f624}{Abs}} (this float\mbox{[}$\,$\mbox{]} array)
+\item 
+static double\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_c2_m2_1_1_utils_1_1_math_a1951fd699cc856261768b3c555b40b67}{Abs}} (this double\mbox{[}$\,$\mbox{]} array)
+\item 
+static List$<$ int $>$ \mbox{\hyperlink{class_c2_m2_1_1_utils_1_1_math_a928d21bc079fd0d10f4ccb30d5f83ce9}{Abs}} (this List$<$ int $>$ list)
+\item 
+static List$<$ float $>$ \mbox{\hyperlink{class_c2_m2_1_1_utils_1_1_math_ab6f69979bee5006dbc7c6dbe2e51b59c}{Abs}} (this List$<$ float $>$ list)
+\item 
+static List$<$ double $>$ \mbox{\hyperlink{class_c2_m2_1_1_utils_1_1_math_a9e03ea1595caa0d63891ee8f82068dd6}{Abs}} (this List$<$ double $>$ list)
+\item 
+static Vector3 \mbox{\hyperlink{class_c2_m2_1_1_utils_1_1_math_ae939d565a3228e9705439b79cacc3d1c}{Dot}} (this Vector3 a, Vector3 b)
+\item 
+static void \mbox{\hyperlink{class_c2_m2_1_1_utils_1_1_math_a6d1af1b3355bab31c4162905ae94dcf1}{Compare\+To\+Linq}} (int num\+Trials=1000, int array\+Size=1000, bool test\+Min=true, bool test\+Max=true, bool test\+Clamp=true, bool test\+Arr\+Max=true, bool test\+Arr\+Min=true, bool test\+Arr\+Avg=true, bool test\+Arr\+Std\+Dev=true, bool test\+Arr\+Sum=true, bool test\+Arr\+Abs=true, float max\+Time\+Seconds=30f)
+\begin{DoxyCompactList}\small\item\em Run each function in this class and compare the performance to System.\+Linq\textquotesingle{}s matching methods \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Quick, static methods for finding max, min, and clamped scalar values and arrays 
+
+Should vastly outperform System.\+Linq methods 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_c2_m2_1_1_utils_1_1_math_a1951fd699cc856261768b3c555b40b67}\label{class_c2_m2_1_1_utils_1_1_math_a1951fd699cc856261768b3c555b40b67}} 
+\index{C2M2.Utils.Math@{C2M2.Utils.Math}!Abs@{Abs}}
+\index{Abs@{Abs}!C2M2.Utils.Math@{C2M2.Utils.Math}}
+\doxysubsubsection{\texorpdfstring{Abs()}{Abs()}\hspace{0.1cm}{\footnotesize\ttfamily [1/6]}}
+{\footnotesize\ttfamily static double \mbox{[}$\,$\mbox{]} C2\+M2.\+Utils.\+Math.\+Abs (\begin{DoxyParamCaption}\item[{this double\mbox{[}$\,$\mbox{]}}]{array }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_utils_1_1_math_acec0bf54734a41c107a68b11c387f624}\label{class_c2_m2_1_1_utils_1_1_math_acec0bf54734a41c107a68b11c387f624}} 
+\index{C2M2.Utils.Math@{C2M2.Utils.Math}!Abs@{Abs}}
+\index{Abs@{Abs}!C2M2.Utils.Math@{C2M2.Utils.Math}}
+\doxysubsubsection{\texorpdfstring{Abs()}{Abs()}\hspace{0.1cm}{\footnotesize\ttfamily [2/6]}}
+{\footnotesize\ttfamily static float \mbox{[}$\,$\mbox{]} C2\+M2.\+Utils.\+Math.\+Abs (\begin{DoxyParamCaption}\item[{this float\mbox{[}$\,$\mbox{]}}]{array }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_utils_1_1_math_a1ec145d4db6783d474fa7e36d35615bf}\label{class_c2_m2_1_1_utils_1_1_math_a1ec145d4db6783d474fa7e36d35615bf}} 
+\index{C2M2.Utils.Math@{C2M2.Utils.Math}!Abs@{Abs}}
+\index{Abs@{Abs}!C2M2.Utils.Math@{C2M2.Utils.Math}}
+\doxysubsubsection{\texorpdfstring{Abs()}{Abs()}\hspace{0.1cm}{\footnotesize\ttfamily [3/6]}}
+{\footnotesize\ttfamily static int \mbox{[}$\,$\mbox{]} C2\+M2.\+Utils.\+Math.\+Abs (\begin{DoxyParamCaption}\item[{this int\mbox{[}$\,$\mbox{]}}]{array }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_utils_1_1_math_a9e03ea1595caa0d63891ee8f82068dd6}\label{class_c2_m2_1_1_utils_1_1_math_a9e03ea1595caa0d63891ee8f82068dd6}} 
+\index{C2M2.Utils.Math@{C2M2.Utils.Math}!Abs@{Abs}}
+\index{Abs@{Abs}!C2M2.Utils.Math@{C2M2.Utils.Math}}
+\doxysubsubsection{\texorpdfstring{Abs()}{Abs()}\hspace{0.1cm}{\footnotesize\ttfamily [4/6]}}
+{\footnotesize\ttfamily static List$<$double$>$ C2\+M2.\+Utils.\+Math.\+Abs (\begin{DoxyParamCaption}\item[{this List$<$ double $>$}]{list }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_utils_1_1_math_ab6f69979bee5006dbc7c6dbe2e51b59c}\label{class_c2_m2_1_1_utils_1_1_math_ab6f69979bee5006dbc7c6dbe2e51b59c}} 
+\index{C2M2.Utils.Math@{C2M2.Utils.Math}!Abs@{Abs}}
+\index{Abs@{Abs}!C2M2.Utils.Math@{C2M2.Utils.Math}}
+\doxysubsubsection{\texorpdfstring{Abs()}{Abs()}\hspace{0.1cm}{\footnotesize\ttfamily [5/6]}}
+{\footnotesize\ttfamily static List$<$float$>$ C2\+M2.\+Utils.\+Math.\+Abs (\begin{DoxyParamCaption}\item[{this List$<$ float $>$}]{list }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_utils_1_1_math_a928d21bc079fd0d10f4ccb30d5f83ce9}\label{class_c2_m2_1_1_utils_1_1_math_a928d21bc079fd0d10f4ccb30d5f83ce9}} 
+\index{C2M2.Utils.Math@{C2M2.Utils.Math}!Abs@{Abs}}
+\index{Abs@{Abs}!C2M2.Utils.Math@{C2M2.Utils.Math}}
+\doxysubsubsection{\texorpdfstring{Abs()}{Abs()}\hspace{0.1cm}{\footnotesize\ttfamily [6/6]}}
+{\footnotesize\ttfamily static List$<$int$>$ C2\+M2.\+Utils.\+Math.\+Abs (\begin{DoxyParamCaption}\item[{this List$<$ int $>$}]{list }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_utils_1_1_math_a4d820105211da5684b637f9e790abdcc}\label{class_c2_m2_1_1_utils_1_1_math_a4d820105211da5684b637f9e790abdcc}} 
+\index{C2M2.Utils.Math@{C2M2.Utils.Math}!Avg@{Avg}}
+\index{Avg@{Avg}!C2M2.Utils.Math@{C2M2.Utils.Math}}
+\doxysubsubsection{\texorpdfstring{Avg()}{Avg()}\hspace{0.1cm}{\footnotesize\ttfamily [1/6]}}
+{\footnotesize\ttfamily static double C2\+M2.\+Utils.\+Math.\+Avg (\begin{DoxyParamCaption}\item[{this double\mbox{[}$\,$\mbox{]}}]{array }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_utils_1_1_math_ac097832a9d453bffb85ab2d1640aca05}\label{class_c2_m2_1_1_utils_1_1_math_ac097832a9d453bffb85ab2d1640aca05}} 
+\index{C2M2.Utils.Math@{C2M2.Utils.Math}!Avg@{Avg}}
+\index{Avg@{Avg}!C2M2.Utils.Math@{C2M2.Utils.Math}}
+\doxysubsubsection{\texorpdfstring{Avg()}{Avg()}\hspace{0.1cm}{\footnotesize\ttfamily [2/6]}}
+{\footnotesize\ttfamily static float C2\+M2.\+Utils.\+Math.\+Avg (\begin{DoxyParamCaption}\item[{this float\mbox{[}$\,$\mbox{]}}]{array }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_utils_1_1_math_aa2814160abce104e573aae60cd463da2}\label{class_c2_m2_1_1_utils_1_1_math_aa2814160abce104e573aae60cd463da2}} 
+\index{C2M2.Utils.Math@{C2M2.Utils.Math}!Avg@{Avg}}
+\index{Avg@{Avg}!C2M2.Utils.Math@{C2M2.Utils.Math}}
+\doxysubsubsection{\texorpdfstring{Avg()}{Avg()}\hspace{0.1cm}{\footnotesize\ttfamily [3/6]}}
+{\footnotesize\ttfamily static float C2\+M2.\+Utils.\+Math.\+Avg (\begin{DoxyParamCaption}\item[{this int\mbox{[}$\,$\mbox{]}}]{array }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_utils_1_1_math_a1e8480d174755b3892f5295efb232c5b}\label{class_c2_m2_1_1_utils_1_1_math_a1e8480d174755b3892f5295efb232c5b}} 
+\index{C2M2.Utils.Math@{C2M2.Utils.Math}!Avg@{Avg}}
+\index{Avg@{Avg}!C2M2.Utils.Math@{C2M2.Utils.Math}}
+\doxysubsubsection{\texorpdfstring{Avg()}{Avg()}\hspace{0.1cm}{\footnotesize\ttfamily [4/6]}}
+{\footnotesize\ttfamily static double C2\+M2.\+Utils.\+Math.\+Avg (\begin{DoxyParamCaption}\item[{this List$<$ double $>$}]{list }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_utils_1_1_math_a6e529da565ebf927b2a28a2a90fca3ae}\label{class_c2_m2_1_1_utils_1_1_math_a6e529da565ebf927b2a28a2a90fca3ae}} 
+\index{C2M2.Utils.Math@{C2M2.Utils.Math}!Avg@{Avg}}
+\index{Avg@{Avg}!C2M2.Utils.Math@{C2M2.Utils.Math}}
+\doxysubsubsection{\texorpdfstring{Avg()}{Avg()}\hspace{0.1cm}{\footnotesize\ttfamily [5/6]}}
+{\footnotesize\ttfamily static float C2\+M2.\+Utils.\+Math.\+Avg (\begin{DoxyParamCaption}\item[{this List$<$ float $>$}]{list }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_utils_1_1_math_a6232a77e9c4a745c2777e31a4cea0fa7}\label{class_c2_m2_1_1_utils_1_1_math_a6232a77e9c4a745c2777e31a4cea0fa7}} 
+\index{C2M2.Utils.Math@{C2M2.Utils.Math}!Avg@{Avg}}
+\index{Avg@{Avg}!C2M2.Utils.Math@{C2M2.Utils.Math}}
+\doxysubsubsection{\texorpdfstring{Avg()}{Avg()}\hspace{0.1cm}{\footnotesize\ttfamily [6/6]}}
+{\footnotesize\ttfamily static float C2\+M2.\+Utils.\+Math.\+Avg (\begin{DoxyParamCaption}\item[{this List$<$ int $>$}]{list }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_utils_1_1_math_a986508b4e3eb836a1de98bc6d4466e22}\label{class_c2_m2_1_1_utils_1_1_math_a986508b4e3eb836a1de98bc6d4466e22}} 
+\index{C2M2.Utils.Math@{C2M2.Utils.Math}!Clamp@{Clamp}}
+\index{Clamp@{Clamp}!C2M2.Utils.Math@{C2M2.Utils.Math}}
+\doxysubsubsection{\texorpdfstring{Clamp()}{Clamp()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily static double C2\+M2.\+Utils.\+Math.\+Clamp (\begin{DoxyParamCaption}\item[{double}]{value,  }\item[{double}]{min,  }\item[{double}]{max }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+If value $<$ min, returns min, If min $<$= value $<$= max, returns value, If value $>$ max, returns max 
+
+\mbox{\Hypertarget{class_c2_m2_1_1_utils_1_1_math_aa21781bec23e0afe1e3034c7fd66ba26}\label{class_c2_m2_1_1_utils_1_1_math_aa21781bec23e0afe1e3034c7fd66ba26}} 
+\index{C2M2.Utils.Math@{C2M2.Utils.Math}!Clamp@{Clamp}}
+\index{Clamp@{Clamp}!C2M2.Utils.Math@{C2M2.Utils.Math}}
+\doxysubsubsection{\texorpdfstring{Clamp()}{Clamp()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily static float C2\+M2.\+Utils.\+Math.\+Clamp (\begin{DoxyParamCaption}\item[{float}]{value,  }\item[{float}]{min,  }\item[{float}]{max }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+If value $<$ min, returns min, If min $<$= value $<$= max, returns value, If value $>$ max, returns max 
+
+\mbox{\Hypertarget{class_c2_m2_1_1_utils_1_1_math_a805a23bfab56ce715d7a92f700225077}\label{class_c2_m2_1_1_utils_1_1_math_a805a23bfab56ce715d7a92f700225077}} 
+\index{C2M2.Utils.Math@{C2M2.Utils.Math}!Clamp@{Clamp}}
+\index{Clamp@{Clamp}!C2M2.Utils.Math@{C2M2.Utils.Math}}
+\doxysubsubsection{\texorpdfstring{Clamp()}{Clamp()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily static int C2\+M2.\+Utils.\+Math.\+Clamp (\begin{DoxyParamCaption}\item[{int}]{value,  }\item[{int}]{min,  }\item[{int}]{max }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+If value $<$ min, returns min, If min $<$= value $<$= max, returns value, If value $>$ max, returns max 
+
+\mbox{\Hypertarget{class_c2_m2_1_1_utils_1_1_math_a6d1af1b3355bab31c4162905ae94dcf1}\label{class_c2_m2_1_1_utils_1_1_math_a6d1af1b3355bab31c4162905ae94dcf1}} 
+\index{C2M2.Utils.Math@{C2M2.Utils.Math}!CompareToLinq@{CompareToLinq}}
+\index{CompareToLinq@{CompareToLinq}!C2M2.Utils.Math@{C2M2.Utils.Math}}
+\doxysubsubsection{\texorpdfstring{CompareToLinq()}{CompareToLinq()}}
+{\footnotesize\ttfamily static void C2\+M2.\+Utils.\+Math.\+Compare\+To\+Linq (\begin{DoxyParamCaption}\item[{int}]{num\+Trials = {\ttfamily 1000},  }\item[{int}]{array\+Size = {\ttfamily 1000},  }\item[{bool}]{test\+Min = {\ttfamily true},  }\item[{bool}]{test\+Max = {\ttfamily true},  }\item[{bool}]{test\+Clamp = {\ttfamily true},  }\item[{bool}]{test\+Arr\+Max = {\ttfamily true},  }\item[{bool}]{test\+Arr\+Min = {\ttfamily true},  }\item[{bool}]{test\+Arr\+Avg = {\ttfamily true},  }\item[{bool}]{test\+Arr\+Std\+Dev = {\ttfamily true},  }\item[{bool}]{test\+Arr\+Sum = {\ttfamily true},  }\item[{bool}]{test\+Arr\+Abs = {\ttfamily true},  }\item[{float}]{max\+Time\+Seconds = {\ttfamily 30f} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Run each function in this class and compare the performance to System.\+Linq\textquotesingle{}s matching methods 
+
+\mbox{\Hypertarget{class_c2_m2_1_1_utils_1_1_math_ae939d565a3228e9705439b79cacc3d1c}\label{class_c2_m2_1_1_utils_1_1_math_ae939d565a3228e9705439b79cacc3d1c}} 
+\index{C2M2.Utils.Math@{C2M2.Utils.Math}!Dot@{Dot}}
+\index{Dot@{Dot}!C2M2.Utils.Math@{C2M2.Utils.Math}}
+\doxysubsubsection{\texorpdfstring{Dot()}{Dot()}}
+{\footnotesize\ttfamily static Vector3 C2\+M2.\+Utils.\+Math.\+Dot (\begin{DoxyParamCaption}\item[{this Vector3}]{a,  }\item[{Vector3}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_utils_1_1_math_a7ab8e3e63ff217afa8140b39dd0dcfb5}\label{class_c2_m2_1_1_utils_1_1_math_a7ab8e3e63ff217afa8140b39dd0dcfb5}} 
+\index{C2M2.Utils.Math@{C2M2.Utils.Math}!Max@{Max}}
+\index{Max@{Max}!C2M2.Utils.Math@{C2M2.Utils.Math}}
+\doxysubsubsection{\texorpdfstring{Max()}{Max()}\hspace{0.1cm}{\footnotesize\ttfamily [1/10]}}
+{\footnotesize\ttfamily static double C2\+M2.\+Utils.\+Math.\+Max (\begin{DoxyParamCaption}\item[{double}]{a,  }\item[{double}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_utils_1_1_math_a1a29a7ba13808701822ba83d4fe753c1}\label{class_c2_m2_1_1_utils_1_1_math_a1a29a7ba13808701822ba83d4fe753c1}} 
+\index{C2M2.Utils.Math@{C2M2.Utils.Math}!Max@{Max}}
+\index{Max@{Max}!C2M2.Utils.Math@{C2M2.Utils.Math}}
+\doxysubsubsection{\texorpdfstring{Max()}{Max()}\hspace{0.1cm}{\footnotesize\ttfamily [2/10]}}
+{\footnotesize\ttfamily static float C2\+M2.\+Utils.\+Math.\+Max (\begin{DoxyParamCaption}\item[{float}]{a,  }\item[{float}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_utils_1_1_math_a7f8022e53a901c98d52b687319a3477c}\label{class_c2_m2_1_1_utils_1_1_math_a7f8022e53a901c98d52b687319a3477c}} 
+\index{C2M2.Utils.Math@{C2M2.Utils.Math}!Max@{Max}}
+\index{Max@{Max}!C2M2.Utils.Math@{C2M2.Utils.Math}}
+\doxysubsubsection{\texorpdfstring{Max()}{Max()}\hspace{0.1cm}{\footnotesize\ttfamily [3/10]}}
+{\footnotesize\ttfamily static int C2\+M2.\+Utils.\+Math.\+Max (\begin{DoxyParamCaption}\item[{int}]{a,  }\item[{int}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_utils_1_1_math_a9ca5c46466b8f7f96309681a8ebb8290}\label{class_c2_m2_1_1_utils_1_1_math_a9ca5c46466b8f7f96309681a8ebb8290}} 
+\index{C2M2.Utils.Math@{C2M2.Utils.Math}!Max@{Max}}
+\index{Max@{Max}!C2M2.Utils.Math@{C2M2.Utils.Math}}
+\doxysubsubsection{\texorpdfstring{Max()}{Max()}\hspace{0.1cm}{\footnotesize\ttfamily [4/10]}}
+{\footnotesize\ttfamily static double C2\+M2.\+Utils.\+Math.\+Max (\begin{DoxyParamCaption}\item[{this double\mbox{[}$\,$\mbox{]}}]{array }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_utils_1_1_math_abbf840c39002917f300b6b256d987325}\label{class_c2_m2_1_1_utils_1_1_math_abbf840c39002917f300b6b256d987325}} 
+\index{C2M2.Utils.Math@{C2M2.Utils.Math}!Max@{Max}}
+\index{Max@{Max}!C2M2.Utils.Math@{C2M2.Utils.Math}}
+\doxysubsubsection{\texorpdfstring{Max()}{Max()}\hspace{0.1cm}{\footnotesize\ttfamily [5/10]}}
+{\footnotesize\ttfamily static float C2\+M2.\+Utils.\+Math.\+Max (\begin{DoxyParamCaption}\item[{this float\mbox{[}$\,$\mbox{]}}]{array }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_utils_1_1_math_a36ec8197dd811e50d6b82d33b0149674}\label{class_c2_m2_1_1_utils_1_1_math_a36ec8197dd811e50d6b82d33b0149674}} 
+\index{C2M2.Utils.Math@{C2M2.Utils.Math}!Max@{Max}}
+\index{Max@{Max}!C2M2.Utils.Math@{C2M2.Utils.Math}}
+\doxysubsubsection{\texorpdfstring{Max()}{Max()}\hspace{0.1cm}{\footnotesize\ttfamily [6/10]}}
+{\footnotesize\ttfamily static int C2\+M2.\+Utils.\+Math.\+Max (\begin{DoxyParamCaption}\item[{this int\mbox{[}$\,$\mbox{]}}]{array }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_utils_1_1_math_a81f200a3bb867ae863e9712cb893631a}\label{class_c2_m2_1_1_utils_1_1_math_a81f200a3bb867ae863e9712cb893631a}} 
+\index{C2M2.Utils.Math@{C2M2.Utils.Math}!Max@{Max}}
+\index{Max@{Max}!C2M2.Utils.Math@{C2M2.Utils.Math}}
+\doxysubsubsection{\texorpdfstring{Max()}{Max()}\hspace{0.1cm}{\footnotesize\ttfamily [7/10]}}
+{\footnotesize\ttfamily static double C2\+M2.\+Utils.\+Math.\+Max (\begin{DoxyParamCaption}\item[{this List$<$ double $>$}]{list }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_utils_1_1_math_a32daa2efc57a5008ac39f1779af66f93}\label{class_c2_m2_1_1_utils_1_1_math_a32daa2efc57a5008ac39f1779af66f93}} 
+\index{C2M2.Utils.Math@{C2M2.Utils.Math}!Max@{Max}}
+\index{Max@{Max}!C2M2.Utils.Math@{C2M2.Utils.Math}}
+\doxysubsubsection{\texorpdfstring{Max()}{Max()}\hspace{0.1cm}{\footnotesize\ttfamily [8/10]}}
+{\footnotesize\ttfamily static float C2\+M2.\+Utils.\+Math.\+Max (\begin{DoxyParamCaption}\item[{this List$<$ float $>$}]{list }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_utils_1_1_math_ae32b609584911aa45ce81dacc20d9e20}\label{class_c2_m2_1_1_utils_1_1_math_ae32b609584911aa45ce81dacc20d9e20}} 
+\index{C2M2.Utils.Math@{C2M2.Utils.Math}!Max@{Max}}
+\index{Max@{Max}!C2M2.Utils.Math@{C2M2.Utils.Math}}
+\doxysubsubsection{\texorpdfstring{Max()}{Max()}\hspace{0.1cm}{\footnotesize\ttfamily [9/10]}}
+{\footnotesize\ttfamily static int C2\+M2.\+Utils.\+Math.\+Max (\begin{DoxyParamCaption}\item[{this List$<$ int $>$}]{list }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_utils_1_1_math_a9607af0f19b66f6534994d9f506ed62c}\label{class_c2_m2_1_1_utils_1_1_math_a9607af0f19b66f6534994d9f506ed62c}} 
+\index{C2M2.Utils.Math@{C2M2.Utils.Math}!Max@{Max}}
+\index{Max@{Max}!C2M2.Utils.Math@{C2M2.Utils.Math}}
+\doxysubsubsection{\texorpdfstring{Max()}{Max()}\hspace{0.1cm}{\footnotesize\ttfamily [10/10]}}
+{\footnotesize\ttfamily static float C2\+M2.\+Utils.\+Math.\+Max (\begin{DoxyParamCaption}\item[{this Vector3}]{a }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_utils_1_1_math_a850e5efbdb93f10d86eade1631d6acf2}\label{class_c2_m2_1_1_utils_1_1_math_a850e5efbdb93f10d86eade1631d6acf2}} 
+\index{C2M2.Utils.Math@{C2M2.Utils.Math}!Min@{Min}}
+\index{Min@{Min}!C2M2.Utils.Math@{C2M2.Utils.Math}}
+\doxysubsubsection{\texorpdfstring{Min()}{Min()}\hspace{0.1cm}{\footnotesize\ttfamily [1/10]}}
+{\footnotesize\ttfamily static double C2\+M2.\+Utils.\+Math.\+Min (\begin{DoxyParamCaption}\item[{double}]{a,  }\item[{double}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_utils_1_1_math_aa0052acf133a5bb054d7797228467232}\label{class_c2_m2_1_1_utils_1_1_math_aa0052acf133a5bb054d7797228467232}} 
+\index{C2M2.Utils.Math@{C2M2.Utils.Math}!Min@{Min}}
+\index{Min@{Min}!C2M2.Utils.Math@{C2M2.Utils.Math}}
+\doxysubsubsection{\texorpdfstring{Min()}{Min()}\hspace{0.1cm}{\footnotesize\ttfamily [2/10]}}
+{\footnotesize\ttfamily static float C2\+M2.\+Utils.\+Math.\+Min (\begin{DoxyParamCaption}\item[{float}]{a,  }\item[{float}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_utils_1_1_math_a7ce4727b1e91cbd336bdb5107152a433}\label{class_c2_m2_1_1_utils_1_1_math_a7ce4727b1e91cbd336bdb5107152a433}} 
+\index{C2M2.Utils.Math@{C2M2.Utils.Math}!Min@{Min}}
+\index{Min@{Min}!C2M2.Utils.Math@{C2M2.Utils.Math}}
+\doxysubsubsection{\texorpdfstring{Min()}{Min()}\hspace{0.1cm}{\footnotesize\ttfamily [3/10]}}
+{\footnotesize\ttfamily static int C2\+M2.\+Utils.\+Math.\+Min (\begin{DoxyParamCaption}\item[{int}]{a,  }\item[{int}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_utils_1_1_math_a0fdde2e873c4ea9276a3f4b6fd20ee04}\label{class_c2_m2_1_1_utils_1_1_math_a0fdde2e873c4ea9276a3f4b6fd20ee04}} 
+\index{C2M2.Utils.Math@{C2M2.Utils.Math}!Min@{Min}}
+\index{Min@{Min}!C2M2.Utils.Math@{C2M2.Utils.Math}}
+\doxysubsubsection{\texorpdfstring{Min()}{Min()}\hspace{0.1cm}{\footnotesize\ttfamily [4/10]}}
+{\footnotesize\ttfamily static double C2\+M2.\+Utils.\+Math.\+Min (\begin{DoxyParamCaption}\item[{this double\mbox{[}$\,$\mbox{]}}]{array }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_utils_1_1_math_a542641d650b08b9fd43699daedd9b635}\label{class_c2_m2_1_1_utils_1_1_math_a542641d650b08b9fd43699daedd9b635}} 
+\index{C2M2.Utils.Math@{C2M2.Utils.Math}!Min@{Min}}
+\index{Min@{Min}!C2M2.Utils.Math@{C2M2.Utils.Math}}
+\doxysubsubsection{\texorpdfstring{Min()}{Min()}\hspace{0.1cm}{\footnotesize\ttfamily [5/10]}}
+{\footnotesize\ttfamily static float C2\+M2.\+Utils.\+Math.\+Min (\begin{DoxyParamCaption}\item[{this float\mbox{[}$\,$\mbox{]}}]{array }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_utils_1_1_math_ac813a84ac0e2c2c2009b84a9b293e1ac}\label{class_c2_m2_1_1_utils_1_1_math_ac813a84ac0e2c2c2009b84a9b293e1ac}} 
+\index{C2M2.Utils.Math@{C2M2.Utils.Math}!Min@{Min}}
+\index{Min@{Min}!C2M2.Utils.Math@{C2M2.Utils.Math}}
+\doxysubsubsection{\texorpdfstring{Min()}{Min()}\hspace{0.1cm}{\footnotesize\ttfamily [6/10]}}
+{\footnotesize\ttfamily static int C2\+M2.\+Utils.\+Math.\+Min (\begin{DoxyParamCaption}\item[{this int\mbox{[}$\,$\mbox{]}}]{array }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_utils_1_1_math_ab45819e41af03ec477d60b1671577a17}\label{class_c2_m2_1_1_utils_1_1_math_ab45819e41af03ec477d60b1671577a17}} 
+\index{C2M2.Utils.Math@{C2M2.Utils.Math}!Min@{Min}}
+\index{Min@{Min}!C2M2.Utils.Math@{C2M2.Utils.Math}}
+\doxysubsubsection{\texorpdfstring{Min()}{Min()}\hspace{0.1cm}{\footnotesize\ttfamily [7/10]}}
+{\footnotesize\ttfamily static double C2\+M2.\+Utils.\+Math.\+Min (\begin{DoxyParamCaption}\item[{this List$<$ double $>$}]{list }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_utils_1_1_math_a6e2918c8484dc6187d54ae983bd2a050}\label{class_c2_m2_1_1_utils_1_1_math_a6e2918c8484dc6187d54ae983bd2a050}} 
+\index{C2M2.Utils.Math@{C2M2.Utils.Math}!Min@{Min}}
+\index{Min@{Min}!C2M2.Utils.Math@{C2M2.Utils.Math}}
+\doxysubsubsection{\texorpdfstring{Min()}{Min()}\hspace{0.1cm}{\footnotesize\ttfamily [8/10]}}
+{\footnotesize\ttfamily static float C2\+M2.\+Utils.\+Math.\+Min (\begin{DoxyParamCaption}\item[{this List$<$ float $>$}]{list }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_utils_1_1_math_a55d18386fd48f161de60dd104640e479}\label{class_c2_m2_1_1_utils_1_1_math_a55d18386fd48f161de60dd104640e479}} 
+\index{C2M2.Utils.Math@{C2M2.Utils.Math}!Min@{Min}}
+\index{Min@{Min}!C2M2.Utils.Math@{C2M2.Utils.Math}}
+\doxysubsubsection{\texorpdfstring{Min()}{Min()}\hspace{0.1cm}{\footnotesize\ttfamily [9/10]}}
+{\footnotesize\ttfamily static int C2\+M2.\+Utils.\+Math.\+Min (\begin{DoxyParamCaption}\item[{this List$<$ int $>$}]{list }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_utils_1_1_math_ae713903adced9a257482a8b3d2759764}\label{class_c2_m2_1_1_utils_1_1_math_ae713903adced9a257482a8b3d2759764}} 
+\index{C2M2.Utils.Math@{C2M2.Utils.Math}!Min@{Min}}
+\index{Min@{Min}!C2M2.Utils.Math@{C2M2.Utils.Math}}
+\doxysubsubsection{\texorpdfstring{Min()}{Min()}\hspace{0.1cm}{\footnotesize\ttfamily [10/10]}}
+{\footnotesize\ttfamily static float C2\+M2.\+Utils.\+Math.\+Min (\begin{DoxyParamCaption}\item[{this Vector3}]{a }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_utils_1_1_math_ac628fbe7bf4d0b6ff6f9bd21e687644b}\label{class_c2_m2_1_1_utils_1_1_math_ac628fbe7bf4d0b6ff6f9bd21e687644b}} 
+\index{C2M2.Utils.Math@{C2M2.Utils.Math}!StdDev@{StdDev}}
+\index{StdDev@{StdDev}!C2M2.Utils.Math@{C2M2.Utils.Math}}
+\doxysubsubsection{\texorpdfstring{StdDev()}{StdDev()}\hspace{0.1cm}{\footnotesize\ttfamily [1/6]}}
+{\footnotesize\ttfamily static float C2\+M2.\+Utils.\+Math.\+Std\+Dev (\begin{DoxyParamCaption}\item[{this double\mbox{[}$\,$\mbox{]}}]{array }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_utils_1_1_math_a269ee28ecfdc76d814b37f93c3739925}\label{class_c2_m2_1_1_utils_1_1_math_a269ee28ecfdc76d814b37f93c3739925}} 
+\index{C2M2.Utils.Math@{C2M2.Utils.Math}!StdDev@{StdDev}}
+\index{StdDev@{StdDev}!C2M2.Utils.Math@{C2M2.Utils.Math}}
+\doxysubsubsection{\texorpdfstring{StdDev()}{StdDev()}\hspace{0.1cm}{\footnotesize\ttfamily [2/6]}}
+{\footnotesize\ttfamily static float C2\+M2.\+Utils.\+Math.\+Std\+Dev (\begin{DoxyParamCaption}\item[{this float\mbox{[}$\,$\mbox{]}}]{array }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_utils_1_1_math_a53c0d5beddb9d6e495d793005261bd80}\label{class_c2_m2_1_1_utils_1_1_math_a53c0d5beddb9d6e495d793005261bd80}} 
+\index{C2M2.Utils.Math@{C2M2.Utils.Math}!StdDev@{StdDev}}
+\index{StdDev@{StdDev}!C2M2.Utils.Math@{C2M2.Utils.Math}}
+\doxysubsubsection{\texorpdfstring{StdDev()}{StdDev()}\hspace{0.1cm}{\footnotesize\ttfamily [3/6]}}
+{\footnotesize\ttfamily static float C2\+M2.\+Utils.\+Math.\+Std\+Dev (\begin{DoxyParamCaption}\item[{this int\mbox{[}$\,$\mbox{]}}]{array }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_utils_1_1_math_ad1c1f3e23da4b2eac9a8eb6b48062026}\label{class_c2_m2_1_1_utils_1_1_math_ad1c1f3e23da4b2eac9a8eb6b48062026}} 
+\index{C2M2.Utils.Math@{C2M2.Utils.Math}!StdDev@{StdDev}}
+\index{StdDev@{StdDev}!C2M2.Utils.Math@{C2M2.Utils.Math}}
+\doxysubsubsection{\texorpdfstring{StdDev()}{StdDev()}\hspace{0.1cm}{\footnotesize\ttfamily [4/6]}}
+{\footnotesize\ttfamily static float C2\+M2.\+Utils.\+Math.\+Std\+Dev (\begin{DoxyParamCaption}\item[{this List$<$ double $>$}]{list }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_utils_1_1_math_a211468f50ff34390414eaef23abdec7c}\label{class_c2_m2_1_1_utils_1_1_math_a211468f50ff34390414eaef23abdec7c}} 
+\index{C2M2.Utils.Math@{C2M2.Utils.Math}!StdDev@{StdDev}}
+\index{StdDev@{StdDev}!C2M2.Utils.Math@{C2M2.Utils.Math}}
+\doxysubsubsection{\texorpdfstring{StdDev()}{StdDev()}\hspace{0.1cm}{\footnotesize\ttfamily [5/6]}}
+{\footnotesize\ttfamily static float C2\+M2.\+Utils.\+Math.\+Std\+Dev (\begin{DoxyParamCaption}\item[{this List$<$ float $>$}]{list }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_utils_1_1_math_ac7040d64c9b0a7d790fe7b2f6721b6cb}\label{class_c2_m2_1_1_utils_1_1_math_ac7040d64c9b0a7d790fe7b2f6721b6cb}} 
+\index{C2M2.Utils.Math@{C2M2.Utils.Math}!StdDev@{StdDev}}
+\index{StdDev@{StdDev}!C2M2.Utils.Math@{C2M2.Utils.Math}}
+\doxysubsubsection{\texorpdfstring{StdDev()}{StdDev()}\hspace{0.1cm}{\footnotesize\ttfamily [6/6]}}
+{\footnotesize\ttfamily static float C2\+M2.\+Utils.\+Math.\+Std\+Dev (\begin{DoxyParamCaption}\item[{this List$<$ int $>$}]{list }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_utils_1_1_math_af7a2f19cd8afb2977a7ebccd421ff019}\label{class_c2_m2_1_1_utils_1_1_math_af7a2f19cd8afb2977a7ebccd421ff019}} 
+\index{C2M2.Utils.Math@{C2M2.Utils.Math}!Sum@{Sum}}
+\index{Sum@{Sum}!C2M2.Utils.Math@{C2M2.Utils.Math}}
+\doxysubsubsection{\texorpdfstring{Sum()}{Sum()}\hspace{0.1cm}{\footnotesize\ttfamily [1/6]}}
+{\footnotesize\ttfamily static double C2\+M2.\+Utils.\+Math.\+Sum (\begin{DoxyParamCaption}\item[{this double\mbox{[}$\,$\mbox{]}}]{array }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_utils_1_1_math_ad571ace4616feb244830f7d06e176951}\label{class_c2_m2_1_1_utils_1_1_math_ad571ace4616feb244830f7d06e176951}} 
+\index{C2M2.Utils.Math@{C2M2.Utils.Math}!Sum@{Sum}}
+\index{Sum@{Sum}!C2M2.Utils.Math@{C2M2.Utils.Math}}
+\doxysubsubsection{\texorpdfstring{Sum()}{Sum()}\hspace{0.1cm}{\footnotesize\ttfamily [2/6]}}
+{\footnotesize\ttfamily static float C2\+M2.\+Utils.\+Math.\+Sum (\begin{DoxyParamCaption}\item[{this float\mbox{[}$\,$\mbox{]}}]{array }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_utils_1_1_math_a86b575f92660f71630abd3ca93dabcb5}\label{class_c2_m2_1_1_utils_1_1_math_a86b575f92660f71630abd3ca93dabcb5}} 
+\index{C2M2.Utils.Math@{C2M2.Utils.Math}!Sum@{Sum}}
+\index{Sum@{Sum}!C2M2.Utils.Math@{C2M2.Utils.Math}}
+\doxysubsubsection{\texorpdfstring{Sum()}{Sum()}\hspace{0.1cm}{\footnotesize\ttfamily [3/6]}}
+{\footnotesize\ttfamily static int C2\+M2.\+Utils.\+Math.\+Sum (\begin{DoxyParamCaption}\item[{this int\mbox{[}$\,$\mbox{]}}]{array }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_utils_1_1_math_a9662d99e577c4cd22bcd6776f7882d3d}\label{class_c2_m2_1_1_utils_1_1_math_a9662d99e577c4cd22bcd6776f7882d3d}} 
+\index{C2M2.Utils.Math@{C2M2.Utils.Math}!Sum@{Sum}}
+\index{Sum@{Sum}!C2M2.Utils.Math@{C2M2.Utils.Math}}
+\doxysubsubsection{\texorpdfstring{Sum()}{Sum()}\hspace{0.1cm}{\footnotesize\ttfamily [4/6]}}
+{\footnotesize\ttfamily static double C2\+M2.\+Utils.\+Math.\+Sum (\begin{DoxyParamCaption}\item[{this List$<$ double $>$}]{list }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_utils_1_1_math_a43ade069f34f993cfac72f5df4b89ace}\label{class_c2_m2_1_1_utils_1_1_math_a43ade069f34f993cfac72f5df4b89ace}} 
+\index{C2M2.Utils.Math@{C2M2.Utils.Math}!Sum@{Sum}}
+\index{Sum@{Sum}!C2M2.Utils.Math@{C2M2.Utils.Math}}
+\doxysubsubsection{\texorpdfstring{Sum()}{Sum()}\hspace{0.1cm}{\footnotesize\ttfamily [5/6]}}
+{\footnotesize\ttfamily static float C2\+M2.\+Utils.\+Math.\+Sum (\begin{DoxyParamCaption}\item[{this List$<$ float $>$}]{list }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_utils_1_1_math_a518a9f39cd7c522df0be8917117a2396}\label{class_c2_m2_1_1_utils_1_1_math_a518a9f39cd7c522df0be8917117a2396}} 
+\index{C2M2.Utils.Math@{C2M2.Utils.Math}!Sum@{Sum}}
+\index{Sum@{Sum}!C2M2.Utils.Math@{C2M2.Utils.Math}}
+\doxysubsubsection{\texorpdfstring{Sum()}{Sum()}\hspace{0.1cm}{\footnotesize\ttfamily [6/6]}}
+{\footnotesize\ttfamily static int C2\+M2.\+Utils.\+Math.\+Sum (\begin{DoxyParamCaption}\item[{this List$<$ int $>$}]{list }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/jaros/\+Desktop/tempvr/virtual-\/reality/\+Assets/\+Scripts/\+C2\+M2/\+Utils/\mbox{\hyperlink{_math_8cs}{Math.\+cs}}\end{DoxyCompactItemize}

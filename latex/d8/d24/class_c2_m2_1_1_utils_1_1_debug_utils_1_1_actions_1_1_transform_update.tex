@@ -1,0 +1,117 @@
+\hypertarget{class_c2_m2_1_1_utils_1_1_debug_utils_1_1_actions_1_1_transform_update}{}\doxysection{C2\+M2.\+Utils.\+Debug\+Utils.\+Actions.\+Transform\+Update Class Reference}
+\label{class_c2_m2_1_1_utils_1_1_debug_utils_1_1_actions_1_1_transform_update}\index{C2M2.Utils.DebugUtils.Actions.TransformUpdate@{C2M2.Utils.DebugUtils.Actions.TransformUpdate}}
+
+
+Correct an object\textquotesingle{}s position and rotation to given values  
+
+
+
+
+Collaboration diagram for C2\+M2.\+Utils.\+Debug\+Utils.\+Actions.\+Transform\+Update\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=277pt]{d8/d09/class_c2_m2_1_1_utils_1_1_debug_utils_1_1_actions_1_1_transform_update__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{class_c2_m2_1_1_utils_1_1_debug_utils_1_1_actions_1_1_transform_update_ab07c448d8dbf585e3550d4281d340b51}{Update\+Transform}} (Transform transform)
+\begin{DoxyCompactList}\small\item\em \mbox{[}Default\mbox{]}\+: update transform to zero vector and quaternion identity \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_c2_m2_1_1_utils_1_1_debug_utils_1_1_actions_1_1_transform_update_ae0209ff9ef66d9f63209a219da45a437}{Update\+Transform}} (Transform transform, Vector3 new\+Position)
+\begin{DoxyCompactList}\small\item\em \mbox{[}Position Only\mbox{]}\+: update transform to new\+Position \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_c2_m2_1_1_utils_1_1_debug_utils_1_1_actions_1_1_transform_update_ac7ae28a65692c087448d8d5b9dca70bc}{Update\+Transform}} (Transform transform, Quaternion new\+Rotation)
+\begin{DoxyCompactList}\small\item\em \mbox{[}Rotation Only\mbox{]}\+: update transform to new\+Rotation \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_c2_m2_1_1_utils_1_1_debug_utils_1_1_actions_1_1_transform_update_a9ceddd31434efe35cbab9512d1e13ed4}{Update\+Transform}} (Transform transform, Vector3 new\+Position, Vector3 new\+Rotation)
+\begin{DoxyCompactList}\small\item\em \mbox{[}Position + Vector3 Rotation\mbox{]}\+: update transform to new\+Position and new\+Rotation\textquotesingle{}s x, y, z (With the object\textquotesingle{}s current \textquotesingle{}w\textquotesingle{} value) \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_c2_m2_1_1_utils_1_1_debug_utils_1_1_actions_1_1_transform_update_a8f25d1c09cc3c3450c891775ac22c35a}{Update\+Transform}} (Transform transform, Vector3 new\+Position, Quaternion new\+Rotation)
+\begin{DoxyCompactList}\small\item\em \mbox{[}Position + Quaternion Rotation\mbox{]}\+: Update transform to new\+Position and new\+Rotation \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Correct an object\textquotesingle{}s position and rotation to given values 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_c2_m2_1_1_utils_1_1_debug_utils_1_1_actions_1_1_transform_update_ab07c448d8dbf585e3550d4281d340b51}\label{class_c2_m2_1_1_utils_1_1_debug_utils_1_1_actions_1_1_transform_update_ab07c448d8dbf585e3550d4281d340b51}} 
+\index{C2M2.Utils.DebugUtils.Actions.TransformUpdate@{C2M2.Utils.DebugUtils.Actions.TransformUpdate}!UpdateTransform@{UpdateTransform}}
+\index{UpdateTransform@{UpdateTransform}!C2M2.Utils.DebugUtils.Actions.TransformUpdate@{C2M2.Utils.DebugUtils.Actions.TransformUpdate}}
+\doxysubsubsection{\texorpdfstring{UpdateTransform()}{UpdateTransform()}\hspace{0.1cm}{\footnotesize\ttfamily [1/5]}}
+{\footnotesize\ttfamily static void C2\+M2.\+Utils.\+Debug\+Utils.\+Actions.\+Transform\+Update.\+Update\+Transform (\begin{DoxyParamCaption}\item[{Transform}]{transform }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+\mbox{[}Default\mbox{]}\+: update transform to zero vector and quaternion identity 
+
+
+\begin{DoxyParams}{Parameters}
+{\em transform} & Transform to adjust \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c2_m2_1_1_utils_1_1_debug_utils_1_1_actions_1_1_transform_update_ac7ae28a65692c087448d8d5b9dca70bc}\label{class_c2_m2_1_1_utils_1_1_debug_utils_1_1_actions_1_1_transform_update_ac7ae28a65692c087448d8d5b9dca70bc}} 
+\index{C2M2.Utils.DebugUtils.Actions.TransformUpdate@{C2M2.Utils.DebugUtils.Actions.TransformUpdate}!UpdateTransform@{UpdateTransform}}
+\index{UpdateTransform@{UpdateTransform}!C2M2.Utils.DebugUtils.Actions.TransformUpdate@{C2M2.Utils.DebugUtils.Actions.TransformUpdate}}
+\doxysubsubsection{\texorpdfstring{UpdateTransform()}{UpdateTransform()}\hspace{0.1cm}{\footnotesize\ttfamily [2/5]}}
+{\footnotesize\ttfamily static void C2\+M2.\+Utils.\+Debug\+Utils.\+Actions.\+Transform\+Update.\+Update\+Transform (\begin{DoxyParamCaption}\item[{Transform}]{transform,  }\item[{Quaternion}]{new\+Rotation }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+\mbox{[}Rotation Only\mbox{]}\+: update transform to new\+Rotation 
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+Rotation} & New Quaternion value for transform.\+rotation \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c2_m2_1_1_utils_1_1_debug_utils_1_1_actions_1_1_transform_update_ae0209ff9ef66d9f63209a219da45a437}\label{class_c2_m2_1_1_utils_1_1_debug_utils_1_1_actions_1_1_transform_update_ae0209ff9ef66d9f63209a219da45a437}} 
+\index{C2M2.Utils.DebugUtils.Actions.TransformUpdate@{C2M2.Utils.DebugUtils.Actions.TransformUpdate}!UpdateTransform@{UpdateTransform}}
+\index{UpdateTransform@{UpdateTransform}!C2M2.Utils.DebugUtils.Actions.TransformUpdate@{C2M2.Utils.DebugUtils.Actions.TransformUpdate}}
+\doxysubsubsection{\texorpdfstring{UpdateTransform()}{UpdateTransform()}\hspace{0.1cm}{\footnotesize\ttfamily [3/5]}}
+{\footnotesize\ttfamily static void C2\+M2.\+Utils.\+Debug\+Utils.\+Actions.\+Transform\+Update.\+Update\+Transform (\begin{DoxyParamCaption}\item[{Transform}]{transform,  }\item[{Vector3}]{new\+Position }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+\mbox{[}Position Only\mbox{]}\+: update transform to new\+Position 
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+Position} & New Vector3 for transform.\+position \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c2_m2_1_1_utils_1_1_debug_utils_1_1_actions_1_1_transform_update_a8f25d1c09cc3c3450c891775ac22c35a}\label{class_c2_m2_1_1_utils_1_1_debug_utils_1_1_actions_1_1_transform_update_a8f25d1c09cc3c3450c891775ac22c35a}} 
+\index{C2M2.Utils.DebugUtils.Actions.TransformUpdate@{C2M2.Utils.DebugUtils.Actions.TransformUpdate}!UpdateTransform@{UpdateTransform}}
+\index{UpdateTransform@{UpdateTransform}!C2M2.Utils.DebugUtils.Actions.TransformUpdate@{C2M2.Utils.DebugUtils.Actions.TransformUpdate}}
+\doxysubsubsection{\texorpdfstring{UpdateTransform()}{UpdateTransform()}\hspace{0.1cm}{\footnotesize\ttfamily [4/5]}}
+{\footnotesize\ttfamily static void C2\+M2.\+Utils.\+Debug\+Utils.\+Actions.\+Transform\+Update.\+Update\+Transform (\begin{DoxyParamCaption}\item[{Transform}]{transform,  }\item[{Vector3}]{new\+Position,  }\item[{Quaternion}]{new\+Rotation }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+\mbox{[}Position + Quaternion Rotation\mbox{]}\+: Update transform to new\+Position and new\+Rotation 
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+Rotation} & New Quaternion value for transform.\+rotation \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c2_m2_1_1_utils_1_1_debug_utils_1_1_actions_1_1_transform_update_a9ceddd31434efe35cbab9512d1e13ed4}\label{class_c2_m2_1_1_utils_1_1_debug_utils_1_1_actions_1_1_transform_update_a9ceddd31434efe35cbab9512d1e13ed4}} 
+\index{C2M2.Utils.DebugUtils.Actions.TransformUpdate@{C2M2.Utils.DebugUtils.Actions.TransformUpdate}!UpdateTransform@{UpdateTransform}}
+\index{UpdateTransform@{UpdateTransform}!C2M2.Utils.DebugUtils.Actions.TransformUpdate@{C2M2.Utils.DebugUtils.Actions.TransformUpdate}}
+\doxysubsubsection{\texorpdfstring{UpdateTransform()}{UpdateTransform()}\hspace{0.1cm}{\footnotesize\ttfamily [5/5]}}
+{\footnotesize\ttfamily static void C2\+M2.\+Utils.\+Debug\+Utils.\+Actions.\+Transform\+Update.\+Update\+Transform (\begin{DoxyParamCaption}\item[{Transform}]{transform,  }\item[{Vector3}]{new\+Position,  }\item[{Vector3}]{new\+Rotation }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+\mbox{[}Position + Vector3 Rotation\mbox{]}\+: update transform to new\+Position and new\+Rotation\textquotesingle{}s x, y, z (With the object\textquotesingle{}s current \textquotesingle{}w\textquotesingle{} value) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+Rotation} & New Vector3 values for transform.\+rotation(x, y, z), current \textquotesingle{}w\textquotesingle{} is maintained \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/jaros/\+Desktop/tempvr/virtual-\/reality/\+Assets/\+Scripts/\+C2\+M2/\+Utils/\+Actions/\mbox{\hyperlink{_transform_update_8cs}{Transform\+Update.\+cs}}\end{DoxyCompactItemize}

@@ -1,0 +1,342 @@
+\hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_sine_wave_colorizer}{}\doxysection{C2\+M2.\+Neuronal\+Dynamics.\+UGX.\+Sine\+Wave\+Colorizer Class Reference}
+\label{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_sine_wave_colorizer}\index{C2M2.NeuronalDynamics.UGX.SineWaveColorizer@{C2M2.NeuronalDynamics.UGX.SineWaveColorizer}}
+
+
+A simple sine wave colorizer The component colorizes a linear geometry or a cylinder surface by a sine wave pattern Frequency and amplitude can be specified, for instance varying by 10 Hz between colors red and blue  
+
+
+
+
+Inheritance diagram for C2\+M2.\+Neuronal\+Dynamics.\+UGX.\+Sine\+Wave\+Colorizer\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=253pt]{de/dc2/class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_sine_wave_colorizer__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for C2\+M2.\+Neuronal\+Dynamics.\+UGX.\+Sine\+Wave\+Colorizer\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=253pt]{d1/d2b/class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_sine_wave_colorizer__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum class \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_sine_wave_colorizer_a51ae09731c1f951955e5b6e7fc70a950}{Cylinder\+Type}} \+: byte \{ \newline
+\mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_sine_wave_colorizer_a51ae09731c1f951955e5b6e7fc70a950a06c2cea18679d64399783748fa367bdd}{One}} = 1
+, \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_sine_wave_colorizer_a51ae09731c1f951955e5b6e7fc70a950aaada29daee1d64ed0fe907043855cb7e}{Two}} = 10
+, \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_sine_wave_colorizer_a51ae09731c1f951955e5b6e7fc70a950aca8a2087e5557e317599344687a57391}{Three}} = 25
+, \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_sine_wave_colorizer_a51ae09731c1f951955e5b6e7fc70a950ae5d9de39f7ca1ba2637e5640af3ae8aa}{Five}} = 50
+, \newline
+\mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_sine_wave_colorizer_a51ae09731c1f951955e5b6e7fc70a950ae6fbc0b9673f8c86726688d7607fc8f5}{Six}} = 75
+, \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_sine_wave_colorizer_a51ae09731c1f951955e5b6e7fc70a950a12e67aac3e7f9227cc35f8f047d7dc74}{Seven}} = 100
+ \}
+\begin{DoxyCompactList}\small\item\em Test cylinder geometries \end{DoxyCompactList}\item 
+enum class \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_sine_wave_colorizer_aeee6aec9b36af37e42ed9397756f1e34}{Wave\+Type}} \+: byte \{ \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_sine_wave_colorizer_aeee6aec9b36af37e42ed9397756f1e34a58be79c9e4140c940c55a7d733f04c20}{Simple\+Sine}}
+ \}
+\begin{DoxyCompactList}\small\item\em Specify a wave type \end{DoxyCompactList}\item 
+enum class \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_sine_wave_colorizer_ac957a4cb37f9a5f82abe940f81bb1839}{Color\+Type}} \+: byte \{ \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_sine_wave_colorizer_ac957a4cb37f9a5f82abe940f81bb1839aee38e4d5dd68c4e440825018d549cb47}{Red}}
+, \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_sine_wave_colorizer_ac957a4cb37f9a5f82abe940f81bb1839ad382816a3cbeed082c9e216e7392eed1}{Green}}
+, \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_sine_wave_colorizer_ac957a4cb37f9a5f82abe940f81bb1839a9594eec95be70e7b1710f730fdda33d9}{Blue}}
+ \}
+\begin{DoxyCompactList}\small\item\em Specify a color type \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+delegate float \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_sine_wave_colorizer_a32f179bf8ea4f74a34585f7197b5a812}{Wave}} (in float t)
+\begin{DoxyCompactList}\small\item\em Wave delegate \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_sine_wave_colorizer_ae1ccd8dd3074ea3c5d335a10c53fdf74}{Simple\+Wave}} (in float t)
+\begin{DoxyCompactList}\small\item\em Simple\+Wave \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_sine_wave_colorizer_a51ae09731c1f951955e5b6e7fc70a950}{Cylinder\+Type}} \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_sine_wave_colorizer_ab15cd67a5d541880b051ea5fdd488c6f}{cylinder}}
+\item 
+\mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_sine_wave_colorizer_aeee6aec9b36af37e42ed9397756f1e34}{Wave\+Type}} \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_sine_wave_colorizer_a4e42f289616eb39b3aa4640387e1b25a}{wave}}
+\item 
+\mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_sine_wave_colorizer_ac957a4cb37f9a5f82abe940f81bb1839}{Color\+Type}} \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_sine_wave_colorizer_a206ce2591cfefaf89580d70dfe8e7798}{color}}
+\item 
+float \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_sine_wave_colorizer_a21cc7c019fbcd7ff0d9437c27ec4a02d}{alpha}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Types}
+\begin{DoxyCompactItemize}
+\item 
+enum class \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_sine_wave_colorizer_a98fae9c9ca9f5c340a9ab3a455dd0cf6}{Axis}} \+: byte \{ \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_sine_wave_colorizer_a98fae9c9ca9f5c340a9ab3a455dd0cf6a9dd4e461268c8034f5c8564e155c67a6}{x}} = 0
+, \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_sine_wave_colorizer_a98fae9c9ca9f5c340a9ab3a455dd0cf6a415290769594460e2e485922904f345d}{y}} = 1
+, \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_sine_wave_colorizer_a98fae9c9ca9f5c340a9ab3a455dd0cf6afbade9e36a3f36d3d676c1b808451dd7}{z}} = 2
+ \}
+\begin{DoxyCompactList}\small\item\em Represents one of the coordinate axes \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_sine_wave_colorizer_a55dd7db080ddfa0b036062aeb1d7a515}{Awake}} ()
+\item 
+void \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_sine_wave_colorizer_a95fc432fae65a0c775c77b76764adf8c}{Start}} ()
+\item 
+void \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_sine_wave_colorizer_a50311489abf4e13d775c977d4d3ef57e}{Colorize}} (Mesh mesh, in string axis\+Name, in \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_sine_wave_colorizer_a32f179bf8ea4f74a34585f7197b5a812}{Wave}} \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_sine_wave_colorizer_a4e42f289616eb39b3aa4640387e1b25a}{wave}})
+\item 
+Color \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_sine_wave_colorizer_a76c75578f6efc355b7a26095147cc224}{Get\+Color}} (in float val)
+\begin{DoxyCompactList}\small\item\em Get a color depending on the wave height Color will be red between min and max intensity \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+readonly List$<$ \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_sine_wave_colorizer_a32f179bf8ea4f74a34585f7197b5a812}{Wave}} $>$ \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_sine_wave_colorizer_a69384087a33979848e5cf35f7cb30f5f}{functions}} = new List$<$\mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_sine_wave_colorizer_a32f179bf8ea4f74a34585f7197b5a812}{Wave}}$>$()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A simple sine wave colorizer The component colorizes a linear geometry or a cylinder surface by a sine wave pattern Frequency and amplitude can be specified, for instance varying by 10 Hz between colors red and blue 
+
+\mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_sine_wave_colorizer}{Sine\+Wave\+Colorizer}}
+
+\doxysubsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_sine_wave_colorizer_a98fae9c9ca9f5c340a9ab3a455dd0cf6}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_sine_wave_colorizer_a98fae9c9ca9f5c340a9ab3a455dd0cf6}} 
+\index{C2M2.NeuronalDynamics.UGX.SineWaveColorizer@{C2M2.NeuronalDynamics.UGX.SineWaveColorizer}!Axis@{Axis}}
+\index{Axis@{Axis}!C2M2.NeuronalDynamics.UGX.SineWaveColorizer@{C2M2.NeuronalDynamics.UGX.SineWaveColorizer}}
+\doxysubsubsection{\texorpdfstring{Axis}{Axis}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_sine_wave_colorizer_a98fae9c9ca9f5c340a9ab3a455dd0cf6}{C2\+M2.\+Neuronal\+Dynamics.\+UGX.\+Sine\+Wave\+Colorizer.\+Axis}} \+: byte\hspace{0.3cm}{\ttfamily [strong]}, {\ttfamily [private]}}
+
+
+
+Represents one of the coordinate axes 
+
+Axis\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{x@{x}!C2M2.NeuronalDynamics.UGX.SineWaveColorizer@{C2M2.NeuronalDynamics.UGX.SineWaveColorizer}}\index{C2M2.NeuronalDynamics.UGX.SineWaveColorizer@{C2M2.NeuronalDynamics.UGX.SineWaveColorizer}!x@{x}}}\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_sine_wave_colorizer_a98fae9c9ca9f5c340a9ab3a455dd0cf6a9dd4e461268c8034f5c8564e155c67a6}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_sine_wave_colorizer_a98fae9c9ca9f5c340a9ab3a455dd0cf6a9dd4e461268c8034f5c8564e155c67a6}} 
+x&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{y@{y}!C2M2.NeuronalDynamics.UGX.SineWaveColorizer@{C2M2.NeuronalDynamics.UGX.SineWaveColorizer}}\index{C2M2.NeuronalDynamics.UGX.SineWaveColorizer@{C2M2.NeuronalDynamics.UGX.SineWaveColorizer}!y@{y}}}\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_sine_wave_colorizer_a98fae9c9ca9f5c340a9ab3a455dd0cf6a415290769594460e2e485922904f345d}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_sine_wave_colorizer_a98fae9c9ca9f5c340a9ab3a455dd0cf6a415290769594460e2e485922904f345d}} 
+y&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{z@{z}!C2M2.NeuronalDynamics.UGX.SineWaveColorizer@{C2M2.NeuronalDynamics.UGX.SineWaveColorizer}}\index{C2M2.NeuronalDynamics.UGX.SineWaveColorizer@{C2M2.NeuronalDynamics.UGX.SineWaveColorizer}!z@{z}}}\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_sine_wave_colorizer_a98fae9c9ca9f5c340a9ab3a455dd0cf6afbade9e36a3f36d3d676c1b808451dd7}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_sine_wave_colorizer_a98fae9c9ca9f5c340a9ab3a455dd0cf6afbade9e36a3f36d3d676c1b808451dd7}} 
+z&\\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_sine_wave_colorizer_ac957a4cb37f9a5f82abe940f81bb1839}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_sine_wave_colorizer_ac957a4cb37f9a5f82abe940f81bb1839}} 
+\index{C2M2.NeuronalDynamics.UGX.SineWaveColorizer@{C2M2.NeuronalDynamics.UGX.SineWaveColorizer}!ColorType@{ColorType}}
+\index{ColorType@{ColorType}!C2M2.NeuronalDynamics.UGX.SineWaveColorizer@{C2M2.NeuronalDynamics.UGX.SineWaveColorizer}}
+\doxysubsubsection{\texorpdfstring{ColorType}{ColorType}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_sine_wave_colorizer_ac957a4cb37f9a5f82abe940f81bb1839}{C2\+M2.\+Neuronal\+Dynamics.\+UGX.\+Sine\+Wave\+Colorizer.\+Color\+Type}} \+: byte\hspace{0.3cm}{\ttfamily [strong]}}
+
+
+
+Specify a color type 
+
+Color\+Type\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Red@{Red}!C2M2.NeuronalDynamics.UGX.SineWaveColorizer@{C2M2.NeuronalDynamics.UGX.SineWaveColorizer}}\index{C2M2.NeuronalDynamics.UGX.SineWaveColorizer@{C2M2.NeuronalDynamics.UGX.SineWaveColorizer}!Red@{Red}}}\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_sine_wave_colorizer_ac957a4cb37f9a5f82abe940f81bb1839aee38e4d5dd68c4e440825018d549cb47}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_sine_wave_colorizer_ac957a4cb37f9a5f82abe940f81bb1839aee38e4d5dd68c4e440825018d549cb47}} 
+Red&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Green@{Green}!C2M2.NeuronalDynamics.UGX.SineWaveColorizer@{C2M2.NeuronalDynamics.UGX.SineWaveColorizer}}\index{C2M2.NeuronalDynamics.UGX.SineWaveColorizer@{C2M2.NeuronalDynamics.UGX.SineWaveColorizer}!Green@{Green}}}\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_sine_wave_colorizer_ac957a4cb37f9a5f82abe940f81bb1839ad382816a3cbeed082c9e216e7392eed1}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_sine_wave_colorizer_ac957a4cb37f9a5f82abe940f81bb1839ad382816a3cbeed082c9e216e7392eed1}} 
+Green&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Blue@{Blue}!C2M2.NeuronalDynamics.UGX.SineWaveColorizer@{C2M2.NeuronalDynamics.UGX.SineWaveColorizer}}\index{C2M2.NeuronalDynamics.UGX.SineWaveColorizer@{C2M2.NeuronalDynamics.UGX.SineWaveColorizer}!Blue@{Blue}}}\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_sine_wave_colorizer_ac957a4cb37f9a5f82abe940f81bb1839a9594eec95be70e7b1710f730fdda33d9}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_sine_wave_colorizer_ac957a4cb37f9a5f82abe940f81bb1839a9594eec95be70e7b1710f730fdda33d9}} 
+Blue&\\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_sine_wave_colorizer_a51ae09731c1f951955e5b6e7fc70a950}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_sine_wave_colorizer_a51ae09731c1f951955e5b6e7fc70a950}} 
+\index{C2M2.NeuronalDynamics.UGX.SineWaveColorizer@{C2M2.NeuronalDynamics.UGX.SineWaveColorizer}!CylinderType@{CylinderType}}
+\index{CylinderType@{CylinderType}!C2M2.NeuronalDynamics.UGX.SineWaveColorizer@{C2M2.NeuronalDynamics.UGX.SineWaveColorizer}}
+\doxysubsubsection{\texorpdfstring{CylinderType}{CylinderType}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_sine_wave_colorizer_a51ae09731c1f951955e5b6e7fc70a950}{C2\+M2.\+Neuronal\+Dynamics.\+UGX.\+Sine\+Wave\+Colorizer.\+Cylinder\+Type}} \+: byte\hspace{0.3cm}{\ttfamily [strong]}}
+
+
+
+Test cylinder geometries 
+
+Cylinder\+Type\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{One@{One}!C2M2.NeuronalDynamics.UGX.SineWaveColorizer@{C2M2.NeuronalDynamics.UGX.SineWaveColorizer}}\index{C2M2.NeuronalDynamics.UGX.SineWaveColorizer@{C2M2.NeuronalDynamics.UGX.SineWaveColorizer}!One@{One}}}\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_sine_wave_colorizer_a51ae09731c1f951955e5b6e7fc70a950a06c2cea18679d64399783748fa367bdd}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_sine_wave_colorizer_a51ae09731c1f951955e5b6e7fc70a950a06c2cea18679d64399783748fa367bdd}} 
+One&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Two@{Two}!C2M2.NeuronalDynamics.UGX.SineWaveColorizer@{C2M2.NeuronalDynamics.UGX.SineWaveColorizer}}\index{C2M2.NeuronalDynamics.UGX.SineWaveColorizer@{C2M2.NeuronalDynamics.UGX.SineWaveColorizer}!Two@{Two}}}\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_sine_wave_colorizer_a51ae09731c1f951955e5b6e7fc70a950aaada29daee1d64ed0fe907043855cb7e}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_sine_wave_colorizer_a51ae09731c1f951955e5b6e7fc70a950aaada29daee1d64ed0fe907043855cb7e}} 
+Two&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Three@{Three}!C2M2.NeuronalDynamics.UGX.SineWaveColorizer@{C2M2.NeuronalDynamics.UGX.SineWaveColorizer}}\index{C2M2.NeuronalDynamics.UGX.SineWaveColorizer@{C2M2.NeuronalDynamics.UGX.SineWaveColorizer}!Three@{Three}}}\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_sine_wave_colorizer_a51ae09731c1f951955e5b6e7fc70a950aca8a2087e5557e317599344687a57391}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_sine_wave_colorizer_a51ae09731c1f951955e5b6e7fc70a950aca8a2087e5557e317599344687a57391}} 
+Three&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Five@{Five}!C2M2.NeuronalDynamics.UGX.SineWaveColorizer@{C2M2.NeuronalDynamics.UGX.SineWaveColorizer}}\index{C2M2.NeuronalDynamics.UGX.SineWaveColorizer@{C2M2.NeuronalDynamics.UGX.SineWaveColorizer}!Five@{Five}}}\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_sine_wave_colorizer_a51ae09731c1f951955e5b6e7fc70a950ae5d9de39f7ca1ba2637e5640af3ae8aa}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_sine_wave_colorizer_a51ae09731c1f951955e5b6e7fc70a950ae5d9de39f7ca1ba2637e5640af3ae8aa}} 
+Five&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Six@{Six}!C2M2.NeuronalDynamics.UGX.SineWaveColorizer@{C2M2.NeuronalDynamics.UGX.SineWaveColorizer}}\index{C2M2.NeuronalDynamics.UGX.SineWaveColorizer@{C2M2.NeuronalDynamics.UGX.SineWaveColorizer}!Six@{Six}}}\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_sine_wave_colorizer_a51ae09731c1f951955e5b6e7fc70a950ae6fbc0b9673f8c86726688d7607fc8f5}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_sine_wave_colorizer_a51ae09731c1f951955e5b6e7fc70a950ae6fbc0b9673f8c86726688d7607fc8f5}} 
+Six&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Seven@{Seven}!C2M2.NeuronalDynamics.UGX.SineWaveColorizer@{C2M2.NeuronalDynamics.UGX.SineWaveColorizer}}\index{C2M2.NeuronalDynamics.UGX.SineWaveColorizer@{C2M2.NeuronalDynamics.UGX.SineWaveColorizer}!Seven@{Seven}}}\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_sine_wave_colorizer_a51ae09731c1f951955e5b6e7fc70a950a12e67aac3e7f9227cc35f8f047d7dc74}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_sine_wave_colorizer_a51ae09731c1f951955e5b6e7fc70a950a12e67aac3e7f9227cc35f8f047d7dc74}} 
+Seven&\\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_sine_wave_colorizer_aeee6aec9b36af37e42ed9397756f1e34}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_sine_wave_colorizer_aeee6aec9b36af37e42ed9397756f1e34}} 
+\index{C2M2.NeuronalDynamics.UGX.SineWaveColorizer@{C2M2.NeuronalDynamics.UGX.SineWaveColorizer}!WaveType@{WaveType}}
+\index{WaveType@{WaveType}!C2M2.NeuronalDynamics.UGX.SineWaveColorizer@{C2M2.NeuronalDynamics.UGX.SineWaveColorizer}}
+\doxysubsubsection{\texorpdfstring{WaveType}{WaveType}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_sine_wave_colorizer_aeee6aec9b36af37e42ed9397756f1e34}{C2\+M2.\+Neuronal\+Dynamics.\+UGX.\+Sine\+Wave\+Colorizer.\+Wave\+Type}} \+: byte\hspace{0.3cm}{\ttfamily [strong]}}
+
+
+
+Specify a wave type 
+
+Wave\+Type\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SimpleSine@{SimpleSine}!C2M2.NeuronalDynamics.UGX.SineWaveColorizer@{C2M2.NeuronalDynamics.UGX.SineWaveColorizer}}\index{C2M2.NeuronalDynamics.UGX.SineWaveColorizer@{C2M2.NeuronalDynamics.UGX.SineWaveColorizer}!SimpleSine@{SimpleSine}}}\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_sine_wave_colorizer_aeee6aec9b36af37e42ed9397756f1e34a58be79c9e4140c940c55a7d733f04c20}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_sine_wave_colorizer_aeee6aec9b36af37e42ed9397756f1e34a58be79c9e4140c940c55a7d733f04c20}} 
+Simple\+Sine&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_sine_wave_colorizer_a55dd7db080ddfa0b036062aeb1d7a515}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_sine_wave_colorizer_a55dd7db080ddfa0b036062aeb1d7a515}} 
+\index{C2M2.NeuronalDynamics.UGX.SineWaveColorizer@{C2M2.NeuronalDynamics.UGX.SineWaveColorizer}!Awake@{Awake}}
+\index{Awake@{Awake}!C2M2.NeuronalDynamics.UGX.SineWaveColorizer@{C2M2.NeuronalDynamics.UGX.SineWaveColorizer}}
+\doxysubsubsection{\texorpdfstring{Awake()}{Awake()}}
+{\footnotesize\ttfamily void C2\+M2.\+Neuronal\+Dynamics.\+UGX.\+Sine\+Wave\+Colorizer.\+Awake (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+
+
+Awake\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_sine_wave_colorizer_a50311489abf4e13d775c977d4d3ef57e}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_sine_wave_colorizer_a50311489abf4e13d775c977d4d3ef57e}} 
+\index{C2M2.NeuronalDynamics.UGX.SineWaveColorizer@{C2M2.NeuronalDynamics.UGX.SineWaveColorizer}!Colorize@{Colorize}}
+\index{Colorize@{Colorize}!C2M2.NeuronalDynamics.UGX.SineWaveColorizer@{C2M2.NeuronalDynamics.UGX.SineWaveColorizer}}
+\doxysubsubsection{\texorpdfstring{Colorize()}{Colorize()}}
+{\footnotesize\ttfamily void C2\+M2.\+Neuronal\+Dynamics.\+UGX.\+Sine\+Wave\+Colorizer.\+Colorize (\begin{DoxyParamCaption}\item[{Mesh}]{mesh,  }\item[{in string}]{axis\+Name,  }\item[{in \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_sine_wave_colorizer_a32f179bf8ea4f74a34585f7197b5a812}{Wave}}}]{wave }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+
+
+Colorize
+
+
+\begin{DoxyParams}{Parameters}
+{\em mesh} & \\
+\hline
+{\em axis\+Name} & \\
+\hline
+{\em f} & \\
+\hline
+{\em phi} & \\
+\hline
+{\em A} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_sine_wave_colorizer_a76c75578f6efc355b7a26095147cc224}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_sine_wave_colorizer_a76c75578f6efc355b7a26095147cc224}} 
+\index{C2M2.NeuronalDynamics.UGX.SineWaveColorizer@{C2M2.NeuronalDynamics.UGX.SineWaveColorizer}!GetColor@{GetColor}}
+\index{GetColor@{GetColor}!C2M2.NeuronalDynamics.UGX.SineWaveColorizer@{C2M2.NeuronalDynamics.UGX.SineWaveColorizer}}
+\doxysubsubsection{\texorpdfstring{GetColor()}{GetColor()}}
+{\footnotesize\ttfamily Color C2\+M2.\+Neuronal\+Dynamics.\+UGX.\+Sine\+Wave\+Colorizer.\+Get\+Color (\begin{DoxyParamCaption}\item[{in float}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Get a color depending on the wave height Color will be red between min and max intensity 
+
+Get\+Color
+
+
+\begin{DoxyParams}{Parameters}
+{\em val} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_sine_wave_colorizer_ae1ccd8dd3074ea3c5d335a10c53fdf74}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_sine_wave_colorizer_ae1ccd8dd3074ea3c5d335a10c53fdf74}} 
+\index{C2M2.NeuronalDynamics.UGX.SineWaveColorizer@{C2M2.NeuronalDynamics.UGX.SineWaveColorizer}!SimpleWave@{SimpleWave}}
+\index{SimpleWave@{SimpleWave}!C2M2.NeuronalDynamics.UGX.SineWaveColorizer@{C2M2.NeuronalDynamics.UGX.SineWaveColorizer}}
+\doxysubsubsection{\texorpdfstring{SimpleWave()}{SimpleWave()}}
+{\footnotesize\ttfamily float C2\+M2.\+Neuronal\+Dynamics.\+UGX.\+Sine\+Wave\+Colorizer.\+Simple\+Wave (\begin{DoxyParamCaption}\item[{in float}]{t }\end{DoxyParamCaption})}
+
+
+
+Simple\+Wave 
+
+
+\begin{DoxyParams}{Parameters}
+{\em t} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_sine_wave_colorizer_a95fc432fae65a0c775c77b76764adf8c}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_sine_wave_colorizer_a95fc432fae65a0c775c77b76764adf8c}} 
+\index{C2M2.NeuronalDynamics.UGX.SineWaveColorizer@{C2M2.NeuronalDynamics.UGX.SineWaveColorizer}!Start@{Start}}
+\index{Start@{Start}!C2M2.NeuronalDynamics.UGX.SineWaveColorizer@{C2M2.NeuronalDynamics.UGX.SineWaveColorizer}}
+\doxysubsubsection{\texorpdfstring{Start()}{Start()}}
+{\footnotesize\ttfamily void C2\+M2.\+Neuronal\+Dynamics.\+UGX.\+Sine\+Wave\+Colorizer.\+Start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+
+
+StartRead grid
+
+Add visual components
+
+Colorize with Sine\+Wave\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_sine_wave_colorizer_a32f179bf8ea4f74a34585f7197b5a812}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_sine_wave_colorizer_a32f179bf8ea4f74a34585f7197b5a812}} 
+\index{C2M2.NeuronalDynamics.UGX.SineWaveColorizer@{C2M2.NeuronalDynamics.UGX.SineWaveColorizer}!Wave@{Wave}}
+\index{Wave@{Wave}!C2M2.NeuronalDynamics.UGX.SineWaveColorizer@{C2M2.NeuronalDynamics.UGX.SineWaveColorizer}}
+\doxysubsubsection{\texorpdfstring{Wave()}{Wave()}}
+{\footnotesize\ttfamily delegate float C2\+M2.\+Neuronal\+Dynamics.\+UGX.\+Sine\+Wave\+Colorizer.\+Wave (\begin{DoxyParamCaption}\item[{in float}]{t }\end{DoxyParamCaption})}
+
+
+
+Wave delegate 
+
+
+\begin{DoxyParams}{Parameters}
+{\em t} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_sine_wave_colorizer_a21cc7c019fbcd7ff0d9437c27ec4a02d}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_sine_wave_colorizer_a21cc7c019fbcd7ff0d9437c27ec4a02d}} 
+\index{C2M2.NeuronalDynamics.UGX.SineWaveColorizer@{C2M2.NeuronalDynamics.UGX.SineWaveColorizer}!alpha@{alpha}}
+\index{alpha@{alpha}!C2M2.NeuronalDynamics.UGX.SineWaveColorizer@{C2M2.NeuronalDynamics.UGX.SineWaveColorizer}}
+\doxysubsubsection{\texorpdfstring{alpha}{alpha}}
+{\footnotesize\ttfamily float C2\+M2.\+Neuronal\+Dynamics.\+UGX.\+Sine\+Wave\+Colorizer.\+alpha}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_sine_wave_colorizer_a206ce2591cfefaf89580d70dfe8e7798}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_sine_wave_colorizer_a206ce2591cfefaf89580d70dfe8e7798}} 
+\index{C2M2.NeuronalDynamics.UGX.SineWaveColorizer@{C2M2.NeuronalDynamics.UGX.SineWaveColorizer}!color@{color}}
+\index{color@{color}!C2M2.NeuronalDynamics.UGX.SineWaveColorizer@{C2M2.NeuronalDynamics.UGX.SineWaveColorizer}}
+\doxysubsubsection{\texorpdfstring{color}{color}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_sine_wave_colorizer_ac957a4cb37f9a5f82abe940f81bb1839}{Color\+Type}} C2\+M2.\+Neuronal\+Dynamics.\+UGX.\+Sine\+Wave\+Colorizer.\+color}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_sine_wave_colorizer_ab15cd67a5d541880b051ea5fdd488c6f}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_sine_wave_colorizer_ab15cd67a5d541880b051ea5fdd488c6f}} 
+\index{C2M2.NeuronalDynamics.UGX.SineWaveColorizer@{C2M2.NeuronalDynamics.UGX.SineWaveColorizer}!cylinder@{cylinder}}
+\index{cylinder@{cylinder}!C2M2.NeuronalDynamics.UGX.SineWaveColorizer@{C2M2.NeuronalDynamics.UGX.SineWaveColorizer}}
+\doxysubsubsection{\texorpdfstring{cylinder}{cylinder}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_sine_wave_colorizer_a51ae09731c1f951955e5b6e7fc70a950}{Cylinder\+Type}} C2\+M2.\+Neuronal\+Dynamics.\+UGX.\+Sine\+Wave\+Colorizer.\+cylinder}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_sine_wave_colorizer_a69384087a33979848e5cf35f7cb30f5f}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_sine_wave_colorizer_a69384087a33979848e5cf35f7cb30f5f}} 
+\index{C2M2.NeuronalDynamics.UGX.SineWaveColorizer@{C2M2.NeuronalDynamics.UGX.SineWaveColorizer}!functions@{functions}}
+\index{functions@{functions}!C2M2.NeuronalDynamics.UGX.SineWaveColorizer@{C2M2.NeuronalDynamics.UGX.SineWaveColorizer}}
+\doxysubsubsection{\texorpdfstring{functions}{functions}}
+{\footnotesize\ttfamily readonly List$<$\mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_sine_wave_colorizer_a32f179bf8ea4f74a34585f7197b5a812}{Wave}}$>$ C2\+M2.\+Neuronal\+Dynamics.\+UGX.\+Sine\+Wave\+Colorizer.\+functions = new List$<$\mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_sine_wave_colorizer_a32f179bf8ea4f74a34585f7197b5a812}{Wave}}$>$()\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_sine_wave_colorizer_a4e42f289616eb39b3aa4640387e1b25a}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_sine_wave_colorizer_a4e42f289616eb39b3aa4640387e1b25a}} 
+\index{C2M2.NeuronalDynamics.UGX.SineWaveColorizer@{C2M2.NeuronalDynamics.UGX.SineWaveColorizer}!wave@{wave}}
+\index{wave@{wave}!C2M2.NeuronalDynamics.UGX.SineWaveColorizer@{C2M2.NeuronalDynamics.UGX.SineWaveColorizer}}
+\doxysubsubsection{\texorpdfstring{wave}{wave}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_sine_wave_colorizer_aeee6aec9b36af37e42ed9397756f1e34}{Wave\+Type}} C2\+M2.\+Neuronal\+Dynamics.\+UGX.\+Sine\+Wave\+Colorizer.\+wave}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/jaros/\+Desktop/tempvr/virtual-\/reality/\+Assets/\+Scripts/\+C2\+M2/\+Neuronal\+Dynamics/\+Visualization/\+Mapping/\mbox{\hyperlink{_sine_wave_colorizer_8cs}{Sine\+Wave\+Colorizer.\+cs}}\end{DoxyCompactItemize}

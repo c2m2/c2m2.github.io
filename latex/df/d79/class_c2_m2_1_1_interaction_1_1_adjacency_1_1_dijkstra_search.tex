@@ -1,0 +1,108 @@
+\hypertarget{class_c2_m2_1_1_interaction_1_1_adjacency_1_1_dijkstra_search}{}\doxysection{C2\+M2.\+Interaction.\+Adjacency.\+Dijkstra\+Search Class Reference}
+\label{class_c2_m2_1_1_interaction_1_1_adjacency_1_1_dijkstra_search}\index{C2M2.Interaction.Adjacency.DijkstraSearch@{C2M2.Interaction.Adjacency.DijkstraSearch}}
+
+
+Runs a dijkstra search over a surface of mesh vertices, given an initial hit point and a distance threshold  
+
+
+
+
+Inheritance diagram for C2\+M2.\+Interaction.\+Adjacency.\+Dijkstra\+Search\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=259pt]{d1/df8/class_c2_m2_1_1_interaction_1_1_adjacency_1_1_dijkstra_search__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for C2\+M2.\+Interaction.\+Adjacency.\+Dijkstra\+Search\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{dc/d51/class_c2_m2_1_1_interaction_1_1_adjacency_1_1_dijkstra_search__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_adjacency_1_1_dijkstra_search_ab78dcb5b258ba2f5f74d7490ef8a2253}{Search}} (Raycast\+Hit hit, float distance\+Threshold)
+\begin{DoxyCompactList}\small\item\em Finds the shortest path to any node in the graph starting from initial\+Vert\+Index below threshold \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+float\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_adjacency_1_1_dijkstra_search_a69cc760ca348b2b1bb53f633d13f0606}{min\+Distances}} = null\hspace{0.3cm}{\ttfamily  \mbox{[}get, private set\mbox{]}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_adjacency_1_1_dijkstra_search_a08b83da8f6d22114a8b1c57b7478732c}{Awake}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_adjacency_1_1_unique_vertices}{Unique\+Vertices}} \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_adjacency_1_1_dijkstra_search_a6de927fcc6413db59a1d73bd01a20eb2}{unique\+Vertices}} = null
+\begin{DoxyCompactList}\small\item\em Stores a list of all mesh and invisible vertices that need to be traversed \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_adjacency_1_1_adjacency_list}{Adjacency\+List}} \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_adjacency_1_1_dijkstra_search_a7957c21b45b40d03b1ba1073b3616178}{adjacency\+List}} = null
+\begin{DoxyCompactList}\small\item\em Stores the distances between adjacent real and invisible vertices \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Runs a dijkstra search over a surface of mesh vertices, given an initial hit point and a distance threshold 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_adjacency_1_1_dijkstra_search_a08b83da8f6d22114a8b1c57b7478732c}\label{class_c2_m2_1_1_interaction_1_1_adjacency_1_1_dijkstra_search_a08b83da8f6d22114a8b1c57b7478732c}} 
+\index{C2M2.Interaction.Adjacency.DijkstraSearch@{C2M2.Interaction.Adjacency.DijkstraSearch}!Awake@{Awake}}
+\index{Awake@{Awake}!C2M2.Interaction.Adjacency.DijkstraSearch@{C2M2.Interaction.Adjacency.DijkstraSearch}}
+\doxysubsubsection{\texorpdfstring{Awake()}{Awake()}}
+{\footnotesize\ttfamily void C2\+M2.\+Interaction.\+Adjacency.\+Dijkstra\+Search.\+Awake (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_adjacency_1_1_dijkstra_search_ab78dcb5b258ba2f5f74d7490ef8a2253}\label{class_c2_m2_1_1_interaction_1_1_adjacency_1_1_dijkstra_search_ab78dcb5b258ba2f5f74d7490ef8a2253}} 
+\index{C2M2.Interaction.Adjacency.DijkstraSearch@{C2M2.Interaction.Adjacency.DijkstraSearch}!Search@{Search}}
+\index{Search@{Search}!C2M2.Interaction.Adjacency.DijkstraSearch@{C2M2.Interaction.Adjacency.DijkstraSearch}}
+\doxysubsubsection{\texorpdfstring{Search()}{Search()}}
+{\footnotesize\ttfamily int \mbox{[}$\,$\mbox{]} C2\+M2.\+Interaction.\+Adjacency.\+Dijkstra\+Search.\+Search (\begin{DoxyParamCaption}\item[{Raycast\+Hit}]{hit,  }\item[{float}]{distance\+Threshold }\end{DoxyParamCaption})}
+
+
+
+Finds the shortest path to any node in the graph starting from initial\+Vert\+Index below threshold 
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_adjacency_1_1_dijkstra_search_a7957c21b45b40d03b1ba1073b3616178}\label{class_c2_m2_1_1_interaction_1_1_adjacency_1_1_dijkstra_search_a7957c21b45b40d03b1ba1073b3616178}} 
+\index{C2M2.Interaction.Adjacency.DijkstraSearch@{C2M2.Interaction.Adjacency.DijkstraSearch}!adjacencyList@{adjacencyList}}
+\index{adjacencyList@{adjacencyList}!C2M2.Interaction.Adjacency.DijkstraSearch@{C2M2.Interaction.Adjacency.DijkstraSearch}}
+\doxysubsubsection{\texorpdfstring{adjacencyList}{adjacencyList}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_adjacency_1_1_adjacency_list}{Adjacency\+List}} C2\+M2.\+Interaction.\+Adjacency.\+Dijkstra\+Search.\+adjacency\+List = null\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Stores the distances between adjacent real and invisible vertices 
+
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_adjacency_1_1_dijkstra_search_a6de927fcc6413db59a1d73bd01a20eb2}\label{class_c2_m2_1_1_interaction_1_1_adjacency_1_1_dijkstra_search_a6de927fcc6413db59a1d73bd01a20eb2}} 
+\index{C2M2.Interaction.Adjacency.DijkstraSearch@{C2M2.Interaction.Adjacency.DijkstraSearch}!uniqueVertices@{uniqueVertices}}
+\index{uniqueVertices@{uniqueVertices}!C2M2.Interaction.Adjacency.DijkstraSearch@{C2M2.Interaction.Adjacency.DijkstraSearch}}
+\doxysubsubsection{\texorpdfstring{uniqueVertices}{uniqueVertices}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_adjacency_1_1_unique_vertices}{Unique\+Vertices}} C2\+M2.\+Interaction.\+Adjacency.\+Dijkstra\+Search.\+unique\+Vertices = null\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Stores a list of all mesh and invisible vertices that need to be traversed 
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_adjacency_1_1_dijkstra_search_a69cc760ca348b2b1bb53f633d13f0606}\label{class_c2_m2_1_1_interaction_1_1_adjacency_1_1_dijkstra_search_a69cc760ca348b2b1bb53f633d13f0606}} 
+\index{C2M2.Interaction.Adjacency.DijkstraSearch@{C2M2.Interaction.Adjacency.DijkstraSearch}!minDistances@{minDistances}}
+\index{minDistances@{minDistances}!C2M2.Interaction.Adjacency.DijkstraSearch@{C2M2.Interaction.Adjacency.DijkstraSearch}}
+\doxysubsubsection{\texorpdfstring{minDistances}{minDistances}}
+{\footnotesize\ttfamily float \mbox{[}$\,$\mbox{]} C2\+M2.\+Interaction.\+Adjacency.\+Dijkstra\+Search.\+min\+Distances = null\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [private set]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/jaros/\+Desktop/tempvr/virtual-\/reality/\+Assets/\+Scripts/\+C2\+M2/\+Interaction/\+Adjacency/\mbox{\hyperlink{_dijkstra_search_8cs}{Dijkstra\+Search.\+cs}}\end{DoxyCompactItemize}
