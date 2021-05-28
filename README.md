@@ -7,7 +7,7 @@ Documentation site repo for Temple University's C2M2 Virtual Reality Computation
 [Download](https://graphviz.org/download/) and install GraphViz.
 ### Steps to produce documentation
 **1.** Clone this repo onto your local machine.
-**2.** Open Doxygen -> File -> Open -> c2m2.github.io/Doxyfile
+**2.** Open Doxywizard -> File -> Open -> c2m2.github.io/Doxyfile
 **3.** Navigate to the "Wizard" tab.
 **4.** Make sure that the working directory is set to "c2m2.github.io":
 
