@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['three_3121',['Three',['../d1/d7b/class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_sine_wave_colorizer.html#a51ae09731c1f951955e5b6e7fc70a950aca8a2087e5557e317599344687a57391',1,'C2M2::NeuronalDynamics::UGX::SineWaveColorizer']]],
-  ['two_3122',['Two',['../d1/d7b/class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_sine_wave_colorizer.html#a51ae09731c1f951955e5b6e7fc70a950aaada29daee1d64ed0fe907043855cb7e',1,'C2M2::NeuronalDynamics::UGX::SineWaveColorizer']]]
+  ['y_2670',['y',['../d1/d7b/class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_sine_wave_colorizer.html#a98fae9c9ca9f5c340a9ab3a455dd0cf6a415290769594460e2e485922904f345d',1,'C2M2::NeuronalDynamics::UGX::SineWaveColorizer']]]
 ];

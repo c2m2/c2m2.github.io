@@ -1,0 +1,194 @@
+\hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_neuron_cell_preview}{}\doxysection{C2\+M2.\+Neuronal\+Dynamics.\+Visualization.\+Neuron\+Cell\+Preview Class Reference}
+\label{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_neuron_cell_preview}\index{C2M2.NeuronalDynamics.Visualization.NeuronCellPreview@{C2M2.NeuronalDynamics.Visualization.NeuronCellPreview}}
+
+
+Produces a preview of a 1D cell using Lines\+Renderer  
+
+
+
+
+Inherits Mono\+Behaviour.
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_neuron_cell_preview_a25d39f3126fdd76165790ccd83472abd}{Preview\+Cell}} ()
+\item 
+void \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_neuron_cell_preview_a4903daca461660b53cb230eb9dffdedb}{Preview\+Cell}} (string \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_neuron_cell_preview_aa11bc2d96e13d7c40b41580955b4d82e}{vrn\+File\+Name}}, Color32 color)
+\item 
+void \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_neuron_cell_preview_a166105c46a30c1da625ea2b7cf34a904}{Load\+This\+Cell}} (Raycast\+Hit hit)
+\item 
+bool \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_neuron_cell_preview_a2889306db6518cac1460a8744c28f0eb}{Remove\+Refinement}} (int \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_neuron_cell_preview_a11aacc35ed0251b7e701ea40ff8bd463}{refinement}})
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_neuron_cell_preview_aa11bc2d96e13d7c40b41580955b4d82e}{vrn\+File\+Name}} = \char`\"{}null\char`\"{}
+\item 
+Color32 \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_neuron_cell_preview_a9354ab8ab23f75a94cb884e7d02e4fa5}{window\+Color}}
+\item 
+\mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_n_d_simulation_loader}{NDSimulation\+Loader}} \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_neuron_cell_preview_a9a52dbecf57bd9f357bca221c5f78abe}{loader}} = null
+\item 
+Text\+Mesh\+Pro\+UGUI \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_neuron_cell_preview_a245119eb5b72b118500dee334cc532a3}{file\+Name\+Display}}
+\item 
+Text\+Mesh\+Pro\+UGUI \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_neuron_cell_preview_a0d366b0f55a6e48569876f0c9851a159}{size\+Label}}
+\item 
+Text\+Mesh\+Pro\+UGUI \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_neuron_cell_preview_a8685aef8ec93096d750b5dcd13136dee}{vert\+Label}}
+\item 
+Text\+Mesh\+Pro\+UGUI \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_neuron_cell_preview_aadd2a0cb61593608d4250c4881c66985}{species\+Label}}
+\item 
+Text\+Mesh\+Pro\+UGUI \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_neuron_cell_preview_a1895ab4fd9ea465dba408756bb42bb9c}{strain\+Label}}
+\item 
+Text\+Mesh\+Pro\+UGUI \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_neuron_cell_preview_a8205e65a14b2b7559936e3c4334e4b48}{archive\+Label}}
+\item 
+Game\+Object \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_neuron_cell_preview_a1d607cdd7dfaf2051eeebea06c8529f2}{cell\+Size\+Warning}}
+\item 
+int \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_neuron_cell_preview_a11aacc35ed0251b7e701ea40ff8bd463}{refinement}} = 0
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_neuron_cell_preview_aea7384dbf17eea9b8ebc3a77af823f2d}{Length\+Scale}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+int\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_neuron_cell_preview_afe851b6a1fc6cc4a96398b607d165999}{refinements}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, private set\mbox{]}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_r_n_1_1_vrn_reader}{Vrn\+Reader}} \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_neuron_cell_preview_a93fd2415a51fa6e0f5feb50b7e8fe42a}{vrn\+Reader}} = null
+\item 
+\mbox{\hyperlink{class_c2_m2_1_1_utils_1_1_debug_utils_1_1_lines_renderer}{Lines\+Renderer}} \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_neuron_cell_preview_a1fb6fa2eb46a6ae1d2a778fc2ab2e325}{lines}} = null
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Produces a preview of a 1D cell using Lines\+Renderer 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_neuron_cell_preview_a166105c46a30c1da625ea2b7cf34a904}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_neuron_cell_preview_a166105c46a30c1da625ea2b7cf34a904}} 
+\index{C2M2.NeuronalDynamics.Visualization.NeuronCellPreview@{C2M2.NeuronalDynamics.Visualization.NeuronCellPreview}!LoadThisCell@{LoadThisCell}}
+\index{LoadThisCell@{LoadThisCell}!C2M2.NeuronalDynamics.Visualization.NeuronCellPreview@{C2M2.NeuronalDynamics.Visualization.NeuronCellPreview}}
+\doxysubsubsection{\texorpdfstring{LoadThisCell()}{LoadThisCell()}}
+{\footnotesize\ttfamily void C2\+M2.\+Neuronal\+Dynamics.\+Visualization.\+Neuron\+Cell\+Preview.\+Load\+This\+Cell (\begin{DoxyParamCaption}\item[{Raycast\+Hit}]{hit }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_neuron_cell_preview_a25d39f3126fdd76165790ccd83472abd}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_neuron_cell_preview_a25d39f3126fdd76165790ccd83472abd}} 
+\index{C2M2.NeuronalDynamics.Visualization.NeuronCellPreview@{C2M2.NeuronalDynamics.Visualization.NeuronCellPreview}!PreviewCell@{PreviewCell}}
+\index{PreviewCell@{PreviewCell}!C2M2.NeuronalDynamics.Visualization.NeuronCellPreview@{C2M2.NeuronalDynamics.Visualization.NeuronCellPreview}}
+\doxysubsubsection{\texorpdfstring{PreviewCell()}{PreviewCell()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void C2\+M2.\+Neuronal\+Dynamics.\+Visualization.\+Neuron\+Cell\+Preview.\+Preview\+Cell (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_neuron_cell_preview_a4903daca461660b53cb230eb9dffdedb}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_neuron_cell_preview_a4903daca461660b53cb230eb9dffdedb}} 
+\index{C2M2.NeuronalDynamics.Visualization.NeuronCellPreview@{C2M2.NeuronalDynamics.Visualization.NeuronCellPreview}!PreviewCell@{PreviewCell}}
+\index{PreviewCell@{PreviewCell}!C2M2.NeuronalDynamics.Visualization.NeuronCellPreview@{C2M2.NeuronalDynamics.Visualization.NeuronCellPreview}}
+\doxysubsubsection{\texorpdfstring{PreviewCell()}{PreviewCell()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void C2\+M2.\+Neuronal\+Dynamics.\+Visualization.\+Neuron\+Cell\+Preview.\+Preview\+Cell (\begin{DoxyParamCaption}\item[{string}]{vrn\+File\+Name,  }\item[{Color32}]{color }\end{DoxyParamCaption})}
+
+Create empty grid with name of grid in archive\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_neuron_cell_preview_a2889306db6518cac1460a8744c28f0eb}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_neuron_cell_preview_a2889306db6518cac1460a8744c28f0eb}} 
+\index{C2M2.NeuronalDynamics.Visualization.NeuronCellPreview@{C2M2.NeuronalDynamics.Visualization.NeuronCellPreview}!RemoveRefinement@{RemoveRefinement}}
+\index{RemoveRefinement@{RemoveRefinement}!C2M2.NeuronalDynamics.Visualization.NeuronCellPreview@{C2M2.NeuronalDynamics.Visualization.NeuronCellPreview}}
+\doxysubsubsection{\texorpdfstring{RemoveRefinement()}{RemoveRefinement()}}
+{\footnotesize\ttfamily bool C2\+M2.\+Neuronal\+Dynamics.\+Visualization.\+Neuron\+Cell\+Preview.\+Remove\+Refinement (\begin{DoxyParamCaption}\item[{int}]{refinement }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_neuron_cell_preview_a8205e65a14b2b7559936e3c4334e4b48}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_neuron_cell_preview_a8205e65a14b2b7559936e3c4334e4b48}} 
+\index{C2M2.NeuronalDynamics.Visualization.NeuronCellPreview@{C2M2.NeuronalDynamics.Visualization.NeuronCellPreview}!archiveLabel@{archiveLabel}}
+\index{archiveLabel@{archiveLabel}!C2M2.NeuronalDynamics.Visualization.NeuronCellPreview@{C2M2.NeuronalDynamics.Visualization.NeuronCellPreview}}
+\doxysubsubsection{\texorpdfstring{archiveLabel}{archiveLabel}}
+{\footnotesize\ttfamily Text\+Mesh\+Pro\+UGUI C2\+M2.\+Neuronal\+Dynamics.\+Visualization.\+Neuron\+Cell\+Preview.\+archive\+Label}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_neuron_cell_preview_a1d607cdd7dfaf2051eeebea06c8529f2}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_neuron_cell_preview_a1d607cdd7dfaf2051eeebea06c8529f2}} 
+\index{C2M2.NeuronalDynamics.Visualization.NeuronCellPreview@{C2M2.NeuronalDynamics.Visualization.NeuronCellPreview}!cellSizeWarning@{cellSizeWarning}}
+\index{cellSizeWarning@{cellSizeWarning}!C2M2.NeuronalDynamics.Visualization.NeuronCellPreview@{C2M2.NeuronalDynamics.Visualization.NeuronCellPreview}}
+\doxysubsubsection{\texorpdfstring{cellSizeWarning}{cellSizeWarning}}
+{\footnotesize\ttfamily Game\+Object C2\+M2.\+Neuronal\+Dynamics.\+Visualization.\+Neuron\+Cell\+Preview.\+cell\+Size\+Warning}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_neuron_cell_preview_a245119eb5b72b118500dee334cc532a3}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_neuron_cell_preview_a245119eb5b72b118500dee334cc532a3}} 
+\index{C2M2.NeuronalDynamics.Visualization.NeuronCellPreview@{C2M2.NeuronalDynamics.Visualization.NeuronCellPreview}!fileNameDisplay@{fileNameDisplay}}
+\index{fileNameDisplay@{fileNameDisplay}!C2M2.NeuronalDynamics.Visualization.NeuronCellPreview@{C2M2.NeuronalDynamics.Visualization.NeuronCellPreview}}
+\doxysubsubsection{\texorpdfstring{fileNameDisplay}{fileNameDisplay}}
+{\footnotesize\ttfamily Text\+Mesh\+Pro\+UGUI C2\+M2.\+Neuronal\+Dynamics.\+Visualization.\+Neuron\+Cell\+Preview.\+file\+Name\+Display}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_neuron_cell_preview_a1fb6fa2eb46a6ae1d2a778fc2ab2e325}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_neuron_cell_preview_a1fb6fa2eb46a6ae1d2a778fc2ab2e325}} 
+\index{C2M2.NeuronalDynamics.Visualization.NeuronCellPreview@{C2M2.NeuronalDynamics.Visualization.NeuronCellPreview}!lines@{lines}}
+\index{lines@{lines}!C2M2.NeuronalDynamics.Visualization.NeuronCellPreview@{C2M2.NeuronalDynamics.Visualization.NeuronCellPreview}}
+\doxysubsubsection{\texorpdfstring{lines}{lines}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c2_m2_1_1_utils_1_1_debug_utils_1_1_lines_renderer}{Lines\+Renderer}} C2\+M2.\+Neuronal\+Dynamics.\+Visualization.\+Neuron\+Cell\+Preview.\+lines = null\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_neuron_cell_preview_a9a52dbecf57bd9f357bca221c5f78abe}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_neuron_cell_preview_a9a52dbecf57bd9f357bca221c5f78abe}} 
+\index{C2M2.NeuronalDynamics.Visualization.NeuronCellPreview@{C2M2.NeuronalDynamics.Visualization.NeuronCellPreview}!loader@{loader}}
+\index{loader@{loader}!C2M2.NeuronalDynamics.Visualization.NeuronCellPreview@{C2M2.NeuronalDynamics.Visualization.NeuronCellPreview}}
+\doxysubsubsection{\texorpdfstring{loader}{loader}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_n_d_simulation_loader}{NDSimulation\+Loader}} C2\+M2.\+Neuronal\+Dynamics.\+Visualization.\+Neuron\+Cell\+Preview.\+loader = null}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_neuron_cell_preview_a11aacc35ed0251b7e701ea40ff8bd463}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_neuron_cell_preview_a11aacc35ed0251b7e701ea40ff8bd463}} 
+\index{C2M2.NeuronalDynamics.Visualization.NeuronCellPreview@{C2M2.NeuronalDynamics.Visualization.NeuronCellPreview}!refinement@{refinement}}
+\index{refinement@{refinement}!C2M2.NeuronalDynamics.Visualization.NeuronCellPreview@{C2M2.NeuronalDynamics.Visualization.NeuronCellPreview}}
+\doxysubsubsection{\texorpdfstring{refinement}{refinement}}
+{\footnotesize\ttfamily int C2\+M2.\+Neuronal\+Dynamics.\+Visualization.\+Neuron\+Cell\+Preview.\+refinement = 0}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_neuron_cell_preview_a0d366b0f55a6e48569876f0c9851a159}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_neuron_cell_preview_a0d366b0f55a6e48569876f0c9851a159}} 
+\index{C2M2.NeuronalDynamics.Visualization.NeuronCellPreview@{C2M2.NeuronalDynamics.Visualization.NeuronCellPreview}!sizeLabel@{sizeLabel}}
+\index{sizeLabel@{sizeLabel}!C2M2.NeuronalDynamics.Visualization.NeuronCellPreview@{C2M2.NeuronalDynamics.Visualization.NeuronCellPreview}}
+\doxysubsubsection{\texorpdfstring{sizeLabel}{sizeLabel}}
+{\footnotesize\ttfamily Text\+Mesh\+Pro\+UGUI C2\+M2.\+Neuronal\+Dynamics.\+Visualization.\+Neuron\+Cell\+Preview.\+size\+Label}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_neuron_cell_preview_aadd2a0cb61593608d4250c4881c66985}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_neuron_cell_preview_aadd2a0cb61593608d4250c4881c66985}} 
+\index{C2M2.NeuronalDynamics.Visualization.NeuronCellPreview@{C2M2.NeuronalDynamics.Visualization.NeuronCellPreview}!speciesLabel@{speciesLabel}}
+\index{speciesLabel@{speciesLabel}!C2M2.NeuronalDynamics.Visualization.NeuronCellPreview@{C2M2.NeuronalDynamics.Visualization.NeuronCellPreview}}
+\doxysubsubsection{\texorpdfstring{speciesLabel}{speciesLabel}}
+{\footnotesize\ttfamily Text\+Mesh\+Pro\+UGUI C2\+M2.\+Neuronal\+Dynamics.\+Visualization.\+Neuron\+Cell\+Preview.\+species\+Label}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_neuron_cell_preview_a1895ab4fd9ea465dba408756bb42bb9c}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_neuron_cell_preview_a1895ab4fd9ea465dba408756bb42bb9c}} 
+\index{C2M2.NeuronalDynamics.Visualization.NeuronCellPreview@{C2M2.NeuronalDynamics.Visualization.NeuronCellPreview}!strainLabel@{strainLabel}}
+\index{strainLabel@{strainLabel}!C2M2.NeuronalDynamics.Visualization.NeuronCellPreview@{C2M2.NeuronalDynamics.Visualization.NeuronCellPreview}}
+\doxysubsubsection{\texorpdfstring{strainLabel}{strainLabel}}
+{\footnotesize\ttfamily Text\+Mesh\+Pro\+UGUI C2\+M2.\+Neuronal\+Dynamics.\+Visualization.\+Neuron\+Cell\+Preview.\+strain\+Label}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_neuron_cell_preview_a8685aef8ec93096d750b5dcd13136dee}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_neuron_cell_preview_a8685aef8ec93096d750b5dcd13136dee}} 
+\index{C2M2.NeuronalDynamics.Visualization.NeuronCellPreview@{C2M2.NeuronalDynamics.Visualization.NeuronCellPreview}!vertLabel@{vertLabel}}
+\index{vertLabel@{vertLabel}!C2M2.NeuronalDynamics.Visualization.NeuronCellPreview@{C2M2.NeuronalDynamics.Visualization.NeuronCellPreview}}
+\doxysubsubsection{\texorpdfstring{vertLabel}{vertLabel}}
+{\footnotesize\ttfamily Text\+Mesh\+Pro\+UGUI C2\+M2.\+Neuronal\+Dynamics.\+Visualization.\+Neuron\+Cell\+Preview.\+vert\+Label}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_neuron_cell_preview_aa11bc2d96e13d7c40b41580955b4d82e}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_neuron_cell_preview_aa11bc2d96e13d7c40b41580955b4d82e}} 
+\index{C2M2.NeuronalDynamics.Visualization.NeuronCellPreview@{C2M2.NeuronalDynamics.Visualization.NeuronCellPreview}!vrnFileName@{vrnFileName}}
+\index{vrnFileName@{vrnFileName}!C2M2.NeuronalDynamics.Visualization.NeuronCellPreview@{C2M2.NeuronalDynamics.Visualization.NeuronCellPreview}}
+\doxysubsubsection{\texorpdfstring{vrnFileName}{vrnFileName}}
+{\footnotesize\ttfamily string C2\+M2.\+Neuronal\+Dynamics.\+Visualization.\+Neuron\+Cell\+Preview.\+vrn\+File\+Name = \char`\"{}null\char`\"{}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_neuron_cell_preview_a93fd2415a51fa6e0f5feb50b7e8fe42a}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_neuron_cell_preview_a93fd2415a51fa6e0f5feb50b7e8fe42a}} 
+\index{C2M2.NeuronalDynamics.Visualization.NeuronCellPreview@{C2M2.NeuronalDynamics.Visualization.NeuronCellPreview}!vrnReader@{vrnReader}}
+\index{vrnReader@{vrnReader}!C2M2.NeuronalDynamics.Visualization.NeuronCellPreview@{C2M2.NeuronalDynamics.Visualization.NeuronCellPreview}}
+\doxysubsubsection{\texorpdfstring{vrnReader}{vrnReader}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_r_n_1_1_vrn_reader}{Vrn\+Reader}} C2\+M2.\+Neuronal\+Dynamics.\+Visualization.\+Neuron\+Cell\+Preview.\+vrn\+Reader = null\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_neuron_cell_preview_a9354ab8ab23f75a94cb884e7d02e4fa5}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_neuron_cell_preview_a9354ab8ab23f75a94cb884e7d02e4fa5}} 
+\index{C2M2.NeuronalDynamics.Visualization.NeuronCellPreview@{C2M2.NeuronalDynamics.Visualization.NeuronCellPreview}!windowColor@{windowColor}}
+\index{windowColor@{windowColor}!C2M2.NeuronalDynamics.Visualization.NeuronCellPreview@{C2M2.NeuronalDynamics.Visualization.NeuronCellPreview}}
+\doxysubsubsection{\texorpdfstring{windowColor}{windowColor}}
+{\footnotesize\ttfamily Color32 C2\+M2.\+Neuronal\+Dynamics.\+Visualization.\+Neuron\+Cell\+Preview.\+window\+Color}
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_neuron_cell_preview_aea7384dbf17eea9b8ebc3a77af823f2d}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_neuron_cell_preview_aea7384dbf17eea9b8ebc3a77af823f2d}} 
+\index{C2M2.NeuronalDynamics.Visualization.NeuronCellPreview@{C2M2.NeuronalDynamics.Visualization.NeuronCellPreview}!LengthScale@{LengthScale}}
+\index{LengthScale@{LengthScale}!C2M2.NeuronalDynamics.Visualization.NeuronCellPreview@{C2M2.NeuronalDynamics.Visualization.NeuronCellPreview}}
+\doxysubsubsection{\texorpdfstring{LengthScale}{LengthScale}}
+{\footnotesize\ttfamily string C2\+M2.\+Neuronal\+Dynamics.\+Visualization.\+Neuron\+Cell\+Preview.\+Length\+Scale\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_neuron_cell_preview_afe851b6a1fc6cc4a96398b607d165999}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_neuron_cell_preview_afe851b6a1fc6cc4a96398b607d165999}} 
+\index{C2M2.NeuronalDynamics.Visualization.NeuronCellPreview@{C2M2.NeuronalDynamics.Visualization.NeuronCellPreview}!refinements@{refinements}}
+\index{refinements@{refinements}!C2M2.NeuronalDynamics.Visualization.NeuronCellPreview@{C2M2.NeuronalDynamics.Visualization.NeuronCellPreview}}
+\doxysubsubsection{\texorpdfstring{refinements}{refinements}}
+{\footnotesize\ttfamily int \mbox{[}$\,$\mbox{]} C2\+M2.\+Neuronal\+Dynamics.\+Visualization.\+Neuron\+Cell\+Preview.\+refinements\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [private set]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Jacob Wells/\+Desktop/\+C2\+M2/\+Neuro\+VISOR/\+Assets/\+Scripts/\+C2\+M2/\+Neuronal\+Dynamics/\+Visualization/\mbox{\hyperlink{_neuron_cell_preview_8cs}{Neuron\+Cell\+Preview.\+cs}}\end{DoxyCompactItemize}

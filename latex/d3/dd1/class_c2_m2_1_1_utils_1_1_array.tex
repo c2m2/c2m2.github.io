@@ -5,15 +5,6 @@
 Utilities with quick but manual array operations for merging, filling, converting to lists, etc.  
 
 
-
-
-Collaboration diagram for C2\+M2.\+Utils.\+Array\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=217pt]{d2/d0f/class_c2_m2_1_1_utils_1_1_array__coll__graph}
-\end{center}
-\end{figure}
 \doxysubsection*{Static Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
@@ -37,6 +28,8 @@ static float\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_c2_m2_1_1_utils_1_1_arra
 \item 
 static double\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_c2_m2_1_1_utils_1_1_array_ab75830ac760b84d384861310f0d03743}{To\+Array}} (this List$<$ double $>$ list)
 \item 
+static Vector3\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_c2_m2_1_1_utils_1_1_array_af8df7b7fd134ee774079e6ce040b6a51}{To\+Array}} (this List$<$ Vector3 $>$ list)
+\item 
 static List$<$ int $>$ \mbox{\hyperlink{class_c2_m2_1_1_utils_1_1_array_a3841b96b3b684ae39a7f2a99acd77476}{To\+List}} (this int\mbox{[}$\,$\mbox{]} array)
 \item 
 static List$<$ float $>$ \mbox{\hyperlink{class_c2_m2_1_1_utils_1_1_array_ac86bb8d7dbc2c1fb280f92d0ee01997d}{To\+List}} (this float\mbox{[}$\,$\mbox{]} array)
@@ -52,21 +45,27 @@ static float\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_c2_m2_1_1_utils_1_1_arra
 static double\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_c2_m2_1_1_utils_1_1_array_ad419233f183c21ac5f7af793f9ef5e5b}{Reverse}} (this double\mbox{[}$\,$\mbox{]} array)
 \item 
 static void \mbox{\hyperlink{class_c2_m2_1_1_utils_1_1_array_a42bb42695771a71fa6e9e07b9db479f7}{Rescale\+Array}} (this float\mbox{[}$\,$\mbox{]} array, float new\+Min, float new\+Max, float old\+Min, float old\+Max)
-\begin{DoxyCompactList}\small\item\em Rescale an array from (old\+Min, old\+Max) to (new\+Min, new\+Max) \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Rescale each member of an array from (old\+Min, old\+Max) to (new\+Min, new\+Max) \end{DoxyCompactList}\item 
 static void \mbox{\hyperlink{class_c2_m2_1_1_utils_1_1_array_a5e0d5a24d42436407af7a4eb7d5812e3}{Rescale\+Array}} (this float\mbox{[}$\,$\mbox{]} array, float new\+Min, float new\+Max)
-\begin{DoxyCompactList}\small\item\em Rescale an array from (old\+Min, old\+Max) to (new\+Min, new\+Max) \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Rescale each member of an array from (old\+Min, old\+Max) to (new\+Min, new\+Max) \end{DoxyCompactList}\item 
 static float\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_c2_m2_1_1_utils_1_1_array_ab43194001d6c0a5ffd3d0629c587a896}{Times}} (this float\mbox{[}$\,$\mbox{]} array, float s)
 \begin{DoxyCompactList}\small\item\em Multiplies every value in this array by s \end{DoxyCompactList}\item 
 static double\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_c2_m2_1_1_utils_1_1_array_a0966e4026e4cf66c5e5ff83828a38cd4}{Times}} (this double\mbox{[}$\,$\mbox{]} array, double s)
 \begin{DoxyCompactList}\small\item\em Multiplies every value in this array by s \end{DoxyCompactList}\item 
 static T\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_c2_m2_1_1_utils_1_1_array_a1df15dc025f68ca70595e3a4ed92ccbf}{Subset$<$ T $>$}} (this T\mbox{[}$\,$\mbox{]} array, int to, int from=0)
 \begin{DoxyCompactList}\small\item\em Returns a subset of this array from \mbox{[}from\mbox{]} (inclusive) to \mbox{[}to\mbox{]} (exclusive) \end{DoxyCompactList}\item 
+static List$<$ int $>$ \mbox{\hyperlink{class_c2_m2_1_1_utils_1_1_array_a8c09155afd00a5cf2ab2cb5b25843ad8}{Get\+Extrema}} (this double\mbox{[}$\,$\mbox{]} array, bool include\+Ends=false, bool only\+Maxima=false, bool only\+Minima=false)
+\begin{DoxyCompactList}\small\item\em Returns a list of indices of the array/list\textquotesingle{}s local extrema in the order in which they are found. \end{DoxyCompactList}\item 
+static List$<$ int $>$ \mbox{\hyperlink{class_c2_m2_1_1_utils_1_1_array_a6bdd8ad6745e5364ae533432a49bd105}{Get\+Extrema}} (this List$<$ double $>$ list, bool include\+Ends=false, bool only\+Maxima=false, bool only\+Minima=false)
+\begin{DoxyCompactList}\small\item\em Returns a list of indices of the array/list\textquotesingle{}s local extrema in the order in which they are found. \end{DoxyCompactList}\item 
+static List$<$ int $>$ \mbox{\hyperlink{class_c2_m2_1_1_utils_1_1_array_a89a6d5bc3d91febb90d3850c7b933a2f}{Get\+Extrema}} (this List$<$ float $>$ list, bool include\+Ends=false, bool use\+Pivots=false, bool only\+Maxima=false, bool only\+Minima=false)
+\begin{DoxyCompactList}\small\item\em Returns a list of indices of the array/list\textquotesingle{}s local extrema in the order in which they are found. \end{DoxyCompactList}\item 
 static string \mbox{\hyperlink{class_c2_m2_1_1_utils_1_1_array_aad0fec6850cce606aff50a149a536316}{To\+String\+Full}} (this double\mbox{[}$\,$\mbox{]} array)
 \end{DoxyCompactItemize}
 \doxysubsection*{Static Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
-static Random \mbox{\hyperlink{class_c2_m2_1_1_utils_1_1_array_af902072a024e660836a8f353ef3be984}{rand}} = new Random()
+static \mbox{\hyperlink{_cell_previewer_8cs_a24953b19d956caa76c403684c71b4e5b}{Random}} \mbox{\hyperlink{class_c2_m2_1_1_utils_1_1_array_af902072a024e660836a8f353ef3be984}{rand}} = new \mbox{\hyperlink{_cell_previewer_8cs_a24953b19d956caa76c403684c71b4e5b}{Random}}()
 \end{DoxyCompactItemize}
 
 
@@ -136,6 +135,74 @@ Fills float array with random numbers from min \mbox{[}inclusive\mbox{]} to max 
 
 Fills float array with random numbers from min \mbox{[}inclusive\mbox{]} to max \mbox{[}inclusive\mbox{]} 
 
+\mbox{\Hypertarget{class_c2_m2_1_1_utils_1_1_array_a8c09155afd00a5cf2ab2cb5b25843ad8}\label{class_c2_m2_1_1_utils_1_1_array_a8c09155afd00a5cf2ab2cb5b25843ad8}} 
+\index{C2M2.Utils.Array@{C2M2.Utils.Array}!GetExtrema@{GetExtrema}}
+\index{GetExtrema@{GetExtrema}!C2M2.Utils.Array@{C2M2.Utils.Array}}
+\doxysubsubsection{\texorpdfstring{GetExtrema()}{GetExtrema()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily static List$<$int$>$ C2\+M2.\+Utils.\+Array.\+Get\+Extrema (\begin{DoxyParamCaption}\item[{this double\mbox{[}$\,$\mbox{]}}]{array,  }\item[{bool}]{include\+Ends = {\ttfamily false},  }\item[{bool}]{only\+Maxima = {\ttfamily false},  }\item[{bool}]{only\+Minima = {\ttfamily false} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Returns a list of indices of the array/list\textquotesingle{}s local extrema in the order in which they are found. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em include\+Ends} & If true, also returns the first and last index of the array/list. \\
+\hline
+{\em only\+Maxima} & If true, only returns local maxima. \\
+\hline
+{\em only\+Minima} & If true, only returns local minima. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c2_m2_1_1_utils_1_1_array_a6bdd8ad6745e5364ae533432a49bd105}\label{class_c2_m2_1_1_utils_1_1_array_a6bdd8ad6745e5364ae533432a49bd105}} 
+\index{C2M2.Utils.Array@{C2M2.Utils.Array}!GetExtrema@{GetExtrema}}
+\index{GetExtrema@{GetExtrema}!C2M2.Utils.Array@{C2M2.Utils.Array}}
+\doxysubsubsection{\texorpdfstring{GetExtrema()}{GetExtrema()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily static List$<$int$>$ C2\+M2.\+Utils.\+Array.\+Get\+Extrema (\begin{DoxyParamCaption}\item[{this List$<$ double $>$}]{list,  }\item[{bool}]{include\+Ends = {\ttfamily false},  }\item[{bool}]{only\+Maxima = {\ttfamily false},  }\item[{bool}]{only\+Minima = {\ttfamily false} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Returns a list of indices of the array/list\textquotesingle{}s local extrema in the order in which they are found. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em include\+Ends} & If true, also returns the first and last index of the array/list. \\
+\hline
+{\em only\+Maxima} & If true, only returns local maxima. \\
+\hline
+{\em only\+Minima} & If true, only returns local minima. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c2_m2_1_1_utils_1_1_array_a89a6d5bc3d91febb90d3850c7b933a2f}\label{class_c2_m2_1_1_utils_1_1_array_a89a6d5bc3d91febb90d3850c7b933a2f}} 
+\index{C2M2.Utils.Array@{C2M2.Utils.Array}!GetExtrema@{GetExtrema}}
+\index{GetExtrema@{GetExtrema}!C2M2.Utils.Array@{C2M2.Utils.Array}}
+\doxysubsubsection{\texorpdfstring{GetExtrema()}{GetExtrema()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily static List$<$int$>$ C2\+M2.\+Utils.\+Array.\+Get\+Extrema (\begin{DoxyParamCaption}\item[{this List$<$ float $>$}]{list,  }\item[{bool}]{include\+Ends = {\ttfamily false},  }\item[{bool}]{use\+Pivots = {\ttfamily false},  }\item[{bool}]{only\+Maxima = {\ttfamily false},  }\item[{bool}]{only\+Minima = {\ttfamily false} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Returns a list of indices of the array/list\textquotesingle{}s local extrema in the order in which they are found. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em include\+Ends} & If true, also returns the first and last index of the array/list. \\
+\hline
+{\em use\+Pivots} & If true, will use the first index of a found extrema\+: \{0, 0.\+25, 1, 1, 1, 0.\+25\} would return 2 as one extrema index. \\
+\hline
+{\em only\+Maxima} & If true, only returns local maxima. \\
+\hline
+{\em only\+Minima} & If true, only returns local minima. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
 \mbox{\Hypertarget{class_c2_m2_1_1_utils_1_1_array_ab5cb35c707bcb710e3c7ddde0841c087}\label{class_c2_m2_1_1_utils_1_1_array_ab5cb35c707bcb710e3c7ddde0841c087}} 
 \index{C2M2.Utils.Array@{C2M2.Utils.Array}!MergeArrays$<$ T $>$@{MergeArrays$<$ T $>$}}
 \index{MergeArrays$<$ T $>$@{MergeArrays$<$ T $>$}!C2M2.Utils.Array@{C2M2.Utils.Array}}
@@ -154,7 +221,7 @@ Returns a new array with end\+Array concatenated onto the end of beginning\+Arra
 
 
 
-Rescale an array from (old\+Min, old\+Max) to (new\+Min, new\+Max) 
+Rescale each member of an array from (old\+Min, old\+Max) to (new\+Min, new\+Max) 
 
 \mbox{\Hypertarget{class_c2_m2_1_1_utils_1_1_array_a42bb42695771a71fa6e9e07b9db479f7}\label{class_c2_m2_1_1_utils_1_1_array_a42bb42695771a71fa6e9e07b9db479f7}} 
 \index{C2M2.Utils.Array@{C2M2.Utils.Array}!RescaleArray@{RescaleArray}}
@@ -164,7 +231,7 @@ Rescale an array from (old\+Min, old\+Max) to (new\+Min, new\+Max)
 
 
 
-Rescale an array from (old\+Min, old\+Max) to (new\+Min, new\+Max) 
+Rescale each member of an array from (old\+Min, old\+Max) to (new\+Min, new\+Max) 
 
 \mbox{\Hypertarget{class_c2_m2_1_1_utils_1_1_array_ad419233f183c21ac5f7af793f9ef5e5b}\label{class_c2_m2_1_1_utils_1_1_array_ad419233f183c21ac5f7af793f9ef5e5b}} 
 \index{C2M2.Utils.Array@{C2M2.Utils.Array}!Reverse@{Reverse}}
@@ -227,20 +294,26 @@ Multiplies every value in this array by s
 \mbox{\Hypertarget{class_c2_m2_1_1_utils_1_1_array_ab75830ac760b84d384861310f0d03743}\label{class_c2_m2_1_1_utils_1_1_array_ab75830ac760b84d384861310f0d03743}} 
 \index{C2M2.Utils.Array@{C2M2.Utils.Array}!ToArray@{ToArray}}
 \index{ToArray@{ToArray}!C2M2.Utils.Array@{C2M2.Utils.Array}}
-\doxysubsubsection{\texorpdfstring{ToArray()}{ToArray()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+\doxysubsubsection{\texorpdfstring{ToArray()}{ToArray()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
 {\footnotesize\ttfamily static double \mbox{[}$\,$\mbox{]} C2\+M2.\+Utils.\+Array.\+To\+Array (\begin{DoxyParamCaption}\item[{this List$<$ double $>$}]{list }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
 \mbox{\Hypertarget{class_c2_m2_1_1_utils_1_1_array_a10a8b9ce2ca64233ffd6bd912db102d3}\label{class_c2_m2_1_1_utils_1_1_array_a10a8b9ce2ca64233ffd6bd912db102d3}} 
 \index{C2M2.Utils.Array@{C2M2.Utils.Array}!ToArray@{ToArray}}
 \index{ToArray@{ToArray}!C2M2.Utils.Array@{C2M2.Utils.Array}}
-\doxysubsubsection{\texorpdfstring{ToArray()}{ToArray()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+\doxysubsubsection{\texorpdfstring{ToArray()}{ToArray()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
 {\footnotesize\ttfamily static float \mbox{[}$\,$\mbox{]} C2\+M2.\+Utils.\+Array.\+To\+Array (\begin{DoxyParamCaption}\item[{this List$<$ float $>$}]{list }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
 \mbox{\Hypertarget{class_c2_m2_1_1_utils_1_1_array_a409eedbe1c84215574eeeb709e6d5527}\label{class_c2_m2_1_1_utils_1_1_array_a409eedbe1c84215574eeeb709e6d5527}} 
 \index{C2M2.Utils.Array@{C2M2.Utils.Array}!ToArray@{ToArray}}
 \index{ToArray@{ToArray}!C2M2.Utils.Array@{C2M2.Utils.Array}}
-\doxysubsubsection{\texorpdfstring{ToArray()}{ToArray()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+\doxysubsubsection{\texorpdfstring{ToArray()}{ToArray()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
 {\footnotesize\ttfamily static int \mbox{[}$\,$\mbox{]} C2\+M2.\+Utils.\+Array.\+To\+Array (\begin{DoxyParamCaption}\item[{this List$<$ int $>$}]{list }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_utils_1_1_array_af8df7b7fd134ee774079e6ce040b6a51}\label{class_c2_m2_1_1_utils_1_1_array_af8df7b7fd134ee774079e6ce040b6a51}} 
+\index{C2M2.Utils.Array@{C2M2.Utils.Array}!ToArray@{ToArray}}
+\index{ToArray@{ToArray}!C2M2.Utils.Array@{C2M2.Utils.Array}}
+\doxysubsubsection{\texorpdfstring{ToArray()}{ToArray()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily static Vector3 \mbox{[}$\,$\mbox{]} C2\+M2.\+Utils.\+Array.\+To\+Array (\begin{DoxyParamCaption}\item[{this List$<$ Vector3 $>$}]{list }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
 \mbox{\Hypertarget{class_c2_m2_1_1_utils_1_1_array_a7b54d83a465cade35600fd866a9083ab}\label{class_c2_m2_1_1_utils_1_1_array_a7b54d83a465cade35600fd866a9083ab}} 
 \index{C2M2.Utils.Array@{C2M2.Utils.Array}!ToFloat@{ToFloat}}
@@ -283,10 +356,10 @@ Cast an array of doubles into an array of floats
 \index{C2M2.Utils.Array@{C2M2.Utils.Array}!rand@{rand}}
 \index{rand@{rand}!C2M2.Utils.Array@{C2M2.Utils.Array}}
 \doxysubsubsection{\texorpdfstring{rand}{rand}}
-{\footnotesize\ttfamily Random C2\+M2.\+Utils.\+Array.\+rand = new Random()\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_cell_previewer_8cs_a24953b19d956caa76c403684c71b4e5b}{Random}} C2\+M2.\+Utils.\+Array.\+rand = new \mbox{\hyperlink{_cell_previewer_8cs_a24953b19d956caa76c403684c71b4e5b}{Random}}()\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
 
 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-C\+:/\+Users/jaros/\+Desktop/tempvr/virtual-\/reality/\+Assets/\+Scripts/\+C2\+M2/\+Utils/\mbox{\hyperlink{_array_8cs}{Array.\+cs}}\end{DoxyCompactItemize}
+C\+:/\+Users/\+Jacob Wells/\+Desktop/\+C2\+M2/\+Neuro\+VISOR/\+Assets/\+Scripts/\+C2\+M2/\+Utils/\+Extensions/\mbox{\hyperlink{_array_8cs}{Array.\+cs}}\end{DoxyCompactItemize}

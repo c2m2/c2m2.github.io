@@ -2,63 +2,60 @@
 \label{class_c2_m2_1_1_interaction_1_1_v_r_1_1_v_r_device_manager}\index{C2M2.Interaction.VR.VRDeviceManager@{C2M2.Interaction.VR.VRDeviceManager}}
 
 
-Make sure that a \mbox{\hyperlink{namespace_c2_m2_1_1_interaction_1_1_v_r}{VR}} device is loaded before using OVRPlayer\+Controller. If none is loaded, add \mbox{\hyperlink{namespace_c2_m2_1_1_interaction_1_1_v_r}{VR}} emulation tools  
+Handles switching between \mbox{\hyperlink{namespace_c2_m2_1_1_interaction_1_1_v_r}{VR}} and emulator modes  
 
 
 
 
-Inheritance diagram for C2\+M2.\+Interaction.\+VR.\+VRDevice\+Manager\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=265pt]{d1/da4/class_c2_m2_1_1_interaction_1_1_v_r_1_1_v_r_device_manager__inherit__graph}
-\end{center}
-\end{figure}
+Inherits Mono\+Behaviour.
 
-
-Collaboration diagram for C2\+M2.\+Interaction.\+VR.\+VRDevice\+Manager\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[height=550pt]{d9/d89/class_c2_m2_1_1_interaction_1_1_v_r_1_1_v_r_device_manager__coll__graph}
-\end{center}
-\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_v_r_1_1_v_r_device_manager_a55e6ee80bb78a76998edb911d9aa16fb}{Update}} ()
+\end{DoxyCompactItemize}
 \doxysubsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
-Game\+Object \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_v_r_1_1_v_r_device_manager_a9ca38c200de62fcd981b6d45585e9952}{information\+Overlay}} = null
+Game\+Object \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_v_r_1_1_v_r_device_manager_ace86020889efbbaafc97c337bddbd83b}{desktop\+Control\+Scheme}} = null
 \item 
-Game\+Object \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_v_r_1_1_v_r_device_manager_a171e46aec4d77334701398893283273f}{information\+Display\+TV}} = null
+Game\+Object \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_v_r_1_1_v_r_device_manager_a09bf2e6730d34f4e94b720d639c6bfdf}{vr\+Control\+Scheme}} = null
 \end{DoxyCompactItemize}
 \doxysubsection*{Properties}
 \begin{DoxyCompactItemize}
 \item 
-bool \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_v_r_1_1_v_r_device_manager_a2de958816ec091c8d79363fb4d5e2b03}{Vr\+Is\+Active}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+bool \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_v_r_1_1_v_r_device_manager_a0aad85d8c92a62d2193b96be680cef18}{VRActive}} = false\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
 \item 
-string \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_v_r_1_1_v_r_device_manager_ad90be7400a1688a2596c06d0c5a3aca3}{vr\+Device}} = \char`\"{}null\char`\"{}\hspace{0.3cm}{\ttfamily  \mbox{[}get, private set\mbox{]}}
+bool \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_v_r_1_1_v_r_device_manager_ad2bd6123a88bbb16d6b5d607de8e783e}{VRDevice\+Present}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+string \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_v_r_1_1_v_r_device_manager_ace2d06f1c830679643d3aac2c51327dc}{VRDevice}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, private set\mbox{]}}
 \end{DoxyCompactItemize}
 \doxysubsection*{Private Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 void \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_v_r_1_1_v_r_device_manager_adf97c3491a6529b6375a4095d5456491}{Awake}} ()
 \item 
+void \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_v_r_1_1_v_r_device_manager_a159c7a2b849624f4e519f309950ca375}{Check\+For\+VRDevice}} ()
+\item 
 void \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_v_r_1_1_v_r_device_manager_aeb4f62a3b8bccbac9ca8ec336be3b895}{Switch\+State}} (bool vr\+Active)
 \end{DoxyCompactItemize}
 \doxysubsection*{Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_v_r_1_1_moving_o_v_r_headset_emulator}{Moving\+OVRHeadset\+Emulator}} \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_v_r_1_1_v_r_device_manager_a83edaa79c65b9afd62e1829e95728086}{emulator}}
+Game\+Object \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_v_r_1_1_v_r_device_manager_aff3d7f12b33d570d3a0634baf4adda95}{vr\+Controller}}
 \item 
-\mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_signaling_1_1_mouse_event_signaler}{Mouse\+Event\+Signaler}} \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_v_r_1_1_v_r_device_manager_a5f886ac8b04fb27b5e0cd01624f08351}{mouse\+Signaler}}
+Game\+Object \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_v_r_1_1_v_r_device_manager_ad64b98afc108d48316ab76db64540d6c}{desktop\+Controller}}
 \item 
-OVRPlayer\+Controller \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_v_r_1_1_v_r_device_manager_aef696ed62490ef8e2ad12951eb28aa3f}{player\+Controller}}
+Camera\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_v_r_1_1_v_r_device_manager_a85b47a898bbb1275c45cb2bbfd7ac857}{vr\+Cameras}}
 \item 
-\mbox{\hyperlink{class_movement_controller}{Movement\+Controller}} \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_v_r_1_1_v_r_device_manager_a658a5f6d3483d78e54d4c6ee4719462c}{emulator\+Move}}
+Camera \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_v_r_1_1_v_r_device_manager_a2fb6daa567cfc4f09e215ccdb15cec23}{desktop\+Camera}}
+\item 
+readonly Key\+Code \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_v_r_1_1_v_r_device_manager_a14f83489c2cfce12bc87a7f4e4f8a04a}{switch\+Mode\+Key}} = Key\+Code.\+Space
 \end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
-Make sure that a \mbox{\hyperlink{namespace_c2_m2_1_1_interaction_1_1_v_r}{VR}} device is loaded before using OVRPlayer\+Controller. If none is loaded, add \mbox{\hyperlink{namespace_c2_m2_1_1_interaction_1_1_v_r}{VR}} emulation tools 
+Handles switching between \mbox{\hyperlink{namespace_c2_m2_1_1_interaction_1_1_v_r}{VR}} and emulator modes 
 
 
 
@@ -69,68 +66,92 @@ Make sure that a \mbox{\hyperlink{namespace_c2_m2_1_1_interaction_1_1_v_r}{VR}} 
 \doxysubsubsection{\texorpdfstring{Awake()}{Awake()}}
 {\footnotesize\ttfamily void C2\+M2.\+Interaction.\+VR.\+VRDevice\+Manager.\+Awake (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
 
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_v_r_1_1_v_r_device_manager_a159c7a2b849624f4e519f309950ca375}\label{class_c2_m2_1_1_interaction_1_1_v_r_1_1_v_r_device_manager_a159c7a2b849624f4e519f309950ca375}} 
+\index{C2M2.Interaction.VR.VRDeviceManager@{C2M2.Interaction.VR.VRDeviceManager}!CheckForVRDevice@{CheckForVRDevice}}
+\index{CheckForVRDevice@{CheckForVRDevice}!C2M2.Interaction.VR.VRDeviceManager@{C2M2.Interaction.VR.VRDeviceManager}}
+\doxysubsubsection{\texorpdfstring{CheckForVRDevice()}{CheckForVRDevice()}}
+{\footnotesize\ttfamily void C2\+M2.\+Interaction.\+VR.\+VRDevice\+Manager.\+Check\+For\+VRDevice (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
 \mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_v_r_1_1_v_r_device_manager_aeb4f62a3b8bccbac9ca8ec336be3b895}\label{class_c2_m2_1_1_interaction_1_1_v_r_1_1_v_r_device_manager_aeb4f62a3b8bccbac9ca8ec336be3b895}} 
 \index{C2M2.Interaction.VR.VRDeviceManager@{C2M2.Interaction.VR.VRDeviceManager}!SwitchState@{SwitchState}}
 \index{SwitchState@{SwitchState}!C2M2.Interaction.VR.VRDeviceManager@{C2M2.Interaction.VR.VRDeviceManager}}
 \doxysubsubsection{\texorpdfstring{SwitchState()}{SwitchState()}}
 {\footnotesize\ttfamily void C2\+M2.\+Interaction.\+VR.\+VRDevice\+Manager.\+Switch\+State (\begin{DoxyParamCaption}\item[{bool}]{vr\+Active }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
 
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_v_r_1_1_v_r_device_manager_a55e6ee80bb78a76998edb911d9aa16fb}\label{class_c2_m2_1_1_interaction_1_1_v_r_1_1_v_r_device_manager_a55e6ee80bb78a76998edb911d9aa16fb}} 
+\index{C2M2.Interaction.VR.VRDeviceManager@{C2M2.Interaction.VR.VRDeviceManager}!Update@{Update}}
+\index{Update@{Update}!C2M2.Interaction.VR.VRDeviceManager@{C2M2.Interaction.VR.VRDeviceManager}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void C2\+M2.\+Interaction.\+VR.\+VRDevice\+Manager.\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
 
 
 \doxysubsection{Member Data Documentation}
-\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_v_r_1_1_v_r_device_manager_a83edaa79c65b9afd62e1829e95728086}\label{class_c2_m2_1_1_interaction_1_1_v_r_1_1_v_r_device_manager_a83edaa79c65b9afd62e1829e95728086}} 
-\index{C2M2.Interaction.VR.VRDeviceManager@{C2M2.Interaction.VR.VRDeviceManager}!emulator@{emulator}}
-\index{emulator@{emulator}!C2M2.Interaction.VR.VRDeviceManager@{C2M2.Interaction.VR.VRDeviceManager}}
-\doxysubsubsection{\texorpdfstring{emulator}{emulator}}
-{\footnotesize\ttfamily \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_v_r_1_1_moving_o_v_r_headset_emulator}{Moving\+OVRHeadset\+Emulator}} C2\+M2.\+Interaction.\+VR.\+VRDevice\+Manager.\+emulator\hspace{0.3cm}{\ttfamily [private]}}
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_v_r_1_1_v_r_device_manager_a2fb6daa567cfc4f09e215ccdb15cec23}\label{class_c2_m2_1_1_interaction_1_1_v_r_1_1_v_r_device_manager_a2fb6daa567cfc4f09e215ccdb15cec23}} 
+\index{C2M2.Interaction.VR.VRDeviceManager@{C2M2.Interaction.VR.VRDeviceManager}!desktopCamera@{desktopCamera}}
+\index{desktopCamera@{desktopCamera}!C2M2.Interaction.VR.VRDeviceManager@{C2M2.Interaction.VR.VRDeviceManager}}
+\doxysubsubsection{\texorpdfstring{desktopCamera}{desktopCamera}}
+{\footnotesize\ttfamily Camera C2\+M2.\+Interaction.\+VR.\+VRDevice\+Manager.\+desktop\+Camera\hspace{0.3cm}{\ttfamily [private]}}
 
-\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_v_r_1_1_v_r_device_manager_a658a5f6d3483d78e54d4c6ee4719462c}\label{class_c2_m2_1_1_interaction_1_1_v_r_1_1_v_r_device_manager_a658a5f6d3483d78e54d4c6ee4719462c}} 
-\index{C2M2.Interaction.VR.VRDeviceManager@{C2M2.Interaction.VR.VRDeviceManager}!emulatorMove@{emulatorMove}}
-\index{emulatorMove@{emulatorMove}!C2M2.Interaction.VR.VRDeviceManager@{C2M2.Interaction.VR.VRDeviceManager}}
-\doxysubsubsection{\texorpdfstring{emulatorMove}{emulatorMove}}
-{\footnotesize\ttfamily \mbox{\hyperlink{class_movement_controller}{Movement\+Controller}} C2\+M2.\+Interaction.\+VR.\+VRDevice\+Manager.\+emulator\+Move\hspace{0.3cm}{\ttfamily [private]}}
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_v_r_1_1_v_r_device_manager_ad64b98afc108d48316ab76db64540d6c}\label{class_c2_m2_1_1_interaction_1_1_v_r_1_1_v_r_device_manager_ad64b98afc108d48316ab76db64540d6c}} 
+\index{C2M2.Interaction.VR.VRDeviceManager@{C2M2.Interaction.VR.VRDeviceManager}!desktopController@{desktopController}}
+\index{desktopController@{desktopController}!C2M2.Interaction.VR.VRDeviceManager@{C2M2.Interaction.VR.VRDeviceManager}}
+\doxysubsubsection{\texorpdfstring{desktopController}{desktopController}}
+{\footnotesize\ttfamily Game\+Object C2\+M2.\+Interaction.\+VR.\+VRDevice\+Manager.\+desktop\+Controller\hspace{0.3cm}{\ttfamily [private]}}
 
-\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_v_r_1_1_v_r_device_manager_a171e46aec4d77334701398893283273f}\label{class_c2_m2_1_1_interaction_1_1_v_r_1_1_v_r_device_manager_a171e46aec4d77334701398893283273f}} 
-\index{C2M2.Interaction.VR.VRDeviceManager@{C2M2.Interaction.VR.VRDeviceManager}!informationDisplayTV@{informationDisplayTV}}
-\index{informationDisplayTV@{informationDisplayTV}!C2M2.Interaction.VR.VRDeviceManager@{C2M2.Interaction.VR.VRDeviceManager}}
-\doxysubsubsection{\texorpdfstring{informationDisplayTV}{informationDisplayTV}}
-{\footnotesize\ttfamily Game\+Object C2\+M2.\+Interaction.\+VR.\+VRDevice\+Manager.\+information\+Display\+TV = null}
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_v_r_1_1_v_r_device_manager_ace86020889efbbaafc97c337bddbd83b}\label{class_c2_m2_1_1_interaction_1_1_v_r_1_1_v_r_device_manager_ace86020889efbbaafc97c337bddbd83b}} 
+\index{C2M2.Interaction.VR.VRDeviceManager@{C2M2.Interaction.VR.VRDeviceManager}!desktopControlScheme@{desktopControlScheme}}
+\index{desktopControlScheme@{desktopControlScheme}!C2M2.Interaction.VR.VRDeviceManager@{C2M2.Interaction.VR.VRDeviceManager}}
+\doxysubsubsection{\texorpdfstring{desktopControlScheme}{desktopControlScheme}}
+{\footnotesize\ttfamily Game\+Object C2\+M2.\+Interaction.\+VR.\+VRDevice\+Manager.\+desktop\+Control\+Scheme = null}
 
-\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_v_r_1_1_v_r_device_manager_a9ca38c200de62fcd981b6d45585e9952}\label{class_c2_m2_1_1_interaction_1_1_v_r_1_1_v_r_device_manager_a9ca38c200de62fcd981b6d45585e9952}} 
-\index{C2M2.Interaction.VR.VRDeviceManager@{C2M2.Interaction.VR.VRDeviceManager}!informationOverlay@{informationOverlay}}
-\index{informationOverlay@{informationOverlay}!C2M2.Interaction.VR.VRDeviceManager@{C2M2.Interaction.VR.VRDeviceManager}}
-\doxysubsubsection{\texorpdfstring{informationOverlay}{informationOverlay}}
-{\footnotesize\ttfamily Game\+Object C2\+M2.\+Interaction.\+VR.\+VRDevice\+Manager.\+information\+Overlay = null}
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_v_r_1_1_v_r_device_manager_a14f83489c2cfce12bc87a7f4e4f8a04a}\label{class_c2_m2_1_1_interaction_1_1_v_r_1_1_v_r_device_manager_a14f83489c2cfce12bc87a7f4e4f8a04a}} 
+\index{C2M2.Interaction.VR.VRDeviceManager@{C2M2.Interaction.VR.VRDeviceManager}!switchModeKey@{switchModeKey}}
+\index{switchModeKey@{switchModeKey}!C2M2.Interaction.VR.VRDeviceManager@{C2M2.Interaction.VR.VRDeviceManager}}
+\doxysubsubsection{\texorpdfstring{switchModeKey}{switchModeKey}}
+{\footnotesize\ttfamily readonly Key\+Code C2\+M2.\+Interaction.\+VR.\+VRDevice\+Manager.\+switch\+Mode\+Key = Key\+Code.\+Space\hspace{0.3cm}{\ttfamily [private]}}
 
-\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_v_r_1_1_v_r_device_manager_a5f886ac8b04fb27b5e0cd01624f08351}\label{class_c2_m2_1_1_interaction_1_1_v_r_1_1_v_r_device_manager_a5f886ac8b04fb27b5e0cd01624f08351}} 
-\index{C2M2.Interaction.VR.VRDeviceManager@{C2M2.Interaction.VR.VRDeviceManager}!mouseSignaler@{mouseSignaler}}
-\index{mouseSignaler@{mouseSignaler}!C2M2.Interaction.VR.VRDeviceManager@{C2M2.Interaction.VR.VRDeviceManager}}
-\doxysubsubsection{\texorpdfstring{mouseSignaler}{mouseSignaler}}
-{\footnotesize\ttfamily \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_signaling_1_1_mouse_event_signaler}{Mouse\+Event\+Signaler}} C2\+M2.\+Interaction.\+VR.\+VRDevice\+Manager.\+mouse\+Signaler\hspace{0.3cm}{\ttfamily [private]}}
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_v_r_1_1_v_r_device_manager_a85b47a898bbb1275c45cb2bbfd7ac857}\label{class_c2_m2_1_1_interaction_1_1_v_r_1_1_v_r_device_manager_a85b47a898bbb1275c45cb2bbfd7ac857}} 
+\index{C2M2.Interaction.VR.VRDeviceManager@{C2M2.Interaction.VR.VRDeviceManager}!vrCameras@{vrCameras}}
+\index{vrCameras@{vrCameras}!C2M2.Interaction.VR.VRDeviceManager@{C2M2.Interaction.VR.VRDeviceManager}}
+\doxysubsubsection{\texorpdfstring{vrCameras}{vrCameras}}
+{\footnotesize\ttfamily Camera \mbox{[}$\,$\mbox{]} C2\+M2.\+Interaction.\+VR.\+VRDevice\+Manager.\+vr\+Cameras\hspace{0.3cm}{\ttfamily [private]}}
 
-\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_v_r_1_1_v_r_device_manager_aef696ed62490ef8e2ad12951eb28aa3f}\label{class_c2_m2_1_1_interaction_1_1_v_r_1_1_v_r_device_manager_aef696ed62490ef8e2ad12951eb28aa3f}} 
-\index{C2M2.Interaction.VR.VRDeviceManager@{C2M2.Interaction.VR.VRDeviceManager}!playerController@{playerController}}
-\index{playerController@{playerController}!C2M2.Interaction.VR.VRDeviceManager@{C2M2.Interaction.VR.VRDeviceManager}}
-\doxysubsubsection{\texorpdfstring{playerController}{playerController}}
-{\footnotesize\ttfamily OVRPlayer\+Controller C2\+M2.\+Interaction.\+VR.\+VRDevice\+Manager.\+player\+Controller\hspace{0.3cm}{\ttfamily [private]}}
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_v_r_1_1_v_r_device_manager_aff3d7f12b33d570d3a0634baf4adda95}\label{class_c2_m2_1_1_interaction_1_1_v_r_1_1_v_r_device_manager_aff3d7f12b33d570d3a0634baf4adda95}} 
+\index{C2M2.Interaction.VR.VRDeviceManager@{C2M2.Interaction.VR.VRDeviceManager}!vrController@{vrController}}
+\index{vrController@{vrController}!C2M2.Interaction.VR.VRDeviceManager@{C2M2.Interaction.VR.VRDeviceManager}}
+\doxysubsubsection{\texorpdfstring{vrController}{vrController}}
+{\footnotesize\ttfamily Game\+Object C2\+M2.\+Interaction.\+VR.\+VRDevice\+Manager.\+vr\+Controller\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_v_r_1_1_v_r_device_manager_a09bf2e6730d34f4e94b720d639c6bfdf}\label{class_c2_m2_1_1_interaction_1_1_v_r_1_1_v_r_device_manager_a09bf2e6730d34f4e94b720d639c6bfdf}} 
+\index{C2M2.Interaction.VR.VRDeviceManager@{C2M2.Interaction.VR.VRDeviceManager}!vrControlScheme@{vrControlScheme}}
+\index{vrControlScheme@{vrControlScheme}!C2M2.Interaction.VR.VRDeviceManager@{C2M2.Interaction.VR.VRDeviceManager}}
+\doxysubsubsection{\texorpdfstring{vrControlScheme}{vrControlScheme}}
+{\footnotesize\ttfamily Game\+Object C2\+M2.\+Interaction.\+VR.\+VRDevice\+Manager.\+vr\+Control\+Scheme = null}
 
 
 
 \doxysubsection{Property Documentation}
-\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_v_r_1_1_v_r_device_manager_ad90be7400a1688a2596c06d0c5a3aca3}\label{class_c2_m2_1_1_interaction_1_1_v_r_1_1_v_r_device_manager_ad90be7400a1688a2596c06d0c5a3aca3}} 
-\index{C2M2.Interaction.VR.VRDeviceManager@{C2M2.Interaction.VR.VRDeviceManager}!vrDevice@{vrDevice}}
-\index{vrDevice@{vrDevice}!C2M2.Interaction.VR.VRDeviceManager@{C2M2.Interaction.VR.VRDeviceManager}}
-\doxysubsubsection{\texorpdfstring{vrDevice}{vrDevice}}
-{\footnotesize\ttfamily string C2\+M2.\+Interaction.\+VR.\+VRDevice\+Manager.\+vr\+Device = \char`\"{}null\char`\"{}\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [private set]}}
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_v_r_1_1_v_r_device_manager_a0aad85d8c92a62d2193b96be680cef18}\label{class_c2_m2_1_1_interaction_1_1_v_r_1_1_v_r_device_manager_a0aad85d8c92a62d2193b96be680cef18}} 
+\index{C2M2.Interaction.VR.VRDeviceManager@{C2M2.Interaction.VR.VRDeviceManager}!VRActive@{VRActive}}
+\index{VRActive@{VRActive}!C2M2.Interaction.VR.VRDeviceManager@{C2M2.Interaction.VR.VRDeviceManager}}
+\doxysubsubsection{\texorpdfstring{VRActive}{VRActive}}
+{\footnotesize\ttfamily bool C2\+M2.\+Interaction.\+VR.\+VRDevice\+Manager.\+VRActive = false\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
 
-\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_v_r_1_1_v_r_device_manager_a2de958816ec091c8d79363fb4d5e2b03}\label{class_c2_m2_1_1_interaction_1_1_v_r_1_1_v_r_device_manager_a2de958816ec091c8d79363fb4d5e2b03}} 
-\index{C2M2.Interaction.VR.VRDeviceManager@{C2M2.Interaction.VR.VRDeviceManager}!VrIsActive@{VrIsActive}}
-\index{VrIsActive@{VrIsActive}!C2M2.Interaction.VR.VRDeviceManager@{C2M2.Interaction.VR.VRDeviceManager}}
-\doxysubsubsection{\texorpdfstring{VrIsActive}{VrIsActive}}
-{\footnotesize\ttfamily bool C2\+M2.\+Interaction.\+VR.\+VRDevice\+Manager.\+Vr\+Is\+Active\hspace{0.3cm}{\ttfamily [get]}}
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_v_r_1_1_v_r_device_manager_ace2d06f1c830679643d3aac2c51327dc}\label{class_c2_m2_1_1_interaction_1_1_v_r_1_1_v_r_device_manager_ace2d06f1c830679643d3aac2c51327dc}} 
+\index{C2M2.Interaction.VR.VRDeviceManager@{C2M2.Interaction.VR.VRDeviceManager}!VRDevice@{VRDevice}}
+\index{VRDevice@{VRDevice}!C2M2.Interaction.VR.VRDeviceManager@{C2M2.Interaction.VR.VRDeviceManager}}
+\doxysubsubsection{\texorpdfstring{VRDevice}{VRDevice}}
+{\footnotesize\ttfamily string C2\+M2.\+Interaction.\+VR.\+VRDevice\+Manager.\+VRDevice\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [private set]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_v_r_1_1_v_r_device_manager_ad2bd6123a88bbb16d6b5d607de8e783e}\label{class_c2_m2_1_1_interaction_1_1_v_r_1_1_v_r_device_manager_ad2bd6123a88bbb16d6b5d607de8e783e}} 
+\index{C2M2.Interaction.VR.VRDeviceManager@{C2M2.Interaction.VR.VRDeviceManager}!VRDevicePresent@{VRDevicePresent}}
+\index{VRDevicePresent@{VRDevicePresent}!C2M2.Interaction.VR.VRDeviceManager@{C2M2.Interaction.VR.VRDeviceManager}}
+\doxysubsubsection{\texorpdfstring{VRDevicePresent}{VRDevicePresent}}
+{\footnotesize\ttfamily bool C2\+M2.\+Interaction.\+VR.\+VRDevice\+Manager.\+VRDevice\+Present\hspace{0.3cm}{\ttfamily [get]}}
 
 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-C\+:/\+Users/jaros/\+Desktop/tempvr/virtual-\/reality/\+Assets/\+Scripts/\+C2\+M2/\+Neuronal\+Dynamics/\+Visualization/\+VR/\mbox{\hyperlink{_v_r_device_manager_8cs}{VRDevice\+Manager.\+cs}}\end{DoxyCompactItemize}
+C\+:/\+Users/\+Jacob Wells/\+Desktop/\+C2\+M2/\+Neuro\+VISOR/\+Assets/\+Scripts/\+C2\+M2/\+Interaction/\+VR/\mbox{\hyperlink{_v_r_device_manager_8cs}{VRDevice\+Manager.\+cs}}\end{DoxyCompactItemize}

@@ -5,15 +5,6 @@
 Quick, static methods for finding max, min, and clamped scalar values and arrays  
 
 
-
-
-Collaboration diagram for C2\+M2.\+Utils.\+Math\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=187pt]{d9/de1/class_c2_m2_1_1_utils_1_1_math__coll__graph}
-\end{center}
-\end{figure}
 \doxysubsection*{Static Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
@@ -39,6 +30,8 @@ static float \mbox{\hyperlink{class_c2_m2_1_1_utils_1_1_math_aa21781bec23e0afe1e
 \begin{DoxyCompactList}\small\item\em If value $<$ min, returns min, If min $<$= value $<$= max, returns value, If value $>$ max, returns max \end{DoxyCompactList}\item 
 static double \mbox{\hyperlink{class_c2_m2_1_1_utils_1_1_math_a986508b4e3eb836a1de98bc6d4466e22}{Clamp}} (double value, double min, double max)
 \begin{DoxyCompactList}\small\item\em If value $<$ min, returns min, If min $<$= value $<$= max, returns value, If value $>$ max, returns max \end{DoxyCompactList}\item 
+static Vector3 \mbox{\hyperlink{class_c2_m2_1_1_utils_1_1_math_a6532760e304c256b7e818b6402554a8f}{Clamp}} (this Vector3 value, Vector3 min, Vector3 max)
+\begin{DoxyCompactList}\small\item\em Clamp a Vector3 betwen a min and a max Vector3 \end{DoxyCompactList}\item 
 static int \mbox{\hyperlink{class_c2_m2_1_1_utils_1_1_math_a36ec8197dd811e50d6b82d33b0149674}{Max}} (this int\mbox{[}$\,$\mbox{]} array)
 \item 
 static float \mbox{\hyperlink{class_c2_m2_1_1_utils_1_1_math_abbf840c39002917f300b6b256d987325}{Max}} (this float\mbox{[}$\,$\mbox{]} array)
@@ -110,6 +103,10 @@ static List$<$ int $>$ \mbox{\hyperlink{class_c2_m2_1_1_utils_1_1_math_a928d21bc
 static List$<$ float $>$ \mbox{\hyperlink{class_c2_m2_1_1_utils_1_1_math_ab6f69979bee5006dbc7c6dbe2e51b59c}{Abs}} (this List$<$ float $>$ list)
 \item 
 static List$<$ double $>$ \mbox{\hyperlink{class_c2_m2_1_1_utils_1_1_math_a9e03ea1595caa0d63891ee8f82068dd6}{Abs}} (this List$<$ double $>$ list)
+\item 
+static float\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_c2_m2_1_1_utils_1_1_math_aaef607b7efa3eb1d9cb26c71dca324eb}{Rescale}} (this float\mbox{[}$\,$\mbox{]} array, float new\+Min, float new\+Max, float old\+Min, float old\+Max)
+\item 
+static List$<$ float $>$ \mbox{\hyperlink{class_c2_m2_1_1_utils_1_1_math_a07782645b436321a20d7deebf721ebd5}{Rescale}} (this List$<$ float $>$ array, float new\+Min, float new\+Max, float old\+Min, float old\+Max)
 \item 
 static Vector3 \mbox{\hyperlink{class_c2_m2_1_1_utils_1_1_math_ae939d565a3228e9705439b79cacc3d1c}{Dot}} (this Vector3 a, Vector3 b)
 \item 
@@ -198,7 +195,7 @@ Should vastly outperform System.\+Linq methods
 \mbox{\Hypertarget{class_c2_m2_1_1_utils_1_1_math_a986508b4e3eb836a1de98bc6d4466e22}\label{class_c2_m2_1_1_utils_1_1_math_a986508b4e3eb836a1de98bc6d4466e22}} 
 \index{C2M2.Utils.Math@{C2M2.Utils.Math}!Clamp@{Clamp}}
 \index{Clamp@{Clamp}!C2M2.Utils.Math@{C2M2.Utils.Math}}
-\doxysubsubsection{\texorpdfstring{Clamp()}{Clamp()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+\doxysubsubsection{\texorpdfstring{Clamp()}{Clamp()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
 {\footnotesize\ttfamily static double C2\+M2.\+Utils.\+Math.\+Clamp (\begin{DoxyParamCaption}\item[{double}]{value,  }\item[{double}]{min,  }\item[{double}]{max }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
 
@@ -208,7 +205,7 @@ If value $<$ min, returns min, If min $<$= value $<$= max, returns value, If val
 \mbox{\Hypertarget{class_c2_m2_1_1_utils_1_1_math_aa21781bec23e0afe1e3034c7fd66ba26}\label{class_c2_m2_1_1_utils_1_1_math_aa21781bec23e0afe1e3034c7fd66ba26}} 
 \index{C2M2.Utils.Math@{C2M2.Utils.Math}!Clamp@{Clamp}}
 \index{Clamp@{Clamp}!C2M2.Utils.Math@{C2M2.Utils.Math}}
-\doxysubsubsection{\texorpdfstring{Clamp()}{Clamp()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+\doxysubsubsection{\texorpdfstring{Clamp()}{Clamp()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
 {\footnotesize\ttfamily static float C2\+M2.\+Utils.\+Math.\+Clamp (\begin{DoxyParamCaption}\item[{float}]{value,  }\item[{float}]{min,  }\item[{float}]{max }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
 
@@ -218,12 +215,22 @@ If value $<$ min, returns min, If min $<$= value $<$= max, returns value, If val
 \mbox{\Hypertarget{class_c2_m2_1_1_utils_1_1_math_a805a23bfab56ce715d7a92f700225077}\label{class_c2_m2_1_1_utils_1_1_math_a805a23bfab56ce715d7a92f700225077}} 
 \index{C2M2.Utils.Math@{C2M2.Utils.Math}!Clamp@{Clamp}}
 \index{Clamp@{Clamp}!C2M2.Utils.Math@{C2M2.Utils.Math}}
-\doxysubsubsection{\texorpdfstring{Clamp()}{Clamp()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+\doxysubsubsection{\texorpdfstring{Clamp()}{Clamp()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
 {\footnotesize\ttfamily static int C2\+M2.\+Utils.\+Math.\+Clamp (\begin{DoxyParamCaption}\item[{int}]{value,  }\item[{int}]{min,  }\item[{int}]{max }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
 
 
 If value $<$ min, returns min, If min $<$= value $<$= max, returns value, If value $>$ max, returns max 
+
+\mbox{\Hypertarget{class_c2_m2_1_1_utils_1_1_math_a6532760e304c256b7e818b6402554a8f}\label{class_c2_m2_1_1_utils_1_1_math_a6532760e304c256b7e818b6402554a8f}} 
+\index{C2M2.Utils.Math@{C2M2.Utils.Math}!Clamp@{Clamp}}
+\index{Clamp@{Clamp}!C2M2.Utils.Math@{C2M2.Utils.Math}}
+\doxysubsubsection{\texorpdfstring{Clamp()}{Clamp()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily static Vector3 C2\+M2.\+Utils.\+Math.\+Clamp (\begin{DoxyParamCaption}\item[{this Vector3}]{value,  }\item[{Vector3}]{min,  }\item[{Vector3}]{max }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Clamp a Vector3 betwen a min and a max Vector3 
 
 \mbox{\Hypertarget{class_c2_m2_1_1_utils_1_1_math_a6d1af1b3355bab31c4162905ae94dcf1}\label{class_c2_m2_1_1_utils_1_1_math_a6d1af1b3355bab31c4162905ae94dcf1}} 
 \index{C2M2.Utils.Math@{C2M2.Utils.Math}!CompareToLinq@{CompareToLinq}}
@@ -361,6 +368,18 @@ Run each function in this class and compare the performance to System.\+Linq\tex
 \doxysubsubsection{\texorpdfstring{Min()}{Min()}\hspace{0.1cm}{\footnotesize\ttfamily [10/10]}}
 {\footnotesize\ttfamily static float C2\+M2.\+Utils.\+Math.\+Min (\begin{DoxyParamCaption}\item[{this Vector3}]{a }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
+\mbox{\Hypertarget{class_c2_m2_1_1_utils_1_1_math_aaef607b7efa3eb1d9cb26c71dca324eb}\label{class_c2_m2_1_1_utils_1_1_math_aaef607b7efa3eb1d9cb26c71dca324eb}} 
+\index{C2M2.Utils.Math@{C2M2.Utils.Math}!Rescale@{Rescale}}
+\index{Rescale@{Rescale}!C2M2.Utils.Math@{C2M2.Utils.Math}}
+\doxysubsubsection{\texorpdfstring{Rescale()}{Rescale()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily static float \mbox{[}$\,$\mbox{]} C2\+M2.\+Utils.\+Math.\+Rescale (\begin{DoxyParamCaption}\item[{this float\mbox{[}$\,$\mbox{]}}]{array,  }\item[{float}]{new\+Min,  }\item[{float}]{new\+Max,  }\item[{float}]{old\+Min,  }\item[{float}]{old\+Max }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_utils_1_1_math_a07782645b436321a20d7deebf721ebd5}\label{class_c2_m2_1_1_utils_1_1_math_a07782645b436321a20d7deebf721ebd5}} 
+\index{C2M2.Utils.Math@{C2M2.Utils.Math}!Rescale@{Rescale}}
+\index{Rescale@{Rescale}!C2M2.Utils.Math@{C2M2.Utils.Math}}
+\doxysubsubsection{\texorpdfstring{Rescale()}{Rescale()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily static List$<$float$>$ C2\+M2.\+Utils.\+Math.\+Rescale (\begin{DoxyParamCaption}\item[{this List$<$ float $>$}]{array,  }\item[{float}]{new\+Min,  }\item[{float}]{new\+Max,  }\item[{float}]{old\+Min,  }\item[{float}]{old\+Max }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
 \mbox{\Hypertarget{class_c2_m2_1_1_utils_1_1_math_ac628fbe7bf4d0b6ff6f9bd21e687644b}\label{class_c2_m2_1_1_utils_1_1_math_ac628fbe7bf4d0b6ff6f9bd21e687644b}} 
 \index{C2M2.Utils.Math@{C2M2.Utils.Math}!StdDev@{StdDev}}
 \index{StdDev@{StdDev}!C2M2.Utils.Math@{C2M2.Utils.Math}}
@@ -437,4 +456,4 @@ Run each function in this class and compare the performance to System.\+Linq\tex
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-C\+:/\+Users/jaros/\+Desktop/tempvr/virtual-\/reality/\+Assets/\+Scripts/\+C2\+M2/\+Utils/\mbox{\hyperlink{_math_8cs}{Math.\+cs}}\end{DoxyCompactItemize}
+C\+:/\+Users/\+Jacob Wells/\+Desktop/\+C2\+M2/\+Neuro\+VISOR/\+Assets/\+Scripts/\+C2\+M2/\+Utils/\+Extensions/\mbox{\hyperlink{_math_8cs}{Math.\+cs}}\end{DoxyCompactItemize}

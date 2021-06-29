@@ -1,0 +1,155 @@
+\hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_n_d_line_graph}{}\doxysection{C2\+M2.\+Neuronal\+Dynamics.\+Interaction.\+UI.\+NDLine\+Graph Class Reference}
+\label{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_n_d_line_graph}\index{C2M2.NeuronalDynamics.Interaction.UI.NDLineGraph@{C2M2.NeuronalDynamics.Interaction.UI.NDLineGraph}}
+
+
+Inherits \mbox{\hyperlink{class_c2_m2_1_1_visualization_1_1_line_grapher}{C2\+M2.\+Visualization.\+Line\+Grapher}}.
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+override void \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_n_d_line_graph_a193805b172355696c5c2a904a02734ee}{Add\+Value}} (float x, float y)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_n_d_graph_manager}{NDGraph\+Manager}} \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_n_d_line_graph_a434d17f07b9c988b4bf2912c5b1e73d8}{manager}} = null
+\item 
+int \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_n_d_line_graph_affe75b12afcab9bfa2e2c8bfc0c72370}{vert}} = -\/1
+\item 
+bool \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_n_d_line_graph_a4a185577bf4905f5d1ae351adaee9ea3}{obey\+Parent\+Scale}} = false
+\begin{DoxyCompactList}\small\item\em If true, this object will scale with parent object as per usual. If false, this object will maintain worldspace size as parent scales \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation}{NDSimulation}} \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_n_d_line_graph_a5cd1b291934790d8867becb3b27159ee}{Sim}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+Vector3 \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_n_d_line_graph_a04704f1f5687989e54b15a8078d6cccb}{Vert\+Pos}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+Vector3 \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_n_d_line_graph_aa3ff9db9eb3562f7231c8578245d6ed7}{Graph\+Size}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+Vector3 \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_n_d_line_graph_ab341693136328ffb78312090ddb94425}{Sim\+Local\+Scale}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_n_d_line_graph_a05ce2a3bd7c23d54a12a7135d6f4bb20}{Awake}} ()
+\item 
+void \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_n_d_line_graph_a6db5130833e3721f05e18a29d391a480}{Start}} ()
+\item 
+void \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_n_d_line_graph_a75ca85abff25e7c96636f79c13db06d8}{Update}} ()
+\item 
+void \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_n_d_line_graph_a6d179e9f94ab4bdb29445a08373d0087}{On\+Destroy}} ()
+\item 
+void \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_n_d_line_graph_ae9b15a89b87fa3590e97362d8f1caf34}{Update\+Size}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+new Rect\+Transform \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_n_d_line_graph_a1026cd0cdf3fd11169dc1e3e5a8dd12d}{rt}} = null
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_n_d_line_graph_a193805b172355696c5c2a904a02734ee}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_n_d_line_graph_a193805b172355696c5c2a904a02734ee}} 
+\index{C2M2.NeuronalDynamics.Interaction.UI.NDLineGraph@{C2M2.NeuronalDynamics.Interaction.UI.NDLineGraph}!AddValue@{AddValue}}
+\index{AddValue@{AddValue}!C2M2.NeuronalDynamics.Interaction.UI.NDLineGraph@{C2M2.NeuronalDynamics.Interaction.UI.NDLineGraph}}
+\doxysubsubsection{\texorpdfstring{AddValue()}{AddValue()}}
+{\footnotesize\ttfamily override void C2\+M2.\+Neuronal\+Dynamics.\+Interaction.\+UI.\+NDLine\+Graph.\+Add\+Value (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_c2_m2_1_1_visualization_1_1_line_grapher_a622c73b015416198a168ab1902617e32}{C2\+M2.\+Visualization.\+Line\+Grapher}}.
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_n_d_line_graph_a05ce2a3bd7c23d54a12a7135d6f4bb20}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_n_d_line_graph_a05ce2a3bd7c23d54a12a7135d6f4bb20}} 
+\index{C2M2.NeuronalDynamics.Interaction.UI.NDLineGraph@{C2M2.NeuronalDynamics.Interaction.UI.NDLineGraph}!Awake@{Awake}}
+\index{Awake@{Awake}!C2M2.NeuronalDynamics.Interaction.UI.NDLineGraph@{C2M2.NeuronalDynamics.Interaction.UI.NDLineGraph}}
+\doxysubsubsection{\texorpdfstring{Awake()}{Awake()}}
+{\footnotesize\ttfamily void C2\+M2.\+Neuronal\+Dynamics.\+Interaction.\+UI.\+NDLine\+Graph.\+Awake (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_n_d_line_graph_a6d179e9f94ab4bdb29445a08373d0087}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_n_d_line_graph_a6d179e9f94ab4bdb29445a08373d0087}} 
+\index{C2M2.NeuronalDynamics.Interaction.UI.NDLineGraph@{C2M2.NeuronalDynamics.Interaction.UI.NDLineGraph}!OnDestroy@{OnDestroy}}
+\index{OnDestroy@{OnDestroy}!C2M2.NeuronalDynamics.Interaction.UI.NDLineGraph@{C2M2.NeuronalDynamics.Interaction.UI.NDLineGraph}}
+\doxysubsubsection{\texorpdfstring{OnDestroy()}{OnDestroy()}}
+{\footnotesize\ttfamily void C2\+M2.\+Neuronal\+Dynamics.\+Interaction.\+UI.\+NDLine\+Graph.\+On\+Destroy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_n_d_line_graph_a6db5130833e3721f05e18a29d391a480}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_n_d_line_graph_a6db5130833e3721f05e18a29d391a480}} 
+\index{C2M2.NeuronalDynamics.Interaction.UI.NDLineGraph@{C2M2.NeuronalDynamics.Interaction.UI.NDLineGraph}!Start@{Start}}
+\index{Start@{Start}!C2M2.NeuronalDynamics.Interaction.UI.NDLineGraph@{C2M2.NeuronalDynamics.Interaction.UI.NDLineGraph}}
+\doxysubsubsection{\texorpdfstring{Start()}{Start()}}
+{\footnotesize\ttfamily void C2\+M2.\+Neuronal\+Dynamics.\+Interaction.\+UI.\+NDLine\+Graph.\+Start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_n_d_line_graph_a75ca85abff25e7c96636f79c13db06d8}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_n_d_line_graph_a75ca85abff25e7c96636f79c13db06d8}} 
+\index{C2M2.NeuronalDynamics.Interaction.UI.NDLineGraph@{C2M2.NeuronalDynamics.Interaction.UI.NDLineGraph}!Update@{Update}}
+\index{Update@{Update}!C2M2.NeuronalDynamics.Interaction.UI.NDLineGraph@{C2M2.NeuronalDynamics.Interaction.UI.NDLineGraph}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void C2\+M2.\+Neuronal\+Dynamics.\+Interaction.\+UI.\+NDLine\+Graph.\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_n_d_line_graph_ae9b15a89b87fa3590e97362d8f1caf34}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_n_d_line_graph_ae9b15a89b87fa3590e97362d8f1caf34}} 
+\index{C2M2.NeuronalDynamics.Interaction.UI.NDLineGraph@{C2M2.NeuronalDynamics.Interaction.UI.NDLineGraph}!UpdateSize@{UpdateSize}}
+\index{UpdateSize@{UpdateSize}!C2M2.NeuronalDynamics.Interaction.UI.NDLineGraph@{C2M2.NeuronalDynamics.Interaction.UI.NDLineGraph}}
+\doxysubsubsection{\texorpdfstring{UpdateSize()}{UpdateSize()}}
+{\footnotesize\ttfamily void C2\+M2.\+Neuronal\+Dynamics.\+Interaction.\+UI.\+NDLine\+Graph.\+Update\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_n_d_line_graph_a434d17f07b9c988b4bf2912c5b1e73d8}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_n_d_line_graph_a434d17f07b9c988b4bf2912c5b1e73d8}} 
+\index{C2M2.NeuronalDynamics.Interaction.UI.NDLineGraph@{C2M2.NeuronalDynamics.Interaction.UI.NDLineGraph}!manager@{manager}}
+\index{manager@{manager}!C2M2.NeuronalDynamics.Interaction.UI.NDLineGraph@{C2M2.NeuronalDynamics.Interaction.UI.NDLineGraph}}
+\doxysubsubsection{\texorpdfstring{manager}{manager}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_n_d_graph_manager}{NDGraph\+Manager}} C2\+M2.\+Neuronal\+Dynamics.\+Interaction.\+UI.\+NDLine\+Graph.\+manager = null}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_n_d_line_graph_a4a185577bf4905f5d1ae351adaee9ea3}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_n_d_line_graph_a4a185577bf4905f5d1ae351adaee9ea3}} 
+\index{C2M2.NeuronalDynamics.Interaction.UI.NDLineGraph@{C2M2.NeuronalDynamics.Interaction.UI.NDLineGraph}!obeyParentScale@{obeyParentScale}}
+\index{obeyParentScale@{obeyParentScale}!C2M2.NeuronalDynamics.Interaction.UI.NDLineGraph@{C2M2.NeuronalDynamics.Interaction.UI.NDLineGraph}}
+\doxysubsubsection{\texorpdfstring{obeyParentScale}{obeyParentScale}}
+{\footnotesize\ttfamily bool C2\+M2.\+Neuronal\+Dynamics.\+Interaction.\+UI.\+NDLine\+Graph.\+obey\+Parent\+Scale = false}
+
+
+
+If true, this object will scale with parent object as per usual. If false, this object will maintain worldspace size as parent scales 
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_n_d_line_graph_a1026cd0cdf3fd11169dc1e3e5a8dd12d}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_n_d_line_graph_a1026cd0cdf3fd11169dc1e3e5a8dd12d}} 
+\index{C2M2.NeuronalDynamics.Interaction.UI.NDLineGraph@{C2M2.NeuronalDynamics.Interaction.UI.NDLineGraph}!rt@{rt}}
+\index{rt@{rt}!C2M2.NeuronalDynamics.Interaction.UI.NDLineGraph@{C2M2.NeuronalDynamics.Interaction.UI.NDLineGraph}}
+\doxysubsubsection{\texorpdfstring{rt}{rt}}
+{\footnotesize\ttfamily new Rect\+Transform C2\+M2.\+Neuronal\+Dynamics.\+Interaction.\+UI.\+NDLine\+Graph.\+rt = null\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_n_d_line_graph_affe75b12afcab9bfa2e2c8bfc0c72370}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_n_d_line_graph_affe75b12afcab9bfa2e2c8bfc0c72370}} 
+\index{C2M2.NeuronalDynamics.Interaction.UI.NDLineGraph@{C2M2.NeuronalDynamics.Interaction.UI.NDLineGraph}!vert@{vert}}
+\index{vert@{vert}!C2M2.NeuronalDynamics.Interaction.UI.NDLineGraph@{C2M2.NeuronalDynamics.Interaction.UI.NDLineGraph}}
+\doxysubsubsection{\texorpdfstring{vert}{vert}}
+{\footnotesize\ttfamily int C2\+M2.\+Neuronal\+Dynamics.\+Interaction.\+UI.\+NDLine\+Graph.\+vert = -\/1}
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_n_d_line_graph_aa3ff9db9eb3562f7231c8578245d6ed7}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_n_d_line_graph_aa3ff9db9eb3562f7231c8578245d6ed7}} 
+\index{C2M2.NeuronalDynamics.Interaction.UI.NDLineGraph@{C2M2.NeuronalDynamics.Interaction.UI.NDLineGraph}!GraphSize@{GraphSize}}
+\index{GraphSize@{GraphSize}!C2M2.NeuronalDynamics.Interaction.UI.NDLineGraph@{C2M2.NeuronalDynamics.Interaction.UI.NDLineGraph}}
+\doxysubsubsection{\texorpdfstring{GraphSize}{GraphSize}}
+{\footnotesize\ttfamily Vector3 C2\+M2.\+Neuronal\+Dynamics.\+Interaction.\+UI.\+NDLine\+Graph.\+Graph\+Size\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_n_d_line_graph_a5cd1b291934790d8867becb3b27159ee}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_n_d_line_graph_a5cd1b291934790d8867becb3b27159ee}} 
+\index{C2M2.NeuronalDynamics.Interaction.UI.NDLineGraph@{C2M2.NeuronalDynamics.Interaction.UI.NDLineGraph}!Sim@{Sim}}
+\index{Sim@{Sim}!C2M2.NeuronalDynamics.Interaction.UI.NDLineGraph@{C2M2.NeuronalDynamics.Interaction.UI.NDLineGraph}}
+\doxysubsubsection{\texorpdfstring{Sim}{Sim}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation}{NDSimulation}} C2\+M2.\+Neuronal\+Dynamics.\+Interaction.\+UI.\+NDLine\+Graph.\+Sim\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_n_d_line_graph_ab341693136328ffb78312090ddb94425}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_n_d_line_graph_ab341693136328ffb78312090ddb94425}} 
+\index{C2M2.NeuronalDynamics.Interaction.UI.NDLineGraph@{C2M2.NeuronalDynamics.Interaction.UI.NDLineGraph}!SimLocalScale@{SimLocalScale}}
+\index{SimLocalScale@{SimLocalScale}!C2M2.NeuronalDynamics.Interaction.UI.NDLineGraph@{C2M2.NeuronalDynamics.Interaction.UI.NDLineGraph}}
+\doxysubsubsection{\texorpdfstring{SimLocalScale}{SimLocalScale}}
+{\footnotesize\ttfamily Vector3 C2\+M2.\+Neuronal\+Dynamics.\+Interaction.\+UI.\+NDLine\+Graph.\+Sim\+Local\+Scale\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_n_d_line_graph_a04704f1f5687989e54b15a8078d6cccb}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_n_d_line_graph_a04704f1f5687989e54b15a8078d6cccb}} 
+\index{C2M2.NeuronalDynamics.Interaction.UI.NDLineGraph@{C2M2.NeuronalDynamics.Interaction.UI.NDLineGraph}!VertPos@{VertPos}}
+\index{VertPos@{VertPos}!C2M2.NeuronalDynamics.Interaction.UI.NDLineGraph@{C2M2.NeuronalDynamics.Interaction.UI.NDLineGraph}}
+\doxysubsubsection{\texorpdfstring{VertPos}{VertPos}}
+{\footnotesize\ttfamily Vector3 C2\+M2.\+Neuronal\+Dynamics.\+Interaction.\+UI.\+NDLine\+Graph.\+Vert\+Pos\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Jacob Wells/\+Desktop/\+C2\+M2/\+Neuro\+VISOR/\+Assets/\+Scripts/\+C2\+M2/\+Neuronal\+Dynamics/\+Interaction/\+UI/\mbox{\hyperlink{_n_d_line_graph_8cs}{NDLine\+Graph.\+cs}}\end{DoxyCompactItemize}

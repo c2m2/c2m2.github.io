@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>virtual-reality: C2M2.NeuronalDynamics.Simulation.SparseSolverTestv1 Class Reference</title>
+<title>Neuro-VISOR: C2M2.NeuronalDynamics.Simulation.SparseSolverTestv1 Class Reference</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -33,8 +33,8 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="../../c2m2+Temple@75px.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">virtual-reality
-   &#160;<span id="projectnumber">2020.5</span>
+   <div id="projectname">Neuro-VISOR
+   &#160;<span id="projectnumber">0.2.0</span>
    </div>
    <div id="projectbrief">Visualize and interact with computational simulations using a virtual reality interface</div>
   </td>
@@ -96,7 +96,6 @@ $(document).ready(function(){initNavTree('d2/df3/class_c2_m2_1_1_neuronal_dynami
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
-<a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="#pri-static-methods">Static Private Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="../../d7/d2d/class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_sparse_solver_testv1-members.html">List of all members</a>  </div>
@@ -107,26 +106,11 @@ $(document).ready(function(){initNavTree('d2/df3/class_c2_m2_1_1_neuronal_dynami
 
 <p>This is the sparse solver class for solving the Hodgkin-Huxley equations for the propagation of action potentials. Below are the HH equations this is a system of partial differential equations (PDE), the first equation is for the membrane potential (voltage) it is time spatially dependent and the remaining equations are the ODE equations for the state variables n,m,h (these are unitless). The system is non-trivial in that the PDE equation on Voltage is coupled to the ODE equations using n,m,h and these ODE equations are also non-linear.  
  <a href="../../d2/df3/class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_sparse_solver_testv1.html#details">More...</a></p>
-<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-0-trigger" src="../../closed.png" alt="+"/> Inheritance diagram for C2M2.NeuronalDynamics.Simulation.SparseSolverTestv1:</div>
-<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../d9/d77/class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_sparse_solver_testv1__inherit__graph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
-</div>
-<div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-1-trigger" src="../../closed.png" alt="+"/> Collaboration diagram for C2M2.NeuronalDynamics.Simulation.SparseSolverTestv1:</div>
-<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../df/d36/class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_sparse_solver_testv1__coll__graph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
-</div>
+
+<p>Inherits <a class="el" href="../../d7/d92/class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation.html">C2M2.NeuronalDynamics.Simulation.NDSimulation</a>.</p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ad04d347e86b0fc505d915a78e32605ce"><td class="memItemLeft" align="right" valign="top">override float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/df3/class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_sparse_solver_testv1.html#ad04d347e86b0fc505d915a78e32605ce">GetSimulationTime</a> ()</td></tr>
-<tr class="memdesc:ad04d347e86b0fc505d915a78e32605ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">This sends the current time to the simulation timer Carefully notice that it has to be multiplied by 1000, this is because the solver is in MKS and the simulation timer object uses [ms]!  <a href="../../d2/df3/class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_sparse_solver_testv1.html#ad04d347e86b0fc505d915a78e32605ce">More...</a><br /></td></tr>
-<tr class="separator:ad04d347e86b0fc505d915a78e32605ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af8fa02f8261090f67c386564d2912c14"><td class="memItemLeft" align="right" valign="top">override double[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/df3/class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_sparse_solver_testv1.html#af8fa02f8261090f67c386564d2912c14">Get1DValues</a> ()</td></tr>
 <tr class="memdesc:af8fa02f8261090f67c386564d2912c14"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send simulation 1D values, this send the current voltage after the solve runs 1 iteration it passes <code>curVals</code>  <a href="../../d2/df3/class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_sparse_solver_testv1.html#af8fa02f8261090f67c386564d2912c14">More...</a><br /></td></tr>
 <tr class="separator:af8fa02f8261090f67c386564d2912c14"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -143,129 +127,174 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:ac9581ed259f09797daee53f6de5eca58 inherit pub_methods_class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation"><td class="mdescLeft">&#160;</td><td class="mdescRight">Translate 3D vertex values to 1D values, and pass them downwards for interaction  <a href="../../d7/d92/class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation.html#ac9581ed259f09797daee53f6de5eca58">More...</a><br /></td></tr>
 <tr class="separator:ac9581ed259f09797daee53f6de5eca58 inherit pub_methods_class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aca7a4fa562eafea1c729881b8f69330e inherit pub_methods_class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d92/class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation.html#aca7a4fa562eafea1c729881b8f69330e">SetValues</a> (Tuple&lt; int, double &gt;[] newValues)</td></tr>
-<tr class="memdesc:aca7a4fa562eafea1c729881b8f69330e inherit pub_methods_class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation"><td class="mdescLeft">&#160;</td><td class="mdescRight">Translate 3D vertex values to 1D values, and pass them downwards for interaction  <a href="../../d7/d92/class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation.html#aca7a4fa562eafea1c729881b8f69330e">More...</a><br /></td></tr>
+<tr class="memdesc:aca7a4fa562eafea1c729881b8f69330e inherit pub_methods_class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation"><td class="mdescLeft">&#160;</td><td class="mdescRight">Translate 3D vertex values to 1D values, and store the values to be applied to simulation values  <a href="../../d7/d92/class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation.html#aca7a4fa562eafea1c729881b8f69330e">More...</a><br /></td></tr>
 <tr class="separator:aca7a4fa562eafea1c729881b8f69330e inherit pub_methods_class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a59cc371829994a0af610df4ccb4c3648 inherit pub_methods_class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d92/class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation.html#a59cc371829994a0af610df4ccb4c3648">SwitchColliderMesh</a> (double inflation)</td></tr>
-<tr class="separator:a59cc371829994a0af610df4ccb4c3648 inherit pub_methods_class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a564b5b570b31e8d6b1242cbdbc216e31 inherit pub_methods_class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d92/class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation.html#a564b5b570b31e8d6b1242cbdbc216e31">SwitchMesh</a> (double inflation)</td></tr>
-<tr class="separator:a564b5b570b31e8d6b1242cbdbc216e31 inherit pub_methods_class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af21c264392b9b0eacec393b6dbaeb918 inherit pub_methods_class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d92/class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation.html#af21c264392b9b0eacec393b6dbaeb918">SwitchVisualMesh</a> (double inflation)</td></tr>
+<tr class="separator:af21c264392b9b0eacec393b6dbaeb918 inherit pub_methods_class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7315ee21ed48fef0cc166c7a5beab57a inherit pub_methods_class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d92/class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation.html#a7315ee21ed48fef0cc166c7a5beab57a">GetNearestPoint</a> (RaycastHit hit)</td></tr>
+<tr class="separator:a7315ee21ed48fef0cc166c7a5beab57a inherit pub_methods_class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_class_c2_m2_1_1_simulation_1_1_mesh_simulation"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_c2_m2_1_1_simulation_1_1_mesh_simulation')"><img src="../../closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="../../d6/d2d/class_c2_m2_1_1_simulation_1_1_mesh_simulation.html">C2M2.Simulation.MeshSimulation</a></td></tr>
+<tr class="memitem:aad8e2c839ef8ddf12015e3dfd1821f7d inherit pub_methods_class_c2_m2_1_1_simulation_1_1_mesh_simulation"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d2d/class_c2_m2_1_1_simulation_1_1_mesh_simulation.html#aad8e2c839ef8ddf12015e3dfd1821f7d">ShiftRaycastValue</a> ()</td></tr>
+<tr class="separator:aad8e2c839ef8ddf12015e3dfd1821f7d inherit pub_methods_class_c2_m2_1_1_simulation_1_1_mesh_simulation"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0864a7cfd642b27f3523c6fc4a009e6d inherit pub_methods_class_c2_m2_1_1_simulation_1_1_mesh_simulation"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d2d/class_c2_m2_1_1_simulation_1_1_mesh_simulation.html#a0864a7cfd642b27f3523c6fc4a009e6d">CloseRuler</a> ()</td></tr>
+<tr class="separator:a0864a7cfd642b27f3523c6fc4a009e6d inherit pub_methods_class_c2_m2_1_1_simulation_1_1_mesh_simulation"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a050d25867a54b9f2f0542d009fc82691 inherit pub_methods_class_c2_m2_1_1_simulation_1_1_mesh_simulation"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d2d/class_c2_m2_1_1_simulation_1_1_mesh_simulation.html#a050d25867a54b9f2f0542d009fc82691">ResetRaycastHits</a> ()</td></tr>
+<tr class="separator:a050d25867a54b9f2f0542d009fc82691 inherit pub_methods_class_c2_m2_1_1_simulation_1_1_mesh_simulation"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_c2_m2_1_1_simulation_1_1_simulation"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_c2_m2_1_1_simulation_1_1_simulation')"><img src="../../closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="../../db/d39/class_c2_m2_1_1_simulation_1_1_simulation.html">C2M2.Simulation.Simulation&lt; double[], Mesh, VRRaycastableMesh, VRGrabbableMesh &gt;</a></td></tr>
 <tr class="memitem:af61cd7e4cdee4fa0d4f1c8813114d5d5 inherit pub_methods_class_c2_m2_1_1_simulation_1_1_simulation"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d39/class_c2_m2_1_1_simulation_1_1_simulation.html#af61cd7e4cdee4fa0d4f1c8813114d5d5">Initialize</a> ()</td></tr>
 <tr class="separator:af61cd7e4cdee4fa0d4f1c8813114d5d5 inherit pub_methods_class_c2_m2_1_1_simulation_1_1_simulation"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4ef6c0492314a02fdfb613b19dd822e1 inherit pub_methods_class_c2_m2_1_1_simulation_1_1_simulation"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d39/class_c2_m2_1_1_simulation_1_1_simulation.html#a4ef6c0492314a02fdfb613b19dd822e1">Update</a> ()</td></tr>
-<tr class="separator:a4ef6c0492314a02fdfb613b19dd822e1 inherit pub_methods_class_c2_m2_1_1_simulation_1_1_simulation"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af805a64a5d51097afe512289b034b3e0 inherit pub_methods_class_c2_m2_1_1_simulation_1_1_simulation"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d39/class_c2_m2_1_1_simulation_1_1_simulation.html#af805a64a5d51097afe512289b034b3e0">FixedUpdate</a> ()</td></tr>
+<tr class="separator:af805a64a5d51097afe512289b034b3e0 inherit pub_methods_class_c2_m2_1_1_simulation_1_1_simulation"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a01838bb0de4821217362271193c7c59a inherit pub_methods_class_c2_m2_1_1_simulation_1_1_simulation"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d39/class_c2_m2_1_1_simulation_1_1_simulation.html#a01838bb0de4821217362271193c7c59a">StartSimulation</a> ()</td></tr>
 <tr class="memdesc:a01838bb0de4821217362271193c7c59a inherit pub_methods_class_c2_m2_1_1_simulation_1_1_simulation"><td class="mdescLeft">&#160;</td><td class="mdescRight">Launch Solve thread  <a href="../../db/d39/class_c2_m2_1_1_simulation_1_1_simulation.html#a01838bb0de4821217362271193c7c59a">More...</a><br /></td></tr>
 <tr class="separator:a01838bb0de4821217362271193c7c59a inherit pub_methods_class_c2_m2_1_1_simulation_1_1_simulation"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b1efc0f4e631e3ad9d5ccdc7d8f78de inherit pub_methods_class_c2_m2_1_1_simulation_1_1_simulation"><td class="memItemLeft" align="right" valign="top">sealed override float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d39/class_c2_m2_1_1_simulation_1_1_simulation.html#a4b1efc0f4e631e3ad9d5ccdc7d8f78de">GetSimulationTime</a> ()</td></tr>
+<tr class="memdesc:a4b1efc0f4e631e3ad9d5ccdc7d8f78de inherit pub_methods_class_c2_m2_1_1_simulation_1_1_simulation"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the current timestep for the simulation  <a href="../../db/d39/class_c2_m2_1_1_simulation_1_1_simulation.html#a4b1efc0f4e631e3ad9d5ccdc7d8f78de">More...</a><br /></td></tr>
+<tr class="separator:a4b1efc0f4e631e3ad9d5ccdc7d8f78de inherit pub_methods_class_c2_m2_1_1_simulation_1_1_simulation"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab0987e2cc68208bca93217b7d9e142ef inherit pub_methods_class_c2_m2_1_1_simulation_1_1_simulation"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d39/class_c2_m2_1_1_simulation_1_1_simulation.html#ab0987e2cc68208bca93217b7d9e142ef">StopSimulation</a> ()</td></tr>
 <tr class="memdesc:ab0987e2cc68208bca93217b7d9e142ef inherit pub_methods_class_c2_m2_1_1_simulation_1_1_simulation"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stop current Solve thread  <a href="../../db/d39/class_c2_m2_1_1_simulation_1_1_simulation.html#ab0987e2cc68208bca93217b7d9e142ef">More...</a><br /></td></tr>
 <tr class="separator:ab0987e2cc68208bca93217b7d9e142ef inherit pub_methods_class_c2_m2_1_1_simulation_1_1_simulation"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4366fac38b998772784efc4b91cdd61 inherit pub_methods_class_c2_m2_1_1_simulation_1_1_simulation"><td class="memItemLeft" align="right" valign="top">int[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d39/class_c2_m2_1_1_simulation_1_1_simulation.html#af4366fac38b998772784efc4b91cdd61">HitToVertices</a> (RaycastHit hit)</td></tr>
+<tr class="memdesc:af4366fac38b998772784efc4b91cdd61 inherit pub_methods_class_c2_m2_1_1_simulation_1_1_simulation"><td class="mdescLeft">&#160;</td><td class="mdescRight">Given a raycast hit, find the hit 3D vertices  <a href="../../db/d39/class_c2_m2_1_1_simulation_1_1_simulation.html#af4366fac38b998772784efc4b91cdd61">More...</a><br /></td></tr>
+<tr class="separator:af4366fac38b998772784efc4b91cdd61 inherit pub_methods_class_c2_m2_1_1_simulation_1_1_simulation"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:ae3338ea454a4f5b681daaf668c5bba99"><td class="memItemLeft" align="right" valign="top">static List&lt; CoordinateStorage&lt; double &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/df3/class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_sparse_solver_testv1.html#ae3338ea454a4f5b681daaf668c5bba99">makeSparseStencils</a> (<a class="el" href="../../da/df6/class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_cell.html">NeuronCell</a> myCell, double <a class="el" href="../../d2/df3/class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_sparse_solver_testv1.html#aeeae05f2d873e57bebf257aa91ac0f29">res</a>, double <a class="el" href="../../d2/df3/class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_sparse_solver_testv1.html#a1165385fda9531ac642f499d747c4cbc">cap</a>, double <a class="el" href="../../d2/df3/class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_sparse_solver_testv1.html#adceb698b149bfd0e68b6ae904aa5e17a">k</a>)</td></tr>
-<tr class="memdesc:ae3338ea454a4f5b681daaf668c5bba99"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is for constructing the lhs and rhs of system matrix <br  />
-This will construct a HINES matrix (symmetric), it should be tridiagonal with some off diagonal entries corresponding to a branch location in the neuron graph <br  />
-The entries are defined by the following:  <a href="../../d2/df3/class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_sparse_solver_testv1.html#ae3338ea454a4f5b681daaf668c5bba99">More...</a><br /></td></tr>
-<tr class="separator:ae3338ea454a4f5b681daaf668c5bba99"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac82d9df1d6e6353623e0c64e03ab3653"><td class="memItemLeft" align="right" valign="top">static List&lt; CoordinateStorage&lt; double &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/df3/class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_sparse_solver_testv1.html#ac82d9df1d6e6353623e0c64e03ab3653">makeSparseStencils</a> (<a class="el" href="../../da/d36/class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron.html">Neuron</a> myCell, double <a class="el" href="../../d2/df3/class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_sparse_solver_testv1.html#aeeae05f2d873e57bebf257aa91ac0f29">res</a>, double <a class="el" href="../../d2/df3/class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_sparse_solver_testv1.html#a1165385fda9531ac642f499d747c4cbc">cap</a>, double k)</td></tr>
+<tr class="memdesc:ac82d9df1d6e6353623e0c64e03ab3653"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function sets the target time step size, below is the formula for the conduction speed of the action potential (wave speed)  <a href="../../d2/df3/class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_sparse_solver_testv1.html#ac82d9df1d6e6353623e0c64e03ab3653">More...</a><br /></td></tr>
+<tr class="separator:ac82d9df1d6e6353623e0c64e03ab3653"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:a4608f4b390f5523c1e3654620d740019"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/df3/class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_sparse_solver_testv1.html#a4608f4b390f5523c1e3654620d740019">vstart</a> = 0.050</td></tr>
 <tr class="memdesc:a4608f4b390f5523c1e3654620d740019"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is the voltage for the voltage clamp, this is primarily used for when we do the convergence analysis of the code using a soma clamp at 50 [mV], the units for voltage in the solver is [V] that is why <code>vstart</code> is set to 0.05 /summary&gt;  <a href="../../d2/df3/class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_sparse_solver_testv1.html#a4608f4b390f5523c1e3654620d740019">More...</a><br /></td></tr>
 <tr class="separator:a4608f4b390f5523c1e3654620d740019"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5acda23d8923110217b3c29812b437ed"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/df3/class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_sparse_solver_testv1.html#a5acda23d8923110217b3c29812b437ed">endTime</a> = 0.1</td></tr>
-<tr class="memdesc:a5acda23d8923110217b3c29812b437ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">[s] endTime of the simulation. This is the endtime of the simulation which is measured in seconds, this is a parameter that the user can set for now  <a href="../../d2/df3/class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_sparse_solver_testv1.html#a5acda23d8923110217b3c29812b437ed">More...</a><br /></td></tr>
-<tr class="separator:a5acda23d8923110217b3c29812b437ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adceb698b149bfd0e68b6ae904aa5e17a"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/df3/class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_sparse_solver_testv1.html#adceb698b149bfd0e68b6ae904aa5e17a">k</a> = 0.0025 * 1.0E-3</td></tr>
-<tr class="memdesc:adceb698b149bfd0e68b6ae904aa5e17a"><td class="mdescLeft">&#160;</td><td class="mdescRight">User enters the time step size [s], this is the time step size of the simulation, this needs to be chosen carefully as too large of a time step size may cause numerical instability for the solver. Notice that that this is in [s] therefore 0.0025[ms] = 0.0025e-3 [s]  <a href="../../d2/df3/class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_sparse_solver_testv1.html#adceb698b149bfd0e68b6ae904aa5e17a">More...</a><br /></td></tr>
-<tr class="separator:adceb698b149bfd0e68b6ae904aa5e17a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aebdc649c22bd37499064a728900c363c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/df3/class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_sparse_solver_testv1.html#aebdc649c22bd37499064a728900c363c">SomaOn</a> = false</td></tr>
 <tr class="memdesc:aebdc649c22bd37499064a728900c363c"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is for turning the soma on/off, this option is primarily used for testing purposes for the convergence analysis, for a soma clamp experiment  <a href="../../d2/df3/class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_sparse_solver_testv1.html#aebdc649c22bd37499064a728900c363c">More...</a><br /></td></tr>
 <tr class="separator:aebdc649c22bd37499064a728900c363c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_attribs_class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation')"><img src="../../closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="../../d7/d92/class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation.html">C2M2.NeuronalDynamics.Simulation.NDSimulation</a></td></tr>
+<tr class="memitem:abf0c317587c24a0e3be0f0d790e6718d inherit pub_attribs_class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dd/db8/class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_neuron_clamp_manager.html">NeuronClampManager</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d92/class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation.html#abf0c317587c24a0e3be0f0d790e6718d">clampManager</a> = null</td></tr>
+<tr class="separator:abf0c317587c24a0e3be0f0d790e6718d inherit pub_attribs_class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d1cc00b60945fba4faf149f25f616a3 inherit pub_attribs_class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation"><td class="memItemLeft" align="right" valign="top">List&lt; <a class="el" href="../../df/d9e/class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_neuron_clamp.html">NeuronClamp</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d92/class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation.html#a2d1cc00b60945fba4faf149f25f616a3">clamps</a> = new List&lt;<a class="el" href="../../df/d9e/class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_neuron_clamp.html">NeuronClamp</a>&gt;()</td></tr>
+<tr class="separator:a2d1cc00b60945fba4faf149f25f616a3 inherit pub_attribs_class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8c38070cf39ccff11090c2e12eafa46e inherit pub_attribs_class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d92/class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation.html#a8c38070cf39ccff11090c2e12eafa46e">visualize1D</a> = false</td></tr>
 <tr class="separator:a8c38070cf39ccff11090c2e12eafa46e inherit pub_attribs_class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a125182cbbc990615be1e23dd8c96b46e inherit pub_attribs_class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation"><td class="memItemLeft" align="right" valign="top">Color32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d92/class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation.html#a125182cbbc990615be1e23dd8c96b46e">color1D</a> = Color.yellow</td></tr>
 <tr class="separator:a125182cbbc990615be1e23dd8c96b46e inherit pub_attribs_class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2b1452d5c89cdd50730d6d84bc23eadf inherit pub_attribs_class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d92/class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation.html#a2b1452d5c89cdd50730d6d84bc23eadf">lineWidth1D</a> = 0.005f</td></tr>
 <tr class="separator:a2b1452d5c89cdd50730d6d84bc23eadf inherit pub_attribs_class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa5b050eeb5f4ae554fe8e50b71c6c220 inherit pub_attribs_class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation"><td class="memItemLeft" align="right" valign="top">GameObject&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d92/class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation.html#aa5b050eeb5f4ae554fe8e50b71c6c220">infoPanelPrefab</a> = null</td></tr>
+<tr class="separator:aa5b050eeb5f4ae554fe8e50b71c6c220 inherit pub_attribs_class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac982b708d2ee9439c590ce287899be6 inherit pub_attribs_class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation"><td class="memItemLeft" align="right" valign="top">GameObject&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d92/class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation.html#aac982b708d2ee9439c590ce287899be6">controlPanel</a> = null</td></tr>
+<tr class="separator:aac982b708d2ee9439c590ce287899be6 inherit pub_attribs_class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7ec5c7eabb8a9e250379bb8ee9909d88 inherit pub_attribs_class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d92/class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation.html#a7ec5c7eabb8a9e250379bb8ee9909d88">vrnFileName</a> = &quot;test.vrn&quot;</td></tr>
 <tr class="separator:a7ec5c7eabb8a9e250379bb8ee9909d88 inherit pub_attribs_class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8d4dfb1104e7bc51bf3e8bf3ffa5d920 inherit pub_attribs_class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d92/class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation.html#a8d4dfb1104e7bc51bf3e8bf3ffa5d920">hitValue</a> = 55</td></tr>
-<tr class="separator:a8d4dfb1104e7bc51bf3e8bf3ffa5d920 inherit pub_attribs_class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2d1cc00b60945fba4faf149f25f616a3 inherit pub_attribs_class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation"><td class="memItemLeft" align="right" valign="top">List&lt; <a class="el" href="../../df/d9e/class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_neuron_clamp.html">NeuronClamp</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d92/class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation.html#a2d1cc00b60945fba4faf149f25f616a3">clamps</a> = new List&lt;<a class="el" href="../../df/d9e/class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_neuron_clamp.html">NeuronClamp</a>&gt;()</td></tr>
-<tr class="separator:a2d1cc00b60945fba4faf149f25f616a3 inherit pub_attribs_class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a203d506623f157b54e4874f7f6b39926 inherit pub_attribs_class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation"><td class="memItemLeft" align="right" valign="top">double[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d92/class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation.html#a203d506623f157b54e4874f7f6b39926">vals1D</a> = null</td></tr>
+<tr class="separator:a203d506623f157b54e4874f7f6b39926 inherit pub_attribs_class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_attribs_class_c2_m2_1_1_simulation_1_1_mesh_simulation"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_class_c2_m2_1_1_simulation_1_1_mesh_simulation')"><img src="../../closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="../../d6/d2d/class_c2_m2_1_1_simulation_1_1_mesh_simulation.html">C2M2.Simulation.MeshSimulation</a></td></tr>
 <tr class="memitem:ad3adb035d09cf783746e4c2fb8adfa72 inherit pub_attribs_class_c2_m2_1_1_simulation_1_1_mesh_simulation"><td class="memItemLeft" align="right" valign="top">Gradient&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d2d/class_c2_m2_1_1_simulation_1_1_mesh_simulation.html#ad3adb035d09cf783746e4c2fb8adfa72">gradient</a></td></tr>
 <tr class="memdesc:ad3adb035d09cf783746e4c2fb8adfa72 inherit pub_attribs_class_c2_m2_1_1_simulation_1_1_mesh_simulation"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gradient for coloring each surface point based on their scalar values  <a href="../../d6/d2d/class_c2_m2_1_1_simulation_1_1_mesh_simulation.html#ad3adb035d09cf783746e4c2fb8adfa72">More...</a><br /></td></tr>
 <tr class="separator:ad3adb035d09cf783746e4c2fb8adfa72 inherit pub_attribs_class_c2_m2_1_1_simulation_1_1_mesh_simulation"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae13c2d49366901d35245479eca6e3cae inherit pub_attribs_class_c2_m2_1_1_simulation_1_1_mesh_simulation"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../da/d4f/class_c2_m2_1_1_visualization_1_1_l_u_t_gradient.html#a688932d2ef2f3d19dde01be156a525d6">LUTGradient.ExtremaMethod</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d2d/class_c2_m2_1_1_simulation_1_1_mesh_simulation.html#ae13c2d49366901d35245479eca6e3cae">extremaMethod</a> = LUTGradient.ExtremaMethod.GlobalExtrema</td></tr>
-<tr class="separator:ae13c2d49366901d35245479eca6e3cae inherit pub_attribs_class_c2_m2_1_1_simulation_1_1_mesh_simulation"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2afd4e85106b678a85719b9305867ad3 inherit pub_attribs_class_c2_m2_1_1_simulation_1_1_mesh_simulation"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d2d/class_c2_m2_1_1_simulation_1_1_mesh_simulation.html#a2afd4e85106b678a85719b9305867ad3">colorMarkerPrecision</a> = 3</td></tr>
+<tr class="memdesc:a2afd4e85106b678a85719b9305867ad3 inherit pub_attribs_class_c2_m2_1_1_simulation_1_1_mesh_simulation"><td class="mdescLeft">&#160;</td><td class="mdescRight">Alter the precision of the color scale display  <a href="../../d6/d2d/class_c2_m2_1_1_simulation_1_1_mesh_simulation.html#a2afd4e85106b678a85719b9305867ad3">More...</a><br /></td></tr>
+<tr class="separator:a2afd4e85106b678a85719b9305867ad3 inherit pub_attribs_class_c2_m2_1_1_simulation_1_1_mesh_simulation"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7f02b0b7e49b470d4807802c2fd5fcbe inherit pub_attribs_class_c2_m2_1_1_simulation_1_1_mesh_simulation"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d2d/class_c2_m2_1_1_simulation_1_1_mesh_simulation.html#a7f02b0b7e49b470d4807802c2fd5fcbe">globalMax</a> = float.NegativeInfinity</td></tr>
 <tr class="separator:a7f02b0b7e49b470d4807802c2fd5fcbe inherit pub_attribs_class_c2_m2_1_1_simulation_1_1_mesh_simulation"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a60cccaf2ba00a276ccb4553dfea29e3e inherit pub_attribs_class_c2_m2_1_1_simulation_1_1_mesh_simulation"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d2d/class_c2_m2_1_1_simulation_1_1_mesh_simulation.html#a60cccaf2ba00a276ccb4553dfea29e3e">globalMin</a> = float.PositiveInfinity</td></tr>
 <tr class="separator:a60cccaf2ba00a276ccb4553dfea29e3e inherit pub_attribs_class_c2_m2_1_1_simulation_1_1_mesh_simulation"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adadc2dbcc586a6d34e2c9e1ef5cc9c61 inherit pub_attribs_class_c2_m2_1_1_simulation_1_1_mesh_simulation"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d2d/class_c2_m2_1_1_simulation_1_1_mesh_simulation.html#adadc2dbcc586a6d34e2c9e1ef5cc9c61">unit</a> = &quot;mV&quot;</td></tr>
+<tr class="memdesc:adadc2dbcc586a6d34e2c9e1ef5cc9c61 inherit pub_attribs_class_c2_m2_1_1_simulation_1_1_mesh_simulation"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unit display string that can be manually set by the user  <a href="../../d6/d2d/class_c2_m2_1_1_simulation_1_1_mesh_simulation.html#adadc2dbcc586a6d34e2c9e1ef5cc9c61">More...</a><br /></td></tr>
+<tr class="separator:adadc2dbcc586a6d34e2c9e1ef5cc9c61 inherit pub_attribs_class_c2_m2_1_1_simulation_1_1_mesh_simulation"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66aab402140b85091febaf740b0ff54a inherit pub_attribs_class_c2_m2_1_1_simulation_1_1_mesh_simulation"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d2d/class_c2_m2_1_1_simulation_1_1_mesh_simulation.html#a66aab402140b85091febaf740b0ff54a">unitScaler</a> = 1000f</td></tr>
+<tr class="memdesc:a66aab402140b85091febaf740b0ff54a inherit pub_attribs_class_c2_m2_1_1_simulation_1_1_mesh_simulation"><td class="mdescLeft">&#160;</td><td class="mdescRight">Can be used to manually convert Gradient Display values to match unit string  <a href="../../d6/d2d/class_c2_m2_1_1_simulation_1_1_mesh_simulation.html#a66aab402140b85091febaf740b0ff54a">More...</a><br /></td></tr>
+<tr class="separator:a66aab402140b85091febaf740b0ff54a inherit pub_attribs_class_c2_m2_1_1_simulation_1_1_mesh_simulation"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5b11ac127cefaf109a4b1e8917768a3 inherit pub_attribs_class_c2_m2_1_1_simulation_1_1_mesh_simulation"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d2d/class_c2_m2_1_1_simulation_1_1_mesh_simulation.html#af5b11ac127cefaf109a4b1e8917768a3">lengthUnit</a> = &quot;μm&quot;</td></tr>
+<tr class="separator:af5b11ac127cefaf109a4b1e8917768a3 inherit pub_attribs_class_c2_m2_1_1_simulation_1_1_mesh_simulation"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab52e77f5d9475d19d443d39032ddecd0 inherit pub_attribs_class_c2_m2_1_1_simulation_1_1_mesh_simulation"><td class="memItemLeft" align="right" valign="top">Vector3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d2d/class_c2_m2_1_1_simulation_1_1_mesh_simulation.html#ab52e77f5d9475d19d443d39032ddecd0">rulerInitPos</a> = new Vector3(-0.5f, 0.443f, -0.322f)</td></tr>
 <tr class="separator:ab52e77f5d9475d19d443d39032ddecd0 inherit pub_attribs_class_c2_m2_1_1_simulation_1_1_mesh_simulation"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8a041bb0101ae99175bcb1f5db8ce6c9 inherit pub_attribs_class_c2_m2_1_1_simulation_1_1_mesh_simulation"><td class="memItemLeft" align="right" valign="top">Vector3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d2d/class_c2_m2_1_1_simulation_1_1_mesh_simulation.html#a8a041bb0101ae99175bcb1f5db8ce6c9">rulerInitRot</a> = new Vector3(90, 0, 0)</td></tr>
 <tr class="separator:a8a041bb0101ae99175bcb1f5db8ce6c9 inherit pub_attribs_class_c2_m2_1_1_simulation_1_1_mesh_simulation"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c090b9dba3db05c511ebbb7b0553587 inherit pub_attribs_class_c2_m2_1_1_simulation_1_1_mesh_simulation"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d2d/class_c2_m2_1_1_simulation_1_1_mesh_simulation.html#a1c090b9dba3db05c511ebbb7b0553587">raycastHitValue</a> = 55</td></tr>
+<tr class="separator:a1c090b9dba3db05c511ebbb7b0553587 inherit pub_attribs_class_c2_m2_1_1_simulation_1_1_mesh_simulation"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa5b5bcc38109264e01d81ded6ea00f88 inherit pub_attribs_class_c2_m2_1_1_simulation_1_1_mesh_simulation"><td class="memItemLeft" align="right" valign="top">Tuple&lt; int, double &gt;[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d2d/class_c2_m2_1_1_simulation_1_1_mesh_simulation.html#aa5b5bcc38109264e01d81ded6ea00f88">raycastHits</a> = new Tuple&lt;int, double&gt;[0]</td></tr>
+<tr class="separator:aa5b5bcc38109264e01d81ded6ea00f88 inherit pub_attribs_class_c2_m2_1_1_simulation_1_1_mesh_simulation"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4aa6aa4e6f13ca5aad96ad4fdf6602b2 inherit pub_attribs_class_c2_m2_1_1_simulation_1_1_mesh_simulation"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d5/d2b/class_c2_m2_1_1_interaction_1_1_ruler_measure.html">RulerMeasure</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d2d/class_c2_m2_1_1_simulation_1_1_mesh_simulation.html#a4aa6aa4e6f13ca5aad96ad4fdf6602b2">ruler</a> = null</td></tr>
+<tr class="separator:a4aa6aa4e6f13ca5aad96ad4fdf6602b2 inherit pub_attribs_class_c2_m2_1_1_simulation_1_1_mesh_simulation"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af577e673140a45db102710147a12e6ff inherit pub_attribs_class_c2_m2_1_1_simulation_1_1_mesh_simulation"><td class="memItemLeft" align="right" valign="top">KeyCode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d2d/class_c2_m2_1_1_simulation_1_1_mesh_simulation.html#af577e673140a45db102710147a12e6ff">powerModifierPlusKey</a> = KeyCode.UpArrow</td></tr>
+<tr class="separator:af577e673140a45db102710147a12e6ff inherit pub_attribs_class_c2_m2_1_1_simulation_1_1_mesh_simulation"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a405cba5520b72db30034c6b614a25963 inherit pub_attribs_class_c2_m2_1_1_simulation_1_1_mesh_simulation"><td class="memItemLeft" align="right" valign="top">KeyCode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d2d/class_c2_m2_1_1_simulation_1_1_mesh_simulation.html#a405cba5520b72db30034c6b614a25963">powerModifierMinusKey</a> = KeyCode.DownArrow</td></tr>
+<tr class="separator:a405cba5520b72db30034c6b614a25963 inherit pub_attribs_class_c2_m2_1_1_simulation_1_1_mesh_simulation"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a14f949b4b5da2979a986df80fede35fe inherit pub_attribs_class_c2_m2_1_1_simulation_1_1_mesh_simulation"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d2d/class_c2_m2_1_1_simulation_1_1_mesh_simulation.html#a14f949b4b5da2979a986df80fede35fe">sensitivity</a> = 200f</td></tr>
+<tr class="separator:a14f949b4b5da2979a986df80fede35fe inherit pub_attribs_class_c2_m2_1_1_simulation_1_1_mesh_simulation"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_attribs_class_c2_m2_1_1_simulation_1_1_simulation"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_class_c2_m2_1_1_simulation_1_1_simulation')"><img src="../../closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="../../db/d39/class_c2_m2_1_1_simulation_1_1_simulation.html">C2M2.Simulation.Simulation&lt; double[], Mesh, VRRaycastableMesh, VRGrabbableMesh &gt;</a></td></tr>
 <tr class="memitem:aabc0e3d2f9d31128726477beeed9fcd9 inherit pub_attribs_class_c2_m2_1_1_simulation_1_1_simulation"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d39/class_c2_m2_1_1_simulation_1_1_simulation.html#aabc0e3d2f9d31128726477beeed9fcd9">dryRun</a></td></tr>
 <tr class="memdesc:aabc0e3d2f9d31128726477beeed9fcd9 inherit pub_attribs_class_c2_m2_1_1_simulation_1_1_simulation"><td class="mdescLeft">&#160;</td><td class="mdescRight">Run solve code without visualization or interaction  <a href="../../db/d39/class_c2_m2_1_1_simulation_1_1_simulation.html#aabc0e3d2f9d31128726477beeed9fcd9">More...</a><br /></td></tr>
 <tr class="separator:aabc0e3d2f9d31128726477beeed9fcd9 inherit pub_attribs_class_c2_m2_1_1_simulation_1_1_simulation"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae54998c5c72a8bf3a8c649edbd39246a inherit pub_attribs_class_c2_m2_1_1_simulation_1_1_simulation"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d39/class_c2_m2_1_1_simulation_1_1_simulation.html#ae54998c5c72a8bf3a8c649edbd39246a">startOnAwake</a></td></tr>
-<tr class="memdesc:ae54998c5c72a8bf3a8c649edbd39246a inherit pub_attribs_class_c2_m2_1_1_simulation_1_1_simulation"><td class="mdescLeft">&#160;</td><td class="mdescRight">Should the simulation start itself in Awake?  <a href="../../db/d39/class_c2_m2_1_1_simulation_1_1_simulation.html#ae54998c5c72a8bf3a8c649edbd39246a">More...</a><br /></td></tr>
-<tr class="separator:ae54998c5c72a8bf3a8c649edbd39246a inherit pub_attribs_class_c2_m2_1_1_simulation_1_1_simulation"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92481469cac75778ab23873c2f7180bc inherit pub_attribs_class_c2_m2_1_1_simulation_1_1_simulation"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d39/class_c2_m2_1_1_simulation_1_1_simulation.html#a92481469cac75778ab23873c2f7180bc">paused</a></td></tr>
+<tr class="separator:a92481469cac75778ab23873c2f7180bc inherit pub_attribs_class_c2_m2_1_1_simulation_1_1_simulation"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab4db94e95ee217baa23b873d0229b5ba inherit pub_attribs_class_c2_m2_1_1_simulation_1_1_simulation"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d5/df9/class_c2_m2_1_1_interaction_1_1_raycast_event_manager.html">RaycastEventManager</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d39/class_c2_m2_1_1_simulation_1_1_simulation.html#ab4db94e95ee217baa23b873d0229b5ba">raycastEventManager</a></td></tr>
+<tr class="separator:ab4db94e95ee217baa23b873d0229b5ba inherit pub_attribs_class_c2_m2_1_1_simulation_1_1_simulation"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84e1883a8df40f5078aa209823a11c52 inherit pub_attribs_class_c2_m2_1_1_simulation_1_1_simulation"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d8/d68/class_c2_m2_1_1_interaction_1_1_raycast_press_events.html">RaycastPressEvents</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d39/class_c2_m2_1_1_simulation_1_1_simulation.html#a84e1883a8df40f5078aa209823a11c52">defaultRaycastEvent</a></td></tr>
+<tr class="separator:a84e1883a8df40f5078aa209823a11c52 inherit pub_attribs_class_c2_m2_1_1_simulation_1_1_simulation"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ab0b92df120c8bb585824f6391c82ff inherit pub_attribs_class_c2_m2_1_1_simulation_1_1_simulation"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d39/class_c2_m2_1_1_simulation_1_1_simulation.html#a2ab0b92df120c8bb585824f6391c82ff">time</a></td></tr>
+<tr class="separator:a2ab0b92df120c8bb585824f6391c82ff inherit pub_attribs_class_c2_m2_1_1_simulation_1_1_simulation"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a671685d8bc9ebae8d21c75924e90a9 inherit pub_attribs_class_c2_m2_1_1_simulation_1_1_simulation"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d39/class_c2_m2_1_1_simulation_1_1_simulation.html#a8a671685d8bc9ebae8d21c75924e90a9">timeStep</a></td></tr>
+<tr class="separator:a8a671685d8bc9ebae8d21c75924e90a9 inherit pub_attribs_class_c2_m2_1_1_simulation_1_1_simulation"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ad5dd614831738d1babd3af326e658b inherit pub_attribs_class_c2_m2_1_1_simulation_1_1_simulation"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d39/class_c2_m2_1_1_simulation_1_1_simulation.html#a2ad5dd614831738d1babd3af326e658b">endTime</a></td></tr>
+<tr class="separator:a2ad5dd614831738d1babd3af326e658b inherit pub_attribs_class_c2_m2_1_1_simulation_1_1_simulation"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
 <tr class="memitem:a71f84ce0834c7f05b0bcae9b31afc39f"><td class="memItemLeft" align="right" valign="top">override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/df3/class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_sparse_solver_testv1.html#a71f84ce0834c7f05b0bcae9b31afc39f">PreSolve</a> ()</td></tr>
 <tr class="memdesc:a71f84ce0834c7f05b0bcae9b31afc39f"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is a small routine call to initialize the Neuron Cell this will initialize the solution vectors which are <code>U</code>, <code>M</code>, <code>N</code>, and <code>H</code>  <a href="../../d2/df3/class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_sparse_solver_testv1.html#a71f84ce0834c7f05b0bcae9b31afc39f">More...</a><br /></td></tr>
 <tr class="separator:a71f84ce0834c7f05b0bcae9b31afc39f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5db6c67891c0239069409e693be74ed3"><td class="memItemLeft" align="right" valign="top">override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/df3/class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_sparse_solver_testv1.html#a5db6c67891c0239069409e693be74ed3">Solve</a> ()</td></tr>
-<tr class="memdesc:a5db6c67891c0239069409e693be74ed3"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is the main solver, it is running on it own thread. Inside this solver it  <a href="../../d2/df3/class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_sparse_solver_testv1.html#a5db6c67891c0239069409e693be74ed3">More...</a><br /></td></tr>
-<tr class="separator:a5db6c67891c0239069409e693be74ed3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56f153c4c72e3ea61de97ec3a0f6e4d3"><td class="memItemLeft" align="right" valign="top">override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/df3/class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_sparse_solver_testv1.html#a56f153c4c72e3ea61de97ec3a0f6e4d3">SolveStep</a> (int t)</td></tr>
+<tr class="memdesc:a56f153c4c72e3ea61de97ec3a0f6e4d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is the main solver, it is running on it own thread. Inside this solver it  <a href="../../d2/df3/class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_sparse_solver_testv1.html#a56f153c4c72e3ea61de97ec3a0f6e4d3">More...</a><br /></td></tr>
+<tr class="separator:a56f153c4c72e3ea61de97ec3a0f6e4d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation')"><img src="../../closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="../../d7/d92/class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation.html">C2M2.NeuronalDynamics.Simulation.NDSimulation</a></td></tr>
+<tr class="memitem:a5d7721b31209ec029aa6cc242e0d9e3c inherit pro_methods_class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation"><td class="memItemLeft" align="right" valign="top">override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d92/class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation.html#a5d7721b31209ec029aa6cc242e0d9e3c">PostSolveStep</a> (int t)</td></tr>
+<tr class="memdesc:a5d7721b31209ec029aa6cc242e0d9e3c inherit pro_methods_class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation"><td class="mdescLeft">&#160;</td><td class="mdescRight">PostSolveStep is called once per simulation frame, after <a class="el" href="../../db/d39/class_c2_m2_1_1_simulation_1_1_simulation.html#adcb673993dd3f7c5f36842b3e1bd54af" title="Method containing simulation code">SolveStep()</a>  <a href="../../d7/d92/class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation.html#a5d7721b31209ec029aa6cc242e0d9e3c">More...</a><br /></td></tr>
+<tr class="separator:a5d7721b31209ec029aa6cc242e0d9e3c inherit pro_methods_class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a684cb0fbd60d61ccb309e8cf74e82c45 inherit pro_methods_class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation"><td class="memItemLeft" align="right" valign="top">override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d92/class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation.html#a684cb0fbd60d61ccb309e8cf74e82c45">OnAwakePost</a> (Mesh viz)</td></tr>
+<tr class="separator:a684cb0fbd60d61ccb309e8cf74e82c45 inherit pro_methods_class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8c2195bf0e1ebc10fcf6f49eb703172f inherit pro_methods_class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation"><td class="memItemLeft" align="right" valign="top">override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d92/class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation.html#a8c2195bf0e1ebc10fcf6f49eb703172f">OnAwakePre</a> ()</td></tr>
 <tr class="separator:a8c2195bf0e1ebc10fcf6f49eb703172f inherit pro_methods_class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a910d6a6847b13140be49997df41d2da3 inherit pro_methods_class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation"><td class="memItemLeft" align="right" valign="top">override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d92/class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation.html#a910d6a6847b13140be49997df41d2da3">OnStart</a> ()</td></tr>
-<tr class="separator:a910d6a6847b13140be49997df41d2da3 inherit pro_methods_class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad79247c0e2900dc78aa6ee877c6a01bd inherit pro_methods_class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation"><td class="memItemLeft" align="right" valign="top">override Mesh&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d92/class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation.html#ad79247c0e2900dc78aa6ee877c6a01bd">BuildVisualization</a> ()</td></tr>
 <tr class="memdesc:ad79247c0e2900dc78aa6ee877c6a01bd inherit pro_methods_class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read in the cell and initialize 3D/1D visualization/interaction infrastructure  <a href="../../d7/d92/class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation.html#ad79247c0e2900dc78aa6ee877c6a01bd">More...</a><br /></td></tr>
 <tr class="separator:ad79247c0e2900dc78aa6ee877c6a01bd inherit pro_methods_class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_class_c2_m2_1_1_simulation_1_1_mesh_simulation"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_c2_m2_1_1_simulation_1_1_mesh_simulation')"><img src="../../closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="../../d6/d2d/class_c2_m2_1_1_simulation_1_1_mesh_simulation.html">C2M2.Simulation.MeshSimulation</a></td></tr>
 <tr class="memitem:af37ba623996cf9dc505e412696710679 inherit pro_methods_class_c2_m2_1_1_simulation_1_1_mesh_simulation"><td class="memItemLeft" align="right" valign="top">override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d2d/class_c2_m2_1_1_simulation_1_1_mesh_simulation.html#af37ba623996cf9dc505e412696710679">UpdateVisualization</a> (in double[] newValues)</td></tr>
 <tr class="separator:af37ba623996cf9dc505e412696710679 inherit pro_methods_class_c2_m2_1_1_simulation_1_1_mesh_simulation"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a22b1d25410fbb447aa52a5a8f4d4d6f1 inherit pro_methods_class_c2_m2_1_1_simulation_1_1_mesh_simulation"><td class="memItemLeft" align="right" valign="top">override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d2d/class_c2_m2_1_1_simulation_1_1_mesh_simulation.html#a22b1d25410fbb447aa52a5a8f4d4d6f1">OnAwakePost</a> (Mesh <a class="el" href="../../db/d39/class_c2_m2_1_1_simulation_1_1_simulation.html#ad9f96fe079b8d93a9b0a726692d68555">viz</a>)</td></tr>
+<tr class="memitem:a22b1d25410fbb447aa52a5a8f4d4d6f1 inherit pro_methods_class_c2_m2_1_1_simulation_1_1_mesh_simulation"><td class="memItemLeft" align="right" valign="top">override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d2d/class_c2_m2_1_1_simulation_1_1_mesh_simulation.html#a22b1d25410fbb447aa52a5a8f4d4d6f1">OnAwakePost</a> (Mesh viz)</td></tr>
 <tr class="separator:a22b1d25410fbb447aa52a5a8f4d4d6f1 inherit pro_methods_class_c2_m2_1_1_simulation_1_1_mesh_simulation"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_class_c2_m2_1_1_simulation_1_1_simulation"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_c2_m2_1_1_simulation_1_1_simulation')"><img src="../../closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="../../db/d39/class_c2_m2_1_1_simulation_1_1_simulation.html">C2M2.Simulation.Simulation&lt; double[], Mesh, VRRaycastableMesh, VRGrabbableMesh &gt;</a></td></tr>
 <tr class="memitem:a7eea4205a98f2e145e55317d3b9951da inherit pro_methods_class_c2_m2_1_1_simulation_1_1_simulation"><td class="memItemLeft" align="right" valign="top">abstract void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d39/class_c2_m2_1_1_simulation_1_1_simulation.html#a7eea4205a98f2e145e55317d3b9951da">UpdateVisualization</a> (in ValueType newValues)</td></tr>
-<tr class="memdesc:a7eea4205a98f2e145e55317d3b9951da inherit pro_methods_class_c2_m2_1_1_simulation_1_1_simulation"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update the visualization. This will be called once per <a class="el" href="../../db/d39/class_c2_m2_1_1_simulation_1_1_simulation.html#a4ef6c0492314a02fdfb613b19dd822e1">Update()</a> call  <a href="../../db/d39/class_c2_m2_1_1_simulation_1_1_simulation.html#a7eea4205a98f2e145e55317d3b9951da">More...</a><br /></td></tr>
+<tr class="memdesc:a7eea4205a98f2e145e55317d3b9951da inherit pro_methods_class_c2_m2_1_1_simulation_1_1_simulation"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update the visualization. This will be called once per Update() call  <a href="../../db/d39/class_c2_m2_1_1_simulation_1_1_simulation.html#a7eea4205a98f2e145e55317d3b9951da">More...</a><br /></td></tr>
 <tr class="separator:a7eea4205a98f2e145e55317d3b9951da inherit pro_methods_class_c2_m2_1_1_simulation_1_1_simulation"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2259cb8a850bbbeedbc77fde35b47707 inherit pro_methods_class_c2_m2_1_1_simulation_1_1_simulation"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d39/class_c2_m2_1_1_simulation_1_1_simulation.html#a2259cb8a850bbbeedbc77fde35b47707">OnAwakePost</a> (VizType <a class="el" href="../../db/d39/class_c2_m2_1_1_simulation_1_1_simulation.html#ad9f96fe079b8d93a9b0a726692d68555">viz</a>)</td></tr>
+<tr class="memitem:a229254fa67b99c51563447f7ff638803 inherit pro_methods_class_c2_m2_1_1_simulation_1_1_simulation"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d39/class_c2_m2_1_1_simulation_1_1_simulation.html#a229254fa67b99c51563447f7ff638803">PreSolveStep</a> (int t)</td></tr>
+<tr class="memdesc:a229254fa67b99c51563447f7ff638803 inherit pro_methods_class_c2_m2_1_1_simulation_1_1_simulation"><td class="mdescLeft">&#160;</td><td class="mdescRight">PreSolveStep is called once per simulation frame, before <a class="el" href="../../db/d39/class_c2_m2_1_1_simulation_1_1_simulation.html#adcb673993dd3f7c5f36842b3e1bd54af" title="Method containing simulation code">SolveStep()</a>  <a href="../../db/d39/class_c2_m2_1_1_simulation_1_1_simulation.html#a229254fa67b99c51563447f7ff638803">More...</a><br /></td></tr>
+<tr class="separator:a229254fa67b99c51563447f7ff638803 inherit pro_methods_class_c2_m2_1_1_simulation_1_1_simulation"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2259cb8a850bbbeedbc77fde35b47707 inherit pro_methods_class_c2_m2_1_1_simulation_1_1_simulation"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d39/class_c2_m2_1_1_simulation_1_1_simulation.html#a2259cb8a850bbbeedbc77fde35b47707">OnAwakePost</a> (VizType viz)</td></tr>
 <tr class="separator:a2259cb8a850bbbeedbc77fde35b47707 inherit pro_methods_class_c2_m2_1_1_simulation_1_1_simulation"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a33ebbb8b7e6c1fc57d9d0bc292605ed5 inherit pro_methods_class_c2_m2_1_1_simulation_1_1_simulation"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d39/class_c2_m2_1_1_simulation_1_1_simulation.html#a33ebbb8b7e6c1fc57d9d0bc292605ed5">OnStart</a> ()</td></tr>
+<tr class="separator:a33ebbb8b7e6c1fc57d9d0bc292605ed5 inherit pro_methods_class_c2_m2_1_1_simulation_1_1_simulation"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3ebfff8ac128e60b44140e9faca71032 inherit pro_methods_class_c2_m2_1_1_simulation_1_1_simulation"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d39/class_c2_m2_1_1_simulation_1_1_simulation.html#a3ebfff8ac128e60b44140e9faca71032">OnUpdate</a> ()</td></tr>
 <tr class="separator:a3ebfff8ac128e60b44140e9faca71032 inherit pro_methods_class_c2_m2_1_1_simulation_1_1_simulation"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae7a47dd3fad42ca174a2bf0743e32568 inherit pro_methods_class_c2_m2_1_1_simulation_1_1_simulation"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d39/class_c2_m2_1_1_simulation_1_1_simulation.html#ae7a47dd3fad42ca174a2bf0743e32568">OnDestroy</a> ()</td></tr>
+<tr class="separator:ae7a47dd3fad42ca174a2bf0743e32568 inherit pro_methods_class_c2_m2_1_1_simulation_1_1_simulation"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0bdb76f25c756a6732c73e1177148a12 inherit pro_methods_class_c2_m2_1_1_simulation_1_1_simulation"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d39/class_c2_m2_1_1_simulation_1_1_simulation.html#a0bdb76f25c756a6732c73e1177148a12">OnPause</a> ()</td></tr>
 <tr class="separator:a0bdb76f25c756a6732c73e1177148a12 inherit pro_methods_class_c2_m2_1_1_simulation_1_1_simulation"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af1ebf839d86e14671e318554217975ff inherit pro_methods_class_c2_m2_1_1_simulation_1_1_simulation"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d39/class_c2_m2_1_1_simulation_1_1_simulation.html#af1ebf839d86e14671e318554217975ff">OnQuit</a> ()</td></tr>
 <tr class="separator:af1ebf839d86e14671e318554217975ff inherit pro_methods_class_c2_m2_1_1_simulation_1_1_simulation"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
-Private Member Functions</h2></td></tr>
-<tr class="memitem:a1ad41540e1ed5e79c346b6ffee11a938"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/df3/class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_sparse_solver_testv1.html#a1ad41540e1ed5e79c346b6ffee11a938">InitializeNeuronCell</a> ()</td></tr>
-<tr class="memdesc:a1ad41540e1ed5e79c346b6ffee11a938"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function initializes the voltage vector <code>U</code> and the state vectors <code>M</code>, <code>N</code>, and <code>H</code> <br  />
-The input <code>NeuronCell.vertCount</code> is the vertex count of the neuron geometry <br  />
-<code>U</code> is initialized to 0 [V] for the entire cell <br  />
-<code>M</code> is initialized to \(m_i\) which is set by <code>mi</code> <br  />
-<code>N</code> is initialized to \(n_i\) which is set by <code>ni</code> <br  />
-<code>H</code> is initialized to \(h_i\) which is set by <code>hi</code>  <a href="../../d2/df3/class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_sparse_solver_testv1.html#a1ad41540e1ed5e79c346b6ffee11a938">More...</a><br /></td></tr>
-<tr class="separator:a1ad41540e1ed5e79c346b6ffee11a938"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad7474e69e4fa78bb68ab043fe59e6015 inherit pro_methods_class_c2_m2_1_1_simulation_1_1_simulation"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d39/class_c2_m2_1_1_simulation_1_1_simulation.html#ad7474e69e4fa78bb68ab043fe59e6015">OnDest</a> ()</td></tr>
+<tr class="separator:ad7474e69e4fa78bb68ab043fe59e6015 inherit pro_methods_class_c2_m2_1_1_simulation_1_1_simulation"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ff63421afdbaf736cc5e73a0b99d537 inherit pro_methods_class_c2_m2_1_1_simulation_1_1_simulation"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d39/class_c2_m2_1_1_simulation_1_1_simulation.html#a4ff63421afdbaf736cc5e73a0b99d537">PostSolve</a> ()</td></tr>
+<tr class="memdesc:a4ff63421afdbaf736cc5e73a0b99d537 inherit pro_methods_class_c2_m2_1_1_simulation_1_1_simulation"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called on the solve thread after the simulation for loop is completed  <a href="../../db/d39/class_c2_m2_1_1_simulation_1_1_simulation.html#a4ff63421afdbaf736cc5e73a0b99d537">More...</a><br /></td></tr>
+<tr class="separator:a4ff63421afdbaf736cc5e73a0b99d537 inherit pro_methods_class_c2_m2_1_1_simulation_1_1_simulation"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-methods"></a>
 Static Private Member Functions</h2></td></tr>
-<tr class="memitem:a4128d10ab51bdd1ac210c4819b2a39d7"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../db/dc3/_sparse_solver_testv1_8cs.html#a90e5369014f032bde39e79eacb048ede">Vector</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/df3/class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_sparse_solver_testv1.html#a4128d10ab51bdd1ac210c4819b2a39d7">reactF</a> (List&lt; double &gt; reactConst, <a class="el" href="../../db/dc3/_sparse_solver_testv1_8cs.html#a90e5369014f032bde39e79eacb048ede">Vector</a> V, <a class="el" href="../../db/dc3/_sparse_solver_testv1_8cs.html#a90e5369014f032bde39e79eacb048ede">Vector</a> NN, <a class="el" href="../../db/dc3/_sparse_solver_testv1_8cs.html#a90e5369014f032bde39e79eacb048ede">Vector</a> MM, <a class="el" href="../../db/dc3/_sparse_solver_testv1_8cs.html#a90e5369014f032bde39e79eacb048ede">Vector</a> HH, double <a class="el" href="../../d2/df3/class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_sparse_solver_testv1.html#a1165385fda9531ac642f499d747c4cbc">cap</a>)</td></tr>
+<tr class="memitem:a4128d10ab51bdd1ac210c4819b2a39d7"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../db/dc3/_sparse_solver_testv1_8cs.html#a90e5369014f032bde39e79eacb048ede">Vector</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/df3/class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_sparse_solver_testv1.html#a4128d10ab51bdd1ac210c4819b2a39d7">reactF</a> (List&lt; double &gt; <a class="el" href="../../d2/df3/class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_sparse_solver_testv1.html#aa9d3e93753a49091bbd90ace695945a9">reactConst</a>, <a class="el" href="../../db/dc3/_sparse_solver_testv1_8cs.html#a90e5369014f032bde39e79eacb048ede">Vector</a> V, <a class="el" href="../../db/dc3/_sparse_solver_testv1_8cs.html#a90e5369014f032bde39e79eacb048ede">Vector</a> NN, <a class="el" href="../../db/dc3/_sparse_solver_testv1_8cs.html#a90e5369014f032bde39e79eacb048ede">Vector</a> MM, <a class="el" href="../../db/dc3/_sparse_solver_testv1_8cs.html#a90e5369014f032bde39e79eacb048ede">Vector</a> HH, double <a class="el" href="../../d2/df3/class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_sparse_solver_testv1.html#a1165385fda9531ac642f499d747c4cbc">cap</a>)</td></tr>
 <tr class="memdesc:a4128d10ab51bdd1ac210c4819b2a39d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is the reaction term of the HH equation which is defined by  <a href="../../d2/df3/class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_sparse_solver_testv1.html#a4128d10ab51bdd1ac210c4819b2a39d7">More...</a><br /></td></tr>
 <tr class="separator:a4128d10ab51bdd1ac210c4819b2a39d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac18e40b00e2665af205ddff3523447f0"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../db/dc3/_sparse_solver_testv1_8cs.html#a90e5369014f032bde39e79eacb048ede">Vector</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/df3/class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_sparse_solver_testv1.html#ac18e40b00e2665af205ddff3523447f0">fN</a> (<a class="el" href="../../db/dc3/_sparse_solver_testv1_8cs.html#a90e5369014f032bde39e79eacb048ede">Vector</a> V, <a class="el" href="../../db/dc3/_sparse_solver_testv1_8cs.html#a90e5369014f032bde39e79eacb048ede">Vector</a> <a class="el" href="../../d2/df3/class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_sparse_solver_testv1.html#a3bee3ff082c7363f8026b533c8f8e904">N</a>)</td></tr>
@@ -298,10 +327,7 @@ Static Private Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:a4459a92fa7a5562787018e60231c3425"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/df3/class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_sparse_solver_testv1.html#a4459a92fa7a5562787018e60231c3425">saveMatrices</a> = false</td></tr>
-<tr class="memdesc:a4459a92fa7a5562787018e60231c3425"><td class="mdescLeft">&#160;</td><td class="mdescRight">send LHS and RHS stencil matrices to output file for saving. This option is available if the user would like to check the sparsity pattern of the HINES matrix, this is a sparse matrix which corresponds to the sparsity nature of the stencil matrix. The stencil matrix is used for the diffusion solve of the PDE equation when we perform the operator splitting.  <a href="../../d2/df3/class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_sparse_solver_testv1.html#a4459a92fa7a5562787018e60231c3425">More...</a><br /></td></tr>
-<tr class="separator:a4459a92fa7a5562787018e60231c3425"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeeae05f2d873e57bebf257aa91ac0f29"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/df3/class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_sparse_solver_testv1.html#aeeae05f2d873e57bebf257aa91ac0f29">res</a> = 2500.0 * 1.0E-2</td></tr>
+<tr class="memitem:aeeae05f2d873e57bebf257aa91ac0f29"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/df3/class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_sparse_solver_testv1.html#aeeae05f2d873e57bebf257aa91ac0f29">res</a> = 300.0 * 1.0E-2</td></tr>
 <tr class="separator:aeeae05f2d873e57bebf257aa91ac0f29"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1165385fda9531ac642f499d747c4cbc"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/df3/class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_sparse_solver_testv1.html#a1165385fda9531ac642f499d747c4cbc">cap</a> = 1.0 * 1.0E-2</td></tr>
 <tr class="memdesc:a1165385fda9531ac642f499d747c4cbc"><td class="mdescLeft">&#160;</td><td class="mdescRight">[F/m2] capacitance per unit area, this is the plasma membrane capacitance, this a standard value for the capacitance  <a href="../../d2/df3/class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_sparse_solver_testv1.html#a1165385fda9531ac642f499d747c4cbc">More...</a><br /></td></tr>
@@ -334,6 +360,12 @@ Private Attributes</h2></td></tr>
 <tr class="memdesc:acda4c3e171f73cd1b9d44df1e77eebe8"><td class="mdescLeft">&#160;</td><td class="mdescRight">[] sodium channel state probability, unitless <br  />
   <a href="../../d2/df3/class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_sparse_solver_testv1.html#acda4c3e171f73cd1b9d44df1e77eebe8">More...</a><br /></td></tr>
 <tr class="separator:acda4c3e171f73cd1b9d44df1e77eebe8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c265fa62cfa6b2b4f3dbd19a172ef25"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/df3/class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_sparse_solver_testv1.html#a3c265fa62cfa6b2b4f3dbd19a172ef25">Rmemscf</a> = 0.65</td></tr>
+<tr class="memdesc:a3c265fa62cfa6b2b4f3dbd19a172ef25"><td class="mdescLeft">&#160;</td><td class="mdescRight">the membrane resistance does not hit the theoretical maximum, it is approximately 65% but this may change depending on the rate functions that are used  <a href="../../d2/df3/class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_sparse_solver_testv1.html#a3c265fa62cfa6b2b4f3dbd19a172ef25">More...</a><br /></td></tr>
+<tr class="separator:a3c265fa62cfa6b2b4f3dbd19a172ef25"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac86ec7664c5c24c88cb0ec95f3b57b3e"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/df3/class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_sparse_solver_testv1.html#ac86ec7664c5c24c88cb0ec95f3b57b3e">cfl</a> = 1.5</td></tr>
+<tr class="memdesc:ac86ec7664c5c24c88cb0ec95f3b57b3e"><td class="mdescLeft">&#160;</td><td class="mdescRight">this is the scale factor for increasing the time step size if it is unnecessarily small  <a href="../../d2/df3/class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_sparse_solver_testv1.html#ac86ec7664c5c24c88cb0ec95f3b57b3e">More...</a><br /></td></tr>
+<tr class="separator:ac86ec7664c5c24c88cb0ec95f3b57b3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acfad53d0694b92ce6b1b6d76e2cc4316"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../db/dc3/_sparse_solver_testv1_8cs.html#a90e5369014f032bde39e79eacb048ede">Vector</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/df3/class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_sparse_solver_testv1.html#acfad53d0694b92ce6b1b6d76e2cc4316">U</a></td></tr>
 <tr class="memdesc:acfad53d0694b92ce6b1b6d76e2cc4316"><td class="mdescLeft">&#160;</td><td class="mdescRight">These are the solution vectors for the voltage  <a href="../../d2/df3/class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_sparse_solver_testv1.html#acfad53d0694b92ce6b1b6d76e2cc4316">More...</a><br /></td></tr>
 <tr class="separator:acfad53d0694b92ce6b1b6d76e2cc4316"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -346,35 +378,61 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:addf78ca166af48f0a18445d543f01bfb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../db/dc3/_sparse_solver_testv1_8cs.html#a90e5369014f032bde39e79eacb048ede">Vector</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/df3/class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_sparse_solver_testv1.html#addf78ca166af48f0a18445d543f01bfb">H</a></td></tr>
 <tr class="memdesc:addf78ca166af48f0a18445d543f01bfb"><td class="mdescLeft">&#160;</td><td class="mdescRight">These are the solution vectors for the voltage  <a href="../../d2/df3/class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_sparse_solver_testv1.html#addf78ca166af48f0a18445d543f01bfb">More...</a><br /></td></tr>
 <tr class="separator:addf78ca166af48f0a18445d543f01bfb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a78ec2163e356e19b61d37e78a78d88b1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/df3/class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_sparse_solver_testv1.html#a78ec2163e356e19b61d37e78a78d88b1">i</a> = -1</td></tr>
-<tr class="memdesc:a78ec2163e356e19b61d37e78a78d88b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">This keeps track of which simulation frame to send to the other scripts <code>i</code> gets track of the time step number  <a href="../../d2/df3/class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_sparse_solver_testv1.html#a78ec2163e356e19b61d37e78a78d88b1">More...</a><br /></td></tr>
-<tr class="separator:a78ec2163e356e19b61d37e78a78d88b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84cde92b6da8e6a970c736a52220b67d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../db/dc3/_sparse_solver_testv1_8cs.html#a90e5369014f032bde39e79eacb048ede">Vector</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/df3/class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_sparse_solver_testv1.html#a84cde92b6da8e6a970c736a52220b67d">R</a></td></tr>
+<tr class="separator:a84cde92b6da8e6a970c736a52220b67d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2bf8acea17647c8f6e14f12f6ca067a"><td class="memItemLeft" align="right" valign="top">double[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/df3/class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_sparse_solver_testv1.html#aa2bf8acea17647c8f6e14f12f6ca067a">b</a></td></tr>
+<tr class="separator:aa2bf8acea17647c8f6e14f12f6ca067a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa9d3e93753a49091bbd90ace695945a9"><td class="memItemLeft" align="right" valign="top">List&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/df3/class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_sparse_solver_testv1.html#aa9d3e93753a49091bbd90ace695945a9">reactConst</a></td></tr>
+<tr class="separator:aa9d3e93753a49091bbd90ace695945a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a63fdf860a150436907f47f5f49bddb4f"><td class="memItemLeft" align="right" valign="top">List&lt; CoordinateStorage&lt; double &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/df3/class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_sparse_solver_testv1.html#a63fdf860a150436907f47f5f49bddb4f">sparse_stencils</a></td></tr>
+<tr class="separator:a63fdf860a150436907f47f5f49bddb4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5602417afab76b72890774d29c6dc56d"><td class="memItemLeft" align="right" valign="top">CompressedColumnStorage&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/df3/class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_sparse_solver_testv1.html#a5602417afab76b72890774d29c6dc56d">r_csc</a></td></tr>
+<tr class="separator:a5602417afab76b72890774d29c6dc56d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afeec2379b95f0760fc55d62ea61f39b6"><td class="memItemLeft" align="right" valign="top">CompressedColumnStorage&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/df3/class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_sparse_solver_testv1.html#afeec2379b95f0760fc55d62ea61f39b6">l_csc</a></td></tr>
+<tr class="separator:afeec2379b95f0760fc55d62ea61f39b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5d1eedb0b1662c832ab47b8ded8a385"><td class="memItemLeft" align="right" valign="top">SparseLU&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/df3/class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_sparse_solver_testv1.html#ab5d1eedb0b1662c832ab47b8ded8a385">lu</a></td></tr>
+<tr class="separator:ab5d1eedb0b1662c832ab47b8ded8a385"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
+<tr class="inherit_header pro_attribs_class_c2_m2_1_1_simulation_1_1_mesh_simulation"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_c2_m2_1_1_simulation_1_1_mesh_simulation')"><img src="../../closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="../../d6/d2d/class_c2_m2_1_1_simulation_1_1_mesh_simulation.html">C2M2.Simulation.MeshSimulation</a></td></tr>
+<tr class="memitem:a0c325feb5afb206c7c82373cc5c26362 inherit pro_attribs_class_c2_m2_1_1_simulation_1_1_mesh_simulation"><td class="memItemLeft" align="right" valign="top">MeshFilter&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d2d/class_c2_m2_1_1_simulation_1_1_mesh_simulation.html#a0c325feb5afb206c7c82373cc5c26362">mf</a></td></tr>
+<tr class="separator:a0c325feb5afb206c7c82373cc5c26362 inherit pro_attribs_class_c2_m2_1_1_simulation_1_1_mesh_simulation"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acce5bbf7484c845296a86399d8d0062e inherit pro_attribs_class_c2_m2_1_1_simulation_1_1_mesh_simulation"><td class="memItemLeft" align="right" valign="top">MeshRenderer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d2d/class_c2_m2_1_1_simulation_1_1_mesh_simulation.html#acce5bbf7484c845296a86399d8d0062e">mr</a></td></tr>
+<tr class="separator:acce5bbf7484c845296a86399d8d0062e inherit pro_attribs_class_c2_m2_1_1_simulation_1_1_mesh_simulation"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_class_c2_m2_1_1_simulation_1_1_simulation"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_c2_m2_1_1_simulation_1_1_simulation')"><img src="../../closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="../../db/d39/class_c2_m2_1_1_simulation_1_1_simulation.html">C2M2.Simulation.Simulation&lt; double[], Mesh, VRRaycastableMesh, VRGrabbableMesh &gt;</a></td></tr>
 <tr class="memitem:a9c15f59bf37e065adc284aaff8318539 inherit pro_attribs_class_c2_m2_1_1_simulation_1_1_simulation"><td class="memItemLeft" align="right" valign="top">Mutex&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d39/class_c2_m2_1_1_simulation_1_1_simulation.html#a9c15f59bf37e065adc284aaff8318539">mutex</a></td></tr>
 <tr class="memdesc:a9c15f59bf37e065adc284aaff8318539 inherit pro_attribs_class_c2_m2_1_1_simulation_1_1_simulation"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provide mutual exclusion to derived classes  <a href="../../db/d39/class_c2_m2_1_1_simulation_1_1_simulation.html#a9c15f59bf37e065adc284aaff8318539">More...</a><br /></td></tr>
 <tr class="separator:a9c15f59bf37e065adc284aaff8318539 inherit pro_attribs_class_c2_m2_1_1_simulation_1_1_simulation"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a950c50b7653799858b5cbad49e7510ab inherit pro_attribs_class_c2_m2_1_1_simulation_1_1_simulation"><td class="memItemLeft" align="right" valign="top">CustomSampler&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d39/class_c2_m2_1_1_simulation_1_1_simulation.html#a950c50b7653799858b5cbad49e7510ab">solveStepSampler</a></td></tr>
+<tr class="separator:a950c50b7653799858b5cbad49e7510ab inherit pro_attribs_class_c2_m2_1_1_simulation_1_1_simulation"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header properties_class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation"><td colspan="2" onclick="javascript:toggleInherit('properties_class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation')"><img src="../../closed.png" alt="-"/>&#160;Properties inherited from <a class="el" href="../../d7/d92/class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation.html">C2M2.NeuronalDynamics.Simulation.NDSimulation</a></td></tr>
 <tr class="memitem:a9b299733cd1c116fe4e886b3849ae4a6 inherit properties_class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation"><td class="memItemLeft" align="right" valign="top">double?&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d92/class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation.html#a9b299733cd1c116fe4e886b3849ae4a6">VisualInflation</a><code> [get, set]</code></td></tr>
 <tr class="separator:a9b299733cd1c116fe4e886b3849ae4a6 inherit properties_class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9837d5c18015254455d8429834c5ebfd inherit properties_class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d92/class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation.html#a9837d5c18015254455d8429834c5ebfd">ColliderInflation</a><code> [get, set]</code></td></tr>
-<tr class="separator:a9837d5c18015254455d8429834c5ebfd inherit properties_class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a230042a6666f090f5adf3229f1bfcc02 inherit properties_class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d92/class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation.html#a230042a6666f090f5adf3229f1bfcc02">RefinementLevel</a><code> [get, set]</code></td></tr>
 <tr class="separator:a230042a6666f090f5adf3229f1bfcc02 inherit properties_class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa61640972c2ffd69c0d5ec28c539a454 inherit properties_class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation"><td class="memItemLeft" align="right" valign="top">bool?&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d92/class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation.html#aa61640972c2ffd69c0d5ec28c539a454">ClampMode</a><code> [get, set]</code></td></tr>
-<tr class="separator:aa61640972c2ffd69c0d5ec28c539a454 inherit properties_class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa883eea0b3ec4a4f8742485906d0f174 inherit properties_class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/d08/class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_r_n_1_1_vrn_reader.html">VrnReader</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d92/class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation.html#aa883eea0b3ec4a4f8742485906d0f174">VrnReader</a><code> [get, set]</code></td></tr>
+<tr class="memitem:a49c1203d911238dfd4bb1e00bd2ba6f0 inherit properties_class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dd/db8/class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_neuron_clamp_manager.html">NeuronClampManager</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d92/class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation.html#a49c1203d911238dfd4bb1e00bd2ba6f0">ClampManager</a><code> [get]</code></td></tr>
+<tr class="separator:a49c1203d911238dfd4bb1e00bd2ba6f0 inherit properties_class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae806c7d688d1233b8b593e537691f850 inherit properties_class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation"><td class="memItemLeft" align="right" valign="top">Mutex&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d92/class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation.html#ae806c7d688d1233b8b593e537691f850">clampMutex</a> = new Mutex()<code> [get, private set]</code></td></tr>
+<tr class="separator:ae806c7d688d1233b8b593e537691f850 inherit properties_class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5bd8b0b2f2be3067bec3e341d819ce04 inherit properties_class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d8/d57/class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_n_d_graph_manager.html">NDGraphManager</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d92/class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation.html#a5bd8b0b2f2be3067bec3e341d819ce04">graphManager</a> = null<code> [get, private set]</code></td></tr>
+<tr class="separator:a5bd8b0b2f2be3067bec3e341d819ce04 inherit properties_class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed439157b1ba547ddcf87c4afd500b5c inherit properties_class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation"><td class="memItemLeft" align="right" valign="top">List&lt; <a class="el" href="../../d1/d1d/class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_n_d_line_graph.html">NDLineGraph</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d92/class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation.html#aed439157b1ba547ddcf87c4afd500b5c">Graphs</a><code> [get, set]</code></td></tr>
+<tr class="separator:aed439157b1ba547ddcf87c4afd500b5c inherit properties_class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa883eea0b3ec4a4f8742485906d0f174 inherit properties_class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/d08/class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_r_n_1_1_vrn_reader.html">VrnReader</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d92/class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation.html#aa883eea0b3ec4a4f8742485906d0f174">VrnReader</a><code> [get, private set]</code></td></tr>
+<tr class="memdesc:aa883eea0b3ec4a4f8742485906d0f174 inherit properties_class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used to read cell data from .vrn archives  <a href="../../d7/d92/class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation.html#aa883eea0b3ec4a4f8742485906d0f174">More...</a><br /></td></tr>
 <tr class="separator:aa883eea0b3ec4a4f8742485906d0f174 inherit properties_class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1439ad62c1bf1529975f65d9775f61a1 inherit properties_class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d9/d2f/struct_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_r_n_1_1_vrn_reader_1_1_meta_info.html">VrnReader.MetaInfo</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d92/class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation.html#a1439ad62c1bf1529975f65d9775f61a1">MetaInfo</a><code> [get]</code></td></tr>
+<tr class="memdesc:a1439ad62c1bf1529975f65d9775f61a1 inherit properties_class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation"><td class="mdescLeft">&#160;</td><td class="mdescRight">Includes info like cell species, strain, and archive  <a href="../../d7/d92/class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation.html#a1439ad62c1bf1529975f65d9775f61a1">More...</a><br /></td></tr>
+<tr class="separator:a1439ad62c1bf1529975f65d9775f61a1 inherit properties_class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7f4c3e4be08511b50b42c4b0f977fde8 inherit properties_class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d8/d5b/class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_grid.html">Grid</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d92/class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation.html#a7f4c3e4be08511b50b42c4b0f977fde8">Grid1D</a><code> [get, set]</code></td></tr>
 <tr class="separator:a7f4c3e4be08511b50b42c4b0f977fde8 inherit properties_class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a58f2ec6c456c92c0d70416b8b16fae02 inherit properties_class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation"><td class="memItemLeft" align="right" valign="top">Vector3[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d92/class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation.html#a58f2ec6c456c92c0d70416b8b16fae02">Verts1D</a><code> [get]</code></td></tr>
 <tr class="separator:a58f2ec6c456c92c0d70416b8b16fae02 inherit properties_class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4007846d7a9dfadcd783f680e06e1688 inherit properties_class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d8/d5b/class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_grid.html">Grid</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d92/class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation.html#a4007846d7a9dfadcd783f680e06e1688">Grid2D</a><code> [get, set]</code></td></tr>
 <tr class="separator:a4007846d7a9dfadcd783f680e06e1688 inherit properties_class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a03cff8aa1a375b7a8ef8e330b58b7cd0 inherit properties_class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../da/df6/class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_cell.html">NeuronCell</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d92/class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation.html#a03cff8aa1a375b7a8ef8e330b58b7cd0">NeuronCell</a><code> [get, set]</code></td></tr>
-<tr class="separator:a03cff8aa1a375b7a8ef8e330b58b7cd0 inherit properties_class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1eb4f98c3c813f00c24e19ce135bd1b inherit properties_class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../da/d36/class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron.html">Neuron</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d92/class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation.html#ab1eb4f98c3c813f00c24e19ce135bd1b">Neuron</a> = null<code> [get, set]</code></td></tr>
+<tr class="separator:ab1eb4f98c3c813f00c24e19ce135bd1b inherit properties_class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8efd68e24142dc91dafee4254714c4f8 inherit properties_class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d92/class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation.html#a8efd68e24142dc91dafee4254714c4f8">AverageDendriteRadius</a><code> [get]</code></td></tr>
 <tr class="separator:a8efd68e24142dc91dafee4254714c4f8 inherit properties_class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2f3951bc018ca2d99940d08163d4ea11 inherit properties_class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../db/dbd/struct_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_vert3_d1_d_pair.html">Vert3D1DPair</a>[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d92/class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation.html#a2f3951bc018ca2d99940d08163d4ea11">Map</a><code> [get]</code></td></tr>
@@ -384,16 +442,24 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:a7efc53e5501ec7e5af214815d2e6b376 inherit properties_class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation"><td class="memItemLeft" align="right" valign="top">double[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d92/class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation.html#a7efc53e5501ec7e5af214815d2e6b376">Scalars3D</a><code> [get]</code></td></tr>
 <tr class="separator:a7efc53e5501ec7e5af214815d2e6b376 inherit properties_class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header properties_class_c2_m2_1_1_simulation_1_1_mesh_simulation"><td colspan="2" onclick="javascript:toggleInherit('properties_class_c2_m2_1_1_simulation_1_1_mesh_simulation')"><img src="../../closed.png" alt="-"/>&#160;Properties inherited from <a class="el" href="../../d6/d2d/class_c2_m2_1_1_simulation_1_1_mesh_simulation.html">C2M2.Simulation.MeshSimulation</a></td></tr>
-<tr class="memitem:af9d0dada838603fa792135397b04b19a inherit properties_class_c2_m2_1_1_simulation_1_1_mesh_simulation"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../da/d4f/class_c2_m2_1_1_visualization_1_1_l_u_t_gradient.html">LUTGradient</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d2d/class_c2_m2_1_1_simulation_1_1_mesh_simulation.html#af9d0dada838603fa792135397b04b19a">colorLUT</a> = null<code> [get, private set]</code></td></tr>
-<tr class="memdesc:af9d0dada838603fa792135397b04b19a inherit properties_class_c2_m2_1_1_simulation_1_1_mesh_simulation"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lookup table for more efficient color calculations on the gradient  <a href="../../d6/d2d/class_c2_m2_1_1_simulation_1_1_mesh_simulation.html#af9d0dada838603fa792135397b04b19a">More...</a><br /></td></tr>
-<tr class="separator:af9d0dada838603fa792135397b04b19a inherit properties_class_c2_m2_1_1_simulation_1_1_mesh_simulation"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51682e26e2319704e866bddf7f4f3742 inherit properties_class_c2_m2_1_1_simulation_1_1_mesh_simulation"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d2/db9/class_c2_m2_1_1_visualization_1_1_color_l_u_t.html">ColorLUT</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d2d/class_c2_m2_1_1_simulation_1_1_mesh_simulation.html#a51682e26e2319704e866bddf7f4f3742">ColorLUT</a> = null<code> [get, private set]</code></td></tr>
+<tr class="memdesc:a51682e26e2319704e866bddf7f4f3742 inherit properties_class_c2_m2_1_1_simulation_1_1_mesh_simulation"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lookup table for more efficient color calculations on the gradient  <a href="../../d6/d2d/class_c2_m2_1_1_simulation_1_1_mesh_simulation.html#a51682e26e2319704e866bddf7f4f3742">More...</a><br /></td></tr>
+<tr class="separator:a51682e26e2319704e866bddf7f4f3742 inherit properties_class_c2_m2_1_1_simulation_1_1_mesh_simulation"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a917d08cb23a8c291c2c261aad59c2fce inherit properties_class_c2_m2_1_1_simulation_1_1_mesh_simulation"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d2/db9/class_c2_m2_1_1_visualization_1_1_color_l_u_t.html#a7f1ce4c5542bb734a47c67ef024035ef">ColorLUT.ExtremaMethod</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d2d/class_c2_m2_1_1_simulation_1_1_mesh_simulation.html#a917d08cb23a8c291c2c261aad59c2fce">extremaMethod</a> = ColorLUT.ExtremaMethod.GlobalExtrema<code> [get, set]</code></td></tr>
+<tr class="separator:a917d08cb23a8c291c2c261aad59c2fce inherit properties_class_c2_m2_1_1_simulation_1_1_mesh_simulation"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac6bd0162b1594a0a6cfcd4a04d984ad3 inherit properties_class_c2_m2_1_1_simulation_1_1_mesh_simulation"><td class="memItemLeft" align="right" valign="top">Mesh&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d2d/class_c2_m2_1_1_simulation_1_1_mesh_simulation.html#ac6bd0162b1594a0a6cfcd4a04d984ad3">VisualMesh</a><code> [get, protected set]</code></td></tr>
 <tr class="separator:ac6bd0162b1594a0a6cfcd4a04d984ad3 inherit properties_class_c2_m2_1_1_simulation_1_1_mesh_simulation"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6ae7f3078509cbeccdb03840465f1ecb inherit properties_class_c2_m2_1_1_simulation_1_1_mesh_simulation"><td class="memItemLeft" align="right" valign="top">Mesh&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d2d/class_c2_m2_1_1_simulation_1_1_mesh_simulation.html#a6ae7f3078509cbeccdb03840465f1ecb">ColliderMesh</a><code> [get, protected set]</code></td></tr>
 <tr class="separator:a6ae7f3078509cbeccdb03840465f1ecb inherit properties_class_c2_m2_1_1_simulation_1_1_mesh_simulation"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a37e11ab601c716fbc934a0e1df1c7b29 inherit properties_class_c2_m2_1_1_simulation_1_1_mesh_simulation"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d2d/class_c2_m2_1_1_simulation_1_1_mesh_simulation.html#a37e11ab601c716fbc934a0e1df1c7b29">ThumbstickScaler</a><code> [get]</code></td></tr>
+<tr class="separator:a37e11ab601c716fbc934a0e1df1c7b29 inherit properties_class_c2_m2_1_1_simulation_1_1_mesh_simulation"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad02b9baeb6147f548e8e1247ac9e47d2 inherit properties_class_c2_m2_1_1_simulation_1_1_mesh_simulation"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d2d/class_c2_m2_1_1_simulation_1_1_mesh_simulation.html#ad02b9baeb6147f548e8e1247ac9e47d2">PowerModifier</a><code> [get]</code></td></tr>
+<tr class="separator:ad02b9baeb6147f548e8e1247ac9e47d2 inherit properties_class_c2_m2_1_1_simulation_1_1_mesh_simulation"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header properties_class_c2_m2_1_1_simulation_1_1_simulation"><td colspan="2" onclick="javascript:toggleInherit('properties_class_c2_m2_1_1_simulation_1_1_simulation')"><img src="../../closed.png" alt="-"/>&#160;Properties inherited from <a class="el" href="../../db/d39/class_c2_m2_1_1_simulation_1_1_simulation.html">C2M2.Simulation.Simulation&lt; double[], Mesh, VRRaycastableMesh, VRGrabbableMesh &gt;</a></td></tr>
-<tr class="memitem:ad9f96fe079b8d93a9b0a726692d68555 inherit properties_class_c2_m2_1_1_simulation_1_1_simulation"><td class="memItemLeft" align="right" valign="top">VizType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d39/class_c2_m2_1_1_simulation_1_1_simulation.html#ad9f96fe079b8d93a9b0a726692d68555">viz</a><code> [get, protected set]</code></td></tr>
-<tr class="separator:ad9f96fe079b8d93a9b0a726692d68555 inherit properties_class_c2_m2_1_1_simulation_1_1_simulation"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af88a14ecaab1fdb6f0309fc4b9179589 inherit properties_class_c2_m2_1_1_simulation_1_1_simulation"><td class="memItemLeft" align="right" valign="top">VizType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d39/class_c2_m2_1_1_simulation_1_1_simulation.html#af88a14ecaab1fdb6f0309fc4b9179589">Viz</a><code> [get, protected set]</code></td></tr>
+<tr class="separator:af88a14ecaab1fdb6f0309fc4b9179589 inherit properties_class_c2_m2_1_1_simulation_1_1_simulation"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90ff72c46cd464ce898fcce4750f7a16 inherit properties_class_c2_m2_1_1_simulation_1_1_simulation"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d39/class_c2_m2_1_1_simulation_1_1_simulation.html#a90ff72c46cd464ce898fcce4750f7a16">nT</a><code> [get, private set]</code></td></tr>
+<tr class="separator:a90ff72c46cd464ce898fcce4750f7a16 inherit properties_class_c2_m2_1_1_simulation_1_1_simulation"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header events_class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation"><td colspan="2" onclick="javascript:toggleInherit('events_class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation')"><img src="../../closed.png" alt="-"/>&#160;Events inherited from <a class="el" href="../../d7/d92/class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation.html">C2M2.NeuronalDynamics.Simulation.NDSimulation</a></td></tr>
 <tr class="memitem:a76ff3144bf4b181dbc1bb591dd9028c7 inherit events_class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d7/d92/class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation.html#aafdea5a8032940035cad6a1738d18bd1">OnVisualInflationChangeDelegate</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d92/class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation.html#a76ff3144bf4b181dbc1bb591dd9028c7">OnVisualInflationChange</a></td></tr>
 <tr class="separator:a76ff3144bf4b181dbc1bb591dd9028c7 inherit events_class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -412,7 +478,7 @@ Additional Inherited Members</h2></td></tr>
 <p class="formulaDsp">
 \[\frac{dh}{dt}=\alpha_h(V)(1-h)-\beta_h(V)h\]
 </p>
-<p>The main solver begins with the function call <code><a class="el" href="../../d2/df3/class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_sparse_solver_testv1.html#a5db6c67891c0239069409e693be74ed3" title="This is the main solver, it is running on it own thread. Inside this solver it">Solve()</a></code> prior to each iteration of <code><a class="el" href="../../d2/df3/class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_sparse_solver_testv1.html#a5db6c67891c0239069409e693be74ed3" title="This is the main solver, it is running on it own thread. Inside this solver it">Solve()</a></code> the new voltage values <code>U</code> are sent to this class and then new <code>U</code> are sent out from <code><a class="el" href="../../d2/df3/class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_sparse_solver_testv1.html#a5db6c67891c0239069409e693be74ed3" title="This is the main solver, it is running on it own thread. Inside this solver it">Solve()</a></code></p>
+<p>The main solver begins with the function call <code><a class="el" href="../../db/d39/class_c2_m2_1_1_simulation_1_1_simulation.html#a1d3450d4a0d735c79b81b3daa7c29b20">Solve()</a></code> prior to each iteration of <code><a class="el" href="../../db/d39/class_c2_m2_1_1_simulation_1_1_simulation.html#a1d3450d4a0d735c79b81b3daa7c29b20">Solve()</a></code> the new voltage values <code>U</code> are sent to this class and then new <code>U</code> are sent out from <code><a class="el" href="../../db/d39/class_c2_m2_1_1_simulation_1_1_simulation.html#a1d3450d4a0d735c79b81b3daa7c29b20">Solve()</a></code></p>
 <p>The solver currently uses Forward Euler time stepping and the spatial solve is done using Crank-Nicolson in 1D The solver takes into account the non-uniform radii of the geometry and the non-uniform edgelength of the geometry</p>
 <p>The first part of the code is labeled with '<a class="el" href="../../de/da5/namespace_c2_m2_1_1_neuronal_dynamics_1_1_simulation.html" title="Neuronal Dynamics simulation code">Simulation</a> Parameters' and 'Biological Parameters' These parameters need to be made available to the user to modify for their particular simulation parameters The rate functions are defined at the end Note: Very important --&gt; ALL UNITS FOR THE SOLVER ARE IN MKS, therefore when modifying the color bars ranges, and raycast/clamp hit values they need to be in [V] not [mV] so if you intend to use 50 [mV] it needs to be coded as 0.05 [V]</p>
 <p>The simulation parameters are defined first, initial voltage hit value for raycasting, the endTime, time step size (k) Also other options are defined here such as having the SomaOn for clamping the soma on for voltage clamp tests (this is mostly used for verifying the voltage output against Yale Neuron). Another set of options that need to be incorporated is to select whether to output voltage data</p>
@@ -866,60 +932,8 @@ TODO: come up with an implementation where the user can enter in their own param
 
 </div>
 </div>
-<a id="ad04d347e86b0fc505d915a78e32605ce"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad04d347e86b0fc505d915a78e32605ce">&#9670;&nbsp;</a></span>GetSimulationTime()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">override float C2M2.NeuronalDynamics.Simulation.SparseSolverTestv1.GetSimulationTime </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>This sends the current time to the simulation timer Carefully notice that it has to be multiplied by 1000, this is because the solver is in MKS and the simulation timer object uses [ms]! </p>
-<dl class="section return"><dt>Returns</dt><dd>i*(float)1000*(float) k</dd></dl>
-
-</div>
-</div>
-<a id="a1ad41540e1ed5e79c346b6ffee11a938"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1ad41540e1ed5e79c346b6ffee11a938">&#9670;&nbsp;</a></span>InitializeNeuronCell()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void C2M2.NeuronalDynamics.Simulation.SparseSolverTestv1.InitializeNeuronCell </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>This function initializes the voltage vector <code>U</code> and the state vectors <code>M</code>, <code>N</code>, and <code>H</code> <br  />
-The input <code>NeuronCell.vertCount</code> is the vertex count of the neuron geometry <br  />
-<code>U</code> is initialized to 0 [V] for the entire cell <br  />
-<code>M</code> is initialized to \(m_i\) which is set by <code>mi</code> <br  />
-<code>N</code> is initialized to \(n_i\) which is set by <code>ni</code> <br  />
-<code>H</code> is initialized to \(h_i\) which is set by <code>hi</code> </p>
-
-</div>
-</div>
-<a id="ae3338ea454a4f5b681daaf668c5bba99"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae3338ea454a4f5b681daaf668c5bba99">&#9670;&nbsp;</a></span>makeSparseStencils()</h2>
+<a id="ac82d9df1d6e6353623e0c64e03ab3653"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac82d9df1d6e6353623e0c64e03ab3653">&#9670;&nbsp;</a></span>makeSparseStencils()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -930,7 +944,7 @@ The input <code>NeuronCell.vertCount</code> is the vertex count of the neuron ge
         <tr>
           <td class="memname">static List&lt;CoordinateStorage&lt;double&gt; &gt; C2M2.NeuronalDynamics.Simulation.SparseSolverTestv1.makeSparseStencils </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../da/df6/class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_cell.html">NeuronCell</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../da/d36/class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron.html">Neuron</a>&#160;</td>
           <td class="paramname"><em>myCell</em>, </td>
         </tr>
         <tr>
@@ -964,11 +978,9 @@ The input <code>NeuronCell.vertCount</code> is the vertex count of the neuron ge
 </table>
 </div><div class="memdoc">
 
-<p>This is for constructing the lhs and rhs of system matrix <br  />
-This will construct a HINES matrix (symmetric), it should be tridiagonal with some off diagonal entries corresponding to a branch location in the neuron graph <br  />
-The entries are defined by the following: </p>
+<p>This function sets the target time step size, below is the formula for the conduction speed of the action potential (wave speed) </p>
 <p class="formulaDsp">
-\[ \left(-\sum_{k\in\mathcal{N}_j}\eta_kV_k^{n+1}\right)+\omega_jV_j^{n+1}=\left(\sum_{k\in\mathcal{N}_j}\eta_kV_k^{n}\right)+\bar{\omega}_jV_j^{n} \]
+\[v = \frac{1}{C}\sqrt{\frac{d}{R_a R_{mem}}}] where \f[R_{mem} = \frac{1}{g_{Na}m^3 h + g_K n^4}] and n,m,h are the probability states which vary in time and depend on the voltage Notice that \f[\frac{1}{R_{mem}}\leq g_{Na}+g_K=G_{mem-theor-max}] therefore we define the max conduction speed vmax as v_{max} = \frac{1}{C}\sqrt{\frac{d_max\cdot (g_{Na}+g_K)}{R_a}} then we solve for our target \f[Delta t] by computing \f[\Delta t = \frac{\Delta x}{v_{max}}] where \f[Delta x] is the median edge length, in this case we use the average this is because our geometries are regularize and there are not excessively small edges in the graph geometry. &lt;/summary&gt; &lt;param name=&quot;cap&quot;&gt;&lt;/param&gt; this is the capacitance &lt;param name=&quot;maxDiameter&quot;&gt;&lt;/param&gt; this is the maximum diameter &lt;param name=&quot;edgeLength&quot;&gt;&lt;/param&gt; this is the target edge length of the graph geometry &lt;param name=&quot;gna&quot;&gt;&lt;/param&gt; this is the sodium conductance &lt;param name=&quot;gk&quot;&gt;&lt;/param&gt; this is the potassium conductance &lt;param name=&quot;res&quot;&gt;&lt;/param&gt; this is the axial resistance &lt;param name=&quot;Rmemscf&quot;&gt;&lt;/param&gt; this is membrane resistance scale factor, since this is only a fraction of theoretical maximum &lt;returns&gt;&lt;/returns&gt; public static double SetTargetTimeStep(double cap, double maxDiameter, double edgeLength ,double gna, double gk, double res, double Rmemscf, double cfl) { here we set the minimum time step size and maximum time step size the dtmin is based on prior numerical experiments that revealed that for each refinement level the voltage profiles were visually accurate when compared to Yale Neuron for delta t at least 2 microseconds double dtmin = 2e-6; double dtmax = 32e-6; this is where we compute the maximum conduction speed (wave speed) of the ap wave set the maxDiameter to [m] by multiplying by 1e-6 double vmax = (1 / cap) * System.Math.Sqrt(maxDiameter * (1e-6) *Rmemscf* (gna + gk) / (res)); this is the target time step size, set to seconds by multiplying by 1e-6 double tstep = (edgeLength / vmax) * (1e-6); we use the loop incase the time step if it is unnecessarily small while(tstep &lt; dtmin){ tstep = tstep * cfl;} this avoid making the time step too big will cause numerical instability if (tstep &gt; dtmax) { tstep = tstep * 0.5; } return tstep; } &lt;summary&gt; This function initializes the voltage vector &lt;c&gt;U&lt;/c&gt; and the state vectors &lt;c&gt;M&lt;/c&gt;, &lt;c&gt;N&lt;/c&gt;, and &lt;c&gt;H&lt;/c&gt; \n The input &lt;c&gt;Neuron.vertCount&lt;/c&gt; is the vertex count of the neuron geometry \n &lt;c&gt;U&lt;/c&gt; is initialized to 0 [V] for the entire cell \n &lt;c&gt;M&lt;/c&gt; is initialized to \f$m_i\f$ which is set by &lt;c&gt;mi&lt;/c&gt; \n &lt;c&gt;N&lt;/c&gt; is initialized to \f$n_i\f$ which is set by &lt;c&gt;ni&lt;/c&gt; \n &lt;c&gt;H&lt;/c&gt; is initialized to \f$h_i\f$ which is set by &lt;c&gt;hi&lt;/c&gt; &lt;/summary&gt; private void InitializeNeuronCell() { U = Vector.Build.Dense(Neuron.nodes.Count, 0); M = Vector.Build.Dense(Neuron.nodes.Count, mi); N = Vector.Build.Dense(Neuron.nodes.Count, ni); H = Vector.Build.Dense(Neuron.nodes.Count, hi); } &lt;summary&gt; This is for constructing the lhs and rhs of system matrix \n This will construct a HINES matrix (symmetric), it should be tridiagonal with some off diagonal entries corresponding to a branch location in the neuron graph \n The entries are defined by the following: \f[ \left(-\sum_{k\in\mathcal{N}_j}\eta_kV_k^{n+1}\right)+\omega_jV_j^{n+1}=\left(\sum_{k\in\mathcal{N}_j}\eta_kV_k^{n}\right)+\bar{\omega}_jV_j^{n} \]
 </p>
 <p> where </p><p class="formulaDsp">
 \[\eta_k = \frac{\gamma_{k, j}\Delta t}{ 2}\]
@@ -985,7 +997,7 @@ The entries are defined by the following: </p>
   </table>
   </dd>
 </dl>
-<p>this is the <code>NeuronCell</code> that contains all the information about the cell geometry </p><dl class="params"><dt>Parameters</dt><dd>
+<p>this is the <code>Neuron</code> that contains all the information about the cell geometry </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">res</td><td></td></tr>
   </table>
@@ -1014,26 +1026,24 @@ in this case they are of type <code>CoordinateStorage</code> <br  />
 <p>for keeping track of the neighbors of a node <br  />
 <code>List&lt;int&gt; nghbrlist;</code> this is for collecting the neighbor indices of the current node <br  />
 </p>
-<p>make an empty list to collect edgelengths <br  />
-<code>List&lt;double&gt; edgelengths = new List&lt;double&gt;();</code> initialize empty list for collecting edgelengths</p>
 <p><code>double sumRecip = 0;</code> this is for adding the sum of reciprocals which is in our stencil scheme <br  />
 </p>
 <p>1e-6 scale factor to convert to micrometers for radii and edge length <br  />
 </p>
-<p><code>nghbrlist = myCell.nodeData[j].neighborIDs;</code> this gets the current neighbor list for node j <br  />
+<p><code>nghbrlist = myCell.nodes[j].AdjacencyList.Keys.ToList();</code> this gets the current neighbor list for node j <br  />
 </p>
-<p><code>nghbrLen = nghbrlist.Count();</code> this is the length of the neighbor list <br  />
+<p><code>nghbrLen = nghbrlist.Count;</code> this is the length of the neighbor list <br  />
 </p>
 <p><code>tempRadius = myCell.nodeData[j].nodeRadius*scf;</code> get the current radius at node j <br  />
 </p>
 <p>in this loop we collect the edgelengths that go to node j, and we compute the coefficient given in our paper <br  />
 </p>
-<p><code>tempEdgeLen = myCell.GetEdgeLength(j, nghbrlist[p])*scf;</code> get the edge length at current node j, to node neighbor p, scale to micro meters <br  />
+<p><code>tempEdgeLen = myCell.nodes[j].AdjacencyList[nghbrIds]*scf;</code> get the edge length at current node j, to node neighbor p, scale to micro meters <br  />
 </p>
 <p><code>edgelengths.Add(tempEdgeLen);</code> put the edge length in the list, this list of edges will have length equal to length of neighbor list <br  />
 </p>
 <p>get the average edge lengths of neighbors <br  />
-<code>foreach {... aveEdgeLengths = aveEdgeLengths + val;} aveEdgeLengths = aveEdgeLengths / edgelengths.Count;</code></p>
+</p>
 <p>set main diagonal entries using <code>rhs.At()</code></p>
 <p>set off diagonal entries by going through the neighbor list, and using <code>rhs.At()</code></p>
 <p><code>stencil.Add()</code> this adds the completed stencil matrices to the output list</p>
@@ -1064,8 +1074,17 @@ in this case they are of type <code>CoordinateStorage</code> <br  />
 </div><div class="memdoc">
 
 <p>This is a small routine call to initialize the Neuron Cell this will initialize the solution vectors which are <code>U</code>, <code>M</code>, <code>N</code>, and <code>H</code> </p>
+<p><code>R</code> this is the reaction vector for the reaction solve</p>
+<p><code>reactConst</code> this is a small list for collecting the conductances and reversal potential which is sent to the reaction solve routine</p>
+<p>this sets the target time step size</p>
+<p>UnityEngine.Debug.Log("Target Time Step = " + timeStep);</p>
+<p><code>List&lt;CoordinateStorage&lt;double&gt;&gt; sparse_stencils = makeSparseStencils(Neuron, res, cap, k);</code> Construct sparse RHS and LHS in coordinate storage format, no zeros are stored <br  />
+ <code>sparse_stencils</code> this is a list which contains only two matrices the LHS and RHS matrices for the Crank-Nicolson solve</p>
+<p><code>CompressedColumnStorage</code> call Compresses the sparse matrices which are stored in <code>sparse_stencils[0]</code> and <code>sparse_stencils[1]</code></p>
+<p><code>double [] b</code> we define storage for the diffusion solve part</p>
+<p><code>var lu = SparseLU.Create(l_csc, ColumnOrdering.MinimumDegreeAtA, 0.1);</code> this creates the LU decomposition of the HINES matrix which is defined by <code>l_csc</code></p>
 
-<p>Reimplemented from <a class="el" href="../../db/d39/class_c2_m2_1_1_simulation_1_1_simulation.html#a136e0cdc6fdf83cb91747fe09dbd1b4d">C2M2.Simulation.Simulation&lt; double[], Mesh, VRRaycastableMesh, VRGrabbableMesh &gt;</a>.</p>
+<p>Implements <a class="el" href="../../db/d39/class_c2_m2_1_1_simulation_1_1_simulation.html#a5ebac31ebd6a0cf9a74b450b5cc85b1b">C2M2.Simulation.Simulation&lt; double[], Mesh, VRRaycastableMesh, VRGrabbableMesh &gt;</a>.</p>
 
 </div>
 </div>
@@ -1221,8 +1240,8 @@ in this case they are of type <code>CoordinateStorage</code> <br  />
 
 </div>
 </div>
-<a id="a5db6c67891c0239069409e693be74ed3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5db6c67891c0239069409e693be74ed3">&#9670;&nbsp;</a></span>Solve()</h2>
+<a id="a56f153c4c72e3ea61de97ec3a0f6e4d3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a56f153c4c72e3ea61de97ec3a0f6e4d3">&#9670;&nbsp;</a></span>SolveStep()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1231,9 +1250,10 @@ in this case they are of type <code>CoordinateStorage</code> <br  />
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">override void C2M2.NeuronalDynamics.Simulation.SparseSolverTestv1.Solve </td>
+          <td class="memname">override void C2M2.NeuronalDynamics.Simulation.SparseSolverTestv1.SolveStep </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>t</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -1269,34 +1289,47 @@ in this case they are of type <code>CoordinateStorage</code> <br  />
  <br  />
  with initial conditions \(V_0^*=V(t_n)= V_n\) at the beginning of the time step to get the intermediate solution \(V^*\) Then we solve \(\frac{dV^{**}}{dt}=r(V^{**})\) with initial condition \(V_0^{**}=V^*\) to get \(V^{**}\), and \(V_{n+1}=V(t_{n+1})=V^{**}\) the voltage at the end of the time step. For equation the diffusion we use a Crank-Nicolson scheme</li>
 </ol>
-<p><code>int nT</code> is the Number of time steps</p>
-<p><code>R</code> this is the reaction vector for the reaction solve</p>
-<p><code>reactConst</code> this is a small list for collecting the conductances and reversal potential which is sent to the reaction solve routine</p>
-<p><code>List&lt;CoordinateStorage&lt;double&gt;&gt; sparse_stencils = makeSparseStencils(NeuronCell, res, cap, k);</code> Construct sparse RHS and LHS in coordinate storage format, no zeros are stored <br  />
- <code>sparse_stencils</code> this is a list which contains only two matrices the LHS and RHS matrices for the Crank-Nicolson solve</p>
-<p><code>CompressedColumnStorage</code> call Compresses the sparse matrices which are stored in <code>sparse_stencils[0]</code> and <code>sparse_stencils[1]</code></p>
-<p><code>double [] b</code> we define storage for the diffusion solve part</p>
-<p><code>var lu = SparseLU.Create(l_csc, ColumnOrdering.MinimumDegreeAtA, 0.1);</code> this creates the LU decomposition of the HINES matrix which is defined by <code>l_csc</code></p>
-<p><code>if ((i * k &gt;= 0.015) &amp;&amp; SomaOn) { U[0] = vstart; }</code> this checks of the somaclamp is on and sets the soma location to <code>vstart</code></p>
-<p>This part does the diffusion solve <br  />
+<p><code>if ((i * k &gt;= 0.015) &amp;&amp; SomaOn) { U[0] = vstart; }</code> this checks of the somaclamp is on and sets the soma location to <code>vstart</code> if ((t * k &gt;= 0.015) &amp;&amp; SomaOn) { U[0] = vstart; } This part does the diffusion solve <br  />
  <code>r_csc.Multiply(U.ToArray(), b);</code> the performs the RHS*Ucurr and stores it in <code>b</code> <br  />
  <code>lu.Solve(b, b);</code> this does the forward/backward substitution of the LU solve and sovles LHS = b <br  />
- <code>U.SetSubVector(0, NeuronCell.vertCount, Vector.Build.DenseOfArray(b));</code> this sets the U vector to the voltage at the end of the diffusion solve</p>
+ <code>U.SetSubVector(0, Neuron.vertCount, Vector.Build.DenseOfArray(b));</code> this sets the U vector to the voltage at the end of the diffusion solve</p>
 <p>this part solves the reaction portion of the operator splitting <br  />
-<code>R.SetSubVector(0, NeuronCell.vertCount, reactF(reactConst, U, N, M, H, cap));</code> this first evaluates at the reaction function \(r(V)\) <br  />
+<code>R.SetSubVector(0, Neuron.vertCount, reactF(reactConst, U, N, M, H, cap));</code> this first evaluates at the reaction function \(r(V)\) <br  />
 <code>R.Multiply(k, R); </code> this multiplies by the time step size <br  />
 <code>U.add(R,U)</code> adds it back to U to finish off the operator splitting For the reaction solve we are solving </p><p class="formulaDsp">
 \[\frac{U_{next}-U_{curr}}{k} = R(U_{curr})\]
 </p>
 <p>this part solve the state variables using Forward Euler the general rule is \(N_{next} = N_{curr}+k\cdot f_N(U_{curr},N_{curr})\)</p>
-<p><code>if ((i * k &gt;= 0.015) &amp;&amp; SomaOn) { U[0] = vstart; }</code> this checks of the somaclamp is on and sets the soma location to <code>vstart</code></p>
-<p><code>U[clamp.focusVert] = (1E-03)*clamp.clampPower;</code> notice we multiply by 1e-3 since the hit value is in [mV] we need to convert to [V], volts.</p>
+<p><code>if ((i * k &gt;= 0.015) &amp;&amp; SomaOn) { U[0] = vstart; }</code> this checks of the somaclamp is on and sets the soma location to <code>vstart</code> if ((t * k &gt;= 0.015) &amp;&amp; SomaOn) { U[0] = vstart; } <br  />
+</p>
 
-<p>Implements <a class="el" href="../../db/d39/class_c2_m2_1_1_simulation_1_1_simulation.html#adc5e6e0adf67ae72e144c1424fd93625">C2M2.Simulation.Simulation&lt; double[], Mesh, VRRaycastableMesh, VRGrabbableMesh &gt;</a>.</p>
+<p>Implements <a class="el" href="../../db/d39/class_c2_m2_1_1_simulation_1_1_simulation.html#adcb673993dd3f7c5f36842b3e1bd54af">C2M2.Simulation.Simulation&lt; double[], Mesh, VRRaycastableMesh, VRGrabbableMesh &gt;</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
+<a id="aa2bf8acea17647c8f6e14f12f6ca067a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa2bf8acea17647c8f6e14f12f6ca067a">&#9670;&nbsp;</a></span>b</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double [] C2M2.NeuronalDynamics.Simulation.SparseSolverTestv1.b</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a1165385fda9531ac642f499d747c4cbc"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1165385fda9531ac642f499d747c4cbc">&#9670;&nbsp;</a></span>cap</h2>
 
@@ -1318,6 +1351,30 @@ in this case they are of type <code>CoordinateStorage</code> <br  />
 </div><div class="memdoc">
 
 <p>[F/m2] capacitance per unit area, this is the plasma membrane capacitance, this a standard value for the capacitance </p>
+
+</div>
+</div>
+<a id="ac86ec7664c5c24c88cb0ec95f3b57b3e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac86ec7664c5c24c88cb0ec95f3b57b3e">&#9670;&nbsp;</a></span>cfl</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double C2M2.NeuronalDynamics.Simulation.SparseSolverTestv1.cfl = 1.5</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>this is the scale factor for increasing the time step size if it is unnecessarily small </p>
 
 </div>
 </div>
@@ -1390,23 +1447,6 @@ in this case they are of type <code>CoordinateStorage</code> <br  />
 </div><div class="memdoc">
 
 <p>[V] sodium reversal potential </p>
-
-</div>
-</div>
-<a id="a5acda23d8923110217b3c29812b437ed"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5acda23d8923110217b3c29812b437ed">&#9670;&nbsp;</a></span>endTime</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">double C2M2.NeuronalDynamics.Simulation.SparseSolverTestv1.endTime = 0.1</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>[s] endTime of the simulation. This is the endtime of the simulation which is measured in seconds, this is a parameter that the user can set for now </p>
-<p>TODO: we would like the simulation to run without an endtime and the use clicks an 'end button' to terminate the vr-simulation</p>
 
 </div>
 </div>
@@ -1544,8 +1584,8 @@ in this case they are of type <code>CoordinateStorage</code> <br  />
 
 </div>
 </div>
-<a id="a78ec2163e356e19b61d37e78a78d88b1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a78ec2163e356e19b61d37e78a78d88b1">&#9670;&nbsp;</a></span>i</h2>
+<a id="afeec2379b95f0760fc55d62ea61f39b6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afeec2379b95f0760fc55d62ea61f39b6">&#9670;&nbsp;</a></span>l_csc</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1554,7 +1594,7 @@ in this case they are of type <code>CoordinateStorage</code> <br  />
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">int C2M2.NeuronalDynamics.Simulation.SparseSolverTestv1.i = -1</td>
+          <td class="memname">CompressedColumnStorage&lt;double&gt; C2M2.NeuronalDynamics.Simulation.SparseSolverTestv1.l_csc</td>
         </tr>
       </table>
   </td>
@@ -1564,24 +1604,27 @@ in this case they are of type <code>CoordinateStorage</code> <br  />
 </table>
 </div><div class="memdoc">
 
-<p>This keeps track of which simulation frame to send to the other scripts <code>i</code> gets track of the time step number </p>
-
 </div>
 </div>
-<a id="adceb698b149bfd0e68b6ae904aa5e17a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adceb698b149bfd0e68b6ae904aa5e17a">&#9670;&nbsp;</a></span>k</h2>
+<a id="ab5d1eedb0b1662c832ab47b8ded8a385"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab5d1eedb0b1662c832ab47b8ded8a385">&#9670;&nbsp;</a></span>lu</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">double C2M2.NeuronalDynamics.Simulation.SparseSolverTestv1.k = 0.0025 * 1.0E-3</td>
+          <td class="memname">SparseLU C2M2.NeuronalDynamics.Simulation.SparseSolverTestv1.lu</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
-
-<p>User enters the time step size [s], this is the time step size of the simulation, this needs to be chosen carefully as too large of a time step size may cause numerical instability for the solver. Notice that that this is in [s] therefore 0.0025[ms] = 0.0025e-3 [s] </p>
-<p>TODO: need to formulate a default time step size given a refinement level of geometry</p>
 
 </div>
 </div>
@@ -1683,6 +1726,72 @@ in this case they are of type <code>CoordinateStorage</code> <br  />
 
 </div>
 </div>
+<a id="a84cde92b6da8e6a970c736a52220b67d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a84cde92b6da8e6a970c736a52220b67d">&#9670;&nbsp;</a></span>R</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../db/dc3/_sparse_solver_testv1_8cs.html#a90e5369014f032bde39e79eacb048ede">Vector</a> C2M2.NeuronalDynamics.Simulation.SparseSolverTestv1.R</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5602417afab76b72890774d29c6dc56d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5602417afab76b72890774d29c6dc56d">&#9670;&nbsp;</a></span>r_csc</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">CompressedColumnStorage&lt;double&gt; C2M2.NeuronalDynamics.Simulation.SparseSolverTestv1.r_csc</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa9d3e93753a49091bbd90ace695945a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa9d3e93753a49091bbd90ace695945a9">&#9670;&nbsp;</a></span>reactConst</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt;double&gt; C2M2.NeuronalDynamics.Simulation.SparseSolverTestv1.reactConst</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="aeeae05f2d873e57bebf257aa91ac0f29"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aeeae05f2d873e57bebf257aa91ac0f29">&#9670;&nbsp;</a></span>res</h2>
 
@@ -1693,7 +1802,7 @@ in this case they are of type <code>CoordinateStorage</code> <br  />
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">double C2M2.NeuronalDynamics.Simulation.SparseSolverTestv1.res = 2500.0 * 1.0E-2</td>
+          <td class="memname">double C2M2.NeuronalDynamics.Simulation.SparseSolverTestv1.res = 300.0 * 1.0E-2</td>
         </tr>
       </table>
   </td>
@@ -1705,8 +1814,8 @@ in this case they are of type <code>CoordinateStorage</code> <br  />
 
 </div>
 </div>
-<a id="a4459a92fa7a5562787018e60231c3425"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4459a92fa7a5562787018e60231c3425">&#9670;&nbsp;</a></span>saveMatrices</h2>
+<a id="a3c265fa62cfa6b2b4f3dbd19a172ef25"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3c265fa62cfa6b2b4f3dbd19a172ef25">&#9670;&nbsp;</a></span>Rmemscf</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1715,7 +1824,7 @@ in this case they are of type <code>CoordinateStorage</code> <br  />
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool C2M2.NeuronalDynamics.Simulation.SparseSolverTestv1.saveMatrices = false</td>
+          <td class="memname">double C2M2.NeuronalDynamics.Simulation.SparseSolverTestv1.Rmemscf = 0.65</td>
         </tr>
       </table>
   </td>
@@ -1725,8 +1834,7 @@ in this case they are of type <code>CoordinateStorage</code> <br  />
 </table>
 </div><div class="memdoc">
 
-<p>send LHS and RHS stencil matrices to output file for saving. This option is available if the user would like to check the sparsity pattern of the HINES matrix, this is a sparse matrix which corresponds to the sparsity nature of the stencil matrix. The stencil matrix is used for the diffusion solve of the PDE equation when we perform the operator splitting. </p>
-<p>summary&gt; [ohm.m] resistance.length, this is the axial resistence of the neuron, increasing this value has the effect of making the AP waves more localized and slower conduction speed decreasing this value has the effect of make the AP waves larger and have a faster conduction speed</p>
+<p>the membrane resistance does not hit the theoretical maximum, it is approximately 65% but this may change depending on the rate functions that are used </p>
 
 </div>
 </div>
@@ -1743,6 +1851,29 @@ in this case they are of type <code>CoordinateStorage</code> <br  />
 </div><div class="memdoc">
 
 <p>This is for turning the soma on/off, this option is primarily used for testing purposes for the convergence analysis, for a soma clamp experiment </p>
+<p>summary&gt; [ohm.m] resistance.length, this is the axial resistence of the neuron, increasing this value has the effect of making the AP waves more localized and slower conduction speed decreasing this value has the effect of make the AP waves larger and have a faster conduction speed</p>
+
+</div>
+</div>
+<a id="a63fdf860a150436907f47f5f49bddb4f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a63fdf860a150436907f47f5f49bddb4f">&#9670;&nbsp;</a></span>sparse_stencils</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt;CoordinateStorage&lt;double&gt; &gt; C2M2.NeuronalDynamics.Simulation.SparseSolverTestv1.sparse_stencils</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -1788,7 +1919,7 @@ in this case they are of type <code>CoordinateStorage</code> <br  />
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>C:/Users/jaros/Desktop/tempvr/virtual-reality/Assets/Scripts/C2M2/NeuronalDynamics/Simulation/CellSolvers/<a class="el" href="../../db/dc3/_sparse_solver_testv1_8cs.html">SparseSolverTestv1.cs</a></li>
+<li>C:/Users/Jacob Wells/Desktop/C2M2/NeuroVISOR/Assets/Scripts/C2M2/NeuronalDynamics/Simulation/<a class="el" href="../../db/dc3/_sparse_solver_testv1_8cs.html">SparseSolverTestv1.cs</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

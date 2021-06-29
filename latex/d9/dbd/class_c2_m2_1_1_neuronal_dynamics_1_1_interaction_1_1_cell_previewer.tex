@@ -1,0 +1,137 @@
+\hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_cell_previewer}{}\doxysection{C2\+M2.\+Neuronal\+Dynamics.\+Interaction.\+Cell\+Previewer Class Reference}
+\label{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_cell_previewer}\index{C2M2.NeuronalDynamics.Interaction.CellPreviewer@{C2M2.NeuronalDynamics.Interaction.CellPreviewer}}
+
+
+Inherits Mono\+Behaviour.
+
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_cell_previewer_ac60c346839ad358dabd4ee663b280c62}{cells\+Path}} = \char`\"{}Neuronal\+Dynamics\char`\"{} + Path.\+Directory\+Separator\+Char + \char`\"{}Geometries\char`\"{}
+\begin{DoxyCompactList}\small\item\em Cell path relative to Streaming\+Assets \end{DoxyCompactList}\item 
+Game\+Object \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_cell_previewer_a14228d104071ead4fce6088102722daa}{preview\+Window\+Prefab}} = null
+\item 
+\mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_n_d_simulation_loader}{NDSimulation\+Loader}} \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_cell_previewer_ae20bc9d2d6c07254a8531a770ace59cb}{loader}} = null
+\item 
+bool \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_cell_previewer_afcd0d84ffe93f0d31ee77a42a35ebf23}{render\+Walls}} = true
+\item 
+Color32 \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_cell_previewer_ac26f46d3b3181bc06283925163d96997}{window\+Color}} = Color.\+black
+\item 
+Game\+Object \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_cell_previewer_a6eb580af8bbca13304fec70ef7cd69e0}{Error\+Window}} = null
+\item 
+Color32\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_cell_previewer_a52f785c74da08663c374674d7da9dfa4}{cell\+Colors}}
+\begin{DoxyCompactList}\small\item\em Colors ot use for the 1D cell renderings. More than cell\+Colors.\+Length cells will repeat these colors \end{DoxyCompactList}\item 
+Vector3\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_cell_previewer_a504f103d69671998291dffffcc43a721}{positions\+Norm}}
+\begin{DoxyCompactList}\small\item\em Defines the normalized positions of the first x-\/y row of preview windows. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_cell_previewer_a14e63f52de42da7e3e67c052bd966785}{stack\+Pos}} = true
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_cell_previewer_ab8fde5a0d65102451a5379dbf7455096}{Awake}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_cell_previewer_ab8fde5a0d65102451a5379dbf7455096}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_cell_previewer_ab8fde5a0d65102451a5379dbf7455096}} 
+\index{C2M2.NeuronalDynamics.Interaction.CellPreviewer@{C2M2.NeuronalDynamics.Interaction.CellPreviewer}!Awake@{Awake}}
+\index{Awake@{Awake}!C2M2.NeuronalDynamics.Interaction.CellPreviewer@{C2M2.NeuronalDynamics.Interaction.CellPreviewer}}
+\doxysubsubsection{\texorpdfstring{Awake()}{Awake()}}
+{\footnotesize\ttfamily void C2\+M2.\+Neuronal\+Dynamics.\+Interaction.\+Cell\+Previewer.\+Awake (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_cell_previewer_a52f785c74da08663c374674d7da9dfa4}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_cell_previewer_a52f785c74da08663c374674d7da9dfa4}} 
+\index{C2M2.NeuronalDynamics.Interaction.CellPreviewer@{C2M2.NeuronalDynamics.Interaction.CellPreviewer}!cellColors@{cellColors}}
+\index{cellColors@{cellColors}!C2M2.NeuronalDynamics.Interaction.CellPreviewer@{C2M2.NeuronalDynamics.Interaction.CellPreviewer}}
+\doxysubsubsection{\texorpdfstring{cellColors}{cellColors}}
+{\footnotesize\ttfamily Color32 \mbox{[}$\,$\mbox{]} C2\+M2.\+Neuronal\+Dynamics.\+Interaction.\+Cell\+Previewer.\+cell\+Colors}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} Color32[]}
+\DoxyCodeLine{        \{}
+\DoxyCodeLine{            \textcolor{keyword}{new} Color32(255, 200, 0, 255),}
+\DoxyCodeLine{            \textcolor{keyword}{new} Color32(0, 200, 0, 255),}
+\DoxyCodeLine{            \textcolor{keyword}{new} Color32(0, 100, 255, 255),}
+\DoxyCodeLine{            \textcolor{keyword}{new} Color32(200, 0, 0, 255)}
+\DoxyCodeLine{        \}}
+
+\end{DoxyCode}
+
+
+Colors ot use for the 1D cell renderings. More than cell\+Colors.\+Length cells will repeat these colors 
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_cell_previewer_ac60c346839ad358dabd4ee663b280c62}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_cell_previewer_ac60c346839ad358dabd4ee663b280c62}} 
+\index{C2M2.NeuronalDynamics.Interaction.CellPreviewer@{C2M2.NeuronalDynamics.Interaction.CellPreviewer}!cellsPath@{cellsPath}}
+\index{cellsPath@{cellsPath}!C2M2.NeuronalDynamics.Interaction.CellPreviewer@{C2M2.NeuronalDynamics.Interaction.CellPreviewer}}
+\doxysubsubsection{\texorpdfstring{cellsPath}{cellsPath}}
+{\footnotesize\ttfamily string C2\+M2.\+Neuronal\+Dynamics.\+Interaction.\+Cell\+Previewer.\+cells\+Path = \char`\"{}Neuronal\+Dynamics\char`\"{} + Path.\+Directory\+Separator\+Char + \char`\"{}Geometries\char`\"{}}
+
+
+
+Cell path relative to Streaming\+Assets 
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_cell_previewer_a6eb580af8bbca13304fec70ef7cd69e0}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_cell_previewer_a6eb580af8bbca13304fec70ef7cd69e0}} 
+\index{C2M2.NeuronalDynamics.Interaction.CellPreviewer@{C2M2.NeuronalDynamics.Interaction.CellPreviewer}!ErrorWindow@{ErrorWindow}}
+\index{ErrorWindow@{ErrorWindow}!C2M2.NeuronalDynamics.Interaction.CellPreviewer@{C2M2.NeuronalDynamics.Interaction.CellPreviewer}}
+\doxysubsubsection{\texorpdfstring{ErrorWindow}{ErrorWindow}}
+{\footnotesize\ttfamily Game\+Object C2\+M2.\+Neuronal\+Dynamics.\+Interaction.\+Cell\+Previewer.\+Error\+Window = null}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_cell_previewer_ae20bc9d2d6c07254a8531a770ace59cb}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_cell_previewer_ae20bc9d2d6c07254a8531a770ace59cb}} 
+\index{C2M2.NeuronalDynamics.Interaction.CellPreviewer@{C2M2.NeuronalDynamics.Interaction.CellPreviewer}!loader@{loader}}
+\index{loader@{loader}!C2M2.NeuronalDynamics.Interaction.CellPreviewer@{C2M2.NeuronalDynamics.Interaction.CellPreviewer}}
+\doxysubsubsection{\texorpdfstring{loader}{loader}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_n_d_simulation_loader}{NDSimulation\+Loader}} C2\+M2.\+Neuronal\+Dynamics.\+Interaction.\+Cell\+Previewer.\+loader = null}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_cell_previewer_a504f103d69671998291dffffcc43a721}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_cell_previewer_a504f103d69671998291dffffcc43a721}} 
+\index{C2M2.NeuronalDynamics.Interaction.CellPreviewer@{C2M2.NeuronalDynamics.Interaction.CellPreviewer}!positionsNorm@{positionsNorm}}
+\index{positionsNorm@{positionsNorm}!C2M2.NeuronalDynamics.Interaction.CellPreviewer@{C2M2.NeuronalDynamics.Interaction.CellPreviewer}}
+\doxysubsubsection{\texorpdfstring{positionsNorm}{positionsNorm}}
+{\footnotesize\ttfamily Vector3 \mbox{[}$\,$\mbox{]} C2\+M2.\+Neuronal\+Dynamics.\+Interaction.\+Cell\+Previewer.\+positions\+Norm}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} Vector3[]}
+\DoxyCodeLine{        \{}
+\DoxyCodeLine{            \textcolor{keyword}{new} Vector3(0, 0, 0),}
+\DoxyCodeLine{            \textcolor{keyword}{new} Vector3(0, 0, 1),}
+\DoxyCodeLine{            \textcolor{keyword}{new} Vector3(0, 0, -\/1),}
+\DoxyCodeLine{            \textcolor{keyword}{new} Vector3(0, 0, -\/2),}
+\DoxyCodeLine{        \}}
+
+\end{DoxyCode}
+
+
+Defines the normalized positions of the first x-\/y row of preview windows. 
+
+The default array represents normalized positions of placing up to four preview windows in a four-\/by-\/one alignment. if stack\+Pos is true, this will automatically \char`\"{}stack\char`\"{} positions\+Norm above and below this array in the y-\/axis \mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_cell_previewer_a14228d104071ead4fce6088102722daa}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_cell_previewer_a14228d104071ead4fce6088102722daa}} 
+\index{C2M2.NeuronalDynamics.Interaction.CellPreviewer@{C2M2.NeuronalDynamics.Interaction.CellPreviewer}!previewWindowPrefab@{previewWindowPrefab}}
+\index{previewWindowPrefab@{previewWindowPrefab}!C2M2.NeuronalDynamics.Interaction.CellPreviewer@{C2M2.NeuronalDynamics.Interaction.CellPreviewer}}
+\doxysubsubsection{\texorpdfstring{previewWindowPrefab}{previewWindowPrefab}}
+{\footnotesize\ttfamily Game\+Object C2\+M2.\+Neuronal\+Dynamics.\+Interaction.\+Cell\+Previewer.\+preview\+Window\+Prefab = null}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_cell_previewer_afcd0d84ffe93f0d31ee77a42a35ebf23}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_cell_previewer_afcd0d84ffe93f0d31ee77a42a35ebf23}} 
+\index{C2M2.NeuronalDynamics.Interaction.CellPreviewer@{C2M2.NeuronalDynamics.Interaction.CellPreviewer}!renderWalls@{renderWalls}}
+\index{renderWalls@{renderWalls}!C2M2.NeuronalDynamics.Interaction.CellPreviewer@{C2M2.NeuronalDynamics.Interaction.CellPreviewer}}
+\doxysubsubsection{\texorpdfstring{renderWalls}{renderWalls}}
+{\footnotesize\ttfamily bool C2\+M2.\+Neuronal\+Dynamics.\+Interaction.\+Cell\+Previewer.\+render\+Walls = true}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_cell_previewer_a14e63f52de42da7e3e67c052bd966785}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_cell_previewer_a14e63f52de42da7e3e67c052bd966785}} 
+\index{C2M2.NeuronalDynamics.Interaction.CellPreviewer@{C2M2.NeuronalDynamics.Interaction.CellPreviewer}!stackPos@{stackPos}}
+\index{stackPos@{stackPos}!C2M2.NeuronalDynamics.Interaction.CellPreviewer@{C2M2.NeuronalDynamics.Interaction.CellPreviewer}}
+\doxysubsubsection{\texorpdfstring{stackPos}{stackPos}}
+{\footnotesize\ttfamily bool C2\+M2.\+Neuronal\+Dynamics.\+Interaction.\+Cell\+Previewer.\+stack\+Pos = true}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_cell_previewer_ac26f46d3b3181bc06283925163d96997}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_cell_previewer_ac26f46d3b3181bc06283925163d96997}} 
+\index{C2M2.NeuronalDynamics.Interaction.CellPreviewer@{C2M2.NeuronalDynamics.Interaction.CellPreviewer}!windowColor@{windowColor}}
+\index{windowColor@{windowColor}!C2M2.NeuronalDynamics.Interaction.CellPreviewer@{C2M2.NeuronalDynamics.Interaction.CellPreviewer}}
+\doxysubsubsection{\texorpdfstring{windowColor}{windowColor}}
+{\footnotesize\ttfamily Color32 C2\+M2.\+Neuronal\+Dynamics.\+Interaction.\+Cell\+Previewer.\+window\+Color = Color.\+black}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Jacob Wells/\+Desktop/\+C2\+M2/\+Neuro\+VISOR/\+Assets/\+Scripts/\+C2\+M2/\+Neuronal\+Dynamics/\+Interaction/\mbox{\hyperlink{_cell_previewer_8cs}{Cell\+Previewer.\+cs}}\end{DoxyCompactItemize}

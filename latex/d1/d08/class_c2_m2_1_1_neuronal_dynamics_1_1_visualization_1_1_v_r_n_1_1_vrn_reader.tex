@@ -1,14 +1,5 @@
 \hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_r_n_1_1_vrn_reader}{}\doxysection{C2\+M2.\+Neuronal\+Dynamics.\+Visualization.\+VRN.\+Vrn\+Reader Class Reference}
 \label{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_r_n_1_1_vrn_reader}\index{C2M2.NeuronalDynamics.Visualization.VRN.VrnReader@{C2M2.NeuronalDynamics.Visualization.VRN.VrnReader}}
-
-
-Collaboration diagram for C2\+M2.\+Neuronal\+Dynamics.\+Visualization.\+VRN.\+Vrn\+Reader\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[height=550pt]{d0/d4d/class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_r_n_1_1_vrn_reader__coll__graph}
-\end{center}
-\end{figure}
 \doxysubsection*{Classes}
 \begin{DoxyCompactItemize}
 \item 
@@ -19,11 +10,17 @@ struct \mbox{\hyperlink{struct_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1
 struct \mbox{\hyperlink{struct_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_r_n_1_1_vrn_reader_1_1_geom2d}{Geom2d}}
 \begin{DoxyCompactList}\small\item\em Stores the 2d geometries by name, inflation (factor), and description \end{DoxyCompactList}\item 
 class \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_r_n_1_1_vrn_reader_1_1_geometry}{Geometry}}
-\begin{DoxyCompactList}\small\item\em Stores 1D and associated 2D geometries in the member geom1d \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Stores 1D and associated 2D geometries in the member geom1d Additional metadata of the cell is stored in \mbox{\hyperlink{struct_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_r_n_1_1_vrn_reader_1_1_meta_info}{Meta\+Info}} \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{struct_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_r_n_1_1_vrn_reader_1_1_meta_info}{Meta\+Info}}
+\end{DoxyCompactItemize}
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
+\mbox{\hyperlink{struct_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_r_n_1_1_vrn_reader_1_1_meta_info}{Meta\+Info}}? \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_r_n_1_1_vrn_reader_aa0522b5471ea4ee7a0f584fe380dedce}{Get\+Meta\+Info}} ()
+\item 
 string \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_r_n_1_1_vrn_reader_a888971407a759af2098066c010190f9a}{List}} ()
+\begin{DoxyCompactList}\small\item\em Print out a list of 1D and 2D geometries contained in .vrn archive \end{DoxyCompactList}\item 
+int\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_r_n_1_1_vrn_reader_a53800b7ea0af0eb5c5b08b9cd4a17ff0}{List\+Refinements}} ()
 \item 
 void \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_r_n_1_1_vrn_reader_aa8e820dd6d77a1b892b709c312a624d2}{Read\+UGX}} (in string mesh\+Name, ref \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_grid}{Grid}} grid)
 \begin{DoxyCompactList}\small\item\em Read a file (\mbox{\hyperlink{namespace_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x}{UGX}} mesh) from the .vrn archive and creates a Grid instance from it 
@@ -52,6 +49,8 @@ readonly string \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_visualiza
 \item 
 \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_r_n_1_1_vrn_reader_1_1_geometry}{Geometry}} \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_r_n_1_1_vrn_reader_addf6dbc8135d675e597463b75a750ec1}{geometry}}
 \item 
+\mbox{\hyperlink{struct_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_r_n_1_1_vrn_reader_1_1_meta_info}{Meta\+Info}} \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_r_n_1_1_vrn_reader_a3912d01ccd9bfc3388a8981f9c89c91c}{meta\+Info}}
+\item 
 Boolean \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_r_n_1_1_vrn_reader_a28cbe99899465c8dbd06518b66d560c7}{loaded}}
 \end{DoxyCompactItemize}
 
@@ -77,11 +76,27 @@ VRNREADER
 
 
 \doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_r_n_1_1_vrn_reader_aa0522b5471ea4ee7a0f584fe380dedce}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_r_n_1_1_vrn_reader_aa0522b5471ea4ee7a0f584fe380dedce}} 
+\index{C2M2.NeuronalDynamics.Visualization.VRN.VrnReader@{C2M2.NeuronalDynamics.Visualization.VRN.VrnReader}!GetMetaInfo@{GetMetaInfo}}
+\index{GetMetaInfo@{GetMetaInfo}!C2M2.NeuronalDynamics.Visualization.VRN.VrnReader@{C2M2.NeuronalDynamics.Visualization.VRN.VrnReader}}
+\doxysubsubsection{\texorpdfstring{GetMetaInfo()}{GetMetaInfo()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_r_n_1_1_vrn_reader_1_1_meta_info}{Meta\+Info}}? C2\+M2.\+Neuronal\+Dynamics.\+Visualization.\+VRN.\+Vrn\+Reader.\+Get\+Meta\+Info (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
 \mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_r_n_1_1_vrn_reader_a888971407a759af2098066c010190f9a}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_r_n_1_1_vrn_reader_a888971407a759af2098066c010190f9a}} 
 \index{C2M2.NeuronalDynamics.Visualization.VRN.VrnReader@{C2M2.NeuronalDynamics.Visualization.VRN.VrnReader}!List@{List}}
 \index{List@{List}!C2M2.NeuronalDynamics.Visualization.VRN.VrnReader@{C2M2.NeuronalDynamics.Visualization.VRN.VrnReader}}
 \doxysubsubsection{\texorpdfstring{List()}{List()}}
 {\footnotesize\ttfamily string C2\+M2.\+Neuronal\+Dynamics.\+Visualization.\+VRN.\+Vrn\+Reader.\+List (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Print out a list of 1D and 2D geometries contained in .vrn archive 
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_r_n_1_1_vrn_reader_a53800b7ea0af0eb5c5b08b9cd4a17ff0}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_r_n_1_1_vrn_reader_a53800b7ea0af0eb5c5b08b9cd4a17ff0}} 
+\index{C2M2.NeuronalDynamics.Visualization.VRN.VrnReader@{C2M2.NeuronalDynamics.Visualization.VRN.VrnReader}!ListRefinements@{ListRefinements}}
+\index{ListRefinements@{ListRefinements}!C2M2.NeuronalDynamics.Visualization.VRN.VrnReader@{C2M2.NeuronalDynamics.Visualization.VRN.VrnReader}}
+\doxysubsubsection{\texorpdfstring{ListRefinements()}{ListRefinements()}}
+{\footnotesize\ttfamily int \mbox{[}$\,$\mbox{]} C2\+M2.\+Neuronal\+Dynamics.\+Visualization.\+VRN.\+Vrn\+Reader.\+List\+Refinements (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 \mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_r_n_1_1_vrn_reader_a56a797f0c7ec990eab76552946d9a571}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_r_n_1_1_vrn_reader_a56a797f0c7ec990eab76552946d9a571}} 
 \index{C2M2.NeuronalDynamics.Visualization.VRN.VrnReader@{C2M2.NeuronalDynamics.Visualization.VRN.VrnReader}!Load@{Load}}
@@ -95,7 +110,7 @@ Try to load the .vrn archive and deserialize JSON into appropriate data structur
 
 LOAD
 
-Note the load is only done if the corresponding archive has not yet been loaded \mbox{\hyperlink{struct_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_r_n_1_1_vrn_reader_1_1_geom1d}{1D Geometries }} \mbox{\hyperlink{struct_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_r_n_1_1_vrn_reader_1_1_geom2d}{2D Geoemtries }} summary$>$ Print out a list of 1D and 2D geometries contained in .vrn archive\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_r_n_1_1_vrn_reader_aa8e820dd6d77a1b892b709c312a624d2}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_r_n_1_1_vrn_reader_aa8e820dd6d77a1b892b709c312a624d2}} 
+Note the load is only done if the corresponding archive has not yet been loaded \mbox{\hyperlink{struct_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_r_n_1_1_vrn_reader_1_1_geom1d}{1D Geometries }} \mbox{\hyperlink{struct_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_r_n_1_1_vrn_reader_1_1_geom2d}{2D Geoemtries }} summary$>$ Returns the metainfo for the loaded cell geometry\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_r_n_1_1_vrn_reader_aa8e820dd6d77a1b892b709c312a624d2}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_r_n_1_1_vrn_reader_aa8e820dd6d77a1b892b709c312a624d2}} 
 \index{C2M2.NeuronalDynamics.Visualization.VRN.VrnReader@{C2M2.NeuronalDynamics.Visualization.VRN.VrnReader}!ReadUGX@{ReadUGX}}
 \index{ReadUGX@{ReadUGX}!C2M2.NeuronalDynamics.Visualization.VRN.VrnReader@{C2M2.NeuronalDynamics.Visualization.VRN.VrnReader}}
 \doxysubsubsection{\texorpdfstring{ReadUGX()}{ReadUGX()}}
@@ -175,8 +190,14 @@ Filename of inflated 2D mesh in archive
 \doxysubsubsection{\texorpdfstring{loaded}{loaded}}
 {\footnotesize\ttfamily Boolean C2\+M2.\+Neuronal\+Dynamics.\+Visualization.\+VRN.\+Vrn\+Reader.\+loaded\hspace{0.3cm}{\ttfamily [private]}}
 
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_r_n_1_1_vrn_reader_a3912d01ccd9bfc3388a8981f9c89c91c}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_r_n_1_1_vrn_reader_a3912d01ccd9bfc3388a8981f9c89c91c}} 
+\index{C2M2.NeuronalDynamics.Visualization.VRN.VrnReader@{C2M2.NeuronalDynamics.Visualization.VRN.VrnReader}!metaInfo@{metaInfo}}
+\index{metaInfo@{metaInfo}!C2M2.NeuronalDynamics.Visualization.VRN.VrnReader@{C2M2.NeuronalDynamics.Visualization.VRN.VrnReader}}
+\doxysubsubsection{\texorpdfstring{metaInfo}{metaInfo}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_r_n_1_1_vrn_reader_1_1_meta_info}{Meta\+Info}} C2\+M2.\+Neuronal\+Dynamics.\+Visualization.\+VRN.\+Vrn\+Reader.\+meta\+Info\hspace{0.3cm}{\ttfamily [private]}}
+
 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-C\+:/\+Users/jaros/\+Desktop/tempvr/virtual-\/reality/\+Assets/\+Scripts/\+C2\+M2/\+Neuronal\+Dynamics/\+Visualization/\mbox{\hyperlink{_vrn_reader_8cs}{Vrn\+Reader.\+cs}}\end{DoxyCompactItemize}
+C\+:/\+Users/\+Jacob Wells/\+Desktop/\+C2\+M2/\+Neuro\+VISOR/\+Assets/\+Scripts/\+C2\+M2/\+Neuronal\+Dynamics/\+Visualization/\mbox{\hyperlink{_vrn_reader_8cs}{Vrn\+Reader.\+cs}}\end{DoxyCompactItemize}

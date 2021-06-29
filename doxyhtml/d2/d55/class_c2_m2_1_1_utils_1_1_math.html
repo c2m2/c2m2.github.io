@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>virtual-reality: C2M2.Utils.Math Class Reference</title>
+<title>Neuro-VISOR: C2M2.Utils.Math Class Reference</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -33,8 +33,8 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="../../c2m2+Temple@75px.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">virtual-reality
-   &#160;<span id="projectnumber">2020.5</span>
+   <div id="projectname">Neuro-VISOR
+   &#160;<span id="projectnumber">0.2.0</span>
    </div>
    <div id="projectbrief">Visualize and interact with computational simulations using a virtual reality interface</div>
   </td>
@@ -101,13 +101,6 @@ $(document).ready(function(){initNavTree('d2/d55/class_c2_m2_1_1_utils_1_1_math.
 
 <p>Quick, static methods for finding max, min, and clamped scalar values and arrays  
  <a href="../../d2/d55/class_c2_m2_1_1_utils_1_1_math.html#details">More...</a></p>
-<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-0-trigger" src="../../closed.png" alt="+"/> Collaboration diagram for C2M2.Utils.Math:</div>
-<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d9/de1/class_c2_m2_1_1_utils_1_1_math__coll__graph.svg" width="154" height="235"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -136,6 +129,9 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a986508b4e3eb836a1de98bc6d4466e22"><td class="memItemLeft" align="right" valign="top">static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d55/class_c2_m2_1_1_utils_1_1_math.html#a986508b4e3eb836a1de98bc6d4466e22">Clamp</a> (double value, double min, double max)</td></tr>
 <tr class="memdesc:a986508b4e3eb836a1de98bc6d4466e22"><td class="mdescLeft">&#160;</td><td class="mdescRight">If value &lt; min, returns min, If min &lt;= value &lt;= max, returns value, If value &gt; max, returns max  <a href="../../d2/d55/class_c2_m2_1_1_utils_1_1_math.html#a986508b4e3eb836a1de98bc6d4466e22">More...</a><br /></td></tr>
 <tr class="separator:a986508b4e3eb836a1de98bc6d4466e22"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6532760e304c256b7e818b6402554a8f"><td class="memItemLeft" align="right" valign="top">static Vector3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d55/class_c2_m2_1_1_utils_1_1_math.html#a6532760e304c256b7e818b6402554a8f">Clamp</a> (this Vector3 value, Vector3 min, Vector3 max)</td></tr>
+<tr class="memdesc:a6532760e304c256b7e818b6402554a8f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clamp a Vector3 betwen a min and a max Vector3  <a href="../../d2/d55/class_c2_m2_1_1_utils_1_1_math.html#a6532760e304c256b7e818b6402554a8f">More...</a><br /></td></tr>
+<tr class="separator:a6532760e304c256b7e818b6402554a8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a36ec8197dd811e50d6b82d33b0149674"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d55/class_c2_m2_1_1_utils_1_1_math.html#a36ec8197dd811e50d6b82d33b0149674">Max</a> (this int[] array)</td></tr>
 <tr class="separator:a36ec8197dd811e50d6b82d33b0149674"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abbf840c39002917f300b6b256d987325"><td class="memItemLeft" align="right" valign="top">static float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d55/class_c2_m2_1_1_utils_1_1_math.html#abbf840c39002917f300b6b256d987325">Max</a> (this float[] array)</td></tr>
@@ -208,6 +204,10 @@ Static Public Member Functions</h2></td></tr>
 <tr class="separator:ab6f69979bee5006dbc7c6dbe2e51b59c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9e03ea1595caa0d63891ee8f82068dd6"><td class="memItemLeft" align="right" valign="top">static List&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d55/class_c2_m2_1_1_utils_1_1_math.html#a9e03ea1595caa0d63891ee8f82068dd6">Abs</a> (this List&lt; double &gt; list)</td></tr>
 <tr class="separator:a9e03ea1595caa0d63891ee8f82068dd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaef607b7efa3eb1d9cb26c71dca324eb"><td class="memItemLeft" align="right" valign="top">static float[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d55/class_c2_m2_1_1_utils_1_1_math.html#aaef607b7efa3eb1d9cb26c71dca324eb">Rescale</a> (this float[] array, float newMin, float newMax, float oldMin, float oldMax)</td></tr>
+<tr class="separator:aaef607b7efa3eb1d9cb26c71dca324eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07782645b436321a20d7deebf721ebd5"><td class="memItemLeft" align="right" valign="top">static List&lt; float &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d55/class_c2_m2_1_1_utils_1_1_math.html#a07782645b436321a20d7deebf721ebd5">Rescale</a> (this List&lt; float &gt; array, float newMin, float newMax, float oldMin, float oldMax)</td></tr>
+<tr class="separator:a07782645b436321a20d7deebf721ebd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae939d565a3228e9705439b79cacc3d1c"><td class="memItemLeft" align="right" valign="top">static Vector3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d55/class_c2_m2_1_1_utils_1_1_math.html#ae939d565a3228e9705439b79cacc3d1c">Dot</a> (this Vector3 a, Vector3 b)</td></tr>
 <tr class="separator:ae939d565a3228e9705439b79cacc3d1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6d1af1b3355bab31c4162905ae94dcf1"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d55/class_c2_m2_1_1_utils_1_1_math.html#a6d1af1b3355bab31c4162905ae94dcf1">CompareToLinq</a> (int numTrials=1000, int arraySize=1000, bool testMin=true, bool testMax=true, bool testClamp=true, bool testArrMax=true, bool testArrMin=true, bool testArrAvg=true, bool testArrStdDev=true, bool testArrSum=true, bool testArrAbs=true, float maxTimeSeconds=30f)</td></tr>
@@ -531,7 +531,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="a986508b4e3eb836a1de98bc6d4466e22"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a986508b4e3eb836a1de98bc6d4466e22">&#9670;&nbsp;</a></span>Clamp() <span class="overload">[1/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a986508b4e3eb836a1de98bc6d4466e22">&#9670;&nbsp;</a></span>Clamp() <span class="overload">[1/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -575,7 +575,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="aa21781bec23e0afe1e3034c7fd66ba26"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa21781bec23e0afe1e3034c7fd66ba26">&#9670;&nbsp;</a></span>Clamp() <span class="overload">[2/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aa21781bec23e0afe1e3034c7fd66ba26">&#9670;&nbsp;</a></span>Clamp() <span class="overload">[2/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -619,7 +619,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="a805a23bfab56ce715d7a92f700225077"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a805a23bfab56ce715d7a92f700225077">&#9670;&nbsp;</a></span>Clamp() <span class="overload">[3/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a805a23bfab56ce715d7a92f700225077">&#9670;&nbsp;</a></span>Clamp() <span class="overload">[3/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -659,6 +659,50 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>If value &lt; min, returns min, If min &lt;= value &lt;= max, returns value, If value &gt; max, returns max </p>
+
+</div>
+</div>
+<a id="a6532760e304c256b7e818b6402554a8f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6532760e304c256b7e818b6402554a8f">&#9670;&nbsp;</a></span>Clamp() <span class="overload">[4/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static Vector3 C2M2.Utils.Math.Clamp </td>
+          <td>(</td>
+          <td class="paramtype">this Vector3&#160;</td>
+          <td class="paramname"><em>value</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Vector3&#160;</td>
+          <td class="paramname"><em>min</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Vector3&#160;</td>
+          <td class="paramname"><em>max</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Clamp a Vector3 betwen a min and a max Vector3 </p>
 
 </div>
 </div>
@@ -1376,6 +1420,114 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="aaef607b7efa3eb1d9cb26c71dca324eb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaef607b7efa3eb1d9cb26c71dca324eb">&#9670;&nbsp;</a></span>Rescale() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static float [] C2M2.Utils.Math.Rescale </td>
+          <td>(</td>
+          <td class="paramtype">this float[]&#160;</td>
+          <td class="paramname"><em>array</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>newMin</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>newMax</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>oldMin</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>oldMax</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a07782645b436321a20d7deebf721ebd5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a07782645b436321a20d7deebf721ebd5">&#9670;&nbsp;</a></span>Rescale() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static List&lt;float&gt; C2M2.Utils.Math.Rescale </td>
+          <td>(</td>
+          <td class="paramtype">this List&lt; float &gt;&#160;</td>
+          <td class="paramname"><em>array</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>newMin</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>newMax</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>oldMin</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>oldMax</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="ac628fbe7bf4d0b6ff6f9bd21e687644b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac628fbe7bf4d0b6ff6f9bd21e687644b">&#9670;&nbsp;</a></span>StdDev() <span class="overload">[1/6]</span></h2>
 
@@ -1689,7 +1841,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>C:/Users/jaros/Desktop/tempvr/virtual-reality/Assets/Scripts/C2M2/Utils/<a class="el" href="../../d5/dd9/_math_8cs.html">Math.cs</a></li>
+<li>C:/Users/Jacob Wells/Desktop/C2M2/NeuroVISOR/Assets/Scripts/C2M2/Utils/Extensions/<a class="el" href="../../d5/dd9/_math_8cs.html">Math.cs</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

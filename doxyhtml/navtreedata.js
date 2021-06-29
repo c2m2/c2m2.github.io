@@ -24,7 +24,7 @@
 */
 var NAVTREE =
 [
-  [ "virtual-reality", "index.html", [
+  [ "Neuro-VISOR", "index.html", [
     [ "Packages", "namespaces.html", [
       [ "Packages", "namespaces.html", "namespaces_dup" ],
       [ "Package Functions", "namespacemembers.html", [
@@ -42,7 +42,7 @@ var NAVTREE =
         [ "Functions", "functions_func.html", "functions_func" ],
         [ "Variables", "functions_vars.html", "functions_vars" ],
         [ "Enumerations", "functions_enum.html", null ],
-        [ "Properties", "functions_prop.html", null ],
+        [ "Properties", "functions_prop.html", "functions_prop" ],
         [ "Events", "functions_evnt.html", null ]
       ] ]
     ] ],
@@ -60,15 +60,14 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "annotated.html",
-"d1/daa/class_c2_m2_1_1_interaction_1_1_v_r_1_1_v_r_grabbable_colliders.html#a158549c0e04519449ba5eb3fde843426",
-"d3/da8/class_c2_m2_1_1_interaction_1_1_signaling_1_1_mouse_event_signaler.html#a3bd16943b8f6d5b0b1d2adfabf79baf8",
-"d5/d44/_mesh_tests_8cs.html#a4b58b591a8716dcda3d50a97be88f335",
-"d6/de0/class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_attachment_handler.html#a5ab4b2df997939004b9b251d9ff7c868",
-"d8/d27/class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_u_g_x_reader_test.html#af8704ba34e872247a623478633af9df5aee1338a4b482193ef377416de62f5719",
-"da/d4f/class_c2_m2_1_1_visualization_1_1_l_u_t_gradient.html#a6a84570a767ee286eec27477218802c4",
-"dc/d3f/struct_c2_m2_1_1_molecular_dynamics_1_1_visualization_1_1_sphere.html#a8e84c7c0e41f22753bf4ffa57fcc8e49",
-"de/d62/class_c2_m2_1_1_o_i_t_1_1_interaction_1_1_particle_field_scale_button_controller.html#ab3feae048ed15501657ec67994ed6314",
-"dir_e2f5395be24216563cff00e5c091355d.html"
+"d1/df2/_graph_behaviour_8cs.html",
+"d3/dd1/class_c2_m2_1_1_utils_1_1_array.html#a6bdd8ad6745e5364ae533432a49bd105",
+"d6/d25/class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_n_d_extrema_controller.html#a1ce7bd4922b4cefc01b75a5ac878deea",
+"d7/d92/class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation.html#aefdd7ea612fa748e52befd89da5b2504",
+"d9/db5/class_c2_m2_1_1_utils_1_1_debug_utils_1_1_f_p_s_counter.html",
+"db/df0/class_c2_m2_1_1_interaction_1_1_grab_rescaler.html#ad924fcf9f6fd464a791de04c2b949c31",
+"dd/dfe/class_c2_m2_1_1_interaction_1_1_raycast_forward.html#a7cb931b7ad7bddf5f5b3eb90f19e5b22",
+"functions_prop.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

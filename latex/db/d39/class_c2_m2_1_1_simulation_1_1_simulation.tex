@@ -7,22 +7,8 @@ Provides an base interface for simulations using a general data type T
 
 
 
-Inheritance diagram for C2\+M2.\+Simulation.\+Simulation$<$ Value\+Type, Viz\+Type, Raycast\+Type, Grab\+Type $>$\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[height=550pt]{da/d8c/class_c2_m2_1_1_simulation_1_1_simulation__inherit__graph}
-\end{center}
-\end{figure}
+Inherits \mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_interactable}{C2\+M2.\+Simulation.\+Interactable}}.
 
-
-Collaboration diagram for C2\+M2.\+Simulation.\+Simulation$<$ Value\+Type, Viz\+Type, Raycast\+Type, Grab\+Type $>$\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[height=550pt]{d3/d96/class_c2_m2_1_1_simulation_1_1_simulation__coll__graph}
-\end{center}
-\end{figure}
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
@@ -30,51 +16,79 @@ abstract Value\+Type \mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_simulation_
 \begin{DoxyCompactList}\small\item\em Require derived classes to make simulation values available \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_simulation_af61cd7e4cdee4fa0d4f1c8813114d5d5}{Initialize}} ()
 \item 
-void \mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_simulation_a4ef6c0492314a02fdfb613b19dd822e1}{Update}} ()
+void \mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_simulation_af805a64a5d51097afe512289b034b3e0}{Fixed\+Update}} ()
 \item 
 void \mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_simulation_a01838bb0de4821217362271193c7c59a}{Start\+Simulation}} ()
 \begin{DoxyCompactList}\small\item\em Launch Solve thread \end{DoxyCompactList}\item 
+sealed override float \mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_simulation_a4b1efc0f4e631e3ad9d5ccdc7d8f78de}{Get\+Simulation\+Time}} ()
+\begin{DoxyCompactList}\small\item\em Return the current timestep for the simulation \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_simulation_ab0987e2cc68208bca93217b7d9e142ef}{Stop\+Simulation}} ()
-\begin{DoxyCompactList}\small\item\em Stop current Solve thread \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Stop current Solve thread \end{DoxyCompactList}\item 
+int\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_simulation_af4366fac38b998772784efc4b91cdd61}{Hit\+To\+Vertices}} (Raycast\+Hit hit)
+\begin{DoxyCompactList}\small\item\em Given a raycast hit, find the hit 3D vertices \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
 bool \mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_simulation_aabc0e3d2f9d31128726477beeed9fcd9}{dry\+Run}} = false
 \begin{DoxyCompactList}\small\item\em Run solve code without visualization or interaction \end{DoxyCompactList}\item 
-bool \mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_simulation_ae54998c5c72a8bf3a8c649edbd39246a}{start\+On\+Awake}} = true
-\begin{DoxyCompactList}\small\item\em Should the simulation start itself in Awake? \end{DoxyCompactList}\end{DoxyCompactItemize}
+bool \mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_simulation_a92481469cac75778ab23873c2f7180bc}{paused}} = false
+\item 
+\mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_raycast_event_manager}{Raycast\+Event\+Manager}} \mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_simulation_ab4db94e95ee217baa23b873d0229b5ba}{raycast\+Event\+Manager}} = null
+\item 
+\mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_raycast_press_events}{Raycast\+Press\+Events}} \mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_simulation_a84e1883a8df40f5078aa209823a11c52}{default\+Raycast\+Event}} = null
+\item 
+int \mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_simulation_a2ab0b92df120c8bb585824f6391c82ff}{time}} = -\/1
+\item 
+double \mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_simulation_a8a671685d8bc9ebae8d21c75924e90a9}{time\+Step}} = 0.\+008 $\ast$ 1e-\/3
+\item 
+double \mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_simulation_a2ad5dd614831738d1babd3af326e658b}{end\+Time}} = 1.\+0
+\end{DoxyCompactItemize}
 \doxysubsection*{Protected Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 abstract Viz\+Type \mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_simulation_ad862aff8a93dc71945db0450fddd6cbf}{Build\+Visualization}} ()
 \begin{DoxyCompactList}\small\item\em Simulations must know how to build their visualization and what type the visualization is \end{DoxyCompactList}\item 
 abstract void \mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_simulation_a7eea4205a98f2e145e55317d3b9951da}{Update\+Visualization}} (in Value\+Type new\+Values)
-\begin{DoxyCompactList}\small\item\em Update the visualization. This will be called once per \mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_simulation_a4ef6c0492314a02fdfb613b19dd822e1}{Update()}} call \end{DoxyCompactList}\item 
-abstract void \mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_simulation_adc5e6e0adf67ae72e144c1424fd93625}{Solve}} ()
+\begin{DoxyCompactList}\small\item\em Update the visualization. This will be called once per Update() call \end{DoxyCompactList}\item 
+abstract void \mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_simulation_adcb673993dd3f7c5f36842b3e1bd54af}{Solve\+Step}} (int t)
 \begin{DoxyCompactList}\small\item\em Method containing simulation code \end{DoxyCompactList}\item 
-virtual void \mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_simulation_a136e0cdc6fdf83cb91747fe09dbd1b4d}{Pre\+Solve}} ()
-\begin{DoxyCompactList}\small\item\em Called on the main thread before the Solve thread is launched \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_simulation_a229254fa67b99c51563447f7ff638803}{Pre\+Solve\+Step}} (int t)
+\begin{DoxyCompactList}\small\item\em Pre\+Solve\+Step is called once per simulation frame, before \mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_simulation_adcb673993dd3f7c5f36842b3e1bd54af}{Solve\+Step()}} \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_simulation_ac067e5a10049cfa7fe57be8c53ce333a}{Post\+Solve\+Step}} (int t)
+\begin{DoxyCompactList}\small\item\em Post\+Solve\+Step is called once per simulation frame, after \mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_simulation_adcb673993dd3f7c5f36842b3e1bd54af}{Solve\+Step()}} \end{DoxyCompactList}\item 
 virtual void \mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_simulation_af812e57771b0d37ef7b244f8e3132a5f}{On\+Awake\+Pre}} ()
 \item 
-virtual void \mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_simulation_a2259cb8a850bbbeedbc77fde35b47707}{On\+Awake\+Post}} (Viz\+Type \mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_simulation_ad9f96fe079b8d93a9b0a726692d68555}{viz}})
+virtual void \mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_simulation_a2259cb8a850bbbeedbc77fde35b47707}{On\+Awake\+Post}} (Viz\+Type viz)
 \item 
 virtual void \mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_simulation_a33ebbb8b7e6c1fc57d9d0bc292605ed5}{On\+Start}} ()
 \item 
 virtual void \mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_simulation_a3ebfff8ac128e60b44140e9faca71032}{On\+Update}} ()
 \item 
+void \mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_simulation_ae7a47dd3fad42ca174a2bf0743e32568}{On\+Destroy}} ()
+\item 
 virtual void \mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_simulation_a0bdb76f25c756a6732c73e1177148a12}{On\+Pause}} ()
 \item 
 virtual void \mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_simulation_af1ebf839d86e14671e318554217975ff}{On\+Quit}} ()
-\end{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_simulation_ad7474e69e4fa78bb68ab043fe59e6015}{On\+Dest}} ()
+\item 
+abstract void \mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_simulation_a5ebac31ebd6a0cf9a74b450b5cc85b1b}{Pre\+Solve}} ()
+\begin{DoxyCompactList}\small\item\em Called on the main thread before the Solve thread is launched \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_simulation_a4ff63421afdbaf736cc5e73a0b99d537}{Post\+Solve}} ()
+\begin{DoxyCompactList}\small\item\em Called on the solve thread after the simulation for loop is completed \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Protected Attributes}
 \begin{DoxyCompactItemize}
 \item 
 Mutex \mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_simulation_a9c15f59bf37e065adc284aaff8318539}{mutex}} = new Mutex()
-\begin{DoxyCompactList}\small\item\em Provide mutual exclusion to derived classes \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Provide mutual exclusion to derived classes \end{DoxyCompactList}\item 
+Custom\+Sampler \mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_simulation_a950c50b7653799858b5cbad49e7510ab}{solve\+Step\+Sampler}} = null
+\end{DoxyCompactItemize}
 \doxysubsection*{Properties}
 \begin{DoxyCompactItemize}
 \item 
-Viz\+Type \mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_simulation_ad9f96fe079b8d93a9b0a726692d68555}{viz}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, protected set\mbox{]}}
+Viz\+Type \mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_simulation_af88a14ecaab1fdb6f0309fc4b9179589}{Viz}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, protected set\mbox{]}}
+\item 
+int \mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_simulation_a90ff72c46cd464ce898fcce4750f7a16}{nT}} = -\/1\hspace{0.3cm}{\ttfamily  \mbox{[}get, private set\mbox{]}}
 \end{DoxyCompactItemize}
 \doxysubsection*{Private Member Functions}
 \begin{DoxyCompactItemize}
@@ -82,13 +96,14 @@ Viz\+Type \mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_simulation_ad9f96fe079
 void \mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_simulation_ab528fe66c69e5b73a83258417032b076}{On\+Application\+Pause}} (bool pause)
 \item 
 void \mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_simulation_adc304bf38be502076bff80b66ec4c2c8}{On\+Application\+Quit}} ()
+\item 
+void \mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_simulation_a1d3450d4a0d735c79b81b3daa7c29b20}{Solve}} ()
 \end{DoxyCompactItemize}
 \doxysubsection*{Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
 Thread \mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_simulation_a0cc964d389910e673b91def7d7f4da68}{solve\+Thread}} = null
 \begin{DoxyCompactList}\small\item\em Thread that runs simulation code \end{DoxyCompactList}\end{DoxyCompactItemize}
-\doxysubsection*{Additional Inherited Members}
 
 
 \doxysubsection{Detailed Description}
@@ -96,7 +111,13 @@ Provides an base interface for simulations using a general data type T
 
 
 \begin{DoxyTemplParams}{Template Parameters}
-{\em Value\+Type} & Type of simulation values \\
+{\em Value\+Type} & Type of simulation values\\
+\hline
+{\em Viz\+Type} & \\
+\hline
+{\em Raycast\+Type} & \\
+\hline
+{\em Grab\+Type} & \\
 \hline
 \end{DoxyTemplParams}
 
@@ -114,7 +135,30 @@ Simulations must know how to build their visualization and what type the visuali
 
 See Surface\+Simulation \& Neuron\+Simulation1D or \mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_position_field_simulation}{Position\+Field\+Simulation}} for examples. 
 
-Implemented in \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation_ad79247c0e2900dc78aa6ee877c6a01bd}{C2\+M2.\+Neuronal\+Dynamics.\+Simulation.\+NDSimulation}}, \mbox{\hyperlink{class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_m_d_simulation_a28c31d560ef224835d0c6b77924efa76}{C2\+M2.\+Molecular\+Dynamics.\+Simulation.\+MDSimulation}}, and \mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_samples_1_1_combined_mesh_simulation_a8b9af62e67ef6f665599181ff531cddc}{C2\+M2.\+Simulation.\+Samples.\+Combined\+Mesh\+Simulation}}.
+Implemented in \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation_ad79247c0e2900dc78aa6ee877c6a01bd}{C2\+M2.\+Neuronal\+Dynamics.\+Simulation.\+NDSimulation}}.
+
+\mbox{\Hypertarget{class_c2_m2_1_1_simulation_1_1_simulation_af805a64a5d51097afe512289b034b3e0}\label{class_c2_m2_1_1_simulation_1_1_simulation_af805a64a5d51097afe512289b034b3e0}} 
+\index{C2M2.Simulation.Simulation$<$ ValueType, VizType, RaycastType, GrabType $>$@{C2M2.Simulation.Simulation$<$ ValueType, VizType, RaycastType, GrabType $>$}!FixedUpdate@{FixedUpdate}}
+\index{FixedUpdate@{FixedUpdate}!C2M2.Simulation.Simulation$<$ ValueType, VizType, RaycastType, GrabType $>$@{C2M2.Simulation.Simulation$<$ ValueType, VizType, RaycastType, GrabType $>$}}
+\doxysubsubsection{\texorpdfstring{FixedUpdate()}{FixedUpdate()}}
+{\footnotesize\ttfamily void \mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_simulation}{C2\+M2.\+Simulation.\+Simulation}}$<$ Value\+Type, Viz\+Type, Raycast\+Type, Grab\+Type $>$.Fixed\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_simulation_1_1_simulation_a4b1efc0f4e631e3ad9d5ccdc7d8f78de}\label{class_c2_m2_1_1_simulation_1_1_simulation_a4b1efc0f4e631e3ad9d5ccdc7d8f78de}} 
+\index{C2M2.Simulation.Simulation$<$ ValueType, VizType, RaycastType, GrabType $>$@{C2M2.Simulation.Simulation$<$ ValueType, VizType, RaycastType, GrabType $>$}!GetSimulationTime@{GetSimulationTime}}
+\index{GetSimulationTime@{GetSimulationTime}!C2M2.Simulation.Simulation$<$ ValueType, VizType, RaycastType, GrabType $>$@{C2M2.Simulation.Simulation$<$ ValueType, VizType, RaycastType, GrabType $>$}}
+\doxysubsubsection{\texorpdfstring{GetSimulationTime()}{GetSimulationTime()}}
+{\footnotesize\ttfamily sealed override float \mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_simulation}{C2\+M2.\+Simulation.\+Simulation}}$<$ Value\+Type, Viz\+Type, Raycast\+Type, Grab\+Type $>$.Get\+Simulation\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Return the current timestep for the simulation 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_interactable_aee48028f8cb21dbca4f01626e0eef051}{C2\+M2.\+Simulation.\+Interactable}}.
 
 \mbox{\Hypertarget{class_c2_m2_1_1_simulation_1_1_simulation_aa34520fa8bc4bedc95c65dfe1984a719}\label{class_c2_m2_1_1_simulation_1_1_simulation_aa34520fa8bc4bedc95c65dfe1984a719}} 
 \index{C2M2.Simulation.Simulation$<$ ValueType, VizType, RaycastType, GrabType $>$@{C2M2.Simulation.Simulation$<$ ValueType, VizType, RaycastType, GrabType $>$}!GetValues@{GetValues}}
@@ -128,7 +172,17 @@ Require derived classes to make simulation values available
 
 
 
-Implemented in \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation_a2d818e0d8f96478074095c8aaa254a31}{C2\+M2.\+Neuronal\+Dynamics.\+Simulation.\+NDSimulation}}, \mbox{\hyperlink{class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_m_d_solver_a1f52cf08bf6b0781f401537774bbf96e}{C2\+M2.\+Molecular\+Dynamics.\+Simulation.\+MDSolver}}, \mbox{\hyperlink{class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_example_m_d_simulation_a963397f41a10fdfd60f9bc8f706249d0}{C2\+M2.\+Molecular\+Dynamics.\+Simulation.\+Example\+MDSimulation}}, and \mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_samples_1_1_combined_mesh_simulation_ae3526fbe15f2afefe3fa81089b041709}{C2\+M2.\+Simulation.\+Samples.\+Combined\+Mesh\+Simulation}}.
+Implemented in \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation_a2d818e0d8f96478074095c8aaa254a31}{C2\+M2.\+Neuronal\+Dynamics.\+Simulation.\+NDSimulation}}.
+
+\mbox{\Hypertarget{class_c2_m2_1_1_simulation_1_1_simulation_af4366fac38b998772784efc4b91cdd61}\label{class_c2_m2_1_1_simulation_1_1_simulation_af4366fac38b998772784efc4b91cdd61}} 
+\index{C2M2.Simulation.Simulation$<$ ValueType, VizType, RaycastType, GrabType $>$@{C2M2.Simulation.Simulation$<$ ValueType, VizType, RaycastType, GrabType $>$}!HitToVertices@{HitToVertices}}
+\index{HitToVertices@{HitToVertices}!C2M2.Simulation.Simulation$<$ ValueType, VizType, RaycastType, GrabType $>$@{C2M2.Simulation.Simulation$<$ ValueType, VizType, RaycastType, GrabType $>$}}
+\doxysubsubsection{\texorpdfstring{HitToVertices()}{HitToVertices()}}
+{\footnotesize\ttfamily int \mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_simulation}{C2\+M2.\+Simulation.\+Simulation}}$<$ Value\+Type, Viz\+Type, Raycast\+Type, Grab\+Type $>$.Hit\+To\+Vertices (\begin{DoxyParamCaption}\item[{Raycast\+Hit}]{hit }\end{DoxyParamCaption})}
+
+
+
+Given a raycast hit, find the hit 3D vertices 
 
 \mbox{\Hypertarget{class_c2_m2_1_1_simulation_1_1_simulation_af61cd7e4cdee4fa0d4f1c8813114d5d5}\label{class_c2_m2_1_1_simulation_1_1_simulation_af61cd7e4cdee4fa0d4f1c8813114d5d5}} 
 \index{C2M2.Simulation.Simulation$<$ ValueType, VizType, RaycastType, GrabType $>$@{C2M2.Simulation.Simulation$<$ ValueType, VizType, RaycastType, GrabType $>$}!Initialize@{Initialize}}
@@ -164,6 +218,18 @@ Add event child object for interaction scripts to find\mbox{\Hypertarget{class_c
 
 Reimplemented in \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation_a8c2195bf0e1ebc10fcf6f49eb703172f}{C2\+M2.\+Neuronal\+Dynamics.\+Simulation.\+NDSimulation}}.
 
+\mbox{\Hypertarget{class_c2_m2_1_1_simulation_1_1_simulation_ad7474e69e4fa78bb68ab043fe59e6015}\label{class_c2_m2_1_1_simulation_1_1_simulation_ad7474e69e4fa78bb68ab043fe59e6015}} 
+\index{C2M2.Simulation.Simulation$<$ ValueType, VizType, RaycastType, GrabType $>$@{C2M2.Simulation.Simulation$<$ ValueType, VizType, RaycastType, GrabType $>$}!OnDest@{OnDest}}
+\index{OnDest@{OnDest}!C2M2.Simulation.Simulation$<$ ValueType, VizType, RaycastType, GrabType $>$@{C2M2.Simulation.Simulation$<$ ValueType, VizType, RaycastType, GrabType $>$}}
+\doxysubsubsection{\texorpdfstring{OnDest()}{OnDest()}}
+{\footnotesize\ttfamily virtual void \mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_simulation}{C2\+M2.\+Simulation.\+Simulation}}$<$ Value\+Type, Viz\+Type, Raycast\+Type, Grab\+Type $>$.On\+Dest (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_simulation_1_1_simulation_ae7a47dd3fad42ca174a2bf0743e32568}\label{class_c2_m2_1_1_simulation_1_1_simulation_ae7a47dd3fad42ca174a2bf0743e32568}} 
+\index{C2M2.Simulation.Simulation$<$ ValueType, VizType, RaycastType, GrabType $>$@{C2M2.Simulation.Simulation$<$ ValueType, VizType, RaycastType, GrabType $>$}!OnDestroy@{OnDestroy}}
+\index{OnDestroy@{OnDestroy}!C2M2.Simulation.Simulation$<$ ValueType, VizType, RaycastType, GrabType $>$@{C2M2.Simulation.Simulation$<$ ValueType, VizType, RaycastType, GrabType $>$}}
+\doxysubsubsection{\texorpdfstring{OnDestroy()}{OnDestroy()}}
+{\footnotesize\ttfamily void \mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_simulation}{C2\+M2.\+Simulation.\+Simulation}}$<$ Value\+Type, Viz\+Type, Raycast\+Type, Grab\+Type $>$.On\+Destroy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
 \mbox{\Hypertarget{class_c2_m2_1_1_simulation_1_1_simulation_a0bdb76f25c756a6732c73e1177148a12}\label{class_c2_m2_1_1_simulation_1_1_simulation_a0bdb76f25c756a6732c73e1177148a12}} 
 \index{C2M2.Simulation.Simulation$<$ ValueType, VizType, RaycastType, GrabType $>$@{C2M2.Simulation.Simulation$<$ ValueType, VizType, RaycastType, GrabType $>$}!OnPause@{OnPause}}
 \index{OnPause@{OnPause}!C2M2.Simulation.Simulation$<$ ValueType, VizType, RaycastType, GrabType $>$@{C2M2.Simulation.Simulation$<$ ValueType, VizType, RaycastType, GrabType $>$}}
@@ -182,21 +248,41 @@ Reimplemented in \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_simulati
 \doxysubsubsection{\texorpdfstring{OnStart()}{OnStart()}}
 {\footnotesize\ttfamily virtual void \mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_simulation}{C2\+M2.\+Simulation.\+Simulation}}$<$ Value\+Type, Viz\+Type, Raycast\+Type, Grab\+Type $>$.On\+Start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
 
-
-
-Reimplemented in \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation_a910d6a6847b13140be49997df41d2da3}{C2\+M2.\+Neuronal\+Dynamics.\+Simulation.\+NDSimulation}}.
-
 \mbox{\Hypertarget{class_c2_m2_1_1_simulation_1_1_simulation_a3ebfff8ac128e60b44140e9faca71032}\label{class_c2_m2_1_1_simulation_1_1_simulation_a3ebfff8ac128e60b44140e9faca71032}} 
 \index{C2M2.Simulation.Simulation$<$ ValueType, VizType, RaycastType, GrabType $>$@{C2M2.Simulation.Simulation$<$ ValueType, VizType, RaycastType, GrabType $>$}!OnUpdate@{OnUpdate}}
 \index{OnUpdate@{OnUpdate}!C2M2.Simulation.Simulation$<$ ValueType, VizType, RaycastType, GrabType $>$@{C2M2.Simulation.Simulation$<$ ValueType, VizType, RaycastType, GrabType $>$}}
 \doxysubsubsection{\texorpdfstring{OnUpdate()}{OnUpdate()}}
 {\footnotesize\ttfamily virtual void \mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_simulation}{C2\+M2.\+Simulation.\+Simulation}}$<$ Value\+Type, Viz\+Type, Raycast\+Type, Grab\+Type $>$.On\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
 
-\mbox{\Hypertarget{class_c2_m2_1_1_simulation_1_1_simulation_a136e0cdc6fdf83cb91747fe09dbd1b4d}\label{class_c2_m2_1_1_simulation_1_1_simulation_a136e0cdc6fdf83cb91747fe09dbd1b4d}} 
+\mbox{\Hypertarget{class_c2_m2_1_1_simulation_1_1_simulation_a4ff63421afdbaf736cc5e73a0b99d537}\label{class_c2_m2_1_1_simulation_1_1_simulation_a4ff63421afdbaf736cc5e73a0b99d537}} 
+\index{C2M2.Simulation.Simulation$<$ ValueType, VizType, RaycastType, GrabType $>$@{C2M2.Simulation.Simulation$<$ ValueType, VizType, RaycastType, GrabType $>$}!PostSolve@{PostSolve}}
+\index{PostSolve@{PostSolve}!C2M2.Simulation.Simulation$<$ ValueType, VizType, RaycastType, GrabType $>$@{C2M2.Simulation.Simulation$<$ ValueType, VizType, RaycastType, GrabType $>$}}
+\doxysubsubsection{\texorpdfstring{PostSolve()}{PostSolve()}}
+{\footnotesize\ttfamily virtual void \mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_simulation}{C2\+M2.\+Simulation.\+Simulation}}$<$ Value\+Type, Viz\+Type, Raycast\+Type, Grab\+Type $>$.Post\+Solve (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Called on the solve thread after the simulation for loop is completed 
+
+\mbox{\Hypertarget{class_c2_m2_1_1_simulation_1_1_simulation_ac067e5a10049cfa7fe57be8c53ce333a}\label{class_c2_m2_1_1_simulation_1_1_simulation_ac067e5a10049cfa7fe57be8c53ce333a}} 
+\index{C2M2.Simulation.Simulation$<$ ValueType, VizType, RaycastType, GrabType $>$@{C2M2.Simulation.Simulation$<$ ValueType, VizType, RaycastType, GrabType $>$}!PostSolveStep@{PostSolveStep}}
+\index{PostSolveStep@{PostSolveStep}!C2M2.Simulation.Simulation$<$ ValueType, VizType, RaycastType, GrabType $>$@{C2M2.Simulation.Simulation$<$ ValueType, VizType, RaycastType, GrabType $>$}}
+\doxysubsubsection{\texorpdfstring{PostSolveStep()}{PostSolveStep()}}
+{\footnotesize\ttfamily virtual void \mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_simulation}{C2\+M2.\+Simulation.\+Simulation}}$<$ Value\+Type, Viz\+Type, Raycast\+Type, Grab\+Type $>$.Post\+Solve\+Step (\begin{DoxyParamCaption}\item[{int}]{t }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Post\+Solve\+Step is called once per simulation frame, after \mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_simulation_adcb673993dd3f7c5f36842b3e1bd54af}{Solve\+Step()}} 
+
+
+
+Reimplemented in \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation_a5d7721b31209ec029aa6cc242e0d9e3c}{C2\+M2.\+Neuronal\+Dynamics.\+Simulation.\+NDSimulation}}.
+
+\mbox{\Hypertarget{class_c2_m2_1_1_simulation_1_1_simulation_a5ebac31ebd6a0cf9a74b450b5cc85b1b}\label{class_c2_m2_1_1_simulation_1_1_simulation_a5ebac31ebd6a0cf9a74b450b5cc85b1b}} 
 \index{C2M2.Simulation.Simulation$<$ ValueType, VizType, RaycastType, GrabType $>$@{C2M2.Simulation.Simulation$<$ ValueType, VizType, RaycastType, GrabType $>$}!PreSolve@{PreSolve}}
 \index{PreSolve@{PreSolve}!C2M2.Simulation.Simulation$<$ ValueType, VizType, RaycastType, GrabType $>$@{C2M2.Simulation.Simulation$<$ ValueType, VizType, RaycastType, GrabType $>$}}
 \doxysubsubsection{\texorpdfstring{PreSolve()}{PreSolve()}}
-{\footnotesize\ttfamily virtual void \mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_simulation}{C2\+M2.\+Simulation.\+Simulation}}$<$ Value\+Type, Viz\+Type, Raycast\+Type, Grab\+Type $>$.Pre\+Solve (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+{\footnotesize\ttfamily abstract void \mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_simulation}{C2\+M2.\+Simulation.\+Simulation}}$<$ Value\+Type, Viz\+Type, Raycast\+Type, Grab\+Type $>$.Pre\+Solve (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}
 
 
 
@@ -204,13 +290,29 @@ Called on the main thread before the Solve thread is launched
 
 This is useful if you need to initialize anything that makes use of Unity calls, which are not available to be called from secondary threads. 
 
-Reimplemented in \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_sparse_solver_testv1_a71f84ce0834c7f05b0bcae9b31afc39f}{C2\+M2.\+Neuronal\+Dynamics.\+Simulation.\+Sparse\+Solver\+Testv1}}.
+Implemented in \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_sparse_solver_testv1_a71f84ce0834c7f05b0bcae9b31afc39f}{C2\+M2.\+Neuronal\+Dynamics.\+Simulation.\+Sparse\+Solver\+Testv1}}, and \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_example_n_d_solver_a424e3606b0957f53a30b8878f3f9be5a}{C2\+M2.\+Neuronal\+Dynamics.\+Simulation.\+Example\+NDSolver}}.
 
-\mbox{\Hypertarget{class_c2_m2_1_1_simulation_1_1_simulation_adc5e6e0adf67ae72e144c1424fd93625}\label{class_c2_m2_1_1_simulation_1_1_simulation_adc5e6e0adf67ae72e144c1424fd93625}} 
+\mbox{\Hypertarget{class_c2_m2_1_1_simulation_1_1_simulation_a229254fa67b99c51563447f7ff638803}\label{class_c2_m2_1_1_simulation_1_1_simulation_a229254fa67b99c51563447f7ff638803}} 
+\index{C2M2.Simulation.Simulation$<$ ValueType, VizType, RaycastType, GrabType $>$@{C2M2.Simulation.Simulation$<$ ValueType, VizType, RaycastType, GrabType $>$}!PreSolveStep@{PreSolveStep}}
+\index{PreSolveStep@{PreSolveStep}!C2M2.Simulation.Simulation$<$ ValueType, VizType, RaycastType, GrabType $>$@{C2M2.Simulation.Simulation$<$ ValueType, VizType, RaycastType, GrabType $>$}}
+\doxysubsubsection{\texorpdfstring{PreSolveStep()}{PreSolveStep()}}
+{\footnotesize\ttfamily virtual void \mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_simulation}{C2\+M2.\+Simulation.\+Simulation}}$<$ Value\+Type, Viz\+Type, Raycast\+Type, Grab\+Type $>$.Pre\+Solve\+Step (\begin{DoxyParamCaption}\item[{int}]{t }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Pre\+Solve\+Step is called once per simulation frame, before \mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_simulation_adcb673993dd3f7c5f36842b3e1bd54af}{Solve\+Step()}} 
+
+\mbox{\Hypertarget{class_c2_m2_1_1_simulation_1_1_simulation_a1d3450d4a0d735c79b81b3daa7c29b20}\label{class_c2_m2_1_1_simulation_1_1_simulation_a1d3450d4a0d735c79b81b3daa7c29b20}} 
 \index{C2M2.Simulation.Simulation$<$ ValueType, VizType, RaycastType, GrabType $>$@{C2M2.Simulation.Simulation$<$ ValueType, VizType, RaycastType, GrabType $>$}!Solve@{Solve}}
 \index{Solve@{Solve}!C2M2.Simulation.Simulation$<$ ValueType, VizType, RaycastType, GrabType $>$@{C2M2.Simulation.Simulation$<$ ValueType, VizType, RaycastType, GrabType $>$}}
 \doxysubsubsection{\texorpdfstring{Solve()}{Solve()}}
-{\footnotesize\ttfamily abstract void \mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_simulation}{C2\+M2.\+Simulation.\+Simulation}}$<$ Value\+Type, Viz\+Type, Raycast\+Type, Grab\+Type $>$.Solve (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}
+{\footnotesize\ttfamily void \mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_simulation}{C2\+M2.\+Simulation.\+Simulation}}$<$ Value\+Type, Viz\+Type, Raycast\+Type, Grab\+Type $>$.Solve (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_simulation_1_1_simulation_adcb673993dd3f7c5f36842b3e1bd54af}\label{class_c2_m2_1_1_simulation_1_1_simulation_adcb673993dd3f7c5f36842b3e1bd54af}} 
+\index{C2M2.Simulation.Simulation$<$ ValueType, VizType, RaycastType, GrabType $>$@{C2M2.Simulation.Simulation$<$ ValueType, VizType, RaycastType, GrabType $>$}!SolveStep@{SolveStep}}
+\index{SolveStep@{SolveStep}!C2M2.Simulation.Simulation$<$ ValueType, VizType, RaycastType, GrabType $>$@{C2M2.Simulation.Simulation$<$ ValueType, VizType, RaycastType, GrabType $>$}}
+\doxysubsubsection{\texorpdfstring{SolveStep()}{SolveStep()}}
+{\footnotesize\ttfamily abstract void \mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_simulation}{C2\+M2.\+Simulation.\+Simulation}}$<$ Value\+Type, Viz\+Type, Raycast\+Type, Grab\+Type $>$.Solve\+Step (\begin{DoxyParamCaption}\item[{int}]{t }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}
 
 
 
@@ -218,7 +320,7 @@ Method containing simulation code
 
 Launches in its own thread 
 
-Implemented in \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_sparse_solver_testv1_a5db6c67891c0239069409e693be74ed3}{C2\+M2.\+Neuronal\+Dynamics.\+Simulation.\+Sparse\+Solver\+Testv1}}, \mbox{\hyperlink{class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_m_d_solver_ad9170a1121734e2a74d77706360f3a1e}{C2\+M2.\+Molecular\+Dynamics.\+Simulation.\+MDSolver}}, \mbox{\hyperlink{class_c2_m2_1_1_molecular_dynamics_1_1_simulation_1_1_example_m_d_simulation_a23b4fdf12e94e11b67a002c3047ab749}{C2\+M2.\+Molecular\+Dynamics.\+Simulation.\+Example\+MDSimulation}}, and \mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_samples_1_1_combined_mesh_simulation_a3b95103cf62b69b39c768a7f5e3215eb}{C2\+M2.\+Simulation.\+Samples.\+Combined\+Mesh\+Simulation}}.
+Implemented in \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_sparse_solver_testv1_a56f153c4c72e3ea61de97ec3a0f6e4d3}{C2\+M2.\+Neuronal\+Dynamics.\+Simulation.\+Sparse\+Solver\+Testv1}}, and \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_example_n_d_solver_a981dccf2d8006a4fb7753a3ae2c562d9}{C2\+M2.\+Neuronal\+Dynamics.\+Simulation.\+Example\+NDSolver}}.
 
 \mbox{\Hypertarget{class_c2_m2_1_1_simulation_1_1_simulation_a01838bb0de4821217362271193c7c59a}\label{class_c2_m2_1_1_simulation_1_1_simulation_a01838bb0de4821217362271193c7c59a}} 
 \index{C2M2.Simulation.Simulation$<$ ValueType, VizType, RaycastType, GrabType $>$@{C2M2.Simulation.Simulation$<$ ValueType, VizType, RaycastType, GrabType $>$}!StartSimulation@{StartSimulation}}
@@ -240,12 +342,6 @@ Launch Solve thread
 
 Stop current Solve thread 
 
-\mbox{\Hypertarget{class_c2_m2_1_1_simulation_1_1_simulation_a4ef6c0492314a02fdfb613b19dd822e1}\label{class_c2_m2_1_1_simulation_1_1_simulation_a4ef6c0492314a02fdfb613b19dd822e1}} 
-\index{C2M2.Simulation.Simulation$<$ ValueType, VizType, RaycastType, GrabType $>$@{C2M2.Simulation.Simulation$<$ ValueType, VizType, RaycastType, GrabType $>$}!Update@{Update}}
-\index{Update@{Update}!C2M2.Simulation.Simulation$<$ ValueType, VizType, RaycastType, GrabType $>$@{C2M2.Simulation.Simulation$<$ ValueType, VizType, RaycastType, GrabType $>$}}
-\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
-{\footnotesize\ttfamily void \mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_simulation}{C2\+M2.\+Simulation.\+Simulation}}$<$ Value\+Type, Viz\+Type, Raycast\+Type, Grab\+Type $>$.Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
-
 \mbox{\Hypertarget{class_c2_m2_1_1_simulation_1_1_simulation_a7eea4205a98f2e145e55317d3b9951da}\label{class_c2_m2_1_1_simulation_1_1_simulation_a7eea4205a98f2e145e55317d3b9951da}} 
 \index{C2M2.Simulation.Simulation$<$ ValueType, VizType, RaycastType, GrabType $>$@{C2M2.Simulation.Simulation$<$ ValueType, VizType, RaycastType, GrabType $>$}!UpdateVisualization@{UpdateVisualization}}
 \index{UpdateVisualization@{UpdateVisualization}!C2M2.Simulation.Simulation$<$ ValueType, VizType, RaycastType, GrabType $>$@{C2M2.Simulation.Simulation$<$ ValueType, VizType, RaycastType, GrabType $>$}}
@@ -254,11 +350,17 @@ Stop current Solve thread
 
 
 
-Update the visualization. This will be called once per \mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_simulation_a4ef6c0492314a02fdfb613b19dd822e1}{Update()}} call 
+Update the visualization. This will be called once per Update() call 
 
 See Surface\+Simulation \& Neuron\+Simulation1D or \mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_position_field_simulation}{Position\+Field\+Simulation}} for examples. 
 
 \doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_c2_m2_1_1_simulation_1_1_simulation_a84e1883a8df40f5078aa209823a11c52}\label{class_c2_m2_1_1_simulation_1_1_simulation_a84e1883a8df40f5078aa209823a11c52}} 
+\index{C2M2.Simulation.Simulation$<$ ValueType, VizType, RaycastType, GrabType $>$@{C2M2.Simulation.Simulation$<$ ValueType, VizType, RaycastType, GrabType $>$}!defaultRaycastEvent@{defaultRaycastEvent}}
+\index{defaultRaycastEvent@{defaultRaycastEvent}!C2M2.Simulation.Simulation$<$ ValueType, VizType, RaycastType, GrabType $>$@{C2M2.Simulation.Simulation$<$ ValueType, VizType, RaycastType, GrabType $>$}}
+\doxysubsubsection{\texorpdfstring{defaultRaycastEvent}{defaultRaycastEvent}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_raycast_press_events}{Raycast\+Press\+Events}} \mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_simulation}{C2\+M2.\+Simulation.\+Simulation}}$<$ Value\+Type, Viz\+Type, Raycast\+Type, Grab\+Type $>$.default\+Raycast\+Event = null}
+
 \mbox{\Hypertarget{class_c2_m2_1_1_simulation_1_1_simulation_aabc0e3d2f9d31128726477beeed9fcd9}\label{class_c2_m2_1_1_simulation_1_1_simulation_aabc0e3d2f9d31128726477beeed9fcd9}} 
 \index{C2M2.Simulation.Simulation$<$ ValueType, VizType, RaycastType, GrabType $>$@{C2M2.Simulation.Simulation$<$ ValueType, VizType, RaycastType, GrabType $>$}!dryRun@{dryRun}}
 \index{dryRun@{dryRun}!C2M2.Simulation.Simulation$<$ ValueType, VizType, RaycastType, GrabType $>$@{C2M2.Simulation.Simulation$<$ ValueType, VizType, RaycastType, GrabType $>$}}
@@ -268,6 +370,12 @@ See Surface\+Simulation \& Neuron\+Simulation1D or \mbox{\hyperlink{class_c2_m2_
 
 
 Run solve code without visualization or interaction 
+
+\mbox{\Hypertarget{class_c2_m2_1_1_simulation_1_1_simulation_a2ad5dd614831738d1babd3af326e658b}\label{class_c2_m2_1_1_simulation_1_1_simulation_a2ad5dd614831738d1babd3af326e658b}} 
+\index{C2M2.Simulation.Simulation$<$ ValueType, VizType, RaycastType, GrabType $>$@{C2M2.Simulation.Simulation$<$ ValueType, VizType, RaycastType, GrabType $>$}!endTime@{endTime}}
+\index{endTime@{endTime}!C2M2.Simulation.Simulation$<$ ValueType, VizType, RaycastType, GrabType $>$@{C2M2.Simulation.Simulation$<$ ValueType, VizType, RaycastType, GrabType $>$}}
+\doxysubsubsection{\texorpdfstring{endTime}{endTime}}
+{\footnotesize\ttfamily double \mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_simulation}{C2\+M2.\+Simulation.\+Simulation}}$<$ Value\+Type, Viz\+Type, Raycast\+Type, Grab\+Type $>$.end\+Time = 1.\+0}
 
 \mbox{\Hypertarget{class_c2_m2_1_1_simulation_1_1_simulation_a9c15f59bf37e065adc284aaff8318539}\label{class_c2_m2_1_1_simulation_1_1_simulation_a9c15f59bf37e065adc284aaff8318539}} 
 \index{C2M2.Simulation.Simulation$<$ ValueType, VizType, RaycastType, GrabType $>$@{C2M2.Simulation.Simulation$<$ ValueType, VizType, RaycastType, GrabType $>$}!mutex@{mutex}}
@@ -279,6 +387,24 @@ Run solve code without visualization or interaction
 
 Provide mutual exclusion to derived classes 
 
+\mbox{\Hypertarget{class_c2_m2_1_1_simulation_1_1_simulation_a92481469cac75778ab23873c2f7180bc}\label{class_c2_m2_1_1_simulation_1_1_simulation_a92481469cac75778ab23873c2f7180bc}} 
+\index{C2M2.Simulation.Simulation$<$ ValueType, VizType, RaycastType, GrabType $>$@{C2M2.Simulation.Simulation$<$ ValueType, VizType, RaycastType, GrabType $>$}!paused@{paused}}
+\index{paused@{paused}!C2M2.Simulation.Simulation$<$ ValueType, VizType, RaycastType, GrabType $>$@{C2M2.Simulation.Simulation$<$ ValueType, VizType, RaycastType, GrabType $>$}}
+\doxysubsubsection{\texorpdfstring{paused}{paused}}
+{\footnotesize\ttfamily bool \mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_simulation}{C2\+M2.\+Simulation.\+Simulation}}$<$ Value\+Type, Viz\+Type, Raycast\+Type, Grab\+Type $>$.paused = false}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_simulation_1_1_simulation_ab4db94e95ee217baa23b873d0229b5ba}\label{class_c2_m2_1_1_simulation_1_1_simulation_ab4db94e95ee217baa23b873d0229b5ba}} 
+\index{C2M2.Simulation.Simulation$<$ ValueType, VizType, RaycastType, GrabType $>$@{C2M2.Simulation.Simulation$<$ ValueType, VizType, RaycastType, GrabType $>$}!raycastEventManager@{raycastEventManager}}
+\index{raycastEventManager@{raycastEventManager}!C2M2.Simulation.Simulation$<$ ValueType, VizType, RaycastType, GrabType $>$@{C2M2.Simulation.Simulation$<$ ValueType, VizType, RaycastType, GrabType $>$}}
+\doxysubsubsection{\texorpdfstring{raycastEventManager}{raycastEventManager}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_raycast_event_manager}{Raycast\+Event\+Manager}} \mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_simulation}{C2\+M2.\+Simulation.\+Simulation}}$<$ Value\+Type, Viz\+Type, Raycast\+Type, Grab\+Type $>$.raycast\+Event\+Manager = null}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_simulation_1_1_simulation_a950c50b7653799858b5cbad49e7510ab}\label{class_c2_m2_1_1_simulation_1_1_simulation_a950c50b7653799858b5cbad49e7510ab}} 
+\index{C2M2.Simulation.Simulation$<$ ValueType, VizType, RaycastType, GrabType $>$@{C2M2.Simulation.Simulation$<$ ValueType, VizType, RaycastType, GrabType $>$}!solveStepSampler@{solveStepSampler}}
+\index{solveStepSampler@{solveStepSampler}!C2M2.Simulation.Simulation$<$ ValueType, VizType, RaycastType, GrabType $>$@{C2M2.Simulation.Simulation$<$ ValueType, VizType, RaycastType, GrabType $>$}}
+\doxysubsubsection{\texorpdfstring{solveStepSampler}{solveStepSampler}}
+{\footnotesize\ttfamily Custom\+Sampler \mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_simulation}{C2\+M2.\+Simulation.\+Simulation}}$<$ Value\+Type, Viz\+Type, Raycast\+Type, Grab\+Type $>$.solve\+Step\+Sampler = null\hspace{0.3cm}{\ttfamily [protected]}}
+
 \mbox{\Hypertarget{class_c2_m2_1_1_simulation_1_1_simulation_a0cc964d389910e673b91def7d7f4da68}\label{class_c2_m2_1_1_simulation_1_1_simulation_a0cc964d389910e673b91def7d7f4da68}} 
 \index{C2M2.Simulation.Simulation$<$ ValueType, VizType, RaycastType, GrabType $>$@{C2M2.Simulation.Simulation$<$ ValueType, VizType, RaycastType, GrabType $>$}!solveThread@{solveThread}}
 \index{solveThread@{solveThread}!C2M2.Simulation.Simulation$<$ ValueType, VizType, RaycastType, GrabType $>$@{C2M2.Simulation.Simulation$<$ ValueType, VizType, RaycastType, GrabType $>$}}
@@ -289,27 +415,35 @@ Provide mutual exclusion to derived classes
 
 Thread that runs simulation code 
 
-\mbox{\Hypertarget{class_c2_m2_1_1_simulation_1_1_simulation_ae54998c5c72a8bf3a8c649edbd39246a}\label{class_c2_m2_1_1_simulation_1_1_simulation_ae54998c5c72a8bf3a8c649edbd39246a}} 
-\index{C2M2.Simulation.Simulation$<$ ValueType, VizType, RaycastType, GrabType $>$@{C2M2.Simulation.Simulation$<$ ValueType, VizType, RaycastType, GrabType $>$}!startOnAwake@{startOnAwake}}
-\index{startOnAwake@{startOnAwake}!C2M2.Simulation.Simulation$<$ ValueType, VizType, RaycastType, GrabType $>$@{C2M2.Simulation.Simulation$<$ ValueType, VizType, RaycastType, GrabType $>$}}
-\doxysubsubsection{\texorpdfstring{startOnAwake}{startOnAwake}}
-{\footnotesize\ttfamily bool \mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_simulation}{C2\+M2.\+Simulation.\+Simulation}}$<$ Value\+Type, Viz\+Type, Raycast\+Type, Grab\+Type $>$.start\+On\+Awake = true}
+\mbox{\Hypertarget{class_c2_m2_1_1_simulation_1_1_simulation_a2ab0b92df120c8bb585824f6391c82ff}\label{class_c2_m2_1_1_simulation_1_1_simulation_a2ab0b92df120c8bb585824f6391c82ff}} 
+\index{C2M2.Simulation.Simulation$<$ ValueType, VizType, RaycastType, GrabType $>$@{C2M2.Simulation.Simulation$<$ ValueType, VizType, RaycastType, GrabType $>$}!time@{time}}
+\index{time@{time}!C2M2.Simulation.Simulation$<$ ValueType, VizType, RaycastType, GrabType $>$@{C2M2.Simulation.Simulation$<$ ValueType, VizType, RaycastType, GrabType $>$}}
+\doxysubsubsection{\texorpdfstring{time}{time}}
+{\footnotesize\ttfamily int \mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_simulation}{C2\+M2.\+Simulation.\+Simulation}}$<$ Value\+Type, Viz\+Type, Raycast\+Type, Grab\+Type $>$.time = -\/1}
 
-
-
-Should the simulation start itself in Awake? 
+\mbox{\Hypertarget{class_c2_m2_1_1_simulation_1_1_simulation_a8a671685d8bc9ebae8d21c75924e90a9}\label{class_c2_m2_1_1_simulation_1_1_simulation_a8a671685d8bc9ebae8d21c75924e90a9}} 
+\index{C2M2.Simulation.Simulation$<$ ValueType, VizType, RaycastType, GrabType $>$@{C2M2.Simulation.Simulation$<$ ValueType, VizType, RaycastType, GrabType $>$}!timeStep@{timeStep}}
+\index{timeStep@{timeStep}!C2M2.Simulation.Simulation$<$ ValueType, VizType, RaycastType, GrabType $>$@{C2M2.Simulation.Simulation$<$ ValueType, VizType, RaycastType, GrabType $>$}}
+\doxysubsubsection{\texorpdfstring{timeStep}{timeStep}}
+{\footnotesize\ttfamily double \mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_simulation}{C2\+M2.\+Simulation.\+Simulation}}$<$ Value\+Type, Viz\+Type, Raycast\+Type, Grab\+Type $>$.time\+Step = 0.\+008 $\ast$ 1e-\/3}
 
 
 
 \doxysubsection{Property Documentation}
-\mbox{\Hypertarget{class_c2_m2_1_1_simulation_1_1_simulation_ad9f96fe079b8d93a9b0a726692d68555}\label{class_c2_m2_1_1_simulation_1_1_simulation_ad9f96fe079b8d93a9b0a726692d68555}} 
-\index{C2M2.Simulation.Simulation$<$ ValueType, VizType, RaycastType, GrabType $>$@{C2M2.Simulation.Simulation$<$ ValueType, VizType, RaycastType, GrabType $>$}!viz@{viz}}
-\index{viz@{viz}!C2M2.Simulation.Simulation$<$ ValueType, VizType, RaycastType, GrabType $>$@{C2M2.Simulation.Simulation$<$ ValueType, VizType, RaycastType, GrabType $>$}}
-\doxysubsubsection{\texorpdfstring{viz}{viz}}
-{\footnotesize\ttfamily Viz\+Type \mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_simulation}{C2\+M2.\+Simulation.\+Simulation}}$<$ Value\+Type, Viz\+Type, Raycast\+Type, Grab\+Type $>$.viz\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [protected set]}}
+\mbox{\Hypertarget{class_c2_m2_1_1_simulation_1_1_simulation_a90ff72c46cd464ce898fcce4750f7a16}\label{class_c2_m2_1_1_simulation_1_1_simulation_a90ff72c46cd464ce898fcce4750f7a16}} 
+\index{C2M2.Simulation.Simulation$<$ ValueType, VizType, RaycastType, GrabType $>$@{C2M2.Simulation.Simulation$<$ ValueType, VizType, RaycastType, GrabType $>$}!nT@{nT}}
+\index{nT@{nT}!C2M2.Simulation.Simulation$<$ ValueType, VizType, RaycastType, GrabType $>$@{C2M2.Simulation.Simulation$<$ ValueType, VizType, RaycastType, GrabType $>$}}
+\doxysubsubsection{\texorpdfstring{nT}{nT}}
+{\footnotesize\ttfamily int \mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_simulation}{C2\+M2.\+Simulation.\+Simulation}}$<$ Value\+Type, Viz\+Type, Raycast\+Type, Grab\+Type $>$.nT = -\/1\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [private set]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_simulation_1_1_simulation_af88a14ecaab1fdb6f0309fc4b9179589}\label{class_c2_m2_1_1_simulation_1_1_simulation_af88a14ecaab1fdb6f0309fc4b9179589}} 
+\index{C2M2.Simulation.Simulation$<$ ValueType, VizType, RaycastType, GrabType $>$@{C2M2.Simulation.Simulation$<$ ValueType, VizType, RaycastType, GrabType $>$}!Viz@{Viz}}
+\index{Viz@{Viz}!C2M2.Simulation.Simulation$<$ ValueType, VizType, RaycastType, GrabType $>$@{C2M2.Simulation.Simulation$<$ ValueType, VizType, RaycastType, GrabType $>$}}
+\doxysubsubsection{\texorpdfstring{Viz}{Viz}}
+{\footnotesize\ttfamily Viz\+Type \mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_simulation}{C2\+M2.\+Simulation.\+Simulation}}$<$ Value\+Type, Viz\+Type, Raycast\+Type, Grab\+Type $>$.Viz\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [protected set]}}
 
 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-C\+:/\+Users/jaros/\+Desktop/tempvr/virtual-\/reality/\+Assets/\+Scripts/\+C2\+M2/\mbox{\hyperlink{_simulation_8cs}{Simulation.\+cs}}\end{DoxyCompactItemize}
+C\+:/\+Users/\+Jacob Wells/\+Desktop/\+C2\+M2/\+Neuro\+VISOR/\+Assets/\+Scripts/\+C2\+M2/\+Simulation/\mbox{\hyperlink{_simulation_8cs}{Simulation.\+cs}}\end{DoxyCompactItemize}

@@ -1,0 +1,499 @@
+\hypertarget{class_c2_m2_1_1_visualization_1_1_line_grapher}{}\doxysection{C2\+M2.\+Visualization.\+Line\+Grapher Class Reference}
+\label{class_c2_m2_1_1_visualization_1_1_line_grapher}\index{C2M2.Visualization.LineGrapher@{C2M2.Visualization.LineGrapher}}
+
+
+Inherits Mono\+Behaviour.
+
+
+
+Inherited by \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_n_d_line_graph}{C2\+M2.\+Neuronal\+Dynamics.\+Interaction.\+UI.\+NDLine\+Graph}}.
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_c2_m2_1_1_visualization_1_1_line_grapher_a622c73b015416198a168ab1902617e32}{Add\+Value}} (float x, float y)
+\item 
+void \mbox{\hyperlink{class_c2_m2_1_1_visualization_1_1_line_grapher_a8eed0b9683d1f69dfd975c0ee9aadeb8}{Set\+Labels}} (string \mbox{\hyperlink{class_c2_m2_1_1_visualization_1_1_line_grapher_abd7ed7a3c57aa7d82bbe83a4dade4858}{title}}=\char`\"{}\char`\"{}, string \mbox{\hyperlink{class_c2_m2_1_1_visualization_1_1_line_grapher_a81a200d6d9d4ffbc63471eb177e8b2f8}{x\+Label}}=\char`\"{}\char`\"{}, string \mbox{\hyperlink{class_c2_m2_1_1_visualization_1_1_line_grapher_a88536d2a233badb616fa4b9a0281875d}{y\+Label}}=\char`\"{}\char`\"{})
+\item 
+void \mbox{\hyperlink{class_c2_m2_1_1_visualization_1_1_line_grapher_aa4df6bca04e148fd0a7f8a4bb3b44968}{Destroy\+Plot}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Rect\+Transform \mbox{\hyperlink{class_c2_m2_1_1_visualization_1_1_line_grapher_a08e9a5878958745d831dfb02cdfddb3e}{background\+Panel}} = null
+\item 
+Line\+Renderer \mbox{\hyperlink{class_c2_m2_1_1_visualization_1_1_line_grapher_a117a6ad34b5d3bf3adb4f0bdf1373d83}{points\+Renderer}}
+\item 
+\mbox{\hyperlink{class_c2_m2_1_1_visualization_1_1_graph_cursor}{Graph\+Cursor}} \mbox{\hyperlink{class_c2_m2_1_1_visualization_1_1_line_grapher_a6fbfb718b2f705af9b0dc8e80652c4ad}{cursor}} = null
+\item 
+\mbox{\hyperlink{class_c2_m2_1_1_visualization_1_1_graph_pointer}{Graph\+Pointer}} \mbox{\hyperlink{class_c2_m2_1_1_visualization_1_1_line_grapher_a4be12d060352b298d3b7e56f6b3f4147}{pointer\+Lines}} = null
+\item 
+Rect\+Transform \mbox{\hyperlink{class_c2_m2_1_1_visualization_1_1_line_grapher_a8ccfb64fbbb7537236ba398cdaa7fd8a}{close\+Button}} = null
+\item 
+Color \mbox{\hyperlink{class_c2_m2_1_1_visualization_1_1_line_grapher_ac7426e6778f6d3d01e411a7194aac0c9}{outline\+Color}}
+\item 
+Color \mbox{\hyperlink{class_c2_m2_1_1_visualization_1_1_line_grapher_a4c392ef994f263f2fd957bf647f06616}{label\+Color}}
+\item 
+Rect\+Transform \mbox{\hyperlink{class_c2_m2_1_1_visualization_1_1_line_grapher_a167be83fa90faea2565e3403ec8833ea}{info\+Panel}} = null
+\item 
+Rect\+Transform \mbox{\hyperlink{class_c2_m2_1_1_visualization_1_1_line_grapher_a4e9b9b75fb14d691821e6d02ebfb447e}{info\+Panel\+Button}} = null
+\item 
+float \mbox{\hyperlink{class_c2_m2_1_1_visualization_1_1_line_grapher_a36c2a3c6665fb393b1b8ba0b49ecb751}{graph\+Width}} = 500f
+\item 
+float \mbox{\hyperlink{class_c2_m2_1_1_visualization_1_1_line_grapher_a441a0864886f7fcb5e4d632d6b576628}{local\+OriginX}} = 50f
+\item 
+float \mbox{\hyperlink{class_c2_m2_1_1_visualization_1_1_line_grapher_a0a61665b4b1e89ecd8140e74e7e5b902}{local\+OriginY}} = 50f
+\item 
+float \mbox{\hyperlink{class_c2_m2_1_1_visualization_1_1_line_grapher_a549f1b1fd57c4d9a6aaf49fadb2d3fad}{global\+Line\+Width}} = 4f
+\item 
+Text\+Mesh\+Pro\+UGUI \mbox{\hyperlink{class_c2_m2_1_1_visualization_1_1_line_grapher_abd7ed7a3c57aa7d82bbe83a4dade4858}{title}}
+\item 
+Text\+Mesh\+Pro\+UGUI \mbox{\hyperlink{class_c2_m2_1_1_visualization_1_1_line_grapher_a88536d2a233badb616fa4b9a0281875d}{y\+Label}}
+\item 
+Text\+Mesh\+Pro\+UGUI \mbox{\hyperlink{class_c2_m2_1_1_visualization_1_1_line_grapher_a81a200d6d9d4ffbc63471eb177e8b2f8}{x\+Label}}
+\item 
+Text\+Mesh\+Pro\+UGUI \mbox{\hyperlink{class_c2_m2_1_1_visualization_1_1_line_grapher_abdaa8cf5de661947b1a4c15e90d9018e}{x\+Min\+Label}}
+\item 
+Text\+Mesh\+Pro\+UGUI \mbox{\hyperlink{class_c2_m2_1_1_visualization_1_1_line_grapher_a34f34e37610dd84ce2d12048930d7c6f}{x\+Max\+Label}}
+\item 
+Text\+Mesh\+Pro\+UGUI \mbox{\hyperlink{class_c2_m2_1_1_visualization_1_1_line_grapher_a1751d67705770cd827adfb8329cedaab}{y\+Min\+Label}}
+\item 
+Text\+Mesh\+Pro\+UGUI \mbox{\hyperlink{class_c2_m2_1_1_visualization_1_1_line_grapher_a096286d4952b72b3a43d8a0a3493937c}{y\+Max\+Label}}
+\item 
+List$<$ Vector3 $>$ \mbox{\hyperlink{class_c2_m2_1_1_visualization_1_1_line_grapher_a8e0b8a759fa917eac8a70c83f5e9c9eb}{positions}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+Line\+Renderer \mbox{\hyperlink{class_c2_m2_1_1_visualization_1_1_line_grapher_a6c4835ef8902a7030714f98673414f9e}{Outline}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+int \mbox{\hyperlink{class_c2_m2_1_1_visualization_1_1_line_grapher_ac6458a08c8e06f0a2e55952aa9e0463a}{Max\+Samples}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+string \mbox{\hyperlink{class_c2_m2_1_1_visualization_1_1_line_grapher_a8b461212fb59160f3c631ae5036eb741}{Title\+Str}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+string \mbox{\hyperlink{class_c2_m2_1_1_visualization_1_1_line_grapher_ad44e28b029a8d1f6f1205fff1c9908eb}{YLabel\+Str}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+string \mbox{\hyperlink{class_c2_m2_1_1_visualization_1_1_line_grapher_a811b307ac70392afe294fe15929883ff}{XLabel\+Str}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+int \mbox{\hyperlink{class_c2_m2_1_1_visualization_1_1_line_grapher_a189fc04197a5bce12d010720e021e720}{XPrecision}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+float \mbox{\hyperlink{class_c2_m2_1_1_visualization_1_1_line_grapher_a62dc3f44214babe6f819c94ba6c54114}{XMin}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+string \mbox{\hyperlink{class_c2_m2_1_1_visualization_1_1_line_grapher_aa7669dcbc71b19862c1397518368b539}{XMin\+Str}}\hspace{0.3cm}{\ttfamily  \mbox{[}set\mbox{]}}
+\item 
+float \mbox{\hyperlink{class_c2_m2_1_1_visualization_1_1_line_grapher_a4cd97a9e2eab5dc649d8653550fc9929}{XMax}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+string \mbox{\hyperlink{class_c2_m2_1_1_visualization_1_1_line_grapher_a74f47ccde3147a0e84487757af9aa5de}{XMax\+Str}}\hspace{0.3cm}{\ttfamily  \mbox{[}set\mbox{]}}
+\item 
+int \mbox{\hyperlink{class_c2_m2_1_1_visualization_1_1_line_grapher_af545bf1b3d4b32018f4ec40504971d23}{YPrecision}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+float \mbox{\hyperlink{class_c2_m2_1_1_visualization_1_1_line_grapher_a17885c99ec90e50f084e263828d1fee4}{YMin}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+string \mbox{\hyperlink{class_c2_m2_1_1_visualization_1_1_line_grapher_a9dd6af3a8e474d81f092cbceb3315f36}{YMin\+Str}}\hspace{0.3cm}{\ttfamily  \mbox{[}set\mbox{]}}
+\item 
+float \mbox{\hyperlink{class_c2_m2_1_1_visualization_1_1_line_grapher_a18d3e1b3339e01b6c184c34114d07d4e}{YMax}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+string \mbox{\hyperlink{class_c2_m2_1_1_visualization_1_1_line_grapher_ae15f8053dac468f8b33d0223af296d63}{YMax\+Str}}\hspace{0.3cm}{\ttfamily  \mbox{[}set\mbox{]}}
+\item 
+Rect\+Transform \mbox{\hyperlink{class_c2_m2_1_1_visualization_1_1_line_grapher_aa5497742543d04cfe63ad9cf54b3291a}{rt}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, private set\mbox{]}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_c2_m2_1_1_visualization_1_1_line_grapher_a2dab095953f0dd6438d1dcc6a33ff004}{Awake}} ()
+\item 
+void \mbox{\hyperlink{class_c2_m2_1_1_visualization_1_1_line_grapher_a15ec4f68b86ed78d5aab2e08020e281d}{Update\+Scale}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Line\+Renderer \mbox{\hyperlink{class_c2_m2_1_1_visualization_1_1_line_grapher_a994a00bac13d237c2f1c69d94333c8a2}{outline}}
+\item 
+int \mbox{\hyperlink{class_c2_m2_1_1_visualization_1_1_line_grapher_a72983745572a293a254db3b46b3a80d6}{max\+Samples}} = 100
+\item 
+string \mbox{\hyperlink{class_c2_m2_1_1_visualization_1_1_line_grapher_a908094843d3e3d3c0b614da0adff3278}{title\+Str}} = \char`\"{}\char`\"{}
+\item 
+string \mbox{\hyperlink{class_c2_m2_1_1_visualization_1_1_line_grapher_a0a2ed42ea9dd54d92143ecd31fbdb40a}{y\+Label\+Str}} = \char`\"{}\char`\"{}
+\item 
+string \mbox{\hyperlink{class_c2_m2_1_1_visualization_1_1_line_grapher_a42d1f6f2305dc656c26d5530b4ce49a9}{x\+Label\+Str}} = \char`\"{}\char`\"{}
+\item 
+int \mbox{\hyperlink{class_c2_m2_1_1_visualization_1_1_line_grapher_a5a1e5766087f3d74f3c81239f5427165}{x\+Precision}} = 3
+\item 
+string \mbox{\hyperlink{class_c2_m2_1_1_visualization_1_1_line_grapher_a9458db8c175ba5099c4b7db7c146e80a}{x\+Prec\+Format}} = \char`\"{}F3\char`\"{}
+\item 
+int \mbox{\hyperlink{class_c2_m2_1_1_visualization_1_1_line_grapher_afe02df381c4266019ea7a27050be484d}{max\+XPrec}} = 6
+\item 
+float \mbox{\hyperlink{class_c2_m2_1_1_visualization_1_1_line_grapher_a133479f2aa5144fd0b4667cf327f5a86}{x\+Min}} = float.\+Positive\+Infinity
+\item 
+float \mbox{\hyperlink{class_c2_m2_1_1_visualization_1_1_line_grapher_ae5059548790ddb311c24711339028e62}{x\+Max}} = float.\+Negative\+Infinity
+\item 
+int \mbox{\hyperlink{class_c2_m2_1_1_visualization_1_1_line_grapher_a502a68d1a34afcb2c26ecfaa88cc1a08}{y\+Precision}} = 3
+\item 
+string \mbox{\hyperlink{class_c2_m2_1_1_visualization_1_1_line_grapher_a0a0adce88c95108dad47f2038f93f2b0}{y\+Prec\+Format}} = \char`\"{}F3\char`\"{}
+\item 
+int \mbox{\hyperlink{class_c2_m2_1_1_visualization_1_1_line_grapher_a5bdfc769c7e8af2d52c7caf7107e5a50}{max\+YPrec}} = 6
+\item 
+float \mbox{\hyperlink{class_c2_m2_1_1_visualization_1_1_line_grapher_a9fae45e0d0d5b8d70a624e9f1e8abf03}{y\+Min}} = float.\+Positive\+Infinity
+\item 
+float \mbox{\hyperlink{class_c2_m2_1_1_visualization_1_1_line_grapher_a8b0aad0a0c72e4f4e2c499b4efbd4e6a}{y\+Max}} = float.\+Negative\+Infinity
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_c2_m2_1_1_visualization_1_1_line_grapher_a622c73b015416198a168ab1902617e32}\label{class_c2_m2_1_1_visualization_1_1_line_grapher_a622c73b015416198a168ab1902617e32}} 
+\index{C2M2.Visualization.LineGrapher@{C2M2.Visualization.LineGrapher}!AddValue@{AddValue}}
+\index{AddValue@{AddValue}!C2M2.Visualization.LineGrapher@{C2M2.Visualization.LineGrapher}}
+\doxysubsubsection{\texorpdfstring{AddValue()}{AddValue()}}
+{\footnotesize\ttfamily virtual void C2\+M2.\+Visualization.\+Line\+Grapher.\+Add\+Value (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_n_d_line_graph_a193805b172355696c5c2a904a02734ee}{C2\+M2.\+Neuronal\+Dynamics.\+Interaction.\+UI.\+NDLine\+Graph}}.
+
+\mbox{\Hypertarget{class_c2_m2_1_1_visualization_1_1_line_grapher_a2dab095953f0dd6438d1dcc6a33ff004}\label{class_c2_m2_1_1_visualization_1_1_line_grapher_a2dab095953f0dd6438d1dcc6a33ff004}} 
+\index{C2M2.Visualization.LineGrapher@{C2M2.Visualization.LineGrapher}!Awake@{Awake}}
+\index{Awake@{Awake}!C2M2.Visualization.LineGrapher@{C2M2.Visualization.LineGrapher}}
+\doxysubsubsection{\texorpdfstring{Awake()}{Awake()}}
+{\footnotesize\ttfamily void C2\+M2.\+Visualization.\+Line\+Grapher.\+Awake (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_visualization_1_1_line_grapher_aa4df6bca04e148fd0a7f8a4bb3b44968}\label{class_c2_m2_1_1_visualization_1_1_line_grapher_aa4df6bca04e148fd0a7f8a4bb3b44968}} 
+\index{C2M2.Visualization.LineGrapher@{C2M2.Visualization.LineGrapher}!DestroyPlot@{DestroyPlot}}
+\index{DestroyPlot@{DestroyPlot}!C2M2.Visualization.LineGrapher@{C2M2.Visualization.LineGrapher}}
+\doxysubsubsection{\texorpdfstring{DestroyPlot()}{DestroyPlot()}}
+{\footnotesize\ttfamily void C2\+M2.\+Visualization.\+Line\+Grapher.\+Destroy\+Plot (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_visualization_1_1_line_grapher_a8eed0b9683d1f69dfd975c0ee9aadeb8}\label{class_c2_m2_1_1_visualization_1_1_line_grapher_a8eed0b9683d1f69dfd975c0ee9aadeb8}} 
+\index{C2M2.Visualization.LineGrapher@{C2M2.Visualization.LineGrapher}!SetLabels@{SetLabels}}
+\index{SetLabels@{SetLabels}!C2M2.Visualization.LineGrapher@{C2M2.Visualization.LineGrapher}}
+\doxysubsubsection{\texorpdfstring{SetLabels()}{SetLabels()}}
+{\footnotesize\ttfamily void C2\+M2.\+Visualization.\+Line\+Grapher.\+Set\+Labels (\begin{DoxyParamCaption}\item[{string}]{title = {\ttfamily \char`\"{}\char`\"{}},  }\item[{string}]{x\+Label = {\ttfamily \char`\"{}\char`\"{}},  }\item[{string}]{y\+Label = {\ttfamily \char`\"{}\char`\"{}} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_visualization_1_1_line_grapher_a15ec4f68b86ed78d5aab2e08020e281d}\label{class_c2_m2_1_1_visualization_1_1_line_grapher_a15ec4f68b86ed78d5aab2e08020e281d}} 
+\index{C2M2.Visualization.LineGrapher@{C2M2.Visualization.LineGrapher}!UpdateScale@{UpdateScale}}
+\index{UpdateScale@{UpdateScale}!C2M2.Visualization.LineGrapher@{C2M2.Visualization.LineGrapher}}
+\doxysubsubsection{\texorpdfstring{UpdateScale()}{UpdateScale()}}
+{\footnotesize\ttfamily void C2\+M2.\+Visualization.\+Line\+Grapher.\+Update\+Scale (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Instead of rescaling the entire array of values each frame, this scales the line renderer\textquotesingle{}s transform, saving tons of performance over rescaling each point individually
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_c2_m2_1_1_visualization_1_1_line_grapher_a08e9a5878958745d831dfb02cdfddb3e}\label{class_c2_m2_1_1_visualization_1_1_line_grapher_a08e9a5878958745d831dfb02cdfddb3e}} 
+\index{C2M2.Visualization.LineGrapher@{C2M2.Visualization.LineGrapher}!backgroundPanel@{backgroundPanel}}
+\index{backgroundPanel@{backgroundPanel}!C2M2.Visualization.LineGrapher@{C2M2.Visualization.LineGrapher}}
+\doxysubsubsection{\texorpdfstring{backgroundPanel}{backgroundPanel}}
+{\footnotesize\ttfamily Rect\+Transform C2\+M2.\+Visualization.\+Line\+Grapher.\+background\+Panel = null}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_visualization_1_1_line_grapher_a8ccfb64fbbb7537236ba398cdaa7fd8a}\label{class_c2_m2_1_1_visualization_1_1_line_grapher_a8ccfb64fbbb7537236ba398cdaa7fd8a}} 
+\index{C2M2.Visualization.LineGrapher@{C2M2.Visualization.LineGrapher}!closeButton@{closeButton}}
+\index{closeButton@{closeButton}!C2M2.Visualization.LineGrapher@{C2M2.Visualization.LineGrapher}}
+\doxysubsubsection{\texorpdfstring{closeButton}{closeButton}}
+{\footnotesize\ttfamily Rect\+Transform C2\+M2.\+Visualization.\+Line\+Grapher.\+close\+Button = null}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_visualization_1_1_line_grapher_a6fbfb718b2f705af9b0dc8e80652c4ad}\label{class_c2_m2_1_1_visualization_1_1_line_grapher_a6fbfb718b2f705af9b0dc8e80652c4ad}} 
+\index{C2M2.Visualization.LineGrapher@{C2M2.Visualization.LineGrapher}!cursor@{cursor}}
+\index{cursor@{cursor}!C2M2.Visualization.LineGrapher@{C2M2.Visualization.LineGrapher}}
+\doxysubsubsection{\texorpdfstring{cursor}{cursor}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c2_m2_1_1_visualization_1_1_graph_cursor}{Graph\+Cursor}} C2\+M2.\+Visualization.\+Line\+Grapher.\+cursor = null}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_visualization_1_1_line_grapher_a549f1b1fd57c4d9a6aaf49fadb2d3fad}\label{class_c2_m2_1_1_visualization_1_1_line_grapher_a549f1b1fd57c4d9a6aaf49fadb2d3fad}} 
+\index{C2M2.Visualization.LineGrapher@{C2M2.Visualization.LineGrapher}!globalLineWidth@{globalLineWidth}}
+\index{globalLineWidth@{globalLineWidth}!C2M2.Visualization.LineGrapher@{C2M2.Visualization.LineGrapher}}
+\doxysubsubsection{\texorpdfstring{globalLineWidth}{globalLineWidth}}
+{\footnotesize\ttfamily float C2\+M2.\+Visualization.\+Line\+Grapher.\+global\+Line\+Width = 4f}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_visualization_1_1_line_grapher_a36c2a3c6665fb393b1b8ba0b49ecb751}\label{class_c2_m2_1_1_visualization_1_1_line_grapher_a36c2a3c6665fb393b1b8ba0b49ecb751}} 
+\index{C2M2.Visualization.LineGrapher@{C2M2.Visualization.LineGrapher}!graphWidth@{graphWidth}}
+\index{graphWidth@{graphWidth}!C2M2.Visualization.LineGrapher@{C2M2.Visualization.LineGrapher}}
+\doxysubsubsection{\texorpdfstring{graphWidth}{graphWidth}}
+{\footnotesize\ttfamily float C2\+M2.\+Visualization.\+Line\+Grapher.\+graph\+Width = 500f}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_visualization_1_1_line_grapher_a167be83fa90faea2565e3403ec8833ea}\label{class_c2_m2_1_1_visualization_1_1_line_grapher_a167be83fa90faea2565e3403ec8833ea}} 
+\index{C2M2.Visualization.LineGrapher@{C2M2.Visualization.LineGrapher}!infoPanel@{infoPanel}}
+\index{infoPanel@{infoPanel}!C2M2.Visualization.LineGrapher@{C2M2.Visualization.LineGrapher}}
+\doxysubsubsection{\texorpdfstring{infoPanel}{infoPanel}}
+{\footnotesize\ttfamily Rect\+Transform C2\+M2.\+Visualization.\+Line\+Grapher.\+info\+Panel = null}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_visualization_1_1_line_grapher_a4e9b9b75fb14d691821e6d02ebfb447e}\label{class_c2_m2_1_1_visualization_1_1_line_grapher_a4e9b9b75fb14d691821e6d02ebfb447e}} 
+\index{C2M2.Visualization.LineGrapher@{C2M2.Visualization.LineGrapher}!infoPanelButton@{infoPanelButton}}
+\index{infoPanelButton@{infoPanelButton}!C2M2.Visualization.LineGrapher@{C2M2.Visualization.LineGrapher}}
+\doxysubsubsection{\texorpdfstring{infoPanelButton}{infoPanelButton}}
+{\footnotesize\ttfamily Rect\+Transform C2\+M2.\+Visualization.\+Line\+Grapher.\+info\+Panel\+Button = null}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_visualization_1_1_line_grapher_a4c392ef994f263f2fd957bf647f06616}\label{class_c2_m2_1_1_visualization_1_1_line_grapher_a4c392ef994f263f2fd957bf647f06616}} 
+\index{C2M2.Visualization.LineGrapher@{C2M2.Visualization.LineGrapher}!labelColor@{labelColor}}
+\index{labelColor@{labelColor}!C2M2.Visualization.LineGrapher@{C2M2.Visualization.LineGrapher}}
+\doxysubsubsection{\texorpdfstring{labelColor}{labelColor}}
+{\footnotesize\ttfamily Color C2\+M2.\+Visualization.\+Line\+Grapher.\+label\+Color}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_visualization_1_1_line_grapher_a441a0864886f7fcb5e4d632d6b576628}\label{class_c2_m2_1_1_visualization_1_1_line_grapher_a441a0864886f7fcb5e4d632d6b576628}} 
+\index{C2M2.Visualization.LineGrapher@{C2M2.Visualization.LineGrapher}!localOriginX@{localOriginX}}
+\index{localOriginX@{localOriginX}!C2M2.Visualization.LineGrapher@{C2M2.Visualization.LineGrapher}}
+\doxysubsubsection{\texorpdfstring{localOriginX}{localOriginX}}
+{\footnotesize\ttfamily float C2\+M2.\+Visualization.\+Line\+Grapher.\+local\+OriginX = 50f}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_visualization_1_1_line_grapher_a0a61665b4b1e89ecd8140e74e7e5b902}\label{class_c2_m2_1_1_visualization_1_1_line_grapher_a0a61665b4b1e89ecd8140e74e7e5b902}} 
+\index{C2M2.Visualization.LineGrapher@{C2M2.Visualization.LineGrapher}!localOriginY@{localOriginY}}
+\index{localOriginY@{localOriginY}!C2M2.Visualization.LineGrapher@{C2M2.Visualization.LineGrapher}}
+\doxysubsubsection{\texorpdfstring{localOriginY}{localOriginY}}
+{\footnotesize\ttfamily float C2\+M2.\+Visualization.\+Line\+Grapher.\+local\+OriginY = 50f}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_visualization_1_1_line_grapher_a72983745572a293a254db3b46b3a80d6}\label{class_c2_m2_1_1_visualization_1_1_line_grapher_a72983745572a293a254db3b46b3a80d6}} 
+\index{C2M2.Visualization.LineGrapher@{C2M2.Visualization.LineGrapher}!maxSamples@{maxSamples}}
+\index{maxSamples@{maxSamples}!C2M2.Visualization.LineGrapher@{C2M2.Visualization.LineGrapher}}
+\doxysubsubsection{\texorpdfstring{maxSamples}{maxSamples}}
+{\footnotesize\ttfamily int C2\+M2.\+Visualization.\+Line\+Grapher.\+max\+Samples = 100\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_visualization_1_1_line_grapher_afe02df381c4266019ea7a27050be484d}\label{class_c2_m2_1_1_visualization_1_1_line_grapher_afe02df381c4266019ea7a27050be484d}} 
+\index{C2M2.Visualization.LineGrapher@{C2M2.Visualization.LineGrapher}!maxXPrec@{maxXPrec}}
+\index{maxXPrec@{maxXPrec}!C2M2.Visualization.LineGrapher@{C2M2.Visualization.LineGrapher}}
+\doxysubsubsection{\texorpdfstring{maxXPrec}{maxXPrec}}
+{\footnotesize\ttfamily int C2\+M2.\+Visualization.\+Line\+Grapher.\+max\+XPrec = 6\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_visualization_1_1_line_grapher_a5bdfc769c7e8af2d52c7caf7107e5a50}\label{class_c2_m2_1_1_visualization_1_1_line_grapher_a5bdfc769c7e8af2d52c7caf7107e5a50}} 
+\index{C2M2.Visualization.LineGrapher@{C2M2.Visualization.LineGrapher}!maxYPrec@{maxYPrec}}
+\index{maxYPrec@{maxYPrec}!C2M2.Visualization.LineGrapher@{C2M2.Visualization.LineGrapher}}
+\doxysubsubsection{\texorpdfstring{maxYPrec}{maxYPrec}}
+{\footnotesize\ttfamily int C2\+M2.\+Visualization.\+Line\+Grapher.\+max\+YPrec = 6\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_visualization_1_1_line_grapher_a994a00bac13d237c2f1c69d94333c8a2}\label{class_c2_m2_1_1_visualization_1_1_line_grapher_a994a00bac13d237c2f1c69d94333c8a2}} 
+\index{C2M2.Visualization.LineGrapher@{C2M2.Visualization.LineGrapher}!outline@{outline}}
+\index{outline@{outline}!C2M2.Visualization.LineGrapher@{C2M2.Visualization.LineGrapher}}
+\doxysubsubsection{\texorpdfstring{outline}{outline}}
+{\footnotesize\ttfamily Line\+Renderer C2\+M2.\+Visualization.\+Line\+Grapher.\+outline\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_visualization_1_1_line_grapher_ac7426e6778f6d3d01e411a7194aac0c9}\label{class_c2_m2_1_1_visualization_1_1_line_grapher_ac7426e6778f6d3d01e411a7194aac0c9}} 
+\index{C2M2.Visualization.LineGrapher@{C2M2.Visualization.LineGrapher}!outlineColor@{outlineColor}}
+\index{outlineColor@{outlineColor}!C2M2.Visualization.LineGrapher@{C2M2.Visualization.LineGrapher}}
+\doxysubsubsection{\texorpdfstring{outlineColor}{outlineColor}}
+{\footnotesize\ttfamily Color C2\+M2.\+Visualization.\+Line\+Grapher.\+outline\+Color}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_visualization_1_1_line_grapher_a4be12d060352b298d3b7e56f6b3f4147}\label{class_c2_m2_1_1_visualization_1_1_line_grapher_a4be12d060352b298d3b7e56f6b3f4147}} 
+\index{C2M2.Visualization.LineGrapher@{C2M2.Visualization.LineGrapher}!pointerLines@{pointerLines}}
+\index{pointerLines@{pointerLines}!C2M2.Visualization.LineGrapher@{C2M2.Visualization.LineGrapher}}
+\doxysubsubsection{\texorpdfstring{pointerLines}{pointerLines}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c2_m2_1_1_visualization_1_1_graph_pointer}{Graph\+Pointer}} C2\+M2.\+Visualization.\+Line\+Grapher.\+pointer\+Lines = null}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_visualization_1_1_line_grapher_a117a6ad34b5d3bf3adb4f0bdf1373d83}\label{class_c2_m2_1_1_visualization_1_1_line_grapher_a117a6ad34b5d3bf3adb4f0bdf1373d83}} 
+\index{C2M2.Visualization.LineGrapher@{C2M2.Visualization.LineGrapher}!pointsRenderer@{pointsRenderer}}
+\index{pointsRenderer@{pointsRenderer}!C2M2.Visualization.LineGrapher@{C2M2.Visualization.LineGrapher}}
+\doxysubsubsection{\texorpdfstring{pointsRenderer}{pointsRenderer}}
+{\footnotesize\ttfamily Line\+Renderer C2\+M2.\+Visualization.\+Line\+Grapher.\+points\+Renderer}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_visualization_1_1_line_grapher_a8e0b8a759fa917eac8a70c83f5e9c9eb}\label{class_c2_m2_1_1_visualization_1_1_line_grapher_a8e0b8a759fa917eac8a70c83f5e9c9eb}} 
+\index{C2M2.Visualization.LineGrapher@{C2M2.Visualization.LineGrapher}!positions@{positions}}
+\index{positions@{positions}!C2M2.Visualization.LineGrapher@{C2M2.Visualization.LineGrapher}}
+\doxysubsubsection{\texorpdfstring{positions}{positions}}
+{\footnotesize\ttfamily List$<$Vector3$>$ C2\+M2.\+Visualization.\+Line\+Grapher.\+positions}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_visualization_1_1_line_grapher_abd7ed7a3c57aa7d82bbe83a4dade4858}\label{class_c2_m2_1_1_visualization_1_1_line_grapher_abd7ed7a3c57aa7d82bbe83a4dade4858}} 
+\index{C2M2.Visualization.LineGrapher@{C2M2.Visualization.LineGrapher}!title@{title}}
+\index{title@{title}!C2M2.Visualization.LineGrapher@{C2M2.Visualization.LineGrapher}}
+\doxysubsubsection{\texorpdfstring{title}{title}}
+{\footnotesize\ttfamily Text\+Mesh\+Pro\+UGUI C2\+M2.\+Visualization.\+Line\+Grapher.\+title}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_visualization_1_1_line_grapher_a908094843d3e3d3c0b614da0adff3278}\label{class_c2_m2_1_1_visualization_1_1_line_grapher_a908094843d3e3d3c0b614da0adff3278}} 
+\index{C2M2.Visualization.LineGrapher@{C2M2.Visualization.LineGrapher}!titleStr@{titleStr}}
+\index{titleStr@{titleStr}!C2M2.Visualization.LineGrapher@{C2M2.Visualization.LineGrapher}}
+\doxysubsubsection{\texorpdfstring{titleStr}{titleStr}}
+{\footnotesize\ttfamily string C2\+M2.\+Visualization.\+Line\+Grapher.\+title\+Str = \char`\"{}\char`\"{}\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_visualization_1_1_line_grapher_a81a200d6d9d4ffbc63471eb177e8b2f8}\label{class_c2_m2_1_1_visualization_1_1_line_grapher_a81a200d6d9d4ffbc63471eb177e8b2f8}} 
+\index{C2M2.Visualization.LineGrapher@{C2M2.Visualization.LineGrapher}!xLabel@{xLabel}}
+\index{xLabel@{xLabel}!C2M2.Visualization.LineGrapher@{C2M2.Visualization.LineGrapher}}
+\doxysubsubsection{\texorpdfstring{xLabel}{xLabel}}
+{\footnotesize\ttfamily Text\+Mesh\+Pro\+UGUI C2\+M2.\+Visualization.\+Line\+Grapher.\+x\+Label}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_visualization_1_1_line_grapher_a42d1f6f2305dc656c26d5530b4ce49a9}\label{class_c2_m2_1_1_visualization_1_1_line_grapher_a42d1f6f2305dc656c26d5530b4ce49a9}} 
+\index{C2M2.Visualization.LineGrapher@{C2M2.Visualization.LineGrapher}!xLabelStr@{xLabelStr}}
+\index{xLabelStr@{xLabelStr}!C2M2.Visualization.LineGrapher@{C2M2.Visualization.LineGrapher}}
+\doxysubsubsection{\texorpdfstring{xLabelStr}{xLabelStr}}
+{\footnotesize\ttfamily string C2\+M2.\+Visualization.\+Line\+Grapher.\+x\+Label\+Str = \char`\"{}\char`\"{}\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_visualization_1_1_line_grapher_ae5059548790ddb311c24711339028e62}\label{class_c2_m2_1_1_visualization_1_1_line_grapher_ae5059548790ddb311c24711339028e62}} 
+\index{C2M2.Visualization.LineGrapher@{C2M2.Visualization.LineGrapher}!xMax@{xMax}}
+\index{xMax@{xMax}!C2M2.Visualization.LineGrapher@{C2M2.Visualization.LineGrapher}}
+\doxysubsubsection{\texorpdfstring{xMax}{xMax}}
+{\footnotesize\ttfamily float C2\+M2.\+Visualization.\+Line\+Grapher.\+x\+Max = float.\+Negative\+Infinity\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_visualization_1_1_line_grapher_a34f34e37610dd84ce2d12048930d7c6f}\label{class_c2_m2_1_1_visualization_1_1_line_grapher_a34f34e37610dd84ce2d12048930d7c6f}} 
+\index{C2M2.Visualization.LineGrapher@{C2M2.Visualization.LineGrapher}!xMaxLabel@{xMaxLabel}}
+\index{xMaxLabel@{xMaxLabel}!C2M2.Visualization.LineGrapher@{C2M2.Visualization.LineGrapher}}
+\doxysubsubsection{\texorpdfstring{xMaxLabel}{xMaxLabel}}
+{\footnotesize\ttfamily Text\+Mesh\+Pro\+UGUI C2\+M2.\+Visualization.\+Line\+Grapher.\+x\+Max\+Label}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_visualization_1_1_line_grapher_a133479f2aa5144fd0b4667cf327f5a86}\label{class_c2_m2_1_1_visualization_1_1_line_grapher_a133479f2aa5144fd0b4667cf327f5a86}} 
+\index{C2M2.Visualization.LineGrapher@{C2M2.Visualization.LineGrapher}!xMin@{xMin}}
+\index{xMin@{xMin}!C2M2.Visualization.LineGrapher@{C2M2.Visualization.LineGrapher}}
+\doxysubsubsection{\texorpdfstring{xMin}{xMin}}
+{\footnotesize\ttfamily float C2\+M2.\+Visualization.\+Line\+Grapher.\+x\+Min = float.\+Positive\+Infinity\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_visualization_1_1_line_grapher_abdaa8cf5de661947b1a4c15e90d9018e}\label{class_c2_m2_1_1_visualization_1_1_line_grapher_abdaa8cf5de661947b1a4c15e90d9018e}} 
+\index{C2M2.Visualization.LineGrapher@{C2M2.Visualization.LineGrapher}!xMinLabel@{xMinLabel}}
+\index{xMinLabel@{xMinLabel}!C2M2.Visualization.LineGrapher@{C2M2.Visualization.LineGrapher}}
+\doxysubsubsection{\texorpdfstring{xMinLabel}{xMinLabel}}
+{\footnotesize\ttfamily Text\+Mesh\+Pro\+UGUI C2\+M2.\+Visualization.\+Line\+Grapher.\+x\+Min\+Label}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_visualization_1_1_line_grapher_a9458db8c175ba5099c4b7db7c146e80a}\label{class_c2_m2_1_1_visualization_1_1_line_grapher_a9458db8c175ba5099c4b7db7c146e80a}} 
+\index{C2M2.Visualization.LineGrapher@{C2M2.Visualization.LineGrapher}!xPrecFormat@{xPrecFormat}}
+\index{xPrecFormat@{xPrecFormat}!C2M2.Visualization.LineGrapher@{C2M2.Visualization.LineGrapher}}
+\doxysubsubsection{\texorpdfstring{xPrecFormat}{xPrecFormat}}
+{\footnotesize\ttfamily string C2\+M2.\+Visualization.\+Line\+Grapher.\+x\+Prec\+Format = \char`\"{}F3\char`\"{}\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_visualization_1_1_line_grapher_a5a1e5766087f3d74f3c81239f5427165}\label{class_c2_m2_1_1_visualization_1_1_line_grapher_a5a1e5766087f3d74f3c81239f5427165}} 
+\index{C2M2.Visualization.LineGrapher@{C2M2.Visualization.LineGrapher}!xPrecision@{xPrecision}}
+\index{xPrecision@{xPrecision}!C2M2.Visualization.LineGrapher@{C2M2.Visualization.LineGrapher}}
+\doxysubsubsection{\texorpdfstring{xPrecision}{xPrecision}}
+{\footnotesize\ttfamily int C2\+M2.\+Visualization.\+Line\+Grapher.\+x\+Precision = 3\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_visualization_1_1_line_grapher_a88536d2a233badb616fa4b9a0281875d}\label{class_c2_m2_1_1_visualization_1_1_line_grapher_a88536d2a233badb616fa4b9a0281875d}} 
+\index{C2M2.Visualization.LineGrapher@{C2M2.Visualization.LineGrapher}!yLabel@{yLabel}}
+\index{yLabel@{yLabel}!C2M2.Visualization.LineGrapher@{C2M2.Visualization.LineGrapher}}
+\doxysubsubsection{\texorpdfstring{yLabel}{yLabel}}
+{\footnotesize\ttfamily Text\+Mesh\+Pro\+UGUI C2\+M2.\+Visualization.\+Line\+Grapher.\+y\+Label}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_visualization_1_1_line_grapher_a0a2ed42ea9dd54d92143ecd31fbdb40a}\label{class_c2_m2_1_1_visualization_1_1_line_grapher_a0a2ed42ea9dd54d92143ecd31fbdb40a}} 
+\index{C2M2.Visualization.LineGrapher@{C2M2.Visualization.LineGrapher}!yLabelStr@{yLabelStr}}
+\index{yLabelStr@{yLabelStr}!C2M2.Visualization.LineGrapher@{C2M2.Visualization.LineGrapher}}
+\doxysubsubsection{\texorpdfstring{yLabelStr}{yLabelStr}}
+{\footnotesize\ttfamily string C2\+M2.\+Visualization.\+Line\+Grapher.\+y\+Label\+Str = \char`\"{}\char`\"{}\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_visualization_1_1_line_grapher_a8b0aad0a0c72e4f4e2c499b4efbd4e6a}\label{class_c2_m2_1_1_visualization_1_1_line_grapher_a8b0aad0a0c72e4f4e2c499b4efbd4e6a}} 
+\index{C2M2.Visualization.LineGrapher@{C2M2.Visualization.LineGrapher}!yMax@{yMax}}
+\index{yMax@{yMax}!C2M2.Visualization.LineGrapher@{C2M2.Visualization.LineGrapher}}
+\doxysubsubsection{\texorpdfstring{yMax}{yMax}}
+{\footnotesize\ttfamily float C2\+M2.\+Visualization.\+Line\+Grapher.\+y\+Max = float.\+Negative\+Infinity\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_visualization_1_1_line_grapher_a096286d4952b72b3a43d8a0a3493937c}\label{class_c2_m2_1_1_visualization_1_1_line_grapher_a096286d4952b72b3a43d8a0a3493937c}} 
+\index{C2M2.Visualization.LineGrapher@{C2M2.Visualization.LineGrapher}!yMaxLabel@{yMaxLabel}}
+\index{yMaxLabel@{yMaxLabel}!C2M2.Visualization.LineGrapher@{C2M2.Visualization.LineGrapher}}
+\doxysubsubsection{\texorpdfstring{yMaxLabel}{yMaxLabel}}
+{\footnotesize\ttfamily Text\+Mesh\+Pro\+UGUI C2\+M2.\+Visualization.\+Line\+Grapher.\+y\+Max\+Label}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_visualization_1_1_line_grapher_a9fae45e0d0d5b8d70a624e9f1e8abf03}\label{class_c2_m2_1_1_visualization_1_1_line_grapher_a9fae45e0d0d5b8d70a624e9f1e8abf03}} 
+\index{C2M2.Visualization.LineGrapher@{C2M2.Visualization.LineGrapher}!yMin@{yMin}}
+\index{yMin@{yMin}!C2M2.Visualization.LineGrapher@{C2M2.Visualization.LineGrapher}}
+\doxysubsubsection{\texorpdfstring{yMin}{yMin}}
+{\footnotesize\ttfamily float C2\+M2.\+Visualization.\+Line\+Grapher.\+y\+Min = float.\+Positive\+Infinity\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_visualization_1_1_line_grapher_a1751d67705770cd827adfb8329cedaab}\label{class_c2_m2_1_1_visualization_1_1_line_grapher_a1751d67705770cd827adfb8329cedaab}} 
+\index{C2M2.Visualization.LineGrapher@{C2M2.Visualization.LineGrapher}!yMinLabel@{yMinLabel}}
+\index{yMinLabel@{yMinLabel}!C2M2.Visualization.LineGrapher@{C2M2.Visualization.LineGrapher}}
+\doxysubsubsection{\texorpdfstring{yMinLabel}{yMinLabel}}
+{\footnotesize\ttfamily Text\+Mesh\+Pro\+UGUI C2\+M2.\+Visualization.\+Line\+Grapher.\+y\+Min\+Label}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_visualization_1_1_line_grapher_a0a0adce88c95108dad47f2038f93f2b0}\label{class_c2_m2_1_1_visualization_1_1_line_grapher_a0a0adce88c95108dad47f2038f93f2b0}} 
+\index{C2M2.Visualization.LineGrapher@{C2M2.Visualization.LineGrapher}!yPrecFormat@{yPrecFormat}}
+\index{yPrecFormat@{yPrecFormat}!C2M2.Visualization.LineGrapher@{C2M2.Visualization.LineGrapher}}
+\doxysubsubsection{\texorpdfstring{yPrecFormat}{yPrecFormat}}
+{\footnotesize\ttfamily string C2\+M2.\+Visualization.\+Line\+Grapher.\+y\+Prec\+Format = \char`\"{}F3\char`\"{}\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_visualization_1_1_line_grapher_a502a68d1a34afcb2c26ecfaa88cc1a08}\label{class_c2_m2_1_1_visualization_1_1_line_grapher_a502a68d1a34afcb2c26ecfaa88cc1a08}} 
+\index{C2M2.Visualization.LineGrapher@{C2M2.Visualization.LineGrapher}!yPrecision@{yPrecision}}
+\index{yPrecision@{yPrecision}!C2M2.Visualization.LineGrapher@{C2M2.Visualization.LineGrapher}}
+\doxysubsubsection{\texorpdfstring{yPrecision}{yPrecision}}
+{\footnotesize\ttfamily int C2\+M2.\+Visualization.\+Line\+Grapher.\+y\+Precision = 3\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{class_c2_m2_1_1_visualization_1_1_line_grapher_ac6458a08c8e06f0a2e55952aa9e0463a}\label{class_c2_m2_1_1_visualization_1_1_line_grapher_ac6458a08c8e06f0a2e55952aa9e0463a}} 
+\index{C2M2.Visualization.LineGrapher@{C2M2.Visualization.LineGrapher}!MaxSamples@{MaxSamples}}
+\index{MaxSamples@{MaxSamples}!C2M2.Visualization.LineGrapher@{C2M2.Visualization.LineGrapher}}
+\doxysubsubsection{\texorpdfstring{MaxSamples}{MaxSamples}}
+{\footnotesize\ttfamily int C2\+M2.\+Visualization.\+Line\+Grapher.\+Max\+Samples\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_visualization_1_1_line_grapher_a6c4835ef8902a7030714f98673414f9e}\label{class_c2_m2_1_1_visualization_1_1_line_grapher_a6c4835ef8902a7030714f98673414f9e}} 
+\index{C2M2.Visualization.LineGrapher@{C2M2.Visualization.LineGrapher}!Outline@{Outline}}
+\index{Outline@{Outline}!C2M2.Visualization.LineGrapher@{C2M2.Visualization.LineGrapher}}
+\doxysubsubsection{\texorpdfstring{Outline}{Outline}}
+{\footnotesize\ttfamily Line\+Renderer C2\+M2.\+Visualization.\+Line\+Grapher.\+Outline\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_visualization_1_1_line_grapher_aa5497742543d04cfe63ad9cf54b3291a}\label{class_c2_m2_1_1_visualization_1_1_line_grapher_aa5497742543d04cfe63ad9cf54b3291a}} 
+\index{C2M2.Visualization.LineGrapher@{C2M2.Visualization.LineGrapher}!rt@{rt}}
+\index{rt@{rt}!C2M2.Visualization.LineGrapher@{C2M2.Visualization.LineGrapher}}
+\doxysubsubsection{\texorpdfstring{rt}{rt}}
+{\footnotesize\ttfamily Rect\+Transform C2\+M2.\+Visualization.\+Line\+Grapher.\+rt\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [private set]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_visualization_1_1_line_grapher_a8b461212fb59160f3c631ae5036eb741}\label{class_c2_m2_1_1_visualization_1_1_line_grapher_a8b461212fb59160f3c631ae5036eb741}} 
+\index{C2M2.Visualization.LineGrapher@{C2M2.Visualization.LineGrapher}!TitleStr@{TitleStr}}
+\index{TitleStr@{TitleStr}!C2M2.Visualization.LineGrapher@{C2M2.Visualization.LineGrapher}}
+\doxysubsubsection{\texorpdfstring{TitleStr}{TitleStr}}
+{\footnotesize\ttfamily string C2\+M2.\+Visualization.\+Line\+Grapher.\+Title\+Str\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_visualization_1_1_line_grapher_a811b307ac70392afe294fe15929883ff}\label{class_c2_m2_1_1_visualization_1_1_line_grapher_a811b307ac70392afe294fe15929883ff}} 
+\index{C2M2.Visualization.LineGrapher@{C2M2.Visualization.LineGrapher}!XLabelStr@{XLabelStr}}
+\index{XLabelStr@{XLabelStr}!C2M2.Visualization.LineGrapher@{C2M2.Visualization.LineGrapher}}
+\doxysubsubsection{\texorpdfstring{XLabelStr}{XLabelStr}}
+{\footnotesize\ttfamily string C2\+M2.\+Visualization.\+Line\+Grapher.\+XLabel\+Str\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_visualization_1_1_line_grapher_a4cd97a9e2eab5dc649d8653550fc9929}\label{class_c2_m2_1_1_visualization_1_1_line_grapher_a4cd97a9e2eab5dc649d8653550fc9929}} 
+\index{C2M2.Visualization.LineGrapher@{C2M2.Visualization.LineGrapher}!XMax@{XMax}}
+\index{XMax@{XMax}!C2M2.Visualization.LineGrapher@{C2M2.Visualization.LineGrapher}}
+\doxysubsubsection{\texorpdfstring{XMax}{XMax}}
+{\footnotesize\ttfamily float C2\+M2.\+Visualization.\+Line\+Grapher.\+XMax\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_visualization_1_1_line_grapher_a74f47ccde3147a0e84487757af9aa5de}\label{class_c2_m2_1_1_visualization_1_1_line_grapher_a74f47ccde3147a0e84487757af9aa5de}} 
+\index{C2M2.Visualization.LineGrapher@{C2M2.Visualization.LineGrapher}!XMaxStr@{XMaxStr}}
+\index{XMaxStr@{XMaxStr}!C2M2.Visualization.LineGrapher@{C2M2.Visualization.LineGrapher}}
+\doxysubsubsection{\texorpdfstring{XMaxStr}{XMaxStr}}
+{\footnotesize\ttfamily string C2\+M2.\+Visualization.\+Line\+Grapher.\+XMax\+Str\hspace{0.3cm}{\ttfamily [set]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_visualization_1_1_line_grapher_a62dc3f44214babe6f819c94ba6c54114}\label{class_c2_m2_1_1_visualization_1_1_line_grapher_a62dc3f44214babe6f819c94ba6c54114}} 
+\index{C2M2.Visualization.LineGrapher@{C2M2.Visualization.LineGrapher}!XMin@{XMin}}
+\index{XMin@{XMin}!C2M2.Visualization.LineGrapher@{C2M2.Visualization.LineGrapher}}
+\doxysubsubsection{\texorpdfstring{XMin}{XMin}}
+{\footnotesize\ttfamily float C2\+M2.\+Visualization.\+Line\+Grapher.\+XMin\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_visualization_1_1_line_grapher_aa7669dcbc71b19862c1397518368b539}\label{class_c2_m2_1_1_visualization_1_1_line_grapher_aa7669dcbc71b19862c1397518368b539}} 
+\index{C2M2.Visualization.LineGrapher@{C2M2.Visualization.LineGrapher}!XMinStr@{XMinStr}}
+\index{XMinStr@{XMinStr}!C2M2.Visualization.LineGrapher@{C2M2.Visualization.LineGrapher}}
+\doxysubsubsection{\texorpdfstring{XMinStr}{XMinStr}}
+{\footnotesize\ttfamily string C2\+M2.\+Visualization.\+Line\+Grapher.\+XMin\+Str\hspace{0.3cm}{\ttfamily [set]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_visualization_1_1_line_grapher_a189fc04197a5bce12d010720e021e720}\label{class_c2_m2_1_1_visualization_1_1_line_grapher_a189fc04197a5bce12d010720e021e720}} 
+\index{C2M2.Visualization.LineGrapher@{C2M2.Visualization.LineGrapher}!XPrecision@{XPrecision}}
+\index{XPrecision@{XPrecision}!C2M2.Visualization.LineGrapher@{C2M2.Visualization.LineGrapher}}
+\doxysubsubsection{\texorpdfstring{XPrecision}{XPrecision}}
+{\footnotesize\ttfamily int C2\+M2.\+Visualization.\+Line\+Grapher.\+XPrecision\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_visualization_1_1_line_grapher_ad44e28b029a8d1f6f1205fff1c9908eb}\label{class_c2_m2_1_1_visualization_1_1_line_grapher_ad44e28b029a8d1f6f1205fff1c9908eb}} 
+\index{C2M2.Visualization.LineGrapher@{C2M2.Visualization.LineGrapher}!YLabelStr@{YLabelStr}}
+\index{YLabelStr@{YLabelStr}!C2M2.Visualization.LineGrapher@{C2M2.Visualization.LineGrapher}}
+\doxysubsubsection{\texorpdfstring{YLabelStr}{YLabelStr}}
+{\footnotesize\ttfamily string C2\+M2.\+Visualization.\+Line\+Grapher.\+YLabel\+Str\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_visualization_1_1_line_grapher_a18d3e1b3339e01b6c184c34114d07d4e}\label{class_c2_m2_1_1_visualization_1_1_line_grapher_a18d3e1b3339e01b6c184c34114d07d4e}} 
+\index{C2M2.Visualization.LineGrapher@{C2M2.Visualization.LineGrapher}!YMax@{YMax}}
+\index{YMax@{YMax}!C2M2.Visualization.LineGrapher@{C2M2.Visualization.LineGrapher}}
+\doxysubsubsection{\texorpdfstring{YMax}{YMax}}
+{\footnotesize\ttfamily float C2\+M2.\+Visualization.\+Line\+Grapher.\+YMax\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_visualization_1_1_line_grapher_ae15f8053dac468f8b33d0223af296d63}\label{class_c2_m2_1_1_visualization_1_1_line_grapher_ae15f8053dac468f8b33d0223af296d63}} 
+\index{C2M2.Visualization.LineGrapher@{C2M2.Visualization.LineGrapher}!YMaxStr@{YMaxStr}}
+\index{YMaxStr@{YMaxStr}!C2M2.Visualization.LineGrapher@{C2M2.Visualization.LineGrapher}}
+\doxysubsubsection{\texorpdfstring{YMaxStr}{YMaxStr}}
+{\footnotesize\ttfamily string C2\+M2.\+Visualization.\+Line\+Grapher.\+YMax\+Str\hspace{0.3cm}{\ttfamily [set]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_visualization_1_1_line_grapher_a17885c99ec90e50f084e263828d1fee4}\label{class_c2_m2_1_1_visualization_1_1_line_grapher_a17885c99ec90e50f084e263828d1fee4}} 
+\index{C2M2.Visualization.LineGrapher@{C2M2.Visualization.LineGrapher}!YMin@{YMin}}
+\index{YMin@{YMin}!C2M2.Visualization.LineGrapher@{C2M2.Visualization.LineGrapher}}
+\doxysubsubsection{\texorpdfstring{YMin}{YMin}}
+{\footnotesize\ttfamily float C2\+M2.\+Visualization.\+Line\+Grapher.\+YMin\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_visualization_1_1_line_grapher_a9dd6af3a8e474d81f092cbceb3315f36}\label{class_c2_m2_1_1_visualization_1_1_line_grapher_a9dd6af3a8e474d81f092cbceb3315f36}} 
+\index{C2M2.Visualization.LineGrapher@{C2M2.Visualization.LineGrapher}!YMinStr@{YMinStr}}
+\index{YMinStr@{YMinStr}!C2M2.Visualization.LineGrapher@{C2M2.Visualization.LineGrapher}}
+\doxysubsubsection{\texorpdfstring{YMinStr}{YMinStr}}
+{\footnotesize\ttfamily string C2\+M2.\+Visualization.\+Line\+Grapher.\+YMin\+Str\hspace{0.3cm}{\ttfamily [set]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_visualization_1_1_line_grapher_af545bf1b3d4b32018f4ec40504971d23}\label{class_c2_m2_1_1_visualization_1_1_line_grapher_af545bf1b3d4b32018f4ec40504971d23}} 
+\index{C2M2.Visualization.LineGrapher@{C2M2.Visualization.LineGrapher}!YPrecision@{YPrecision}}
+\index{YPrecision@{YPrecision}!C2M2.Visualization.LineGrapher@{C2M2.Visualization.LineGrapher}}
+\doxysubsubsection{\texorpdfstring{YPrecision}{YPrecision}}
+{\footnotesize\ttfamily int C2\+M2.\+Visualization.\+Line\+Grapher.\+YPrecision\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Jacob Wells/\+Desktop/\+C2\+M2/\+Neuro\+VISOR/\+Assets/\+Scripts/\+C2\+M2/\+Visualization/\mbox{\hyperlink{_line_grapher_8cs}{Line\+Grapher.\+cs}}\end{DoxyCompactItemize}

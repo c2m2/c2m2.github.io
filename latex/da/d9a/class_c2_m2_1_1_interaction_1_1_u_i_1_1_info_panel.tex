@@ -1,0 +1,164 @@
+\hypertarget{class_c2_m2_1_1_interaction_1_1_u_i_1_1_info_panel}{}\doxysection{C2\+M2.\+Interaction.\+UI.\+Info\+Panel Class Reference}
+\label{class_c2_m2_1_1_interaction_1_1_u_i_1_1_info_panel}\index{C2M2.Interaction.UI.InfoPanel@{C2M2.Interaction.UI.InfoPanel}}
+
+
+Inherits Mono\+Behaviour.
+
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_u_i_1_1_info_panel_ae5da4dbc8d35c283bee6d64c046e8c00}{value\+Label}} = \char`\"{}\char`\"{}
+\item 
+string \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_u_i_1_1_info_panel_a6aac97ca1360cb09d55fb82e9afa78aa}{unit}} = \char`\"{}mV\char`\"{}
+\item 
+Text\+Mesh\+Pro\+UGUI \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_u_i_1_1_info_panel_ad69c05133439a3f47c667a4c6ea7004e}{vertex\+Text}}
+\item 
+Text\+Mesh\+Pro\+UGUI \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_u_i_1_1_info_panel_a105e89dcdd151c40726a476312039dd0}{power\+Text}}
+\item 
+Vector3 \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_u_i_1_1_info_panel_abc51ec65c18d3cfdcb9adb798543bb10}{Global\+Size}} = new Vector3(.\+0005f, .\+0005f, .\+0005f)
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_u_i_1_1_info_panel_acc95654177eda6462678afb842db34c5}{Vertex}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+int \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_u_i_1_1_info_panel_a2a043f957e204a30cf1c89eb0ed2662e}{Power\+Precision}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+double \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_u_i_1_1_info_panel_a6f3d1a5a01dba7871eeb04ef6ebba167}{Power}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+Vector3 \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_u_i_1_1_info_panel_a2e6ed6a95dd3dd7ccd783e39e0a599aa}{Focus\+Local\+Position}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Position to focus panel on. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_u_i_1_1_info_panel_ad42fdf9f09b093ba5c78ac4fb501adfd}{Awake}} ()
+\item 
+void \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_u_i_1_1_info_panel_afe6a7e742bd962860a253c1d3c8f099d}{Update}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_u_i_1_1_info_panel_afad9a19fba29aba0540e350b49bd05c4}{power\+Precision\+Int}} = 2
+\item 
+string \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_u_i_1_1_info_panel_a8d267e4e22d4de23791881ccc34a112d}{power\+Precision}} = \char`\"{}F2\char`\"{}
+\item 
+readonly string \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_u_i_1_1_info_panel_abf3a83d29bf5ff65659aedd758248c1b}{power\+Format}} = \char`\"{}\{0\} \{1\} \{2\}\char`\"{}
+\item 
+Rect\+Transform \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_u_i_1_1_info_panel_a2ea940fed161bc52984c50e057840b17}{rt}}
+\item 
+Transform \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_u_i_1_1_info_panel_adf790d1fa3cf361336b34f5cc6bc7d1c}{shift\+Anchor}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_u_i_1_1_info_panel_ad42fdf9f09b093ba5c78ac4fb501adfd}\label{class_c2_m2_1_1_interaction_1_1_u_i_1_1_info_panel_ad42fdf9f09b093ba5c78ac4fb501adfd}} 
+\index{C2M2.Interaction.UI.InfoPanel@{C2M2.Interaction.UI.InfoPanel}!Awake@{Awake}}
+\index{Awake@{Awake}!C2M2.Interaction.UI.InfoPanel@{C2M2.Interaction.UI.InfoPanel}}
+\doxysubsubsection{\texorpdfstring{Awake()}{Awake()}}
+{\footnotesize\ttfamily void C2\+M2.\+Interaction.\+UI.\+Info\+Panel.\+Awake (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_u_i_1_1_info_panel_afe6a7e742bd962860a253c1d3c8f099d}\label{class_c2_m2_1_1_interaction_1_1_u_i_1_1_info_panel_afe6a7e742bd962860a253c1d3c8f099d}} 
+\index{C2M2.Interaction.UI.InfoPanel@{C2M2.Interaction.UI.InfoPanel}!Update@{Update}}
+\index{Update@{Update}!C2M2.Interaction.UI.InfoPanel@{C2M2.Interaction.UI.InfoPanel}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void C2\+M2.\+Interaction.\+UI.\+Info\+Panel.\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_u_i_1_1_info_panel_abc51ec65c18d3cfdcb9adb798543bb10}\label{class_c2_m2_1_1_interaction_1_1_u_i_1_1_info_panel_abc51ec65c18d3cfdcb9adb798543bb10}} 
+\index{C2M2.Interaction.UI.InfoPanel@{C2M2.Interaction.UI.InfoPanel}!GlobalSize@{GlobalSize}}
+\index{GlobalSize@{GlobalSize}!C2M2.Interaction.UI.InfoPanel@{C2M2.Interaction.UI.InfoPanel}}
+\doxysubsubsection{\texorpdfstring{GlobalSize}{GlobalSize}}
+{\footnotesize\ttfamily Vector3 C2\+M2.\+Interaction.\+UI.\+Info\+Panel.\+Global\+Size = new Vector3(.\+0005f, .\+0005f, .\+0005f)}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_u_i_1_1_info_panel_abf3a83d29bf5ff65659aedd758248c1b}\label{class_c2_m2_1_1_interaction_1_1_u_i_1_1_info_panel_abf3a83d29bf5ff65659aedd758248c1b}} 
+\index{C2M2.Interaction.UI.InfoPanel@{C2M2.Interaction.UI.InfoPanel}!powerFormat@{powerFormat}}
+\index{powerFormat@{powerFormat}!C2M2.Interaction.UI.InfoPanel@{C2M2.Interaction.UI.InfoPanel}}
+\doxysubsubsection{\texorpdfstring{powerFormat}{powerFormat}}
+{\footnotesize\ttfamily readonly string C2\+M2.\+Interaction.\+UI.\+Info\+Panel.\+power\+Format = \char`\"{}\{0\} \{1\} \{2\}\char`\"{}\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_u_i_1_1_info_panel_a8d267e4e22d4de23791881ccc34a112d}\label{class_c2_m2_1_1_interaction_1_1_u_i_1_1_info_panel_a8d267e4e22d4de23791881ccc34a112d}} 
+\index{C2M2.Interaction.UI.InfoPanel@{C2M2.Interaction.UI.InfoPanel}!powerPrecision@{powerPrecision}}
+\index{powerPrecision@{powerPrecision}!C2M2.Interaction.UI.InfoPanel@{C2M2.Interaction.UI.InfoPanel}}
+\doxysubsubsection{\texorpdfstring{powerPrecision}{powerPrecision}}
+{\footnotesize\ttfamily string C2\+M2.\+Interaction.\+UI.\+Info\+Panel.\+power\+Precision = \char`\"{}F2\char`\"{}\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_u_i_1_1_info_panel_afad9a19fba29aba0540e350b49bd05c4}\label{class_c2_m2_1_1_interaction_1_1_u_i_1_1_info_panel_afad9a19fba29aba0540e350b49bd05c4}} 
+\index{C2M2.Interaction.UI.InfoPanel@{C2M2.Interaction.UI.InfoPanel}!powerPrecisionInt@{powerPrecisionInt}}
+\index{powerPrecisionInt@{powerPrecisionInt}!C2M2.Interaction.UI.InfoPanel@{C2M2.Interaction.UI.InfoPanel}}
+\doxysubsubsection{\texorpdfstring{powerPrecisionInt}{powerPrecisionInt}}
+{\footnotesize\ttfamily int C2\+M2.\+Interaction.\+UI.\+Info\+Panel.\+power\+Precision\+Int = 2\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_u_i_1_1_info_panel_a105e89dcdd151c40726a476312039dd0}\label{class_c2_m2_1_1_interaction_1_1_u_i_1_1_info_panel_a105e89dcdd151c40726a476312039dd0}} 
+\index{C2M2.Interaction.UI.InfoPanel@{C2M2.Interaction.UI.InfoPanel}!powerText@{powerText}}
+\index{powerText@{powerText}!C2M2.Interaction.UI.InfoPanel@{C2M2.Interaction.UI.InfoPanel}}
+\doxysubsubsection{\texorpdfstring{powerText}{powerText}}
+{\footnotesize\ttfamily Text\+Mesh\+Pro\+UGUI C2\+M2.\+Interaction.\+UI.\+Info\+Panel.\+power\+Text}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_u_i_1_1_info_panel_a2ea940fed161bc52984c50e057840b17}\label{class_c2_m2_1_1_interaction_1_1_u_i_1_1_info_panel_a2ea940fed161bc52984c50e057840b17}} 
+\index{C2M2.Interaction.UI.InfoPanel@{C2M2.Interaction.UI.InfoPanel}!rt@{rt}}
+\index{rt@{rt}!C2M2.Interaction.UI.InfoPanel@{C2M2.Interaction.UI.InfoPanel}}
+\doxysubsubsection{\texorpdfstring{rt}{rt}}
+{\footnotesize\ttfamily Rect\+Transform C2\+M2.\+Interaction.\+UI.\+Info\+Panel.\+rt\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_u_i_1_1_info_panel_adf790d1fa3cf361336b34f5cc6bc7d1c}\label{class_c2_m2_1_1_interaction_1_1_u_i_1_1_info_panel_adf790d1fa3cf361336b34f5cc6bc7d1c}} 
+\index{C2M2.Interaction.UI.InfoPanel@{C2M2.Interaction.UI.InfoPanel}!shiftAnchor@{shiftAnchor}}
+\index{shiftAnchor@{shiftAnchor}!C2M2.Interaction.UI.InfoPanel@{C2M2.Interaction.UI.InfoPanel}}
+\doxysubsubsection{\texorpdfstring{shiftAnchor}{shiftAnchor}}
+{\footnotesize\ttfamily Transform C2\+M2.\+Interaction.\+UI.\+Info\+Panel.\+shift\+Anchor\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_u_i_1_1_info_panel_a6aac97ca1360cb09d55fb82e9afa78aa}\label{class_c2_m2_1_1_interaction_1_1_u_i_1_1_info_panel_a6aac97ca1360cb09d55fb82e9afa78aa}} 
+\index{C2M2.Interaction.UI.InfoPanel@{C2M2.Interaction.UI.InfoPanel}!unit@{unit}}
+\index{unit@{unit}!C2M2.Interaction.UI.InfoPanel@{C2M2.Interaction.UI.InfoPanel}}
+\doxysubsubsection{\texorpdfstring{unit}{unit}}
+{\footnotesize\ttfamily string C2\+M2.\+Interaction.\+UI.\+Info\+Panel.\+unit = \char`\"{}mV\char`\"{}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_u_i_1_1_info_panel_ae5da4dbc8d35c283bee6d64c046e8c00}\label{class_c2_m2_1_1_interaction_1_1_u_i_1_1_info_panel_ae5da4dbc8d35c283bee6d64c046e8c00}} 
+\index{C2M2.Interaction.UI.InfoPanel@{C2M2.Interaction.UI.InfoPanel}!valueLabel@{valueLabel}}
+\index{valueLabel@{valueLabel}!C2M2.Interaction.UI.InfoPanel@{C2M2.Interaction.UI.InfoPanel}}
+\doxysubsubsection{\texorpdfstring{valueLabel}{valueLabel}}
+{\footnotesize\ttfamily string C2\+M2.\+Interaction.\+UI.\+Info\+Panel.\+value\+Label = \char`\"{}\char`\"{}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_u_i_1_1_info_panel_ad69c05133439a3f47c667a4c6ea7004e}\label{class_c2_m2_1_1_interaction_1_1_u_i_1_1_info_panel_ad69c05133439a3f47c667a4c6ea7004e}} 
+\index{C2M2.Interaction.UI.InfoPanel@{C2M2.Interaction.UI.InfoPanel}!vertexText@{vertexText}}
+\index{vertexText@{vertexText}!C2M2.Interaction.UI.InfoPanel@{C2M2.Interaction.UI.InfoPanel}}
+\doxysubsubsection{\texorpdfstring{vertexText}{vertexText}}
+{\footnotesize\ttfamily Text\+Mesh\+Pro\+UGUI C2\+M2.\+Interaction.\+UI.\+Info\+Panel.\+vertex\+Text}
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_u_i_1_1_info_panel_a2e6ed6a95dd3dd7ccd783e39e0a599aa}\label{class_c2_m2_1_1_interaction_1_1_u_i_1_1_info_panel_a2e6ed6a95dd3dd7ccd783e39e0a599aa}} 
+\index{C2M2.Interaction.UI.InfoPanel@{C2M2.Interaction.UI.InfoPanel}!FocusLocalPosition@{FocusLocalPosition}}
+\index{FocusLocalPosition@{FocusLocalPosition}!C2M2.Interaction.UI.InfoPanel@{C2M2.Interaction.UI.InfoPanel}}
+\doxysubsubsection{\texorpdfstring{FocusLocalPosition}{FocusLocalPosition}}
+{\footnotesize\ttfamily Vector3 C2\+M2.\+Interaction.\+UI.\+Info\+Panel.\+Focus\+Local\+Position\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Position to focus panel on. 
+
+Panel will automatically place itself at this position, and shift itself to the side if requested. \mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_u_i_1_1_info_panel_a6f3d1a5a01dba7871eeb04ef6ebba167}\label{class_c2_m2_1_1_interaction_1_1_u_i_1_1_info_panel_a6f3d1a5a01dba7871eeb04ef6ebba167}} 
+\index{C2M2.Interaction.UI.InfoPanel@{C2M2.Interaction.UI.InfoPanel}!Power@{Power}}
+\index{Power@{Power}!C2M2.Interaction.UI.InfoPanel@{C2M2.Interaction.UI.InfoPanel}}
+\doxysubsubsection{\texorpdfstring{Power}{Power}}
+{\footnotesize\ttfamily double C2\+M2.\+Interaction.\+UI.\+Info\+Panel.\+Power\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_u_i_1_1_info_panel_a2a043f957e204a30cf1c89eb0ed2662e}\label{class_c2_m2_1_1_interaction_1_1_u_i_1_1_info_panel_a2a043f957e204a30cf1c89eb0ed2662e}} 
+\index{C2M2.Interaction.UI.InfoPanel@{C2M2.Interaction.UI.InfoPanel}!PowerPrecision@{PowerPrecision}}
+\index{PowerPrecision@{PowerPrecision}!C2M2.Interaction.UI.InfoPanel@{C2M2.Interaction.UI.InfoPanel}}
+\doxysubsubsection{\texorpdfstring{PowerPrecision}{PowerPrecision}}
+{\footnotesize\ttfamily int C2\+M2.\+Interaction.\+UI.\+Info\+Panel.\+Power\+Precision\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_u_i_1_1_info_panel_acc95654177eda6462678afb842db34c5}\label{class_c2_m2_1_1_interaction_1_1_u_i_1_1_info_panel_acc95654177eda6462678afb842db34c5}} 
+\index{C2M2.Interaction.UI.InfoPanel@{C2M2.Interaction.UI.InfoPanel}!Vertex@{Vertex}}
+\index{Vertex@{Vertex}!C2M2.Interaction.UI.InfoPanel@{C2M2.Interaction.UI.InfoPanel}}
+\doxysubsubsection{\texorpdfstring{Vertex}{Vertex}}
+{\footnotesize\ttfamily int C2\+M2.\+Interaction.\+UI.\+Info\+Panel.\+Vertex\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Jacob Wells/\+Desktop/\+C2\+M2/\+Neuro\+VISOR/\+Assets/\+Scripts/\+C2\+M2/\+Neuronal\+Dynamics/\+Interaction/\+UI/\mbox{\hyperlink{_info_panel_8cs}{Info\+Panel.\+cs}}\end{DoxyCompactItemize}

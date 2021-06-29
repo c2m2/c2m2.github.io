@@ -1,0 +1,167 @@
+\hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_n_d_simulation_loader}{}\doxysection{C2\+M2.\+Neuronal\+Dynamics.\+Interaction.\+NDSimulation\+Loader Class Reference}
+\label{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_n_d_simulation_loader}\index{C2M2.NeuronalDynamics.Interaction.NDSimulationLoader@{C2M2.NeuronalDynamics.Interaction.NDSimulationLoader}}
+
+
+Provides an editor interface and method for loading simulations on demand.  
+
+
+
+
+Inherits Mono\+Behaviour.
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_n_d_simulation_loader_a11823db56ce86483a1fc844686ea936e}{Load}} (Raycast\+Hit hit)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_n_d_simulation_loader_a5f1e9f044afde67507f11c294fbb2e92}{solver\+Name}} = \char`\"{}C2\+M2.\+Neuronal\+Dynamics.\+Simulation.\+Sparse\+Solver\+Testv1\char`\"{}
+\begin{DoxyCompactList}\small\item\em Script name of the solver script. \end{DoxyCompactList}\item 
+Gradient \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_n_d_simulation_loader_adc1678f75912e9fc8ddde08ee0347ec7}{gradient}}
+\item 
+float \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_n_d_simulation_loader_a15cf158fd7fb740d7ce51c0db12b6871}{global\+Min}} = float.\+Positive\+Infinity
+\item 
+float \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_n_d_simulation_loader_acf8aed1fc1d2304505ef6a25ca7c9690}{global\+Max}} = float.\+Negative\+Infinity
+\item 
+string \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_n_d_simulation_loader_a8d9a34d8b1d978cefd4f488fe614e0f9}{length\+Scale}} = \char`\"{}μm\char`\"{}
+\item 
+int \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_n_d_simulation_loader_acb31fa65eff89e89e6a2ac14bbe434c2}{refinement\+Level}} = 0
+\item 
+double \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_n_d_simulation_loader_a15d49f312dbd11df679788860711d082}{timestep\+Size}} = 0.\+002 $\ast$ 1e-\/3
+\item 
+double \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_n_d_simulation_loader_ad0c88ffda977ca11056726b41a343c2c}{end\+Time}} = 100.\+0
+\item 
+double \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_n_d_simulation_loader_a02e3f6bd757aaa8a6e38f25b8fb9968b}{raycast\+Hit\+Value}} = 0.\+05
+\item 
+string \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_n_d_simulation_loader_a63ffbddcd5c915c67aec15ef030d6c06}{unit}} = \char`\"{}mV\char`\"{}
+\begin{DoxyCompactList}\small\item\em Unit display string that can be manually set by the user \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_n_d_simulation_loader_a6ad67b47475562cd452d5ad8b72251c1}{unit\+Scaler}} = 1000f
+\begin{DoxyCompactList}\small\item\em Can be used to manually convert Gradient Display values to match unit string \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_n_d_simulation_loader_af8b4cf0c5cb13ecd83e3fa8a8617593a}{color\+Scale\+Precision}} = 3
+\begin{DoxyCompactList}\small\item\em Alter the precision of the color scale display \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_n_d_simulation_loader_a497a510acc031917cbeee7aecb095022}{vrn\+File\+Name}} = \char`\"{}null\char`\"{}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Provides an editor interface and method for loading simulations on demand. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_n_d_simulation_loader_a11823db56ce86483a1fc844686ea936e}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_n_d_simulation_loader_a11823db56ce86483a1fc844686ea936e}} 
+\index{C2M2.NeuronalDynamics.Interaction.NDSimulationLoader@{C2M2.NeuronalDynamics.Interaction.NDSimulationLoader}!Load@{Load}}
+\index{Load@{Load}!C2M2.NeuronalDynamics.Interaction.NDSimulationLoader@{C2M2.NeuronalDynamics.Interaction.NDSimulationLoader}}
+\doxysubsubsection{\texorpdfstring{Load()}{Load()}}
+{\footnotesize\ttfamily void C2\+M2.\+Neuronal\+Dynamics.\+Interaction.\+NDSimulation\+Loader.\+Load (\begin{DoxyParamCaption}\item[{Raycast\+Hit}]{hit }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_n_d_simulation_loader_af8b4cf0c5cb13ecd83e3fa8a8617593a}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_n_d_simulation_loader_af8b4cf0c5cb13ecd83e3fa8a8617593a}} 
+\index{C2M2.NeuronalDynamics.Interaction.NDSimulationLoader@{C2M2.NeuronalDynamics.Interaction.NDSimulationLoader}!colorScalePrecision@{colorScalePrecision}}
+\index{colorScalePrecision@{colorScalePrecision}!C2M2.NeuronalDynamics.Interaction.NDSimulationLoader@{C2M2.NeuronalDynamics.Interaction.NDSimulationLoader}}
+\doxysubsubsection{\texorpdfstring{colorScalePrecision}{colorScalePrecision}}
+{\footnotesize\ttfamily int C2\+M2.\+Neuronal\+Dynamics.\+Interaction.\+NDSimulation\+Loader.\+color\+Scale\+Precision = 3}
+
+
+
+Alter the precision of the color scale display 
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_n_d_simulation_loader_ad0c88ffda977ca11056726b41a343c2c}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_n_d_simulation_loader_ad0c88ffda977ca11056726b41a343c2c}} 
+\index{C2M2.NeuronalDynamics.Interaction.NDSimulationLoader@{C2M2.NeuronalDynamics.Interaction.NDSimulationLoader}!endTime@{endTime}}
+\index{endTime@{endTime}!C2M2.NeuronalDynamics.Interaction.NDSimulationLoader@{C2M2.NeuronalDynamics.Interaction.NDSimulationLoader}}
+\doxysubsubsection{\texorpdfstring{endTime}{endTime}}
+{\footnotesize\ttfamily double C2\+M2.\+Neuronal\+Dynamics.\+Interaction.\+NDSimulation\+Loader.\+end\+Time = 100.\+0}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_n_d_simulation_loader_acf8aed1fc1d2304505ef6a25ca7c9690}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_n_d_simulation_loader_acf8aed1fc1d2304505ef6a25ca7c9690}} 
+\index{C2M2.NeuronalDynamics.Interaction.NDSimulationLoader@{C2M2.NeuronalDynamics.Interaction.NDSimulationLoader}!globalMax@{globalMax}}
+\index{globalMax@{globalMax}!C2M2.NeuronalDynamics.Interaction.NDSimulationLoader@{C2M2.NeuronalDynamics.Interaction.NDSimulationLoader}}
+\doxysubsubsection{\texorpdfstring{globalMax}{globalMax}}
+{\footnotesize\ttfamily float C2\+M2.\+Neuronal\+Dynamics.\+Interaction.\+NDSimulation\+Loader.\+global\+Max = float.\+Negative\+Infinity}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_n_d_simulation_loader_a15cf158fd7fb740d7ce51c0db12b6871}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_n_d_simulation_loader_a15cf158fd7fb740d7ce51c0db12b6871}} 
+\index{C2M2.NeuronalDynamics.Interaction.NDSimulationLoader@{C2M2.NeuronalDynamics.Interaction.NDSimulationLoader}!globalMin@{globalMin}}
+\index{globalMin@{globalMin}!C2M2.NeuronalDynamics.Interaction.NDSimulationLoader@{C2M2.NeuronalDynamics.Interaction.NDSimulationLoader}}
+\doxysubsubsection{\texorpdfstring{globalMin}{globalMin}}
+{\footnotesize\ttfamily float C2\+M2.\+Neuronal\+Dynamics.\+Interaction.\+NDSimulation\+Loader.\+global\+Min = float.\+Positive\+Infinity}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_n_d_simulation_loader_adc1678f75912e9fc8ddde08ee0347ec7}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_n_d_simulation_loader_adc1678f75912e9fc8ddde08ee0347ec7}} 
+\index{C2M2.NeuronalDynamics.Interaction.NDSimulationLoader@{C2M2.NeuronalDynamics.Interaction.NDSimulationLoader}!gradient@{gradient}}
+\index{gradient@{gradient}!C2M2.NeuronalDynamics.Interaction.NDSimulationLoader@{C2M2.NeuronalDynamics.Interaction.NDSimulationLoader}}
+\doxysubsubsection{\texorpdfstring{gradient}{gradient}}
+{\footnotesize\ttfamily Gradient C2\+M2.\+Neuronal\+Dynamics.\+Interaction.\+NDSimulation\+Loader.\+gradient}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_n_d_simulation_loader_a8d9a34d8b1d978cefd4f488fe614e0f9}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_n_d_simulation_loader_a8d9a34d8b1d978cefd4f488fe614e0f9}} 
+\index{C2M2.NeuronalDynamics.Interaction.NDSimulationLoader@{C2M2.NeuronalDynamics.Interaction.NDSimulationLoader}!lengthScale@{lengthScale}}
+\index{lengthScale@{lengthScale}!C2M2.NeuronalDynamics.Interaction.NDSimulationLoader@{C2M2.NeuronalDynamics.Interaction.NDSimulationLoader}}
+\doxysubsubsection{\texorpdfstring{lengthScale}{lengthScale}}
+{\footnotesize\ttfamily string C2\+M2.\+Neuronal\+Dynamics.\+Interaction.\+NDSimulation\+Loader.\+length\+Scale = \char`\"{}μm\char`\"{}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_n_d_simulation_loader_a02e3f6bd757aaa8a6e38f25b8fb9968b}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_n_d_simulation_loader_a02e3f6bd757aaa8a6e38f25b8fb9968b}} 
+\index{C2M2.NeuronalDynamics.Interaction.NDSimulationLoader@{C2M2.NeuronalDynamics.Interaction.NDSimulationLoader}!raycastHitValue@{raycastHitValue}}
+\index{raycastHitValue@{raycastHitValue}!C2M2.NeuronalDynamics.Interaction.NDSimulationLoader@{C2M2.NeuronalDynamics.Interaction.NDSimulationLoader}}
+\doxysubsubsection{\texorpdfstring{raycastHitValue}{raycastHitValue}}
+{\footnotesize\ttfamily double C2\+M2.\+Neuronal\+Dynamics.\+Interaction.\+NDSimulation\+Loader.\+raycast\+Hit\+Value = 0.\+05}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_n_d_simulation_loader_acb31fa65eff89e89e6a2ac14bbe434c2}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_n_d_simulation_loader_acb31fa65eff89e89e6a2ac14bbe434c2}} 
+\index{C2M2.NeuronalDynamics.Interaction.NDSimulationLoader@{C2M2.NeuronalDynamics.Interaction.NDSimulationLoader}!refinementLevel@{refinementLevel}}
+\index{refinementLevel@{refinementLevel}!C2M2.NeuronalDynamics.Interaction.NDSimulationLoader@{C2M2.NeuronalDynamics.Interaction.NDSimulationLoader}}
+\doxysubsubsection{\texorpdfstring{refinementLevel}{refinementLevel}}
+{\footnotesize\ttfamily int C2\+M2.\+Neuronal\+Dynamics.\+Interaction.\+NDSimulation\+Loader.\+refinement\+Level = 0}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_n_d_simulation_loader_a5f1e9f044afde67507f11c294fbb2e92}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_n_d_simulation_loader_a5f1e9f044afde67507f11c294fbb2e92}} 
+\index{C2M2.NeuronalDynamics.Interaction.NDSimulationLoader@{C2M2.NeuronalDynamics.Interaction.NDSimulationLoader}!solverName@{solverName}}
+\index{solverName@{solverName}!C2M2.NeuronalDynamics.Interaction.NDSimulationLoader@{C2M2.NeuronalDynamics.Interaction.NDSimulationLoader}}
+\doxysubsubsection{\texorpdfstring{solverName}{solverName}}
+{\footnotesize\ttfamily string C2\+M2.\+Neuronal\+Dynamics.\+Interaction.\+NDSimulation\+Loader.\+solver\+Name = \char`\"{}C2\+M2.\+Neuronal\+Dynamics.\+Simulation.\+Sparse\+Solver\+Testv1\char`\"{}}
+
+
+
+Script name of the solver script. 
+
+Name must include full namespace, separated by \textquotesingle{}.\textquotesingle{} (i.\+e. \textquotesingle{}\mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_sparse_solver_testv1}{C2\+M2.\+Neuronal\+Dynamics.\+Simulation.\+Sparse\+Solver\+Testv1}}\textquotesingle{}) Script must be included in the assembly, this can be achieved by placing the script in the \char`\"{}\+Assets\char`\"{} folder. \mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_n_d_simulation_loader_a15d49f312dbd11df679788860711d082}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_n_d_simulation_loader_a15d49f312dbd11df679788860711d082}} 
+\index{C2M2.NeuronalDynamics.Interaction.NDSimulationLoader@{C2M2.NeuronalDynamics.Interaction.NDSimulationLoader}!timestepSize@{timestepSize}}
+\index{timestepSize@{timestepSize}!C2M2.NeuronalDynamics.Interaction.NDSimulationLoader@{C2M2.NeuronalDynamics.Interaction.NDSimulationLoader}}
+\doxysubsubsection{\texorpdfstring{timestepSize}{timestepSize}}
+{\footnotesize\ttfamily double C2\+M2.\+Neuronal\+Dynamics.\+Interaction.\+NDSimulation\+Loader.\+timestep\+Size = 0.\+002 $\ast$ 1e-\/3}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_n_d_simulation_loader_a63ffbddcd5c915c67aec15ef030d6c06}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_n_d_simulation_loader_a63ffbddcd5c915c67aec15ef030d6c06}} 
+\index{C2M2.NeuronalDynamics.Interaction.NDSimulationLoader@{C2M2.NeuronalDynamics.Interaction.NDSimulationLoader}!unit@{unit}}
+\index{unit@{unit}!C2M2.NeuronalDynamics.Interaction.NDSimulationLoader@{C2M2.NeuronalDynamics.Interaction.NDSimulationLoader}}
+\doxysubsubsection{\texorpdfstring{unit}{unit}}
+{\footnotesize\ttfamily string C2\+M2.\+Neuronal\+Dynamics.\+Interaction.\+NDSimulation\+Loader.\+unit = \char`\"{}mV\char`\"{}}
+
+
+
+Unit display string that can be manually set by the user 
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_n_d_simulation_loader_a6ad67b47475562cd452d5ad8b72251c1}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_n_d_simulation_loader_a6ad67b47475562cd452d5ad8b72251c1}} 
+\index{C2M2.NeuronalDynamics.Interaction.NDSimulationLoader@{C2M2.NeuronalDynamics.Interaction.NDSimulationLoader}!unitScaler@{unitScaler}}
+\index{unitScaler@{unitScaler}!C2M2.NeuronalDynamics.Interaction.NDSimulationLoader@{C2M2.NeuronalDynamics.Interaction.NDSimulationLoader}}
+\doxysubsubsection{\texorpdfstring{unitScaler}{unitScaler}}
+{\footnotesize\ttfamily float C2\+M2.\+Neuronal\+Dynamics.\+Interaction.\+NDSimulation\+Loader.\+unit\+Scaler = 1000f}
+
+
+
+Can be used to manually convert Gradient Display values to match unit string 
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_n_d_simulation_loader_a497a510acc031917cbeee7aecb095022}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_n_d_simulation_loader_a497a510acc031917cbeee7aecb095022}} 
+\index{C2M2.NeuronalDynamics.Interaction.NDSimulationLoader@{C2M2.NeuronalDynamics.Interaction.NDSimulationLoader}!vrnFileName@{vrnFileName}}
+\index{vrnFileName@{vrnFileName}!C2M2.NeuronalDynamics.Interaction.NDSimulationLoader@{C2M2.NeuronalDynamics.Interaction.NDSimulationLoader}}
+\doxysubsubsection{\texorpdfstring{vrnFileName}{vrnFileName}}
+{\footnotesize\ttfamily string C2\+M2.\+Neuronal\+Dynamics.\+Interaction.\+NDSimulation\+Loader.\+vrn\+File\+Name = \char`\"{}null\char`\"{}\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Jacob Wells/\+Desktop/\+C2\+M2/\+Neuro\+VISOR/\+Assets/\+Scripts/\+C2\+M2/\+Neuronal\+Dynamics/\+Interaction/\mbox{\hyperlink{_n_d_simulation_loader_8cs}{NDSimulation\+Loader.\+cs}}\end{DoxyCompactItemize}

@@ -1,0 +1,224 @@
+\hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_gradient_display}{}\doxysection{C2\+M2.\+Neuronal\+Dynamics.\+Interaction.\+UI.\+Gradient\+Display Class Reference}
+\label{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_gradient_display}\index{C2M2.NeuronalDynamics.Interaction.UI.GradientDisplay@{C2M2.NeuronalDynamics.Interaction.UI.GradientDisplay}}
+
+
+Inherits Mono\+Behaviour.
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_gradient_display_a567df4a01a3440cf86620649cf4b3c79}{Update\+Text\+Markers}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_n_d_simulation_controller}{NDSimulation\+Controller}} \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_gradient_display_a9954c7439fdefe45cfaa3e10b1b10abe}{sim\+Controller}} = null
+\item 
+Line\+Renderer \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_gradient_display_a49a3c5bef2c6275c61dfa703c7fe1003}{gradient\+Line}} = null
+\item 
+float \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_gradient_display_af9c5a73708a8f51d30c72b2a13df1a17}{display\+Length}} = 75
+\item 
+float \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_gradient_display_a6117c870097730758ca0b20a5eecdaf4}{display\+Height}} = 10
+\item 
+int \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_gradient_display_aba9decc74874f4419833eb8e5078f2fc}{num\+Text\+Markers}} = 5
+\item 
+Game\+Object \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_gradient_display_afc98cc7f183a1b3f2c62049996229812}{text\+Marker\+Prefab}} = null
+\item 
+Game\+Object \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_gradient_display_ac5b3bdd683ec0ee92caf95c5f4f42063}{text\+Marker\+Holder}} = null
+\item 
+Text\+Mesh\+Pro\+UGUI \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_gradient_display_a6a4a14e328e267a1ce0a4c0047f19aa2}{unit\+Text}} = null
+\item 
+Line\+Renderer \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_gradient_display_af11255bab786f62b881710f5eaaf423e}{outline}} = null
+\item 
+\mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_text_marker}{Text\+Marker}}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_gradient_display_a124bf8e5ffae921bcd4355ef6b210c1d}{text\+Markers}} = new \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_text_marker}{Text\+Marker}}\mbox{[}0\mbox{]}
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_mesh_simulation}{Mesh\+Simulation}} \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_gradient_display_a25c0d21f133bb2e7f28be3dacc9eb5fd}{Sim}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+Gradient \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_gradient_display_a9cf60d71be7ac812d4a1dc3b6908f10d}{Gradient}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+float \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_gradient_display_a4266d55969690875494fb590b2151fde}{original\+Min}} = float.\+Positive\+Infinity\hspace{0.3cm}{\ttfamily  \mbox{[}get, private set\mbox{]}}
+\item 
+float \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_gradient_display_a1fa4a1432d644f48e0ceb7f1a703200a}{original\+Max}} = float.\+Negative\+Infinity\hspace{0.3cm}{\ttfamily  \mbox{[}get, private set\mbox{]}}
+\item 
+float \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_gradient_display_ad51ae679ee0c0dbe3b89841a25670144}{Unit\+Scaler}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+string \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_gradient_display_a9da0af57443588c6c6c1c5b2fad6bd43}{Unit}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+string \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_gradient_display_a731a597a100285e8807ea15eafdd7188}{Precision}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+float \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_gradient_display_ada865f77a1864a7b87c7fb44df247792}{Line\+Width}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_gradient_display_a96abd8ad7c9bbb3981dc21a25ef935f4}{Awake}} ()
+\item 
+void \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_gradient_display_a464d0a043e333f1123a31a298b5b095a}{Start}} ()
+\item 
+IEnumerator \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_gradient_display_ac4a23e14fb6db924091140426bc03835}{Update\+Display\+Routine}} ()
+\item 
+void \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_gradient_display_a4dd4940ff5b1557b038a57617b78a079}{Draw\+Outline}} ()
+\item 
+void \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_gradient_display_aa282dd9e6f160f3efcd969160f6a5138}{Update\+Display}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_gradient_display_a96abd8ad7c9bbb3981dc21a25ef935f4}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_gradient_display_a96abd8ad7c9bbb3981dc21a25ef935f4}} 
+\index{C2M2.NeuronalDynamics.Interaction.UI.GradientDisplay@{C2M2.NeuronalDynamics.Interaction.UI.GradientDisplay}!Awake@{Awake}}
+\index{Awake@{Awake}!C2M2.NeuronalDynamics.Interaction.UI.GradientDisplay@{C2M2.NeuronalDynamics.Interaction.UI.GradientDisplay}}
+\doxysubsubsection{\texorpdfstring{Awake()}{Awake()}}
+{\footnotesize\ttfamily void C2\+M2.\+Neuronal\+Dynamics.\+Interaction.\+UI.\+Gradient\+Display.\+Awake (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_gradient_display_a4dd4940ff5b1557b038a57617b78a079}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_gradient_display_a4dd4940ff5b1557b038a57617b78a079}} 
+\index{C2M2.NeuronalDynamics.Interaction.UI.GradientDisplay@{C2M2.NeuronalDynamics.Interaction.UI.GradientDisplay}!DrawOutline@{DrawOutline}}
+\index{DrawOutline@{DrawOutline}!C2M2.NeuronalDynamics.Interaction.UI.GradientDisplay@{C2M2.NeuronalDynamics.Interaction.UI.GradientDisplay}}
+\doxysubsubsection{\texorpdfstring{DrawOutline()}{DrawOutline()}}
+{\footnotesize\ttfamily void C2\+M2.\+Neuronal\+Dynamics.\+Interaction.\+UI.\+Gradient\+Display.\+Draw\+Outline (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_gradient_display_a464d0a043e333f1123a31a298b5b095a}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_gradient_display_a464d0a043e333f1123a31a298b5b095a}} 
+\index{C2M2.NeuronalDynamics.Interaction.UI.GradientDisplay@{C2M2.NeuronalDynamics.Interaction.UI.GradientDisplay}!Start@{Start}}
+\index{Start@{Start}!C2M2.NeuronalDynamics.Interaction.UI.GradientDisplay@{C2M2.NeuronalDynamics.Interaction.UI.GradientDisplay}}
+\doxysubsubsection{\texorpdfstring{Start()}{Start()}}
+{\footnotesize\ttfamily void C2\+M2.\+Neuronal\+Dynamics.\+Interaction.\+UI.\+Gradient\+Display.\+Start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_gradient_display_aa282dd9e6f160f3efcd969160f6a5138}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_gradient_display_aa282dd9e6f160f3efcd969160f6a5138}} 
+\index{C2M2.NeuronalDynamics.Interaction.UI.GradientDisplay@{C2M2.NeuronalDynamics.Interaction.UI.GradientDisplay}!UpdateDisplay@{UpdateDisplay}}
+\index{UpdateDisplay@{UpdateDisplay}!C2M2.NeuronalDynamics.Interaction.UI.GradientDisplay@{C2M2.NeuronalDynamics.Interaction.UI.GradientDisplay}}
+\doxysubsubsection{\texorpdfstring{UpdateDisplay()}{UpdateDisplay()}}
+{\footnotesize\ttfamily void C2\+M2.\+Neuronal\+Dynamics.\+Interaction.\+UI.\+Gradient\+Display.\+Update\+Display (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_gradient_display_ac4a23e14fb6db924091140426bc03835}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_gradient_display_ac4a23e14fb6db924091140426bc03835}} 
+\index{C2M2.NeuronalDynamics.Interaction.UI.GradientDisplay@{C2M2.NeuronalDynamics.Interaction.UI.GradientDisplay}!UpdateDisplayRoutine@{UpdateDisplayRoutine}}
+\index{UpdateDisplayRoutine@{UpdateDisplayRoutine}!C2M2.NeuronalDynamics.Interaction.UI.GradientDisplay@{C2M2.NeuronalDynamics.Interaction.UI.GradientDisplay}}
+\doxysubsubsection{\texorpdfstring{UpdateDisplayRoutine()}{UpdateDisplayRoutine()}}
+{\footnotesize\ttfamily IEnumerator C2\+M2.\+Neuronal\+Dynamics.\+Interaction.\+UI.\+Gradient\+Display.\+Update\+Display\+Routine (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_gradient_display_a567df4a01a3440cf86620649cf4b3c79}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_gradient_display_a567df4a01a3440cf86620649cf4b3c79}} 
+\index{C2M2.NeuronalDynamics.Interaction.UI.GradientDisplay@{C2M2.NeuronalDynamics.Interaction.UI.GradientDisplay}!UpdateTextMarkers@{UpdateTextMarkers}}
+\index{UpdateTextMarkers@{UpdateTextMarkers}!C2M2.NeuronalDynamics.Interaction.UI.GradientDisplay@{C2M2.NeuronalDynamics.Interaction.UI.GradientDisplay}}
+\doxysubsubsection{\texorpdfstring{UpdateTextMarkers()}{UpdateTextMarkers()}}
+{\footnotesize\ttfamily void C2\+M2.\+Neuronal\+Dynamics.\+Interaction.\+UI.\+Gradient\+Display.\+Update\+Text\+Markers (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_gradient_display_a6117c870097730758ca0b20a5eecdaf4}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_gradient_display_a6117c870097730758ca0b20a5eecdaf4}} 
+\index{C2M2.NeuronalDynamics.Interaction.UI.GradientDisplay@{C2M2.NeuronalDynamics.Interaction.UI.GradientDisplay}!displayHeight@{displayHeight}}
+\index{displayHeight@{displayHeight}!C2M2.NeuronalDynamics.Interaction.UI.GradientDisplay@{C2M2.NeuronalDynamics.Interaction.UI.GradientDisplay}}
+\doxysubsubsection{\texorpdfstring{displayHeight}{displayHeight}}
+{\footnotesize\ttfamily float C2\+M2.\+Neuronal\+Dynamics.\+Interaction.\+UI.\+Gradient\+Display.\+display\+Height = 10}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_gradient_display_af9c5a73708a8f51d30c72b2a13df1a17}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_gradient_display_af9c5a73708a8f51d30c72b2a13df1a17}} 
+\index{C2M2.NeuronalDynamics.Interaction.UI.GradientDisplay@{C2M2.NeuronalDynamics.Interaction.UI.GradientDisplay}!displayLength@{displayLength}}
+\index{displayLength@{displayLength}!C2M2.NeuronalDynamics.Interaction.UI.GradientDisplay@{C2M2.NeuronalDynamics.Interaction.UI.GradientDisplay}}
+\doxysubsubsection{\texorpdfstring{displayLength}{displayLength}}
+{\footnotesize\ttfamily float C2\+M2.\+Neuronal\+Dynamics.\+Interaction.\+UI.\+Gradient\+Display.\+display\+Length = 75}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_gradient_display_a49a3c5bef2c6275c61dfa703c7fe1003}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_gradient_display_a49a3c5bef2c6275c61dfa703c7fe1003}} 
+\index{C2M2.NeuronalDynamics.Interaction.UI.GradientDisplay@{C2M2.NeuronalDynamics.Interaction.UI.GradientDisplay}!gradientLine@{gradientLine}}
+\index{gradientLine@{gradientLine}!C2M2.NeuronalDynamics.Interaction.UI.GradientDisplay@{C2M2.NeuronalDynamics.Interaction.UI.GradientDisplay}}
+\doxysubsubsection{\texorpdfstring{gradientLine}{gradientLine}}
+{\footnotesize\ttfamily Line\+Renderer C2\+M2.\+Neuronal\+Dynamics.\+Interaction.\+UI.\+Gradient\+Display.\+gradient\+Line = null}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_gradient_display_aba9decc74874f4419833eb8e5078f2fc}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_gradient_display_aba9decc74874f4419833eb8e5078f2fc}} 
+\index{C2M2.NeuronalDynamics.Interaction.UI.GradientDisplay@{C2M2.NeuronalDynamics.Interaction.UI.GradientDisplay}!numTextMarkers@{numTextMarkers}}
+\index{numTextMarkers@{numTextMarkers}!C2M2.NeuronalDynamics.Interaction.UI.GradientDisplay@{C2M2.NeuronalDynamics.Interaction.UI.GradientDisplay}}
+\doxysubsubsection{\texorpdfstring{numTextMarkers}{numTextMarkers}}
+{\footnotesize\ttfamily int C2\+M2.\+Neuronal\+Dynamics.\+Interaction.\+UI.\+Gradient\+Display.\+num\+Text\+Markers = 5}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_gradient_display_af11255bab786f62b881710f5eaaf423e}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_gradient_display_af11255bab786f62b881710f5eaaf423e}} 
+\index{C2M2.NeuronalDynamics.Interaction.UI.GradientDisplay@{C2M2.NeuronalDynamics.Interaction.UI.GradientDisplay}!outline@{outline}}
+\index{outline@{outline}!C2M2.NeuronalDynamics.Interaction.UI.GradientDisplay@{C2M2.NeuronalDynamics.Interaction.UI.GradientDisplay}}
+\doxysubsubsection{\texorpdfstring{outline}{outline}}
+{\footnotesize\ttfamily Line\+Renderer C2\+M2.\+Neuronal\+Dynamics.\+Interaction.\+UI.\+Gradient\+Display.\+outline = null}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_gradient_display_a9954c7439fdefe45cfaa3e10b1b10abe}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_gradient_display_a9954c7439fdefe45cfaa3e10b1b10abe}} 
+\index{C2M2.NeuronalDynamics.Interaction.UI.GradientDisplay@{C2M2.NeuronalDynamics.Interaction.UI.GradientDisplay}!simController@{simController}}
+\index{simController@{simController}!C2M2.NeuronalDynamics.Interaction.UI.GradientDisplay@{C2M2.NeuronalDynamics.Interaction.UI.GradientDisplay}}
+\doxysubsubsection{\texorpdfstring{simController}{simController}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_n_d_simulation_controller}{NDSimulation\+Controller}} C2\+M2.\+Neuronal\+Dynamics.\+Interaction.\+UI.\+Gradient\+Display.\+sim\+Controller = null}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_gradient_display_ac5b3bdd683ec0ee92caf95c5f4f42063}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_gradient_display_ac5b3bdd683ec0ee92caf95c5f4f42063}} 
+\index{C2M2.NeuronalDynamics.Interaction.UI.GradientDisplay@{C2M2.NeuronalDynamics.Interaction.UI.GradientDisplay}!textMarkerHolder@{textMarkerHolder}}
+\index{textMarkerHolder@{textMarkerHolder}!C2M2.NeuronalDynamics.Interaction.UI.GradientDisplay@{C2M2.NeuronalDynamics.Interaction.UI.GradientDisplay}}
+\doxysubsubsection{\texorpdfstring{textMarkerHolder}{textMarkerHolder}}
+{\footnotesize\ttfamily Game\+Object C2\+M2.\+Neuronal\+Dynamics.\+Interaction.\+UI.\+Gradient\+Display.\+text\+Marker\+Holder = null}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_gradient_display_afc98cc7f183a1b3f2c62049996229812}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_gradient_display_afc98cc7f183a1b3f2c62049996229812}} 
+\index{C2M2.NeuronalDynamics.Interaction.UI.GradientDisplay@{C2M2.NeuronalDynamics.Interaction.UI.GradientDisplay}!textMarkerPrefab@{textMarkerPrefab}}
+\index{textMarkerPrefab@{textMarkerPrefab}!C2M2.NeuronalDynamics.Interaction.UI.GradientDisplay@{C2M2.NeuronalDynamics.Interaction.UI.GradientDisplay}}
+\doxysubsubsection{\texorpdfstring{textMarkerPrefab}{textMarkerPrefab}}
+{\footnotesize\ttfamily Game\+Object C2\+M2.\+Neuronal\+Dynamics.\+Interaction.\+UI.\+Gradient\+Display.\+text\+Marker\+Prefab = null}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_gradient_display_a124bf8e5ffae921bcd4355ef6b210c1d}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_gradient_display_a124bf8e5ffae921bcd4355ef6b210c1d}} 
+\index{C2M2.NeuronalDynamics.Interaction.UI.GradientDisplay@{C2M2.NeuronalDynamics.Interaction.UI.GradientDisplay}!textMarkers@{textMarkers}}
+\index{textMarkers@{textMarkers}!C2M2.NeuronalDynamics.Interaction.UI.GradientDisplay@{C2M2.NeuronalDynamics.Interaction.UI.GradientDisplay}}
+\doxysubsubsection{\texorpdfstring{textMarkers}{textMarkers}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_text_marker}{Text\+Marker}} \mbox{[}$\,$\mbox{]} C2\+M2.\+Neuronal\+Dynamics.\+Interaction.\+UI.\+Gradient\+Display.\+text\+Markers = new \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_text_marker}{Text\+Marker}}\mbox{[}0\mbox{]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_gradient_display_a6a4a14e328e267a1ce0a4c0047f19aa2}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_gradient_display_a6a4a14e328e267a1ce0a4c0047f19aa2}} 
+\index{C2M2.NeuronalDynamics.Interaction.UI.GradientDisplay@{C2M2.NeuronalDynamics.Interaction.UI.GradientDisplay}!unitText@{unitText}}
+\index{unitText@{unitText}!C2M2.NeuronalDynamics.Interaction.UI.GradientDisplay@{C2M2.NeuronalDynamics.Interaction.UI.GradientDisplay}}
+\doxysubsubsection{\texorpdfstring{unitText}{unitText}}
+{\footnotesize\ttfamily Text\+Mesh\+Pro\+UGUI C2\+M2.\+Neuronal\+Dynamics.\+Interaction.\+UI.\+Gradient\+Display.\+unit\+Text = null}
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_gradient_display_a9cf60d71be7ac812d4a1dc3b6908f10d}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_gradient_display_a9cf60d71be7ac812d4a1dc3b6908f10d}} 
+\index{C2M2.NeuronalDynamics.Interaction.UI.GradientDisplay@{C2M2.NeuronalDynamics.Interaction.UI.GradientDisplay}!Gradient@{Gradient}}
+\index{Gradient@{Gradient}!C2M2.NeuronalDynamics.Interaction.UI.GradientDisplay@{C2M2.NeuronalDynamics.Interaction.UI.GradientDisplay}}
+\doxysubsubsection{\texorpdfstring{Gradient}{Gradient}}
+{\footnotesize\ttfamily Gradient C2\+M2.\+Neuronal\+Dynamics.\+Interaction.\+UI.\+Gradient\+Display.\+Gradient\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_gradient_display_ada865f77a1864a7b87c7fb44df247792}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_gradient_display_ada865f77a1864a7b87c7fb44df247792}} 
+\index{C2M2.NeuronalDynamics.Interaction.UI.GradientDisplay@{C2M2.NeuronalDynamics.Interaction.UI.GradientDisplay}!LineWidth@{LineWidth}}
+\index{LineWidth@{LineWidth}!C2M2.NeuronalDynamics.Interaction.UI.GradientDisplay@{C2M2.NeuronalDynamics.Interaction.UI.GradientDisplay}}
+\doxysubsubsection{\texorpdfstring{LineWidth}{LineWidth}}
+{\footnotesize\ttfamily float C2\+M2.\+Neuronal\+Dynamics.\+Interaction.\+UI.\+Gradient\+Display.\+Line\+Width\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_gradient_display_a1fa4a1432d644f48e0ceb7f1a703200a}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_gradient_display_a1fa4a1432d644f48e0ceb7f1a703200a}} 
+\index{C2M2.NeuronalDynamics.Interaction.UI.GradientDisplay@{C2M2.NeuronalDynamics.Interaction.UI.GradientDisplay}!originalMax@{originalMax}}
+\index{originalMax@{originalMax}!C2M2.NeuronalDynamics.Interaction.UI.GradientDisplay@{C2M2.NeuronalDynamics.Interaction.UI.GradientDisplay}}
+\doxysubsubsection{\texorpdfstring{originalMax}{originalMax}}
+{\footnotesize\ttfamily float C2\+M2.\+Neuronal\+Dynamics.\+Interaction.\+UI.\+Gradient\+Display.\+original\+Max = float.\+Negative\+Infinity\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [private set]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_gradient_display_a4266d55969690875494fb590b2151fde}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_gradient_display_a4266d55969690875494fb590b2151fde}} 
+\index{C2M2.NeuronalDynamics.Interaction.UI.GradientDisplay@{C2M2.NeuronalDynamics.Interaction.UI.GradientDisplay}!originalMin@{originalMin}}
+\index{originalMin@{originalMin}!C2M2.NeuronalDynamics.Interaction.UI.GradientDisplay@{C2M2.NeuronalDynamics.Interaction.UI.GradientDisplay}}
+\doxysubsubsection{\texorpdfstring{originalMin}{originalMin}}
+{\footnotesize\ttfamily float C2\+M2.\+Neuronal\+Dynamics.\+Interaction.\+UI.\+Gradient\+Display.\+original\+Min = float.\+Positive\+Infinity\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [private set]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_gradient_display_a731a597a100285e8807ea15eafdd7188}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_gradient_display_a731a597a100285e8807ea15eafdd7188}} 
+\index{C2M2.NeuronalDynamics.Interaction.UI.GradientDisplay@{C2M2.NeuronalDynamics.Interaction.UI.GradientDisplay}!Precision@{Precision}}
+\index{Precision@{Precision}!C2M2.NeuronalDynamics.Interaction.UI.GradientDisplay@{C2M2.NeuronalDynamics.Interaction.UI.GradientDisplay}}
+\doxysubsubsection{\texorpdfstring{Precision}{Precision}}
+{\footnotesize\ttfamily string C2\+M2.\+Neuronal\+Dynamics.\+Interaction.\+UI.\+Gradient\+Display.\+Precision\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_gradient_display_a25c0d21f133bb2e7f28be3dacc9eb5fd}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_gradient_display_a25c0d21f133bb2e7f28be3dacc9eb5fd}} 
+\index{C2M2.NeuronalDynamics.Interaction.UI.GradientDisplay@{C2M2.NeuronalDynamics.Interaction.UI.GradientDisplay}!Sim@{Sim}}
+\index{Sim@{Sim}!C2M2.NeuronalDynamics.Interaction.UI.GradientDisplay@{C2M2.NeuronalDynamics.Interaction.UI.GradientDisplay}}
+\doxysubsubsection{\texorpdfstring{Sim}{Sim}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_mesh_simulation}{Mesh\+Simulation}} C2\+M2.\+Neuronal\+Dynamics.\+Interaction.\+UI.\+Gradient\+Display.\+Sim\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_gradient_display_a9da0af57443588c6c6c1c5b2fad6bd43}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_gradient_display_a9da0af57443588c6c6c1c5b2fad6bd43}} 
+\index{C2M2.NeuronalDynamics.Interaction.UI.GradientDisplay@{C2M2.NeuronalDynamics.Interaction.UI.GradientDisplay}!Unit@{Unit}}
+\index{Unit@{Unit}!C2M2.NeuronalDynamics.Interaction.UI.GradientDisplay@{C2M2.NeuronalDynamics.Interaction.UI.GradientDisplay}}
+\doxysubsubsection{\texorpdfstring{Unit}{Unit}}
+{\footnotesize\ttfamily string C2\+M2.\+Neuronal\+Dynamics.\+Interaction.\+UI.\+Gradient\+Display.\+Unit\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_gradient_display_ad51ae679ee0c0dbe3b89841a25670144}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_gradient_display_ad51ae679ee0c0dbe3b89841a25670144}} 
+\index{C2M2.NeuronalDynamics.Interaction.UI.GradientDisplay@{C2M2.NeuronalDynamics.Interaction.UI.GradientDisplay}!UnitScaler@{UnitScaler}}
+\index{UnitScaler@{UnitScaler}!C2M2.NeuronalDynamics.Interaction.UI.GradientDisplay@{C2M2.NeuronalDynamics.Interaction.UI.GradientDisplay}}
+\doxysubsubsection{\texorpdfstring{UnitScaler}{UnitScaler}}
+{\footnotesize\ttfamily float C2\+M2.\+Neuronal\+Dynamics.\+Interaction.\+UI.\+Gradient\+Display.\+Unit\+Scaler\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Jacob Wells/\+Desktop/\+C2\+M2/\+Neuro\+VISOR/\+Assets/\+Scripts/\+C2\+M2/\+Visualization/\mbox{\hyperlink{_gradient_display_8cs}{Gradient\+Display.\+cs}}\end{DoxyCompactItemize}

@@ -8,10 +8,6 @@ All scripts powering general model interaction
 \doxysubsection*{Namespaces}
 \begin{DoxyCompactItemize}
 \item 
-namespace \mbox{\hyperlink{namespace_c2_m2_1_1_interaction_1_1_adjacency}{Adjacency}}
-\item 
-namespace \mbox{\hyperlink{namespace_c2_m2_1_1_interaction_1_1_signaling}{Signaling}}
-\item 
 namespace \mbox{\hyperlink{namespace_c2_m2_1_1_interaction_1_1_u_i}{UI}}
 \item 
 namespace \mbox{\hyperlink{namespace_c2_m2_1_1_interaction_1_1_v_r}{VR}}
@@ -19,27 +15,25 @@ namespace \mbox{\hyperlink{namespace_c2_m2_1_1_interaction_1_1_v_r}{VR}}
 \doxysubsection*{Classes}
 \begin{DoxyCompactItemize}
 \item 
-class \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_grabber_emulator}{Grabber\+Emulator}}
-\item 
 class \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_grab_rescaler}{Grab\+Rescaler}}
-\begin{DoxyCompactList}\small\item\em Adds some percentage of a transform\textquotesingle{}s original scale at runtime \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Controls the scaling of a transform \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_mouse_event_signaler}{Mouse\+Event\+Signaler}}
+\item 
+class \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_oculus_event_signaler}{Oculus\+Event\+Signaler}}
+\begin{DoxyCompactList}\small\item\em Activate raycast triggers using oculus controller buttons and fingertip distance \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_press_event_signaler}{Press\+Event\+Signaler}}
+\begin{DoxyCompactList}\small\item\em Send press, hold\+Press, and end\+Press events based on set values of Pressed and Raycast\+Trigger\+Manager \end{DoxyCompactList}\item 
 class \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_raycast_event_manager}{Raycast\+Event\+Manager}}
 \begin{DoxyCompactList}\small\item\em Attach this script to parent game\+Object, create one child with one raycast trigger per child. Switch between triggers by index or switch the active trigger to any custom Raycast\+Trigger instance. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_raycast_event_signaler}{Raycast\+Event\+Signaler}}
+\begin{DoxyCompactList}\small\item\em Abstract class for signalers that use raycasting to trigger events on objects. \end{DoxyCompactList}\item 
 class \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_raycast_forward}{Raycast\+Forward}}
 \item 
 class \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_raycast_mesh_collider}{Raycast\+Mesh\+Collider}}
 \begin{DoxyCompactList}\small\item\em Instantiate the Raycastee prefab and create a mesh collider on it \end{DoxyCompactList}\item 
-class \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_raycast_heater}{Raycast\+Heater}}
-\item 
-class \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_raycast_sim_heater_continuous}{Raycast\+Sim\+Heater\+Continuous}}
-\item 
-class \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_raycast_sim_heater_discrete}{Raycast\+Sim\+Heater\+Discrete}}
-\item 
-class \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_scale_limiter}{Scale\+Limiter}}
-\item 
 class \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_raycast_press_events}{Raycast\+Press\+Events}}
 \begin{DoxyCompactList}\small\item\em Store custom events that the corresponding Raycast\+Trigger\+Manager will invoke \end{DoxyCompactList}\item 
-class \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_position_reset_control}{Position\+Reset\+Control}}
+class \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_ruler_measure}{Ruler\+Measure}}
 \end{DoxyCompactItemize}
 
 

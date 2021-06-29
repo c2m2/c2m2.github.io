@@ -1,0 +1,130 @@
+\hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_n_d_refinement_control}{}\doxysection{C2\+M2.\+Neuronal\+Dynamics.\+Interaction.\+NDRefinement\+Control Class Reference}
+\label{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_n_d_refinement_control}\index{C2M2.NeuronalDynamics.Interaction.NDRefinementControl@{C2M2.NeuronalDynamics.Interaction.NDRefinementControl}}
+
+
+Inherits Mono\+Behaviour.
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_n_d_refinement_control_a0f5cd72b1e9ba334d2c1177a6665acf2}{Increase\+Refinement}} (Raycast\+Hit hit)
+\item 
+void \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_n_d_refinement_control_aeebc4953e72d139fdf0c72bd40a70623}{Decrease\+Refinement}} (Raycast\+Hit hit)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_neuron_cell_preview}{Neuron\+Cell\+Preview}} \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_n_d_refinement_control_af1185bd93d78ceb8cb22073378f2d03c}{cell\+Preview}} = null
+\item 
+Text\+Mesh\+Pro\+UGUI \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_n_d_refinement_control_a79dfa4824ea66cace4e8e6a74a194970}{display\+Txt}}
+\item 
+Image \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_n_d_refinement_control_a54af4a07adf22197162ed22e4d971859}{up\+Default\+Img}} = null
+\item 
+Image \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_n_d_refinement_control_a2ed839f33f1a0e2e929b7779234c57ed}{up\+Error\+Img}} = null
+\item 
+Image \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_n_d_refinement_control_ae580283be95021d959b6ea8e86975cc5}{down\+Default\+Img}} = null
+\item 
+Image \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_n_d_refinement_control_a1885e42a4696ee7930d435182ecace53}{down\+Error\+Img}} = null
+\item 
+float \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_n_d_refinement_control_aab2cc10150e1a8ad89071b0f810c456a}{error\+Img\+Time}} = 0.\+5f
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_n_d_refinement_control_abb18cd17ac25442b28a26bb2d05ceda7}{Start}} ()
+\item 
+void \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_n_d_refinement_control_ab7fa493e666af79701cabaea31dd0409}{Update\+Display}} (bool increase)
+\item 
+bool \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_n_d_refinement_control_a7309ffd0a1c4f532946e452a0b1d9c4e}{Refinement\+Available}} (int refinement)
+\item 
+IEnumerator \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_n_d_refinement_control_a4f94786c165dcc2927be8127541683e3}{Draw\+Error}} (bool increase, float seconds)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_n_d_refinement_control_aeebc4953e72d139fdf0c72bd40a70623}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_n_d_refinement_control_aeebc4953e72d139fdf0c72bd40a70623}} 
+\index{C2M2.NeuronalDynamics.Interaction.NDRefinementControl@{C2M2.NeuronalDynamics.Interaction.NDRefinementControl}!DecreaseRefinement@{DecreaseRefinement}}
+\index{DecreaseRefinement@{DecreaseRefinement}!C2M2.NeuronalDynamics.Interaction.NDRefinementControl@{C2M2.NeuronalDynamics.Interaction.NDRefinementControl}}
+\doxysubsubsection{\texorpdfstring{DecreaseRefinement()}{DecreaseRefinement()}}
+{\footnotesize\ttfamily void C2\+M2.\+Neuronal\+Dynamics.\+Interaction.\+NDRefinement\+Control.\+Decrease\+Refinement (\begin{DoxyParamCaption}\item[{Raycast\+Hit}]{hit }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_n_d_refinement_control_a4f94786c165dcc2927be8127541683e3}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_n_d_refinement_control_a4f94786c165dcc2927be8127541683e3}} 
+\index{C2M2.NeuronalDynamics.Interaction.NDRefinementControl@{C2M2.NeuronalDynamics.Interaction.NDRefinementControl}!DrawError@{DrawError}}
+\index{DrawError@{DrawError}!C2M2.NeuronalDynamics.Interaction.NDRefinementControl@{C2M2.NeuronalDynamics.Interaction.NDRefinementControl}}
+\doxysubsubsection{\texorpdfstring{DrawError()}{DrawError()}}
+{\footnotesize\ttfamily IEnumerator C2\+M2.\+Neuronal\+Dynamics.\+Interaction.\+NDRefinement\+Control.\+Draw\+Error (\begin{DoxyParamCaption}\item[{bool}]{increase,  }\item[{float}]{seconds }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_n_d_refinement_control_a0f5cd72b1e9ba334d2c1177a6665acf2}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_n_d_refinement_control_a0f5cd72b1e9ba334d2c1177a6665acf2}} 
+\index{C2M2.NeuronalDynamics.Interaction.NDRefinementControl@{C2M2.NeuronalDynamics.Interaction.NDRefinementControl}!IncreaseRefinement@{IncreaseRefinement}}
+\index{IncreaseRefinement@{IncreaseRefinement}!C2M2.NeuronalDynamics.Interaction.NDRefinementControl@{C2M2.NeuronalDynamics.Interaction.NDRefinementControl}}
+\doxysubsubsection{\texorpdfstring{IncreaseRefinement()}{IncreaseRefinement()}}
+{\footnotesize\ttfamily void C2\+M2.\+Neuronal\+Dynamics.\+Interaction.\+NDRefinement\+Control.\+Increase\+Refinement (\begin{DoxyParamCaption}\item[{Raycast\+Hit}]{hit }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_n_d_refinement_control_a7309ffd0a1c4f532946e452a0b1d9c4e}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_n_d_refinement_control_a7309ffd0a1c4f532946e452a0b1d9c4e}} 
+\index{C2M2.NeuronalDynamics.Interaction.NDRefinementControl@{C2M2.NeuronalDynamics.Interaction.NDRefinementControl}!RefinementAvailable@{RefinementAvailable}}
+\index{RefinementAvailable@{RefinementAvailable}!C2M2.NeuronalDynamics.Interaction.NDRefinementControl@{C2M2.NeuronalDynamics.Interaction.NDRefinementControl}}
+\doxysubsubsection{\texorpdfstring{RefinementAvailable()}{RefinementAvailable()}}
+{\footnotesize\ttfamily bool C2\+M2.\+Neuronal\+Dynamics.\+Interaction.\+NDRefinement\+Control.\+Refinement\+Available (\begin{DoxyParamCaption}\item[{int}]{refinement }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_n_d_refinement_control_abb18cd17ac25442b28a26bb2d05ceda7}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_n_d_refinement_control_abb18cd17ac25442b28a26bb2d05ceda7}} 
+\index{C2M2.NeuronalDynamics.Interaction.NDRefinementControl@{C2M2.NeuronalDynamics.Interaction.NDRefinementControl}!Start@{Start}}
+\index{Start@{Start}!C2M2.NeuronalDynamics.Interaction.NDRefinementControl@{C2M2.NeuronalDynamics.Interaction.NDRefinementControl}}
+\doxysubsubsection{\texorpdfstring{Start()}{Start()}}
+{\footnotesize\ttfamily void C2\+M2.\+Neuronal\+Dynamics.\+Interaction.\+NDRefinement\+Control.\+Start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_n_d_refinement_control_ab7fa493e666af79701cabaea31dd0409}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_n_d_refinement_control_ab7fa493e666af79701cabaea31dd0409}} 
+\index{C2M2.NeuronalDynamics.Interaction.NDRefinementControl@{C2M2.NeuronalDynamics.Interaction.NDRefinementControl}!UpdateDisplay@{UpdateDisplay}}
+\index{UpdateDisplay@{UpdateDisplay}!C2M2.NeuronalDynamics.Interaction.NDRefinementControl@{C2M2.NeuronalDynamics.Interaction.NDRefinementControl}}
+\doxysubsubsection{\texorpdfstring{UpdateDisplay()}{UpdateDisplay()}}
+{\footnotesize\ttfamily void C2\+M2.\+Neuronal\+Dynamics.\+Interaction.\+NDRefinement\+Control.\+Update\+Display (\begin{DoxyParamCaption}\item[{bool}]{increase }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_n_d_refinement_control_af1185bd93d78ceb8cb22073378f2d03c}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_n_d_refinement_control_af1185bd93d78ceb8cb22073378f2d03c}} 
+\index{C2M2.NeuronalDynamics.Interaction.NDRefinementControl@{C2M2.NeuronalDynamics.Interaction.NDRefinementControl}!cellPreview@{cellPreview}}
+\index{cellPreview@{cellPreview}!C2M2.NeuronalDynamics.Interaction.NDRefinementControl@{C2M2.NeuronalDynamics.Interaction.NDRefinementControl}}
+\doxysubsubsection{\texorpdfstring{cellPreview}{cellPreview}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_neuron_cell_preview}{Neuron\+Cell\+Preview}} C2\+M2.\+Neuronal\+Dynamics.\+Interaction.\+NDRefinement\+Control.\+cell\+Preview = null}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_n_d_refinement_control_a79dfa4824ea66cace4e8e6a74a194970}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_n_d_refinement_control_a79dfa4824ea66cace4e8e6a74a194970}} 
+\index{C2M2.NeuronalDynamics.Interaction.NDRefinementControl@{C2M2.NeuronalDynamics.Interaction.NDRefinementControl}!displayTxt@{displayTxt}}
+\index{displayTxt@{displayTxt}!C2M2.NeuronalDynamics.Interaction.NDRefinementControl@{C2M2.NeuronalDynamics.Interaction.NDRefinementControl}}
+\doxysubsubsection{\texorpdfstring{displayTxt}{displayTxt}}
+{\footnotesize\ttfamily Text\+Mesh\+Pro\+UGUI C2\+M2.\+Neuronal\+Dynamics.\+Interaction.\+NDRefinement\+Control.\+display\+Txt}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_n_d_refinement_control_ae580283be95021d959b6ea8e86975cc5}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_n_d_refinement_control_ae580283be95021d959b6ea8e86975cc5}} 
+\index{C2M2.NeuronalDynamics.Interaction.NDRefinementControl@{C2M2.NeuronalDynamics.Interaction.NDRefinementControl}!downDefaultImg@{downDefaultImg}}
+\index{downDefaultImg@{downDefaultImg}!C2M2.NeuronalDynamics.Interaction.NDRefinementControl@{C2M2.NeuronalDynamics.Interaction.NDRefinementControl}}
+\doxysubsubsection{\texorpdfstring{downDefaultImg}{downDefaultImg}}
+{\footnotesize\ttfamily Image C2\+M2.\+Neuronal\+Dynamics.\+Interaction.\+NDRefinement\+Control.\+down\+Default\+Img = null}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_n_d_refinement_control_a1885e42a4696ee7930d435182ecace53}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_n_d_refinement_control_a1885e42a4696ee7930d435182ecace53}} 
+\index{C2M2.NeuronalDynamics.Interaction.NDRefinementControl@{C2M2.NeuronalDynamics.Interaction.NDRefinementControl}!downErrorImg@{downErrorImg}}
+\index{downErrorImg@{downErrorImg}!C2M2.NeuronalDynamics.Interaction.NDRefinementControl@{C2M2.NeuronalDynamics.Interaction.NDRefinementControl}}
+\doxysubsubsection{\texorpdfstring{downErrorImg}{downErrorImg}}
+{\footnotesize\ttfamily Image C2\+M2.\+Neuronal\+Dynamics.\+Interaction.\+NDRefinement\+Control.\+down\+Error\+Img = null}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_n_d_refinement_control_aab2cc10150e1a8ad89071b0f810c456a}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_n_d_refinement_control_aab2cc10150e1a8ad89071b0f810c456a}} 
+\index{C2M2.NeuronalDynamics.Interaction.NDRefinementControl@{C2M2.NeuronalDynamics.Interaction.NDRefinementControl}!errorImgTime@{errorImgTime}}
+\index{errorImgTime@{errorImgTime}!C2M2.NeuronalDynamics.Interaction.NDRefinementControl@{C2M2.NeuronalDynamics.Interaction.NDRefinementControl}}
+\doxysubsubsection{\texorpdfstring{errorImgTime}{errorImgTime}}
+{\footnotesize\ttfamily float C2\+M2.\+Neuronal\+Dynamics.\+Interaction.\+NDRefinement\+Control.\+error\+Img\+Time = 0.\+5f}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_n_d_refinement_control_a54af4a07adf22197162ed22e4d971859}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_n_d_refinement_control_a54af4a07adf22197162ed22e4d971859}} 
+\index{C2M2.NeuronalDynamics.Interaction.NDRefinementControl@{C2M2.NeuronalDynamics.Interaction.NDRefinementControl}!upDefaultImg@{upDefaultImg}}
+\index{upDefaultImg@{upDefaultImg}!C2M2.NeuronalDynamics.Interaction.NDRefinementControl@{C2M2.NeuronalDynamics.Interaction.NDRefinementControl}}
+\doxysubsubsection{\texorpdfstring{upDefaultImg}{upDefaultImg}}
+{\footnotesize\ttfamily Image C2\+M2.\+Neuronal\+Dynamics.\+Interaction.\+NDRefinement\+Control.\+up\+Default\+Img = null}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_n_d_refinement_control_a2ed839f33f1a0e2e929b7779234c57ed}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_n_d_refinement_control_a2ed839f33f1a0e2e929b7779234c57ed}} 
+\index{C2M2.NeuronalDynamics.Interaction.NDRefinementControl@{C2M2.NeuronalDynamics.Interaction.NDRefinementControl}!upErrorImg@{upErrorImg}}
+\index{upErrorImg@{upErrorImg}!C2M2.NeuronalDynamics.Interaction.NDRefinementControl@{C2M2.NeuronalDynamics.Interaction.NDRefinementControl}}
+\doxysubsubsection{\texorpdfstring{upErrorImg}{upErrorImg}}
+{\footnotesize\ttfamily Image C2\+M2.\+Neuronal\+Dynamics.\+Interaction.\+NDRefinement\+Control.\+up\+Error\+Img = null}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Jacob Wells/\+Desktop/\+C2\+M2/\+Neuro\+VISOR/\+Assets/\+Scripts/\+C2\+M2/\+Neuronal\+Dynamics/\+Interaction/\mbox{\hyperlink{_n_d_refinement_control_8cs}{NDRefinement\+Control.\+cs}}\end{DoxyCompactItemize}

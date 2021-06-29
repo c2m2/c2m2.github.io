@@ -1,0 +1,390 @@
+\hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_neuron_clamp_manager}{}\doxysection{C2\+M2.\+Neuronal\+Dynamics.\+Interaction.\+Neuron\+Clamp\+Manager Class Reference}
+\label{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_neuron_clamp_manager}\index{C2M2.NeuronalDynamics.Interaction.NeuronClampManager@{C2M2.NeuronalDynamics.Interaction.NeuronClampManager}}
+
+
+Provides public method for instantiating clamps. Provides controls for multiple clamps  
+
+
+
+
+Inherits Mono\+Behaviour.
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_neuron_clamp_manager_a506f5011bb3e6910321b0297f765b987}{Instantiate\+Clamp}} (Raycast\+Hit hit)
+\begin{DoxyCompactList}\small\item\em Looks for NDSimulation instance and adds neuron\+Clamp object if possible \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_neuron_clamp_manager_a7eaa34fad5ee8f05bfceaa89ea5f0948}{Preview\+Clamp}} (Raycast\+Hit hit)
+\item 
+void \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_neuron_clamp_manager_ad1899f1407f01417c32a17a9b2727e6c}{Destroy\+Preview\+Clamp}} (Raycast\+Hit hit)
+\item 
+void \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_neuron_clamp_manager_a4bfbafe89f176f86133935641d544c5e}{Monitor\+Group\+Input}} ()
+\begin{DoxyCompactList}\small\item\em If the user holds a raycast down for X seconds on a clamp, it should destroy the clamp \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_neuron_clamp_manager_ab895724155b494db6ce0e22a5c291c62}{Reset\+Group\+Input}} ()
+\item 
+void \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_neuron_clamp_manager_afc100e6f4dcd882acc0879b2a7588d24}{Highlight\+All}} (bool highlight)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+float \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_neuron_clamp_manager_a4a3ab1cd8bf2e3f4d4b9c5c81dec485f}{sensitivity}} = 200f
+\item 
+Game\+Object \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_neuron_clamp_manager_a97fd4e354fdccfabbfc3920603b578e0}{clamp\+Prefab}} = null
+\item 
+Game\+Object \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_neuron_clamp_manager_a769622891126a8b8fdb937c46314a0c6}{soma\+Clamp\+Prefab}} = null
+\item 
+Game\+Object \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_neuron_clamp_manager_a9f53b74db1eb353f6846a7e9e1dc6d88}{clamp\+ControllerR}} = null
+\item 
+Game\+Object \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_neuron_clamp_manager_a2b59e99e5afbd749de22c4ea0484f901}{clamp\+ControllerL}} = null
+\item 
+bool \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_neuron_clamp_manager_a8dab05b8d23e3e7a9f74ce591557a08e}{all\+Active}} = false
+\item 
+\mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_raycast_press_events}{Raycast\+Press\+Events}} \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_neuron_clamp_manager_a815ca3637fb971d6685922e6fe2c28cf}{hit\+Event}} = null
+\item 
+OVRInput.\+Button \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_neuron_clamp_manager_a6b957253555d9acf67210bf3550ac0df}{toggle\+Destroy\+OVR}} = OVRInput.\+Button.\+Primary\+Index\+Trigger
+\begin{DoxyCompactList}\small\item\em Pressing these buttonb toggles clamps on/off. Holding these buttons down for long enough destroys the clamp \end{DoxyCompactList}\item 
+OVRInput.\+Button \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_neuron_clamp_manager_a9699b7526777b2165bc09b80cadf59b2}{toggle\+Destroy\+OVRS}} = OVRInput.\+Button.\+Secondary\+Index\+Trigger
+\item 
+Key\+Code \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_neuron_clamp_manager_a609b185512467aea2f141ee805091f02}{power\+Modifier\+Plus\+Key}} = Key\+Code.\+Up\+Arrow
+\item 
+Key\+Code \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_neuron_clamp_manager_ae0a7c38a24febfcd20a5ff2a7c19b838}{power\+Modifier\+Minus\+Key}} = Key\+Code.\+Down\+Arrow
+\item 
+OVRInput.\+Button \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_neuron_clamp_manager_ac1313dbb25118d1ec1b71ae422ed4ee4}{highlight\+OVR}} = OVRInput.\+Button.\+Primary\+Hand\+Trigger
+\item 
+OVRInput.\+Button \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_neuron_clamp_manager_ac685011c35faf3e524ecbb1c95ee19ec}{highlight\+OVRS}} = OVRInput.\+Button.\+Secondary\+Hand\+Trigger
+\item 
+OVRInput.\+Button \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_neuron_clamp_manager_afafa245adeb1ca722d068b9fb0bca089}{cancel\+Command}} = OVRInput.\+Button.\+Two
+\item 
+OVRInput.\+Button \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_neuron_clamp_manager_ab852e65b47c409f72ded7c6f83d25574}{cancel\+CommandS}} = OVRInput.\+Button.\+Four
+\item 
+Key\+Code \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_neuron_clamp_manager_a1b547d4b2fb89feec0ad3f1601e552f0}{cancel\+Key}} = Key\+Code.\+Backspace
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+float \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_neuron_clamp_manager_a0522523e458719d906f4e7738ce2f2f1}{Min\+Power}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+float \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_neuron_clamp_manager_a3179eb0fe359920a54abe484d9b58aaf}{Max\+Power}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+float \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_neuron_clamp_manager_a0832d81da9083dfd82bb74cfc1ddce6d}{Thumbstick\+Scaler}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation}{NDSimulation}} \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_neuron_clamp_manager_a15a5124253f7ba91fa7ef703f51d804b}{Simulation}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+List$<$ \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_neuron_clamp}{Neuron\+Clamp}} $>$ \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_neuron_clamp_manager_a050554cb3ce4cb0881d6db4b1e3ac376}{Clamps}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+int \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_neuron_clamp_manager_a6ad8ba5eb6c1f9913afae9840d5b49d0}{destroy\+Count}} = 50\hspace{0.3cm}{\ttfamily  \mbox{[}get, private set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Hold down a raycast for this many frames in order to destroy a clamp \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_neuron_clamp_manager_a56b37d5adabb1095cce6ad213559ce56}{Pressed\+Toggle\+Destroy}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+float \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_neuron_clamp_manager_aed3d1d9a3c3ce93ef0437e234308f223}{Power\+Modifier}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+bool \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_neuron_clamp_manager_a94f9d0c243caaa55de4cedafa0a54486}{Pressed\+Highlight}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+bool \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_neuron_clamp_manager_abc859b4d90fd1a74813ca4f10b40363d}{Pressed\+Cancel}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_neuron_clamp}{Neuron\+Clamp}} \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_neuron_clamp_manager_a699e0623554a64c38c1ee93d2ea81eca}{Build\+Clamp}} (Raycast\+Hit hit)
+\item 
+bool \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_neuron_clamp_manager_a82be8dab1a0c91f958acae274db5e1f4}{Vert\+Is\+Available}} (int clamp\+Index)
+\begin{DoxyCompactList}\small\item\em Ensures that no clamp is placed too near to another clamp \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_neuron_clamp_manager_abc286e0afdf8bbb90332e26fc010032b}{Check\+Input\+Result}} ()
+\item 
+void \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_neuron_clamp_manager_a04a6f6b846c3adbd0ea33ec2e7b3ff33}{Toggle\+All}} ()
+\item 
+void \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_neuron_clamp_manager_a92b7c2a0b1b264876519b123da2e4db2}{Destroy\+All}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_neuron_clamp}{Neuron\+Clamp}} \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_neuron_clamp_manager_a04796469327fdbf5fa40f9f7fed1b68d}{preview\+Clamp}} = null
+\item 
+int \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_neuron_clamp_manager_a980f68fd7ce0776995a9534439d3ca25}{hold\+Count}} = 0
+\item 
+bool \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_neuron_clamp_manager_a997be4c862343bdbe529a02991b7e97e}{power\+Click}} = false
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Provides public method for instantiating clamps. Provides controls for multiple clamps 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_neuron_clamp_manager_a699e0623554a64c38c1ee93d2ea81eca}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_neuron_clamp_manager_a699e0623554a64c38c1ee93d2ea81eca}} 
+\index{C2M2.NeuronalDynamics.Interaction.NeuronClampManager@{C2M2.NeuronalDynamics.Interaction.NeuronClampManager}!BuildClamp@{BuildClamp}}
+\index{BuildClamp@{BuildClamp}!C2M2.NeuronalDynamics.Interaction.NeuronClampManager@{C2M2.NeuronalDynamics.Interaction.NeuronClampManager}}
+\doxysubsubsection{\texorpdfstring{BuildClamp()}{BuildClamp()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_neuron_clamp}{Neuron\+Clamp}} C2\+M2.\+Neuronal\+Dynamics.\+Interaction.\+Neuron\+Clamp\+Manager.\+Build\+Clamp (\begin{DoxyParamCaption}\item[{Raycast\+Hit}]{hit }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_neuron_clamp_manager_abc286e0afdf8bbb90332e26fc010032b}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_neuron_clamp_manager_abc286e0afdf8bbb90332e26fc010032b}} 
+\index{C2M2.NeuronalDynamics.Interaction.NeuronClampManager@{C2M2.NeuronalDynamics.Interaction.NeuronClampManager}!CheckInputResult@{CheckInputResult}}
+\index{CheckInputResult@{CheckInputResult}!C2M2.NeuronalDynamics.Interaction.NeuronClampManager@{C2M2.NeuronalDynamics.Interaction.NeuronClampManager}}
+\doxysubsubsection{\texorpdfstring{CheckInputResult()}{CheckInputResult()}}
+{\footnotesize\ttfamily void C2\+M2.\+Neuronal\+Dynamics.\+Interaction.\+Neuron\+Clamp\+Manager.\+Check\+Input\+Result (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_neuron_clamp_manager_a92b7c2a0b1b264876519b123da2e4db2}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_neuron_clamp_manager_a92b7c2a0b1b264876519b123da2e4db2}} 
+\index{C2M2.NeuronalDynamics.Interaction.NeuronClampManager@{C2M2.NeuronalDynamics.Interaction.NeuronClampManager}!DestroyAll@{DestroyAll}}
+\index{DestroyAll@{DestroyAll}!C2M2.NeuronalDynamics.Interaction.NeuronClampManager@{C2M2.NeuronalDynamics.Interaction.NeuronClampManager}}
+\doxysubsubsection{\texorpdfstring{DestroyAll()}{DestroyAll()}}
+{\footnotesize\ttfamily void C2\+M2.\+Neuronal\+Dynamics.\+Interaction.\+Neuron\+Clamp\+Manager.\+Destroy\+All (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_neuron_clamp_manager_ad1899f1407f01417c32a17a9b2727e6c}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_neuron_clamp_manager_ad1899f1407f01417c32a17a9b2727e6c}} 
+\index{C2M2.NeuronalDynamics.Interaction.NeuronClampManager@{C2M2.NeuronalDynamics.Interaction.NeuronClampManager}!DestroyPreviewClamp@{DestroyPreviewClamp}}
+\index{DestroyPreviewClamp@{DestroyPreviewClamp}!C2M2.NeuronalDynamics.Interaction.NeuronClampManager@{C2M2.NeuronalDynamics.Interaction.NeuronClampManager}}
+\doxysubsubsection{\texorpdfstring{DestroyPreviewClamp()}{DestroyPreviewClamp()}}
+{\footnotesize\ttfamily void C2\+M2.\+Neuronal\+Dynamics.\+Interaction.\+Neuron\+Clamp\+Manager.\+Destroy\+Preview\+Clamp (\begin{DoxyParamCaption}\item[{Raycast\+Hit}]{hit }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_neuron_clamp_manager_afc100e6f4dcd882acc0879b2a7588d24}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_neuron_clamp_manager_afc100e6f4dcd882acc0879b2a7588d24}} 
+\index{C2M2.NeuronalDynamics.Interaction.NeuronClampManager@{C2M2.NeuronalDynamics.Interaction.NeuronClampManager}!HighlightAll@{HighlightAll}}
+\index{HighlightAll@{HighlightAll}!C2M2.NeuronalDynamics.Interaction.NeuronClampManager@{C2M2.NeuronalDynamics.Interaction.NeuronClampManager}}
+\doxysubsubsection{\texorpdfstring{HighlightAll()}{HighlightAll()}}
+{\footnotesize\ttfamily void C2\+M2.\+Neuronal\+Dynamics.\+Interaction.\+Neuron\+Clamp\+Manager.\+Highlight\+All (\begin{DoxyParamCaption}\item[{bool}]{highlight }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_neuron_clamp_manager_a506f5011bb3e6910321b0297f765b987}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_neuron_clamp_manager_a506f5011bb3e6910321b0297f765b987}} 
+\index{C2M2.NeuronalDynamics.Interaction.NeuronClampManager@{C2M2.NeuronalDynamics.Interaction.NeuronClampManager}!InstantiateClamp@{InstantiateClamp}}
+\index{InstantiateClamp@{InstantiateClamp}!C2M2.NeuronalDynamics.Interaction.NeuronClampManager@{C2M2.NeuronalDynamics.Interaction.NeuronClampManager}}
+\doxysubsubsection{\texorpdfstring{InstantiateClamp()}{InstantiateClamp()}}
+{\footnotesize\ttfamily void C2\+M2.\+Neuronal\+Dynamics.\+Interaction.\+Neuron\+Clamp\+Manager.\+Instantiate\+Clamp (\begin{DoxyParamCaption}\item[{Raycast\+Hit}]{hit }\end{DoxyParamCaption})}
+
+
+
+Looks for NDSimulation instance and adds neuron\+Clamp object if possible 
+
+
+\begin{DoxyParams}{Parameters}
+{\em hit} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_neuron_clamp_manager_a4bfbafe89f176f86133935641d544c5e}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_neuron_clamp_manager_a4bfbafe89f176f86133935641d544c5e}} 
+\index{C2M2.NeuronalDynamics.Interaction.NeuronClampManager@{C2M2.NeuronalDynamics.Interaction.NeuronClampManager}!MonitorGroupInput@{MonitorGroupInput}}
+\index{MonitorGroupInput@{MonitorGroupInput}!C2M2.NeuronalDynamics.Interaction.NeuronClampManager@{C2M2.NeuronalDynamics.Interaction.NeuronClampManager}}
+\doxysubsubsection{\texorpdfstring{MonitorGroupInput()}{MonitorGroupInput()}}
+{\footnotesize\ttfamily void C2\+M2.\+Neuronal\+Dynamics.\+Interaction.\+Neuron\+Clamp\+Manager.\+Monitor\+Group\+Input (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+If the user holds a raycast down for X seconds on a clamp, it should destroy the clamp 
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_neuron_clamp_manager_a7eaa34fad5ee8f05bfceaa89ea5f0948}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_neuron_clamp_manager_a7eaa34fad5ee8f05bfceaa89ea5f0948}} 
+\index{C2M2.NeuronalDynamics.Interaction.NeuronClampManager@{C2M2.NeuronalDynamics.Interaction.NeuronClampManager}!PreviewClamp@{PreviewClamp}}
+\index{PreviewClamp@{PreviewClamp}!C2M2.NeuronalDynamics.Interaction.NeuronClampManager@{C2M2.NeuronalDynamics.Interaction.NeuronClampManager}}
+\doxysubsubsection{\texorpdfstring{PreviewClamp()}{PreviewClamp()}}
+{\footnotesize\ttfamily void C2\+M2.\+Neuronal\+Dynamics.\+Interaction.\+Neuron\+Clamp\+Manager.\+Preview\+Clamp (\begin{DoxyParamCaption}\item[{Raycast\+Hit}]{hit }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_neuron_clamp_manager_ab895724155b494db6ce0e22a5c291c62}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_neuron_clamp_manager_ab895724155b494db6ce0e22a5c291c62}} 
+\index{C2M2.NeuronalDynamics.Interaction.NeuronClampManager@{C2M2.NeuronalDynamics.Interaction.NeuronClampManager}!ResetGroupInput@{ResetGroupInput}}
+\index{ResetGroupInput@{ResetGroupInput}!C2M2.NeuronalDynamics.Interaction.NeuronClampManager@{C2M2.NeuronalDynamics.Interaction.NeuronClampManager}}
+\doxysubsubsection{\texorpdfstring{ResetGroupInput()}{ResetGroupInput()}}
+{\footnotesize\ttfamily void C2\+M2.\+Neuronal\+Dynamics.\+Interaction.\+Neuron\+Clamp\+Manager.\+Reset\+Group\+Input (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_neuron_clamp_manager_a04a6f6b846c3adbd0ea33ec2e7b3ff33}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_neuron_clamp_manager_a04a6f6b846c3adbd0ea33ec2e7b3ff33}} 
+\index{C2M2.NeuronalDynamics.Interaction.NeuronClampManager@{C2M2.NeuronalDynamics.Interaction.NeuronClampManager}!ToggleAll@{ToggleAll}}
+\index{ToggleAll@{ToggleAll}!C2M2.NeuronalDynamics.Interaction.NeuronClampManager@{C2M2.NeuronalDynamics.Interaction.NeuronClampManager}}
+\doxysubsubsection{\texorpdfstring{ToggleAll()}{ToggleAll()}}
+{\footnotesize\ttfamily void C2\+M2.\+Neuronal\+Dynamics.\+Interaction.\+Neuron\+Clamp\+Manager.\+Toggle\+All (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_neuron_clamp_manager_a82be8dab1a0c91f958acae274db5e1f4}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_neuron_clamp_manager_a82be8dab1a0c91f958acae274db5e1f4}} 
+\index{C2M2.NeuronalDynamics.Interaction.NeuronClampManager@{C2M2.NeuronalDynamics.Interaction.NeuronClampManager}!VertIsAvailable@{VertIsAvailable}}
+\index{VertIsAvailable@{VertIsAvailable}!C2M2.NeuronalDynamics.Interaction.NeuronClampManager@{C2M2.NeuronalDynamics.Interaction.NeuronClampManager}}
+\doxysubsubsection{\texorpdfstring{VertIsAvailable()}{VertIsAvailable()}}
+{\footnotesize\ttfamily bool C2\+M2.\+Neuronal\+Dynamics.\+Interaction.\+Neuron\+Clamp\+Manager.\+Vert\+Is\+Available (\begin{DoxyParamCaption}\item[{int}]{clamp\+Index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Ensures that no clamp is placed too near to another clamp 
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_neuron_clamp_manager_a8dab05b8d23e3e7a9f74ce591557a08e}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_neuron_clamp_manager_a8dab05b8d23e3e7a9f74ce591557a08e}} 
+\index{C2M2.NeuronalDynamics.Interaction.NeuronClampManager@{C2M2.NeuronalDynamics.Interaction.NeuronClampManager}!allActive@{allActive}}
+\index{allActive@{allActive}!C2M2.NeuronalDynamics.Interaction.NeuronClampManager@{C2M2.NeuronalDynamics.Interaction.NeuronClampManager}}
+\doxysubsubsection{\texorpdfstring{allActive}{allActive}}
+{\footnotesize\ttfamily bool C2\+M2.\+Neuronal\+Dynamics.\+Interaction.\+Neuron\+Clamp\+Manager.\+all\+Active = false}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_neuron_clamp_manager_afafa245adeb1ca722d068b9fb0bca089}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_neuron_clamp_manager_afafa245adeb1ca722d068b9fb0bca089}} 
+\index{C2M2.NeuronalDynamics.Interaction.NeuronClampManager@{C2M2.NeuronalDynamics.Interaction.NeuronClampManager}!cancelCommand@{cancelCommand}}
+\index{cancelCommand@{cancelCommand}!C2M2.NeuronalDynamics.Interaction.NeuronClampManager@{C2M2.NeuronalDynamics.Interaction.NeuronClampManager}}
+\doxysubsubsection{\texorpdfstring{cancelCommand}{cancelCommand}}
+{\footnotesize\ttfamily OVRInput.\+Button C2\+M2.\+Neuronal\+Dynamics.\+Interaction.\+Neuron\+Clamp\+Manager.\+cancel\+Command = OVRInput.\+Button.\+Two}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_neuron_clamp_manager_ab852e65b47c409f72ded7c6f83d25574}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_neuron_clamp_manager_ab852e65b47c409f72ded7c6f83d25574}} 
+\index{C2M2.NeuronalDynamics.Interaction.NeuronClampManager@{C2M2.NeuronalDynamics.Interaction.NeuronClampManager}!cancelCommandS@{cancelCommandS}}
+\index{cancelCommandS@{cancelCommandS}!C2M2.NeuronalDynamics.Interaction.NeuronClampManager@{C2M2.NeuronalDynamics.Interaction.NeuronClampManager}}
+\doxysubsubsection{\texorpdfstring{cancelCommandS}{cancelCommandS}}
+{\footnotesize\ttfamily OVRInput.\+Button C2\+M2.\+Neuronal\+Dynamics.\+Interaction.\+Neuron\+Clamp\+Manager.\+cancel\+CommandS = OVRInput.\+Button.\+Four}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_neuron_clamp_manager_a1b547d4b2fb89feec0ad3f1601e552f0}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_neuron_clamp_manager_a1b547d4b2fb89feec0ad3f1601e552f0}} 
+\index{C2M2.NeuronalDynamics.Interaction.NeuronClampManager@{C2M2.NeuronalDynamics.Interaction.NeuronClampManager}!cancelKey@{cancelKey}}
+\index{cancelKey@{cancelKey}!C2M2.NeuronalDynamics.Interaction.NeuronClampManager@{C2M2.NeuronalDynamics.Interaction.NeuronClampManager}}
+\doxysubsubsection{\texorpdfstring{cancelKey}{cancelKey}}
+{\footnotesize\ttfamily Key\+Code C2\+M2.\+Neuronal\+Dynamics.\+Interaction.\+Neuron\+Clamp\+Manager.\+cancel\+Key = Key\+Code.\+Backspace}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_neuron_clamp_manager_a2b59e99e5afbd749de22c4ea0484f901}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_neuron_clamp_manager_a2b59e99e5afbd749de22c4ea0484f901}} 
+\index{C2M2.NeuronalDynamics.Interaction.NeuronClampManager@{C2M2.NeuronalDynamics.Interaction.NeuronClampManager}!clampControllerL@{clampControllerL}}
+\index{clampControllerL@{clampControllerL}!C2M2.NeuronalDynamics.Interaction.NeuronClampManager@{C2M2.NeuronalDynamics.Interaction.NeuronClampManager}}
+\doxysubsubsection{\texorpdfstring{clampControllerL}{clampControllerL}}
+{\footnotesize\ttfamily Game\+Object C2\+M2.\+Neuronal\+Dynamics.\+Interaction.\+Neuron\+Clamp\+Manager.\+clamp\+ControllerL = null}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_neuron_clamp_manager_a9f53b74db1eb353f6846a7e9e1dc6d88}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_neuron_clamp_manager_a9f53b74db1eb353f6846a7e9e1dc6d88}} 
+\index{C2M2.NeuronalDynamics.Interaction.NeuronClampManager@{C2M2.NeuronalDynamics.Interaction.NeuronClampManager}!clampControllerR@{clampControllerR}}
+\index{clampControllerR@{clampControllerR}!C2M2.NeuronalDynamics.Interaction.NeuronClampManager@{C2M2.NeuronalDynamics.Interaction.NeuronClampManager}}
+\doxysubsubsection{\texorpdfstring{clampControllerR}{clampControllerR}}
+{\footnotesize\ttfamily Game\+Object C2\+M2.\+Neuronal\+Dynamics.\+Interaction.\+Neuron\+Clamp\+Manager.\+clamp\+ControllerR = null}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_neuron_clamp_manager_a97fd4e354fdccfabbfc3920603b578e0}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_neuron_clamp_manager_a97fd4e354fdccfabbfc3920603b578e0}} 
+\index{C2M2.NeuronalDynamics.Interaction.NeuronClampManager@{C2M2.NeuronalDynamics.Interaction.NeuronClampManager}!clampPrefab@{clampPrefab}}
+\index{clampPrefab@{clampPrefab}!C2M2.NeuronalDynamics.Interaction.NeuronClampManager@{C2M2.NeuronalDynamics.Interaction.NeuronClampManager}}
+\doxysubsubsection{\texorpdfstring{clampPrefab}{clampPrefab}}
+{\footnotesize\ttfamily Game\+Object C2\+M2.\+Neuronal\+Dynamics.\+Interaction.\+Neuron\+Clamp\+Manager.\+clamp\+Prefab = null}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_neuron_clamp_manager_ac1313dbb25118d1ec1b71ae422ed4ee4}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_neuron_clamp_manager_ac1313dbb25118d1ec1b71ae422ed4ee4}} 
+\index{C2M2.NeuronalDynamics.Interaction.NeuronClampManager@{C2M2.NeuronalDynamics.Interaction.NeuronClampManager}!highlightOVR@{highlightOVR}}
+\index{highlightOVR@{highlightOVR}!C2M2.NeuronalDynamics.Interaction.NeuronClampManager@{C2M2.NeuronalDynamics.Interaction.NeuronClampManager}}
+\doxysubsubsection{\texorpdfstring{highlightOVR}{highlightOVR}}
+{\footnotesize\ttfamily OVRInput.\+Button C2\+M2.\+Neuronal\+Dynamics.\+Interaction.\+Neuron\+Clamp\+Manager.\+highlight\+OVR = OVRInput.\+Button.\+Primary\+Hand\+Trigger}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_neuron_clamp_manager_ac685011c35faf3e524ecbb1c95ee19ec}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_neuron_clamp_manager_ac685011c35faf3e524ecbb1c95ee19ec}} 
+\index{C2M2.NeuronalDynamics.Interaction.NeuronClampManager@{C2M2.NeuronalDynamics.Interaction.NeuronClampManager}!highlightOVRS@{highlightOVRS}}
+\index{highlightOVRS@{highlightOVRS}!C2M2.NeuronalDynamics.Interaction.NeuronClampManager@{C2M2.NeuronalDynamics.Interaction.NeuronClampManager}}
+\doxysubsubsection{\texorpdfstring{highlightOVRS}{highlightOVRS}}
+{\footnotesize\ttfamily OVRInput.\+Button C2\+M2.\+Neuronal\+Dynamics.\+Interaction.\+Neuron\+Clamp\+Manager.\+highlight\+OVRS = OVRInput.\+Button.\+Secondary\+Hand\+Trigger}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_neuron_clamp_manager_a815ca3637fb971d6685922e6fe2c28cf}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_neuron_clamp_manager_a815ca3637fb971d6685922e6fe2c28cf}} 
+\index{C2M2.NeuronalDynamics.Interaction.NeuronClampManager@{C2M2.NeuronalDynamics.Interaction.NeuronClampManager}!hitEvent@{hitEvent}}
+\index{hitEvent@{hitEvent}!C2M2.NeuronalDynamics.Interaction.NeuronClampManager@{C2M2.NeuronalDynamics.Interaction.NeuronClampManager}}
+\doxysubsubsection{\texorpdfstring{hitEvent}{hitEvent}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_raycast_press_events}{Raycast\+Press\+Events}} C2\+M2.\+Neuronal\+Dynamics.\+Interaction.\+Neuron\+Clamp\+Manager.\+hit\+Event = null}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_neuron_clamp_manager_a980f68fd7ce0776995a9534439d3ca25}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_neuron_clamp_manager_a980f68fd7ce0776995a9534439d3ca25}} 
+\index{C2M2.NeuronalDynamics.Interaction.NeuronClampManager@{C2M2.NeuronalDynamics.Interaction.NeuronClampManager}!holdCount@{holdCount}}
+\index{holdCount@{holdCount}!C2M2.NeuronalDynamics.Interaction.NeuronClampManager@{C2M2.NeuronalDynamics.Interaction.NeuronClampManager}}
+\doxysubsubsection{\texorpdfstring{holdCount}{holdCount}}
+{\footnotesize\ttfamily int C2\+M2.\+Neuronal\+Dynamics.\+Interaction.\+Neuron\+Clamp\+Manager.\+hold\+Count = 0\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_neuron_clamp_manager_a997be4c862343bdbe529a02991b7e97e}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_neuron_clamp_manager_a997be4c862343bdbe529a02991b7e97e}} 
+\index{C2M2.NeuronalDynamics.Interaction.NeuronClampManager@{C2M2.NeuronalDynamics.Interaction.NeuronClampManager}!powerClick@{powerClick}}
+\index{powerClick@{powerClick}!C2M2.NeuronalDynamics.Interaction.NeuronClampManager@{C2M2.NeuronalDynamics.Interaction.NeuronClampManager}}
+\doxysubsubsection{\texorpdfstring{powerClick}{powerClick}}
+{\footnotesize\ttfamily bool C2\+M2.\+Neuronal\+Dynamics.\+Interaction.\+Neuron\+Clamp\+Manager.\+power\+Click = false\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_neuron_clamp_manager_ae0a7c38a24febfcd20a5ff2a7c19b838}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_neuron_clamp_manager_ae0a7c38a24febfcd20a5ff2a7c19b838}} 
+\index{C2M2.NeuronalDynamics.Interaction.NeuronClampManager@{C2M2.NeuronalDynamics.Interaction.NeuronClampManager}!powerModifierMinusKey@{powerModifierMinusKey}}
+\index{powerModifierMinusKey@{powerModifierMinusKey}!C2M2.NeuronalDynamics.Interaction.NeuronClampManager@{C2M2.NeuronalDynamics.Interaction.NeuronClampManager}}
+\doxysubsubsection{\texorpdfstring{powerModifierMinusKey}{powerModifierMinusKey}}
+{\footnotesize\ttfamily Key\+Code C2\+M2.\+Neuronal\+Dynamics.\+Interaction.\+Neuron\+Clamp\+Manager.\+power\+Modifier\+Minus\+Key = Key\+Code.\+Down\+Arrow}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_neuron_clamp_manager_a609b185512467aea2f141ee805091f02}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_neuron_clamp_manager_a609b185512467aea2f141ee805091f02}} 
+\index{C2M2.NeuronalDynamics.Interaction.NeuronClampManager@{C2M2.NeuronalDynamics.Interaction.NeuronClampManager}!powerModifierPlusKey@{powerModifierPlusKey}}
+\index{powerModifierPlusKey@{powerModifierPlusKey}!C2M2.NeuronalDynamics.Interaction.NeuronClampManager@{C2M2.NeuronalDynamics.Interaction.NeuronClampManager}}
+\doxysubsubsection{\texorpdfstring{powerModifierPlusKey}{powerModifierPlusKey}}
+{\footnotesize\ttfamily Key\+Code C2\+M2.\+Neuronal\+Dynamics.\+Interaction.\+Neuron\+Clamp\+Manager.\+power\+Modifier\+Plus\+Key = Key\+Code.\+Up\+Arrow}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_neuron_clamp_manager_a04796469327fdbf5fa40f9f7fed1b68d}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_neuron_clamp_manager_a04796469327fdbf5fa40f9f7fed1b68d}} 
+\index{C2M2.NeuronalDynamics.Interaction.NeuronClampManager@{C2M2.NeuronalDynamics.Interaction.NeuronClampManager}!previewClamp@{previewClamp}}
+\index{previewClamp@{previewClamp}!C2M2.NeuronalDynamics.Interaction.NeuronClampManager@{C2M2.NeuronalDynamics.Interaction.NeuronClampManager}}
+\doxysubsubsection{\texorpdfstring{previewClamp}{previewClamp}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_neuron_clamp}{Neuron\+Clamp}} C2\+M2.\+Neuronal\+Dynamics.\+Interaction.\+Neuron\+Clamp\+Manager.\+preview\+Clamp = null\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_neuron_clamp_manager_a4a3ab1cd8bf2e3f4d4b9c5c81dec485f}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_neuron_clamp_manager_a4a3ab1cd8bf2e3f4d4b9c5c81dec485f}} 
+\index{C2M2.NeuronalDynamics.Interaction.NeuronClampManager@{C2M2.NeuronalDynamics.Interaction.NeuronClampManager}!sensitivity@{sensitivity}}
+\index{sensitivity@{sensitivity}!C2M2.NeuronalDynamics.Interaction.NeuronClampManager@{C2M2.NeuronalDynamics.Interaction.NeuronClampManager}}
+\doxysubsubsection{\texorpdfstring{sensitivity}{sensitivity}}
+{\footnotesize\ttfamily float C2\+M2.\+Neuronal\+Dynamics.\+Interaction.\+Neuron\+Clamp\+Manager.\+sensitivity = 200f}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_neuron_clamp_manager_a769622891126a8b8fdb937c46314a0c6}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_neuron_clamp_manager_a769622891126a8b8fdb937c46314a0c6}} 
+\index{C2M2.NeuronalDynamics.Interaction.NeuronClampManager@{C2M2.NeuronalDynamics.Interaction.NeuronClampManager}!somaClampPrefab@{somaClampPrefab}}
+\index{somaClampPrefab@{somaClampPrefab}!C2M2.NeuronalDynamics.Interaction.NeuronClampManager@{C2M2.NeuronalDynamics.Interaction.NeuronClampManager}}
+\doxysubsubsection{\texorpdfstring{somaClampPrefab}{somaClampPrefab}}
+{\footnotesize\ttfamily Game\+Object C2\+M2.\+Neuronal\+Dynamics.\+Interaction.\+Neuron\+Clamp\+Manager.\+soma\+Clamp\+Prefab = null}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_neuron_clamp_manager_a6b957253555d9acf67210bf3550ac0df}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_neuron_clamp_manager_a6b957253555d9acf67210bf3550ac0df}} 
+\index{C2M2.NeuronalDynamics.Interaction.NeuronClampManager@{C2M2.NeuronalDynamics.Interaction.NeuronClampManager}!toggleDestroyOVR@{toggleDestroyOVR}}
+\index{toggleDestroyOVR@{toggleDestroyOVR}!C2M2.NeuronalDynamics.Interaction.NeuronClampManager@{C2M2.NeuronalDynamics.Interaction.NeuronClampManager}}
+\doxysubsubsection{\texorpdfstring{toggleDestroyOVR}{toggleDestroyOVR}}
+{\footnotesize\ttfamily OVRInput.\+Button C2\+M2.\+Neuronal\+Dynamics.\+Interaction.\+Neuron\+Clamp\+Manager.\+toggle\+Destroy\+OVR = OVRInput.\+Button.\+Primary\+Index\+Trigger}
+
+
+
+Pressing these buttonb toggles clamps on/off. Holding these buttons down for long enough destroys the clamp 
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_neuron_clamp_manager_a9699b7526777b2165bc09b80cadf59b2}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_neuron_clamp_manager_a9699b7526777b2165bc09b80cadf59b2}} 
+\index{C2M2.NeuronalDynamics.Interaction.NeuronClampManager@{C2M2.NeuronalDynamics.Interaction.NeuronClampManager}!toggleDestroyOVRS@{toggleDestroyOVRS}}
+\index{toggleDestroyOVRS@{toggleDestroyOVRS}!C2M2.NeuronalDynamics.Interaction.NeuronClampManager@{C2M2.NeuronalDynamics.Interaction.NeuronClampManager}}
+\doxysubsubsection{\texorpdfstring{toggleDestroyOVRS}{toggleDestroyOVRS}}
+{\footnotesize\ttfamily OVRInput.\+Button C2\+M2.\+Neuronal\+Dynamics.\+Interaction.\+Neuron\+Clamp\+Manager.\+toggle\+Destroy\+OVRS = OVRInput.\+Button.\+Secondary\+Index\+Trigger}
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_neuron_clamp_manager_a050554cb3ce4cb0881d6db4b1e3ac376}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_neuron_clamp_manager_a050554cb3ce4cb0881d6db4b1e3ac376}} 
+\index{C2M2.NeuronalDynamics.Interaction.NeuronClampManager@{C2M2.NeuronalDynamics.Interaction.NeuronClampManager}!Clamps@{Clamps}}
+\index{Clamps@{Clamps}!C2M2.NeuronalDynamics.Interaction.NeuronClampManager@{C2M2.NeuronalDynamics.Interaction.NeuronClampManager}}
+\doxysubsubsection{\texorpdfstring{Clamps}{Clamps}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_neuron_clamp}{Neuron\+Clamp}}$>$ C2\+M2.\+Neuronal\+Dynamics.\+Interaction.\+Neuron\+Clamp\+Manager.\+Clamps\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_neuron_clamp_manager_a6ad8ba5eb6c1f9913afae9840d5b49d0}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_neuron_clamp_manager_a6ad8ba5eb6c1f9913afae9840d5b49d0}} 
+\index{C2M2.NeuronalDynamics.Interaction.NeuronClampManager@{C2M2.NeuronalDynamics.Interaction.NeuronClampManager}!destroyCount@{destroyCount}}
+\index{destroyCount@{destroyCount}!C2M2.NeuronalDynamics.Interaction.NeuronClampManager@{C2M2.NeuronalDynamics.Interaction.NeuronClampManager}}
+\doxysubsubsection{\texorpdfstring{destroyCount}{destroyCount}}
+{\footnotesize\ttfamily int C2\+M2.\+Neuronal\+Dynamics.\+Interaction.\+Neuron\+Clamp\+Manager.\+destroy\+Count = 50\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [private set]}}
+
+
+
+Hold down a raycast for this many frames in order to destroy a clamp 
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_neuron_clamp_manager_a3179eb0fe359920a54abe484d9b58aaf}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_neuron_clamp_manager_a3179eb0fe359920a54abe484d9b58aaf}} 
+\index{C2M2.NeuronalDynamics.Interaction.NeuronClampManager@{C2M2.NeuronalDynamics.Interaction.NeuronClampManager}!MaxPower@{MaxPower}}
+\index{MaxPower@{MaxPower}!C2M2.NeuronalDynamics.Interaction.NeuronClampManager@{C2M2.NeuronalDynamics.Interaction.NeuronClampManager}}
+\doxysubsubsection{\texorpdfstring{MaxPower}{MaxPower}}
+{\footnotesize\ttfamily float C2\+M2.\+Neuronal\+Dynamics.\+Interaction.\+Neuron\+Clamp\+Manager.\+Max\+Power\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_neuron_clamp_manager_a0522523e458719d906f4e7738ce2f2f1}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_neuron_clamp_manager_a0522523e458719d906f4e7738ce2f2f1}} 
+\index{C2M2.NeuronalDynamics.Interaction.NeuronClampManager@{C2M2.NeuronalDynamics.Interaction.NeuronClampManager}!MinPower@{MinPower}}
+\index{MinPower@{MinPower}!C2M2.NeuronalDynamics.Interaction.NeuronClampManager@{C2M2.NeuronalDynamics.Interaction.NeuronClampManager}}
+\doxysubsubsection{\texorpdfstring{MinPower}{MinPower}}
+{\footnotesize\ttfamily float C2\+M2.\+Neuronal\+Dynamics.\+Interaction.\+Neuron\+Clamp\+Manager.\+Min\+Power\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_neuron_clamp_manager_aed3d1d9a3c3ce93ef0437e234308f223}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_neuron_clamp_manager_aed3d1d9a3c3ce93ef0437e234308f223}} 
+\index{C2M2.NeuronalDynamics.Interaction.NeuronClampManager@{C2M2.NeuronalDynamics.Interaction.NeuronClampManager}!PowerModifier@{PowerModifier}}
+\index{PowerModifier@{PowerModifier}!C2M2.NeuronalDynamics.Interaction.NeuronClampManager@{C2M2.NeuronalDynamics.Interaction.NeuronClampManager}}
+\doxysubsubsection{\texorpdfstring{PowerModifier}{PowerModifier}}
+{\footnotesize\ttfamily float C2\+M2.\+Neuronal\+Dynamics.\+Interaction.\+Neuron\+Clamp\+Manager.\+Power\+Modifier\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_neuron_clamp_manager_abc859b4d90fd1a74813ca4f10b40363d}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_neuron_clamp_manager_abc859b4d90fd1a74813ca4f10b40363d}} 
+\index{C2M2.NeuronalDynamics.Interaction.NeuronClampManager@{C2M2.NeuronalDynamics.Interaction.NeuronClampManager}!PressedCancel@{PressedCancel}}
+\index{PressedCancel@{PressedCancel}!C2M2.NeuronalDynamics.Interaction.NeuronClampManager@{C2M2.NeuronalDynamics.Interaction.NeuronClampManager}}
+\doxysubsubsection{\texorpdfstring{PressedCancel}{PressedCancel}}
+{\footnotesize\ttfamily bool C2\+M2.\+Neuronal\+Dynamics.\+Interaction.\+Neuron\+Clamp\+Manager.\+Pressed\+Cancel\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_neuron_clamp_manager_a94f9d0c243caaa55de4cedafa0a54486}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_neuron_clamp_manager_a94f9d0c243caaa55de4cedafa0a54486}} 
+\index{C2M2.NeuronalDynamics.Interaction.NeuronClampManager@{C2M2.NeuronalDynamics.Interaction.NeuronClampManager}!PressedHighlight@{PressedHighlight}}
+\index{PressedHighlight@{PressedHighlight}!C2M2.NeuronalDynamics.Interaction.NeuronClampManager@{C2M2.NeuronalDynamics.Interaction.NeuronClampManager}}
+\doxysubsubsection{\texorpdfstring{PressedHighlight}{PressedHighlight}}
+{\footnotesize\ttfamily bool C2\+M2.\+Neuronal\+Dynamics.\+Interaction.\+Neuron\+Clamp\+Manager.\+Pressed\+Highlight\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_neuron_clamp_manager_a56b37d5adabb1095cce6ad213559ce56}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_neuron_clamp_manager_a56b37d5adabb1095cce6ad213559ce56}} 
+\index{C2M2.NeuronalDynamics.Interaction.NeuronClampManager@{C2M2.NeuronalDynamics.Interaction.NeuronClampManager}!PressedToggleDestroy@{PressedToggleDestroy}}
+\index{PressedToggleDestroy@{PressedToggleDestroy}!C2M2.NeuronalDynamics.Interaction.NeuronClampManager@{C2M2.NeuronalDynamics.Interaction.NeuronClampManager}}
+\doxysubsubsection{\texorpdfstring{PressedToggleDestroy}{PressedToggleDestroy}}
+{\footnotesize\ttfamily bool C2\+M2.\+Neuronal\+Dynamics.\+Interaction.\+Neuron\+Clamp\+Manager.\+Pressed\+Toggle\+Destroy\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_neuron_clamp_manager_a15a5124253f7ba91fa7ef703f51d804b}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_neuron_clamp_manager_a15a5124253f7ba91fa7ef703f51d804b}} 
+\index{C2M2.NeuronalDynamics.Interaction.NeuronClampManager@{C2M2.NeuronalDynamics.Interaction.NeuronClampManager}!Simulation@{Simulation}}
+\index{Simulation@{Simulation}!C2M2.NeuronalDynamics.Interaction.NeuronClampManager@{C2M2.NeuronalDynamics.Interaction.NeuronClampManager}}
+\doxysubsubsection{\texorpdfstring{Simulation}{Simulation}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation}{NDSimulation}} C2\+M2.\+Neuronal\+Dynamics.\+Interaction.\+Neuron\+Clamp\+Manager.\+Simulation\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_neuron_clamp_manager_a0832d81da9083dfd82bb74cfc1ddce6d}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_neuron_clamp_manager_a0832d81da9083dfd82bb74cfc1ddce6d}} 
+\index{C2M2.NeuronalDynamics.Interaction.NeuronClampManager@{C2M2.NeuronalDynamics.Interaction.NeuronClampManager}!ThumbstickScaler@{ThumbstickScaler}}
+\index{ThumbstickScaler@{ThumbstickScaler}!C2M2.NeuronalDynamics.Interaction.NeuronClampManager@{C2M2.NeuronalDynamics.Interaction.NeuronClampManager}}
+\doxysubsubsection{\texorpdfstring{ThumbstickScaler}{ThumbstickScaler}}
+{\footnotesize\ttfamily float C2\+M2.\+Neuronal\+Dynamics.\+Interaction.\+Neuron\+Clamp\+Manager.\+Thumbstick\+Scaler\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Jacob Wells/\+Desktop/\+C2\+M2/\+Neuro\+VISOR/\+Assets/\+Scripts/\+C2\+M2/\+Neuronal\+Dynamics/\+Interaction/\mbox{\hyperlink{_neuron_clamp_manager_8cs}{Neuron\+Clamp\+Manager.\+cs}}\end{DoxyCompactItemize}

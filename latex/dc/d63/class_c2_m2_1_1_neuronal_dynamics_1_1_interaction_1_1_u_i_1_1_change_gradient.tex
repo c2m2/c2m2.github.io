@@ -1,0 +1,221 @@
+\hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_change_gradient}{}\doxysection{C2\+M2.\+Neuronal\+Dynamics.\+Interaction.\+UI.\+Change\+Gradient Class Reference}
+\label{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_change_gradient}\index{C2M2.NeuronalDynamics.Interaction.UI.ChangeGradient@{C2M2.NeuronalDynamics.Interaction.UI.ChangeGradient}}
+
+
+Can change the color scale of a simulation, as well as read in gradients from text files  
+
+
+
+
+Inherits Mono\+Behaviour.
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_change_gradient_a3de68d98b204501eb99e119ef25a9147}{Next\+Grad}} ()
+\item 
+void \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_change_gradient_a14e41e325db18af3e19403fa59f0019c}{Prev\+Grad}} ()
+\item 
+void \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_change_gradient_a9a0baa0f186183cc68966268a2398fa0}{Apply\+Grad}} ()
+\item 
+void \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_change_gradient_ae12c5eeb26e4e97d9bc2e10eaae36465}{Set\+Default\+Col}} (Image img)
+\item 
+void \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_change_gradient_a29de293ec3b75302d1ff397e3cda8f81}{Set\+Highlight\+Col}} (Image img)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_gradient_display}{Gradient\+Display}} \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_change_gradient_a1a2d74a9cb223c300fa1ed22557eb264}{display}} = null
+\item 
+Text\+Mesh\+Pro\+UGUI \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_change_gradient_a43c392846ca20055761651b75d00ffb1}{name\+Display}} = null
+\item 
+Gradient\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_change_gradient_ad3fd95fe8b46073b3487e2b7062d532c}{gradients}}
+\item 
+string\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_change_gradient_a9110781abcfe7dbdfc9dff0200fd24b6}{gradient\+Names}}
+\item 
+string \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_change_gradient_a9bc1d38c05fbbe5ecd03a66f93b8a96a}{default\+Gradient}}
+\item 
+\mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_n_d_simulation_controller}{NDSimulation\+Controller}} \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_change_gradient_aae3ea8f326129eac95980fabfa38a05c}{sim\+Controller}} = null
+\item 
+string \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_change_gradient_a8b8e0cc16be73372902f3311d0d14d74}{extension}} = \char`\"{}.txt\char`\"{}
+\item 
+string \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_change_gradient_a595b264fac88771fac142288dd6659e7}{sub\+Path}} = Path.\+Directory\+Separator\+Char + \char`\"{}Gradients\char`\"{}
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+Color? \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_change_gradient_ad90761975e6ec89937126b52a8e57015}{Default\+Col}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+Color? \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_change_gradient_a9f2a06bc5933ff584a5d0d1d89b0244f}{Hover\+Col}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_change_gradient_a5a9e587db5c4a601c985f43791751816}{Awake}} ()
+\item 
+void \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_change_gradient_a2d25d567c72d92bca0098d73177c062d}{Start}} ()
+\item 
+void \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_change_gradient_abfbba89505e873f792dd820a211d2462}{Read\+Gradients}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_change_gradient_a53ac63c77ff8a0f0bbba075d123f275a}{active\+Grad}} = 0
+\item 
+Color \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_change_gradient_a86a325dc74c06f5f49ea68e569d4f369}{default\+Col}} = new Color(1f, 0.\+75f, 0f)
+\item 
+Color \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_change_gradient_a2ebb1ee811bb8bd49521de510d5b7709}{hover\+Col}} = new Color(1f, 0.\+85f, 0.\+4f)
+\item 
+string \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_change_gradient_a88d8984360e0180b946853a154c05491}{base\+Path}} = Application.\+streaming\+Assets\+Path
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Can change the color scale of a simulation, as well as read in gradients from text files 
+
+The user can manually provide gradients and their names. This script will add any read gradients to the existing list of gradients/names 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_change_gradient_a9a0baa0f186183cc68966268a2398fa0}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_change_gradient_a9a0baa0f186183cc68966268a2398fa0}} 
+\index{C2M2.NeuronalDynamics.Interaction.UI.ChangeGradient@{C2M2.NeuronalDynamics.Interaction.UI.ChangeGradient}!ApplyGrad@{ApplyGrad}}
+\index{ApplyGrad@{ApplyGrad}!C2M2.NeuronalDynamics.Interaction.UI.ChangeGradient@{C2M2.NeuronalDynamics.Interaction.UI.ChangeGradient}}
+\doxysubsubsection{\texorpdfstring{ApplyGrad()}{ApplyGrad()}}
+{\footnotesize\ttfamily void C2\+M2.\+Neuronal\+Dynamics.\+Interaction.\+UI.\+Change\+Gradient.\+Apply\+Grad (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_change_gradient_a5a9e587db5c4a601c985f43791751816}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_change_gradient_a5a9e587db5c4a601c985f43791751816}} 
+\index{C2M2.NeuronalDynamics.Interaction.UI.ChangeGradient@{C2M2.NeuronalDynamics.Interaction.UI.ChangeGradient}!Awake@{Awake}}
+\index{Awake@{Awake}!C2M2.NeuronalDynamics.Interaction.UI.ChangeGradient@{C2M2.NeuronalDynamics.Interaction.UI.ChangeGradient}}
+\doxysubsubsection{\texorpdfstring{Awake()}{Awake()}}
+{\footnotesize\ttfamily void C2\+M2.\+Neuronal\+Dynamics.\+Interaction.\+UI.\+Change\+Gradient.\+Awake (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_change_gradient_a3de68d98b204501eb99e119ef25a9147}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_change_gradient_a3de68d98b204501eb99e119ef25a9147}} 
+\index{C2M2.NeuronalDynamics.Interaction.UI.ChangeGradient@{C2M2.NeuronalDynamics.Interaction.UI.ChangeGradient}!NextGrad@{NextGrad}}
+\index{NextGrad@{NextGrad}!C2M2.NeuronalDynamics.Interaction.UI.ChangeGradient@{C2M2.NeuronalDynamics.Interaction.UI.ChangeGradient}}
+\doxysubsubsection{\texorpdfstring{NextGrad()}{NextGrad()}}
+{\footnotesize\ttfamily void C2\+M2.\+Neuronal\+Dynamics.\+Interaction.\+UI.\+Change\+Gradient.\+Next\+Grad (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_change_gradient_a14e41e325db18af3e19403fa59f0019c}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_change_gradient_a14e41e325db18af3e19403fa59f0019c}} 
+\index{C2M2.NeuronalDynamics.Interaction.UI.ChangeGradient@{C2M2.NeuronalDynamics.Interaction.UI.ChangeGradient}!PrevGrad@{PrevGrad}}
+\index{PrevGrad@{PrevGrad}!C2M2.NeuronalDynamics.Interaction.UI.ChangeGradient@{C2M2.NeuronalDynamics.Interaction.UI.ChangeGradient}}
+\doxysubsubsection{\texorpdfstring{PrevGrad()}{PrevGrad()}}
+{\footnotesize\ttfamily void C2\+M2.\+Neuronal\+Dynamics.\+Interaction.\+UI.\+Change\+Gradient.\+Prev\+Grad (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_change_gradient_abfbba89505e873f792dd820a211d2462}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_change_gradient_abfbba89505e873f792dd820a211d2462}} 
+\index{C2M2.NeuronalDynamics.Interaction.UI.ChangeGradient@{C2M2.NeuronalDynamics.Interaction.UI.ChangeGradient}!ReadGradients@{ReadGradients}}
+\index{ReadGradients@{ReadGradients}!C2M2.NeuronalDynamics.Interaction.UI.ChangeGradient@{C2M2.NeuronalDynamics.Interaction.UI.ChangeGradient}}
+\doxysubsubsection{\texorpdfstring{ReadGradients()}{ReadGradients()}}
+{\footnotesize\ttfamily void C2\+M2.\+Neuronal\+Dynamics.\+Interaction.\+UI.\+Change\+Gradient.\+Read\+Gradients (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_change_gradient_ae12c5eeb26e4e97d9bc2e10eaae36465}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_change_gradient_ae12c5eeb26e4e97d9bc2e10eaae36465}} 
+\index{C2M2.NeuronalDynamics.Interaction.UI.ChangeGradient@{C2M2.NeuronalDynamics.Interaction.UI.ChangeGradient}!SetDefaultCol@{SetDefaultCol}}
+\index{SetDefaultCol@{SetDefaultCol}!C2M2.NeuronalDynamics.Interaction.UI.ChangeGradient@{C2M2.NeuronalDynamics.Interaction.UI.ChangeGradient}}
+\doxysubsubsection{\texorpdfstring{SetDefaultCol()}{SetDefaultCol()}}
+{\footnotesize\ttfamily void C2\+M2.\+Neuronal\+Dynamics.\+Interaction.\+UI.\+Change\+Gradient.\+Set\+Default\+Col (\begin{DoxyParamCaption}\item[{Image}]{img }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_change_gradient_a29de293ec3b75302d1ff397e3cda8f81}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_change_gradient_a29de293ec3b75302d1ff397e3cda8f81}} 
+\index{C2M2.NeuronalDynamics.Interaction.UI.ChangeGradient@{C2M2.NeuronalDynamics.Interaction.UI.ChangeGradient}!SetHighlightCol@{SetHighlightCol}}
+\index{SetHighlightCol@{SetHighlightCol}!C2M2.NeuronalDynamics.Interaction.UI.ChangeGradient@{C2M2.NeuronalDynamics.Interaction.UI.ChangeGradient}}
+\doxysubsubsection{\texorpdfstring{SetHighlightCol()}{SetHighlightCol()}}
+{\footnotesize\ttfamily void C2\+M2.\+Neuronal\+Dynamics.\+Interaction.\+UI.\+Change\+Gradient.\+Set\+Highlight\+Col (\begin{DoxyParamCaption}\item[{Image}]{img }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_change_gradient_a2d25d567c72d92bca0098d73177c062d}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_change_gradient_a2d25d567c72d92bca0098d73177c062d}} 
+\index{C2M2.NeuronalDynamics.Interaction.UI.ChangeGradient@{C2M2.NeuronalDynamics.Interaction.UI.ChangeGradient}!Start@{Start}}
+\index{Start@{Start}!C2M2.NeuronalDynamics.Interaction.UI.ChangeGradient@{C2M2.NeuronalDynamics.Interaction.UI.ChangeGradient}}
+\doxysubsubsection{\texorpdfstring{Start()}{Start()}}
+{\footnotesize\ttfamily void C2\+M2.\+Neuronal\+Dynamics.\+Interaction.\+UI.\+Change\+Gradient.\+Start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_change_gradient_a53ac63c77ff8a0f0bbba075d123f275a}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_change_gradient_a53ac63c77ff8a0f0bbba075d123f275a}} 
+\index{C2M2.NeuronalDynamics.Interaction.UI.ChangeGradient@{C2M2.NeuronalDynamics.Interaction.UI.ChangeGradient}!activeGrad@{activeGrad}}
+\index{activeGrad@{activeGrad}!C2M2.NeuronalDynamics.Interaction.UI.ChangeGradient@{C2M2.NeuronalDynamics.Interaction.UI.ChangeGradient}}
+\doxysubsubsection{\texorpdfstring{activeGrad}{activeGrad}}
+{\footnotesize\ttfamily int C2\+M2.\+Neuronal\+Dynamics.\+Interaction.\+UI.\+Change\+Gradient.\+active\+Grad = 0\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_change_gradient_a88d8984360e0180b946853a154c05491}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_change_gradient_a88d8984360e0180b946853a154c05491}} 
+\index{C2M2.NeuronalDynamics.Interaction.UI.ChangeGradient@{C2M2.NeuronalDynamics.Interaction.UI.ChangeGradient}!basePath@{basePath}}
+\index{basePath@{basePath}!C2M2.NeuronalDynamics.Interaction.UI.ChangeGradient@{C2M2.NeuronalDynamics.Interaction.UI.ChangeGradient}}
+\doxysubsubsection{\texorpdfstring{basePath}{basePath}}
+{\footnotesize\ttfamily string C2\+M2.\+Neuronal\+Dynamics.\+Interaction.\+UI.\+Change\+Gradient.\+base\+Path = Application.\+streaming\+Assets\+Path\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_change_gradient_a86a325dc74c06f5f49ea68e569d4f369}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_change_gradient_a86a325dc74c06f5f49ea68e569d4f369}} 
+\index{C2M2.NeuronalDynamics.Interaction.UI.ChangeGradient@{C2M2.NeuronalDynamics.Interaction.UI.ChangeGradient}!defaultCol@{defaultCol}}
+\index{defaultCol@{defaultCol}!C2M2.NeuronalDynamics.Interaction.UI.ChangeGradient@{C2M2.NeuronalDynamics.Interaction.UI.ChangeGradient}}
+\doxysubsubsection{\texorpdfstring{defaultCol}{defaultCol}}
+{\footnotesize\ttfamily Color C2\+M2.\+Neuronal\+Dynamics.\+Interaction.\+UI.\+Change\+Gradient.\+default\+Col = new Color(1f, 0.\+75f, 0f)\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_change_gradient_a9bc1d38c05fbbe5ecd03a66f93b8a96a}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_change_gradient_a9bc1d38c05fbbe5ecd03a66f93b8a96a}} 
+\index{C2M2.NeuronalDynamics.Interaction.UI.ChangeGradient@{C2M2.NeuronalDynamics.Interaction.UI.ChangeGradient}!defaultGradient@{defaultGradient}}
+\index{defaultGradient@{defaultGradient}!C2M2.NeuronalDynamics.Interaction.UI.ChangeGradient@{C2M2.NeuronalDynamics.Interaction.UI.ChangeGradient}}
+\doxysubsubsection{\texorpdfstring{defaultGradient}{defaultGradient}}
+{\footnotesize\ttfamily string C2\+M2.\+Neuronal\+Dynamics.\+Interaction.\+UI.\+Change\+Gradient.\+default\+Gradient}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_change_gradient_a1a2d74a9cb223c300fa1ed22557eb264}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_change_gradient_a1a2d74a9cb223c300fa1ed22557eb264}} 
+\index{C2M2.NeuronalDynamics.Interaction.UI.ChangeGradient@{C2M2.NeuronalDynamics.Interaction.UI.ChangeGradient}!display@{display}}
+\index{display@{display}!C2M2.NeuronalDynamics.Interaction.UI.ChangeGradient@{C2M2.NeuronalDynamics.Interaction.UI.ChangeGradient}}
+\doxysubsubsection{\texorpdfstring{display}{display}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_gradient_display}{Gradient\+Display}} C2\+M2.\+Neuronal\+Dynamics.\+Interaction.\+UI.\+Change\+Gradient.\+display = null}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_change_gradient_a8b8e0cc16be73372902f3311d0d14d74}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_change_gradient_a8b8e0cc16be73372902f3311d0d14d74}} 
+\index{C2M2.NeuronalDynamics.Interaction.UI.ChangeGradient@{C2M2.NeuronalDynamics.Interaction.UI.ChangeGradient}!extension@{extension}}
+\index{extension@{extension}!C2M2.NeuronalDynamics.Interaction.UI.ChangeGradient@{C2M2.NeuronalDynamics.Interaction.UI.ChangeGradient}}
+\doxysubsubsection{\texorpdfstring{extension}{extension}}
+{\footnotesize\ttfamily string C2\+M2.\+Neuronal\+Dynamics.\+Interaction.\+UI.\+Change\+Gradient.\+extension = \char`\"{}.txt\char`\"{}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_change_gradient_a9110781abcfe7dbdfc9dff0200fd24b6}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_change_gradient_a9110781abcfe7dbdfc9dff0200fd24b6}} 
+\index{C2M2.NeuronalDynamics.Interaction.UI.ChangeGradient@{C2M2.NeuronalDynamics.Interaction.UI.ChangeGradient}!gradientNames@{gradientNames}}
+\index{gradientNames@{gradientNames}!C2M2.NeuronalDynamics.Interaction.UI.ChangeGradient@{C2M2.NeuronalDynamics.Interaction.UI.ChangeGradient}}
+\doxysubsubsection{\texorpdfstring{gradientNames}{gradientNames}}
+{\footnotesize\ttfamily string \mbox{[}$\,$\mbox{]} C2\+M2.\+Neuronal\+Dynamics.\+Interaction.\+UI.\+Change\+Gradient.\+gradient\+Names}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_change_gradient_ad3fd95fe8b46073b3487e2b7062d532c}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_change_gradient_ad3fd95fe8b46073b3487e2b7062d532c}} 
+\index{C2M2.NeuronalDynamics.Interaction.UI.ChangeGradient@{C2M2.NeuronalDynamics.Interaction.UI.ChangeGradient}!gradients@{gradients}}
+\index{gradients@{gradients}!C2M2.NeuronalDynamics.Interaction.UI.ChangeGradient@{C2M2.NeuronalDynamics.Interaction.UI.ChangeGradient}}
+\doxysubsubsection{\texorpdfstring{gradients}{gradients}}
+{\footnotesize\ttfamily Gradient \mbox{[}$\,$\mbox{]} C2\+M2.\+Neuronal\+Dynamics.\+Interaction.\+UI.\+Change\+Gradient.\+gradients}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_change_gradient_a2ebb1ee811bb8bd49521de510d5b7709}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_change_gradient_a2ebb1ee811bb8bd49521de510d5b7709}} 
+\index{C2M2.NeuronalDynamics.Interaction.UI.ChangeGradient@{C2M2.NeuronalDynamics.Interaction.UI.ChangeGradient}!hoverCol@{hoverCol}}
+\index{hoverCol@{hoverCol}!C2M2.NeuronalDynamics.Interaction.UI.ChangeGradient@{C2M2.NeuronalDynamics.Interaction.UI.ChangeGradient}}
+\doxysubsubsection{\texorpdfstring{hoverCol}{hoverCol}}
+{\footnotesize\ttfamily Color C2\+M2.\+Neuronal\+Dynamics.\+Interaction.\+UI.\+Change\+Gradient.\+hover\+Col = new Color(1f, 0.\+85f, 0.\+4f)\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_change_gradient_a43c392846ca20055761651b75d00ffb1}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_change_gradient_a43c392846ca20055761651b75d00ffb1}} 
+\index{C2M2.NeuronalDynamics.Interaction.UI.ChangeGradient@{C2M2.NeuronalDynamics.Interaction.UI.ChangeGradient}!nameDisplay@{nameDisplay}}
+\index{nameDisplay@{nameDisplay}!C2M2.NeuronalDynamics.Interaction.UI.ChangeGradient@{C2M2.NeuronalDynamics.Interaction.UI.ChangeGradient}}
+\doxysubsubsection{\texorpdfstring{nameDisplay}{nameDisplay}}
+{\footnotesize\ttfamily Text\+Mesh\+Pro\+UGUI C2\+M2.\+Neuronal\+Dynamics.\+Interaction.\+UI.\+Change\+Gradient.\+name\+Display = null}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_change_gradient_aae3ea8f326129eac95980fabfa38a05c}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_change_gradient_aae3ea8f326129eac95980fabfa38a05c}} 
+\index{C2M2.NeuronalDynamics.Interaction.UI.ChangeGradient@{C2M2.NeuronalDynamics.Interaction.UI.ChangeGradient}!simController@{simController}}
+\index{simController@{simController}!C2M2.NeuronalDynamics.Interaction.UI.ChangeGradient@{C2M2.NeuronalDynamics.Interaction.UI.ChangeGradient}}
+\doxysubsubsection{\texorpdfstring{simController}{simController}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_n_d_simulation_controller}{NDSimulation\+Controller}} C2\+M2.\+Neuronal\+Dynamics.\+Interaction.\+UI.\+Change\+Gradient.\+sim\+Controller = null}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_change_gradient_a595b264fac88771fac142288dd6659e7}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_change_gradient_a595b264fac88771fac142288dd6659e7}} 
+\index{C2M2.NeuronalDynamics.Interaction.UI.ChangeGradient@{C2M2.NeuronalDynamics.Interaction.UI.ChangeGradient}!subPath@{subPath}}
+\index{subPath@{subPath}!C2M2.NeuronalDynamics.Interaction.UI.ChangeGradient@{C2M2.NeuronalDynamics.Interaction.UI.ChangeGradient}}
+\doxysubsubsection{\texorpdfstring{subPath}{subPath}}
+{\footnotesize\ttfamily string C2\+M2.\+Neuronal\+Dynamics.\+Interaction.\+UI.\+Change\+Gradient.\+sub\+Path = Path.\+Directory\+Separator\+Char + \char`\"{}Gradients\char`\"{}}
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_change_gradient_ad90761975e6ec89937126b52a8e57015}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_change_gradient_ad90761975e6ec89937126b52a8e57015}} 
+\index{C2M2.NeuronalDynamics.Interaction.UI.ChangeGradient@{C2M2.NeuronalDynamics.Interaction.UI.ChangeGradient}!DefaultCol@{DefaultCol}}
+\index{DefaultCol@{DefaultCol}!C2M2.NeuronalDynamics.Interaction.UI.ChangeGradient@{C2M2.NeuronalDynamics.Interaction.UI.ChangeGradient}}
+\doxysubsubsection{\texorpdfstring{DefaultCol}{DefaultCol}}
+{\footnotesize\ttfamily Color? C2\+M2.\+Neuronal\+Dynamics.\+Interaction.\+UI.\+Change\+Gradient.\+Default\+Col\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_change_gradient_a9f2a06bc5933ff584a5d0d1d89b0244f}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_change_gradient_a9f2a06bc5933ff584a5d0d1d89b0244f}} 
+\index{C2M2.NeuronalDynamics.Interaction.UI.ChangeGradient@{C2M2.NeuronalDynamics.Interaction.UI.ChangeGradient}!HoverCol@{HoverCol}}
+\index{HoverCol@{HoverCol}!C2M2.NeuronalDynamics.Interaction.UI.ChangeGradient@{C2M2.NeuronalDynamics.Interaction.UI.ChangeGradient}}
+\doxysubsubsection{\texorpdfstring{HoverCol}{HoverCol}}
+{\footnotesize\ttfamily Color? C2\+M2.\+Neuronal\+Dynamics.\+Interaction.\+UI.\+Change\+Gradient.\+Hover\+Col\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Jacob Wells/\+Desktop/\+C2\+M2/\+Neuro\+VISOR/\+Assets/\+Scripts/\+C2\+M2/\+Neuronal\+Dynamics/\+Interaction/\+UI/\mbox{\hyperlink{_change_gradient_8cs}{Change\+Gradient.\+cs}}\end{DoxyCompactItemize}

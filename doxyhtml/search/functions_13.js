@@ -1,4 +1,9 @@
 var searchData=
 [
-  ['wave_2427',['Wave',['../d1/d7b/class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_sine_wave_colorizer.html#a32f179bf8ea4f74a34585f7197b5a812',1,'C2M2::NeuronalDynamics::UGX::SineWaveColorizer']]]
+  ['vert3d1dpair_2056',['Vert3D1DPair',['../db/dbd/struct_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_vert3_d1_d_pair.html#ac2bbc0114aae1f6d41bdafd50bfadd26',1,'C2M2::NeuronalDynamics::Simulation::Vert3D1DPair']]],
+  ['vertex_2057',['Vertex',['../d5/d47/struct_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_vertex.html#a8cbc779e19c2255d03f111256ade5d2f',1,'C2M2::NeuronalDynamics::UGX::Vertex']]],
+  ['vertexattachementaccessor_2058',['VertexAttachementAccessor',['../d7/d8c/class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_vertex_attachement_accessor.html#a887a34b84fb5cdf584b44b975290e786',1,'C2M2.NeuronalDynamics.UGX.VertexAttachementAccessor.VertexAttachementAccessor(in Grid grid)'],['../d7/d8c/class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_vertex_attachement_accessor.html#aaa189002b29298b811540e2b83d7bbc9',1,'C2M2.NeuronalDynamics.UGX.VertexAttachementAccessor.VertexAttachementAccessor(in Grid grid, int size, T def)']]],
+  ['vertisavailable_2059',['VertIsAvailable',['../dd/db8/class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_neuron_clamp_manager.html#a82be8dab1a0c91f958acae274db5e1f4',1,'C2M2.NeuronalDynamics.Interaction.NeuronClampManager.VertIsAvailable()'],['../d8/d57/class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_n_d_graph_manager.html#a1d56d0d9c0e3dd7823bdba3cae98758d',1,'C2M2.NeuronalDynamics.Interaction.UI.NDGraphManager.VertIsAvailable()']]],
+  ['visualinflationchangehandler_2060',['VisualInflationChangeHandler',['../df/d9e/class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_neuron_clamp.html#a317738593062431611cb465d49b8344c',1,'C2M2::NeuronalDynamics::Interaction::NeuronClamp']]],
+  ['vrnreader_2061',['VrnReader',['../d1/d08/class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_r_n_1_1_vrn_reader.html#ae5b8733729ec0a2afc4362e697e77842',1,'C2M2::NeuronalDynamics::Visualization::VRN::VrnReader']]]
 ];

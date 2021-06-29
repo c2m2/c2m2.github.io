@@ -26,5 +26,6 @@ var class_c2_m2_1_1_interaction_1_1_raycast_event_manager =
     [ "emptyTrigger", "d5/df9/class_c2_m2_1_1_interaction_1_1_raycast_event_manager.html#a546dac3867cc6c4a9d9d0e6a89312bdb", null ],
     [ "leftTrigger", "d5/df9/class_c2_m2_1_1_interaction_1_1_raycast_event_manager.html#a8a8716d72e1286854629356585dd7272", null ],
     [ "nullHit", "d5/df9/class_c2_m2_1_1_interaction_1_1_raycast_event_manager.html#aaf383adccabb4167e9aa4fcd72cc185a", null ],
-    [ "rightTrigger", "d5/df9/class_c2_m2_1_1_interaction_1_1_raycast_event_manager.html#a3756cab0c4fafe69b97330b48c5ada37", null ]
+    [ "rightTrigger", "d5/df9/class_c2_m2_1_1_interaction_1_1_raycast_event_manager.html#a3756cab0c4fafe69b97330b48c5ada37", null ],
+    [ "LRTrigger", "d5/df9/class_c2_m2_1_1_interaction_1_1_raycast_event_manager.html#aceea78aa17c85b4295801ca60d64a02c", null ]
 ];

@@ -1,0 +1,115 @@
+\hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_example_n_d_solver}{}\doxysection{C2\+M2.\+Neuronal\+Dynamics.\+Simulation.\+Example\+NDSolver Class Reference}
+\label{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_example_n_d_solver}\index{C2M2.NeuronalDynamics.Simulation.ExampleNDSolver@{C2M2.NeuronalDynamics.Simulation.ExampleNDSolver}}
+
+
+Inherits \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation}{C2\+M2.\+Neuronal\+Dynamics.\+Simulation.\+NDSimulation}}.
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+override double\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_example_n_d_solver_ae34a253d161049578e656660f6a96a83}{Get1\+DValues}} ()
+\begin{DoxyCompactList}\small\item\em Requires derived classes to know how to make available one value for each 1D vertex \end{DoxyCompactList}\item 
+override void \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_example_n_d_solver_a9ba378082c6c211067159ed72030d573}{Set1\+DValues}} (Tuple$<$ int, double $>$\mbox{[}$\,$\mbox{]} new\+Values)
+\begin{DoxyCompactList}\small\item\em Requires deived classes to know how to receive one value to add onto each 1D vert index \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+override void \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_example_n_d_solver_a424e3606b0957f53a30b8878f3f9be5a}{Pre\+Solve}} ()
+\begin{DoxyCompactList}\small\item\em Called on the main thread before the Solve thread is launched \end{DoxyCompactList}\item 
+override void \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_example_n_d_solver_a981dccf2d8006a4fb7753a3ae2c562d9}{Solve\+Step}} (int t)
+\begin{DoxyCompactList}\small\item\em Method containing simulation code \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+double\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_example_n_d_solver_aad29138f74ac8791d31e48fca4b4f5dd}{vals}}
+\item 
+double \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_example_n_d_solver_adf3ed28d5e4beaaee539932815c743b4}{diffusion\+Const}} = 0.\+05f
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_example_n_d_solver_ae34a253d161049578e656660f6a96a83}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_example_n_d_solver_ae34a253d161049578e656660f6a96a83}} 
+\index{C2M2.NeuronalDynamics.Simulation.ExampleNDSolver@{C2M2.NeuronalDynamics.Simulation.ExampleNDSolver}!Get1DValues@{Get1DValues}}
+\index{Get1DValues@{Get1DValues}!C2M2.NeuronalDynamics.Simulation.ExampleNDSolver@{C2M2.NeuronalDynamics.Simulation.ExampleNDSolver}}
+\doxysubsubsection{\texorpdfstring{Get1DValues()}{Get1DValues()}}
+{\footnotesize\ttfamily override double \mbox{[}$\,$\mbox{]} C2\+M2.\+Neuronal\+Dynamics.\+Simulation.\+Example\+NDSolver.\+Get1\+DValues (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Requires derived classes to know how to make available one value for each 1D vertex 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation_aefdd7ea612fa748e52befd89da5b2504}{C2\+M2.\+Neuronal\+Dynamics.\+Simulation.\+NDSimulation}}.
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_example_n_d_solver_a424e3606b0957f53a30b8878f3f9be5a}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_example_n_d_solver_a424e3606b0957f53a30b8878f3f9be5a}} 
+\index{C2M2.NeuronalDynamics.Simulation.ExampleNDSolver@{C2M2.NeuronalDynamics.Simulation.ExampleNDSolver}!PreSolve@{PreSolve}}
+\index{PreSolve@{PreSolve}!C2M2.NeuronalDynamics.Simulation.ExampleNDSolver@{C2M2.NeuronalDynamics.Simulation.ExampleNDSolver}}
+\doxysubsubsection{\texorpdfstring{PreSolve()}{PreSolve()}}
+{\footnotesize\ttfamily override void C2\+M2.\+Neuronal\+Dynamics.\+Simulation.\+Example\+NDSolver.\+Pre\+Solve (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Called on the main thread before the Solve thread is launched 
+
+This is useful if you need to initialize anything that makes use of Unity calls, which are not available to be called from secondary threads. 
+
+Implements \mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_simulation_a5ebac31ebd6a0cf9a74b450b5cc85b1b}{C2\+M2.\+Simulation.\+Simulation$<$ double\mbox{[}$\,$\mbox{]}, Mesh, VRRaycastable\+Mesh, VRGrabbable\+Mesh $>$}}.
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_example_n_d_solver_a9ba378082c6c211067159ed72030d573}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_example_n_d_solver_a9ba378082c6c211067159ed72030d573}} 
+\index{C2M2.NeuronalDynamics.Simulation.ExampleNDSolver@{C2M2.NeuronalDynamics.Simulation.ExampleNDSolver}!Set1DValues@{Set1DValues}}
+\index{Set1DValues@{Set1DValues}!C2M2.NeuronalDynamics.Simulation.ExampleNDSolver@{C2M2.NeuronalDynamics.Simulation.ExampleNDSolver}}
+\doxysubsubsection{\texorpdfstring{Set1DValues()}{Set1DValues()}}
+{\footnotesize\ttfamily override void C2\+M2.\+Neuronal\+Dynamics.\+Simulation.\+Example\+NDSolver.\+Set1\+DValues (\begin{DoxyParamCaption}\item[{Tuple$<$ int, double $>$\mbox{[}$\,$\mbox{]}}]{new\+Values }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Requires deived classes to know how to receive one value to add onto each 1D vert index 
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+Values} & List of 1D vert indices and values to add onto that index. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation_a7aa4b8f83f1f38882f4ae73b16cc8ad3}{C2\+M2.\+Neuronal\+Dynamics.\+Simulation.\+NDSimulation}}.
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_example_n_d_solver_a981dccf2d8006a4fb7753a3ae2c562d9}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_example_n_d_solver_a981dccf2d8006a4fb7753a3ae2c562d9}} 
+\index{C2M2.NeuronalDynamics.Simulation.ExampleNDSolver@{C2M2.NeuronalDynamics.Simulation.ExampleNDSolver}!SolveStep@{SolveStep}}
+\index{SolveStep@{SolveStep}!C2M2.NeuronalDynamics.Simulation.ExampleNDSolver@{C2M2.NeuronalDynamics.Simulation.ExampleNDSolver}}
+\doxysubsubsection{\texorpdfstring{SolveStep()}{SolveStep()}}
+{\footnotesize\ttfamily override void C2\+M2.\+Neuronal\+Dynamics.\+Simulation.\+Example\+NDSolver.\+Solve\+Step (\begin{DoxyParamCaption}\item[{int}]{t }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Method containing simulation code 
+
+Launches in its own thread 
+
+Implements \mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_simulation_adcb673993dd3f7c5f36842b3e1bd54af}{C2\+M2.\+Simulation.\+Simulation$<$ double\mbox{[}$\,$\mbox{]}, Mesh, VRRaycastable\+Mesh, VRGrabbable\+Mesh $>$}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_example_n_d_solver_adf3ed28d5e4beaaee539932815c743b4}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_example_n_d_solver_adf3ed28d5e4beaaee539932815c743b4}} 
+\index{C2M2.NeuronalDynamics.Simulation.ExampleNDSolver@{C2M2.NeuronalDynamics.Simulation.ExampleNDSolver}!diffusionConst@{diffusionConst}}
+\index{diffusionConst@{diffusionConst}!C2M2.NeuronalDynamics.Simulation.ExampleNDSolver@{C2M2.NeuronalDynamics.Simulation.ExampleNDSolver}}
+\doxysubsubsection{\texorpdfstring{diffusionConst}{diffusionConst}}
+{\footnotesize\ttfamily double C2\+M2.\+Neuronal\+Dynamics.\+Simulation.\+Example\+NDSolver.\+diffusion\+Const = 0.\+05f\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_example_n_d_solver_aad29138f74ac8791d31e48fca4b4f5dd}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_example_n_d_solver_aad29138f74ac8791d31e48fca4b4f5dd}} 
+\index{C2M2.NeuronalDynamics.Simulation.ExampleNDSolver@{C2M2.NeuronalDynamics.Simulation.ExampleNDSolver}!vals@{vals}}
+\index{vals@{vals}!C2M2.NeuronalDynamics.Simulation.ExampleNDSolver@{C2M2.NeuronalDynamics.Simulation.ExampleNDSolver}}
+\doxysubsubsection{\texorpdfstring{vals}{vals}}
+{\footnotesize\ttfamily double \mbox{[}$\,$\mbox{]} C2\+M2.\+Neuronal\+Dynamics.\+Simulation.\+Example\+NDSolver.\+vals\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Jacob Wells/\+Desktop/\+C2\+M2/\+Neuro\+VISOR/\+Assets/\+Scripts/\+C2\+M2/\+Neuronal\+Dynamics/\+Simulation/\mbox{\hyperlink{_example_n_d_solver_8cs}{Example\+NDSolver.\+cs}}\end{DoxyCompactItemize}

@@ -1,19 +1,7 @@
 var searchData=
 [
-  ['v1_3283',['v1',['../d7/dff/struct_c2_m2_1_1_interaction_1_1_adjacency_1_1_edge.html#a85dc12242cd69a204f55a259f2a7a0ed',1,'C2M2.Interaction.Adjacency.Edge.v1()'],['../db/dbd/struct_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_vert3_d1_d_pair.html#a45199c170e5a2fff4f85c7abb669c10f',1,'C2M2.NeuronalDynamics.Simulation.Vert3D1DPair.v1()'],['../d0/d2c/struct_c2_m2_1_1_utils_1_1_triangle.html#a906e55eb8af2685ebba529dfd67b2513',1,'C2M2.Utils.Triangle.v1()']]],
-  ['v2_3284',['v2',['../d7/dff/struct_c2_m2_1_1_interaction_1_1_adjacency_1_1_edge.html#a2e101b3ffb9c49a8e42686ee8ed3035d',1,'C2M2.Interaction.Adjacency.Edge.v2()'],['../db/dbd/struct_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_vert3_d1_d_pair.html#a5c24c88610f256f6c85f9ea7278c0b88',1,'C2M2.NeuronalDynamics.Simulation.Vert3D1DPair.v2()'],['../d0/d2c/struct_c2_m2_1_1_utils_1_1_triangle.html#af8f97a26a5d3a02bde25592c31786075',1,'C2M2.Utils.Triangle.v2()']]],
-  ['v3_3285',['v3',['../d0/d2c/struct_c2_m2_1_1_utils_1_1_triangle.html#a7f912558fdf0a00089777a7e70d38297',1,'C2M2::Utils::Triangle']]],
-  ['vertices_3286',['Vertices',['../d8/d5b/class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_grid.html#ac99f23e59836a220d717a5cc0fb37a14',1,'C2M2::NeuronalDynamics::UGX::Grid']]],
-  ['vertmap_3287',['vertMap',['../dc/dc4/class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_neuron1_d.html#ab5ef8997461af5aa773acb5722ca5b37',1,'C2M2::NeuronalDynamics::Visualization::Neuron1D']]],
-  ['verts1d_3288',['verts1D',['../db/db3/class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_neuron1_d_vert_map.html#a1ebaa842ec38640f1e78446199137015',1,'C2M2::NeuronalDynamics::Visualization::Neuron1DVertMap']]],
-  ['verts1d_3289',['Verts1D',['../d7/d92/class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation.html#a58f2ec6c456c92c0d70416b8b16fae02',1,'C2M2::NeuronalDynamics::Simulation::NDSimulation']]],
-  ['visualinflation_3290',['VisualInflation',['../d7/d92/class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation.html#a9b299733cd1c116fe4e886b3849ae4a6',1,'C2M2::NeuronalDynamics::Simulation::NDSimulation']]],
-  ['visualmesh_3291',['VisualMesh',['../d6/d2d/class_c2_m2_1_1_simulation_1_1_mesh_simulation.html#ac6bd0162b1594a0a6cfcd4a04d984ad3',1,'C2M2::Simulation::MeshSimulation']]],
-  ['viz_3292',['viz',['../db/d39/class_c2_m2_1_1_simulation_1_1_simulation.html#ad9f96fe079b8d93a9b0a726692d68555',1,'C2M2::Simulation::Simulation']]],
-  ['vrdevice_3293',['vrDevice',['../d6/d37/class_c2_m2_1_1_interaction_1_1_v_r_1_1_v_r_device_manager.html#ad90be7400a1688a2596c06d0c5a3aca3',1,'C2M2::Interaction::VR::VRDeviceManager']]],
-  ['vrisactive_3294',['VrIsActive',['../d6/d37/class_c2_m2_1_1_interaction_1_1_v_r_1_1_v_r_device_manager.html#a2de958816ec091c8d79363fb4d5e2b03',1,'C2M2::Interaction::VR::VRDeviceManager']]],
-  ['vrisactive_3295',['vrIsActive',['../d1/d4e/class_c2_m2_1_1_game_manager.html#a310923152a6ce1dc5a55261a1ffc01fd',1,'C2M2::GameManager']]],
-  ['vrnreader_3296',['VrnReader',['../d7/d92/class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation.html#aa883eea0b3ec4a4f8742485906d0f174',1,'C2M2::NeuronalDynamics::Simulation::NDSimulation']]],
-  ['vtulist_3297',['vtuList',['../d8/d74/class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_t_k_1_1_v_t_u_manager.html#ac7a3a1e8865686645db9073feda1e96a',1,'C2M2::NeuronalDynamics::Visualization::VTK::VTUManager']]],
-  ['vtumanager_3298',['vtuManager',['../d9/d15/class_c2_m2_1_1_simulation_1_1_object_manager.html#a3a2e2c9aa6bc1ffb8098e8845f68f188',1,'C2M2::Simulation::ObjectManager']]]
+  ['unit_2825',['Unit',['../dc/dea/class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_gradient_display.html#a9da0af57443588c6c6c1c5b2fad6bd43',1,'C2M2::NeuronalDynamics::Interaction::UI::GradientDisplay']]],
+  ['unitscaler_2826',['UnitScaler',['../dc/dea/class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_gradient_display.html#ad51ae679ee0c0dbe3b89841a25670144',1,'C2M2::NeuronalDynamics::Interaction::UI::GradientDisplay']]],
+  ['updatepassed_2827',['updatePassed',['../d5/d12/class_c2_m2_1_1_tests_1_1_test_manager.html#af9a247178879ff3d85cc4e71ca3756e4',1,'C2M2::Tests::TestManager']]],
+  ['useworldspace_2828',['UseWorldSpace',['../d9/d9b/class_c2_m2_1_1_visualization_1_1_graph_pointer.html#a3bef56fc36487be44bc5af6f6c55819f',1,'C2M2::Visualization::GraphPointer']]]
 ];

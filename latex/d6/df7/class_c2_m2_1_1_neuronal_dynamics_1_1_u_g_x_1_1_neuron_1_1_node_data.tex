@@ -1,0 +1,103 @@
+\hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_1_1_node_data}{}\doxysection{C2\+M2.\+Neuronal\+Dynamics.\+UGX.\+Neuron.\+Node\+Data Class Reference}
+\label{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_1_1_node_data}\index{C2M2.NeuronalDynamics.UGX.Neuron.NodeData@{C2M2.NeuronalDynamics.UGX.Neuron.NodeData}}
+
+
+This is the \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_1_1_node_data}{Node\+Data}} structure, it will group information together corresponding to each node in the 1D graph geometry the information stored is analogous to what would be found in the 1D .swc file of the neuron geometry  
+
+
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_1_1_node_data_a2c27e1348e300d96b64d442394f643fa}{Id}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+int \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_1_1_node_data_a55a9c9999b7110b606b17758f562464b}{Pid}} = -\/1\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+int \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_1_1_node_data_ac3a92644009c681a9535799bfb4634e2}{Node\+Type}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+double \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_1_1_node_data_a20166a25d21375cf6c562dd816ba9dfd}{Node\+Radius}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+double \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_1_1_node_data_ab2069dcf793f8c06e1e116244b5eed00}{Xcoords}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+double \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_1_1_node_data_a39c6c3235c4e9cbea2cd2bc94c65a231}{Ycoords}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+double \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_1_1_node_data_af6bd93b364fdf997040058cc9be78488}{Zcoords}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+Dictionary$<$ int, double $>$ \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_1_1_node_data_aa1c49e2be3c9e5e6db20f0a26879a68b}{Adjacency\+List}} = new Dictionary$<$int, double$>$()\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Dictionary with Neighbor\+Id as key and edge weight as value \end{DoxyCompactList}\item 
+List$<$ \mbox{\hyperlink{struct_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_1_1_neighbor}{Neighbor}} $>$ \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_1_1_node_data_a35a6b54f53b42d0b8ec7040176650ff4}{Neighbors}} = new List$<$\mbox{\hyperlink{struct_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_1_1_neighbor}{Neighbor}}$>$()\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Neighbors serves the same purpose as Adjacency\+List, but in a different format. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This is the \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_1_1_node_data}{Node\+Data}} structure, it will group information together corresponding to each node in the 1D graph geometry the information stored is analogous to what would be found in the 1D .swc file of the neuron geometry 
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_1_1_node_data_aa1c49e2be3c9e5e6db20f0a26879a68b}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_1_1_node_data_aa1c49e2be3c9e5e6db20f0a26879a68b}} 
+\index{C2M2.NeuronalDynamics.UGX.Neuron.NodeData@{C2M2.NeuronalDynamics.UGX.Neuron.NodeData}!AdjacencyList@{AdjacencyList}}
+\index{AdjacencyList@{AdjacencyList}!C2M2.NeuronalDynamics.UGX.Neuron.NodeData@{C2M2.NeuronalDynamics.UGX.Neuron.NodeData}}
+\doxysubsubsection{\texorpdfstring{AdjacencyList}{AdjacencyList}}
+{\footnotesize\ttfamily Dictionary$<$int, double$>$ C2\+M2.\+Neuronal\+Dynamics.\+UGX.\+Neuron.\+Node\+Data.\+Adjacency\+List = new Dictionary$<$int, double$>$()\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Dictionary with Neighbor\+Id as key and edge weight as value 
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_1_1_node_data_a2c27e1348e300d96b64d442394f643fa}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_1_1_node_data_a2c27e1348e300d96b64d442394f643fa}} 
+\index{C2M2.NeuronalDynamics.UGX.Neuron.NodeData@{C2M2.NeuronalDynamics.UGX.Neuron.NodeData}!Id@{Id}}
+\index{Id@{Id}!C2M2.NeuronalDynamics.UGX.Neuron.NodeData@{C2M2.NeuronalDynamics.UGX.Neuron.NodeData}}
+\doxysubsubsection{\texorpdfstring{Id}{Id}}
+{\footnotesize\ttfamily int C2\+M2.\+Neuronal\+Dynamics.\+UGX.\+Neuron.\+Node\+Data.\+Id\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_1_1_node_data_a35a6b54f53b42d0b8ec7040176650ff4}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_1_1_node_data_a35a6b54f53b42d0b8ec7040176650ff4}} 
+\index{C2M2.NeuronalDynamics.UGX.Neuron.NodeData@{C2M2.NeuronalDynamics.UGX.Neuron.NodeData}!Neighbors@{Neighbors}}
+\index{Neighbors@{Neighbors}!C2M2.NeuronalDynamics.UGX.Neuron.NodeData@{C2M2.NeuronalDynamics.UGX.Neuron.NodeData}}
+\doxysubsubsection{\texorpdfstring{Neighbors}{Neighbors}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{struct_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_1_1_neighbor}{Neighbor}}$>$ C2\+M2.\+Neuronal\+Dynamics.\+UGX.\+Neuron.\+Node\+Data.\+Neighbors = new List$<$\mbox{\hyperlink{struct_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_1_1_neighbor}{Neighbor}}$>$()\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Neighbors serves the same purpose as Adjacency\+List, but in a different format. 
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_1_1_node_data_a20166a25d21375cf6c562dd816ba9dfd}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_1_1_node_data_a20166a25d21375cf6c562dd816ba9dfd}} 
+\index{C2M2.NeuronalDynamics.UGX.Neuron.NodeData@{C2M2.NeuronalDynamics.UGX.Neuron.NodeData}!NodeRadius@{NodeRadius}}
+\index{NodeRadius@{NodeRadius}!C2M2.NeuronalDynamics.UGX.Neuron.NodeData@{C2M2.NeuronalDynamics.UGX.Neuron.NodeData}}
+\doxysubsubsection{\texorpdfstring{NodeRadius}{NodeRadius}}
+{\footnotesize\ttfamily double C2\+M2.\+Neuronal\+Dynamics.\+UGX.\+Neuron.\+Node\+Data.\+Node\+Radius\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_1_1_node_data_ac3a92644009c681a9535799bfb4634e2}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_1_1_node_data_ac3a92644009c681a9535799bfb4634e2}} 
+\index{C2M2.NeuronalDynamics.UGX.Neuron.NodeData@{C2M2.NeuronalDynamics.UGX.Neuron.NodeData}!NodeType@{NodeType}}
+\index{NodeType@{NodeType}!C2M2.NeuronalDynamics.UGX.Neuron.NodeData@{C2M2.NeuronalDynamics.UGX.Neuron.NodeData}}
+\doxysubsubsection{\texorpdfstring{NodeType}{NodeType}}
+{\footnotesize\ttfamily int C2\+M2.\+Neuronal\+Dynamics.\+UGX.\+Neuron.\+Node\+Data.\+Node\+Type\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_1_1_node_data_a55a9c9999b7110b606b17758f562464b}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_1_1_node_data_a55a9c9999b7110b606b17758f562464b}} 
+\index{C2M2.NeuronalDynamics.UGX.Neuron.NodeData@{C2M2.NeuronalDynamics.UGX.Neuron.NodeData}!Pid@{Pid}}
+\index{Pid@{Pid}!C2M2.NeuronalDynamics.UGX.Neuron.NodeData@{C2M2.NeuronalDynamics.UGX.Neuron.NodeData}}
+\doxysubsubsection{\texorpdfstring{Pid}{Pid}}
+{\footnotesize\ttfamily int C2\+M2.\+Neuronal\+Dynamics.\+UGX.\+Neuron.\+Node\+Data.\+Pid = -\/1\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_1_1_node_data_ab2069dcf793f8c06e1e116244b5eed00}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_1_1_node_data_ab2069dcf793f8c06e1e116244b5eed00}} 
+\index{C2M2.NeuronalDynamics.UGX.Neuron.NodeData@{C2M2.NeuronalDynamics.UGX.Neuron.NodeData}!Xcoords@{Xcoords}}
+\index{Xcoords@{Xcoords}!C2M2.NeuronalDynamics.UGX.Neuron.NodeData@{C2M2.NeuronalDynamics.UGX.Neuron.NodeData}}
+\doxysubsubsection{\texorpdfstring{Xcoords}{Xcoords}}
+{\footnotesize\ttfamily double C2\+M2.\+Neuronal\+Dynamics.\+UGX.\+Neuron.\+Node\+Data.\+Xcoords\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_1_1_node_data_a39c6c3235c4e9cbea2cd2bc94c65a231}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_1_1_node_data_a39c6c3235c4e9cbea2cd2bc94c65a231}} 
+\index{C2M2.NeuronalDynamics.UGX.Neuron.NodeData@{C2M2.NeuronalDynamics.UGX.Neuron.NodeData}!Ycoords@{Ycoords}}
+\index{Ycoords@{Ycoords}!C2M2.NeuronalDynamics.UGX.Neuron.NodeData@{C2M2.NeuronalDynamics.UGX.Neuron.NodeData}}
+\doxysubsubsection{\texorpdfstring{Ycoords}{Ycoords}}
+{\footnotesize\ttfamily double C2\+M2.\+Neuronal\+Dynamics.\+UGX.\+Neuron.\+Node\+Data.\+Ycoords\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_1_1_node_data_af6bd93b364fdf997040058cc9be78488}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_1_1_node_data_af6bd93b364fdf997040058cc9be78488}} 
+\index{C2M2.NeuronalDynamics.UGX.Neuron.NodeData@{C2M2.NeuronalDynamics.UGX.Neuron.NodeData}!Zcoords@{Zcoords}}
+\index{Zcoords@{Zcoords}!C2M2.NeuronalDynamics.UGX.Neuron.NodeData@{C2M2.NeuronalDynamics.UGX.Neuron.NodeData}}
+\doxysubsubsection{\texorpdfstring{Zcoords}{Zcoords}}
+{\footnotesize\ttfamily double C2\+M2.\+Neuronal\+Dynamics.\+UGX.\+Neuron.\+Node\+Data.\+Zcoords\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Jacob Wells/\+Desktop/\+C2\+M2/\+Neuro\+VISOR/\+Assets/\+Scripts/\+C2\+M2/\+Neuronal\+Dynamics/\+UGX/\mbox{\hyperlink{_neuron_8cs}{Neuron.\+cs}}\end{DoxyCompactItemize}

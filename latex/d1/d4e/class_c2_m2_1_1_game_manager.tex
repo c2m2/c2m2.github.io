@@ -7,28 +7,10 @@ Stores many global variables, handles pregame initializations
 
 
 
-Inheritance diagram for C2\+M2.\+Game\+Manager\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[height=550pt]{db/dc5/class_c2_m2_1_1_game_manager__inherit__graph}
-\end{center}
-\end{figure}
+Inherits Mono\+Behaviour.
 
-
-Collaboration diagram for C2\+M2.\+Game\+Manager\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[height=550pt]{d4/d55/class_c2_m2_1_1_game_manager__coll__graph}
-\end{center}
-\end{figure}
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
-\item 
-void \mbox{\hyperlink{class_c2_m2_1_1_game_manager_ae2ab78a3db6cf6400238ebe5802e00d8}{Raycaster\+Right\+Change\+Color}} (Color color)
-\item 
-void \mbox{\hyperlink{class_c2_m2_1_1_game_manager_a13752f04f2294f1eb4aacca0e388f567}{Raycaster\+Left\+Change\+Color}} (Color color)
 \item 
 void \mbox{\hyperlink{class_c2_m2_1_1_game_manager_a496260483117ee816937bbafb9a0e16f}{Debug\+Log\+Safe}} (string s)
 \begin{DoxyCompactList}\small\item\em Allows other threads to submit messages to be printed at the start of the next frame \end{DoxyCompactList}\item 
@@ -43,23 +25,25 @@ void \mbox{\hyperlink{class_c2_m2_1_1_game_manager_acd7f307659cf6e480b307646774c
 \item 
 \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_v_r_1_1_v_r_device_manager}{VRDevice\+Manager}} \mbox{\hyperlink{class_c2_m2_1_1_game_manager_a88c3ec571db694171f99b77067486beb}{vr\+Device\+Manager}} = null
 \item 
-\mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_interactable}{Interactable}} \mbox{\hyperlink{class_c2_m2_1_1_game_manager_a6c63f077e6177fe24698533c901db237}{simulation}} = null
+Game\+Object \mbox{\hyperlink{class_c2_m2_1_1_game_manager_ad3a91f937c7fbaa1bb1e1de090cf9bf9}{cell\+Previewer}} = null
 \item 
-List$<$ \mbox{\hyperlink{class_simulation_timer_label}{Simulation\+Timer\+Label}} $>$ \mbox{\hyperlink{class_c2_m2_1_1_game_manager_aae3ad84b0e6c14ce4b4093b594df8b05}{timer\+Labels}} = new List$<$\mbox{\hyperlink{class_simulation_timer_label}{Simulation\+Timer\+Label}}$>$()
+\mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_interactable}{Interactable}} \mbox{\hyperlink{class_c2_m2_1_1_game_manager_ad45d1a408d085e655df7d28ebfdb1a5f}{active\+Sim}} = null
 \item 
-\mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_neuron_clamp_instantiator}{Neuron\+Clamp\+Instantiator}} \mbox{\hyperlink{class_c2_m2_1_1_game_manager_aa60508c1b902cd833b31c70dba97e695}{clamp\+Instantiator}} = null
+\mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_neuron_clamp_manager}{Neuron\+Clamp\+Manager}} \mbox{\hyperlink{class_c2_m2_1_1_game_manager_a9dfa1d8fa992267a5c8a63ed2cf591e8}{nd\+Clamp\+Manager}} = null
 \item 
-Game\+Object\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_c2_m2_1_1_game_manager_a510da80e219b03a0e3f2fc6b79099837}{clamp\+Controllers}} = new Game\+Object\mbox{[}0\mbox{]}
+\mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_n_d_graph_manager}{NDGraph\+Manager}} \mbox{\hyperlink{class_c2_m2_1_1_game_manager_ad5bd0a001c63a9a1106f298c7b5df585}{nd\+Graph\+Manager}} = null
 \item 
-Mesh\+Renderer\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_c2_m2_1_1_game_manager_a5113b0b30dcd1aa46d7daccbd8278c75}{walls}}
+int \mbox{\hyperlink{class_c2_m2_1_1_game_manager_a9453b5e721350cc1a9ad75f8d7c9b36d}{room\+Selected}} = 0
+\item 
+\mbox{\hyperlink{class_room}{Room}}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_c2_m2_1_1_game_manager_a310b66f66d5b0be248a4a700295798e3}{room\+Options}} = null
 \item 
 Color \mbox{\hyperlink{class_c2_m2_1_1_game_manager_a1e7acedc5199360aef956aa0a16c4ce7}{wall\+Color}} = Color.\+white
 \item 
-Material \mbox{\hyperlink{class_c2_m2_1_1_game_manager_afb49b3a2dd5acdd71aa3985f9503ecf4}{default\+Material}}
+Material \mbox{\hyperlink{class_c2_m2_1_1_game_manager_afb49b3a2dd5acdd71aa3985f9503ecf4}{default\+Material}} = null
 \item 
-Material \mbox{\hyperlink{class_c2_m2_1_1_game_manager_a25a492d0d0ec9aad29ff235e9f273eed}{vertex\+Coloration\+Material}}
+Material \mbox{\hyperlink{class_c2_m2_1_1_game_manager_a25a492d0d0ec9aad29ff235e9f273eed}{vertex\+Coloration\+Material}} = null
 \item 
-Material \mbox{\hyperlink{class_c2_m2_1_1_game_manager_af518d5511a07b74bea16a6b26259d4c3}{line\+Rend\+Material}}
+Material \mbox{\hyperlink{class_c2_m2_1_1_game_manager_af518d5511a07b74bea16a6b26259d4c3}{line\+Rend\+Material}} = null
 \item 
 Transform \mbox{\hyperlink{class_c2_m2_1_1_game_manager_af6c06cdffd7d35e232facbc08f940cfa}{whiteboard}} = null
 \item 
@@ -74,16 +58,6 @@ Game\+Object \mbox{\hyperlink{class_c2_m2_1_1_game_manager_a780a840ff84a80e7abee
 Game\+Object \mbox{\hyperlink{class_c2_m2_1_1_game_manager_a3905f92325034139b13b3a1745162022}{ovr\+Left\+Hand\+Anchor}} = null
 \item 
 \mbox{\hyperlink{class_c2_m2_1_1_utils_1_1_debug_utils_1_1_f_p_s_counter}{Utils.\+Debug\+Utils.\+FPSCounter}} \mbox{\hyperlink{class_c2_m2_1_1_game_manager_ab636c533f1e31c53fa19ca2f4dd6293b}{fps\+Counter}}
-\item 
-\mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_raycast_forward}{Raycast\+Forward}} \mbox{\hyperlink{class_c2_m2_1_1_game_manager_ac8d95c0fff151d5aed7d35c5951e6052}{right\+Raycaster}}
-\item 
-\mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_raycast_forward}{Raycast\+Forward}} \mbox{\hyperlink{class_c2_m2_1_1_game_manager_a3ee7a45a4964d965a12f29c1fab2dadc}{left\+Raycaster}}
-\item 
-Game\+Object \mbox{\hyperlink{class_c2_m2_1_1_game_manager_aa3c365e53cf3c2a17c819c14523160a1}{menu}} = null
-\item 
-Game\+Object \mbox{\hyperlink{class_c2_m2_1_1_game_manager_aca9413621ef0c25dfe171cca0294790e}{raycast\+Keyboard\+Prefab}}
-\item 
-Transform \mbox{\hyperlink{class_c2_m2_1_1_game_manager_a065877cbd5aae4acbfe029fded319906}{menu\+Snap\+Position}}
 \end{DoxyCompactItemize}
 \doxysubsection*{Static Public Attributes}
 \begin{DoxyCompactItemize}
@@ -95,15 +69,11 @@ static \mbox{\hyperlink{class_c2_m2_1_1_game_manager}{Game\+Manager}} \mbox{\hyp
 \item 
 int \mbox{\hyperlink{class_c2_m2_1_1_game_manager_ac0ca2044e3b82f26e79bdc580a69d1be}{main\+Thread\+Id}} = -\/1\hspace{0.3cm}{\ttfamily  \mbox{[}get, private set\mbox{]}}
 \item 
-string \mbox{\hyperlink{class_c2_m2_1_1_game_manager_a7d6dec6a31b657c72d91fb20c8a1d0c0}{assets\+Path}} = null\hspace{0.3cm}{\ttfamily  \mbox{[}get, private set\mbox{]}}
-\item 
-bool \mbox{\hyperlink{class_c2_m2_1_1_game_manager_a310923152a6ce1dc5a55261a1ffc01fd}{vr\+Is\+Active}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+bool \mbox{\hyperlink{class_c2_m2_1_1_game_manager_ac08a819bfd1d527709cb593fb2e6fe8c}{VRActive}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
 \item 
 OVRPlayer\+Controller \mbox{\hyperlink{class_c2_m2_1_1_game_manager_a3c8f24e954f87eea378fb9eb4ddd0a5a}{ovr\+Player\+Controller}} = null\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
 \item 
 Game\+Object \mbox{\hyperlink{class_c2_m2_1_1_game_manager_adf31873fa5ca3dcee00d04f189cbd73e}{non\+VRCamera}} = null\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
-\item 
-\mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_u_i_1_1_raycast_keyboard}{Raycast\+Keyboard}} \mbox{\hyperlink{class_c2_m2_1_1_game_manager_aeeb2f1256d0d9377be2c71b296c157f9}{raycast\+Keyboard}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
 \end{DoxyCompactItemize}
 \doxysubsection*{Private Member Functions}
 \begin{DoxyCompactItemize}
@@ -153,7 +123,7 @@ Stores many global variables, handles pregame initializations
 
 Allows other threads to submit messages to be printed at the start of the next frame 
 
-Making any Unity API call from another thread is not safe. This method is a quick hack to avoid mkaing a Unity API call from another thread. \mbox{\Hypertarget{class_c2_m2_1_1_game_manager_acd7f307659cf6e480b307646774c0b21}\label{class_c2_m2_1_1_game_manager_acd7f307659cf6e480b307646774c0b21}} 
+Making any Unity API call from another thread is not safe. This method is a quick hack to avoid making a Unity API call from another thread. \mbox{\Hypertarget{class_c2_m2_1_1_game_manager_acd7f307659cf6e480b307646774c0b21}\label{class_c2_m2_1_1_game_manager_acd7f307659cf6e480b307646774c0b21}} 
 \index{C2M2.GameManager@{C2M2.GameManager}!DebugLogErrorThreadSafe$<$ T $>$@{DebugLogErrorThreadSafe$<$ T $>$}}
 \index{DebugLogErrorThreadSafe$<$ T $>$@{DebugLogErrorThreadSafe$<$ T $>$}!C2M2.GameManager@{C2M2.GameManager}}
 \doxysubsubsection{\texorpdfstring{DebugLogErrorThreadSafe$<$ T $>$()}{DebugLogErrorThreadSafe< T >()}}
@@ -187,18 +157,6 @@ Making any Unity API call from another thread is not safe. This method is a quic
 \doxysubsubsection{\texorpdfstring{OnApplicationQuit()}{OnApplicationQuit()}}
 {\footnotesize\ttfamily void C2\+M2.\+Game\+Manager.\+On\+Application\+Quit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
 
-\mbox{\Hypertarget{class_c2_m2_1_1_game_manager_a13752f04f2294f1eb4aacca0e388f567}\label{class_c2_m2_1_1_game_manager_a13752f04f2294f1eb4aacca0e388f567}} 
-\index{C2M2.GameManager@{C2M2.GameManager}!RaycasterLeftChangeColor@{RaycasterLeftChangeColor}}
-\index{RaycasterLeftChangeColor@{RaycasterLeftChangeColor}!C2M2.GameManager@{C2M2.GameManager}}
-\doxysubsubsection{\texorpdfstring{RaycasterLeftChangeColor()}{RaycasterLeftChangeColor()}}
-{\footnotesize\ttfamily void C2\+M2.\+Game\+Manager.\+Raycaster\+Left\+Change\+Color (\begin{DoxyParamCaption}\item[{Color}]{color }\end{DoxyParamCaption})}
-
-\mbox{\Hypertarget{class_c2_m2_1_1_game_manager_ae2ab78a3db6cf6400238ebe5802e00d8}\label{class_c2_m2_1_1_game_manager_ae2ab78a3db6cf6400238ebe5802e00d8}} 
-\index{C2M2.GameManager@{C2M2.GameManager}!RaycasterRightChangeColor@{RaycasterRightChangeColor}}
-\index{RaycasterRightChangeColor@{RaycasterRightChangeColor}!C2M2.GameManager@{C2M2.GameManager}}
-\doxysubsubsection{\texorpdfstring{RaycasterRightChangeColor()}{RaycasterRightChangeColor()}}
-{\footnotesize\ttfamily void C2\+M2.\+Game\+Manager.\+Raycaster\+Right\+Change\+Color (\begin{DoxyParamCaption}\item[{Color}]{color }\end{DoxyParamCaption})}
-
 \mbox{\Hypertarget{class_c2_m2_1_1_game_manager_ad012b88cff23278a315d8e4bab785ab1}\label{class_c2_m2_1_1_game_manager_ad012b88cff23278a315d8e4bab785ab1}} 
 \index{C2M2.GameManager@{C2M2.GameManager}!Update@{Update}}
 \index{Update@{Update}!C2M2.GameManager@{C2M2.GameManager}}
@@ -208,23 +166,23 @@ Making any Unity API call from another thread is not safe. This method is a quic
 
 
 \doxysubsection{Member Data Documentation}
-\mbox{\Hypertarget{class_c2_m2_1_1_game_manager_a510da80e219b03a0e3f2fc6b79099837}\label{class_c2_m2_1_1_game_manager_a510da80e219b03a0e3f2fc6b79099837}} 
-\index{C2M2.GameManager@{C2M2.GameManager}!clampControllers@{clampControllers}}
-\index{clampControllers@{clampControllers}!C2M2.GameManager@{C2M2.GameManager}}
-\doxysubsubsection{\texorpdfstring{clampControllers}{clampControllers}}
-{\footnotesize\ttfamily Game\+Object \mbox{[}$\,$\mbox{]} C2\+M2.\+Game\+Manager.\+clamp\+Controllers = new Game\+Object\mbox{[}0\mbox{]}}
+\mbox{\Hypertarget{class_c2_m2_1_1_game_manager_ad45d1a408d085e655df7d28ebfdb1a5f}\label{class_c2_m2_1_1_game_manager_ad45d1a408d085e655df7d28ebfdb1a5f}} 
+\index{C2M2.GameManager@{C2M2.GameManager}!activeSim@{activeSim}}
+\index{activeSim@{activeSim}!C2M2.GameManager@{C2M2.GameManager}}
+\doxysubsubsection{\texorpdfstring{activeSim}{activeSim}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_interactable}{Interactable}} C2\+M2.\+Game\+Manager.\+active\+Sim = null}
 
-\mbox{\Hypertarget{class_c2_m2_1_1_game_manager_aa60508c1b902cd833b31c70dba97e695}\label{class_c2_m2_1_1_game_manager_aa60508c1b902cd833b31c70dba97e695}} 
-\index{C2M2.GameManager@{C2M2.GameManager}!clampInstantiator@{clampInstantiator}}
-\index{clampInstantiator@{clampInstantiator}!C2M2.GameManager@{C2M2.GameManager}}
-\doxysubsubsection{\texorpdfstring{clampInstantiator}{clampInstantiator}}
-{\footnotesize\ttfamily \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_neuron_clamp_instantiator}{Neuron\+Clamp\+Instantiator}} C2\+M2.\+Game\+Manager.\+clamp\+Instantiator = null}
+\mbox{\Hypertarget{class_c2_m2_1_1_game_manager_ad3a91f937c7fbaa1bb1e1de090cf9bf9}\label{class_c2_m2_1_1_game_manager_ad3a91f937c7fbaa1bb1e1de090cf9bf9}} 
+\index{C2M2.GameManager@{C2M2.GameManager}!cellPreviewer@{cellPreviewer}}
+\index{cellPreviewer@{cellPreviewer}!C2M2.GameManager@{C2M2.GameManager}}
+\doxysubsubsection{\texorpdfstring{cellPreviewer}{cellPreviewer}}
+{\footnotesize\ttfamily Game\+Object C2\+M2.\+Game\+Manager.\+cell\+Previewer = null}
 
 \mbox{\Hypertarget{class_c2_m2_1_1_game_manager_afb49b3a2dd5acdd71aa3985f9503ecf4}\label{class_c2_m2_1_1_game_manager_afb49b3a2dd5acdd71aa3985f9503ecf4}} 
 \index{C2M2.GameManager@{C2M2.GameManager}!defaultMaterial@{defaultMaterial}}
 \index{defaultMaterial@{defaultMaterial}!C2M2.GameManager@{C2M2.GameManager}}
 \doxysubsubsection{\texorpdfstring{defaultMaterial}{defaultMaterial}}
-{\footnotesize\ttfamily Material C2\+M2.\+Game\+Manager.\+default\+Material}
+{\footnotesize\ttfamily Material C2\+M2.\+Game\+Manager.\+default\+Material = null}
 
 \mbox{\Hypertarget{class_c2_m2_1_1_game_manager_a14ff734b3c0d89648865dd558f9319d1}\label{class_c2_m2_1_1_game_manager_a14ff734b3c0d89648865dd558f9319d1}} 
 \index{C2M2.GameManager@{C2M2.GameManager}!eLogQ@{eLogQ}}
@@ -256,17 +214,11 @@ Making any Unity API call from another thread is not safe. This method is a quic
 \doxysubsubsection{\texorpdfstring{isRunning}{isRunning}}
 {\footnotesize\ttfamily bool C2\+M2.\+Game\+Manager.\+is\+Running = false\hspace{0.3cm}{\ttfamily [private]}}
 
-\mbox{\Hypertarget{class_c2_m2_1_1_game_manager_a3ee7a45a4964d965a12f29c1fab2dadc}\label{class_c2_m2_1_1_game_manager_a3ee7a45a4964d965a12f29c1fab2dadc}} 
-\index{C2M2.GameManager@{C2M2.GameManager}!leftRaycaster@{leftRaycaster}}
-\index{leftRaycaster@{leftRaycaster}!C2M2.GameManager@{C2M2.GameManager}}
-\doxysubsubsection{\texorpdfstring{leftRaycaster}{leftRaycaster}}
-{\footnotesize\ttfamily \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_raycast_forward}{Raycast\+Forward}} C2\+M2.\+Game\+Manager.\+left\+Raycaster}
-
 \mbox{\Hypertarget{class_c2_m2_1_1_game_manager_af518d5511a07b74bea16a6b26259d4c3}\label{class_c2_m2_1_1_game_manager_af518d5511a07b74bea16a6b26259d4c3}} 
 \index{C2M2.GameManager@{C2M2.GameManager}!lineRendMaterial@{lineRendMaterial}}
 \index{lineRendMaterial@{lineRendMaterial}!C2M2.GameManager@{C2M2.GameManager}}
 \doxysubsubsection{\texorpdfstring{lineRendMaterial}{lineRendMaterial}}
-{\footnotesize\ttfamily Material C2\+M2.\+Game\+Manager.\+line\+Rend\+Material}
+{\footnotesize\ttfamily Material C2\+M2.\+Game\+Manager.\+line\+Rend\+Material = null}
 
 \mbox{\Hypertarget{class_c2_m2_1_1_game_manager_aa058e5c7aa89a098267a5b237c9b44aa}\label{class_c2_m2_1_1_game_manager_aa058e5c7aa89a098267a5b237c9b44aa}} 
 \index{C2M2.GameManager@{C2M2.GameManager}!logQ@{logQ}}
@@ -280,17 +232,17 @@ Making any Unity API call from another thread is not safe. This method is a quic
 \doxysubsubsection{\texorpdfstring{logQCap}{logQCap}}
 {\footnotesize\ttfamily readonly int C2\+M2.\+Game\+Manager.\+log\+QCap = 100\hspace{0.3cm}{\ttfamily [private]}}
 
-\mbox{\Hypertarget{class_c2_m2_1_1_game_manager_aa3c365e53cf3c2a17c819c14523160a1}\label{class_c2_m2_1_1_game_manager_aa3c365e53cf3c2a17c819c14523160a1}} 
-\index{C2M2.GameManager@{C2M2.GameManager}!menu@{menu}}
-\index{menu@{menu}!C2M2.GameManager@{C2M2.GameManager}}
-\doxysubsubsection{\texorpdfstring{menu}{menu}}
-{\footnotesize\ttfamily Game\+Object C2\+M2.\+Game\+Manager.\+menu = null}
+\mbox{\Hypertarget{class_c2_m2_1_1_game_manager_a9dfa1d8fa992267a5c8a63ed2cf591e8}\label{class_c2_m2_1_1_game_manager_a9dfa1d8fa992267a5c8a63ed2cf591e8}} 
+\index{C2M2.GameManager@{C2M2.GameManager}!ndClampManager@{ndClampManager}}
+\index{ndClampManager@{ndClampManager}!C2M2.GameManager@{C2M2.GameManager}}
+\doxysubsubsection{\texorpdfstring{ndClampManager}{ndClampManager}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_neuron_clamp_manager}{Neuron\+Clamp\+Manager}} C2\+M2.\+Game\+Manager.\+nd\+Clamp\+Manager = null}
 
-\mbox{\Hypertarget{class_c2_m2_1_1_game_manager_a065877cbd5aae4acbfe029fded319906}\label{class_c2_m2_1_1_game_manager_a065877cbd5aae4acbfe029fded319906}} 
-\index{C2M2.GameManager@{C2M2.GameManager}!menuSnapPosition@{menuSnapPosition}}
-\index{menuSnapPosition@{menuSnapPosition}!C2M2.GameManager@{C2M2.GameManager}}
-\doxysubsubsection{\texorpdfstring{menuSnapPosition}{menuSnapPosition}}
-{\footnotesize\ttfamily Transform C2\+M2.\+Game\+Manager.\+menu\+Snap\+Position}
+\mbox{\Hypertarget{class_c2_m2_1_1_game_manager_ad5bd0a001c63a9a1106f298c7b5df585}\label{class_c2_m2_1_1_game_manager_ad5bd0a001c63a9a1106f298c7b5df585}} 
+\index{C2M2.GameManager@{C2M2.GameManager}!ndGraphManager@{ndGraphManager}}
+\index{ndGraphManager@{ndGraphManager}!C2M2.GameManager@{C2M2.GameManager}}
+\doxysubsubsection{\texorpdfstring{ndGraphManager}{ndGraphManager}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_n_d_graph_manager}{NDGraph\+Manager}} C2\+M2.\+Game\+Manager.\+nd\+Graph\+Manager = null}
 
 \mbox{\Hypertarget{class_c2_m2_1_1_game_manager_a9d8b53e60e7a22cf4be7644f608705cf}\label{class_c2_m2_1_1_game_manager_a9d8b53e60e7a22cf4be7644f608705cf}} 
 \index{C2M2.GameManager@{C2M2.GameManager}!objScaleDefault@{objScaleDefault}}
@@ -322,35 +274,23 @@ Making any Unity API call from another thread is not safe. This method is a quic
 \doxysubsubsection{\texorpdfstring{ovrRightHandAnchor}{ovrRightHandAnchor}}
 {\footnotesize\ttfamily Game\+Object C2\+M2.\+Game\+Manager.\+ovr\+Right\+Hand\+Anchor = null}
 
-\mbox{\Hypertarget{class_c2_m2_1_1_game_manager_aca9413621ef0c25dfe171cca0294790e}\label{class_c2_m2_1_1_game_manager_aca9413621ef0c25dfe171cca0294790e}} 
-\index{C2M2.GameManager@{C2M2.GameManager}!raycastKeyboardPrefab@{raycastKeyboardPrefab}}
-\index{raycastKeyboardPrefab@{raycastKeyboardPrefab}!C2M2.GameManager@{C2M2.GameManager}}
-\doxysubsubsection{\texorpdfstring{raycastKeyboardPrefab}{raycastKeyboardPrefab}}
-{\footnotesize\ttfamily Game\+Object C2\+M2.\+Game\+Manager.\+raycast\+Keyboard\+Prefab}
+\mbox{\Hypertarget{class_c2_m2_1_1_game_manager_a310b66f66d5b0be248a4a700295798e3}\label{class_c2_m2_1_1_game_manager_a310b66f66d5b0be248a4a700295798e3}} 
+\index{C2M2.GameManager@{C2M2.GameManager}!roomOptions@{roomOptions}}
+\index{roomOptions@{roomOptions}!C2M2.GameManager@{C2M2.GameManager}}
+\doxysubsubsection{\texorpdfstring{roomOptions}{roomOptions}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_room}{Room}} \mbox{[}$\,$\mbox{]} C2\+M2.\+Game\+Manager.\+room\+Options = null}
 
-\mbox{\Hypertarget{class_c2_m2_1_1_game_manager_ac8d95c0fff151d5aed7d35c5951e6052}\label{class_c2_m2_1_1_game_manager_ac8d95c0fff151d5aed7d35c5951e6052}} 
-\index{C2M2.GameManager@{C2M2.GameManager}!rightRaycaster@{rightRaycaster}}
-\index{rightRaycaster@{rightRaycaster}!C2M2.GameManager@{C2M2.GameManager}}
-\doxysubsubsection{\texorpdfstring{rightRaycaster}{rightRaycaster}}
-{\footnotesize\ttfamily \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_raycast_forward}{Raycast\+Forward}} C2\+M2.\+Game\+Manager.\+right\+Raycaster}
-
-\mbox{\Hypertarget{class_c2_m2_1_1_game_manager_a6c63f077e6177fe24698533c901db237}\label{class_c2_m2_1_1_game_manager_a6c63f077e6177fe24698533c901db237}} 
-\index{C2M2.GameManager@{C2M2.GameManager}!simulation@{simulation}}
-\index{simulation@{simulation}!C2M2.GameManager@{C2M2.GameManager}}
-\doxysubsubsection{\texorpdfstring{simulation}{simulation}}
-{\footnotesize\ttfamily \mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_interactable}{Interactable}} C2\+M2.\+Game\+Manager.\+simulation = null}
-
-\mbox{\Hypertarget{class_c2_m2_1_1_game_manager_aae3ad84b0e6c14ce4b4093b594df8b05}\label{class_c2_m2_1_1_game_manager_aae3ad84b0e6c14ce4b4093b594df8b05}} 
-\index{C2M2.GameManager@{C2M2.GameManager}!timerLabels@{timerLabels}}
-\index{timerLabels@{timerLabels}!C2M2.GameManager@{C2M2.GameManager}}
-\doxysubsubsection{\texorpdfstring{timerLabels}{timerLabels}}
-{\footnotesize\ttfamily List$<$\mbox{\hyperlink{class_simulation_timer_label}{Simulation\+Timer\+Label}}$>$ C2\+M2.\+Game\+Manager.\+timer\+Labels = new List$<$\mbox{\hyperlink{class_simulation_timer_label}{Simulation\+Timer\+Label}}$>$()}
+\mbox{\Hypertarget{class_c2_m2_1_1_game_manager_a9453b5e721350cc1a9ad75f8d7c9b36d}\label{class_c2_m2_1_1_game_manager_a9453b5e721350cc1a9ad75f8d7c9b36d}} 
+\index{C2M2.GameManager@{C2M2.GameManager}!roomSelected@{roomSelected}}
+\index{roomSelected@{roomSelected}!C2M2.GameManager@{C2M2.GameManager}}
+\doxysubsubsection{\texorpdfstring{roomSelected}{roomSelected}}
+{\footnotesize\ttfamily int C2\+M2.\+Game\+Manager.\+room\+Selected = 0}
 
 \mbox{\Hypertarget{class_c2_m2_1_1_game_manager_a25a492d0d0ec9aad29ff235e9f273eed}\label{class_c2_m2_1_1_game_manager_a25a492d0d0ec9aad29ff235e9f273eed}} 
 \index{C2M2.GameManager@{C2M2.GameManager}!vertexColorationMaterial@{vertexColorationMaterial}}
 \index{vertexColorationMaterial@{vertexColorationMaterial}!C2M2.GameManager@{C2M2.GameManager}}
 \doxysubsubsection{\texorpdfstring{vertexColorationMaterial}{vertexColorationMaterial}}
-{\footnotesize\ttfamily Material C2\+M2.\+Game\+Manager.\+vertex\+Coloration\+Material}
+{\footnotesize\ttfamily Material C2\+M2.\+Game\+Manager.\+vertex\+Coloration\+Material = null}
 
 \mbox{\Hypertarget{class_c2_m2_1_1_game_manager_a88c3ec571db694171f99b77067486beb}\label{class_c2_m2_1_1_game_manager_a88c3ec571db694171f99b77067486beb}} 
 \index{C2M2.GameManager@{C2M2.GameManager}!vrDeviceManager@{vrDeviceManager}}
@@ -364,12 +304,6 @@ Making any Unity API call from another thread is not safe. This method is a quic
 \doxysubsubsection{\texorpdfstring{wallColor}{wallColor}}
 {\footnotesize\ttfamily Color C2\+M2.\+Game\+Manager.\+wall\+Color = Color.\+white}
 
-\mbox{\Hypertarget{class_c2_m2_1_1_game_manager_a5113b0b30dcd1aa46d7daccbd8278c75}\label{class_c2_m2_1_1_game_manager_a5113b0b30dcd1aa46d7daccbd8278c75}} 
-\index{C2M2.GameManager@{C2M2.GameManager}!walls@{walls}}
-\index{walls@{walls}!C2M2.GameManager@{C2M2.GameManager}}
-\doxysubsubsection{\texorpdfstring{walls}{walls}}
-{\footnotesize\ttfamily Mesh\+Renderer \mbox{[}$\,$\mbox{]} C2\+M2.\+Game\+Manager.\+walls}
-
 \mbox{\Hypertarget{class_c2_m2_1_1_game_manager_af6c06cdffd7d35e232facbc08f940cfa}\label{class_c2_m2_1_1_game_manager_af6c06cdffd7d35e232facbc08f940cfa}} 
 \index{C2M2.GameManager@{C2M2.GameManager}!whiteboard@{whiteboard}}
 \index{whiteboard@{whiteboard}!C2M2.GameManager@{C2M2.GameManager}}
@@ -379,12 +313,6 @@ Making any Unity API call from another thread is not safe. This method is a quic
 
 
 \doxysubsection{Property Documentation}
-\mbox{\Hypertarget{class_c2_m2_1_1_game_manager_a7d6dec6a31b657c72d91fb20c8a1d0c0}\label{class_c2_m2_1_1_game_manager_a7d6dec6a31b657c72d91fb20c8a1d0c0}} 
-\index{C2M2.GameManager@{C2M2.GameManager}!assetsPath@{assetsPath}}
-\index{assetsPath@{assetsPath}!C2M2.GameManager@{C2M2.GameManager}}
-\doxysubsubsection{\texorpdfstring{assetsPath}{assetsPath}}
-{\footnotesize\ttfamily string C2\+M2.\+Game\+Manager.\+assets\+Path = null\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [private set]}}
-
 \mbox{\Hypertarget{class_c2_m2_1_1_game_manager_ac0ca2044e3b82f26e79bdc580a69d1be}\label{class_c2_m2_1_1_game_manager_ac0ca2044e3b82f26e79bdc580a69d1be}} 
 \index{C2M2.GameManager@{C2M2.GameManager}!mainThreadId@{mainThreadId}}
 \index{mainThreadId@{mainThreadId}!C2M2.GameManager@{C2M2.GameManager}}
@@ -403,20 +331,14 @@ Making any Unity API call from another thread is not safe. This method is a quic
 \doxysubsubsection{\texorpdfstring{ovrPlayerController}{ovrPlayerController}}
 {\footnotesize\ttfamily OVRPlayer\+Controller C2\+M2.\+Game\+Manager.\+ovr\+Player\+Controller = null\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
 
-\mbox{\Hypertarget{class_c2_m2_1_1_game_manager_aeeb2f1256d0d9377be2c71b296c157f9}\label{class_c2_m2_1_1_game_manager_aeeb2f1256d0d9377be2c71b296c157f9}} 
-\index{C2M2.GameManager@{C2M2.GameManager}!raycastKeyboard@{raycastKeyboard}}
-\index{raycastKeyboard@{raycastKeyboard}!C2M2.GameManager@{C2M2.GameManager}}
-\doxysubsubsection{\texorpdfstring{raycastKeyboard}{raycastKeyboard}}
-{\footnotesize\ttfamily \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_u_i_1_1_raycast_keyboard}{Raycast\+Keyboard}} C2\+M2.\+Game\+Manager.\+raycast\+Keyboard\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
-
-\mbox{\Hypertarget{class_c2_m2_1_1_game_manager_a310923152a6ce1dc5a55261a1ffc01fd}\label{class_c2_m2_1_1_game_manager_a310923152a6ce1dc5a55261a1ffc01fd}} 
-\index{C2M2.GameManager@{C2M2.GameManager}!vrIsActive@{vrIsActive}}
-\index{vrIsActive@{vrIsActive}!C2M2.GameManager@{C2M2.GameManager}}
-\doxysubsubsection{\texorpdfstring{vrIsActive}{vrIsActive}}
-{\footnotesize\ttfamily bool C2\+M2.\+Game\+Manager.\+vr\+Is\+Active\hspace{0.3cm}{\ttfamily [get]}}
+\mbox{\Hypertarget{class_c2_m2_1_1_game_manager_ac08a819bfd1d527709cb593fb2e6fe8c}\label{class_c2_m2_1_1_game_manager_ac08a819bfd1d527709cb593fb2e6fe8c}} 
+\index{C2M2.GameManager@{C2M2.GameManager}!VRActive@{VRActive}}
+\index{VRActive@{VRActive}!C2M2.GameManager@{C2M2.GameManager}}
+\doxysubsubsection{\texorpdfstring{VRActive}{VRActive}}
+{\footnotesize\ttfamily bool C2\+M2.\+Game\+Manager.\+VRActive\hspace{0.3cm}{\ttfamily [get]}}
 
 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-C\+:/\+Users/jaros/\+Desktop/tempvr/virtual-\/reality/\+Assets/\+Scripts/\+C2\+M2/\mbox{\hyperlink{_game_manager_8cs}{Game\+Manager.\+cs}}\end{DoxyCompactItemize}
+C\+:/\+Users/\+Jacob Wells/\+Desktop/\+C2\+M2/\+Neuro\+VISOR/\+Assets/\+Scripts/\+C2\+M2/\mbox{\hyperlink{_game_manager_8cs}{Game\+Manager.\+cs}}\end{DoxyCompactItemize}

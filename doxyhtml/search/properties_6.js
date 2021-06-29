@@ -1,10 +1,15 @@
 var searchData=
 [
-  ['gaussaddcond_3171',['gaussAddCond',['../dd/dfa/class_c2_m2_1_1_simulation_1_1_diffusion_manager.html#afae959496dc0a4b4246e15ef0dc04bc6',1,'C2M2::Simulation::DiffusionManager']]],
-  ['gausssubcond_3172',['gaussSubCond',['../dd/dfa/class_c2_m2_1_1_simulation_1_1_diffusion_manager.html#a334616b2fa0462223e85b06133db85ec',1,'C2M2::Simulation::DiffusionManager']]],
-  ['gradient_3173',['gradient',['../d8/d74/class_c2_m2_1_1_neuronal_dynamics_1_1_visualization_1_1_v_t_k_1_1_v_t_u_manager.html#ade3dba5d60d9289293a5357045724d3d',1,'C2M2::NeuronalDynamics::Visualization::VTK::VTUManager']]],
-  ['gradient_3174',['Gradient',['../da/d4f/class_c2_m2_1_1_visualization_1_1_l_u_t_gradient.html#a2d41a16b06db0f379e3861a1c03cd81f',1,'C2M2::Visualization::LUTGradient']]],
-  ['gradientlut_3175',['gradientLUT',['../da/d4f/class_c2_m2_1_1_visualization_1_1_l_u_t_gradient.html#adf90904069fcc396dcaaabaf62c61a37',1,'C2M2::Visualization::LUTGradient']]],
-  ['grid1d_3176',['Grid1D',['../d7/d92/class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation.html#a7f4c3e4be08511b50b42c4b0f977fde8',1,'C2M2::NeuronalDynamics::Simulation::NDSimulation']]],
-  ['grid2d_3177',['Grid2D',['../d7/d92/class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation.html#a4007846d7a9dfadcd783f680e06e1688',1,'C2M2::NeuronalDynamics::Simulation::NDSimulation']]]
+  ['globalmax_2703',['GlobalMax',['../d6/d25/class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_n_d_extrema_controller.html#a5891f130e369a242d547cae538323e53',1,'C2M2.NeuronalDynamics.Interaction.UI.NDExtremaController.GlobalMax()'],['../d2/db9/class_c2_m2_1_1_visualization_1_1_color_l_u_t.html#aba702be110408b0b0bc49b3ac6029e7f',1,'C2M2.Visualization.ColorLUT.GlobalMax()']]],
+  ['globalmin_2704',['GlobalMin',['../d6/d25/class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_n_d_extrema_controller.html#a85f10d89453bd2ffcd307cb5620382c9',1,'C2M2.NeuronalDynamics.Interaction.UI.NDExtremaController.GlobalMin()'],['../d2/db9/class_c2_m2_1_1_visualization_1_1_color_l_u_t.html#a7a72555ff6aac638be432c8adef4570b',1,'C2M2.Visualization.ColorLUT.GlobalMin()']]],
+  ['graddisplay_2705',['GradDisplay',['../d6/d25/class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_n_d_extrema_controller.html#a7a438d2c22a708536957e6116558da02',1,'C2M2::NeuronalDynamics::Interaction::UI::NDExtremaController']]],
+  ['gradient_2706',['Gradient',['../d2/db9/class_c2_m2_1_1_visualization_1_1_color_l_u_t.html#a6090b38ab88191b59e492c1e93939b73',1,'C2M2.Visualization.ColorLUT.Gradient()'],['../dc/dea/class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_gradient_display.html#a9cf60d71be7ac812d4a1dc3b6908f10d',1,'C2M2.NeuronalDynamics.Interaction.UI.GradientDisplay.Gradient()']]],
+  ['graphmanager_2707',['graphManager',['../d7/d92/class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation.html#a5bd8b0b2f2be3067bec3e341d819ce04',1,'C2M2::NeuronalDynamics::Simulation::NDSimulation']]],
+  ['graphprefab_2708',['graphPrefab',['../d8/d57/class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_n_d_graph_manager.html#a155745c47198b6f43cddcf48ad873d5f',1,'C2M2::NeuronalDynamics::Interaction::UI::NDGraphManager']]],
+  ['graphs_2709',['Graphs',['../d7/d92/class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation.html#aed439157b1ba547ddcf87c4afd500b5c',1,'C2M2::NeuronalDynamics::Simulation::NDSimulation']]],
+  ['graphsize_2710',['GraphSize',['../d1/d1d/class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_n_d_line_graph.html#aa3ff9db9eb3562f7231c8578245d6ed7',1,'C2M2::NeuronalDynamics::Interaction::UI::NDLineGraph']]],
+  ['graphwidth_2711',['GraphWidth',['../da/d49/class_c2_m2_1_1_visualization_1_1_graph_cursor.html#a0a12e799c765af8cc50cd6d7f86678b1',1,'C2M2::Visualization::GraphCursor']]],
+  ['grid1d_2712',['Grid1D',['../d7/d92/class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation.html#a7f4c3e4be08511b50b42c4b0f977fde8',1,'C2M2::NeuronalDynamics::Simulation::NDSimulation']]],
+  ['grid2d_2713',['Grid2D',['../d7/d92/class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation.html#a4007846d7a9dfadcd783f680e06e1688',1,'C2M2::NeuronalDynamics::Simulation::NDSimulation']]],
+  ['groupid_2714',['groupId',['../dc/d56/class_c2_m2_1_1_interaction_1_1_u_i_1_1_raycast_toggle.html#a1c4acc47330a0406dc94fb8d92c041b1',1,'C2M2::Interaction::UI::RaycastToggle']]]
 ];

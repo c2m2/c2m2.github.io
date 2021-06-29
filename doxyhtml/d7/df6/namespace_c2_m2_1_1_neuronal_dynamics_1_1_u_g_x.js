@@ -1,5 +1,6 @@
 var namespace_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x =
 [
+    [ "Neuron", "da/d36/class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron.html", "da/d36/class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron" ],
     [ "NeuronCell", "da/df6/class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_cell.html", "da/df6/class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_cell" ],
     [ "SubsetNotFoundException", "dc/de0/class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_subset_not_found_exception.html", "dc/de0/class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_subset_not_found_exception" ],
     [ "AttachmentInfo", "d5/d27/struct_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_attachment_info.html", "d5/d27/struct_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_attachment_info" ],

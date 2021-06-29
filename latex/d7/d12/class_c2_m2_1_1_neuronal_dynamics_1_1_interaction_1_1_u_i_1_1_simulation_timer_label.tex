@@ -1,0 +1,111 @@
+\hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_simulation_timer_label}{}\doxysection{C2\+M2.\+Neuronal\+Dynamics.\+Interaction.\+UI.\+Simulation\+Timer\+Label Class Reference}
+\label{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_simulation_timer_label}\index{C2M2.NeuronalDynamics.Interaction.UI.SimulationTimerLabel@{C2M2.NeuronalDynamics.Interaction.UI.SimulationTimerLabel}}
+
+
+Inherits Mono\+Behaviour.
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+override string \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_simulation_timer_label_a4e991379f00f8e8d74625be0b1fb5548}{To\+String}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_n_d_simulation_controller}{NDSimulation\+Controller}} \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_simulation_timer_label_ae5300ae074adad8725a62aea35a59d86}{sim\+Controller}} = null
+\item 
+Text\+Mesh\+Pro\+UGUI \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_simulation_timer_label_a421b64304ad0b59c352e92cc7038402f}{timer\+Text}}
+\item 
+double \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_simulation_timer_label_a44df19d013f2d0ccc3fb85706836a9cf}{time}}
+\begin{DoxyCompactList}\small\item\em Current time in simulation \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_interactable}{Interactable}} \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_simulation_timer_label_a29476394b564cc5f33eab858ec4beaff}{Sim}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_simulation_timer_label_a4978b846f6436e808ecce0c6593aae03}{Awake}} ()
+\item 
+void \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_simulation_timer_label_a47e1d51366b4af2bedae07423f021be9}{Fixed\+Update}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static string \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_simulation_timer_label_acbcb22593cc73097470e9a6777eda9f9}{s\+Format}} = \char`\"{}\{0\+:f0\} s \{1\+:f0\} ms\char`\"{}
+\item 
+static string \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_simulation_timer_label_aa61ade34e59b1e50a977b726b91fb4e6}{ms\+Format}} = \char`\"{}\{0\+:f0\} ms\char`\"{}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_simulation_timer_label_a4978b846f6436e808ecce0c6593aae03}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_simulation_timer_label_a4978b846f6436e808ecce0c6593aae03}} 
+\index{C2M2.NeuronalDynamics.Interaction.UI.SimulationTimerLabel@{C2M2.NeuronalDynamics.Interaction.UI.SimulationTimerLabel}!Awake@{Awake}}
+\index{Awake@{Awake}!C2M2.NeuronalDynamics.Interaction.UI.SimulationTimerLabel@{C2M2.NeuronalDynamics.Interaction.UI.SimulationTimerLabel}}
+\doxysubsubsection{\texorpdfstring{Awake()}{Awake()}}
+{\footnotesize\ttfamily void C2\+M2.\+Neuronal\+Dynamics.\+Interaction.\+UI.\+Simulation\+Timer\+Label.\+Awake (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_simulation_timer_label_a47e1d51366b4af2bedae07423f021be9}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_simulation_timer_label_a47e1d51366b4af2bedae07423f021be9}} 
+\index{C2M2.NeuronalDynamics.Interaction.UI.SimulationTimerLabel@{C2M2.NeuronalDynamics.Interaction.UI.SimulationTimerLabel}!FixedUpdate@{FixedUpdate}}
+\index{FixedUpdate@{FixedUpdate}!C2M2.NeuronalDynamics.Interaction.UI.SimulationTimerLabel@{C2M2.NeuronalDynamics.Interaction.UI.SimulationTimerLabel}}
+\doxysubsubsection{\texorpdfstring{FixedUpdate()}{FixedUpdate()}}
+{\footnotesize\ttfamily void C2\+M2.\+Neuronal\+Dynamics.\+Interaction.\+UI.\+Simulation\+Timer\+Label.\+Fixed\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_simulation_timer_label_a4e991379f00f8e8d74625be0b1fb5548}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_simulation_timer_label_a4e991379f00f8e8d74625be0b1fb5548}} 
+\index{C2M2.NeuronalDynamics.Interaction.UI.SimulationTimerLabel@{C2M2.NeuronalDynamics.Interaction.UI.SimulationTimerLabel}!ToString@{ToString}}
+\index{ToString@{ToString}!C2M2.NeuronalDynamics.Interaction.UI.SimulationTimerLabel@{C2M2.NeuronalDynamics.Interaction.UI.SimulationTimerLabel}}
+\doxysubsubsection{\texorpdfstring{ToString()}{ToString()}}
+{\footnotesize\ttfamily override string C2\+M2.\+Neuronal\+Dynamics.\+Interaction.\+UI.\+Simulation\+Timer\+Label.\+To\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_simulation_timer_label_aa61ade34e59b1e50a977b726b91fb4e6}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_simulation_timer_label_aa61ade34e59b1e50a977b726b91fb4e6}} 
+\index{C2M2.NeuronalDynamics.Interaction.UI.SimulationTimerLabel@{C2M2.NeuronalDynamics.Interaction.UI.SimulationTimerLabel}!msFormat@{msFormat}}
+\index{msFormat@{msFormat}!C2M2.NeuronalDynamics.Interaction.UI.SimulationTimerLabel@{C2M2.NeuronalDynamics.Interaction.UI.SimulationTimerLabel}}
+\doxysubsubsection{\texorpdfstring{msFormat}{msFormat}}
+{\footnotesize\ttfamily string C2\+M2.\+Neuronal\+Dynamics.\+Interaction.\+UI.\+Simulation\+Timer\+Label.\+ms\+Format = \char`\"{}\{0\+:f0\} ms\char`\"{}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_simulation_timer_label_acbcb22593cc73097470e9a6777eda9f9}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_simulation_timer_label_acbcb22593cc73097470e9a6777eda9f9}} 
+\index{C2M2.NeuronalDynamics.Interaction.UI.SimulationTimerLabel@{C2M2.NeuronalDynamics.Interaction.UI.SimulationTimerLabel}!sFormat@{sFormat}}
+\index{sFormat@{sFormat}!C2M2.NeuronalDynamics.Interaction.UI.SimulationTimerLabel@{C2M2.NeuronalDynamics.Interaction.UI.SimulationTimerLabel}}
+\doxysubsubsection{\texorpdfstring{sFormat}{sFormat}}
+{\footnotesize\ttfamily string C2\+M2.\+Neuronal\+Dynamics.\+Interaction.\+UI.\+Simulation\+Timer\+Label.\+s\+Format = \char`\"{}\{0\+:f0\} s \{1\+:f0\} ms\char`\"{}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_simulation_timer_label_ae5300ae074adad8725a62aea35a59d86}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_simulation_timer_label_ae5300ae074adad8725a62aea35a59d86}} 
+\index{C2M2.NeuronalDynamics.Interaction.UI.SimulationTimerLabel@{C2M2.NeuronalDynamics.Interaction.UI.SimulationTimerLabel}!simController@{simController}}
+\index{simController@{simController}!C2M2.NeuronalDynamics.Interaction.UI.SimulationTimerLabel@{C2M2.NeuronalDynamics.Interaction.UI.SimulationTimerLabel}}
+\doxysubsubsection{\texorpdfstring{simController}{simController}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_n_d_simulation_controller}{NDSimulation\+Controller}} C2\+M2.\+Neuronal\+Dynamics.\+Interaction.\+UI.\+Simulation\+Timer\+Label.\+sim\+Controller = null}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_simulation_timer_label_a44df19d013f2d0ccc3fb85706836a9cf}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_simulation_timer_label_a44df19d013f2d0ccc3fb85706836a9cf}} 
+\index{C2M2.NeuronalDynamics.Interaction.UI.SimulationTimerLabel@{C2M2.NeuronalDynamics.Interaction.UI.SimulationTimerLabel}!time@{time}}
+\index{time@{time}!C2M2.NeuronalDynamics.Interaction.UI.SimulationTimerLabel@{C2M2.NeuronalDynamics.Interaction.UI.SimulationTimerLabel}}
+\doxysubsubsection{\texorpdfstring{time}{time}}
+{\footnotesize\ttfamily double C2\+M2.\+Neuronal\+Dynamics.\+Interaction.\+UI.\+Simulation\+Timer\+Label.\+time}
+
+
+
+Current time in simulation 
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_simulation_timer_label_a421b64304ad0b59c352e92cc7038402f}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_simulation_timer_label_a421b64304ad0b59c352e92cc7038402f}} 
+\index{C2M2.NeuronalDynamics.Interaction.UI.SimulationTimerLabel@{C2M2.NeuronalDynamics.Interaction.UI.SimulationTimerLabel}!timerText@{timerText}}
+\index{timerText@{timerText}!C2M2.NeuronalDynamics.Interaction.UI.SimulationTimerLabel@{C2M2.NeuronalDynamics.Interaction.UI.SimulationTimerLabel}}
+\doxysubsubsection{\texorpdfstring{timerText}{timerText}}
+{\footnotesize\ttfamily Text\+Mesh\+Pro\+UGUI C2\+M2.\+Neuronal\+Dynamics.\+Interaction.\+UI.\+Simulation\+Timer\+Label.\+timer\+Text}
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_simulation_timer_label_a29476394b564cc5f33eab858ec4beaff}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_simulation_timer_label_a29476394b564cc5f33eab858ec4beaff}} 
+\index{C2M2.NeuronalDynamics.Interaction.UI.SimulationTimerLabel@{C2M2.NeuronalDynamics.Interaction.UI.SimulationTimerLabel}!Sim@{Sim}}
+\index{Sim@{Sim}!C2M2.NeuronalDynamics.Interaction.UI.SimulationTimerLabel@{C2M2.NeuronalDynamics.Interaction.UI.SimulationTimerLabel}}
+\doxysubsubsection{\texorpdfstring{Sim}{Sim}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_interactable}{Interactable}} C2\+M2.\+Neuronal\+Dynamics.\+Interaction.\+UI.\+Simulation\+Timer\+Label.\+Sim\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Jacob Wells/\+Desktop/\+C2\+M2/\+Neuro\+VISOR/\+Assets/\+Scripts/\+C2\+M2/\+Visualization/\mbox{\hyperlink{_simulation_timer_label_8cs}{Simulation\+Timer\+Label.\+cs}}\end{DoxyCompactItemize}

@@ -2,62 +2,52 @@
 \label{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_cell}\index{C2M2.NeuronalDynamics.UGX.NeuronCell@{C2M2.NeuronalDynamics.UGX.NeuronCell}}
 
 
-Collaboration diagram for C2\+M2.\+Neuronal\+Dynamics.\+UGX.\+Neuron\+Cell\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=276pt]{dc/d8a/class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_cell__coll__graph}
-\end{center}
-\end{figure}
+This is the \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_cell}{Neuron\+Cell}} Class, it allows the user to initialize the different quantities of the geometry and gives some ease of access to the the components of the geometry  
+
+
 \doxysubsection*{Classes}
 \begin{DoxyCompactItemize}
 \item 
 struct \mbox{\hyperlink{struct_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_cell_1_1_node_data}{Node\+Data}}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em This is the \mbox{\hyperlink{struct_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_cell_1_1_node_data}{Node\+Data}} structure, it will group information together corresponding to each node in the 1D graph geometry the information stored is analogous to what would be found in the 1D .swc file of the neuron geometry \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_cell_a35092c83775762fe63372876cd6a093f}{Neuron\+Cell}} (\mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_grid}{Grid}} grid)
-\item 
-string \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_cell_a3ceb980213948760901555946eaef1f4}{Node\+To\+String}} (int node\+Id)
-\item 
-void \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_cell_ac62ac2f2c2cb9108d2b690351d7b723d}{Edge\+To\+String}} (int edge\+Id)
-\item 
+\begin{DoxyCompactList}\small\item\em This will initialize the \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_cell}{Neuron\+Cell}}, the grid parameter is read in the grid parameter contains the geometric information from the .vrn files \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_cell_ae0feef0c8e5396703be74f8c596cfd34}{write\+SWC}} (string out\+File)
+\begin{DoxyCompactList}\small\item\em This small routine writes the geometry file that is used to an output file in .swc format \end{DoxyCompactList}\item 
 override string \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_cell_af0a3ed6e38dc9505439f24c074d1cc4a}{To\+String}} ()
 \item 
 double \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_cell_acfdad2cee43e7582e98154b1803dab3c}{Get\+Edge\+Length}} (int start\+Id, int end\+Id)
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em this calculates the euclidean distance between node Start and node End \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
 List$<$ \mbox{\hyperlink{struct_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_cell_1_1_node_data}{Node\+Data}} $>$ \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_cell_ae742e1a074bc05437c45385924565105}{node\+Data}} = new List$<$\mbox{\hyperlink{struct_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_cell_1_1_node_data}{Node\+Data}}$>$()
-\item 
+\begin{DoxyCompactList}\small\item\em This is the list of nodes and each node is information attached to it \end{DoxyCompactList}\item 
 List$<$ Tuple$<$ int, int $>$ $>$ \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_cell_aa0ade66db78a91961b5a228bfa668144}{edges}} = new List$<$Tuple$<$int, int$>$$>$()
-\item 
+\begin{DoxyCompactList}\small\item\em this is the edge list, the first integer is the from index and the second index is the to index \end{DoxyCompactList}\item 
 List$<$ double $>$ \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_cell_ab0b9d87ce4d2b73650e7c6c9520ff01d}{edge\+Lengths}} = new List$<$double$>$()
-\item 
+\begin{DoxyCompactList}\small\item\em this is a list of all the edgelengths, there is a built in routine that computes the edge length \end{DoxyCompactList}\item 
 List$<$ int $>$ \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_cell_af1134d207b0ef0b64fb80db48a1445a5}{boundary\+ID}} = new List$<$int$>$()
-\item 
+\begin{DoxyCompactList}\small\item\em this is the a list of the indices that are the ends of the denrites, they only have one neighbor \end{DoxyCompactList}\item 
 List$<$ int $>$ \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_cell_a67566dcc691909971a82a357574257a2}{soma\+ID}} = new List$<$int$>$()
-\item 
+\begin{DoxyCompactList}\small\item\em this is the soma index, this is good know, it is a list because in possible cases a soma maybe a segment of points, not a singular point \end{DoxyCompactList}\item 
 int \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_cell_affcc860de06dd55bff1a11ece180fb99}{vert\+Count}} = new int()
-\item 
+\begin{DoxyCompactList}\small\item\em this is the vertiex count, the number of vertices that the 1d graph geometry has \end{DoxyCompactList}\item 
 int \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_cell_a315568990294f5f826e2fd995d161e5f}{edge\+Count}} = new int()
-\end{DoxyCompactItemize}
-\doxysubsection*{Private Member Functions}
-\begin{DoxyCompactItemize}
-\item 
-string \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_cell_a04f278c4c76e8be6318cbdeae34ced67}{Node\+Neighbors\+To\+String}} (int node\+Id)
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em this is the number of edges in the 1d graph geometry \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Static Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
-static string \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_cell_a53c292436d1bfc7190e17c3a05bb2617}{node\+Format\+String}}
-\item 
-static string \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_cell_a2c7cf01c0b0b7c978ce762fa2d71b9df}{edge\+Format\+String}}
-\item 
 static string \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_cell_a1a595ba856b3e2b8faa83dc277ab7a48}{cell\+Format\+String}}
 \end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This is the \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_cell}{Neuron\+Cell}} Class, it allows the user to initialize the different quantities of the geometry and gives some ease of access to the the components of the geometry 
+
 
 
 \doxysubsection{Constructor \& Destructor Documentation}
@@ -69,37 +59,86 @@ static string \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_n
 
 
 
-\doxysubsection{Member Function Documentation}
-\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_cell_ac62ac2f2c2cb9108d2b690351d7b723d}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_cell_ac62ac2f2c2cb9108d2b690351d7b723d}} 
-\index{C2M2.NeuronalDynamics.UGX.NeuronCell@{C2M2.NeuronalDynamics.UGX.NeuronCell}!EdgeToString@{EdgeToString}}
-\index{EdgeToString@{EdgeToString}!C2M2.NeuronalDynamics.UGX.NeuronCell@{C2M2.NeuronalDynamics.UGX.NeuronCell}}
-\doxysubsubsection{\texorpdfstring{EdgeToString()}{EdgeToString()}}
-{\footnotesize\ttfamily void C2\+M2.\+Neuronal\+Dynamics.\+UGX.\+Neuron\+Cell.\+Edge\+To\+String (\begin{DoxyParamCaption}\item[{int}]{edge\+Id }\end{DoxyParamCaption})}
+This will initialize the \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_cell}{Neuron\+Cell}}, the grid parameter is read in the grid parameter contains the geometric information from the .vrn files 
 
+
+\begin{DoxyParams}{Parameters}
+{\em grid} & \\
+\hline
+\end{DoxyParams}
+this gets the diameter, make sure to divide by 2
+
+this the node id -\/-\/$>$ these may not be consecutive
+
+this for loop is for setting the pid, parent id
+
+the zero-\/th node has parent -\/1 -\/-\/$>$ NOTE\+: is this alway true, need to check this!!
+
+these are the actual coordinates of the geometry -\/-\/$>$ NOTE\+: these are in \mbox{[}um\mbox{]} already!
+
+this initializes an empty list for the neighbor id nodes
+
+if a node has only one neighbor then it is a boundary node
+
+add the boundary node id to the list
+
+this adds the neigbor ids to the list for this node
+
+this increments the counter for the number of vertices -\/-\/$>$ is this even used?? may need to remove!
+
+this loop collects the edges and gets the lengths of the edges
+
+\doxysubsection{Member Function Documentation}
 \mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_cell_acfdad2cee43e7582e98154b1803dab3c}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_cell_acfdad2cee43e7582e98154b1803dab3c}} 
 \index{C2M2.NeuronalDynamics.UGX.NeuronCell@{C2M2.NeuronalDynamics.UGX.NeuronCell}!GetEdgeLength@{GetEdgeLength}}
 \index{GetEdgeLength@{GetEdgeLength}!C2M2.NeuronalDynamics.UGX.NeuronCell@{C2M2.NeuronalDynamics.UGX.NeuronCell}}
 \doxysubsubsection{\texorpdfstring{GetEdgeLength()}{GetEdgeLength()}}
 {\footnotesize\ttfamily double C2\+M2.\+Neuronal\+Dynamics.\+UGX.\+Neuron\+Cell.\+Get\+Edge\+Length (\begin{DoxyParamCaption}\item[{int}]{start\+Id,  }\item[{int}]{end\+Id }\end{DoxyParamCaption})}
 
-\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_cell_a04f278c4c76e8be6318cbdeae34ced67}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_cell_a04f278c4c76e8be6318cbdeae34ced67}} 
-\index{C2M2.NeuronalDynamics.UGX.NeuronCell@{C2M2.NeuronalDynamics.UGX.NeuronCell}!NodeNeighborsToString@{NodeNeighborsToString}}
-\index{NodeNeighborsToString@{NodeNeighborsToString}!C2M2.NeuronalDynamics.UGX.NeuronCell@{C2M2.NeuronalDynamics.UGX.NeuronCell}}
-\doxysubsubsection{\texorpdfstring{NodeNeighborsToString()}{NodeNeighborsToString()}}
-{\footnotesize\ttfamily string C2\+M2.\+Neuronal\+Dynamics.\+UGX.\+Neuron\+Cell.\+Node\+Neighbors\+To\+String (\begin{DoxyParamCaption}\item[{int}]{node\+Id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
 
-\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_cell_a3ceb980213948760901555946eaef1f4}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_cell_a3ceb980213948760901555946eaef1f4}} 
-\index{C2M2.NeuronalDynamics.UGX.NeuronCell@{C2M2.NeuronalDynamics.UGX.NeuronCell}!NodeToString@{NodeToString}}
-\index{NodeToString@{NodeToString}!C2M2.NeuronalDynamics.UGX.NeuronCell@{C2M2.NeuronalDynamics.UGX.NeuronCell}}
-\doxysubsubsection{\texorpdfstring{NodeToString()}{NodeToString()}}
-{\footnotesize\ttfamily string C2\+M2.\+Neuronal\+Dynamics.\+UGX.\+Neuron\+Cell.\+Node\+To\+String (\begin{DoxyParamCaption}\item[{int}]{node\+Id }\end{DoxyParamCaption})}
 
-\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_cell_af0a3ed6e38dc9505439f24c074d1cc4a}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_cell_af0a3ed6e38dc9505439f24c074d1cc4a}} 
+this calculates the euclidean distance between node Start and node End 
+
+
+\begin{DoxyParams}{Parameters}
+{\em start\+Id} & \\
+\hline
+\end{DoxyParams}
+start node index 
+\begin{DoxyParams}{Parameters}
+{\em end\+Id} & \\
+\hline
+\end{DoxyParams}
+end node index \begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+get the coordinates of the start node
+
+get the coordinates of the end node
+
+calculate the square of th differences
+
+return the squareroot\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_cell_af0a3ed6e38dc9505439f24c074d1cc4a}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_cell_af0a3ed6e38dc9505439f24c074d1cc4a}} 
 \index{C2M2.NeuronalDynamics.UGX.NeuronCell@{C2M2.NeuronalDynamics.UGX.NeuronCell}!ToString@{ToString}}
 \index{ToString@{ToString}!C2M2.NeuronalDynamics.UGX.NeuronCell@{C2M2.NeuronalDynamics.UGX.NeuronCell}}
 \doxysubsubsection{\texorpdfstring{ToString()}{ToString()}}
 {\footnotesize\ttfamily override string C2\+M2.\+Neuronal\+Dynamics.\+UGX.\+Neuron\+Cell.\+To\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_cell_ae0feef0c8e5396703be74f8c596cfd34}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_cell_ae0feef0c8e5396703be74f8c596cfd34}} 
+\index{C2M2.NeuronalDynamics.UGX.NeuronCell@{C2M2.NeuronalDynamics.UGX.NeuronCell}!writeSWC@{writeSWC}}
+\index{writeSWC@{writeSWC}!C2M2.NeuronalDynamics.UGX.NeuronCell@{C2M2.NeuronalDynamics.UGX.NeuronCell}}
+\doxysubsubsection{\texorpdfstring{writeSWC()}{writeSWC()}}
+{\footnotesize\ttfamily void C2\+M2.\+Neuronal\+Dynamics.\+UGX.\+Neuron\+Cell.\+write\+SWC (\begin{DoxyParamCaption}\item[{string}]{out\+File }\end{DoxyParamCaption})}
+
+
+
+This small routine writes the geometry file that is used to an output file in .swc format 
+
+
+\begin{DoxyParams}{Parameters}
+{\em out\+File} & \\
+\hline
+\end{DoxyParams}
 
 
 \doxysubsection{Member Data Documentation}
@@ -108,6 +147,10 @@ static string \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_n
 \index{boundaryID@{boundaryID}!C2M2.NeuronalDynamics.UGX.NeuronCell@{C2M2.NeuronalDynamics.UGX.NeuronCell}}
 \doxysubsubsection{\texorpdfstring{boundaryID}{boundaryID}}
 {\footnotesize\ttfamily List$<$int$>$ C2\+M2.\+Neuronal\+Dynamics.\+UGX.\+Neuron\+Cell.\+boundary\+ID = new List$<$int$>$()}
+
+
+
+this is the a list of the indices that are the ends of the denrites, they only have one neighbor 
 
 \mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_cell_a1a595ba856b3e2b8faa83dc277ab7a48}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_cell_a1a595ba856b3e2b8faa83dc277ab7a48}} 
 \index{C2M2.NeuronalDynamics.UGX.NeuronCell@{C2M2.NeuronalDynamics.UGX.NeuronCell}!cellFormatString@{cellFormatString}}
@@ -118,11 +161,13 @@ static string \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_n
 {\bfseries Initial value\+:}
 \begin{DoxyCode}{0}
 \DoxyCodeLine{= }
-\DoxyCodeLine{            \textcolor{stringliteral}{"{}Vert count = \{0\}\(\backslash\)n"{}} +}
+\DoxyCodeLine{            \textcolor{stringliteral}{"{}1D Vert count = \{0\}\(\backslash\)n"{}} +}
 \DoxyCodeLine{            \textcolor{stringliteral}{"{}Edge count = \{1\}\(\backslash\)n"{}} +}
 \DoxyCodeLine{            \textcolor{stringliteral}{"{}Max edge length = \{2\}\(\backslash\)n"{}} +}
 \DoxyCodeLine{            \textcolor{stringliteral}{"{}Avg edge length = \{3\}\(\backslash\)n"{}} +}
-\DoxyCodeLine{            \textcolor{stringliteral}{"{}Min edge length = \{4\}"{}}}
+\DoxyCodeLine{            \textcolor{stringliteral}{"{}Min edge length = \{4\}\(\backslash\)n"{}} + }
+\DoxyCodeLine{            \textcolor{stringliteral}{"{}Soma ID(s) = (\{5\})\(\backslash\)n"{}} + }
+\DoxyCodeLine{            \textcolor{stringliteral}{"{}Boundary ID(s) = (\{6\})"{}}}
 
 \end{DoxyCode}
 \mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_cell_a315568990294f5f826e2fd995d161e5f}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_cell_a315568990294f5f826e2fd995d161e5f}} 
@@ -131,25 +176,19 @@ static string \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_n
 \doxysubsubsection{\texorpdfstring{edgeCount}{edgeCount}}
 {\footnotesize\ttfamily int C2\+M2.\+Neuronal\+Dynamics.\+UGX.\+Neuron\+Cell.\+edge\+Count = new int()}
 
-\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_cell_a2c7cf01c0b0b7c978ce762fa2d71b9df}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_cell_a2c7cf01c0b0b7c978ce762fa2d71b9df}} 
-\index{C2M2.NeuronalDynamics.UGX.NeuronCell@{C2M2.NeuronalDynamics.UGX.NeuronCell}!edgeFormatString@{edgeFormatString}}
-\index{edgeFormatString@{edgeFormatString}!C2M2.NeuronalDynamics.UGX.NeuronCell@{C2M2.NeuronalDynamics.UGX.NeuronCell}}
-\doxysubsubsection{\texorpdfstring{edgeFormatString}{edgeFormatString}}
-{\footnotesize\ttfamily string C2\+M2.\+Neuronal\+Dynamics.\+UGX.\+Neuron\+Cell.\+edge\+Format\+String\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
 
-{\bfseries Initial value\+:}
-\begin{DoxyCode}{0}
-\DoxyCodeLine{=}
-\DoxyCodeLine{            \textcolor{stringliteral}{"{}Start ID = \{0\}\(\backslash\)n"{}} +}
-\DoxyCodeLine{            \textcolor{stringliteral}{"{}End ID = \{1\}\(\backslash\)n"{}} +}
-\DoxyCodeLine{            \textcolor{stringliteral}{"{}Length = \{2\}"{}}}
 
-\end{DoxyCode}
+this is the number of edges in the 1d graph geometry 
+
 \mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_cell_ab0b9d87ce4d2b73650e7c6c9520ff01d}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_cell_ab0b9d87ce4d2b73650e7c6c9520ff01d}} 
 \index{C2M2.NeuronalDynamics.UGX.NeuronCell@{C2M2.NeuronalDynamics.UGX.NeuronCell}!edgeLengths@{edgeLengths}}
 \index{edgeLengths@{edgeLengths}!C2M2.NeuronalDynamics.UGX.NeuronCell@{C2M2.NeuronalDynamics.UGX.NeuronCell}}
 \doxysubsubsection{\texorpdfstring{edgeLengths}{edgeLengths}}
 {\footnotesize\ttfamily List$<$double$>$ C2\+M2.\+Neuronal\+Dynamics.\+UGX.\+Neuron\+Cell.\+edge\+Lengths = new List$<$double$>$()}
+
+
+
+this is a list of all the edgelengths, there is a built in routine that computes the edge length 
 
 \mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_cell_aa0ade66db78a91961b5a228bfa668144}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_cell_aa0ade66db78a91961b5a228bfa668144}} 
 \index{C2M2.NeuronalDynamics.UGX.NeuronCell@{C2M2.NeuronalDynamics.UGX.NeuronCell}!edges@{edges}}
@@ -157,31 +196,29 @@ static string \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_n
 \doxysubsubsection{\texorpdfstring{edges}{edges}}
 {\footnotesize\ttfamily List$<$Tuple$<$int, int$>$ $>$ C2\+M2.\+Neuronal\+Dynamics.\+UGX.\+Neuron\+Cell.\+edges = new List$<$Tuple$<$int, int$>$$>$()}
 
+
+
+this is the edge list, the first integer is the from index and the second index is the to index 
+
 \mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_cell_ae742e1a074bc05437c45385924565105}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_cell_ae742e1a074bc05437c45385924565105}} 
 \index{C2M2.NeuronalDynamics.UGX.NeuronCell@{C2M2.NeuronalDynamics.UGX.NeuronCell}!nodeData@{nodeData}}
 \index{nodeData@{nodeData}!C2M2.NeuronalDynamics.UGX.NeuronCell@{C2M2.NeuronalDynamics.UGX.NeuronCell}}
 \doxysubsubsection{\texorpdfstring{nodeData}{nodeData}}
 {\footnotesize\ttfamily List$<$\mbox{\hyperlink{struct_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_cell_1_1_node_data}{Node\+Data}}$>$ C2\+M2.\+Neuronal\+Dynamics.\+UGX.\+Neuron\+Cell.\+node\+Data = new List$<$\mbox{\hyperlink{struct_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_cell_1_1_node_data}{Node\+Data}}$>$()}
 
-\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_cell_a53c292436d1bfc7190e17c3a05bb2617}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_cell_a53c292436d1bfc7190e17c3a05bb2617}} 
-\index{C2M2.NeuronalDynamics.UGX.NeuronCell@{C2M2.NeuronalDynamics.UGX.NeuronCell}!nodeFormatString@{nodeFormatString}}
-\index{nodeFormatString@{nodeFormatString}!C2M2.NeuronalDynamics.UGX.NeuronCell@{C2M2.NeuronalDynamics.UGX.NeuronCell}}
-\doxysubsubsection{\texorpdfstring{nodeFormatString}{nodeFormatString}}
-{\footnotesize\ttfamily string C2\+M2.\+Neuronal\+Dynamics.\+UGX.\+Neuron\+Cell.\+node\+Format\+String\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
 
-{\bfseries Initial value\+:}
-\begin{DoxyCode}{0}
-\DoxyCodeLine{=}
-\DoxyCodeLine{            \textcolor{stringliteral}{"{}ID = \{0\}\(\backslash\)n"{}} +}
-\DoxyCodeLine{            \textcolor{stringliteral}{"{}Coordinates =  (\{1\}, \{2\}, \{3\})\(\backslash\)n"{}} +}
-\DoxyCodeLine{            \textcolor{stringliteral}{"{}\{4\}"{}}}
 
-\end{DoxyCode}
+This is the list of nodes and each node is information attached to it 
+
 \mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_cell_a67566dcc691909971a82a357574257a2}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_cell_a67566dcc691909971a82a357574257a2}} 
 \index{C2M2.NeuronalDynamics.UGX.NeuronCell@{C2M2.NeuronalDynamics.UGX.NeuronCell}!somaID@{somaID}}
 \index{somaID@{somaID}!C2M2.NeuronalDynamics.UGX.NeuronCell@{C2M2.NeuronalDynamics.UGX.NeuronCell}}
 \doxysubsubsection{\texorpdfstring{somaID}{somaID}}
 {\footnotesize\ttfamily List$<$int$>$ C2\+M2.\+Neuronal\+Dynamics.\+UGX.\+Neuron\+Cell.\+soma\+ID = new List$<$int$>$()}
+
+
+
+this is the soma index, this is good know, it is a list because in possible cases a soma maybe a segment of points, not a singular point 
 
 \mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_cell_affcc860de06dd55bff1a11ece180fb99}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_cell_affcc860de06dd55bff1a11ece180fb99}} 
 \index{C2M2.NeuronalDynamics.UGX.NeuronCell@{C2M2.NeuronalDynamics.UGX.NeuronCell}!vertCount@{vertCount}}
@@ -191,6 +228,10 @@ static string \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_n
 
 
 
+this is the vertiex count, the number of vertices that the 1d graph geometry has 
+
+
+
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-C\+:/\+Users/jaros/\+Desktop/tempvr/virtual-\/reality/\+Assets/\+Scripts/\+C2\+M2/\+Neuronal\+Dynamics/\+UGX/\mbox{\hyperlink{_neuron_cell_8cs}{Neuron\+Cell.\+cs}}\end{DoxyCompactItemize}
+C\+:/\+Users/\+Jacob Wells/\+Desktop/\+C2\+M2/\+Neuro\+VISOR/\+Assets/\+Scripts/\+C2\+M2/\+Neuronal\+Dynamics/\+UGX/\mbox{\hyperlink{_neuron_cell_8cs}{Neuron\+Cell.\+cs}}\end{DoxyCompactItemize}

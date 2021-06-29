@@ -1,0 +1,127 @@
+\hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_n_d_graph_manager}{}\doxysection{C2\+M2.\+Neuronal\+Dynamics.\+Interaction.\+UI.\+NDGraph\+Manager Class Reference}
+\label{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_n_d_graph_manager}\index{C2M2.NeuronalDynamics.Interaction.UI.NDGraphManager@{C2M2.NeuronalDynamics.Interaction.UI.NDGraphManager}}
+
+
+Inherits Mono\+Behaviour.
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_n_d_graph_manager_aea74aa49230752468645a290f9612617}{Instantiate\+Graph}} (Raycast\+Hit hit)
+\begin{DoxyCompactList}\small\item\em Looks for NDSimulation instance and adds neuron\+Clamp object if possible \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_n_d_graph_manager_a0d3ce639566014186498788b528225d1}{Attach\+To\+Simulation}} (\mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_n_d_line_graph}{NDLine\+Graph}} graph, \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation}{NDSimulation}} simulation, Raycast\+Hit hit)
+\begin{DoxyCompactList}\small\item\em Attempt to latch a graph onto a given simulation \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation}{NDSimulation}} \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_n_d_graph_manager_a25289f435dcb127673d1d366d2ce8dcc}{sim}} = null
+\item 
+List$<$ \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_n_d_line_graph}{NDLine\+Graph}} $>$ \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_n_d_graph_manager_a63b0f2e9be39987d76f84b3fe0842e83}{graphs}} = new List$<$\mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_n_d_line_graph}{NDLine\+Graph}}$>$()
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+Game\+Object \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_n_d_graph_manager_a155745c47198b6f43cddcf48ad873d5f}{graph\+Prefab}} = null\hspace{0.3cm}{\ttfamily  \mbox{[}get, private set\mbox{]}}
+\item 
+\mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_raycast_press_events}{Raycast\+Press\+Events}} \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_n_d_graph_manager_a4dfad97876feee1da852bb23214b9670}{hit\+Event}} = null\hspace{0.3cm}{\ttfamily  \mbox{[}get, private set\mbox{]}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_n_d_graph_manager_a0294ac6ed9c330c4c45cb343c8a1dbb6}{Awake}} ()
+\item 
+bool \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_n_d_graph_manager_a1d56d0d9c0e3dd7823bdba3cae98758d}{Vert\+Is\+Available}} (int clamp\+Index, \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation}{NDSimulation}} simulation)
+\begin{DoxyCompactList}\small\item\em \begin{DoxyReturn}{Returns}
+True if the 1D index is available, otherwise returns false
+\end{DoxyReturn}
+\end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_n_d_graph_manager_ac25d8f9a08f436dfb2026fdc88950dbf}{On\+Destroy}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_n_d_graph_manager_a0d3ce639566014186498788b528225d1}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_n_d_graph_manager_a0d3ce639566014186498788b528225d1}} 
+\index{C2M2.NeuronalDynamics.Interaction.UI.NDGraphManager@{C2M2.NeuronalDynamics.Interaction.UI.NDGraphManager}!AttachToSimulation@{AttachToSimulation}}
+\index{AttachToSimulation@{AttachToSimulation}!C2M2.NeuronalDynamics.Interaction.UI.NDGraphManager@{C2M2.NeuronalDynamics.Interaction.UI.NDGraphManager}}
+\doxysubsubsection{\texorpdfstring{AttachToSimulation()}{AttachToSimulation()}}
+{\footnotesize\ttfamily void C2\+M2.\+Neuronal\+Dynamics.\+Interaction.\+UI.\+NDGraph\+Manager.\+Attach\+To\+Simulation (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_n_d_line_graph}{NDLine\+Graph}}}]{graph,  }\item[{\mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation}{NDSimulation}}}]{simulation,  }\item[{Raycast\+Hit}]{hit }\end{DoxyParamCaption})}
+
+
+
+Attempt to latch a graph onto a given simulation 
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_n_d_graph_manager_a0294ac6ed9c330c4c45cb343c8a1dbb6}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_n_d_graph_manager_a0294ac6ed9c330c4c45cb343c8a1dbb6}} 
+\index{C2M2.NeuronalDynamics.Interaction.UI.NDGraphManager@{C2M2.NeuronalDynamics.Interaction.UI.NDGraphManager}!Awake@{Awake}}
+\index{Awake@{Awake}!C2M2.NeuronalDynamics.Interaction.UI.NDGraphManager@{C2M2.NeuronalDynamics.Interaction.UI.NDGraphManager}}
+\doxysubsubsection{\texorpdfstring{Awake()}{Awake()}}
+{\footnotesize\ttfamily void C2\+M2.\+Neuronal\+Dynamics.\+Interaction.\+UI.\+NDGraph\+Manager.\+Awake (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_n_d_graph_manager_aea74aa49230752468645a290f9612617}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_n_d_graph_manager_aea74aa49230752468645a290f9612617}} 
+\index{C2M2.NeuronalDynamics.Interaction.UI.NDGraphManager@{C2M2.NeuronalDynamics.Interaction.UI.NDGraphManager}!InstantiateGraph@{InstantiateGraph}}
+\index{InstantiateGraph@{InstantiateGraph}!C2M2.NeuronalDynamics.Interaction.UI.NDGraphManager@{C2M2.NeuronalDynamics.Interaction.UI.NDGraphManager}}
+\doxysubsubsection{\texorpdfstring{InstantiateGraph()}{InstantiateGraph()}}
+{\footnotesize\ttfamily void C2\+M2.\+Neuronal\+Dynamics.\+Interaction.\+UI.\+NDGraph\+Manager.\+Instantiate\+Graph (\begin{DoxyParamCaption}\item[{Raycast\+Hit}]{hit }\end{DoxyParamCaption})}
+
+
+
+Looks for NDSimulation instance and adds neuron\+Clamp object if possible 
+
+
+\begin{DoxyParams}{Parameters}
+{\em hit} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_n_d_graph_manager_ac25d8f9a08f436dfb2026fdc88950dbf}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_n_d_graph_manager_ac25d8f9a08f436dfb2026fdc88950dbf}} 
+\index{C2M2.NeuronalDynamics.Interaction.UI.NDGraphManager@{C2M2.NeuronalDynamics.Interaction.UI.NDGraphManager}!OnDestroy@{OnDestroy}}
+\index{OnDestroy@{OnDestroy}!C2M2.NeuronalDynamics.Interaction.UI.NDGraphManager@{C2M2.NeuronalDynamics.Interaction.UI.NDGraphManager}}
+\doxysubsubsection{\texorpdfstring{OnDestroy()}{OnDestroy()}}
+{\footnotesize\ttfamily void C2\+M2.\+Neuronal\+Dynamics.\+Interaction.\+UI.\+NDGraph\+Manager.\+On\+Destroy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_n_d_graph_manager_a1d56d0d9c0e3dd7823bdba3cae98758d}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_n_d_graph_manager_a1d56d0d9c0e3dd7823bdba3cae98758d}} 
+\index{C2M2.NeuronalDynamics.Interaction.UI.NDGraphManager@{C2M2.NeuronalDynamics.Interaction.UI.NDGraphManager}!VertIsAvailable@{VertIsAvailable}}
+\index{VertIsAvailable@{VertIsAvailable}!C2M2.NeuronalDynamics.Interaction.UI.NDGraphManager@{C2M2.NeuronalDynamics.Interaction.UI.NDGraphManager}}
+\doxysubsubsection{\texorpdfstring{VertIsAvailable()}{VertIsAvailable()}}
+{\footnotesize\ttfamily bool C2\+M2.\+Neuronal\+Dynamics.\+Interaction.\+UI.\+NDGraph\+Manager.\+Vert\+Is\+Available (\begin{DoxyParamCaption}\item[{int}]{clamp\+Index,  }\item[{\mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation}{NDSimulation}}}]{simulation }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\begin{DoxyReturn}{Returns}
+True if the 1D index is available, otherwise returns false
+\end{DoxyReturn}
+
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_n_d_graph_manager_a63b0f2e9be39987d76f84b3fe0842e83}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_n_d_graph_manager_a63b0f2e9be39987d76f84b3fe0842e83}} 
+\index{C2M2.NeuronalDynamics.Interaction.UI.NDGraphManager@{C2M2.NeuronalDynamics.Interaction.UI.NDGraphManager}!graphs@{graphs}}
+\index{graphs@{graphs}!C2M2.NeuronalDynamics.Interaction.UI.NDGraphManager@{C2M2.NeuronalDynamics.Interaction.UI.NDGraphManager}}
+\doxysubsubsection{\texorpdfstring{graphs}{graphs}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_n_d_line_graph}{NDLine\+Graph}}$>$ C2\+M2.\+Neuronal\+Dynamics.\+Interaction.\+UI.\+NDGraph\+Manager.\+graphs = new List$<$\mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_n_d_line_graph}{NDLine\+Graph}}$>$()}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_n_d_graph_manager_a25289f435dcb127673d1d366d2ce8dcc}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_n_d_graph_manager_a25289f435dcb127673d1d366d2ce8dcc}} 
+\index{C2M2.NeuronalDynamics.Interaction.UI.NDGraphManager@{C2M2.NeuronalDynamics.Interaction.UI.NDGraphManager}!sim@{sim}}
+\index{sim@{sim}!C2M2.NeuronalDynamics.Interaction.UI.NDGraphManager@{C2M2.NeuronalDynamics.Interaction.UI.NDGraphManager}}
+\doxysubsubsection{\texorpdfstring{sim}{sim}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation}{NDSimulation}} C2\+M2.\+Neuronal\+Dynamics.\+Interaction.\+UI.\+NDGraph\+Manager.\+sim = null}
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_n_d_graph_manager_a155745c47198b6f43cddcf48ad873d5f}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_n_d_graph_manager_a155745c47198b6f43cddcf48ad873d5f}} 
+\index{C2M2.NeuronalDynamics.Interaction.UI.NDGraphManager@{C2M2.NeuronalDynamics.Interaction.UI.NDGraphManager}!graphPrefab@{graphPrefab}}
+\index{graphPrefab@{graphPrefab}!C2M2.NeuronalDynamics.Interaction.UI.NDGraphManager@{C2M2.NeuronalDynamics.Interaction.UI.NDGraphManager}}
+\doxysubsubsection{\texorpdfstring{graphPrefab}{graphPrefab}}
+{\footnotesize\ttfamily Game\+Object C2\+M2.\+Neuronal\+Dynamics.\+Interaction.\+UI.\+NDGraph\+Manager.\+graph\+Prefab = null\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [private set]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_n_d_graph_manager_a4dfad97876feee1da852bb23214b9670}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_interaction_1_1_u_i_1_1_n_d_graph_manager_a4dfad97876feee1da852bb23214b9670}} 
+\index{C2M2.NeuronalDynamics.Interaction.UI.NDGraphManager@{C2M2.NeuronalDynamics.Interaction.UI.NDGraphManager}!hitEvent@{hitEvent}}
+\index{hitEvent@{hitEvent}!C2M2.NeuronalDynamics.Interaction.UI.NDGraphManager@{C2M2.NeuronalDynamics.Interaction.UI.NDGraphManager}}
+\doxysubsubsection{\texorpdfstring{hitEvent}{hitEvent}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_raycast_press_events}{Raycast\+Press\+Events}} C2\+M2.\+Neuronal\+Dynamics.\+Interaction.\+UI.\+NDGraph\+Manager.\+hit\+Event = null\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [private set]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Jacob Wells/\+Desktop/\+C2\+M2/\+Neuro\+VISOR/\+Assets/\+Scripts/\+C2\+M2/\+Neuronal\+Dynamics/\+Interaction/\+UI/\mbox{\hyperlink{_n_d_graph_manager_8cs}{NDGraph\+Manager.\+cs}}\end{DoxyCompactItemize}

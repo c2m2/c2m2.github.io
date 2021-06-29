@@ -7,22 +7,8 @@ Draw a series of disjointed lines given a list of edges using the native Line\+R
 
 
 
-Inheritance diagram for C2\+M2.\+Utils.\+Debug\+Utils.\+Lines\+Renderer\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=259pt]{d2/d5a/class_c2_m2_1_1_utils_1_1_debug_utils_1_1_lines_renderer__inherit__graph}
-\end{center}
-\end{figure}
+Inherits Mono\+Behaviour.
 
-
-Collaboration diagram for C2\+M2.\+Utils.\+Debug\+Utils.\+Lines\+Renderer\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=259pt]{d3/dba/class_c2_m2_1_1_utils_1_1_debug_utils_1_1_lines_renderer__coll__graph}
-\end{center}
-\end{figure}
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
@@ -40,11 +26,9 @@ Color \mbox{\hyperlink{class_c2_m2_1_1_utils_1_1_debug_utils_1_1_lines_renderer_
 \item 
 Game\+Object \mbox{\hyperlink{class_c2_m2_1_1_utils_1_1_debug_utils_1_1_lines_renderer_a174937e11b315c0458df7b405872e1bb}{Initialize\+Renderers}} (List$<$ \mbox{\hyperlink{struct_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_vertex}{Vertex}} $>$ verts, Vector3\mbox{[}$\,$\mbox{]} vert\+Pos, float line\+Width)
 \item 
-Game\+Object \mbox{\hyperlink{class_c2_m2_1_1_utils_1_1_debug_utils_1_1_lines_renderer_a0255dd023b5b80688bd7f508e4b37aed}{Initialize\+Renderers}} (List$<$ \mbox{\hyperlink{struct_c2_m2_1_1_interaction_1_1_adjacency_1_1_edge}{Edge}} $>$ edges, Vector3\mbox{[}$\,$\mbox{]} vertices, float line\+Width)
-\item 
-Game\+Object \mbox{\hyperlink{class_c2_m2_1_1_utils_1_1_debug_utils_1_1_lines_renderer_ac971d404e1b1520f49974e0c73ef5069}{Instantiate\+Child}} (Transform parent)
-\item 
 IEnumerator \mbox{\hyperlink{class_c2_m2_1_1_utils_1_1_debug_utils_1_1_lines_renderer_a8ce2cd768e45adf63da380c8d7698aba}{Check\+Toggle}} ()
+\item 
+void \mbox{\hyperlink{class_c2_m2_1_1_utils_1_1_debug_utils_1_1_lines_renderer_a2aadc32a6cc8f904f7c80c2d09054748}{On\+Destroy}} ()
 \end{DoxyCompactItemize}
 \doxysubsection*{Private Attributes}
 \begin{DoxyCompactItemize}
@@ -79,23 +63,17 @@ Draw a series of disjointed lines given a list of edges using the native Line\+R
 
 Build line renderers and get parent Game\+Object back 
 
-\mbox{\Hypertarget{class_c2_m2_1_1_utils_1_1_debug_utils_1_1_lines_renderer_a0255dd023b5b80688bd7f508e4b37aed}\label{class_c2_m2_1_1_utils_1_1_debug_utils_1_1_lines_renderer_a0255dd023b5b80688bd7f508e4b37aed}} 
-\index{C2M2.Utils.DebugUtils.LinesRenderer@{C2M2.Utils.DebugUtils.LinesRenderer}!InitializeRenderers@{InitializeRenderers}}
-\index{InitializeRenderers@{InitializeRenderers}!C2M2.Utils.DebugUtils.LinesRenderer@{C2M2.Utils.DebugUtils.LinesRenderer}}
-\doxysubsubsection{\texorpdfstring{InitializeRenderers()}{InitializeRenderers()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily Game\+Object C2\+M2.\+Utils.\+Debug\+Utils.\+Lines\+Renderer.\+Initialize\+Renderers (\begin{DoxyParamCaption}\item[{List$<$ \mbox{\hyperlink{struct_c2_m2_1_1_interaction_1_1_adjacency_1_1_edge}{Edge}} $>$}]{edges,  }\item[{Vector3\mbox{[}$\,$\mbox{]}}]{vertices,  }\item[{float}]{line\+Width }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
-
 \mbox{\Hypertarget{class_c2_m2_1_1_utils_1_1_debug_utils_1_1_lines_renderer_a174937e11b315c0458df7b405872e1bb}\label{class_c2_m2_1_1_utils_1_1_debug_utils_1_1_lines_renderer_a174937e11b315c0458df7b405872e1bb}} 
 \index{C2M2.Utils.DebugUtils.LinesRenderer@{C2M2.Utils.DebugUtils.LinesRenderer}!InitializeRenderers@{InitializeRenderers}}
 \index{InitializeRenderers@{InitializeRenderers}!C2M2.Utils.DebugUtils.LinesRenderer@{C2M2.Utils.DebugUtils.LinesRenderer}}
-\doxysubsubsection{\texorpdfstring{InitializeRenderers()}{InitializeRenderers()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+\doxysubsubsection{\texorpdfstring{InitializeRenderers()}{InitializeRenderers()}}
 {\footnotesize\ttfamily Game\+Object C2\+M2.\+Utils.\+Debug\+Utils.\+Lines\+Renderer.\+Initialize\+Renderers (\begin{DoxyParamCaption}\item[{List$<$ \mbox{\hyperlink{struct_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_vertex}{Vertex}} $>$}]{verts,  }\item[{Vector3\mbox{[}$\,$\mbox{]}}]{vert\+Pos,  }\item[{float}]{line\+Width }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
 
-\mbox{\Hypertarget{class_c2_m2_1_1_utils_1_1_debug_utils_1_1_lines_renderer_ac971d404e1b1520f49974e0c73ef5069}\label{class_c2_m2_1_1_utils_1_1_debug_utils_1_1_lines_renderer_ac971d404e1b1520f49974e0c73ef5069}} 
-\index{C2M2.Utils.DebugUtils.LinesRenderer@{C2M2.Utils.DebugUtils.LinesRenderer}!InstantiateChild@{InstantiateChild}}
-\index{InstantiateChild@{InstantiateChild}!C2M2.Utils.DebugUtils.LinesRenderer@{C2M2.Utils.DebugUtils.LinesRenderer}}
-\doxysubsubsection{\texorpdfstring{InstantiateChild()}{InstantiateChild()}}
-{\footnotesize\ttfamily Game\+Object C2\+M2.\+Utils.\+Debug\+Utils.\+Lines\+Renderer.\+Instantiate\+Child (\begin{DoxyParamCaption}\item[{Transform}]{parent }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+\mbox{\Hypertarget{class_c2_m2_1_1_utils_1_1_debug_utils_1_1_lines_renderer_a2aadc32a6cc8f904f7c80c2d09054748}\label{class_c2_m2_1_1_utils_1_1_debug_utils_1_1_lines_renderer_a2aadc32a6cc8f904f7c80c2d09054748}} 
+\index{C2M2.Utils.DebugUtils.LinesRenderer@{C2M2.Utils.DebugUtils.LinesRenderer}!OnDestroy@{OnDestroy}}
+\index{OnDestroy@{OnDestroy}!C2M2.Utils.DebugUtils.LinesRenderer@{C2M2.Utils.DebugUtils.LinesRenderer}}
+\doxysubsubsection{\texorpdfstring{OnDestroy()}{OnDestroy()}}
+{\footnotesize\ttfamily void C2\+M2.\+Utils.\+Debug\+Utils.\+Lines\+Renderer.\+On\+Destroy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
 
 \mbox{\Hypertarget{class_c2_m2_1_1_utils_1_1_debug_utils_1_1_lines_renderer_a89f9a8b9a5784f81a2afd34189909953}\label{class_c2_m2_1_1_utils_1_1_debug_utils_1_1_lines_renderer_a89f9a8b9a5784f81a2afd34189909953}} 
 \index{C2M2.Utils.DebugUtils.LinesRenderer@{C2M2.Utils.DebugUtils.LinesRenderer}!Toggle@{Toggle}}
@@ -134,4 +112,4 @@ Build line renderers and get parent Game\+Object back
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-C\+:/\+Users/jaros/\+Desktop/tempvr/virtual-\/reality/\+Assets/\+Scripts/\+C2\+M2/\+Utils/\+Debug\+Utils/\mbox{\hyperlink{_lines_renderer_8cs}{Lines\+Renderer.\+cs}}\end{DoxyCompactItemize}
+C\+:/\+Users/\+Jacob Wells/\+Desktop/\+C2\+M2/\+Neuro\+VISOR/\+Assets/\+Scripts/\+C2\+M2/\+Utils/\+Behvaiours/\mbox{\hyperlink{_lines_renderer_8cs}{Lines\+Renderer.\+cs}}\end{DoxyCompactItemize}

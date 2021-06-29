@@ -1,0 +1,267 @@
+\hypertarget{class_c2_m2_1_1_visualization_1_1_graph_cursor}{}\doxysection{C2\+M2.\+Visualization.\+Graph\+Cursor Class Reference}
+\label{class_c2_m2_1_1_visualization_1_1_graph_cursor}\index{C2M2.Visualization.GraphCursor@{C2M2.Visualization.GraphCursor}}
+
+
+Inherits Mono\+Behaviour.
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_c2_m2_1_1_visualization_1_1_graph_cursor_a30274802241085f1d2d054df366b22e8}{Align\+Cursor}} (Raycast\+Hit hit)
+\item 
+void \mbox{\hyperlink{class_c2_m2_1_1_visualization_1_1_graph_cursor_a0df5da9143f7c5770cec430b60b3c291}{Close\+Cursor}} (Raycast\+Hit hit)
+\item 
+void \mbox{\hyperlink{class_c2_m2_1_1_visualization_1_1_graph_cursor_a15a6d69efdca9eacc61e562cf6f404b1}{Toggle\+Cursor}} (bool enabled)
+\item 
+void \mbox{\hyperlink{class_c2_m2_1_1_visualization_1_1_graph_cursor_af63c7ef97e9e14d302868004252aa612}{Toggle\+Cursor\+Lock}} ()
+\item 
+string \mbox{\hyperlink{class_c2_m2_1_1_visualization_1_1_graph_cursor_a350cccbeedd0d48965e7bcb2fc11b484}{Update\+Format\+String}} (int x\+Prec, int y\+Prec)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c2_m2_1_1_visualization_1_1_line_grapher}{Line\+Grapher}} \mbox{\hyperlink{class_c2_m2_1_1_visualization_1_1_graph_cursor_a16add026a64130c7cef668a2726eadba}{line\+Graph}} = null
+\item 
+float \mbox{\hyperlink{class_c2_m2_1_1_visualization_1_1_graph_cursor_abf6f6c9ab7f9ac70d074b06202939e1e}{cursor\+Width}} = 15
+\item 
+Line\+Renderer \mbox{\hyperlink{class_c2_m2_1_1_visualization_1_1_graph_cursor_a9a38470c91c4f65a3d0e0dfcc4d44a0f}{x\+Cursor}} = null
+\item 
+Line\+Renderer \mbox{\hyperlink{class_c2_m2_1_1_visualization_1_1_graph_cursor_a249be7cdcd74c06c851245402fedb927}{y\+Cursor}} = null
+\item 
+Image \mbox{\hyperlink{class_c2_m2_1_1_visualization_1_1_graph_cursor_a9446aab87b04cb5bacb186e523a7ba5e}{cursor}} = null
+\item 
+Text\+Mesh\+Pro\+UGUI \mbox{\hyperlink{class_c2_m2_1_1_visualization_1_1_graph_cursor_ad1d1526ed2e1b7383cf5e05d608350d7}{cursor\+Label}} = null
+\item 
+bool \mbox{\hyperlink{class_c2_m2_1_1_visualization_1_1_graph_cursor_a077b1b13d7dea2d98f808bf2208fc8da}{show\+Label}} = true
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+float \mbox{\hyperlink{class_c2_m2_1_1_visualization_1_1_graph_cursor_a6acef6686e03ca37b7b555d0896a3e1b}{XMin}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+float \mbox{\hyperlink{class_c2_m2_1_1_visualization_1_1_graph_cursor_a7803bc6bd96f8d0b8bc71e60f4394cbc}{XMax}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+float \mbox{\hyperlink{class_c2_m2_1_1_visualization_1_1_graph_cursor_abe740accb203dd503ec76059c8219634}{YMin}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+float \mbox{\hyperlink{class_c2_m2_1_1_visualization_1_1_graph_cursor_a5b3081b0d9d3ce3979bcb35762a860b9}{YMax}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+float \mbox{\hyperlink{class_c2_m2_1_1_visualization_1_1_graph_cursor_a0a12e799c765af8cc50cd6d7f86678b1}{Graph\+Width}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+float \mbox{\hyperlink{class_c2_m2_1_1_visualization_1_1_graph_cursor_ae8df8c47f17f98417d553daf7c17d279}{Num\+Samples}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+float \mbox{\hyperlink{class_c2_m2_1_1_visualization_1_1_graph_cursor_a270d6c3b9508e2c6566ea97337f3c476}{Xorigin}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+float \mbox{\hyperlink{class_c2_m2_1_1_visualization_1_1_graph_cursor_abb060fb91da886f8ddc52914325fe144}{Yorigin}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+Vector3 \mbox{\hyperlink{class_c2_m2_1_1_visualization_1_1_graph_cursor_a34e16a20e472e579e46a4311e208f6ab}{Pos\+Adj}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_c2_m2_1_1_visualization_1_1_graph_cursor_a98b9318a4deb919346ee99cba2be1e96}{Awake}} ()
+\item 
+void \mbox{\hyperlink{class_c2_m2_1_1_visualization_1_1_graph_cursor_ad246a78ec3670c4e82da0eced43a5a2a}{Update\+Cursor}} (Raycast\+Hit hit)
+\item 
+IEnumerator \mbox{\hyperlink{class_c2_m2_1_1_visualization_1_1_graph_cursor_ae9ac4bdbacb74f37af3265314e1de21b}{Locked\+State}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Rect\+Transform \mbox{\hyperlink{class_c2_m2_1_1_visualization_1_1_graph_cursor_aa6cd3ca9decc8205c69b467144b1517e}{label\+Background}} = null
+\item 
+string \mbox{\hyperlink{class_c2_m2_1_1_visualization_1_1_graph_cursor_adc08c2e38d5d06854c814029b4b90273}{format\+String}} = \char`\"{}(\{0\}, \{1\})\char`\"{}
+\item 
+Raycast\+Hit \mbox{\hyperlink{class_c2_m2_1_1_visualization_1_1_graph_cursor_a2ca503f79eaab8ea43c8754cf3b88476}{last\+Hit}}
+\item 
+bool \mbox{\hyperlink{class_c2_m2_1_1_visualization_1_1_graph_cursor_a80ef3e161489d00e71848f9cdeb26215}{locked}} = false
+\item 
+Coroutine \mbox{\hyperlink{class_c2_m2_1_1_visualization_1_1_graph_cursor_ae82a668cd66ec60cf4aed03958c84a71}{lock\+Routine}} = null
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_c2_m2_1_1_visualization_1_1_graph_cursor_a30274802241085f1d2d054df366b22e8}\label{class_c2_m2_1_1_visualization_1_1_graph_cursor_a30274802241085f1d2d054df366b22e8}} 
+\index{C2M2.Visualization.GraphCursor@{C2M2.Visualization.GraphCursor}!AlignCursor@{AlignCursor}}
+\index{AlignCursor@{AlignCursor}!C2M2.Visualization.GraphCursor@{C2M2.Visualization.GraphCursor}}
+\doxysubsubsection{\texorpdfstring{AlignCursor()}{AlignCursor()}}
+{\footnotesize\ttfamily void C2\+M2.\+Visualization.\+Graph\+Cursor.\+Align\+Cursor (\begin{DoxyParamCaption}\item[{Raycast\+Hit}]{hit }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_visualization_1_1_graph_cursor_a98b9318a4deb919346ee99cba2be1e96}\label{class_c2_m2_1_1_visualization_1_1_graph_cursor_a98b9318a4deb919346ee99cba2be1e96}} 
+\index{C2M2.Visualization.GraphCursor@{C2M2.Visualization.GraphCursor}!Awake@{Awake}}
+\index{Awake@{Awake}!C2M2.Visualization.GraphCursor@{C2M2.Visualization.GraphCursor}}
+\doxysubsubsection{\texorpdfstring{Awake()}{Awake()}}
+{\footnotesize\ttfamily void C2\+M2.\+Visualization.\+Graph\+Cursor.\+Awake (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_visualization_1_1_graph_cursor_a0df5da9143f7c5770cec430b60b3c291}\label{class_c2_m2_1_1_visualization_1_1_graph_cursor_a0df5da9143f7c5770cec430b60b3c291}} 
+\index{C2M2.Visualization.GraphCursor@{C2M2.Visualization.GraphCursor}!CloseCursor@{CloseCursor}}
+\index{CloseCursor@{CloseCursor}!C2M2.Visualization.GraphCursor@{C2M2.Visualization.GraphCursor}}
+\doxysubsubsection{\texorpdfstring{CloseCursor()}{CloseCursor()}}
+{\footnotesize\ttfamily void C2\+M2.\+Visualization.\+Graph\+Cursor.\+Close\+Cursor (\begin{DoxyParamCaption}\item[{Raycast\+Hit}]{hit }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_visualization_1_1_graph_cursor_ae9ac4bdbacb74f37af3265314e1de21b}\label{class_c2_m2_1_1_visualization_1_1_graph_cursor_ae9ac4bdbacb74f37af3265314e1de21b}} 
+\index{C2M2.Visualization.GraphCursor@{C2M2.Visualization.GraphCursor}!LockedState@{LockedState}}
+\index{LockedState@{LockedState}!C2M2.Visualization.GraphCursor@{C2M2.Visualization.GraphCursor}}
+\doxysubsubsection{\texorpdfstring{LockedState()}{LockedState()}}
+{\footnotesize\ttfamily IEnumerator C2\+M2.\+Visualization.\+Graph\+Cursor.\+Locked\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_visualization_1_1_graph_cursor_a15a6d69efdca9eacc61e562cf6f404b1}\label{class_c2_m2_1_1_visualization_1_1_graph_cursor_a15a6d69efdca9eacc61e562cf6f404b1}} 
+\index{C2M2.Visualization.GraphCursor@{C2M2.Visualization.GraphCursor}!ToggleCursor@{ToggleCursor}}
+\index{ToggleCursor@{ToggleCursor}!C2M2.Visualization.GraphCursor@{C2M2.Visualization.GraphCursor}}
+\doxysubsubsection{\texorpdfstring{ToggleCursor()}{ToggleCursor()}}
+{\footnotesize\ttfamily void C2\+M2.\+Visualization.\+Graph\+Cursor.\+Toggle\+Cursor (\begin{DoxyParamCaption}\item[{bool}]{enabled }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_visualization_1_1_graph_cursor_af63c7ef97e9e14d302868004252aa612}\label{class_c2_m2_1_1_visualization_1_1_graph_cursor_af63c7ef97e9e14d302868004252aa612}} 
+\index{C2M2.Visualization.GraphCursor@{C2M2.Visualization.GraphCursor}!ToggleCursorLock@{ToggleCursorLock}}
+\index{ToggleCursorLock@{ToggleCursorLock}!C2M2.Visualization.GraphCursor@{C2M2.Visualization.GraphCursor}}
+\doxysubsubsection{\texorpdfstring{ToggleCursorLock()}{ToggleCursorLock()}}
+{\footnotesize\ttfamily void C2\+M2.\+Visualization.\+Graph\+Cursor.\+Toggle\+Cursor\+Lock (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_visualization_1_1_graph_cursor_ad246a78ec3670c4e82da0eced43a5a2a}\label{class_c2_m2_1_1_visualization_1_1_graph_cursor_ad246a78ec3670c4e82da0eced43a5a2a}} 
+\index{C2M2.Visualization.GraphCursor@{C2M2.Visualization.GraphCursor}!UpdateCursor@{UpdateCursor}}
+\index{UpdateCursor@{UpdateCursor}!C2M2.Visualization.GraphCursor@{C2M2.Visualization.GraphCursor}}
+\doxysubsubsection{\texorpdfstring{UpdateCursor()}{UpdateCursor()}}
+{\footnotesize\ttfamily void C2\+M2.\+Visualization.\+Graph\+Cursor.\+Update\+Cursor (\begin{DoxyParamCaption}\item[{Raycast\+Hit}]{hit }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_visualization_1_1_graph_cursor_a350cccbeedd0d48965e7bcb2fc11b484}\label{class_c2_m2_1_1_visualization_1_1_graph_cursor_a350cccbeedd0d48965e7bcb2fc11b484}} 
+\index{C2M2.Visualization.GraphCursor@{C2M2.Visualization.GraphCursor}!UpdateFormatString@{UpdateFormatString}}
+\index{UpdateFormatString@{UpdateFormatString}!C2M2.Visualization.GraphCursor@{C2M2.Visualization.GraphCursor}}
+\doxysubsubsection{\texorpdfstring{UpdateFormatString()}{UpdateFormatString()}}
+{\footnotesize\ttfamily string C2\+M2.\+Visualization.\+Graph\+Cursor.\+Update\+Format\+String (\begin{DoxyParamCaption}\item[{int}]{x\+Prec,  }\item[{int}]{y\+Prec }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_c2_m2_1_1_visualization_1_1_graph_cursor_a9446aab87b04cb5bacb186e523a7ba5e}\label{class_c2_m2_1_1_visualization_1_1_graph_cursor_a9446aab87b04cb5bacb186e523a7ba5e}} 
+\index{C2M2.Visualization.GraphCursor@{C2M2.Visualization.GraphCursor}!cursor@{cursor}}
+\index{cursor@{cursor}!C2M2.Visualization.GraphCursor@{C2M2.Visualization.GraphCursor}}
+\doxysubsubsection{\texorpdfstring{cursor}{cursor}}
+{\footnotesize\ttfamily Image C2\+M2.\+Visualization.\+Graph\+Cursor.\+cursor = null}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_visualization_1_1_graph_cursor_ad1d1526ed2e1b7383cf5e05d608350d7}\label{class_c2_m2_1_1_visualization_1_1_graph_cursor_ad1d1526ed2e1b7383cf5e05d608350d7}} 
+\index{C2M2.Visualization.GraphCursor@{C2M2.Visualization.GraphCursor}!cursorLabel@{cursorLabel}}
+\index{cursorLabel@{cursorLabel}!C2M2.Visualization.GraphCursor@{C2M2.Visualization.GraphCursor}}
+\doxysubsubsection{\texorpdfstring{cursorLabel}{cursorLabel}}
+{\footnotesize\ttfamily Text\+Mesh\+Pro\+UGUI C2\+M2.\+Visualization.\+Graph\+Cursor.\+cursor\+Label = null}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_visualization_1_1_graph_cursor_abf6f6c9ab7f9ac70d074b06202939e1e}\label{class_c2_m2_1_1_visualization_1_1_graph_cursor_abf6f6c9ab7f9ac70d074b06202939e1e}} 
+\index{C2M2.Visualization.GraphCursor@{C2M2.Visualization.GraphCursor}!cursorWidth@{cursorWidth}}
+\index{cursorWidth@{cursorWidth}!C2M2.Visualization.GraphCursor@{C2M2.Visualization.GraphCursor}}
+\doxysubsubsection{\texorpdfstring{cursorWidth}{cursorWidth}}
+{\footnotesize\ttfamily float C2\+M2.\+Visualization.\+Graph\+Cursor.\+cursor\+Width = 15}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_visualization_1_1_graph_cursor_adc08c2e38d5d06854c814029b4b90273}\label{class_c2_m2_1_1_visualization_1_1_graph_cursor_adc08c2e38d5d06854c814029b4b90273}} 
+\index{C2M2.Visualization.GraphCursor@{C2M2.Visualization.GraphCursor}!formatString@{formatString}}
+\index{formatString@{formatString}!C2M2.Visualization.GraphCursor@{C2M2.Visualization.GraphCursor}}
+\doxysubsubsection{\texorpdfstring{formatString}{formatString}}
+{\footnotesize\ttfamily string C2\+M2.\+Visualization.\+Graph\+Cursor.\+format\+String = \char`\"{}(\{0\}, \{1\})\char`\"{}\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_visualization_1_1_graph_cursor_aa6cd3ca9decc8205c69b467144b1517e}\label{class_c2_m2_1_1_visualization_1_1_graph_cursor_aa6cd3ca9decc8205c69b467144b1517e}} 
+\index{C2M2.Visualization.GraphCursor@{C2M2.Visualization.GraphCursor}!labelBackground@{labelBackground}}
+\index{labelBackground@{labelBackground}!C2M2.Visualization.GraphCursor@{C2M2.Visualization.GraphCursor}}
+\doxysubsubsection{\texorpdfstring{labelBackground}{labelBackground}}
+{\footnotesize\ttfamily Rect\+Transform C2\+M2.\+Visualization.\+Graph\+Cursor.\+label\+Background = null\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_visualization_1_1_graph_cursor_a2ca503f79eaab8ea43c8754cf3b88476}\label{class_c2_m2_1_1_visualization_1_1_graph_cursor_a2ca503f79eaab8ea43c8754cf3b88476}} 
+\index{C2M2.Visualization.GraphCursor@{C2M2.Visualization.GraphCursor}!lastHit@{lastHit}}
+\index{lastHit@{lastHit}!C2M2.Visualization.GraphCursor@{C2M2.Visualization.GraphCursor}}
+\doxysubsubsection{\texorpdfstring{lastHit}{lastHit}}
+{\footnotesize\ttfamily Raycast\+Hit C2\+M2.\+Visualization.\+Graph\+Cursor.\+last\+Hit\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_visualization_1_1_graph_cursor_a16add026a64130c7cef668a2726eadba}\label{class_c2_m2_1_1_visualization_1_1_graph_cursor_a16add026a64130c7cef668a2726eadba}} 
+\index{C2M2.Visualization.GraphCursor@{C2M2.Visualization.GraphCursor}!lineGraph@{lineGraph}}
+\index{lineGraph@{lineGraph}!C2M2.Visualization.GraphCursor@{C2M2.Visualization.GraphCursor}}
+\doxysubsubsection{\texorpdfstring{lineGraph}{lineGraph}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c2_m2_1_1_visualization_1_1_line_grapher}{Line\+Grapher}} C2\+M2.\+Visualization.\+Graph\+Cursor.\+line\+Graph = null}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_visualization_1_1_graph_cursor_a80ef3e161489d00e71848f9cdeb26215}\label{class_c2_m2_1_1_visualization_1_1_graph_cursor_a80ef3e161489d00e71848f9cdeb26215}} 
+\index{C2M2.Visualization.GraphCursor@{C2M2.Visualization.GraphCursor}!locked@{locked}}
+\index{locked@{locked}!C2M2.Visualization.GraphCursor@{C2M2.Visualization.GraphCursor}}
+\doxysubsubsection{\texorpdfstring{locked}{locked}}
+{\footnotesize\ttfamily bool C2\+M2.\+Visualization.\+Graph\+Cursor.\+locked = false\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_visualization_1_1_graph_cursor_ae82a668cd66ec60cf4aed03958c84a71}\label{class_c2_m2_1_1_visualization_1_1_graph_cursor_ae82a668cd66ec60cf4aed03958c84a71}} 
+\index{C2M2.Visualization.GraphCursor@{C2M2.Visualization.GraphCursor}!lockRoutine@{lockRoutine}}
+\index{lockRoutine@{lockRoutine}!C2M2.Visualization.GraphCursor@{C2M2.Visualization.GraphCursor}}
+\doxysubsubsection{\texorpdfstring{lockRoutine}{lockRoutine}}
+{\footnotesize\ttfamily Coroutine C2\+M2.\+Visualization.\+Graph\+Cursor.\+lock\+Routine = null\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_visualization_1_1_graph_cursor_a077b1b13d7dea2d98f808bf2208fc8da}\label{class_c2_m2_1_1_visualization_1_1_graph_cursor_a077b1b13d7dea2d98f808bf2208fc8da}} 
+\index{C2M2.Visualization.GraphCursor@{C2M2.Visualization.GraphCursor}!showLabel@{showLabel}}
+\index{showLabel@{showLabel}!C2M2.Visualization.GraphCursor@{C2M2.Visualization.GraphCursor}}
+\doxysubsubsection{\texorpdfstring{showLabel}{showLabel}}
+{\footnotesize\ttfamily bool C2\+M2.\+Visualization.\+Graph\+Cursor.\+show\+Label = true}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_visualization_1_1_graph_cursor_a9a38470c91c4f65a3d0e0dfcc4d44a0f}\label{class_c2_m2_1_1_visualization_1_1_graph_cursor_a9a38470c91c4f65a3d0e0dfcc4d44a0f}} 
+\index{C2M2.Visualization.GraphCursor@{C2M2.Visualization.GraphCursor}!xCursor@{xCursor}}
+\index{xCursor@{xCursor}!C2M2.Visualization.GraphCursor@{C2M2.Visualization.GraphCursor}}
+\doxysubsubsection{\texorpdfstring{xCursor}{xCursor}}
+{\footnotesize\ttfamily Line\+Renderer C2\+M2.\+Visualization.\+Graph\+Cursor.\+x\+Cursor = null}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_visualization_1_1_graph_cursor_a249be7cdcd74c06c851245402fedb927}\label{class_c2_m2_1_1_visualization_1_1_graph_cursor_a249be7cdcd74c06c851245402fedb927}} 
+\index{C2M2.Visualization.GraphCursor@{C2M2.Visualization.GraphCursor}!yCursor@{yCursor}}
+\index{yCursor@{yCursor}!C2M2.Visualization.GraphCursor@{C2M2.Visualization.GraphCursor}}
+\doxysubsubsection{\texorpdfstring{yCursor}{yCursor}}
+{\footnotesize\ttfamily Line\+Renderer C2\+M2.\+Visualization.\+Graph\+Cursor.\+y\+Cursor = null}
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{class_c2_m2_1_1_visualization_1_1_graph_cursor_a0a12e799c765af8cc50cd6d7f86678b1}\label{class_c2_m2_1_1_visualization_1_1_graph_cursor_a0a12e799c765af8cc50cd6d7f86678b1}} 
+\index{C2M2.Visualization.GraphCursor@{C2M2.Visualization.GraphCursor}!GraphWidth@{GraphWidth}}
+\index{GraphWidth@{GraphWidth}!C2M2.Visualization.GraphCursor@{C2M2.Visualization.GraphCursor}}
+\doxysubsubsection{\texorpdfstring{GraphWidth}{GraphWidth}}
+{\footnotesize\ttfamily float C2\+M2.\+Visualization.\+Graph\+Cursor.\+Graph\+Width\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_visualization_1_1_graph_cursor_ae8df8c47f17f98417d553daf7c17d279}\label{class_c2_m2_1_1_visualization_1_1_graph_cursor_ae8df8c47f17f98417d553daf7c17d279}} 
+\index{C2M2.Visualization.GraphCursor@{C2M2.Visualization.GraphCursor}!NumSamples@{NumSamples}}
+\index{NumSamples@{NumSamples}!C2M2.Visualization.GraphCursor@{C2M2.Visualization.GraphCursor}}
+\doxysubsubsection{\texorpdfstring{NumSamples}{NumSamples}}
+{\footnotesize\ttfamily float C2\+M2.\+Visualization.\+Graph\+Cursor.\+Num\+Samples\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_visualization_1_1_graph_cursor_a34e16a20e472e579e46a4311e208f6ab}\label{class_c2_m2_1_1_visualization_1_1_graph_cursor_a34e16a20e472e579e46a4311e208f6ab}} 
+\index{C2M2.Visualization.GraphCursor@{C2M2.Visualization.GraphCursor}!PosAdj@{PosAdj}}
+\index{PosAdj@{PosAdj}!C2M2.Visualization.GraphCursor@{C2M2.Visualization.GraphCursor}}
+\doxysubsubsection{\texorpdfstring{PosAdj}{PosAdj}}
+{\footnotesize\ttfamily Vector3 C2\+M2.\+Visualization.\+Graph\+Cursor.\+Pos\+Adj\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_visualization_1_1_graph_cursor_a7803bc6bd96f8d0b8bc71e60f4394cbc}\label{class_c2_m2_1_1_visualization_1_1_graph_cursor_a7803bc6bd96f8d0b8bc71e60f4394cbc}} 
+\index{C2M2.Visualization.GraphCursor@{C2M2.Visualization.GraphCursor}!XMax@{XMax}}
+\index{XMax@{XMax}!C2M2.Visualization.GraphCursor@{C2M2.Visualization.GraphCursor}}
+\doxysubsubsection{\texorpdfstring{XMax}{XMax}}
+{\footnotesize\ttfamily float C2\+M2.\+Visualization.\+Graph\+Cursor.\+XMax\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_visualization_1_1_graph_cursor_a6acef6686e03ca37b7b555d0896a3e1b}\label{class_c2_m2_1_1_visualization_1_1_graph_cursor_a6acef6686e03ca37b7b555d0896a3e1b}} 
+\index{C2M2.Visualization.GraphCursor@{C2M2.Visualization.GraphCursor}!XMin@{XMin}}
+\index{XMin@{XMin}!C2M2.Visualization.GraphCursor@{C2M2.Visualization.GraphCursor}}
+\doxysubsubsection{\texorpdfstring{XMin}{XMin}}
+{\footnotesize\ttfamily float C2\+M2.\+Visualization.\+Graph\+Cursor.\+XMin\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_visualization_1_1_graph_cursor_a270d6c3b9508e2c6566ea97337f3c476}\label{class_c2_m2_1_1_visualization_1_1_graph_cursor_a270d6c3b9508e2c6566ea97337f3c476}} 
+\index{C2M2.Visualization.GraphCursor@{C2M2.Visualization.GraphCursor}!Xorigin@{Xorigin}}
+\index{Xorigin@{Xorigin}!C2M2.Visualization.GraphCursor@{C2M2.Visualization.GraphCursor}}
+\doxysubsubsection{\texorpdfstring{Xorigin}{Xorigin}}
+{\footnotesize\ttfamily float C2\+M2.\+Visualization.\+Graph\+Cursor.\+Xorigin\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_visualization_1_1_graph_cursor_a5b3081b0d9d3ce3979bcb35762a860b9}\label{class_c2_m2_1_1_visualization_1_1_graph_cursor_a5b3081b0d9d3ce3979bcb35762a860b9}} 
+\index{C2M2.Visualization.GraphCursor@{C2M2.Visualization.GraphCursor}!YMax@{YMax}}
+\index{YMax@{YMax}!C2M2.Visualization.GraphCursor@{C2M2.Visualization.GraphCursor}}
+\doxysubsubsection{\texorpdfstring{YMax}{YMax}}
+{\footnotesize\ttfamily float C2\+M2.\+Visualization.\+Graph\+Cursor.\+YMax\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_visualization_1_1_graph_cursor_abe740accb203dd503ec76059c8219634}\label{class_c2_m2_1_1_visualization_1_1_graph_cursor_abe740accb203dd503ec76059c8219634}} 
+\index{C2M2.Visualization.GraphCursor@{C2M2.Visualization.GraphCursor}!YMin@{YMin}}
+\index{YMin@{YMin}!C2M2.Visualization.GraphCursor@{C2M2.Visualization.GraphCursor}}
+\doxysubsubsection{\texorpdfstring{YMin}{YMin}}
+{\footnotesize\ttfamily float C2\+M2.\+Visualization.\+Graph\+Cursor.\+YMin\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_visualization_1_1_graph_cursor_abb060fb91da886f8ddc52914325fe144}\label{class_c2_m2_1_1_visualization_1_1_graph_cursor_abb060fb91da886f8ddc52914325fe144}} 
+\index{C2M2.Visualization.GraphCursor@{C2M2.Visualization.GraphCursor}!Yorigin@{Yorigin}}
+\index{Yorigin@{Yorigin}!C2M2.Visualization.GraphCursor@{C2M2.Visualization.GraphCursor}}
+\doxysubsubsection{\texorpdfstring{Yorigin}{Yorigin}}
+{\footnotesize\ttfamily float C2\+M2.\+Visualization.\+Graph\+Cursor.\+Yorigin\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Jacob Wells/\+Desktop/\+C2\+M2/\+Neuro\+VISOR/\+Assets/\+Scripts/\+C2\+M2/\+Visualization/\mbox{\hyperlink{_graph_cursor_8cs}{Graph\+Cursor.\+cs}}\end{DoxyCompactItemize}

@@ -2,33 +2,19 @@
 \label{class_c2_m2_1_1_utils_1_1_mesh_render_child}\index{C2M2.Utils.MeshRenderChild@{C2M2.Utils.MeshRenderChild}}
 
 
-If a given Mesh\+Renderer is disabled, this gameobject will disable.  
+Only allow this Mesh\+Renderer (and collider) to be enabled if a parent\textquotesingle{}s is  
 
 
 
 
-Inheritance diagram for C2\+M2.\+Utils.\+Mesh\+Render\+Child\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=253pt]{d0/d67/class_c2_m2_1_1_utils_1_1_mesh_render_child__inherit__graph}
-\end{center}
-\end{figure}
+Inherits Mono\+Behaviour.
 
-
-Collaboration diagram for C2\+M2.\+Utils.\+Mesh\+Render\+Child\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=253pt]{db/d10/class_c2_m2_1_1_utils_1_1_mesh_render_child__coll__graph}
-\end{center}
-\end{figure}
 \doxysubsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
 Mesh\+Renderer \mbox{\hyperlink{class_c2_m2_1_1_utils_1_1_mesh_render_child_a3fb96aede7963848a5389055d8db5116}{parent}} = null
 \item 
-Game\+Object\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_c2_m2_1_1_utils_1_1_mesh_render_child_a286313290525d855983e7e5d65852b10}{children}} = new Game\+Object\mbox{[}0\mbox{]}
+Collider \mbox{\hyperlink{class_c2_m2_1_1_utils_1_1_mesh_render_child_a89e93927641dadd70120d31215f6ac53}{optional\+Collider}} = null
 \end{DoxyCompactItemize}
 \doxysubsection*{Private Member Functions}
 \begin{DoxyCompactItemize}
@@ -36,15 +22,18 @@ Game\+Object\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_c2_m2_1_1_utils_1_1_mesh
 void \mbox{\hyperlink{class_c2_m2_1_1_utils_1_1_mesh_render_child_ab05e5bdcdddacdea8e79ba4a1abbbdd1}{Awake}} ()
 \item 
 void \mbox{\hyperlink{class_c2_m2_1_1_utils_1_1_mesh_render_child_a63b9d8a2d454ef36f93e31a60f1b252e}{Update}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
 \item 
-void \mbox{\hyperlink{class_c2_m2_1_1_utils_1_1_mesh_render_child_adf857abf1a7206e661a73f539da82218}{Toggle}} (bool toggle\+To)
+Mesh\+Renderer \mbox{\hyperlink{class_c2_m2_1_1_utils_1_1_mesh_render_child_a0fb90f46603c649d0e91786a6d2a2944}{mr}} = null
 \end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
-If a given Mesh\+Renderer is disabled, this gameobject will disable. 
+Only allow this Mesh\+Renderer (and collider) to be enabled if a parent\textquotesingle{}s is 
 
-This is useful in the situation where we have the static pointing finger for raycasting mode, and we have a feature that relies on being in raycasting mode. This way, when the static finger model is disabled, this object and its scripts/colliders will also disable 
+It is useful to allow this gameobject to remain enabled while not allowing it to be interactable. 
 
 \doxysubsection{Member Function Documentation}
 \mbox{\Hypertarget{class_c2_m2_1_1_utils_1_1_mesh_render_child_ab05e5bdcdddacdea8e79ba4a1abbbdd1}\label{class_c2_m2_1_1_utils_1_1_mesh_render_child_ab05e5bdcdddacdea8e79ba4a1abbbdd1}} 
@@ -52,12 +41,6 @@ This is useful in the situation where we have the static pointing finger for ray
 \index{Awake@{Awake}!C2M2.Utils.MeshRenderChild@{C2M2.Utils.MeshRenderChild}}
 \doxysubsubsection{\texorpdfstring{Awake()}{Awake()}}
 {\footnotesize\ttfamily void C2\+M2.\+Utils.\+Mesh\+Render\+Child.\+Awake (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
-
-\mbox{\Hypertarget{class_c2_m2_1_1_utils_1_1_mesh_render_child_adf857abf1a7206e661a73f539da82218}\label{class_c2_m2_1_1_utils_1_1_mesh_render_child_adf857abf1a7206e661a73f539da82218}} 
-\index{C2M2.Utils.MeshRenderChild@{C2M2.Utils.MeshRenderChild}!Toggle@{Toggle}}
-\index{Toggle@{Toggle}!C2M2.Utils.MeshRenderChild@{C2M2.Utils.MeshRenderChild}}
-\doxysubsubsection{\texorpdfstring{Toggle()}{Toggle()}}
-{\footnotesize\ttfamily void C2\+M2.\+Utils.\+Mesh\+Render\+Child.\+Toggle (\begin{DoxyParamCaption}\item[{bool}]{toggle\+To }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
 
 \mbox{\Hypertarget{class_c2_m2_1_1_utils_1_1_mesh_render_child_a63b9d8a2d454ef36f93e31a60f1b252e}\label{class_c2_m2_1_1_utils_1_1_mesh_render_child_a63b9d8a2d454ef36f93e31a60f1b252e}} 
 \index{C2M2.Utils.MeshRenderChild@{C2M2.Utils.MeshRenderChild}!Update@{Update}}
@@ -68,11 +51,17 @@ This is useful in the situation where we have the static pointing finger for ray
 
 
 \doxysubsection{Member Data Documentation}
-\mbox{\Hypertarget{class_c2_m2_1_1_utils_1_1_mesh_render_child_a286313290525d855983e7e5d65852b10}\label{class_c2_m2_1_1_utils_1_1_mesh_render_child_a286313290525d855983e7e5d65852b10}} 
-\index{C2M2.Utils.MeshRenderChild@{C2M2.Utils.MeshRenderChild}!children@{children}}
-\index{children@{children}!C2M2.Utils.MeshRenderChild@{C2M2.Utils.MeshRenderChild}}
-\doxysubsubsection{\texorpdfstring{children}{children}}
-{\footnotesize\ttfamily Game\+Object \mbox{[}$\,$\mbox{]} C2\+M2.\+Utils.\+Mesh\+Render\+Child.\+children = new Game\+Object\mbox{[}0\mbox{]}}
+\mbox{\Hypertarget{class_c2_m2_1_1_utils_1_1_mesh_render_child_a0fb90f46603c649d0e91786a6d2a2944}\label{class_c2_m2_1_1_utils_1_1_mesh_render_child_a0fb90f46603c649d0e91786a6d2a2944}} 
+\index{C2M2.Utils.MeshRenderChild@{C2M2.Utils.MeshRenderChild}!mr@{mr}}
+\index{mr@{mr}!C2M2.Utils.MeshRenderChild@{C2M2.Utils.MeshRenderChild}}
+\doxysubsubsection{\texorpdfstring{mr}{mr}}
+{\footnotesize\ttfamily Mesh\+Renderer C2\+M2.\+Utils.\+Mesh\+Render\+Child.\+mr = null\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_utils_1_1_mesh_render_child_a89e93927641dadd70120d31215f6ac53}\label{class_c2_m2_1_1_utils_1_1_mesh_render_child_a89e93927641dadd70120d31215f6ac53}} 
+\index{C2M2.Utils.MeshRenderChild@{C2M2.Utils.MeshRenderChild}!optionalCollider@{optionalCollider}}
+\index{optionalCollider@{optionalCollider}!C2M2.Utils.MeshRenderChild@{C2M2.Utils.MeshRenderChild}}
+\doxysubsubsection{\texorpdfstring{optionalCollider}{optionalCollider}}
+{\footnotesize\ttfamily Collider C2\+M2.\+Utils.\+Mesh\+Render\+Child.\+optional\+Collider = null}
 
 \mbox{\Hypertarget{class_c2_m2_1_1_utils_1_1_mesh_render_child_a3fb96aede7963848a5389055d8db5116}\label{class_c2_m2_1_1_utils_1_1_mesh_render_child_a3fb96aede7963848a5389055d8db5116}} 
 \index{C2M2.Utils.MeshRenderChild@{C2M2.Utils.MeshRenderChild}!parent@{parent}}
@@ -84,4 +73,4 @@ This is useful in the situation where we have the static pointing finger for ray
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-C\+:/\+Users/jaros/\+Desktop/tempvr/virtual-\/reality/\+Assets/\+Scripts/\+C2\+M2/\mbox{\hyperlink{_mesh_render_child_8cs}{Mesh\+Render\+Child.\+cs}}\end{DoxyCompactItemize}
+C\+:/\+Users/\+Jacob Wells/\+Desktop/\+C2\+M2/\+Neuro\+VISOR/\+Assets/\+Scripts/\+C2\+M2/\+Utils/\+Behvaiours/\mbox{\hyperlink{_mesh_render_child_8cs}{Mesh\+Render\+Child.\+cs}}\end{DoxyCompactItemize}

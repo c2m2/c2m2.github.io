@@ -1,0 +1,214 @@
+\hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron}{}\doxysection{C2\+M2.\+Neuronal\+Dynamics.\+UGX.\+Neuron Class Reference}
+\label{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron}\index{C2M2.NeuronalDynamics.UGX.Neuron@{C2M2.NeuronalDynamics.UGX.Neuron}}
+
+
+This is the \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron}{Neuron}} Class, it allows the user to initialize the different quantities of the geometry and gives some ease of access to the the components of the geometry  
+
+
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_1_1_edge}{Edge}}
+\begin{DoxyCompactList}\small\item\em The \mbox{\hyperlink{struct_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_1_1_edge}{Edge}} Structure represents an edge in the 1D graph geometry. It contains properties for the from node, to node, and length. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{struct_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_1_1_neighbor}{Neighbor}}
+\item 
+class \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_1_1_node_data}{Node\+Data}}
+\begin{DoxyCompactList}\small\item\em This is the \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_1_1_node_data}{Node\+Data}} structure, it will group information together corresponding to each node in the 1D graph geometry the information stored is analogous to what would be found in the 1D .swc file of the neuron geometry \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_a015e186f2c2dbcc55c75a57c8d04c35b}{Neuron}} (\mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_grid}{Grid}} grid)
+\begin{DoxyCompactList}\small\item\em This will initialize the \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron}{Neuron}}, the grid parameter is read in the grid parameter contains the geometric information from the .vrn files \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_a010ce1b03962e2978b241315cdcb4974}{Write\+SWC}} (string out\+File)
+\begin{DoxyCompactList}\small\item\em This small routine writes the geometry file that is used to an output file in .swc format \end{DoxyCompactList}\item 
+override string \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_accbc2ddbb55bffbdc30c8818cf559a73}{To\+String}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+List$<$ \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_1_1_node_data}{Node\+Data}} $>$ \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_ad42e519dcbc1c6222ca05c3f718b33d0}{nodes}} = new List$<$\mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_1_1_node_data}{Node\+Data}}$>$()
+\begin{DoxyCompactList}\small\item\em This is the list of nodes that the 1d graph geometry has \end{DoxyCompactList}\item 
+List$<$ \mbox{\hyperlink{struct_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_1_1_edge}{Edge}} $>$ \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_a8ff26b7ddfa4e6b4ddea0e8720f3b1f4}{edges}} = new List$<$\mbox{\hyperlink{struct_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_1_1_edge}{Edge}}$>$()
+\begin{DoxyCompactList}\small\item\em this is the list of edges in the 1d graph geometry \end{DoxyCompactList}\item 
+List$<$ \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_1_1_node_data}{Node\+Data}} $>$ \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_ac0fee8c383b94b92fccaf7d5610ca29e}{boundary\+Nodes}} = new List$<$\mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_1_1_node_data}{Node\+Data}}$>$()
+\begin{DoxyCompactList}\small\item\em this is the a list of the nodes that are the ends of the dendrites, they only have one neighbor \end{DoxyCompactList}\item 
+List$<$ int $>$ \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_a726b9f2b2ed26197a958388906bfcb2f}{soma\+IDs}} = new List$<$int$>$()
+\begin{DoxyCompactList}\small\item\em this is the soma index, this is good know, it is a list because in possible cases a soma maybe a segment of points, not a singular point \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_a3d67d0274fcb418c85d6061f46785765}{Max\+Radius}} = new double()
+\item 
+double \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_a60413b9d3447fe96a4a33957e9b13599}{Target\+Edge\+Length}} = new double()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+double \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_a7cc91c335d1c889467d1d62d92cd7188}{Get\+Edge\+Length}} (\mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_1_1_node_data}{Node\+Data}} start\+Node, \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_1_1_node_data}{Node\+Data}} end\+Node)
+\begin{DoxyCompactList}\small\item\em this calculates the euclidean distance between node Start and node End \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static string \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_a9a7eefe2d3b0e2b62a7a3d8ccb9dfebd}{cell\+Format\+String}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This is the \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron}{Neuron}} Class, it allows the user to initialize the different quantities of the geometry and gives some ease of access to the the components of the geometry 
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_a015e186f2c2dbcc55c75a57c8d04c35b}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_a015e186f2c2dbcc55c75a57c8d04c35b}} 
+\index{C2M2.NeuronalDynamics.UGX.Neuron@{C2M2.NeuronalDynamics.UGX.Neuron}!Neuron@{Neuron}}
+\index{Neuron@{Neuron}!C2M2.NeuronalDynamics.UGX.Neuron@{C2M2.NeuronalDynamics.UGX.Neuron}}
+\doxysubsubsection{\texorpdfstring{Neuron()}{Neuron()}}
+{\footnotesize\ttfamily C2\+M2.\+Neuronal\+Dynamics.\+UGX.\+Neuron.\+Neuron (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_grid}{Grid}}}]{grid }\end{DoxyParamCaption})}
+
+
+
+This will initialize the \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron}{Neuron}}, the grid parameter is read in the grid parameter contains the geometric information from the .vrn files 
+
+
+\begin{DoxyParams}{Parameters}
+{\em grid} & \\
+\hline
+\end{DoxyParams}
+this gets the radius by dividing the diameter by 2
+
+this the node id -\/-\/$>$ these may not be consecutive
+
+these are the actual coordinates of the geometry -\/-\/$>$ NOTE\+: these are in \mbox{[}um\mbox{]} already! Currently uses Unity Mesh vertices. Should probably be changed to directly use geometry/\+Grid vertices?
+
+this loop collects the edges
+
+makes an adjacency list with edge weights
+
+if a node has only one neighbor then it is a boundary node
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_a7cc91c335d1c889467d1d62d92cd7188}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_a7cc91c335d1c889467d1d62d92cd7188}} 
+\index{C2M2.NeuronalDynamics.UGX.Neuron@{C2M2.NeuronalDynamics.UGX.Neuron}!GetEdgeLength@{GetEdgeLength}}
+\index{GetEdgeLength@{GetEdgeLength}!C2M2.NeuronalDynamics.UGX.Neuron@{C2M2.NeuronalDynamics.UGX.Neuron}}
+\doxysubsubsection{\texorpdfstring{GetEdgeLength()}{GetEdgeLength()}}
+{\footnotesize\ttfamily double C2\+M2.\+Neuronal\+Dynamics.\+UGX.\+Neuron.\+Get\+Edge\+Length (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_1_1_node_data}{Node\+Data}}}]{start\+Node,  }\item[{\mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_1_1_node_data}{Node\+Data}}}]{end\+Node }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+this calculates the euclidean distance between node Start and node End 
+
+
+\begin{DoxyParams}{Parameters}
+{\em start\+Node} & \\
+\hline
+\end{DoxyParams}
+start node 
+\begin{DoxyParams}{Parameters}
+{\em end\+Node} & \\
+\hline
+\end{DoxyParams}
+end node \begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+get the coordinates of the start node
+
+get the coordinates of the end node
+
+calculate the square of the differences
+
+return the square root\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_accbc2ddbb55bffbdc30c8818cf559a73}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_accbc2ddbb55bffbdc30c8818cf559a73}} 
+\index{C2M2.NeuronalDynamics.UGX.Neuron@{C2M2.NeuronalDynamics.UGX.Neuron}!ToString@{ToString}}
+\index{ToString@{ToString}!C2M2.NeuronalDynamics.UGX.Neuron@{C2M2.NeuronalDynamics.UGX.Neuron}}
+\doxysubsubsection{\texorpdfstring{ToString()}{ToString()}}
+{\footnotesize\ttfamily override string C2\+M2.\+Neuronal\+Dynamics.\+UGX.\+Neuron.\+To\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_a010ce1b03962e2978b241315cdcb4974}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_a010ce1b03962e2978b241315cdcb4974}} 
+\index{C2M2.NeuronalDynamics.UGX.Neuron@{C2M2.NeuronalDynamics.UGX.Neuron}!WriteSWC@{WriteSWC}}
+\index{WriteSWC@{WriteSWC}!C2M2.NeuronalDynamics.UGX.Neuron@{C2M2.NeuronalDynamics.UGX.Neuron}}
+\doxysubsubsection{\texorpdfstring{WriteSWC()}{WriteSWC()}}
+{\footnotesize\ttfamily void C2\+M2.\+Neuronal\+Dynamics.\+UGX.\+Neuron.\+Write\+SWC (\begin{DoxyParamCaption}\item[{string}]{out\+File }\end{DoxyParamCaption})}
+
+
+
+This small routine writes the geometry file that is used to an output file in .swc format 
+
+
+\begin{DoxyParams}{Parameters}
+{\em out\+File} & \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_ac0fee8c383b94b92fccaf7d5610ca29e}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_ac0fee8c383b94b92fccaf7d5610ca29e}} 
+\index{C2M2.NeuronalDynamics.UGX.Neuron@{C2M2.NeuronalDynamics.UGX.Neuron}!boundaryNodes@{boundaryNodes}}
+\index{boundaryNodes@{boundaryNodes}!C2M2.NeuronalDynamics.UGX.Neuron@{C2M2.NeuronalDynamics.UGX.Neuron}}
+\doxysubsubsection{\texorpdfstring{boundaryNodes}{boundaryNodes}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_1_1_node_data}{Node\+Data}}$>$ C2\+M2.\+Neuronal\+Dynamics.\+UGX.\+Neuron.\+boundary\+Nodes = new List$<$\mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_1_1_node_data}{Node\+Data}}$>$()}
+
+
+
+this is the a list of the nodes that are the ends of the dendrites, they only have one neighbor 
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_a9a7eefe2d3b0e2b62a7a3d8ccb9dfebd}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_a9a7eefe2d3b0e2b62a7a3d8ccb9dfebd}} 
+\index{C2M2.NeuronalDynamics.UGX.Neuron@{C2M2.NeuronalDynamics.UGX.Neuron}!cellFormatString@{cellFormatString}}
+\index{cellFormatString@{cellFormatString}!C2M2.NeuronalDynamics.UGX.Neuron@{C2M2.NeuronalDynamics.UGX.Neuron}}
+\doxysubsubsection{\texorpdfstring{cellFormatString}{cellFormatString}}
+{\footnotesize\ttfamily string C2\+M2.\+Neuronal\+Dynamics.\+UGX.\+Neuron.\+cell\+Format\+String\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= }
+\DoxyCodeLine{            \textcolor{stringliteral}{"{}1D Vert count = \{0\}\(\backslash\)n"{}} +}
+\DoxyCodeLine{            \textcolor{stringliteral}{"{}Edge count = \{1\}\(\backslash\)n"{}} +}
+\DoxyCodeLine{            \textcolor{stringliteral}{"{}Max edge length = \{2\}\(\backslash\)n"{}} +}
+\DoxyCodeLine{            \textcolor{stringliteral}{"{}Avg edge length = \{3\}\(\backslash\)n"{}} +}
+\DoxyCodeLine{            \textcolor{stringliteral}{"{}Min edge length = \{4\}\(\backslash\)n"{}} + }
+\DoxyCodeLine{            \textcolor{stringliteral}{"{}Soma ID(s) = (\{5\})\(\backslash\)n"{}} + }
+\DoxyCodeLine{            \textcolor{stringliteral}{"{}Boundary ID(s) = (\{6\})"{}}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_a8ff26b7ddfa4e6b4ddea0e8720f3b1f4}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_a8ff26b7ddfa4e6b4ddea0e8720f3b1f4}} 
+\index{C2M2.NeuronalDynamics.UGX.Neuron@{C2M2.NeuronalDynamics.UGX.Neuron}!edges@{edges}}
+\index{edges@{edges}!C2M2.NeuronalDynamics.UGX.Neuron@{C2M2.NeuronalDynamics.UGX.Neuron}}
+\doxysubsubsection{\texorpdfstring{edges}{edges}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{struct_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_1_1_edge}{Edge}}$>$ C2\+M2.\+Neuronal\+Dynamics.\+UGX.\+Neuron.\+edges = new List$<$\mbox{\hyperlink{struct_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_1_1_edge}{Edge}}$>$()}
+
+
+
+this is the list of edges in the 1d graph geometry 
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_a3d67d0274fcb418c85d6061f46785765}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_a3d67d0274fcb418c85d6061f46785765}} 
+\index{C2M2.NeuronalDynamics.UGX.Neuron@{C2M2.NeuronalDynamics.UGX.Neuron}!MaxRadius@{MaxRadius}}
+\index{MaxRadius@{MaxRadius}!C2M2.NeuronalDynamics.UGX.Neuron@{C2M2.NeuronalDynamics.UGX.Neuron}}
+\doxysubsubsection{\texorpdfstring{MaxRadius}{MaxRadius}}
+{\footnotesize\ttfamily double C2\+M2.\+Neuronal\+Dynamics.\+UGX.\+Neuron.\+Max\+Radius = new double()}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_ad42e519dcbc1c6222ca05c3f718b33d0}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_ad42e519dcbc1c6222ca05c3f718b33d0}} 
+\index{C2M2.NeuronalDynamics.UGX.Neuron@{C2M2.NeuronalDynamics.UGX.Neuron}!nodes@{nodes}}
+\index{nodes@{nodes}!C2M2.NeuronalDynamics.UGX.Neuron@{C2M2.NeuronalDynamics.UGX.Neuron}}
+\doxysubsubsection{\texorpdfstring{nodes}{nodes}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_1_1_node_data}{Node\+Data}}$>$ C2\+M2.\+Neuronal\+Dynamics.\+UGX.\+Neuron.\+nodes = new List$<$\mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_1_1_node_data}{Node\+Data}}$>$()}
+
+
+
+This is the list of nodes that the 1d graph geometry has 
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_a726b9f2b2ed26197a958388906bfcb2f}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_a726b9f2b2ed26197a958388906bfcb2f}} 
+\index{C2M2.NeuronalDynamics.UGX.Neuron@{C2M2.NeuronalDynamics.UGX.Neuron}!somaIDs@{somaIDs}}
+\index{somaIDs@{somaIDs}!C2M2.NeuronalDynamics.UGX.Neuron@{C2M2.NeuronalDynamics.UGX.Neuron}}
+\doxysubsubsection{\texorpdfstring{somaIDs}{somaIDs}}
+{\footnotesize\ttfamily List$<$int$>$ C2\+M2.\+Neuronal\+Dynamics.\+UGX.\+Neuron.\+soma\+IDs = new List$<$int$>$()}
+
+
+
+this is the soma index, this is good know, it is a list because in possible cases a soma maybe a segment of points, not a singular point 
+
+\mbox{\Hypertarget{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_a60413b9d3447fe96a4a33957e9b13599}\label{class_c2_m2_1_1_neuronal_dynamics_1_1_u_g_x_1_1_neuron_a60413b9d3447fe96a4a33957e9b13599}} 
+\index{C2M2.NeuronalDynamics.UGX.Neuron@{C2M2.NeuronalDynamics.UGX.Neuron}!TargetEdgeLength@{TargetEdgeLength}}
+\index{TargetEdgeLength@{TargetEdgeLength}!C2M2.NeuronalDynamics.UGX.Neuron@{C2M2.NeuronalDynamics.UGX.Neuron}}
+\doxysubsubsection{\texorpdfstring{TargetEdgeLength}{TargetEdgeLength}}
+{\footnotesize\ttfamily double C2\+M2.\+Neuronal\+Dynamics.\+UGX.\+Neuron.\+Target\+Edge\+Length = new double()}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Jacob Wells/\+Desktop/\+C2\+M2/\+Neuro\+VISOR/\+Assets/\+Scripts/\+C2\+M2/\+Neuronal\+Dynamics/\+UGX/\mbox{\hyperlink{_neuron_8cs}{Neuron.\+cs}}\end{DoxyCompactItemize}

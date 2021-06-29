@@ -1,7 +1,4 @@
 var searchData=
 [
-  ['hit_3104',['HIT',['../dd/dfe/class_c2_m2_1_1_interaction_1_1_raycast_forward.html#ab13112b55e4a4c8131ccf91ea95179d4a4e5e3542d523b7fb9c61887d5bb7d642',1,'C2M2::Interaction::RaycastForward']]],
-  ['hit_3105',['Hit',['../d5/df9/class_c2_m2_1_1_interaction_1_1_raycast_event_manager.html#a2cbebad862cdd97c9c35988548ea858caebfe5e1791db03c4cd6ab95801e0977d',1,'C2M2::Interaction::RaycastEventManager']]],
-  ['hold_3106',['HOLD',['../dd/dfe/class_c2_m2_1_1_interaction_1_1_raycast_forward.html#ab13112b55e4a4c8131ccf91ea95179d4a0c6d9dfb485b43c6fba87439f9f73ac4',1,'C2M2::Interaction::RaycastForward']]],
-  ['hold_3107',['Hold',['../d5/df9/class_c2_m2_1_1_interaction_1_1_raycast_event_manager.html#a2cbebad862cdd97c9c35988548ea858cabcd8db575b47c838e5d551e3973db4ac',1,'C2M2::Interaction::RaycastEventManager']]]
+  ['localextrema_2658',['LocalExtrema',['../d2/db9/class_c2_m2_1_1_visualization_1_1_color_l_u_t.html#a7f1ce4c5542bb734a47c67ef024035efaf29485967ef2cc628a9e614b8af558ac',1,'C2M2::Visualization::ColorLUT']]]
 ];

@@ -1,15 +1,19 @@
 var searchData=
 [
-  ['ndclampmodeswitch_2ecs_1889',['NDClampModeSwitch.cs',['../d8/db7/_n_d_clamp_mode_switch_8cs.html',1,'']]],
-  ['ndcontrolbutton_2ecs_1890',['NDControlButton.cs',['../de/d76/_n_d_control_button_8cs.html',1,'']]],
-  ['ndsimulation_2ecs_1891',['NDSimulation.cs',['../de/df7/_n_d_simulation_8cs.html',1,'']]],
-  ['ndsimulationeditor_2ecs_1892',['NDSimulationEditor.cs',['../df/d6b/_n_d_simulation_editor_8cs.html',1,'']]],
-  ['neuron1d_2ecs_1893',['Neuron1D.cs',['../d4/dfd/_neuron1_d_8cs.html',1,'']]],
-  ['neuron1dmapfilereader_2ecs_1894',['Neuron1DMapFileReader.cs',['../d6/dc2/_neuron1_d_map_file_reader_8cs.html',1,'']]],
-  ['neuron1dvertmap_2ecs_1895',['Neuron1DVertMap.cs',['../d3/d6a/_neuron1_d_vert_map_8cs.html',1,'']]],
-  ['neuroncell_2ecs_1896',['NeuronCell.cs',['../d4/db4/_neuron_cell_8cs.html',1,'']]],
-  ['neuronclamp_2ecs_1897',['NeuronClamp.cs',['../dd/d23/_neuron_clamp_8cs.html',1,'']]],
-  ['neuronclampinstantiator_2ecs_1898',['NeuronClampInstantiator.cs',['../de/d35/_neuron_clamp_instantiator_8cs.html',1,'']]],
-  ['node_2ecs_1899',['Node.cs',['../db/de0/_node_8cs.html',1,'']]],
-  ['normaltest_2ecs_1900',['NormalTest.cs',['../df/d8e/_normal_test_8cs.html',1,'']]]
+  ['ndextremacontroller_2ecs_1634',['NDExtremaController.cs',['../d8/db7/_n_d_extrema_controller_8cs.html',1,'']]],
+  ['ndfeaturetoggle_2ecs_1635',['NDFeatureToggle.cs',['../dc/dc4/_n_d_feature_toggle_8cs.html',1,'']]],
+  ['ndgraphmanager_2ecs_1636',['NDGraphManager.cs',['../d4/d65/_n_d_graph_manager_8cs.html',1,'']]],
+  ['ndinfodisplay_2ecs_1637',['NDInfoDisplay.cs',['../d8/dd7/_n_d_info_display_8cs.html',1,'']]],
+  ['ndlinegraph_2ecs_1638',['NDLineGraph.cs',['../d1/dcf/_n_d_line_graph_8cs.html',1,'']]],
+  ['ndpausebutton_2ecs_1639',['NDPauseButton.cs',['../dc/d4f/_n_d_pause_button_8cs.html',1,'']]],
+  ['ndrefinementcontrol_2ecs_1640',['NDRefinementControl.cs',['../db/dde/_n_d_refinement_control_8cs.html',1,'']]],
+  ['ndsimulation_2ecs_1641',['NDSimulation.cs',['../de/df7/_n_d_simulation_8cs.html',1,'']]],
+  ['ndsimulationcontroller_2ecs_1642',['NDSimulationController.cs',['../d6/dfc/_n_d_simulation_controller_8cs.html',1,'']]],
+  ['ndsimulationloader_2ecs_1643',['NDSimulationLoader.cs',['../d3/d2f/_n_d_simulation_loader_8cs.html',1,'']]],
+  ['neuron_2ecs_1644',['Neuron.cs',['../db/d24/_neuron_8cs.html',1,'']]],
+  ['neuroncell_2ecs_1645',['NeuronCell.cs',['../d4/db4/_neuron_cell_8cs.html',1,'']]],
+  ['neuroncellpreview_2ecs_1646',['NeuronCellPreview.cs',['../d6/df9/_neuron_cell_preview_8cs.html',1,'']]],
+  ['neuronclamp_2ecs_1647',['NeuronClamp.cs',['../dd/d23/_neuron_clamp_8cs.html',1,'']]],
+  ['neuronclampmanager_2ecs_1648',['NeuronClampManager.cs',['../d5/de8/_neuron_clamp_manager_8cs.html',1,'']]],
+  ['normaltest_2ecs_1649',['NormalTest.cs',['../df/d8e/_normal_test_8cs.html',1,'']]]
 ];

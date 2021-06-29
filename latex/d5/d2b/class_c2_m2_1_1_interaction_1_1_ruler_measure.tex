@@ -1,0 +1,226 @@
+\hypertarget{class_c2_m2_1_1_interaction_1_1_ruler_measure}{}\doxysection{C2\+M2.\+Interaction.\+Ruler\+Measure Class Reference}
+\label{class_c2_m2_1_1_interaction_1_1_ruler_measure}\index{C2M2.Interaction.RulerMeasure@{C2M2.Interaction.RulerMeasure}}
+
+
+Inherits Mono\+Behaviour.
+
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_ruler_measure_1_1_marked_display}{Marked\+Display}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_mesh_simulation}{Mesh\+Simulation}} \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_ruler_measure_a2959dabe48d6b4f7f1c7e16788cb79e9}{sim}} = null
+\item 
+List$<$ Canvas $>$ \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_ruler_measure_a8acc9669936e53a61e74ab95dcd19a4f}{measurement\+Displays}}
+\item 
+Game\+Object \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_ruler_measure_a66850dd5179b51508f6105afc1124874}{top\+Endcap}}
+\item 
+Game\+Object \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_ruler_measure_adbeab1dd97abb6c8e2e2c77180cda048}{bottom\+End\+Cap}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_ruler_measure_a5e8428b973a8aaa79909d0dd1d6bd5a2}{Start}} ()
+\item 
+void \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_ruler_measure_aaf03ed859458f16523c85485316c33bd}{Update}} ()
+\item 
+int \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_ruler_measure_a328e7cfce000df1790f3ed92239da4be}{Get\+Magnitude}} (float number)
+\begin{DoxyCompactList}\small\item\em \begin{DoxyReturn}{Returns}
+Integer of number of zeros of base 10 magnitude of number
+\end{DoxyReturn}
+\end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_ruler_measure_a5ec559139bfdbdccde1e1650610c1be8}{Get\+Unit}} (int magnitude)
+\item 
+void \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_ruler_measure_a08dd80753a48ad0831e74d1c664b50bf}{Create\+Markers}} ()
+\item 
+void \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_ruler_measure_aad2c164d0ecf13babe488a8230c59928}{Update\+Markers}} (float minimum\+Marker\+Number)
+\begin{DoxyCompactList}\small\item\em Updates the locations of the markers on the ruler \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_ruler_measure_abc6865b12597d6cfb64f00d65221211e}{Update\+End\+Caps}} ()
+\begin{DoxyCompactList}\small\item\em Ensures the End\+Caps stay their initial size when the ruler is extended or shrunk \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+readonly List$<$ int $>$ \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_ruler_measure_ac5f3f5e75a60810b76f24a57686322f3}{potential\+Intervals}} = new List$<$int$>$ \{ 1, 2, 5, 10, 20, 50, 100, 200, 500 \}
+\item 
+List$<$ \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_ruler_measure_1_1_marked_display}{Marked\+Display}} $>$ \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_ruler_measure_a278f0b96c8caf6ce2a6dfe7005269a40}{marked\+Displays}} = new List$<$\mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_ruler_measure_1_1_marked_display}{Marked\+Display}}$>$()
+\item 
+readonly int \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_ruler_measure_a33da68350d73e66693e18e69a20db942}{marker\+Count}} = 100
+\item 
+float \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_ruler_measure_a21be502fbaa2e671a1498be3f7a7e042}{initial\+Top\+End\+Cap\+Length}}
+\item 
+float \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_ruler_measure_acb4b71488c4fc2fa42514148cd29d659}{initial\+Bottom\+End\+Cap\+Length}}
+\item 
+float \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_ruler_measure_a494ff46938a6918a3c67d2f3bff44896}{initial\+Ruler\+Length}}
+\item 
+float \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_ruler_measure_ac7ed979ff38c5ea9ee8cfe93627af711}{prev\+Ruler\+Length}} = 0
+\item 
+float \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_ruler_measure_a71fc0a466b0c96e1e31ed7ae28c69838}{scaled\+Ruler\+Length}}
+\item 
+string \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_ruler_measure_a55610bce9b6d2b789d08e54b586590bc}{units}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_ruler_measure_a08dd80753a48ad0831e74d1c664b50bf}\label{class_c2_m2_1_1_interaction_1_1_ruler_measure_a08dd80753a48ad0831e74d1c664b50bf}} 
+\index{C2M2.Interaction.RulerMeasure@{C2M2.Interaction.RulerMeasure}!CreateMarkers@{CreateMarkers}}
+\index{CreateMarkers@{CreateMarkers}!C2M2.Interaction.RulerMeasure@{C2M2.Interaction.RulerMeasure}}
+\doxysubsubsection{\texorpdfstring{CreateMarkers()}{CreateMarkers()}}
+{\footnotesize\ttfamily void C2\+M2.\+Interaction.\+Ruler\+Measure.\+Create\+Markers (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_ruler_measure_a328e7cfce000df1790f3ed92239da4be}\label{class_c2_m2_1_1_interaction_1_1_ruler_measure_a328e7cfce000df1790f3ed92239da4be}} 
+\index{C2M2.Interaction.RulerMeasure@{C2M2.Interaction.RulerMeasure}!GetMagnitude@{GetMagnitude}}
+\index{GetMagnitude@{GetMagnitude}!C2M2.Interaction.RulerMeasure@{C2M2.Interaction.RulerMeasure}}
+\doxysubsubsection{\texorpdfstring{GetMagnitude()}{GetMagnitude()}}
+{\footnotesize\ttfamily int C2\+M2.\+Interaction.\+Ruler\+Measure.\+Get\+Magnitude (\begin{DoxyParamCaption}\item[{float}]{number }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\begin{DoxyReturn}{Returns}
+Integer of number of zeros of base 10 magnitude of number
+\end{DoxyReturn}
+
+
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_ruler_measure_a5ec559139bfdbdccde1e1650610c1be8}\label{class_c2_m2_1_1_interaction_1_1_ruler_measure_a5ec559139bfdbdccde1e1650610c1be8}} 
+\index{C2M2.Interaction.RulerMeasure@{C2M2.Interaction.RulerMeasure}!GetUnit@{GetUnit}}
+\index{GetUnit@{GetUnit}!C2M2.Interaction.RulerMeasure@{C2M2.Interaction.RulerMeasure}}
+\doxysubsubsection{\texorpdfstring{GetUnit()}{GetUnit()}}
+{\footnotesize\ttfamily string C2\+M2.\+Interaction.\+Ruler\+Measure.\+Get\+Unit (\begin{DoxyParamCaption}\item[{int}]{magnitude }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em magnitude} & Integer of number of zeros of base 10 magnitude of number\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+String of the SI unit and prefix
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_ruler_measure_a5e8428b973a8aaa79909d0dd1d6bd5a2}\label{class_c2_m2_1_1_interaction_1_1_ruler_measure_a5e8428b973a8aaa79909d0dd1d6bd5a2}} 
+\index{C2M2.Interaction.RulerMeasure@{C2M2.Interaction.RulerMeasure}!Start@{Start}}
+\index{Start@{Start}!C2M2.Interaction.RulerMeasure@{C2M2.Interaction.RulerMeasure}}
+\doxysubsubsection{\texorpdfstring{Start()}{Start()}}
+{\footnotesize\ttfamily void C2\+M2.\+Interaction.\+Ruler\+Measure.\+Start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_ruler_measure_aaf03ed859458f16523c85485316c33bd}\label{class_c2_m2_1_1_interaction_1_1_ruler_measure_aaf03ed859458f16523c85485316c33bd}} 
+\index{C2M2.Interaction.RulerMeasure@{C2M2.Interaction.RulerMeasure}!Update@{Update}}
+\index{Update@{Update}!C2M2.Interaction.RulerMeasure@{C2M2.Interaction.RulerMeasure}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void C2\+M2.\+Interaction.\+Ruler\+Measure.\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+length change must be greater than 0.\+5\% to update
+
+$<$ minimum spacing between each marker and beginning and end of ruler
+
+$<$ minimum spacing between each marker and beginning and end of ruler in percent of ruler\textquotesingle{}s length\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_ruler_measure_abc6865b12597d6cfb64f00d65221211e}\label{class_c2_m2_1_1_interaction_1_1_ruler_measure_abc6865b12597d6cfb64f00d65221211e}} 
+\index{C2M2.Interaction.RulerMeasure@{C2M2.Interaction.RulerMeasure}!UpdateEndCaps@{UpdateEndCaps}}
+\index{UpdateEndCaps@{UpdateEndCaps}!C2M2.Interaction.RulerMeasure@{C2M2.Interaction.RulerMeasure}}
+\doxysubsubsection{\texorpdfstring{UpdateEndCaps()}{UpdateEndCaps()}}
+{\footnotesize\ttfamily void C2\+M2.\+Interaction.\+Ruler\+Measure.\+Update\+End\+Caps (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Ensures the End\+Caps stay their initial size when the ruler is extended or shrunk 
+
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_ruler_measure_aad2c164d0ecf13babe488a8230c59928}\label{class_c2_m2_1_1_interaction_1_1_ruler_measure_aad2c164d0ecf13babe488a8230c59928}} 
+\index{C2M2.Interaction.RulerMeasure@{C2M2.Interaction.RulerMeasure}!UpdateMarkers@{UpdateMarkers}}
+\index{UpdateMarkers@{UpdateMarkers}!C2M2.Interaction.RulerMeasure@{C2M2.Interaction.RulerMeasure}}
+\doxysubsubsection{\texorpdfstring{UpdateMarkers()}{UpdateMarkers()}}
+{\footnotesize\ttfamily void C2\+M2.\+Interaction.\+Ruler\+Measure.\+Update\+Markers (\begin{DoxyParamCaption}\item[{float}]{minimum\+Marker\+Number }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Updates the locations of the markers on the ruler 
+
+
+\begin{DoxyParams}{Parameters}
+{\em minimum\+Marker\+Number} & Minimum valid number for a marker to be placed on the ruler, needs to be between the lowest and the highest number in potential\+Intervals\\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_ruler_measure_adbeab1dd97abb6c8e2e2c77180cda048}\label{class_c2_m2_1_1_interaction_1_1_ruler_measure_adbeab1dd97abb6c8e2e2c77180cda048}} 
+\index{C2M2.Interaction.RulerMeasure@{C2M2.Interaction.RulerMeasure}!bottomEndCap@{bottomEndCap}}
+\index{bottomEndCap@{bottomEndCap}!C2M2.Interaction.RulerMeasure@{C2M2.Interaction.RulerMeasure}}
+\doxysubsubsection{\texorpdfstring{bottomEndCap}{bottomEndCap}}
+{\footnotesize\ttfamily Game\+Object C2\+M2.\+Interaction.\+Ruler\+Measure.\+bottom\+End\+Cap}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_ruler_measure_acb4b71488c4fc2fa42514148cd29d659}\label{class_c2_m2_1_1_interaction_1_1_ruler_measure_acb4b71488c4fc2fa42514148cd29d659}} 
+\index{C2M2.Interaction.RulerMeasure@{C2M2.Interaction.RulerMeasure}!initialBottomEndCapLength@{initialBottomEndCapLength}}
+\index{initialBottomEndCapLength@{initialBottomEndCapLength}!C2M2.Interaction.RulerMeasure@{C2M2.Interaction.RulerMeasure}}
+\doxysubsubsection{\texorpdfstring{initialBottomEndCapLength}{initialBottomEndCapLength}}
+{\footnotesize\ttfamily float C2\+M2.\+Interaction.\+Ruler\+Measure.\+initial\+Bottom\+End\+Cap\+Length\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_ruler_measure_a494ff46938a6918a3c67d2f3bff44896}\label{class_c2_m2_1_1_interaction_1_1_ruler_measure_a494ff46938a6918a3c67d2f3bff44896}} 
+\index{C2M2.Interaction.RulerMeasure@{C2M2.Interaction.RulerMeasure}!initialRulerLength@{initialRulerLength}}
+\index{initialRulerLength@{initialRulerLength}!C2M2.Interaction.RulerMeasure@{C2M2.Interaction.RulerMeasure}}
+\doxysubsubsection{\texorpdfstring{initialRulerLength}{initialRulerLength}}
+{\footnotesize\ttfamily float C2\+M2.\+Interaction.\+Ruler\+Measure.\+initial\+Ruler\+Length\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_ruler_measure_a21be502fbaa2e671a1498be3f7a7e042}\label{class_c2_m2_1_1_interaction_1_1_ruler_measure_a21be502fbaa2e671a1498be3f7a7e042}} 
+\index{C2M2.Interaction.RulerMeasure@{C2M2.Interaction.RulerMeasure}!initialTopEndCapLength@{initialTopEndCapLength}}
+\index{initialTopEndCapLength@{initialTopEndCapLength}!C2M2.Interaction.RulerMeasure@{C2M2.Interaction.RulerMeasure}}
+\doxysubsubsection{\texorpdfstring{initialTopEndCapLength}{initialTopEndCapLength}}
+{\footnotesize\ttfamily float C2\+M2.\+Interaction.\+Ruler\+Measure.\+initial\+Top\+End\+Cap\+Length\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_ruler_measure_a278f0b96c8caf6ce2a6dfe7005269a40}\label{class_c2_m2_1_1_interaction_1_1_ruler_measure_a278f0b96c8caf6ce2a6dfe7005269a40}} 
+\index{C2M2.Interaction.RulerMeasure@{C2M2.Interaction.RulerMeasure}!markedDisplays@{markedDisplays}}
+\index{markedDisplays@{markedDisplays}!C2M2.Interaction.RulerMeasure@{C2M2.Interaction.RulerMeasure}}
+\doxysubsubsection{\texorpdfstring{markedDisplays}{markedDisplays}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_ruler_measure_1_1_marked_display}{Marked\+Display}}$>$ C2\+M2.\+Interaction.\+Ruler\+Measure.\+marked\+Displays = new List$<$\mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_ruler_measure_1_1_marked_display}{Marked\+Display}}$>$()\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_ruler_measure_a33da68350d73e66693e18e69a20db942}\label{class_c2_m2_1_1_interaction_1_1_ruler_measure_a33da68350d73e66693e18e69a20db942}} 
+\index{C2M2.Interaction.RulerMeasure@{C2M2.Interaction.RulerMeasure}!markerCount@{markerCount}}
+\index{markerCount@{markerCount}!C2M2.Interaction.RulerMeasure@{C2M2.Interaction.RulerMeasure}}
+\doxysubsubsection{\texorpdfstring{markerCount}{markerCount}}
+{\footnotesize\ttfamily readonly int C2\+M2.\+Interaction.\+Ruler\+Measure.\+marker\+Count = 100\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_ruler_measure_a8acc9669936e53a61e74ab95dcd19a4f}\label{class_c2_m2_1_1_interaction_1_1_ruler_measure_a8acc9669936e53a61e74ab95dcd19a4f}} 
+\index{C2M2.Interaction.RulerMeasure@{C2M2.Interaction.RulerMeasure}!measurementDisplays@{measurementDisplays}}
+\index{measurementDisplays@{measurementDisplays}!C2M2.Interaction.RulerMeasure@{C2M2.Interaction.RulerMeasure}}
+\doxysubsubsection{\texorpdfstring{measurementDisplays}{measurementDisplays}}
+{\footnotesize\ttfamily List$<$Canvas$>$ C2\+M2.\+Interaction.\+Ruler\+Measure.\+measurement\+Displays}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_ruler_measure_ac5f3f5e75a60810b76f24a57686322f3}\label{class_c2_m2_1_1_interaction_1_1_ruler_measure_ac5f3f5e75a60810b76f24a57686322f3}} 
+\index{C2M2.Interaction.RulerMeasure@{C2M2.Interaction.RulerMeasure}!potentialIntervals@{potentialIntervals}}
+\index{potentialIntervals@{potentialIntervals}!C2M2.Interaction.RulerMeasure@{C2M2.Interaction.RulerMeasure}}
+\doxysubsubsection{\texorpdfstring{potentialIntervals}{potentialIntervals}}
+{\footnotesize\ttfamily readonly List$<$int$>$ C2\+M2.\+Interaction.\+Ruler\+Measure.\+potential\+Intervals = new List$<$int$>$ \{ 1, 2, 5, 10, 20, 50, 100, 200, 500 \}\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_ruler_measure_ac7ed979ff38c5ea9ee8cfe93627af711}\label{class_c2_m2_1_1_interaction_1_1_ruler_measure_ac7ed979ff38c5ea9ee8cfe93627af711}} 
+\index{C2M2.Interaction.RulerMeasure@{C2M2.Interaction.RulerMeasure}!prevRulerLength@{prevRulerLength}}
+\index{prevRulerLength@{prevRulerLength}!C2M2.Interaction.RulerMeasure@{C2M2.Interaction.RulerMeasure}}
+\doxysubsubsection{\texorpdfstring{prevRulerLength}{prevRulerLength}}
+{\footnotesize\ttfamily float C2\+M2.\+Interaction.\+Ruler\+Measure.\+prev\+Ruler\+Length = 0\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_ruler_measure_a71fc0a466b0c96e1e31ed7ae28c69838}\label{class_c2_m2_1_1_interaction_1_1_ruler_measure_a71fc0a466b0c96e1e31ed7ae28c69838}} 
+\index{C2M2.Interaction.RulerMeasure@{C2M2.Interaction.RulerMeasure}!scaledRulerLength@{scaledRulerLength}}
+\index{scaledRulerLength@{scaledRulerLength}!C2M2.Interaction.RulerMeasure@{C2M2.Interaction.RulerMeasure}}
+\doxysubsubsection{\texorpdfstring{scaledRulerLength}{scaledRulerLength}}
+{\footnotesize\ttfamily float C2\+M2.\+Interaction.\+Ruler\+Measure.\+scaled\+Ruler\+Length\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_ruler_measure_a2959dabe48d6b4f7f1c7e16788cb79e9}\label{class_c2_m2_1_1_interaction_1_1_ruler_measure_a2959dabe48d6b4f7f1c7e16788cb79e9}} 
+\index{C2M2.Interaction.RulerMeasure@{C2M2.Interaction.RulerMeasure}!sim@{sim}}
+\index{sim@{sim}!C2M2.Interaction.RulerMeasure@{C2M2.Interaction.RulerMeasure}}
+\doxysubsubsection{\texorpdfstring{sim}{sim}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_mesh_simulation}{Mesh\+Simulation}} C2\+M2.\+Interaction.\+Ruler\+Measure.\+sim = null}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_ruler_measure_a66850dd5179b51508f6105afc1124874}\label{class_c2_m2_1_1_interaction_1_1_ruler_measure_a66850dd5179b51508f6105afc1124874}} 
+\index{C2M2.Interaction.RulerMeasure@{C2M2.Interaction.RulerMeasure}!topEndcap@{topEndcap}}
+\index{topEndcap@{topEndcap}!C2M2.Interaction.RulerMeasure@{C2M2.Interaction.RulerMeasure}}
+\doxysubsubsection{\texorpdfstring{topEndcap}{topEndcap}}
+{\footnotesize\ttfamily Game\+Object C2\+M2.\+Interaction.\+Ruler\+Measure.\+top\+Endcap}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_interaction_1_1_ruler_measure_a55610bce9b6d2b789d08e54b586590bc}\label{class_c2_m2_1_1_interaction_1_1_ruler_measure_a55610bce9b6d2b789d08e54b586590bc}} 
+\index{C2M2.Interaction.RulerMeasure@{C2M2.Interaction.RulerMeasure}!units@{units}}
+\index{units@{units}!C2M2.Interaction.RulerMeasure@{C2M2.Interaction.RulerMeasure}}
+\doxysubsubsection{\texorpdfstring{units}{units}}
+{\footnotesize\ttfamily string C2\+M2.\+Interaction.\+Ruler\+Measure.\+units\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Jacob Wells/\+Desktop/\+C2\+M2/\+Neuro\+VISOR/\+Assets/\+Scripts/\+C2\+M2/\+Interaction/\mbox{\hyperlink{_ruler_measure_8cs}{Ruler\+Measure.\+cs}}\end{DoxyCompactItemize}

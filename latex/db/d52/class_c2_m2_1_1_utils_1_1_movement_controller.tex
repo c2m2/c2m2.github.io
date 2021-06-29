@@ -1,0 +1,253 @@
+\hypertarget{class_c2_m2_1_1_utils_1_1_movement_controller}{}\doxysection{C2\+M2.\+Utils.\+Movement\+Controller Class Reference}
+\label{class_c2_m2_1_1_utils_1_1_movement_controller}\index{C2M2.Utils.MovementController@{C2M2.Utils.MovementController}}
+
+
+Allow an object to be moved through keyboard controls  
+
+
+
+
+Inherits Mono\+Behaviour.
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_c2_m2_1_1_utils_1_1_movement_controller_a2da5cfacf970731b9dd3e0cb2e6a4f6c}{Enable\+Movement}} ()
+\item 
+void \mbox{\hyperlink{class_c2_m2_1_1_utils_1_1_movement_controller_a428f944e58d1467ac519a096c4275681}{Disable\+Movement}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Key\+Code \mbox{\hyperlink{class_c2_m2_1_1_utils_1_1_movement_controller_aea8f842ad96458f13b82cc5b9c136387}{forward\+Key}} = Key\+Code.\+W
+\item 
+Key\+Code \mbox{\hyperlink{class_c2_m2_1_1_utils_1_1_movement_controller_a9dbb58af7e4268d48f078ce620eb13e0}{backward\+Key}} = Key\+Code.\+S
+\item 
+Key\+Code \mbox{\hyperlink{class_c2_m2_1_1_utils_1_1_movement_controller_a5436a968b5012d1f5f97ee3e20fbb1ab}{left\+Key}} = Key\+Code.\+A
+\item 
+Key\+Code \mbox{\hyperlink{class_c2_m2_1_1_utils_1_1_movement_controller_a9df11d8e39e99d2a028a3a746c56f333}{right\+Key}} = Key\+Code.\+D
+\item 
+Key\+Code \mbox{\hyperlink{class_c2_m2_1_1_utils_1_1_movement_controller_a3985cef92d6e6720d7d2eacc366ad226}{control\+Key}} = Key\+Code.\+Left\+Control
+\item 
+bool \mbox{\hyperlink{class_c2_m2_1_1_utils_1_1_movement_controller_ad5e49d780d10f3199da2bfd8af9e190d}{limit\+Pos}} = false
+\item 
+Vector3 \mbox{\hyperlink{class_c2_m2_1_1_utils_1_1_movement_controller_a9e92a6ffc60828437103751b5364f574}{max\+Pos}} = new Vector3(float.\+Positive\+Infinity, float.\+Positive\+Infinity, float.\+Positive\+Infinity)
+\item 
+Vector3 \mbox{\hyperlink{class_c2_m2_1_1_utils_1_1_movement_controller_a6e7ef6b76165226ceb9a7f309f0ee6dc}{min\+Pos}} = new Vector3(float.\+Negative\+Infinity, float.\+Negative\+Infinity, float.\+Negative\+Infinity)
+\item 
+float \mbox{\hyperlink{class_c2_m2_1_1_utils_1_1_movement_controller_a26976f540ed77779b2c7d29ca8200771}{speed}} = 0.\+1f
+\item 
+Transform \mbox{\hyperlink{class_c2_m2_1_1_utils_1_1_movement_controller_abd47e18a2674f2b8a5344d3edb1edf20}{relative\+To}} = null
+\item 
+float \mbox{\hyperlink{class_c2_m2_1_1_utils_1_1_movement_controller_a948432a79a96dda7268993d1dd037958}{rotate\+Speed}} = 5.\+0f
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_c2_m2_1_1_utils_1_1_movement_controller_a50e35958f7f23f7002a40d154ba4c170}{Forward\+Press}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+bool \mbox{\hyperlink{class_c2_m2_1_1_utils_1_1_movement_controller_ae6284a4bd30bb48456127d19a1ba8793}{Backward\+Press}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+bool \mbox{\hyperlink{class_c2_m2_1_1_utils_1_1_movement_controller_a826d08675d94578639599cd48190ff0c}{Left\+Press}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+bool \mbox{\hyperlink{class_c2_m2_1_1_utils_1_1_movement_controller_a3393225b1bee308c87d264efdb5220d0}{Right\+Press}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+bool \mbox{\hyperlink{class_c2_m2_1_1_utils_1_1_movement_controller_abaa54a4a452bbab819ad2df66a3f9f20}{Control\+Press}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+float \mbox{\hyperlink{class_c2_m2_1_1_utils_1_1_movement_controller_a3e9960233e6ab1d5086b25e32bfa2575}{Scroll\+Wheel}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+bool \mbox{\hyperlink{class_c2_m2_1_1_utils_1_1_movement_controller_a03cddea3fc67e807fbdbba05ed5904c5}{is\+Moving}} = false\hspace{0.3cm}{\ttfamily  \mbox{[}get, private set\mbox{]}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+IEnumerator \mbox{\hyperlink{class_c2_m2_1_1_utils_1_1_movement_controller_a0e7dee7af242ab3cbc580e27a6b5147d}{Movement}} ()
+\item 
+void \mbox{\hyperlink{class_c2_m2_1_1_utils_1_1_movement_controller_a1e0ee07881c90f53830adefa279d4db3}{On\+Enable}} ()
+\item 
+void \mbox{\hyperlink{class_c2_m2_1_1_utils_1_1_movement_controller_a8e390f2ada6a9e9f0267075fd2994ced}{On\+Disable}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Coroutine \mbox{\hyperlink{class_c2_m2_1_1_utils_1_1_movement_controller_af1c99ee0df2b7e2193eb664ff469e3aa}{move\+Routine}} = null
+\item 
+float \mbox{\hyperlink{class_c2_m2_1_1_utils_1_1_movement_controller_a8abc6bf2ba12c4777d899cdddbf0afb6}{x}} = 0.\+0f
+\item 
+float \mbox{\hyperlink{class_c2_m2_1_1_utils_1_1_movement_controller_ac7fb9ab45c3e0b260d20849254b9b508}{y}} = 0.\+0f
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Allow an object to be moved through keyboard controls 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_c2_m2_1_1_utils_1_1_movement_controller_a428f944e58d1467ac519a096c4275681}\label{class_c2_m2_1_1_utils_1_1_movement_controller_a428f944e58d1467ac519a096c4275681}} 
+\index{C2M2.Utils.MovementController@{C2M2.Utils.MovementController}!DisableMovement@{DisableMovement}}
+\index{DisableMovement@{DisableMovement}!C2M2.Utils.MovementController@{C2M2.Utils.MovementController}}
+\doxysubsubsection{\texorpdfstring{DisableMovement()}{DisableMovement()}}
+{\footnotesize\ttfamily void C2\+M2.\+Utils.\+Movement\+Controller.\+Disable\+Movement (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_utils_1_1_movement_controller_a2da5cfacf970731b9dd3e0cb2e6a4f6c}\label{class_c2_m2_1_1_utils_1_1_movement_controller_a2da5cfacf970731b9dd3e0cb2e6a4f6c}} 
+\index{C2M2.Utils.MovementController@{C2M2.Utils.MovementController}!EnableMovement@{EnableMovement}}
+\index{EnableMovement@{EnableMovement}!C2M2.Utils.MovementController@{C2M2.Utils.MovementController}}
+\doxysubsubsection{\texorpdfstring{EnableMovement()}{EnableMovement()}}
+{\footnotesize\ttfamily void C2\+M2.\+Utils.\+Movement\+Controller.\+Enable\+Movement (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_utils_1_1_movement_controller_a0e7dee7af242ab3cbc580e27a6b5147d}\label{class_c2_m2_1_1_utils_1_1_movement_controller_a0e7dee7af242ab3cbc580e27a6b5147d}} 
+\index{C2M2.Utils.MovementController@{C2M2.Utils.MovementController}!Movement@{Movement}}
+\index{Movement@{Movement}!C2M2.Utils.MovementController@{C2M2.Utils.MovementController}}
+\doxysubsubsection{\texorpdfstring{Movement()}{Movement()}}
+{\footnotesize\ttfamily IEnumerator C2\+M2.\+Utils.\+Movement\+Controller.\+Movement (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_utils_1_1_movement_controller_a8e390f2ada6a9e9f0267075fd2994ced}\label{class_c2_m2_1_1_utils_1_1_movement_controller_a8e390f2ada6a9e9f0267075fd2994ced}} 
+\index{C2M2.Utils.MovementController@{C2M2.Utils.MovementController}!OnDisable@{OnDisable}}
+\index{OnDisable@{OnDisable}!C2M2.Utils.MovementController@{C2M2.Utils.MovementController}}
+\doxysubsubsection{\texorpdfstring{OnDisable()}{OnDisable()}}
+{\footnotesize\ttfamily void C2\+M2.\+Utils.\+Movement\+Controller.\+On\+Disable (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_utils_1_1_movement_controller_a1e0ee07881c90f53830adefa279d4db3}\label{class_c2_m2_1_1_utils_1_1_movement_controller_a1e0ee07881c90f53830adefa279d4db3}} 
+\index{C2M2.Utils.MovementController@{C2M2.Utils.MovementController}!OnEnable@{OnEnable}}
+\index{OnEnable@{OnEnable}!C2M2.Utils.MovementController@{C2M2.Utils.MovementController}}
+\doxysubsubsection{\texorpdfstring{OnEnable()}{OnEnable()}}
+{\footnotesize\ttfamily void C2\+M2.\+Utils.\+Movement\+Controller.\+On\+Enable (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_c2_m2_1_1_utils_1_1_movement_controller_a9dbb58af7e4268d48f078ce620eb13e0}\label{class_c2_m2_1_1_utils_1_1_movement_controller_a9dbb58af7e4268d48f078ce620eb13e0}} 
+\index{C2M2.Utils.MovementController@{C2M2.Utils.MovementController}!backwardKey@{backwardKey}}
+\index{backwardKey@{backwardKey}!C2M2.Utils.MovementController@{C2M2.Utils.MovementController}}
+\doxysubsubsection{\texorpdfstring{backwardKey}{backwardKey}}
+{\footnotesize\ttfamily Key\+Code C2\+M2.\+Utils.\+Movement\+Controller.\+backward\+Key = Key\+Code.\+S}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_utils_1_1_movement_controller_a3985cef92d6e6720d7d2eacc366ad226}\label{class_c2_m2_1_1_utils_1_1_movement_controller_a3985cef92d6e6720d7d2eacc366ad226}} 
+\index{C2M2.Utils.MovementController@{C2M2.Utils.MovementController}!controlKey@{controlKey}}
+\index{controlKey@{controlKey}!C2M2.Utils.MovementController@{C2M2.Utils.MovementController}}
+\doxysubsubsection{\texorpdfstring{controlKey}{controlKey}}
+{\footnotesize\ttfamily Key\+Code C2\+M2.\+Utils.\+Movement\+Controller.\+control\+Key = Key\+Code.\+Left\+Control}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_utils_1_1_movement_controller_aea8f842ad96458f13b82cc5b9c136387}\label{class_c2_m2_1_1_utils_1_1_movement_controller_aea8f842ad96458f13b82cc5b9c136387}} 
+\index{C2M2.Utils.MovementController@{C2M2.Utils.MovementController}!forwardKey@{forwardKey}}
+\index{forwardKey@{forwardKey}!C2M2.Utils.MovementController@{C2M2.Utils.MovementController}}
+\doxysubsubsection{\texorpdfstring{forwardKey}{forwardKey}}
+{\footnotesize\ttfamily Key\+Code C2\+M2.\+Utils.\+Movement\+Controller.\+forward\+Key = Key\+Code.\+W}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_utils_1_1_movement_controller_a5436a968b5012d1f5f97ee3e20fbb1ab}\label{class_c2_m2_1_1_utils_1_1_movement_controller_a5436a968b5012d1f5f97ee3e20fbb1ab}} 
+\index{C2M2.Utils.MovementController@{C2M2.Utils.MovementController}!leftKey@{leftKey}}
+\index{leftKey@{leftKey}!C2M2.Utils.MovementController@{C2M2.Utils.MovementController}}
+\doxysubsubsection{\texorpdfstring{leftKey}{leftKey}}
+{\footnotesize\ttfamily Key\+Code C2\+M2.\+Utils.\+Movement\+Controller.\+left\+Key = Key\+Code.\+A}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_utils_1_1_movement_controller_ad5e49d780d10f3199da2bfd8af9e190d}\label{class_c2_m2_1_1_utils_1_1_movement_controller_ad5e49d780d10f3199da2bfd8af9e190d}} 
+\index{C2M2.Utils.MovementController@{C2M2.Utils.MovementController}!limitPos@{limitPos}}
+\index{limitPos@{limitPos}!C2M2.Utils.MovementController@{C2M2.Utils.MovementController}}
+\doxysubsubsection{\texorpdfstring{limitPos}{limitPos}}
+{\footnotesize\ttfamily bool C2\+M2.\+Utils.\+Movement\+Controller.\+limit\+Pos = false}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_utils_1_1_movement_controller_a9e92a6ffc60828437103751b5364f574}\label{class_c2_m2_1_1_utils_1_1_movement_controller_a9e92a6ffc60828437103751b5364f574}} 
+\index{C2M2.Utils.MovementController@{C2M2.Utils.MovementController}!maxPos@{maxPos}}
+\index{maxPos@{maxPos}!C2M2.Utils.MovementController@{C2M2.Utils.MovementController}}
+\doxysubsubsection{\texorpdfstring{maxPos}{maxPos}}
+{\footnotesize\ttfamily Vector3 C2\+M2.\+Utils.\+Movement\+Controller.\+max\+Pos = new Vector3(float.\+Positive\+Infinity, float.\+Positive\+Infinity, float.\+Positive\+Infinity)}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_utils_1_1_movement_controller_a6e7ef6b76165226ceb9a7f309f0ee6dc}\label{class_c2_m2_1_1_utils_1_1_movement_controller_a6e7ef6b76165226ceb9a7f309f0ee6dc}} 
+\index{C2M2.Utils.MovementController@{C2M2.Utils.MovementController}!minPos@{minPos}}
+\index{minPos@{minPos}!C2M2.Utils.MovementController@{C2M2.Utils.MovementController}}
+\doxysubsubsection{\texorpdfstring{minPos}{minPos}}
+{\footnotesize\ttfamily Vector3 C2\+M2.\+Utils.\+Movement\+Controller.\+min\+Pos = new Vector3(float.\+Negative\+Infinity, float.\+Negative\+Infinity, float.\+Negative\+Infinity)}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_utils_1_1_movement_controller_af1c99ee0df2b7e2193eb664ff469e3aa}\label{class_c2_m2_1_1_utils_1_1_movement_controller_af1c99ee0df2b7e2193eb664ff469e3aa}} 
+\index{C2M2.Utils.MovementController@{C2M2.Utils.MovementController}!moveRoutine@{moveRoutine}}
+\index{moveRoutine@{moveRoutine}!C2M2.Utils.MovementController@{C2M2.Utils.MovementController}}
+\doxysubsubsection{\texorpdfstring{moveRoutine}{moveRoutine}}
+{\footnotesize\ttfamily Coroutine C2\+M2.\+Utils.\+Movement\+Controller.\+move\+Routine = null\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_utils_1_1_movement_controller_abd47e18a2674f2b8a5344d3edb1edf20}\label{class_c2_m2_1_1_utils_1_1_movement_controller_abd47e18a2674f2b8a5344d3edb1edf20}} 
+\index{C2M2.Utils.MovementController@{C2M2.Utils.MovementController}!relativeTo@{relativeTo}}
+\index{relativeTo@{relativeTo}!C2M2.Utils.MovementController@{C2M2.Utils.MovementController}}
+\doxysubsubsection{\texorpdfstring{relativeTo}{relativeTo}}
+{\footnotesize\ttfamily Transform C2\+M2.\+Utils.\+Movement\+Controller.\+relative\+To = null}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_utils_1_1_movement_controller_a9df11d8e39e99d2a028a3a746c56f333}\label{class_c2_m2_1_1_utils_1_1_movement_controller_a9df11d8e39e99d2a028a3a746c56f333}} 
+\index{C2M2.Utils.MovementController@{C2M2.Utils.MovementController}!rightKey@{rightKey}}
+\index{rightKey@{rightKey}!C2M2.Utils.MovementController@{C2M2.Utils.MovementController}}
+\doxysubsubsection{\texorpdfstring{rightKey}{rightKey}}
+{\footnotesize\ttfamily Key\+Code C2\+M2.\+Utils.\+Movement\+Controller.\+right\+Key = Key\+Code.\+D}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_utils_1_1_movement_controller_a948432a79a96dda7268993d1dd037958}\label{class_c2_m2_1_1_utils_1_1_movement_controller_a948432a79a96dda7268993d1dd037958}} 
+\index{C2M2.Utils.MovementController@{C2M2.Utils.MovementController}!rotateSpeed@{rotateSpeed}}
+\index{rotateSpeed@{rotateSpeed}!C2M2.Utils.MovementController@{C2M2.Utils.MovementController}}
+\doxysubsubsection{\texorpdfstring{rotateSpeed}{rotateSpeed}}
+{\footnotesize\ttfamily float C2\+M2.\+Utils.\+Movement\+Controller.\+rotate\+Speed = 5.\+0f}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_utils_1_1_movement_controller_a26976f540ed77779b2c7d29ca8200771}\label{class_c2_m2_1_1_utils_1_1_movement_controller_a26976f540ed77779b2c7d29ca8200771}} 
+\index{C2M2.Utils.MovementController@{C2M2.Utils.MovementController}!speed@{speed}}
+\index{speed@{speed}!C2M2.Utils.MovementController@{C2M2.Utils.MovementController}}
+\doxysubsubsection{\texorpdfstring{speed}{speed}}
+{\footnotesize\ttfamily float C2\+M2.\+Utils.\+Movement\+Controller.\+speed = 0.\+1f}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_utils_1_1_movement_controller_a8abc6bf2ba12c4777d899cdddbf0afb6}\label{class_c2_m2_1_1_utils_1_1_movement_controller_a8abc6bf2ba12c4777d899cdddbf0afb6}} 
+\index{C2M2.Utils.MovementController@{C2M2.Utils.MovementController}!x@{x}}
+\index{x@{x}!C2M2.Utils.MovementController@{C2M2.Utils.MovementController}}
+\doxysubsubsection{\texorpdfstring{x}{x}}
+{\footnotesize\ttfamily float C2\+M2.\+Utils.\+Movement\+Controller.\+x = 0.\+0f\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_utils_1_1_movement_controller_ac7fb9ab45c3e0b260d20849254b9b508}\label{class_c2_m2_1_1_utils_1_1_movement_controller_ac7fb9ab45c3e0b260d20849254b9b508}} 
+\index{C2M2.Utils.MovementController@{C2M2.Utils.MovementController}!y@{y}}
+\index{y@{y}!C2M2.Utils.MovementController@{C2M2.Utils.MovementController}}
+\doxysubsubsection{\texorpdfstring{y}{y}}
+{\footnotesize\ttfamily float C2\+M2.\+Utils.\+Movement\+Controller.\+y = 0.\+0f\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{class_c2_m2_1_1_utils_1_1_movement_controller_ae6284a4bd30bb48456127d19a1ba8793}\label{class_c2_m2_1_1_utils_1_1_movement_controller_ae6284a4bd30bb48456127d19a1ba8793}} 
+\index{C2M2.Utils.MovementController@{C2M2.Utils.MovementController}!BackwardPress@{BackwardPress}}
+\index{BackwardPress@{BackwardPress}!C2M2.Utils.MovementController@{C2M2.Utils.MovementController}}
+\doxysubsubsection{\texorpdfstring{BackwardPress}{BackwardPress}}
+{\footnotesize\ttfamily bool C2\+M2.\+Utils.\+Movement\+Controller.\+Backward\+Press\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_utils_1_1_movement_controller_abaa54a4a452bbab819ad2df66a3f9f20}\label{class_c2_m2_1_1_utils_1_1_movement_controller_abaa54a4a452bbab819ad2df66a3f9f20}} 
+\index{C2M2.Utils.MovementController@{C2M2.Utils.MovementController}!ControlPress@{ControlPress}}
+\index{ControlPress@{ControlPress}!C2M2.Utils.MovementController@{C2M2.Utils.MovementController}}
+\doxysubsubsection{\texorpdfstring{ControlPress}{ControlPress}}
+{\footnotesize\ttfamily bool C2\+M2.\+Utils.\+Movement\+Controller.\+Control\+Press\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_utils_1_1_movement_controller_a50e35958f7f23f7002a40d154ba4c170}\label{class_c2_m2_1_1_utils_1_1_movement_controller_a50e35958f7f23f7002a40d154ba4c170}} 
+\index{C2M2.Utils.MovementController@{C2M2.Utils.MovementController}!ForwardPress@{ForwardPress}}
+\index{ForwardPress@{ForwardPress}!C2M2.Utils.MovementController@{C2M2.Utils.MovementController}}
+\doxysubsubsection{\texorpdfstring{ForwardPress}{ForwardPress}}
+{\footnotesize\ttfamily bool C2\+M2.\+Utils.\+Movement\+Controller.\+Forward\+Press\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_utils_1_1_movement_controller_a03cddea3fc67e807fbdbba05ed5904c5}\label{class_c2_m2_1_1_utils_1_1_movement_controller_a03cddea3fc67e807fbdbba05ed5904c5}} 
+\index{C2M2.Utils.MovementController@{C2M2.Utils.MovementController}!isMoving@{isMoving}}
+\index{isMoving@{isMoving}!C2M2.Utils.MovementController@{C2M2.Utils.MovementController}}
+\doxysubsubsection{\texorpdfstring{isMoving}{isMoving}}
+{\footnotesize\ttfamily bool C2\+M2.\+Utils.\+Movement\+Controller.\+is\+Moving = false\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [private set]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_utils_1_1_movement_controller_a826d08675d94578639599cd48190ff0c}\label{class_c2_m2_1_1_utils_1_1_movement_controller_a826d08675d94578639599cd48190ff0c}} 
+\index{C2M2.Utils.MovementController@{C2M2.Utils.MovementController}!LeftPress@{LeftPress}}
+\index{LeftPress@{LeftPress}!C2M2.Utils.MovementController@{C2M2.Utils.MovementController}}
+\doxysubsubsection{\texorpdfstring{LeftPress}{LeftPress}}
+{\footnotesize\ttfamily bool C2\+M2.\+Utils.\+Movement\+Controller.\+Left\+Press\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_utils_1_1_movement_controller_a3393225b1bee308c87d264efdb5220d0}\label{class_c2_m2_1_1_utils_1_1_movement_controller_a3393225b1bee308c87d264efdb5220d0}} 
+\index{C2M2.Utils.MovementController@{C2M2.Utils.MovementController}!RightPress@{RightPress}}
+\index{RightPress@{RightPress}!C2M2.Utils.MovementController@{C2M2.Utils.MovementController}}
+\doxysubsubsection{\texorpdfstring{RightPress}{RightPress}}
+{\footnotesize\ttfamily bool C2\+M2.\+Utils.\+Movement\+Controller.\+Right\+Press\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_utils_1_1_movement_controller_a3e9960233e6ab1d5086b25e32bfa2575}\label{class_c2_m2_1_1_utils_1_1_movement_controller_a3e9960233e6ab1d5086b25e32bfa2575}} 
+\index{C2M2.Utils.MovementController@{C2M2.Utils.MovementController}!ScrollWheel@{ScrollWheel}}
+\index{ScrollWheel@{ScrollWheel}!C2M2.Utils.MovementController@{C2M2.Utils.MovementController}}
+\doxysubsubsection{\texorpdfstring{ScrollWheel}{ScrollWheel}}
+{\footnotesize\ttfamily float C2\+M2.\+Utils.\+Movement\+Controller.\+Scroll\+Wheel\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Jacob Wells/\+Desktop/\+C2\+M2/\+Neuro\+VISOR/\+Assets/\+Scripts/\+C2\+M2/\+Utils/\+Behvaiours/\mbox{\hyperlink{_movement_controller_8cs}{Movement\+Controller.\+cs}}\end{DoxyCompactItemize}

@@ -7,52 +7,82 @@
 
 
 
-Inheritance diagram for C2\+M2.\+Simulation.\+Mesh\+Simulation\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[height=550pt]{df/d82/class_c2_m2_1_1_simulation_1_1_mesh_simulation__inherit__graph}
-\end{center}
-\end{figure}
+Inherits \mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_simulation}{C2\+M2.\+Simulation.\+Simulation$<$ double\mbox{[}$\,$\mbox{]}, Mesh, VRRaycastable\+Mesh, VRGrabbable\+Mesh $>$}}.
 
 
-Collaboration diagram for C2\+M2.\+Simulation.\+Mesh\+Simulation\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{d4/ddb/class_c2_m2_1_1_simulation_1_1_mesh_simulation__coll__graph}
-\end{center}
-\end{figure}
+
+Inherited by \mbox{\hyperlink{class_c2_m2_1_1_neuronal_dynamics_1_1_simulation_1_1_n_d_simulation}{C2\+M2.\+Neuronal\+Dynamics.\+Simulation.\+NDSimulation}}.
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_mesh_simulation_aad8e2c839ef8ddf12015e3dfd1821f7d}{Shift\+Raycast\+Value}} ()
+\item 
+void \mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_mesh_simulation_a0864a7cfd642b27f3523c6fc4a009e6d}{Close\+Ruler}} ()
+\item 
+void \mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_mesh_simulation_a050d25867a54b9f2f0542d009fc82691}{Reset\+Raycast\+Hits}} ()
+\end{DoxyCompactItemize}
 \doxysubsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
 Gradient \mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_mesh_simulation_ad3adb035d09cf783746e4c2fb8adfa72}{gradient}}
 \begin{DoxyCompactList}\small\item\em Gradient for coloring each surface point based on their scalar values \end{DoxyCompactList}\item 
-\mbox{\hyperlink{class_c2_m2_1_1_visualization_1_1_l_u_t_gradient_a688932d2ef2f3d19dde01be156a525d6}{LUTGradient.\+Extrema\+Method}} \mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_mesh_simulation_ae13c2d49366901d35245479eca6e3cae}{extrema\+Method}} = LUTGradient.\+Extrema\+Method.\+Global\+Extrema
-\item 
+int \mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_mesh_simulation_a2afd4e85106b678a85719b9305867ad3}{color\+Marker\+Precision}} = 3
+\begin{DoxyCompactList}\small\item\em Alter the precision of the color scale display \end{DoxyCompactList}\item 
 float \mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_mesh_simulation_a7f02b0b7e49b470d4807802c2fd5fcbe}{global\+Max}} = float.\+Negative\+Infinity
 \item 
 float \mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_mesh_simulation_a60cccaf2ba00a276ccb4553dfea29e3e}{global\+Min}} = float.\+Positive\+Infinity
 \item 
+string \mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_mesh_simulation_adadc2dbcc586a6d34e2c9e1ef5cc9c61}{unit}} = \char`\"{}mV\char`\"{}
+\begin{DoxyCompactList}\small\item\em Unit display string that can be manually set by the user \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_mesh_simulation_a66aab402140b85091febaf740b0ff54a}{unit\+Scaler}} = 1000f
+\begin{DoxyCompactList}\small\item\em Can be used to manually convert Gradient Display values to match unit string \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_mesh_simulation_af5b11ac127cefaf109a4b1e8917768a3}{length\+Unit}} = \char`\"{}μm\char`\"{}
+\item 
 Vector3 \mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_mesh_simulation_ab52e77f5d9475d19d443d39032ddecd0}{ruler\+Init\+Pos}} = new Vector3(-\/0.\+5f, 0.\+443f, -\/0.\+322f)
 \item 
 Vector3 \mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_mesh_simulation_a8a041bb0101ae99175bcb1f5db8ce6c9}{ruler\+Init\+Rot}} = new Vector3(90, 0, 0)
+\item 
+double \mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_mesh_simulation_a1c090b9dba3db05c511ebbb7b0553587}{raycast\+Hit\+Value}} = 55
+\item 
+Tuple$<$ int, double $>$\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_mesh_simulation_aa5b5bcc38109264e01d81ded6ea00f88}{raycast\+Hits}} = new Tuple$<$int, double$>$\mbox{[}0\mbox{]}
+\item 
+\mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_ruler_measure}{Ruler\+Measure}} \mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_mesh_simulation_a4aa6aa4e6f13ca5aad96ad4fdf6602b2}{ruler}} = null
+\item 
+Key\+Code \mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_mesh_simulation_af577e673140a45db102710147a12e6ff}{power\+Modifier\+Plus\+Key}} = Key\+Code.\+Up\+Arrow
+\item 
+Key\+Code \mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_mesh_simulation_a405cba5520b72db30034c6b614a25963}{power\+Modifier\+Minus\+Key}} = Key\+Code.\+Down\+Arrow
+\item 
+float \mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_mesh_simulation_a14f949b4b5da2979a986df80fede35fe}{sensitivity}} = 200f
 \end{DoxyCompactItemize}
 \doxysubsection*{Protected Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 override void \mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_mesh_simulation_af37ba623996cf9dc505e412696710679}{Update\+Visualization}} (in double\mbox{[}$\,$\mbox{]} new\+Values)
 \item 
-override void \mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_mesh_simulation_a22b1d25410fbb447aa52a5a8f4d4d6f1}{On\+Awake\+Post}} (Mesh \mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_simulation_ad9f96fe079b8d93a9b0a726692d68555}{viz}})
+override void \mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_mesh_simulation_a22b1d25410fbb447aa52a5a8f4d4d6f1}{On\+Awake\+Post}} (Mesh viz)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Mesh\+Filter \mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_mesh_simulation_a0c325feb5afb206c7c82373cc5c26362}{mf}}
+\item 
+Mesh\+Renderer \mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_mesh_simulation_acce5bbf7484c845296a86399d8d0062e}{mr}}
 \end{DoxyCompactItemize}
 \doxysubsection*{Properties}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{class_c2_m2_1_1_visualization_1_1_l_u_t_gradient}{LUTGradient}} \mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_mesh_simulation_af9d0dada838603fa792135397b04b19a}{color\+LUT}} = null\hspace{0.3cm}{\ttfamily  \mbox{[}get, private set\mbox{]}}
+\mbox{\hyperlink{class_c2_m2_1_1_visualization_1_1_color_l_u_t}{Color\+LUT}} \mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_mesh_simulation_a51682e26e2319704e866bddf7f4f3742}{Color\+LUT}} = null\hspace{0.3cm}{\ttfamily  \mbox{[}get, private set\mbox{]}}
 \begin{DoxyCompactList}\small\item\em Lookup table for more efficient color calculations on the gradient \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_c2_m2_1_1_visualization_1_1_color_l_u_t_a7f1ce4c5542bb734a47c67ef024035ef}{Color\+LUT.\+Extrema\+Method}} \mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_mesh_simulation_a917d08cb23a8c291c2c261aad59c2fce}{extrema\+Method}} = Color\+LUT.\+Extrema\+Method.\+Global\+Extrema\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
 Mesh \mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_mesh_simulation_ac6bd0162b1594a0a6cfcd4a04d984ad3}{Visual\+Mesh}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, protected set\mbox{]}}
 \item 
 Mesh \mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_mesh_simulation_a6ae7f3078509cbeccdb03840465f1ecb}{Collider\+Mesh}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, protected set\mbox{]}}
+\item 
+float \mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_mesh_simulation_a37e11ab601c716fbc934a0e1df1c7b29}{Thumbstick\+Scaler}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+float \mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_mesh_simulation_ad02b9baeb6147f548e8e1247ac9e47d2}{Power\+Modifier}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
 \end{DoxyCompactItemize}
 \doxysubsection*{Private Member Functions}
 \begin{DoxyCompactItemize}
@@ -65,12 +95,7 @@ void \mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_mesh_simulation_afac8aa2b69
 Mesh \mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_mesh_simulation_afdea2a37a3d8f932309d0d49c87d941f}{visual\+Mesh}} = null
 \item 
 Mesh \mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_mesh_simulation_a3e5c501ef743561ae82856c994d701dd}{collider\+Mesh}} = null
-\item 
-Mesh\+Filter \mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_mesh_simulation_a0c325feb5afb206c7c82373cc5c26362}{mf}}
-\item 
-Mesh\+Renderer \mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_mesh_simulation_acce5bbf7484c845296a86399d8d0062e}{mr}}
 \end{DoxyCompactItemize}
-\doxysubsection*{Additional Inherited Members}
 
 
 \doxysubsection{Detailed Description}
@@ -79,11 +104,29 @@ Mesh\+Renderer \mbox{\hyperlink{class_c2_m2_1_1_simulation_1_1_mesh_simulation_a
 
 
 \doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_c2_m2_1_1_simulation_1_1_mesh_simulation_a0864a7cfd642b27f3523c6fc4a009e6d}\label{class_c2_m2_1_1_simulation_1_1_mesh_simulation_a0864a7cfd642b27f3523c6fc4a009e6d}} 
+\index{C2M2.Simulation.MeshSimulation@{C2M2.Simulation.MeshSimulation}!CloseRuler@{CloseRuler}}
+\index{CloseRuler@{CloseRuler}!C2M2.Simulation.MeshSimulation@{C2M2.Simulation.MeshSimulation}}
+\doxysubsubsection{\texorpdfstring{CloseRuler()}{CloseRuler()}}
+{\footnotesize\ttfamily void C2\+M2.\+Simulation.\+Mesh\+Simulation.\+Close\+Ruler (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
 \mbox{\Hypertarget{class_c2_m2_1_1_simulation_1_1_mesh_simulation_a22b1d25410fbb447aa52a5a8f4d4d6f1}\label{class_c2_m2_1_1_simulation_1_1_mesh_simulation_a22b1d25410fbb447aa52a5a8f4d4d6f1}} 
 \index{C2M2.Simulation.MeshSimulation@{C2M2.Simulation.MeshSimulation}!OnAwakePost@{OnAwakePost}}
 \index{OnAwakePost@{OnAwakePost}!C2M2.Simulation.MeshSimulation@{C2M2.Simulation.MeshSimulation}}
 \doxysubsubsection{\texorpdfstring{OnAwakePost()}{OnAwakePost()}}
 {\footnotesize\ttfamily override void C2\+M2.\+Simulation.\+Mesh\+Simulation.\+On\+Awake\+Post (\begin{DoxyParamCaption}\item[{Mesh}]{viz }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_simulation_1_1_mesh_simulation_a050d25867a54b9f2f0542d009fc82691}\label{class_c2_m2_1_1_simulation_1_1_mesh_simulation_a050d25867a54b9f2f0542d009fc82691}} 
+\index{C2M2.Simulation.MeshSimulation@{C2M2.Simulation.MeshSimulation}!ResetRaycastHits@{ResetRaycastHits}}
+\index{ResetRaycastHits@{ResetRaycastHits}!C2M2.Simulation.MeshSimulation@{C2M2.Simulation.MeshSimulation}}
+\doxysubsubsection{\texorpdfstring{ResetRaycastHits()}{ResetRaycastHits()}}
+{\footnotesize\ttfamily void C2\+M2.\+Simulation.\+Mesh\+Simulation.\+Reset\+Raycast\+Hits (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_simulation_1_1_mesh_simulation_aad8e2c839ef8ddf12015e3dfd1821f7d}\label{class_c2_m2_1_1_simulation_1_1_mesh_simulation_aad8e2c839ef8ddf12015e3dfd1821f7d}} 
+\index{C2M2.Simulation.MeshSimulation@{C2M2.Simulation.MeshSimulation}!ShiftRaycastValue@{ShiftRaycastValue}}
+\index{ShiftRaycastValue@{ShiftRaycastValue}!C2M2.Simulation.MeshSimulation@{C2M2.Simulation.MeshSimulation}}
+\doxysubsubsection{\texorpdfstring{ShiftRaycastValue()}{ShiftRaycastValue()}}
+{\footnotesize\ttfamily void C2\+M2.\+Simulation.\+Mesh\+Simulation.\+Shift\+Raycast\+Value (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 \mbox{\Hypertarget{class_c2_m2_1_1_simulation_1_1_mesh_simulation_af37ba623996cf9dc505e412696710679}\label{class_c2_m2_1_1_simulation_1_1_mesh_simulation_af37ba623996cf9dc505e412696710679}} 
 \index{C2M2.Simulation.MeshSimulation@{C2M2.Simulation.MeshSimulation}!UpdateVisualization@{UpdateVisualization}}
@@ -110,11 +153,15 @@ Update vertex colors based on simulation values
 \doxysubsubsection{\texorpdfstring{colliderMesh}{colliderMesh}}
 {\footnotesize\ttfamily Mesh C2\+M2.\+Simulation.\+Mesh\+Simulation.\+collider\+Mesh = null\hspace{0.3cm}{\ttfamily [private]}}
 
-\mbox{\Hypertarget{class_c2_m2_1_1_simulation_1_1_mesh_simulation_ae13c2d49366901d35245479eca6e3cae}\label{class_c2_m2_1_1_simulation_1_1_mesh_simulation_ae13c2d49366901d35245479eca6e3cae}} 
-\index{C2M2.Simulation.MeshSimulation@{C2M2.Simulation.MeshSimulation}!extremaMethod@{extremaMethod}}
-\index{extremaMethod@{extremaMethod}!C2M2.Simulation.MeshSimulation@{C2M2.Simulation.MeshSimulation}}
-\doxysubsubsection{\texorpdfstring{extremaMethod}{extremaMethod}}
-{\footnotesize\ttfamily \mbox{\hyperlink{class_c2_m2_1_1_visualization_1_1_l_u_t_gradient_a688932d2ef2f3d19dde01be156a525d6}{LUTGradient.\+Extrema\+Method}} C2\+M2.\+Simulation.\+Mesh\+Simulation.\+extrema\+Method = LUTGradient.\+Extrema\+Method.\+Global\+Extrema}
+\mbox{\Hypertarget{class_c2_m2_1_1_simulation_1_1_mesh_simulation_a2afd4e85106b678a85719b9305867ad3}\label{class_c2_m2_1_1_simulation_1_1_mesh_simulation_a2afd4e85106b678a85719b9305867ad3}} 
+\index{C2M2.Simulation.MeshSimulation@{C2M2.Simulation.MeshSimulation}!colorMarkerPrecision@{colorMarkerPrecision}}
+\index{colorMarkerPrecision@{colorMarkerPrecision}!C2M2.Simulation.MeshSimulation@{C2M2.Simulation.MeshSimulation}}
+\doxysubsubsection{\texorpdfstring{colorMarkerPrecision}{colorMarkerPrecision}}
+{\footnotesize\ttfamily int C2\+M2.\+Simulation.\+Mesh\+Simulation.\+color\+Marker\+Precision = 3}
+
+
+
+Alter the precision of the color scale display 
 
 \mbox{\Hypertarget{class_c2_m2_1_1_simulation_1_1_mesh_simulation_a7f02b0b7e49b470d4807802c2fd5fcbe}\label{class_c2_m2_1_1_simulation_1_1_mesh_simulation_a7f02b0b7e49b470d4807802c2fd5fcbe}} 
 \index{C2M2.Simulation.MeshSimulation@{C2M2.Simulation.MeshSimulation}!globalMax@{globalMax}}
@@ -138,17 +185,53 @@ Update vertex colors based on simulation values
 
 Gradient for coloring each surface point based on their scalar values 
 
+\mbox{\Hypertarget{class_c2_m2_1_1_simulation_1_1_mesh_simulation_af5b11ac127cefaf109a4b1e8917768a3}\label{class_c2_m2_1_1_simulation_1_1_mesh_simulation_af5b11ac127cefaf109a4b1e8917768a3}} 
+\index{C2M2.Simulation.MeshSimulation@{C2M2.Simulation.MeshSimulation}!lengthUnit@{lengthUnit}}
+\index{lengthUnit@{lengthUnit}!C2M2.Simulation.MeshSimulation@{C2M2.Simulation.MeshSimulation}}
+\doxysubsubsection{\texorpdfstring{lengthUnit}{lengthUnit}}
+{\footnotesize\ttfamily string C2\+M2.\+Simulation.\+Mesh\+Simulation.\+length\+Unit = \char`\"{}μm\char`\"{}}
+
 \mbox{\Hypertarget{class_c2_m2_1_1_simulation_1_1_mesh_simulation_a0c325feb5afb206c7c82373cc5c26362}\label{class_c2_m2_1_1_simulation_1_1_mesh_simulation_a0c325feb5afb206c7c82373cc5c26362}} 
 \index{C2M2.Simulation.MeshSimulation@{C2M2.Simulation.MeshSimulation}!mf@{mf}}
 \index{mf@{mf}!C2M2.Simulation.MeshSimulation@{C2M2.Simulation.MeshSimulation}}
 \doxysubsubsection{\texorpdfstring{mf}{mf}}
-{\footnotesize\ttfamily Mesh\+Filter C2\+M2.\+Simulation.\+Mesh\+Simulation.\+mf\hspace{0.3cm}{\ttfamily [private]}}
+{\footnotesize\ttfamily Mesh\+Filter C2\+M2.\+Simulation.\+Mesh\+Simulation.\+mf\hspace{0.3cm}{\ttfamily [protected]}}
 
 \mbox{\Hypertarget{class_c2_m2_1_1_simulation_1_1_mesh_simulation_acce5bbf7484c845296a86399d8d0062e}\label{class_c2_m2_1_1_simulation_1_1_mesh_simulation_acce5bbf7484c845296a86399d8d0062e}} 
 \index{C2M2.Simulation.MeshSimulation@{C2M2.Simulation.MeshSimulation}!mr@{mr}}
 \index{mr@{mr}!C2M2.Simulation.MeshSimulation@{C2M2.Simulation.MeshSimulation}}
 \doxysubsubsection{\texorpdfstring{mr}{mr}}
-{\footnotesize\ttfamily Mesh\+Renderer C2\+M2.\+Simulation.\+Mesh\+Simulation.\+mr\hspace{0.3cm}{\ttfamily [private]}}
+{\footnotesize\ttfamily Mesh\+Renderer C2\+M2.\+Simulation.\+Mesh\+Simulation.\+mr\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_simulation_1_1_mesh_simulation_a405cba5520b72db30034c6b614a25963}\label{class_c2_m2_1_1_simulation_1_1_mesh_simulation_a405cba5520b72db30034c6b614a25963}} 
+\index{C2M2.Simulation.MeshSimulation@{C2M2.Simulation.MeshSimulation}!powerModifierMinusKey@{powerModifierMinusKey}}
+\index{powerModifierMinusKey@{powerModifierMinusKey}!C2M2.Simulation.MeshSimulation@{C2M2.Simulation.MeshSimulation}}
+\doxysubsubsection{\texorpdfstring{powerModifierMinusKey}{powerModifierMinusKey}}
+{\footnotesize\ttfamily Key\+Code C2\+M2.\+Simulation.\+Mesh\+Simulation.\+power\+Modifier\+Minus\+Key = Key\+Code.\+Down\+Arrow}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_simulation_1_1_mesh_simulation_af577e673140a45db102710147a12e6ff}\label{class_c2_m2_1_1_simulation_1_1_mesh_simulation_af577e673140a45db102710147a12e6ff}} 
+\index{C2M2.Simulation.MeshSimulation@{C2M2.Simulation.MeshSimulation}!powerModifierPlusKey@{powerModifierPlusKey}}
+\index{powerModifierPlusKey@{powerModifierPlusKey}!C2M2.Simulation.MeshSimulation@{C2M2.Simulation.MeshSimulation}}
+\doxysubsubsection{\texorpdfstring{powerModifierPlusKey}{powerModifierPlusKey}}
+{\footnotesize\ttfamily Key\+Code C2\+M2.\+Simulation.\+Mesh\+Simulation.\+power\+Modifier\+Plus\+Key = Key\+Code.\+Up\+Arrow}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_simulation_1_1_mesh_simulation_aa5b5bcc38109264e01d81ded6ea00f88}\label{class_c2_m2_1_1_simulation_1_1_mesh_simulation_aa5b5bcc38109264e01d81ded6ea00f88}} 
+\index{C2M2.Simulation.MeshSimulation@{C2M2.Simulation.MeshSimulation}!raycastHits@{raycastHits}}
+\index{raycastHits@{raycastHits}!C2M2.Simulation.MeshSimulation@{C2M2.Simulation.MeshSimulation}}
+\doxysubsubsection{\texorpdfstring{raycastHits}{raycastHits}}
+{\footnotesize\ttfamily Tuple$<$int, double$>$ \mbox{[}$\,$\mbox{]} C2\+M2.\+Simulation.\+Mesh\+Simulation.\+raycast\+Hits = new Tuple$<$int, double$>$\mbox{[}0\mbox{]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_simulation_1_1_mesh_simulation_a1c090b9dba3db05c511ebbb7b0553587}\label{class_c2_m2_1_1_simulation_1_1_mesh_simulation_a1c090b9dba3db05c511ebbb7b0553587}} 
+\index{C2M2.Simulation.MeshSimulation@{C2M2.Simulation.MeshSimulation}!raycastHitValue@{raycastHitValue}}
+\index{raycastHitValue@{raycastHitValue}!C2M2.Simulation.MeshSimulation@{C2M2.Simulation.MeshSimulation}}
+\doxysubsubsection{\texorpdfstring{raycastHitValue}{raycastHitValue}}
+{\footnotesize\ttfamily double C2\+M2.\+Simulation.\+Mesh\+Simulation.\+raycast\+Hit\+Value = 55}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_simulation_1_1_mesh_simulation_a4aa6aa4e6f13ca5aad96ad4fdf6602b2}\label{class_c2_m2_1_1_simulation_1_1_mesh_simulation_a4aa6aa4e6f13ca5aad96ad4fdf6602b2}} 
+\index{C2M2.Simulation.MeshSimulation@{C2M2.Simulation.MeshSimulation}!ruler@{ruler}}
+\index{ruler@{ruler}!C2M2.Simulation.MeshSimulation@{C2M2.Simulation.MeshSimulation}}
+\doxysubsubsection{\texorpdfstring{ruler}{ruler}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c2_m2_1_1_interaction_1_1_ruler_measure}{Ruler\+Measure}} C2\+M2.\+Simulation.\+Mesh\+Simulation.\+ruler = null}
 
 \mbox{\Hypertarget{class_c2_m2_1_1_simulation_1_1_mesh_simulation_ab52e77f5d9475d19d443d39032ddecd0}\label{class_c2_m2_1_1_simulation_1_1_mesh_simulation_ab52e77f5d9475d19d443d39032ddecd0}} 
 \index{C2M2.Simulation.MeshSimulation@{C2M2.Simulation.MeshSimulation}!rulerInitPos@{rulerInitPos}}
@@ -161,6 +244,32 @@ Gradient for coloring each surface point based on their scalar values
 \index{rulerInitRot@{rulerInitRot}!C2M2.Simulation.MeshSimulation@{C2M2.Simulation.MeshSimulation}}
 \doxysubsubsection{\texorpdfstring{rulerInitRot}{rulerInitRot}}
 {\footnotesize\ttfamily Vector3 C2\+M2.\+Simulation.\+Mesh\+Simulation.\+ruler\+Init\+Rot = new Vector3(90, 0, 0)}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_simulation_1_1_mesh_simulation_a14f949b4b5da2979a986df80fede35fe}\label{class_c2_m2_1_1_simulation_1_1_mesh_simulation_a14f949b4b5da2979a986df80fede35fe}} 
+\index{C2M2.Simulation.MeshSimulation@{C2M2.Simulation.MeshSimulation}!sensitivity@{sensitivity}}
+\index{sensitivity@{sensitivity}!C2M2.Simulation.MeshSimulation@{C2M2.Simulation.MeshSimulation}}
+\doxysubsubsection{\texorpdfstring{sensitivity}{sensitivity}}
+{\footnotesize\ttfamily float C2\+M2.\+Simulation.\+Mesh\+Simulation.\+sensitivity = 200f}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_simulation_1_1_mesh_simulation_adadc2dbcc586a6d34e2c9e1ef5cc9c61}\label{class_c2_m2_1_1_simulation_1_1_mesh_simulation_adadc2dbcc586a6d34e2c9e1ef5cc9c61}} 
+\index{C2M2.Simulation.MeshSimulation@{C2M2.Simulation.MeshSimulation}!unit@{unit}}
+\index{unit@{unit}!C2M2.Simulation.MeshSimulation@{C2M2.Simulation.MeshSimulation}}
+\doxysubsubsection{\texorpdfstring{unit}{unit}}
+{\footnotesize\ttfamily string C2\+M2.\+Simulation.\+Mesh\+Simulation.\+unit = \char`\"{}mV\char`\"{}}
+
+
+
+Unit display string that can be manually set by the user 
+
+\mbox{\Hypertarget{class_c2_m2_1_1_simulation_1_1_mesh_simulation_a66aab402140b85091febaf740b0ff54a}\label{class_c2_m2_1_1_simulation_1_1_mesh_simulation_a66aab402140b85091febaf740b0ff54a}} 
+\index{C2M2.Simulation.MeshSimulation@{C2M2.Simulation.MeshSimulation}!unitScaler@{unitScaler}}
+\index{unitScaler@{unitScaler}!C2M2.Simulation.MeshSimulation@{C2M2.Simulation.MeshSimulation}}
+\doxysubsubsection{\texorpdfstring{unitScaler}{unitScaler}}
+{\footnotesize\ttfamily float C2\+M2.\+Simulation.\+Mesh\+Simulation.\+unit\+Scaler = 1000f}
+
+
+
+Can be used to manually convert Gradient Display values to match unit string 
 
 \mbox{\Hypertarget{class_c2_m2_1_1_simulation_1_1_mesh_simulation_afdea2a37a3d8f932309d0d49c87d941f}\label{class_c2_m2_1_1_simulation_1_1_mesh_simulation_afdea2a37a3d8f932309d0d49c87d941f}} 
 \index{C2M2.Simulation.MeshSimulation@{C2M2.Simulation.MeshSimulation}!visualMesh@{visualMesh}}
@@ -177,15 +286,33 @@ Gradient for coloring each surface point based on their scalar values
 \doxysubsubsection{\texorpdfstring{ColliderMesh}{ColliderMesh}}
 {\footnotesize\ttfamily Mesh C2\+M2.\+Simulation.\+Mesh\+Simulation.\+Collider\+Mesh\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [protected set]}}
 
-\mbox{\Hypertarget{class_c2_m2_1_1_simulation_1_1_mesh_simulation_af9d0dada838603fa792135397b04b19a}\label{class_c2_m2_1_1_simulation_1_1_mesh_simulation_af9d0dada838603fa792135397b04b19a}} 
-\index{C2M2.Simulation.MeshSimulation@{C2M2.Simulation.MeshSimulation}!colorLUT@{colorLUT}}
-\index{colorLUT@{colorLUT}!C2M2.Simulation.MeshSimulation@{C2M2.Simulation.MeshSimulation}}
-\doxysubsubsection{\texorpdfstring{colorLUT}{colorLUT}}
-{\footnotesize\ttfamily \mbox{\hyperlink{class_c2_m2_1_1_visualization_1_1_l_u_t_gradient}{LUTGradient}} C2\+M2.\+Simulation.\+Mesh\+Simulation.\+color\+LUT = null\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [private set]}}
+\mbox{\Hypertarget{class_c2_m2_1_1_simulation_1_1_mesh_simulation_a51682e26e2319704e866bddf7f4f3742}\label{class_c2_m2_1_1_simulation_1_1_mesh_simulation_a51682e26e2319704e866bddf7f4f3742}} 
+\index{C2M2.Simulation.MeshSimulation@{C2M2.Simulation.MeshSimulation}!ColorLUT@{ColorLUT}}
+\index{ColorLUT@{ColorLUT}!C2M2.Simulation.MeshSimulation@{C2M2.Simulation.MeshSimulation}}
+\doxysubsubsection{\texorpdfstring{ColorLUT}{ColorLUT}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c2_m2_1_1_visualization_1_1_color_l_u_t}{Color\+LUT}} C2\+M2.\+Simulation.\+Mesh\+Simulation.\+Color\+LUT = null\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [private set]}}
 
 
 
 Lookup table for more efficient color calculations on the gradient 
+
+\mbox{\Hypertarget{class_c2_m2_1_1_simulation_1_1_mesh_simulation_a917d08cb23a8c291c2c261aad59c2fce}\label{class_c2_m2_1_1_simulation_1_1_mesh_simulation_a917d08cb23a8c291c2c261aad59c2fce}} 
+\index{C2M2.Simulation.MeshSimulation@{C2M2.Simulation.MeshSimulation}!extremaMethod@{extremaMethod}}
+\index{extremaMethod@{extremaMethod}!C2M2.Simulation.MeshSimulation@{C2M2.Simulation.MeshSimulation}}
+\doxysubsubsection{\texorpdfstring{extremaMethod}{extremaMethod}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c2_m2_1_1_visualization_1_1_color_l_u_t_a7f1ce4c5542bb734a47c67ef024035ef}{Color\+LUT.\+Extrema\+Method}} C2\+M2.\+Simulation.\+Mesh\+Simulation.\+extrema\+Method = Color\+LUT.\+Extrema\+Method.\+Global\+Extrema\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_simulation_1_1_mesh_simulation_ad02b9baeb6147f548e8e1247ac9e47d2}\label{class_c2_m2_1_1_simulation_1_1_mesh_simulation_ad02b9baeb6147f548e8e1247ac9e47d2}} 
+\index{C2M2.Simulation.MeshSimulation@{C2M2.Simulation.MeshSimulation}!PowerModifier@{PowerModifier}}
+\index{PowerModifier@{PowerModifier}!C2M2.Simulation.MeshSimulation@{C2M2.Simulation.MeshSimulation}}
+\doxysubsubsection{\texorpdfstring{PowerModifier}{PowerModifier}}
+{\footnotesize\ttfamily float C2\+M2.\+Simulation.\+Mesh\+Simulation.\+Power\+Modifier\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{class_c2_m2_1_1_simulation_1_1_mesh_simulation_a37e11ab601c716fbc934a0e1df1c7b29}\label{class_c2_m2_1_1_simulation_1_1_mesh_simulation_a37e11ab601c716fbc934a0e1df1c7b29}} 
+\index{C2M2.Simulation.MeshSimulation@{C2M2.Simulation.MeshSimulation}!ThumbstickScaler@{ThumbstickScaler}}
+\index{ThumbstickScaler@{ThumbstickScaler}!C2M2.Simulation.MeshSimulation@{C2M2.Simulation.MeshSimulation}}
+\doxysubsubsection{\texorpdfstring{ThumbstickScaler}{ThumbstickScaler}}
+{\footnotesize\ttfamily float C2\+M2.\+Simulation.\+Mesh\+Simulation.\+Thumbstick\+Scaler\hspace{0.3cm}{\ttfamily [get]}}
 
 \mbox{\Hypertarget{class_c2_m2_1_1_simulation_1_1_mesh_simulation_ac6bd0162b1594a0a6cfcd4a04d984ad3}\label{class_c2_m2_1_1_simulation_1_1_mesh_simulation_ac6bd0162b1594a0a6cfcd4a04d984ad3}} 
 \index{C2M2.Simulation.MeshSimulation@{C2M2.Simulation.MeshSimulation}!VisualMesh@{VisualMesh}}
@@ -197,4 +324,4 @@ Lookup table for more efficient color calculations on the gradient
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-C\+:/\+Users/jaros/\+Desktop/tempvr/virtual-\/reality/\+Assets/\+Scripts/\+C2\+M2/\mbox{\hyperlink{_mesh_simulation_8cs}{Mesh\+Simulation.\+cs}}\end{DoxyCompactItemize}
+C\+:/\+Users/\+Jacob Wells/\+Desktop/\+C2\+M2/\+Neuro\+VISOR/\+Assets/\+Scripts/\+C2\+M2/\+Simulation/\mbox{\hyperlink{_mesh_simulation_8cs}{Mesh\+Simulation.\+cs}}\end{DoxyCompactItemize}
